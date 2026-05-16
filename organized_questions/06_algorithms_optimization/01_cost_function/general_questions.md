@@ -1,6 +1,7 @@
 # Cost Function Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **Differentiate between convex and non-convex cost functions.**
 
@@ -36,6 +37,7 @@ Convex:               Non-Convex:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Why is convexity important in cost functions?**
 
@@ -65,6 +67,7 @@ Mention that while deep learning uses non-convex functions, empirical evidence s
 ---
 
 ## Question 3
+- [ ] Done
 
 **How is the Log Loss function used in logistic regression?**
 
@@ -106,6 +109,7 @@ def log_loss(y_true, y_pred):
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do optimization algorithms like Gradient Descent use cost functions?**
 
@@ -144,6 +148,7 @@ The cost function is like a topographic map, and gradient descent is like a hike
 ---
 
 ## Question 5
+- [ ] Done
 
 **How can one handle non-convex cost functions during optimization?**
 
@@ -193,6 +198,7 @@ Mention that recent research shows good local minima are often sufficient - the 
 ---
 
 ## Question 6
+- [ ] Done
 
 **How might quantum computing affect the future development of cost functions?**
 
@@ -234,6 +240,7 @@ Acknowledge this is emerging technology - focus on potential rather than claimin
 ---
 
 ## Question 7
+- [ ] Done
 
 **In what ways can you validate that your cost function is aligning with business objectives?**
 
@@ -279,6 +286,7 @@ Always connect technical choices to business impact - this shows business acumen
 ---
 
 ## Question 8
+- [ ] Done
 
 **What role does A/B testing play in determining the effectiveness of different cost functions?**
 

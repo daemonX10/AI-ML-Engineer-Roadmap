@@ -1,6 +1,7 @@
 # Data Mining Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Describe a healthcare application that uses data mining to improve patient outcomes.**
 
@@ -51,6 +52,7 @@ Predictive analytics for hospital readmission risk is a key healthcare data mini
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain how you might use data mining to detect anomalies in network traffic for cybersecurity.**
 
@@ -99,6 +101,7 @@ Data mining enables proactive threat detection beyond signature-based systems.
 ---
 
 ## Question 3
+- [ ] Done
 
 **How would you apply data mining techniques to improve product recommendations on an e-commerce platform?**
 
@@ -151,6 +154,7 @@ Best systems combine multiple approaches—hybrid recommendations outperform sin
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss how data mining can be used to predict stock market trends.**
 
@@ -201,6 +205,7 @@ Data mining can find edges, but consistent alpha is extremely difficult. Focus o
 ---
 
 ## Question 5
+- [ ] Done
 
 **Propose a method for segmenting customers in retail banking using data mining.**
 
@@ -254,6 +259,7 @@ Typical Banking Segments:
 ---
 
 ## Question 6
+- [ ] Done
 
 **Design a strategy for mining customer data for insights in a telecommunications company.**
 

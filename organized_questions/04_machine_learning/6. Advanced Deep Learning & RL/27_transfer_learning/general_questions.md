@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: In which scenarios is transfer learning most effective?
+- [ ] Done
 
 ### High-Effectiveness Scenarios
 
@@ -64,6 +65,7 @@ effectiveness_factors = {
 ---
 
 ## Question 2: What role do pre-trained models play in transfer learning?
+- [ ] Done
 
 ### Core Roles
 
@@ -138,6 +140,7 @@ torchaudio.pipelines.WAV2VEC2_BASE
 ---
 
 ## Question 3: How can transfer learning be deployed in small data scenarios?
+- [ ] Done
 
 ### Strategy Overview
 
@@ -233,6 +236,7 @@ early_stopper = EarlyStopping(patience=10)
 ---
 
 ## Question 4: How do multi-task learning and transfer learning compare?
+- [ ] Done
 
 ### Definitions
 
@@ -323,6 +327,7 @@ Pre-train (ImageNet) → Multi-task fine-tune (Detection + Segmentation)
 ---
 
 ## Question 5: How do you decide how much of a pre-trained network to freeze?
+- [ ] Done
 
 ### Decision Factors
 
@@ -411,6 +416,7 @@ optimizer = optim.Adam([
 ---
 
 ## Question 6: How can you adapt a pre-trained model from one domain to a different but related domain?
+- [ ] Done
 
 ### Domain Adaptation Approaches
 
@@ -505,6 +511,7 @@ model.fit(concat(source_x, pseudo_x), concat(source_y, pseudo_y))
 ---
 
 ## Question 7: How can you measure the similarity between the source and target domains?
+- [ ] Done
 
 ### Similarity Metrics
 
@@ -611,6 +618,7 @@ def assess_transfer_potential(source_model, source_data, target_data):
 ---
 
 ## Question 8: How do GANs contribute to transfer learning in unsupervised scenarios?
+- [ ] Done
 
 ### GAN-based Domain Adaptation
 

@@ -1,6 +1,7 @@
 # Deep Learning Interview Questions - General Questions
 
 ## Question 1: Define deep learning and how it differs from other ML approaches
+- [ ] Done
 
 ### Definition
 Deep learning is a subset of machine learning that uses neural networks with multiple layers (deep architectures) to automatically learn hierarchical representations from raw data, eliminating the need for manual feature engineering.
@@ -24,6 +25,7 @@ Deep learning is a subset of machine learning that uses neural networks with mul
 ---
 
 ## Question 2: How do dropout layers help prevent overfitting?
+- [ ] Done
 
 ### Mechanism
 Dropout randomly sets a fraction of neurons to zero during each training step, forcing the network to learn redundant representations and preventing co-adaptation of neurons.
@@ -53,6 +55,7 @@ model = nn.Sequential(
 ---
 
 ## Question 3: Difference between standard neural network and Autoencoder
+- [ ] Done
 
 ### Comparison
 
@@ -77,6 +80,7 @@ Input → [Encoder] → Compressed Code → [Decoder] → Reconstructed Input
 ---
 
 ## Question 4: How to use transfer learning in deep learning
+- [ ] Done
 
 ### Approaches
 
@@ -109,6 +113,7 @@ for param in model.fc.parameters():
 ---
 
 ## Question 5: How GPUs are utilized in training deep neural networks
+- [ ] Done
 
 ### GPU Advantages
 
@@ -139,6 +144,7 @@ data = data.to(device)
 ---
 
 ## Question 6: Data preprocessing for deep learning
+- [ ] Done
 
 ### Key Steps
 
@@ -168,6 +174,7 @@ transform = transforms.Compose([
 ---
 
 ## Question 7: Handling overfitting beyond dropout
+- [ ] Done
 
 ### Regularization Techniques
 
@@ -189,6 +196,7 @@ transform = transforms.Compose([
 ---
 
 ## Question 8: Strategies for imbalanced datasets
+- [ ] Done
 
 ### Techniques
 
@@ -215,6 +223,7 @@ dataloader = DataLoader(dataset, sampler=sampler)
 ---
 
 ## Question 9: Monitoring and debugging deep learning models
+- [ ] Done
 
 ### What to Monitor
 
@@ -241,6 +250,7 @@ dataloader = DataLoader(dataset, sampler=sampler)
 ---
 
 ## Question 10: Framework for voice command recognition
+- [ ] Done
 
 ### Pipeline
 
@@ -265,6 +275,7 @@ Audio → Spectrogram → CNN/Transformer → Softmax → Command
 ---
 
 ## Question 11: CNNs for satellite imagery classification
+- [ ] Done
 
 ### Architecture
 
@@ -290,6 +301,7 @@ Audio → Spectrogram → CNN/Transformer → Softmax → Command
 ---
 
 ## Question 12: Deep learning for genome sequence prediction
+- [ ] Done
 
 ### Approaches
 
@@ -313,6 +325,7 @@ DNA Sequence → Embedding → Conv1D → Pooling → Dense → Output
 ---
 
 ## Question 13: Evaluating deep learning model performance
+- [ ] Done
 
 ### Metrics by Task
 
@@ -332,6 +345,7 @@ DNA Sequence → Embedding → Conv1D → Pooling → Dense → Output
 ---
 
 ## Question 14: Techniques for visualizing deep neural networks
+- [ ] Done
 
 ### Methods
 
@@ -359,6 +373,7 @@ output[0, target_class].backward()
 ---
 
 ## Question 15: How confusion matrices help evaluate classification
+- [ ] Done
 
 ### Information Provided
 
@@ -385,6 +400,7 @@ ConfusionMatrixDisplay(cm, display_labels=class_names).plot()
 ---
 
 ## Question 16: Error analysis on deep learning predictions
+- [ ] Done
 
 ### Process
 
@@ -410,6 +426,7 @@ ConfusionMatrixDisplay(cm, display_labels=class_names).plot()
 ---
 
 ## Question 17: Interpretability vs performance trade-off
+- [ ] Done
 
 ### Trade-off Spectrum
 

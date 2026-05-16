@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: Implement the epsilon-greedy strategy in Python for action selection
+- [ ] Done
 
 ### Concept
 Epsilon-greedy balances exploration and exploitation:
@@ -86,6 +87,7 @@ def epsilon_greedy_batch(q_values_batch, epsilon):
 ---
 
 ## Question 2: Write a Python script to simulate a simple MDP using a transition matrix
+- [ ] Done
 
 ### Concept
 MDP defined by:
@@ -196,6 +198,7 @@ Total reward: 10.0
 ---
 
 ## Question 3: Code a Q-learning algorithm in Python to solve a grid-world problem
+- [ ] Done
 
 ### Concept
 Q-learning update:
@@ -329,6 +332,7 @@ Learned Policy:
 ---
 
 ## Question 4: Implement a value iteration algorithm for a given MDP in Python
+- [ ] Done
 
 ### Concept
 Value iteration updates:
@@ -438,6 +442,7 @@ Optimal policy: [0 1 1 0]
 ---
 
 ## Question 5: Write a function to calculate the discounted reward for a sequence of rewards
+- [ ] Done
 
 ### Concept
 Discounted return from time t:
@@ -557,6 +562,7 @@ def discounted_rewards_vectorized(rewards, gamma=0.99):
 ---
 
 ## Question 6: Develop a SARSA-learning based agent in Python for the Taxi-v3 environment
+- [ ] Done
 
 ### Concept
 SARSA (State-Action-Reward-State-Action) is on-policy TD control:
@@ -687,6 +693,7 @@ Evaluation: 8.35 +/- 2.41
 ---
 
 ## Question 7: Construct a basic neural network in PyTorch that can serve as a function approximator for a policy
+- [ ] Done
 
 ### Concept
 Policy network: π(a|s) maps states to action probabilities.
@@ -839,6 +846,7 @@ class ContinuousPolicyNetwork(nn.Module):
 ---
 
 ## Question 8: Create a Python implementation of the REINFORCE algorithm
+- [ ] Done
 
 ### Concept
 REINFORCE is a Monte Carlo policy gradient method:
@@ -991,6 +999,7 @@ Test episode reward: 500
 ---
 
 ## Question 9: Code an epsilon-decreasing strategy for exploration in a reinforcement learning agent
+- [ ] Done
 
 ### Concept
 Start with high exploration (ε), gradually decrease to favor exploitation as agent learns.
@@ -1135,6 +1144,7 @@ Action distribution over training:
 ---
 
 ## Question 10: Implement a policy gradient method using a neural network in PyTorch
+- [ ] Done
 
 ### Concept
 Actor-Critic policy gradient with baseline:

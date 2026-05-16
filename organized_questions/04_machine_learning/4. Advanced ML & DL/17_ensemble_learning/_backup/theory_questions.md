@@ -1,6 +1,7 @@
 # Ensemble Learning Interview Questions - Theory Questions
 
 ## Question 1: What is ensemble learning in machine learning?
+- [ ] Done
 
 ### Definition
 Ensemble learning combines multiple base models (learners) to produce a single predictive model that is more robust and accurate than any individual model alone. The key idea is that diverse models make different errors, and combining them cancels out individual weaknesses.
@@ -29,6 +30,7 @@ Like consulting multiple doctors before surgery - each may have different expert
 ---
 
 ## Question 2: Explain the difference between bagging, boosting, and stacking
+- [ ] Done
 
 ### Definition
 **Bagging** trains models in parallel on different bootstrap samples. **Boosting** trains models sequentially, each focusing on previous errors. **Stacking** trains a meta-model to combine diverse base model predictions.
@@ -69,6 +71,7 @@ Like consulting multiple doctors before surgery - each may have different expert
 ---
 
 ## Question 3: Describe what a weak learner is and how it's used in ensemble methods
+- [ ] Done
 
 ### Definition
 A weak learner is a model that performs only slightly better than random guessing (accuracy > 50% for binary classification). Ensemble methods, especially boosting, combine many weak learners to create a strong learner with high accuracy.
@@ -99,6 +102,7 @@ Like building a committee of specialists - each knows a little about one thing, 
 ---
 
 ## Question 4: What are the advantages of using ensemble learning methods over single models?
+- [ ] Done
 
 ### Definition
 Ensemble methods provide improved accuracy, robustness, and generalization by combining multiple models, effectively reducing both bias and variance while being more resistant to noise and outliers.
@@ -130,6 +134,7 @@ Ensemble methods provide improved accuracy, robustness, and generalization by co
 ---
 
 ## Question 5: How does ensemble learning help with the variance and bias trade-off?
+- [ ] Done
 
 ### Definition
 Different ensemble methods target different components of error. **Bagging** primarily reduces variance by averaging diverse models. **Boosting** primarily reduces bias by sequentially correcting errors. The choice depends on whether the base model suffers from high bias or high variance.
@@ -159,6 +164,7 @@ Variance reduces as M increases.
 ---
 
 ## Question 6: What is a bootstrap sample and how is it used in bagging?
+- [ ] Done
 
 ### Definition
 A bootstrap sample is a dataset created by randomly sampling N observations from the original dataset **with replacement**, where N equals the original dataset size. In bagging, each base model is trained on a different bootstrap sample to introduce diversity.
@@ -198,6 +204,7 @@ def create_bootstrap_sample(X, y):
 ---
 
 ## Question 7: Explain the main idea behind the Random Forest algorithm
+- [ ] Done
 
 ### Definition
 Random Forest is a bagging ensemble of decision trees with an additional layer of randomness: each tree is trained on a bootstrap sample AND considers only a random subset of features at each split. This dual randomization creates highly diverse trees.
@@ -235,6 +242,7 @@ Random Forest is a bagging ensemble of decision trees with an additional layer o
 ---
 
 ## Question 8: How does the boosting technique improve weak learners?
+- [ ] Done
 
 ### Definition
 Boosting improves weak learners by training them sequentially, where each new learner focuses on the mistakes of the ensemble so far. It converts high-bias, low-variance models into a low-bias, lower-variance ensemble.
@@ -271,6 +279,7 @@ Where:
 ---
 
 ## Question 9: What is model stacking and how do you select base learners for it?
+- [ ] Done
 
 ### Definition
 Stacking (Stacked Generalization) trains a meta-model to optimally combine predictions from diverse base learners. The meta-model learns which base model to trust for different types of inputs.
@@ -319,6 +328,7 @@ Level 1 (Meta-Model):
 ---
 
 ## Question 10: Describe the AdaBoost algorithm and its process
+- [ ] Done
 
 ### Definition
 AdaBoost (Adaptive Boosting) sequentially trains weak classifiers, giving more weight to misclassified samples at each iteration. The final prediction is a weighted vote where better classifiers have more influence.
@@ -353,6 +363,7 @@ AdaBoost (Adaptive Boosting) sequentially trains weak classifiers, giving more w
 ---
 
 ## Question 11: How does Gradient Boosting work and what makes it different from AdaBoost?
+- [ ] Done
 
 ### Definition
 Gradient Boosting builds an ensemble by sequentially fitting new models to the **negative gradient (residuals)** of the loss function. Unlike AdaBoost which adjusts sample weights, Gradient Boosting directly fits to prediction errors.
@@ -386,6 +397,7 @@ Gradient Boosting builds an ensemble by sequentially fitting new models to the *
 ---
 
 ## Question 12: Explain XGBoost and its advantages over other boosting methods
+- [ ] Done
 
 ### Definition
 XGBoost (Extreme Gradient Boosting) is an optimized, scalable implementation of gradient boosting with regularization, parallel processing, and advanced algorithmic optimizations that make it faster and more accurate.
@@ -435,6 +447,7 @@ params = {
 ---
 
 ## Question 13: How does CatBoost handle categorical features differently from other boosting algorithms?
+- [ ] Done
 
 ### Definition
 CatBoost (Categorical Boosting) uses **Ordered Target Statistics** to encode categorical features without data leakage, and employs **Ordered Boosting** to reduce prediction shift, making it superior for datasets with many categorical variables.
@@ -478,6 +491,7 @@ $$\hat{x}_i^k = \frac{\sum_{j<i, x_j=k} y_j + a \cdot p}{\sum_{j<i, x_j=k} 1 + a
 ---
 
 ## Question 14: What is the concept of feature bagging and how does it relate to Random Forests?
+- [ ] Done
 
 ### Definition
 Feature bagging (feature subspace method) randomly selects a subset of features to consider at each split point in a decision tree. In Random Forest, this creates tree diversity beyond what bootstrap sampling alone provides.
@@ -520,6 +534,7 @@ Lower correlation (ρ) → lower ensemble variance
 ---
 
 ## Question 15: Describe the voting classifier and when it should be used
+- [ ] Done
 
 ### Definition
 A Voting Classifier combines predictions from multiple different classifiers. **Hard voting** uses majority class. **Soft voting** averages class probabilities and picks the highest.
@@ -580,6 +595,7 @@ soft_voting = VotingClassifier(
 ---
 
 ## Question 16: Explain the concept of homogeneous and heterogeneous ensembles
+- [ ] Done
 
 ### Definition
 **Homogeneous ensembles** use the same base algorithm with different training data/parameters. **Heterogeneous ensembles** combine different algorithms. This distinction affects how diversity is achieved.
@@ -626,6 +642,7 @@ soft_voting = VotingClassifier(
 ---
 
 ## Question 17: What is the out-of-bag error in a Random Forest and how is it useful?
+- [ ] Done
 
 ### Definition
 Out-of-Bag (OOB) error is an estimate of generalization error using samples not included in each tree's bootstrap sample. Since ~37% of data is left out per tree, each sample can be predicted by trees that didn't train on it.
@@ -674,6 +691,7 @@ print(f"OOB Score: {rf.oob_score_:.4f}")
 ---
 
 ## Question 18: How does ensemble diversity affect the performance of an ensemble model?
+- [ ] Done
 
 ### Definition
 Ensemble diversity measures how differently base models make errors. Higher diversity means models disagree on which samples they misclassify. Maximum benefit comes when models are both accurate AND diverse - making different mistakes that cancel out.
@@ -722,6 +740,7 @@ Higher diversity (A) → Lower ensemble error
 ---
 
 ## Question 19: What are the key considerations in building an ensemble model?
+- [ ] Done
 
 ### Definition
 Building effective ensembles requires balancing base model accuracy with diversity, managing computational costs, preventing overfitting, and choosing appropriate combination strategies for the problem type.
@@ -771,6 +790,7 @@ Building effective ensembles requires balancing base model accuracy with diversi
 ---
 
 ## Question 20: Describe how you would handle missing data when creating ensemble models
+- [ ] Done
 
 ### Definition
 Missing data handling for ensembles can leverage: (1) tree-based methods' native handling, (2) imputation before ensemble training, or (3) letting different models handle missing data differently to increase diversity.
@@ -832,6 +852,7 @@ df['feature'] = df['feature'].fillna(df['feature'].median())
 ---
 
 ## Question 21: What is model drift, and how might it affect ensemble models?
+- [ ] Done
 
 ### Definition
 Model drift occurs when the statistical properties of target or input features change over time, causing model performance to degrade. Ensemble models can be both more robust to drift AND more complex to update.
@@ -894,6 +915,7 @@ def update_ensemble(ensemble, new_data):
 ---
 
 ## Question 22: Explain the importance of cross-validation in evaluating ensemble models
+- [ ] Done
 
 ### Definition
 Cross-validation provides reliable performance estimates for ensemble models by testing on multiple held-out folds. It's especially important for ensembles because they can overfit in complex ways and need robust evaluation.
@@ -958,6 +980,7 @@ Outer CV (Performance Estimate)
 ---
 
 ## Question 23: Describe a scenario where a Random Forest model would be preferred over a simple decision tree and vice versa
+- [ ] Done
 
 ### Random Forest Preferred
 
@@ -1001,6 +1024,7 @@ Use Random Forest to identify important features, then build interpretable decis
 ---
 
 ## Question 24: Describe a proper ensemble strategy for a self-driving car perception system
+- [ ] Done
 
 ### System Requirements
 - **Real-time**: <100ms latency
@@ -1060,6 +1084,7 @@ Use Random Forest to identify important features, then build interpretable decis
 ---
 
 ## Question 25: What are multi-layer ensembles and how do they differ from traditional ensemble methods?
+- [ ] Done
 
 ### Definition
 Multi-layer ensembles (also called deep ensembles or multi-stage ensembles) stack multiple layers of models where each layer's output feeds into the next layer. This creates a hierarchical structure deeper than traditional single-layer stacking.
@@ -1128,6 +1153,7 @@ Layer 2:       [      Final Meta-Model      ]
 # --- Missing Questions Restored from Source (Q26-Q28) ---
 
 ## Question 26
+- [ ] Done
 
 **How doesensemble pruningwork, and why might it be necessary?**
 
@@ -1169,6 +1195,7 @@ bag.estimators_ = [bag.estimators_[i] for i in top_k]
 ---
 
 ## Question 27
+- [ ] Done
 
 **Describe howtransfer learningcan be used alongsideensemble learning.**
 
@@ -1210,6 +1237,7 @@ ensemble = VotingClassifier(
 ---
 
 ## Question 28
+- [ ] Done
 
 **What is the role ofensemble learninginsemi-supervised learningcontexts?**
 
@@ -1253,6 +1281,7 @@ Ensemble learning in semi-supervised contexts combines multiple learners that jo
 # CatBoost Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What motivated the creation of CatBoost compared with XGBoost and LightGBM?**
 
@@ -1279,6 +1308,7 @@ CatBoost (Categorical Boosting) was developed by Yandex in 2017 to address two f
 ---
 
 ## Question 2
+- [ ] Done
 
 **How does CatBoost natively handle categorical features?**
 
@@ -1310,6 +1340,7 @@ model.fit(train_pool)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain the concept of "ordered target statistics" in CatBoost.**
 
@@ -1334,6 +1365,7 @@ $$TS(k) = \frac{\text{countInClass}_{<k} + a \cdot \text{prior}}{\text{totalCoun
 ---
 
 ## Question 4
+- [ ] Done
 
 **Why are target-leakage and prediction shift concerns in naive target encoding?**
 
@@ -1361,6 +1393,7 @@ Target leakage occurs when a feature is computed using information from the targ
 ---
 
 ## Question 5
+- [ ] Done
 
 **Describe symmetric (oblivious) decision trees used by CatBoost.**
 
@@ -1390,6 +1423,7 @@ A symmetric (oblivious) decision tree uses the **same splitting feature and thre
 ---
 
 ## Question 6
+- [ ] Done
 
 **Outline CatBoost's ordered boosting process and its benefit.**
 
@@ -1414,6 +1448,7 @@ Ordered boosting is CatBoost's training algorithm that maintains a separate mode
 ---
 
 ## Question 7
+- [ ] Done
 
 **Compare CatBoost's handling of missing values to that of XGBoost.**
 
@@ -1447,6 +1482,7 @@ Both CatBoost and XGBoost handle missing values natively during tree constructio
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is the role of the ctr_leaf_weight parameter?**
 
@@ -1479,6 +1515,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain how CatBoost reduces gradient bias on small data.**
 
@@ -1501,6 +1538,7 @@ CatBoost reduces gradient bias by using ordered boosting, which ensures that eac
 ---
 
 ## Question 10
+- [ ] Done
 
 **Describe the difference between plain and ordered boosting modes.**
 
@@ -1540,6 +1578,7 @@ model = CatBoostClassifier(boosting_type='Ordered')  # or 'Plain'
 ---
 
 ## Question 11
+- [ ] Done
 
 **How does CatBoost implement multi-class classification internally?**
 
@@ -1576,6 +1615,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 12
+- [ ] Done
 
 **Discuss GPU acceleration in CatBoost versus competitors.**
 
@@ -1612,6 +1652,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain CatBoost's eval_metric vs loss_function.**
 
@@ -1653,6 +1694,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 14
+- [ ] Done
 
 **What is "snapshot saving," and why is it useful for long training jobs?**
 
@@ -1686,6 +1728,7 @@ model.fit(X_train, y_train)  # resumes automatically if snapshot exists
 ---
 
 ## Question 15
+- [ ] Done
 
 **How can you export a CatBoost model to Core ML or ONNX?**
 
@@ -1726,6 +1769,7 @@ model.save_model('model.cpp', format='cpp')
 ---
 
 ## Question 16
+- [ ] Done
 
 **Discuss depth and iterations hyper-parameters' impacts.**
 
@@ -1771,6 +1815,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 17
+- [ ] Done
 
 **Describe CatBoost's built-in cross-validation utility.**
 
@@ -1821,6 +1866,7 @@ print(cv_results.tail())  # DataFrame with columns: iteration, train-Logloss-mea
 ---
 
 ## Question 18
+- [ ] Done
 
 **When should you use CatBoost's calc_feature_importance vs SHAP values?**
 
@@ -1862,6 +1908,7 @@ shap_values = model.get_feature_importance(type='ShapValues', data=pool)
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain the meaning of "one-hot max size" in CatBoost.**
 
@@ -1898,6 +1945,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 20
+- [ ] Done
 
 **How does CatBoost avoid overfitting due to high-cardinality categories?**
 
@@ -1934,6 +1982,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 21
+- [ ] Done
 
 **What's CatBoost's policy for monotonic constraints?**
 
@@ -1973,6 +2022,7 @@ model = CatBoostRegressor(
 ---
 
 ## Question 22
+- [ ] Done
 
 **Compare CatBoost's oblivious trees to LightGBM's leaf-wise trees in depth.**
 
@@ -2010,6 +2060,7 @@ CatBoost's oblivious (symmetric) trees use one shared split per depth level yiel
 ---
 
 ## Question 23
+- [ ] Done
 
 **How can you enable/disable bagging in CatBoost?**
 
@@ -2050,6 +2101,7 @@ model = CatBoostClassifier(bootstrap_type='No')
 ---
 
 ## Question 24
+- [ ] Done
 
 **Discuss CatBoost's od_type (overfitting detector) options.**
 
@@ -2099,6 +2151,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain the role of prior distributions in CatBoost categorical targets.**
 
@@ -2144,6 +2197,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 26
+- [ ] Done
 
 **Outline steps to perform grid/random search for CatBoost parameters.**
 
@@ -2172,6 +2226,7 @@ CatBoost (Categorical Boosting) was developed by Yandex to address two fundament
 ---
 
 ## Question 27
+- [ ] Done
 
 **How do learning_rate and l2_leaf_reg interact in CatBoost?**
 
@@ -2204,6 +2259,7 @@ model.fit(X_train, y_train)  # No preprocessing needed!
 ---
 
 ## Question 28
+- [ ] Done
 
 **Discuss CatBoost's support for text and embedding features.**
 
@@ -2239,6 +2295,7 @@ Where:
 ---
 
 ## Question 29
+- [ ] Done
 
 **How would you interpret CatBoost's "prediction values change" importance?**
 
@@ -2273,6 +2330,7 @@ df['city_encoded'] = df.groupby('city')['target'].transform('mean')
 ---
 
 ## Question 30
+- [ ] Done
 
 **What data preprocessing steps are unnecessary with CatBoost?**
 
@@ -2306,6 +2364,7 @@ This is a single bitwise OR operation — extremely fast.
 ---
 
 ## Question 31
+- [ ] Done
 
 **Describe memory considerations when training CatBoost on large data.**
 
@@ -2338,6 +2397,7 @@ In standard GBM, the residuals (gradients) for sample $i$ are computed using a m
 ---
 
 ## Question 32
+- [ ] Done
 
 **Explain CatBoost's quantization of numerical features.**
 
@@ -2372,6 +2432,7 @@ model = CatBoostClassifier(nan_mode='Min')
 ---
 
 ## Question 33
+- [ ] Done
 
 **How to set class weights for imbalanced classification?**
 
@@ -2406,6 +2467,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 34
+- [ ] Done
 
 **What is the use of pairwise loss in ranking tasks?**
 
@@ -2435,6 +2497,7 @@ CatBoost reduces gradient bias on small datasets through its ordered boosting me
 ---
 
 ## Question 35
+- [ ] Done
 
 **Discuss best practices for early stopping in CatBoost.**
 
@@ -2474,6 +2537,7 @@ model_plain = CatBoostClassifier(boosting_type='Plain')
 ---
 
 ## Question 36
+- [ ] Done
 
 **How does CatBoost random seed affect reproducibility?**
 
@@ -2509,6 +2573,7 @@ model_ova = CatBoostClassifier(loss_function='MultiClassOneVsAll')
 ---
 
 ## Question 37
+- [ ] Done
 
 **Outline deployment options for CatBoost in real-time systems.**
 
@@ -2546,6 +2611,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 38
+- [ ] Done
 
 **Explain CatBoost's model compression techniques (CTR pruning).**
 
@@ -2584,6 +2650,7 @@ model.fit(X_train, y_train, eval_set=(X_val, y_val))
 ---
 
 ## Question 39
+- [ ] Done
 
 **Discuss limitations of CatBoost for sparse NLP feature sets.**
 
@@ -2623,6 +2690,7 @@ model.fit(X_train, y_train, eval_set=(X_val, y_val))
 ---
 
 ## Question 40
+- [ ] Done
 
 **How to combine CatBoost with SHAP library efficiently?**
 
@@ -2667,6 +2735,7 @@ model.save_model('model.cbm', format='cbm')       # CatBoost binary (default)
 ---
 
 ## Question 41
+- [ ] Done
 
 **Explain CatBoostPool and how to pass feature names.**
 
@@ -2708,6 +2777,7 @@ for d in [4, 6, 8, 10]:
 ---
 
 ## Question 42
+- [ ] Done
 
 **What are floating-point versus integer categorical representations?**
 
@@ -2751,6 +2821,7 @@ print(cv_results.tail())  # Best iteration results
 ---
 
 ## Question 43
+- [ ] Done
 
 **How can you handle unseen categories in production inference?**
 
@@ -2792,6 +2863,7 @@ shap_values = model.get_feature_importance(type='ShapValues', data=Pool(X_test))
 ---
 
 ## Question 44
+- [ ] Done
 
 **Compare CatBoost's logloss to cross-entropy implementations.**
 
@@ -2829,6 +2901,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 45
+- [ ] Done
 
 **Describe parameter tuning order for CatBoost (baseline, then fine-tune).**
 
@@ -2860,6 +2933,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 46
+- [ ] Done
 
 **How does using bootstrap_type=Bayesian differ from Bernoulli?**
 
@@ -2898,6 +2972,7 @@ model = CatBoostClassifier(monotone_constraints='1,0,0,-1,0,0')
 ---
 
 ## Question 47
+- [ ] Done
 
 **Explain the internal fast scoring (oblivious tree bitset evaluation).**
 
@@ -2929,6 +3004,7 @@ CatBoost uses symmetric (oblivious) trees that split on the same feature at each
 ---
 
 ## Question 48
+- [ ] Done
 
 **How does CatBoost support multi-label tasks?**
 
@@ -2971,6 +3047,7 @@ model = CatBoostClassifier(bootstrap_type='No')
 ---
 
 ## Question 49
+- [ ] Done
 
 **Provide a case study where CatBoost beat traditional one-hot LightGBM.**
 
@@ -3015,6 +3092,7 @@ model.fit(X_train, y_train, eval_set=(X_val, y_val), early_stopping_rounds=50)
 ---
 
 ## Question 50
+- [ ] Done
 
 **What future features are planned in CatBoost's roadmap?**
 
@@ -3064,6 +3142,7 @@ model = CatBoostClassifier(
 # Gradient Boosting Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain boosting in ensemble learning.**
 
@@ -3090,6 +3169,7 @@ model = CatBoostClassifier(
 ---
 
 ## Question 2
+- [ ] Done
 
 **Derive the additive model formulation of GBM.**
 
@@ -3122,6 +3202,7 @@ This is a **functional gradient descent** in function space: each $h_m$ approxim
 ---
 
 ## Question 3
+- [ ] Done
 
 **What loss functions are available for GBM?**
 
@@ -3148,6 +3229,7 @@ GBM is flexible because **any differentiable loss function** can be plugged in. 
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe stage-wise additive modeling.**
 
@@ -3178,6 +3260,7 @@ where $b(x; \gamma_m)$ is a base learner parameterized by $\gamma_m$.
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does learning rate shrinkage affect GBM performance?**
 
@@ -3206,6 +3289,7 @@ $$F_m(x) = F_{m-1}(x) + \nu \cdot h_m(x), \quad 0 < \nu \leq 1$$
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss subsampling (stochastic GBM) and its effect on variance.**
 
@@ -3239,6 +3323,7 @@ $$F_m(x) = F_{m-1}(x) + \nu \cdot h_m(x), \quad 0 < \nu \leq 1$$
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain the role of tree depth in GBM bias-variance trade-off.**
 
@@ -3269,6 +3354,7 @@ $$F_m(x) = F_{m-1}(x) + \nu \cdot h_m(x), \quad 0 < \nu \leq 1$$
 ---
 
 ## Question 8
+- [ ] Done
 
 **Compare GBM to Random Forest in terms of bias and variance.**
 
@@ -3298,6 +3384,7 @@ $$F_m(x) = F_{m-1}(x) + \nu \cdot h_m(x), \quad 0 < \nu \leq 1$$
 ---
 
 ## Question 9
+- [ ] Done
 
 **How is the negative gradient used as pseudo-residuals?**
 
@@ -3329,6 +3416,7 @@ $$r_{im} = -\left[\frac{\partial L(y_i, F(x_i))}{\partial F(x_i)}\right]_{F = F_
 ---
 
 ## Question 10
+- [ ] Done
 
 **Outline the training loop of GBM in pseudocode.**
 
@@ -3368,6 +3456,7 @@ Input: Training set {(x_i, y_i)}, loss L, learning rate ν, num trees M, tree pa
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain how GBM handles categorical predictors (generic answer).**
 
@@ -3406,6 +3495,7 @@ GBM implementations handle categorical predictors in several ways, since decisio
 ---
 
 ## Question 12
+- [ ] Done
 
 **Discuss the effect of interaction depth parameter.**
 
@@ -3437,6 +3527,7 @@ The **interaction depth** (or `max_depth`) parameter controls the maximum number
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is the concept of "warm start" in GBM implementations?**
 
@@ -3477,6 +3568,7 @@ gbm.fit(X_train, y_train)  # adds 100 more trees (total 200)
 ---
 
 ## Question 14
+- [ ] Done
 
 **How does monotone constraint enforcement work in GBM?**
 
@@ -3519,6 +3611,7 @@ model = lgb.LGBMRegressor(monotone_constraints=[1, -1, 0, 0])
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain how to interpret feature importance in GBM.**
 
@@ -3555,6 +3648,7 @@ model = lgb.LGBMRegressor(monotone_constraints=[1, -1, 0, 0])
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is the impact of n_estimators on overfitting?**
 
@@ -3592,6 +3686,7 @@ $$\text{Validation error} \searrow \text{(improves)} \to \text{minimum} \to \nea
 ---
 
 ## Question 17
+- [ ] Done
 
 **Compare Friedman's original GBM to XGBoost.**
 
@@ -3622,6 +3717,7 @@ This Newton-like update converges faster than pure gradient descent and enables 
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe how GBM can be used for ranking problems.**
 
@@ -3661,6 +3757,7 @@ model.fit(X_train, y_train, group=group_sizes)
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain gradient boosting with logistic loss for binary classification.**
 
@@ -3698,6 +3795,7 @@ where the denominator is the sum of the second derivatives (Hessians) $h_i = p_i
 ---
 
 ## Question 20
+- [ ] Done
 
 **How do you tune hyper-parameters of GBM systematically?**
 
@@ -3752,6 +3850,7 @@ def objective(trial):
 ---
 
 ## Question 21
+- [ ] Done
 
 **Discuss advantages of histogram-based GBM over exact splits.**
 
@@ -3783,6 +3882,7 @@ def objective(trial):
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain the concept of "interaction constraints" in modern GBM.**
 
@@ -3825,6 +3925,7 @@ model = lgb.LGBMRegressor(interaction_constraints=[[0, 1, 2], [3, 4]])
 ---
 
 ## Question 23
+- [ ] Done
 
 **What regularization techniques exist for GBM besides learning rate?**
 
@@ -3867,6 +3968,7 @@ Beyond the learning rate (shrinkage), GBM offers several **regularization techni
 ---
 
 ## Question 24
+- [ ] Done
 
 **Compare L1 vs L2 regularization on leaf weights (as in XGBoost).**
 
@@ -3905,6 +4007,7 @@ where $T_m$ is the number of leaves in tree $m$ and $w_{jm}$ is the weight (pred
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain influence of min_child_weight / min_samples_split.**
 
@@ -3944,6 +4047,7 @@ where $T_m$ is the number of leaves in tree $m$ and $w_{jm}$ is the weight (pred
 ---
 
 ## Question 26
+- [ ] Done
 
 **Discuss initial prediction offset in GBM.**
 
@@ -3984,6 +4088,7 @@ gbm = GradientBoostingRegressor(init=LinearRegression())
 ---
 
 ## Question 27
+- [ ] Done
 
 **How does early stopping work in GBM?**
 
@@ -4032,6 +4137,7 @@ model = HistGradientBoostingRegressor(max_iter=10000, early_stopping=True,
 ---
 
 ## Question 28
+- [ ] Done
 
 **What is the typical default base learner used in GBM and why?**
 
@@ -4066,6 +4172,7 @@ The **default base learner** in GBM is the **CART decision tree** (Classificatio
 ---
 
 ## Question 29
+- [ ] Done
 
 **Describe huber loss and quantile loss in GBM.**
 
@@ -4108,6 +4215,7 @@ gbm_quantile = GradientBoostingRegressor(loss='quantile', alpha=0.95)
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain how GBM is extended to multiclass tasks (softmax).**
 
@@ -4149,6 +4257,7 @@ For each observation $i$ and class $k$: the residual is 1 − predicted probabil
 ---
 
 ## Question 31
+- [ ] Done
 
 **What is the idea behind dart (dropout) boosting?**
 
@@ -4193,6 +4302,7 @@ model = lgb.LGBMRegressor(boosting_type='dart', drop_rate=0.1)
 ---
 
 ## Question 32
+- [ ] Done
 
 **Discuss categorical histogram splits (LightGBM).**
 
@@ -4237,6 +4347,7 @@ model.fit(X, y, categorical_feature=[0, 3, 7])
 ---
 
 ## Question 33
+- [ ] Done
 
 **Explain GPU acceleration benefits for GBM.**
 
@@ -4287,6 +4398,7 @@ model.fit(X_train, y_train)
 ---
 
 ## Question 34
+- [ ] Done
 
 **Provide steps to diagnose a poorly performing GBM.**
 
@@ -4335,6 +4447,7 @@ Diagnosing a **poorly performing GBM** requires a systematic investigation of da
 ---
 
 ## Question 35
+- [ ] Done
 
 **Discuss interpretability challenges with GBM.**
 
@@ -4383,6 +4496,7 @@ GBM models, as ensembles of hundreds to thousands of trees, present significant 
 ---
 
 ## Question 36
+- [ ] Done
 
 **Compare AdaBoost vs Gradient Boosting in error focus.**
 
@@ -4418,6 +4532,7 @@ GBM models, as ensembles of hundreds to thousands of trees, present significant 
 ---
 
 ## Question 37
+- [ ] Done
 
 **Explain how learning rate and number of trees interact.**
 
@@ -4462,6 +4577,7 @@ $$\text{Total model capacity} \approx \nu \times M$$
 ---
 
 ## Question 38
+- [ ] Done
 
 **What is out-of-bag improvement plot and how to use it?**
 
@@ -4514,6 +4630,7 @@ plt.show()
 ---
 
 ## Question 39
+- [ ] Done
 
 **Describe influence functions for GBM interpretability.**
 
@@ -4555,6 +4672,7 @@ This sums the product of pseudo-residuals when both points land in the same leaf
 ---
 
 ## Question 40
+- [ ] Done
 
 **Explain randomization strategies in GBM to reduce overfitting.**
 
@@ -4606,6 +4724,7 @@ model = xgb.XGBRegressor(
 ---
 
 ## Question 41
+- [ ] Done
 
 **Discuss calibration of GBM probability outputs.**
 
@@ -4652,6 +4771,7 @@ plt.plot([0,1], [0,1], '--', label='Perfect')
 ---
 
 ## Question 42
+- [ ] Done
 
 **How to handle class imbalance in GBM?**
 
@@ -4712,6 +4832,7 @@ $$L_{\text{focal}} = -\alpha_t (1 - p_t)^\gamma \log(p_t)$$
 ---
 
 ## Question 43
+- [ ] Done
 
 **Explain use of GBM in time series forecasting with lag features.**
 
@@ -4764,6 +4885,7 @@ test = df[df['date'] >= '2024-01-01']
 ---
 
 ## Question 44
+- [ ] Done
 
 **Describe parameter differences between scikit-learn GBM and LightGBM.**
 
@@ -4805,6 +4927,7 @@ test = df[df['date'] >= '2024-01-01']
 ---
 
 ## Question 45
+- [ ] Done
 
 **How to visualize partial dependence for GBM models?**
 
@@ -4870,6 +4993,7 @@ shap.dependence_plot('feature_name', shap_values, X_train)
 ---
 
 ## Question 46
+- [ ] Done
 
 **Explain leaf-wise vs level-wise tree growth (LightGBM).**
 
@@ -4914,6 +5038,7 @@ shap.dependence_plot('feature_name', shap_values, X_train)
 ---
 
 ## Question 47
+- [ ] Done
 
 **Discuss the role of colsample_bytree in GBM.**
 
@@ -4958,6 +5083,7 @@ $$f_{\text{effective}} = \texttt{colsample\_bytree} \times \texttt{colsample\_by
 ---
 
 ## Question 48
+- [ ] Done
 
 **Provide an example of using GBM for insurance claim severity.**
 
@@ -5025,6 +5151,7 @@ This is standard actuarial practice and leverages GBM's flexibility in both stag
 ---
 
 ## Question 49
+- [ ] Done
 
 **Explain limitations of GBM with extremely sparse data.**
 
@@ -5063,6 +5190,7 @@ GBM has specific **limitations** when dealing with extremely sparse data (large 
 ---
 
 ## Question 50
+- [ ] Done
 
 **Describe future trends in gradient boosting research.**
 
@@ -5120,6 +5248,7 @@ GBM has specific **limitations** when dealing with extremely sparse data (large 
 # AdaBoost Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Describe the AdaBoost algorithm intuition.**
 
@@ -5142,6 +5271,7 @@ AdaBoost (Adaptive Boosting) is a boosting algorithm that sequentially trains we
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain weak learner requirements for AdaBoost.**
 
@@ -5173,6 +5303,7 @@ A weak learner for AdaBoost must satisfy only one requirement: its weighted erro
 ---
 
 ## Question 3
+- [ ] Done
 
 **How are sample weights updated after each round?**
 
@@ -5204,6 +5335,7 @@ Where:
 ---
 
 ## Question 4
+- [ ] Done
 
 **Derive the weight update formula using exponential loss.**
 
@@ -5234,6 +5366,7 @@ $$\alpha_t = \frac{1}{2}\ln\left(\frac{1-\epsilon_t}{\epsilon_t}\right)$$
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain why AdaBoost focuses on hard-to-classify samples.**
 
@@ -5267,6 +5400,7 @@ This grows exponentially with the number of misclassifications.
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss the effect of weak learner overfitting on AdaBoost.**
 
@@ -5312,6 +5446,7 @@ ada_overfit = AdaBoostClassifier(
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is AdaBoost.M1 versus AdaBoost.M2?**
 
@@ -5343,6 +5478,7 @@ With $K$ classes, random guessing gives error $1 - 1/K$. The requirement $\epsil
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain discrete AdaBoost vs Real AdaBoost.**
 
@@ -5380,6 +5516,7 @@ ada_real = AdaBoostClassifier(algorithm='SAMME.R')
 ---
 
 ## Question 9
+- [ ] Done
 
 **How is classifier weight α_t computed?**
 
@@ -5413,6 +5550,7 @@ $$H(x) = \text{sign}\left(\sum_{t=1}^T \alpha_t h_t(x)\right)$$
 ---
 
 ## Question 10
+- [ ] Done
 
 **Discuss margin theory and AdaBoost generalization.**
 
@@ -5447,6 +5585,7 @@ $$P(\text{error}) \leq P_{\text{train}}(\text{margin} \leq \theta) + \tilde{O}\l
 ---
 
 ## Question 11
+- [ ] Done
 
 **Why can AdaBoost be robust to overfitting with many trees?**
 
@@ -5482,6 +5621,7 @@ ada = AdaBoostClassifier(n_estimators=1000, learning_rate=0.1)
 ---
 
 ## Question 12
+- [ ] Done
 
 **What base estimators are typically used with AdaBoost?**
 
@@ -5523,6 +5663,7 @@ ada_tree = AdaBoostClassifier(
 ---
 
 ## Question 13
+- [ ] Done
 
 **Contrast AdaBoost with LogitBoost.**
 
@@ -5555,6 +5696,7 @@ The logistic loss grows linearly for large negative margins (vs. exponentially f
 ---
 
 ## Question 14
+- [ ] Done
 
 **How does AdaBoost handle noisy labels?**
 
@@ -5594,6 +5736,7 @@ for t in range(n_rounds):
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain shrinkage (learning rate) in AdaBoost.**
 
@@ -5632,6 +5775,7 @@ ada = AdaBoostClassifier(
 ---
 
 ## Question 16
+- [ ] Done
 
 **Discuss the number of estimators vs performance curve.**
 
@@ -5673,6 +5817,7 @@ plt.legend()
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do class imbalances affect AdaBoost training?**
 
@@ -5714,6 +5859,7 @@ ada.fit(X_train, y_train, sample_weight=sample_weights)
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain SAMME and SAMME.R algorithms in sklearn.**
 
@@ -5754,6 +5900,7 @@ ada_s = AdaBoostClassifier(algorithm='SAMME', n_estimators=200)
 ---
 
 ## Question 19
+- [ ] Done
 
 **Provide pseudo-code for AdaBoost binary classification.**
 
@@ -5812,6 +5959,7 @@ def adaboost_train(X, y, T, weak_learner_class):
 ---
 
 ## Question 20
+- [ ] Done
 
 **Compare AdaBoost to Gradient Boosting.**
 
@@ -5844,6 +5992,7 @@ AdaBoost is mathematically equivalent to gradient boosting with exponential loss
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain influence of max_depth of decision stumps in AdaBoost.**
 
@@ -5888,6 +6037,7 @@ for depth in [1, 2, 3]:
 ---
 
 ## Question 22
+- [ ] Done
 
 **How can AdaBoost be adapted for regression (AdaBoost.R2)?**
 
@@ -5926,6 +6076,7 @@ ada_reg = AdaBoostRegressor(
 ---
 
 ## Question 23
+- [ ] Done
 
 **Discuss the role of exponential loss as upper bound on 0-1 loss.**
 
@@ -5956,6 +6107,7 @@ The bound is tight only at the decision boundary ($yF(x) = 0$). For large positi
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain AdaBoost's sensitivity to outliers.**
 
@@ -5990,6 +6142,7 @@ After $T$ rounds with average $\alpha_t \approx 0.5$, a consistently misclassifi
 ---
 
 ## Question 25
+- [ ] Done
 
 **How does AdaBoost perform feature selection implicitly?**
 
@@ -6028,6 +6181,7 @@ plt.title('AdaBoost Feature Importance')
 ---
 
 ## Question 26
+- [ ] Done
 
 **Describe ways to visualize AdaBoost decision boundaries.**
 
@@ -6074,6 +6228,7 @@ ax.legend()
 ---
 
 ## Question 27
+- [ ] Done
 
 **Discuss heteroskedasticity in AdaBoost regression.**
 
@@ -6109,6 +6264,7 @@ plt.ylabel('Residual')
 ---
 
 ## Question 28
+- [ ] Done
 
 **What is AdaCost and cost-sensitive boosting?**
 
@@ -6148,6 +6304,7 @@ ada.fit(X_train, y_train, sample_weight=initial_weights)
 ---
 
 ## Question 29
+- [ ] Done
 
 **Explain how AdaBoost can be parallelized.**
 
@@ -6188,6 +6345,7 @@ Use XGBoost/LightGBM instead — they implement boosting with efficient parallel
 ---
 
 ## Question 30
+- [ ] Done
 
 **Discuss AdaBoost with SVM base learners.**
 
@@ -6234,6 +6392,7 @@ ada_svm = AdaBoostClassifier(
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain multi-class AdaBoost.W.MH algorithm.**
 
@@ -6264,6 +6423,7 @@ MH is used in multi-label text classification where each document can belong to 
 ---
 
 ## Question 32
+- [ ] Done
 
 **What is BrownBoost and how does it differ?**
 
@@ -6297,6 +6457,7 @@ BrownBoost is a boosting algorithm that allows "giving up" on noisy or outlier s
 ---
 
 ## Question 33
+- [ ] Done
 
 **Describe GentleBoost and its advantages.**
 
@@ -6332,6 +6493,7 @@ GentleBoost (Gentle AdaBoost) is a variant that uses Newton stepping (fitting re
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain AdaBoost ensemble pruning methods.**
 
@@ -6378,6 +6540,7 @@ print(f"Best ensemble size: {best_n} out of 500")
 ---
 
 ## Question 35
+- [ ] Done
 
 **Discuss hybrid AdaBoost with Random Forest stumps.**
 
@@ -6419,6 +6582,7 @@ hybrid.fit(X_train, y_train)
 ---
 
 ## Question 36
+- [ ] Done
 
 **How would you tune hyper-parameters of AdaBoost?**
 
@@ -6469,6 +6633,7 @@ grid.fit(X_train, y_train)
 ---
 
 ## Question 37
+- [ ] Done
 
 **Explain theoretical convergence of training error in AdaBoost.**
 
@@ -6504,6 +6669,7 @@ Training error convergence doesn't guarantee test error convergence — the gap 
 ---
 
 ## Question 38
+- [ ] Done
 
 **Provide a real-world application where AdaBoost excels.**
 
@@ -6547,6 +6713,7 @@ AdaBoost excels in face detection, particularly in the Viola-Jones framework, wh
 ---
 
 ## Question 39
+- [ ] Done
 
 **Compare AdaBoost and Bagging on variance control.**
 
@@ -6581,6 +6748,7 @@ AdaBoost and Bagging differ fundamentally in how they achieve variance reduction
 ---
 
 ## Question 40
+- [ ] Done
 
 **How is AdaBoost used for face detection (Viola-Jones)?**
 
@@ -6618,6 +6786,7 @@ The cascade architecture means most image regions are rejected in the first 1-2 
 ---
 
 ## Question 41
+- [ ] Done
 
 **Explain L2-regularized AdaBoost variants.**
 
@@ -6654,6 +6823,7 @@ ada = AdaBoostClassifier(
 ---
 
 ## Question 42
+- [ ] Done
 
 **What diagnostics indicate AdaBoost is overfitting?**
 
@@ -6704,6 +6874,7 @@ plt.legend()
 ---
 
 ## Question 43
+- [ ] Done
 
 **Explain margin distribution plots for AdaBoost.**
 
@@ -6749,6 +6920,7 @@ plt.legend()
 ---
 
 ## Question 44
+- [ ] Done
 
 **Discuss AdaBoost in presence of label noise - MadaBoost.**
 
@@ -6786,6 +6958,7 @@ The weight cap prevents any single sample from accumulating more than $1/n$ of t
 ---
 
 ## Question 45
+- [ ] Done
 
 **Describe adaptive boosting for imbalanced cost settings.**
 
@@ -6829,6 +7002,7 @@ y_pred = (decision_values > threshold).astype(int)
 ---
 
 ## Question 46
+- [ ] Done
 
 **Explain how to extend AdaBoost for ranking (AdaRank).**
 
@@ -6867,6 +7041,7 @@ AdaRank adapts the AdaBoost framework for information retrieval ranking tasks, w
 ---
 
 ## Question 47
+- [ ] Done
 
 **Provide guidelines for choosing weak learner complexity.**
 
@@ -6909,6 +7084,7 @@ for depth in [1, 2, 3, 4, 5]:
 ---
 
 ## Question 48
+- [ ] Done
 
 **Discuss interpretability strategies for AdaBoost.**
 
@@ -6964,6 +7140,7 @@ shap.summary_plot(shap_values, X_test)
 ---
 
 ## Question 49
+- [ ] Done
 
 **Explain weighted voting at inference in AdaBoost.**
 
@@ -7003,6 +7180,7 @@ $F(x) = 1.0(+1) + 0.5(-1) + 0.8(+1) = 1.3 > 0 \rightarrow$ predict +1
 ---
 
 ## Question 50
+- [ ] Done
 
 **Compare AdaBoost's computational complexity with GBM.**
 
@@ -7047,6 +7225,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 # Bagging Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain the Bootstrap Aggregating (Bagging) algorithm.**
 
@@ -7055,6 +7234,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 2
+- [ ] Done
 
 **How does bagging reduce variance in ensemble models?**
 
@@ -7063,6 +7243,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 3
+- [ ] Done
 
 **Derive the variance reduction formula for bagging.**
 
@@ -7071,6 +7252,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is the out-of-bag (OOB) error and its utility?**
 
@@ -7079,6 +7261,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain bias-variance tradeoff in bagging.**
 
@@ -7087,6 +7270,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 6
+- [ ] Done
 
 **Why does bagging work better with high-variance models?**
 
@@ -7095,6 +7279,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 7
+- [ ] Done
 
 **Describe bootstrap sampling with replacement.**
 
@@ -7103,6 +7288,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 8
+- [ ] Done
 
 **How many unique samples are expected in each bootstrap?**
 
@@ -7111,6 +7297,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 9
+- [ ] Done
 
 **Compare bagging with pasting (sampling without replacement).**
 
@@ -7119,6 +7306,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain random subspace method in bagging.**
 
@@ -7127,6 +7315,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 11
+- [ ] Done
 
 **Discuss the role of bootstrap bias in bagging.**
 
@@ -7135,6 +7324,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 12
+- [ ] Done
 
 **How does bagging handle overfitting base learners?**
 
@@ -7143,6 +7333,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is the relationship between bagging and Random Forest?**
 
@@ -7151,6 +7342,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain parallel training advantages of bagging.**
 
@@ -7159,6 +7351,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 15
+- [ ] Done
 
 **How is prediction made in bagging for regression vs classification?**
 
@@ -7167,6 +7360,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 16
+- [ ] Done
 
 **Discuss optimal number of bootstrap samples.**
 
@@ -7175,6 +7369,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 17
+- [ ] Done
 
 **What base learners are most suitable for bagging?**
 
@@ -7183,6 +7378,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain OOB feature importance estimation.**
 
@@ -7191,6 +7387,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 19
+- [ ] Done
 
 **How does sample size affect bagging performance?**
 
@@ -7199,6 +7396,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 20
+- [ ] Done
 
 **Compare bagging with boosting algorithms.**
 
@@ -7207,6 +7405,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain stratified sampling in classification bagging.**
 
@@ -7215,6 +7414,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 22
+- [ ] Done
 
 **What is Double Bagging and its benefits?**
 
@@ -7223,6 +7423,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 23
+- [ ] Done
 
 **Discuss computational complexity of bagging.**
 
@@ -7231,6 +7432,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 24
+- [ ] Done
 
 **How can bagging be used for feature selection?**
 
@@ -7239,6 +7441,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain bagging with different base learner types.**
 
@@ -7247,6 +7450,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 26
+- [ ] Done
 
 **What is Subagging and how does it differ?**
 
@@ -7255,6 +7459,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 27
+- [ ] Done
 
 **Describe confidence intervals from bagged predictions.**
 
@@ -7263,6 +7468,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 28
+- [ ] Done
 
 **How does class imbalance affect bagging?**
 
@@ -7271,6 +7477,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 29
+- [ ] Done
 
 **Explain Random Patches method.**
 
@@ -7279,6 +7486,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 30
+- [ ] Done
 
 **What is Extremely Randomized Trees (Extra Trees)?**
 
@@ -7287,6 +7495,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 31
+- [ ] Done
 
 **Discuss memory requirements for bagging ensembles.**
 
@@ -7295,6 +7504,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 32
+- [ ] Done
 
 **How do you validate bagging models effectively?**
 
@@ -7303,6 +7513,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 33
+- [ ] Done
 
 **Explain bagging with cross-validation.**
 
@@ -7311,6 +7522,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 34
+- [ ] Done
 
 **What is Bayesian Model Averaging vs Bagging?**
 
@@ -7319,6 +7531,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 35
+- [ ] Done
 
 **Describe online/incremental bagging algorithms.**
 
@@ -7327,6 +7540,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 36
+- [ ] Done
 
 **How can you interpret bagged model predictions?**
 
@@ -7335,6 +7549,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 37
+- [ ] Done
 
 **Explain diversity measures in bagging ensembles.**
 
@@ -7343,6 +7558,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 38
+- [ ] Done
 
 **What hyperparameters need tuning in bagging?**
 
@@ -7351,6 +7567,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 39
+- [ ] Done
 
 **Discuss bagging performance on high-dimensional data.**
 
@@ -7359,6 +7576,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 40
+- [ ] Done
 
 **How does bagging handle outliers and noise?**
 
@@ -7367,6 +7585,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 41
+- [ ] Done
 
 **Explain theoretical guarantees of bagging convergence.**
 
@@ -7375,6 +7594,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 42
+- [ ] Done
 
 **What is Negative Correlation Learning in bagging?**
 
@@ -7383,6 +7603,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 43
+- [ ] Done
 
 **Describe weighted bagging approaches.**
 
@@ -7391,6 +7612,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 44
+- [ ] Done
 
 **How do you select optimal bootstrap sample size?**
 
@@ -7399,6 +7621,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 45
+- [ ] Done
 
 **Explain bagging for time series forecasting.**
 
@@ -7407,6 +7630,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 46
+- [ ] Done
 
 **What are limitations and failure cases of bagging?**
 
@@ -7415,6 +7639,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 47
+- [ ] Done
 
 **Discuss ensemble pruning for bagged models.**
 
@@ -7423,6 +7648,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 48
+- [ ] Done
 
 **How does bagging compare to stacking?**
 
@@ -7431,6 +7657,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 49
+- [ ] Done
 
 **Explain quantile prediction with bagging.**
 
@@ -7439,6 +7666,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 50
+- [ ] Done
 
 **Provide implementation tips for efficient bagging.**
 
@@ -7454,6 +7682,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 # Boosting Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain the core concept of boosting algorithms.**
 
@@ -7462,6 +7691,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 2
+- [ ] Done
 
 **How does boosting convert weak learners to strong learners?**
 
@@ -7470,6 +7700,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the PAC learning framework for boosting.**
 
@@ -7478,6 +7709,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is the difference between adaptive and non-adaptive boosting?**
 
@@ -7486,6 +7718,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain forward stagewise additive modeling.**
 
@@ -7494,6 +7727,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do loss functions affect boosting algorithms?**
 
@@ -7502,6 +7736,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 7
+- [ ] Done
 
 **Compare sequential vs parallel ensemble methods.**
 
@@ -7510,6 +7745,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 8
+- [ ] Done
 
 **What are the theoretical guarantees of boosting?**
 
@@ -7518,6 +7754,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain the bias-variance decomposition for boosting.**
 
@@ -7526,6 +7763,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 10
+- [ ] Done
 
 **Discuss overfitting behavior in boosting algorithms.**
 
@@ -7534,6 +7772,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 11
+- [ ] Done
 
 **How does regularization work in boosting?**
 
@@ -7542,6 +7781,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 12
+- [ ] Done
 
 **What is the role of learning rate in boosting?**
 
@@ -7550,6 +7790,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain early stopping strategies for boosting.**
 
@@ -7558,6 +7799,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 14
+- [ ] Done
 
 **Compare different weak learner choices for boosting.**
 
@@ -7566,6 +7808,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is coordinate descent in the context of boosting?**
 
@@ -7574,6 +7817,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 16
+- [ ] Done
 
 **Discuss the functional gradient descent view of boosting.**
 
@@ -7582,6 +7826,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you handle multi-class problems in boosting?**
 
@@ -7590,6 +7835,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain weight initialization strategies in boosting.**
 
@@ -7598,6 +7844,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is the difference between discrete and continuous boosting?**
 
@@ -7606,6 +7853,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 20
+- [ ] Done
 
 **Discuss convergence properties of boosting algorithms.**
 
@@ -7614,6 +7862,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 21
+- [ ] Done
 
 **How does noise affect boosting performance?**
 
@@ -7622,6 +7871,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain the margin theory for boosting generalization.**
 
@@ -7630,6 +7880,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 23
+- [ ] Done
 
 **What are the computational complexities of various boosting methods?**
 
@@ -7638,6 +7889,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 24
+- [ ] Done
 
 **Discuss memory efficiency in boosting algorithms.**
 
@@ -7646,6 +7898,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 25
+- [ ] Done
 
 **How do you validate and tune boosting models?**
 
@@ -7654,6 +7907,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain ensemble diversity in boosting.**
 
@@ -7662,6 +7916,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 27
+- [ ] Done
 
 **What is the relationship between boosting and neural networks?**
 
@@ -7670,6 +7925,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 28
+- [ ] Done
 
 **Discuss robust boosting algorithms for outliers.**
 
@@ -7678,6 +7934,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 29
+- [ ] Done
 
 **How does sample weighting evolve during boosting?**
 
@@ -7686,6 +7943,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain cost-sensitive boosting approaches.**
 
@@ -7694,6 +7952,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 31
+- [ ] Done
 
 **What is Newton boosting and second-order methods?**
 
@@ -7702,6 +7961,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 32
+- [ ] Done
 
 **Discuss online and incremental boosting algorithms.**
 
@@ -7710,6 +7970,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 33
+- [ ] Done
 
 **How do you interpret feature importance in boosting?**
 
@@ -7718,6 +7979,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain boosting for ranking and structured prediction.**
 
@@ -7726,6 +7988,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 35
+- [ ] Done
 
 **What are the limitations of boosting algorithms?**
 
@@ -7734,6 +7997,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 36
+- [ ] Done
 
 **Discuss distributed and parallel boosting implementations.**
 
@@ -7742,6 +8006,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 37
+- [ ] Done
 
 **How does tree depth affect boosting performance?**
 
@@ -7750,6 +8015,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 38
+- [ ] Done
 
 **Explain boosting with different base learner families.**
 
@@ -7758,6 +8024,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 39
+- [ ] Done
 
 **What is LPBoost and linear programming formulation?**
 
@@ -7766,6 +8033,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 40
+- [ ] Done
 
 **Discuss boosting for imbalanced datasets.**
 
@@ -7774,6 +8042,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 41
+- [ ] Done
 
 **How do you handle categorical features in boosting?**
 
@@ -7782,6 +8051,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 42
+- [ ] Done
 
 **Explain multi-armed bandit approaches to boosting.**
 
@@ -7790,6 +8060,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 43
+- [ ] Done
 
 **What is AnyBoost framework?**
 
@@ -7798,6 +8069,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 44
+- [ ] Done
 
 **Discuss boosting for time series and temporal data.**
 
@@ -7806,6 +8078,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 45
+- [ ] Done
 
 **How do you perform feature selection with boosting?**
 
@@ -7814,6 +8087,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 46
+- [ ] Done
 
 **Explain confidence and prediction intervals in boosting.**
 
@@ -7822,6 +8096,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 47
+- [ ] Done
 
 **What is the relationship between boosting and kernel methods?**
 
@@ -7830,6 +8105,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 48
+- [ ] Done
 
 **Discuss ensemble pruning for boosted models.**
 
@@ -7838,6 +8114,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 49
+- [ ] Done
 
 **How do you debug and diagnose boosting model issues?**
 
@@ -7846,6 +8123,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 50
+- [ ] Done
 
 **Explain recent advances and trends in boosting research.**
 
@@ -7861,6 +8139,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 # Stacking Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain the stacked generalization (stacking) concept.**
 
@@ -7869,6 +8148,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 2
+- [ ] Done
 
 **What is the difference between blending and stacking?**
 
@@ -7877,6 +8157,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you prevent overfitting in stacking?**
 
@@ -7885,6 +8166,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain the role of meta-learner in stacking.**
 
@@ -7893,6 +8175,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 5
+- [ ] Done
 
 **Describe k-fold cross-validation stacking.**
 
@@ -7901,6 +8184,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 6
+- [ ] Done
 
 **What are level-0 and level-1 predictions in stacking?**
 
@@ -7909,6 +8193,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you select diverse base learners for stacking?**
 
@@ -7917,6 +8202,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain multi-level stacking architectures.**
 
@@ -7925,6 +8211,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 9
+- [ ] Done
 
 **What meta-learners work best for stacking?**
 
@@ -7933,6 +8220,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 10
+- [ ] Done
 
 **Discuss computational complexity of stacking ensembles.**
 
@@ -7941,6 +8229,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 11
+- [ ] Done
 
 **How does stacking handle feature importance attribution?**
 
@@ -7949,6 +8238,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain holdout vs cross-validation for meta-features.**
 
@@ -7957,6 +8247,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is dynamic stacking and adaptive meta-learning?**
 
@@ -7965,6 +8256,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 14
+- [ ] Done
 
 **How do you optimize base learner diversity in stacking?**
 
@@ -7973,6 +8265,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 15
+- [ ] Done
 
 **Discuss regularization in stacking meta-learners.**
 
@@ -7981,6 +8274,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain stacking for regression vs classification.**
 
@@ -7989,6 +8283,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 17
+- [ ] Done
 
 **What is super learning and targeted maximum likelihood?**
 
@@ -7997,6 +8292,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 18
+- [ ] Done
 
 **How does stacking compare to voting ensembles?**
 
@@ -8005,6 +8301,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe feature engineering for meta-learners.**
 
@@ -8013,6 +8310,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 20
+- [ ] Done
 
 **What are the theoretical guarantees of stacking?**
 
@@ -8021,6 +8319,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain nested cross-validation for stacking validation.**
 
@@ -8029,6 +8328,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 22
+- [ ] Done
 
 **How do you handle class imbalance in stacking?**
 
@@ -8037,6 +8337,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 23
+- [ ] Done
 
 **What is Bayesian model stacking?**
 
@@ -8045,6 +8346,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 24
+- [ ] Done
 
 **Discuss parallel vs sequential stacking implementations.**
 
@@ -8053,6 +8355,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 25
+- [ ] Done
 
 **How do you perform hyperparameter tuning in stacking?**
 
@@ -8061,6 +8364,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain confidence intervals from stacked predictions.**
 
@@ -8069,6 +8373,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 27
+- [ ] Done
 
 **What is ensemble selection vs stacking?**
 
@@ -8077,6 +8382,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 28
+- [ ] Done
 
 **How does sample size affect stacking performance?**
 
@@ -8085,6 +8391,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 29
+- [ ] Done
 
 **Discuss memory and storage requirements for stacking.**
 
@@ -8093,6 +8400,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain interpretability challenges in stacking.**
 
@@ -8101,6 +8409,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 31
+- [ ] Done
 
 **What is negative correlation learning in stacking?**
 
@@ -8109,6 +8418,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 32
+- [ ] Done
 
 **How do you debug stacking model performance?**
 
@@ -8117,6 +8427,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 33
+- [ ] Done
 
 **Describe online and streaming stacking approaches.**
 
@@ -8125,6 +8436,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 34
+- [ ] Done
 
 **What is mixture of experts vs stacking?**
 
@@ -8133,6 +8445,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 35
+- [ ] Done
 
 **Explain stacking with heterogeneous base learners.**
 
@@ -8141,6 +8454,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 36
+- [ ] Done
 
 **How does noise affect stacking ensemble performance?**
 
@@ -8149,6 +8463,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 37
+- [ ] Done
 
 **What are common failure modes of stacking?**
 
@@ -8157,6 +8472,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 38
+- [ ] Done
 
 **Discuss feature selection for stacking meta-features.**
 
@@ -8165,6 +8481,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 39
+- [ ] Done
 
 **Explain weighted stacking and adaptive combining.**
 
@@ -8173,6 +8490,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 40
+- [ ] Done
 
 **How do you handle temporal data in stacking?**
 
@@ -8181,6 +8499,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 41
+- [ ] Done
 
 **What is evolutionary ensemble selection?**
 
@@ -8189,6 +8508,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 42
+- [ ] Done
 
 **Describe stacking for multi-output prediction problems.**
 
@@ -8197,6 +8517,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 43
+- [ ] Done
 
 **How does stacking perform with limited training data?**
 
@@ -8205,6 +8526,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 44
+- [ ] Done
 
 **Explain automated machine learning (AutoML) with stacking.**
 
@@ -8213,6 +8535,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 45
+- [ ] Done
 
 **What is the relationship between stacking and neural networks?**
 
@@ -8221,6 +8544,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 46
+- [ ] Done
 
 **Discuss distributed stacking implementations.**
 
@@ -8229,6 +8553,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 47
+- [ ] Done
 
 **How do you validate stacking models effectively?**
 
@@ -8237,6 +8562,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 48
+- [ ] Done
 
 **Explain transfer learning with stacked ensembles.**
 
@@ -8245,6 +8571,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 49
+- [ ] Done
 
 **What are best practices for production stacking systems?**
 
@@ -8253,6 +8580,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 50
+- [ ] Done
 
 **Describe recent advances in stacking and meta-learning.**
 
@@ -8268,6 +8596,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 # Voting Classifier Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain hard voting vs soft voting in ensemble classifiers.**
 
@@ -8276,6 +8605,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 2
+- [ ] Done
 
 **When is majority voting optimal for ensemble classification?**
 
@@ -8284,6 +8614,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 3
+- [ ] Done
 
 **How does Condorcet's jury theorem apply to voting classifiers?**
 
@@ -8292,6 +8623,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 4
+- [ ] Done
 
 **Derive the theoretical error rate for majority voting.**
 
@@ -8300,6 +8632,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 5
+- [ ] Done
 
 **What are the assumptions for effective voting ensembles?**
 
@@ -8308,6 +8641,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain weighted voting and optimal weight selection.**
 
@@ -8316,6 +8650,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you handle ties in voting classifiers?**
 
@@ -8324,6 +8659,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 8
+- [ ] Done
 
 **Discuss diversity requirements for voting ensembles.**
 
@@ -8332,6 +8668,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is the difference between averaging and voting?**
 
@@ -8340,6 +8677,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain probability calibration for soft voting.**
 
@@ -8348,6 +8686,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 11
+- [ ] Done
 
 **How does class imbalance affect voting performance?**
 
@@ -8356,6 +8695,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 12
+- [ ] Done
 
 **What are the computational advantages of voting?**
 
@@ -8364,6 +8704,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 13
+- [ ] Done
 
 **Describe unanimous voting and its applications.**
 
@@ -8372,6 +8713,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 14
+- [ ] Done
 
 **How do you select base classifiers for voting?**
 
@@ -8380,6 +8722,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain threshold voting and confidence-based voting.**
 
@@ -8388,6 +8731,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is ranked voting in multi-class classification?**
 
@@ -8396,6 +8740,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 17
+- [ ] Done
 
 **Discuss the bias-variance tradeoff in voting ensembles.**
 
@@ -8404,6 +8749,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 18
+- [ ] Done
 
 **How does voting handle unreliable base classifiers?**
 
@@ -8412,6 +8758,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain adaptive voting and dynamic weight adjustment.**
 
@@ -8420,6 +8767,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 20
+- [ ] Done
 
 **What are the limitations of simple voting schemes?**
 
@@ -8428,6 +8776,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 21
+- [ ] Done
 
 **How do you validate voting classifier performance?**
 
@@ -8436,6 +8785,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 22
+- [ ] Done
 
 **Describe voting for ordinal and structured outputs.**
 
@@ -8444,6 +8794,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 23
+- [ ] Done
 
 **What is consensus voting and agreement measures?**
 
@@ -8452,6 +8803,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain voting with heterogeneous feature spaces.**
 
@@ -8460,6 +8812,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 25
+- [ ] Done
 
 **How does sample size affect voting ensemble accuracy?**
 
@@ -8468,6 +8821,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 26
+- [ ] Done
 
 **Discuss interpretability of voting classifier decisions.**
 
@@ -8476,6 +8830,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 27
+- [ ] Done
 
 **What is the role of base classifier correlation in voting?**
 
@@ -8484,6 +8839,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 28
+- [ ] Done
 
 **Explain voting with missing predictions from base models.**
 
@@ -8492,6 +8848,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 29
+- [ ] Done
 
 **How do you optimize the number of voters?**
 
@@ -8500,6 +8857,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 30
+- [ ] Done
 
 **Describe voting mechanisms for regression problems.**
 
@@ -8508,6 +8866,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 31
+- [ ] Done
 
 **What is fuzzy voting and soft decision boundaries?**
 
@@ -8516,6 +8875,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 32
+- [ ] Done
 
 **Explain voting with confidence intervals and uncertainty.**
 
@@ -8524,6 +8884,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 33
+- [ ] Done
 
 **How does voting compare to other ensemble methods?**
 
@@ -8532,6 +8893,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 34
+- [ ] Done
 
 **Discuss parallel implementation of voting classifiers.**
 
@@ -8540,6 +8902,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 35
+- [ ] Done
 
 **What are best practices for voting ensemble design?**
 
@@ -8548,6 +8911,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 36
+- [ ] Done
 
 **Explain strategic voting and game-theoretic considerations.**
 
@@ -8556,6 +8920,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 37
+- [ ] Done
 
 **How do you handle multi-label classification with voting?**
 
@@ -8564,6 +8929,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 38
+- [ ] Done
 
 **Describe voting aggregation in hierarchical classification.**
 
@@ -8572,6 +8938,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 39
+- [ ] Done
 
 **What is expert voting and domain-specific ensembles?**
 
@@ -8580,6 +8947,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 40
+- [ ] Done
 
 **Explain voting robustness to adversarial attacks.**
 
@@ -8588,6 +8956,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 41
+- [ ] Done
 
 **How do you perform feature importance analysis in voting?**
 
@@ -8596,6 +8965,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 42
+- [ ] Done
 
 **Discuss voting with time-varying base classifier performance.**
 
@@ -8604,6 +8974,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 43
+- [ ] Done
 
 **What is deliberation and iterative voting?**
 
@@ -8612,6 +8983,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 44
+- [ ] Done
 
 **Explain voting for online and streaming classification.**
 
@@ -8620,6 +8992,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 45
+- [ ] Done
 
 **How does voting handle concept drift?**
 
@@ -8628,6 +9001,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 46
+- [ ] Done
 
 **Describe voting mechanisms for cost-sensitive learning.**
 
@@ -8636,6 +9010,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 47
+- [ ] Done
 
 **What are the communication requirements in distributed voting?**
 
@@ -8644,6 +9019,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 48
+- [ ] Done
 
 **Explain voting with heterogeneous evaluation metrics.**
 
@@ -8652,6 +9028,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 49
+- [ ] Done
 
 **How do you debug voting classifier failures?**
 
@@ -8660,6 +9037,7 @@ AdaBoost and Gradient Boosting (GBM) have different computational profiles. AdaB
 ---
 
 ## Question 50
+- [ ] Done
 
 **Discuss recent research in voting and consensus methods.**
 

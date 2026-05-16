@@ -362,6 +362,7 @@ df['new'] = np.select(conditions, choices, default=0)
 5. **Use built-in Pandas/NumPy functions** whenever possible
 
 ## Question 1
+- [ ] Done
 
 **Describe how you could use Pandas to preprocess data for a machine learning model**
 
@@ -443,6 +444,7 @@ y = df['target']
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you use Pandas to prepare and clean ecommerce sales data for better insight into customer purchasing patterns?**
 

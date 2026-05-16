@@ -1,6 +1,7 @@
 # Dimensionality Reduction Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Can you define dimensionality reduction and explain its importance in machine learning?**
 
@@ -33,6 +34,7 @@ Dimensionality reduction is the process of reducing the number of input features
 ---
 
 ## Question 2
+- [ ] Done
 
 **What are the potential issues caused by high-dimensional data?**
 
@@ -71,6 +73,7 @@ High-dimensional data refers to datasets with a large number of features relativ
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain the concept of the “curse of dimensionality.”**
 ### Answer
@@ -111,6 +114,7 @@ The curse of dimensionality refers to various phenomena that arise when analyzin
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is feature selection, and how is it different from feature extraction?**
 
@@ -169,6 +173,7 @@ X_extracted = pca.fit_transform(X)  # Returns new transformed features
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain Principal Component Analysis (PCA) and its objectives.**
 
@@ -228,6 +233,7 @@ print(pca.explained_variance_ratio_)  # e.g., [0.72, 0.15]
 ---
 
 ## Question 6
+- [ ] Done
 
 **How does Linear Discriminant Analysis (LDA) differ from PCA?**
 
@@ -291,6 +297,7 @@ X_lda = lda.fit_transform(X, y)  # Note: requires y (labels)
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is the role of eigenvectors and eigenvalues in PCA?**
 
@@ -360,6 +367,7 @@ print(f"Variance explained: {variance_ratio}")
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe how PCA can be used for noise reduction in data.**
 
@@ -422,6 +430,7 @@ X_denoised = pca.inverse_transform(X_transformed)
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain the kernel trick in Kernel PCA and when you might use it.**
 
@@ -484,6 +493,7 @@ X_kpca = kpca.fit_transform(X)
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is the difference between t-SNE and PCA for dimensionality reduction?**
 
@@ -551,6 +561,7 @@ X_tsne = tsne.fit_transform(X_pca)  # Use PCA output for speed
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain how the Singular Value Decomposition (SVD) technique is related to PCA.**
 
@@ -621,6 +632,7 @@ variance_explained = (S ** 2) / (len(X) - 1)
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe the process of training a model using LDA.**
 
@@ -692,6 +704,7 @@ X_test_reduced = lda_reduce.transform(X_test)
 ---
 
 ## Question 13
+- [ ] Done
 
 **What are the limitations of using PCA for dimensionality reduction?**
 
@@ -773,6 +786,7 @@ plt.ylabel('Cumulative Variance Explained')
 ---
 
 ## Question 14
+- [ ] Done
 
 **What are some of the challenges associated with using t-SNE?**
 
@@ -854,6 +868,7 @@ X_tsne = tsne.fit_transform(X_pca)
 ---
 
 ## Question 15
+- [ ] Done
 
 **Describe the steps for feature selection using a tree-based estimator like Random Forest.**
 
@@ -931,6 +946,7 @@ X_selected = X[top_features]
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain how dimensionality reduction can affect the performance of clustering algorithms.**
 
@@ -1010,6 +1026,7 @@ print(f"Reduced silhouette: {score_reduced:.3f}")
 ---
 
 ## Question 17
+- [ ] Done
 
 **How does feature scaling impact the outcome of PCA?**
 
@@ -1083,6 +1100,7 @@ print("With scaling:", pca_scaled.explained_variance_ratio_)
 ---
 
 ## Question 18
+- [ ] Done
 
 **Can dimensionality reduction be applied to any machine learning algorithms? If not, explain why.**
 
@@ -1167,6 +1185,7 @@ rf.fit(X, y)  # Works well on high-dim X directly
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain how dimensionality reduction techniques can be adapted for large-scale distributed systems.**
 
@@ -1264,6 +1283,7 @@ Model training (fits in memory)
 ---
 
 ## Question 20
+- [ ] Done
 
 **What are the implications of using deep learning-based methods for dimensionality reduction, such as variational autoencoders?**
 
@@ -1376,6 +1396,7 @@ vae = VAE(latent_dim=10)
 # t-SNE Interview Questions - Theory Questions
 
 ## Question 21
+- [ ] Done
 
 **Explain t-SNE cost function (KL divergence between P and Q).**
 
@@ -1413,6 +1434,7 @@ t-SNE (t-distributed Stochastic Neighbor Embedding) minimizes the Kullback-Leibl
 ---
 
 ## Question 22
+- [ ] Done
 
 **Describe computation of pairwise affinities in high-dim space.**
 
@@ -1451,6 +1473,7 @@ Pairwise affinities in t-SNE measure the similarity between every pair of data p
 ---
 
 ## Question 23
+- [ ] Done
 
 **What is perplexity and how does it influence local vs. global structure?**
 
@@ -1488,6 +1511,7 @@ Perplexity is a hyperparameter in t-SNE that controls the effective number of ne
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain early exaggeration phase and its purpose.**
 
@@ -1526,6 +1550,7 @@ Early exaggeration is a phase during the first iterations of t-SNE optimization 
 ---
 
 ## Question 25
+- [ ] Done
 
 **Discuss Barnes–Hut approximation for speed.**
 
@@ -1565,6 +1590,7 @@ The Barnes-Hut approximation is a tree-based algorithm that reduces t-SNE's repu
 ---
 
 ## Question 26
+- [ ] Done
 
 **Describe gradient descent optimization steps in t-SNE.**
 
@@ -1606,6 +1632,7 @@ t-SNE optimizes its cost function (KL divergence) using gradient descent with mo
 ---
 
 ## Question 27
+- [ ] Done
 
 **Compare t-SNE with PCA for visualization tasks.**
 
@@ -1649,6 +1676,7 @@ X_tsne = TSNE(n_components=2, perplexity=30).fit_transform(X_pca)
 ---
 
 ## Question 28
+- [ ] Done
 
 **Explain why t-SNE is non-parametric.**
 
@@ -1689,6 +1717,7 @@ t-SNE is non-parametric because it does not learn an explicit mapping function f
 ---
 
 ## Question 29
+- [ ] Done
 
 **Discuss limitations: crowding problem, loss of global geometry.**
 
@@ -1730,6 +1759,7 @@ t-SNE has several known limitations including the crowding problem, loss of glob
 ---
 
 ## Question 30
+- [ ] Done
 
 **How does initialization (PCA, random) affect embedding?**
 
@@ -1776,6 +1806,7 @@ X_embedded = tsne.fit_transform(X)
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain how to visualize high-dimensional clusters properly.**
 
@@ -1819,6 +1850,7 @@ Proper visualization of high-dimensional clusters requires careful preprocessing
 ---
 
 ## Question 32
+- [ ] Done
 
 **Discuss pitfalls interpreting distances between t-SNE clusters.**
 
@@ -1858,6 +1890,7 @@ Distances between clusters in t-SNE embeddings are generally NOT meaningful and 
 ---
 
 ## Question 33
+- [ ] Done
 
 **Explain multi-scale t-SNE (FIt-SNE, openTSNE).**
 
@@ -1903,6 +1936,7 @@ embedding = openTSNE.TSNE().fit(affinities=affinities)
 ---
 
 ## Question 34
+- [ ] Done
 
 **Describe metric choice (cosine, Euclidean) effect.**
 
@@ -1946,6 +1980,7 @@ X_embedded = tsne.fit_transform(X)
 ---
 
 ## Question 35
+- [ ] Done
 
 **Explain how to embed new points post-hoc (parametric t-SNE).**
 
@@ -1993,6 +2028,7 @@ new_embedding = embedding.transform(X_new)
 ---
 
 ## Question 36
+- [ ] Done
 
 **Discuss choosing perplexity for large datasets.**
 
@@ -2031,6 +2067,7 @@ Perplexity should be scaled with dataset size because it controls the effective 
 ---
 
 ## Question 37
+- [ ] Done
 
 **Explain learning rate effect on convergence.**
 
@@ -2068,6 +2105,7 @@ The learning rate (eta) in t-SNE controls the step size during gradient descent 
 ---
 
 ## Question 38
+- [ ] Done
 
 **Describe using t-SNE for image embeddings after CNN features.**
 
@@ -2116,6 +2154,7 @@ plt.scatter(embeddings[:, 0], embeddings[:, 1], c=labels, cmap='tab10')
 ---
 
 ## Question 39
+- [ ] Done
 
 **Explain relationship between t-SNE and SNE, symmetric SNE.**
 
@@ -2153,6 +2192,7 @@ t-SNE evolved from the original SNE (Stochastic Neighbor Embedding) through symm
 ---
 
 ## Question 40
+- [ ] Done
 
 **Discuss hierarchical or tree-based t-SNE variants.**
 
@@ -2193,6 +2233,7 @@ Hierarchical or tree-based t-SNE variants extend standard t-SNE to handle multi-
 ---
 
 ## Question 41
+- [ ] Done
 
 **Explain exaggeration decay schedule.**
 
@@ -2230,6 +2271,7 @@ The exaggeration decay schedule controls how the early exaggeration factor trans
 ---
 
 ## Question 42
+- [ ] Done
 
 **Compare UMAP vs. t-SNE (speed, global structure).**
 
@@ -2273,6 +2315,7 @@ UMAP (Uniform Manifold Approximation and Projection) and t-SNE are both non-line
 ---
 
 ## Question 43
+- [ ] Done
 
 **Discuss GPU acceleration (t-SNE-CUDA).**
 
@@ -2319,6 +2362,7 @@ embedding = tsne.fit_transform(X_gpu)  # cuDF or cuPy array
 ---
 
 ## Question 44
+- [ ] Done
 
 **Explain embedding timeseries by concatenated features.**
 
@@ -2362,6 +2406,7 @@ embedding = tsne.fit_transform(dtw_distance_matrix)
 ---
 
 ## Question 45
+- [ ] Done
 
 **Describe using t-SNE on word embeddings.**
 
@@ -2410,6 +2455,7 @@ for i, word in enumerate(words[:100]):  # Label top words
 ---
 
 ## Question 46
+- [ ] Done
 
 **Explain perplexity scaling with dataset size.**
 
@@ -2448,6 +2494,7 @@ Perplexity should scale with dataset size because it represents the effective nu
 ---
 
 ## Question 47
+- [ ] Done
 
 **Discuss reproducibility: random seeds and variance.**
 
@@ -2493,6 +2540,7 @@ tsne = TSNE(
 ---
 
 ## Question 48
+- [ ] Done
 
 **Explain perplexity = k conceptually (effective neighbors).**
 
@@ -2531,6 +2579,7 @@ Perplexity in t-SNE is conceptually equivalent to the effective number of neares
 ---
 
 ## Question 49
+- [ ] Done
 
 **Describe control of output dimensionality > 2.**
 
@@ -2574,6 +2623,7 @@ fig = px.scatter_3d(x=tsne_3d[:,0], y=tsne_3d[:,1], z=tsne_3d[:,2], color=labels
 ---
 
 ## Question 50
+- [ ] Done
 
 **Explain pitfalls of using t-SNE for clustering.**
 
@@ -2618,6 +2668,7 @@ plt.scatter(tsne[:, 0], tsne[:, 1], c=clusters)
 ---
 
 ## Question 51
+- [ ] Done
 
 **Discuss trustworthiness and continuity metrics.**
 
@@ -2660,6 +2711,7 @@ T = trustworthiness(X_high, X_low, n_neighbors=12)
 ---
 
 ## Question 52
+- [ ] Done
 
 **Provide pseudo-code outline of t-SNE loop.**
 
@@ -2715,6 +2767,7 @@ FUNCTION t_SNE(X, n_dims=2, perplexity=30, n_iter=1000, lr=200):
 ---
 
 ## Question 53
+- [ ] Done
 
 **Explain t-SNE embedding for gene expression scRNA-seq data.**
 
@@ -2760,6 +2813,7 @@ sc.pl.tsne(adata, color=['cell_type'])
 ---
 
 ## Question 54
+- [ ] Done
 
 **Describe how to color points by metadata for insight.**
 
@@ -2809,6 +2863,7 @@ axes[2].set_title('Batch ID')
 ---
 
 ## Question 55
+- [ ] Done
 
 **Explain computation of pairwise probability matrix P.**
 
@@ -2850,6 +2905,7 @@ The pairwise probability matrix P in t-SNE encodes the similarity structure of t
 ---
 
 ## Question 56
+- [ ] Done
 
 **Discuss memory footprint scaling.**
 
@@ -2888,6 +2944,7 @@ Memory footprint of t-SNE scales quadratically O(n^2) for exact computation and 
 ---
 
 ## Question 57
+- [ ] Done
 
 **Explain why t-SNE may form spurious "rings".**
 
@@ -2921,6 +2978,7 @@ Spurious ring or circular patterns in t-SNE embeddings are artifacts that occur 
 ---
 
 ## Question 58
+- [ ] Done
 
 **Discuss strategies to preserve global structures (global t-SNE).**
 
@@ -2963,6 +3021,7 @@ embedding = openTSNE.TSNE(initialization='pca').fit(affinities=affinities)
 ---
 
 ## Question 59
+- [ ] Done
 
 **Explain using PCA pre-processing before t-SNE.**
 
@@ -3014,6 +3073,7 @@ X_embedded = tsne.fit_transform(X_pca)
 ---
 
 ## Question 60
+- [ ] Done
 
 **Describe "opt-SNE" parameter heuristic.**
 
@@ -3062,6 +3122,7 @@ tsne = TSNE(
 ---
 
 ## Question 61
+- [ ] Done
 
 **Explain effect of outliers on embedding.**
 
@@ -3106,6 +3167,7 @@ tsne_result = TSNE(n_components=2).fit_transform(X_clean)
 ---
 
 ## Question 62
+- [ ] Done
 
 **Discuss interactive t-SNE visual analytics tools.**
 
@@ -3153,6 +3215,7 @@ fig.show()
 ---
 
 ## Question 63
+- [ ] Done
 
 **Explain gradient clipping in t-SNE optimization.**
 
@@ -3195,6 +3258,7 @@ Y = Y + learning_rate * grad + momentum * velocity
 ---
 
 ## Question 64
+- [ ] Done
 
 **Describe perplexity sweep and plot to choose stable regions.**
 
@@ -3244,6 +3308,7 @@ plt.tight_layout()
 ---
 
 ## Question 65
+- [ ] Done
 
 **Discuss trade-offs between FIt-SNE and UMAP.**
 
@@ -3282,6 +3347,7 @@ FIt-SNE (Fast Interpolation-based t-SNE) and UMAP are both modern alternatives t
 ---
 
 ## Question 66
+- [ ] Done
 
 **Explain embedding discrete categorical variables with t-SNE.**
 
@@ -3330,6 +3396,7 @@ tsne = TSNE(n_components=2, perplexity=30).fit_transform(X_pca)
 ---
 
 ## Question 67
+- [ ] Done
 
 **Provide a case study using t-SNE in cybersecurity.**
 
@@ -3381,6 +3448,7 @@ plt.scatter(X_tsne[:, 0], X_tsne[:, 1], c=df['label'].map({'benign':0, 'attack':
 ---
 
 ## Question 68
+- [ ] Done
 
 **Predict research trends in faster, more faithful t-SNE variants.**
 
@@ -3416,6 +3484,7 @@ Research in t-SNE is evolving toward faster algorithms, better global structure 
 ---
 
 ## Question 69
+- [ ] Done
 
 **Explain combining t-SNE with clustering for insight.**
 
@@ -3467,6 +3536,7 @@ plt.title('K-Means Clusters Visualized with t-SNE')
 ---
 
 ## Question 70
+- [ ] Done
 
 **Summarize t-SNE strengths and weaknesses.**
 
@@ -3518,6 +3588,7 @@ t-SNE remains the gold standard for revealing local cluster structure in 2D visu
 ---
 
 ## Question 71
+- [ ] Done
 
 **In PCA, how do you decide on the number of principal components to keep?**
 
@@ -3585,6 +3656,7 @@ best_k = np.argmax(scores) + 1
 ---
 
 ## Question 72
+- [ ] Done
 
 **How can one interpret the components obtained from a PCA?**
 
@@ -3657,6 +3729,7 @@ plt.title('PCA Loading Plot')
 ---
 
 ## Question 73
+- [ ] Done
 
 **How do you handle missing values when applying PCA?**
 
@@ -3724,6 +3797,7 @@ pipeline_iter = Pipeline([
 ---
 
 ## Question 74
+- [ ] Done
 
 **What cross-validation technique would you use when performing dimensionality reduction?**
 
@@ -3811,6 +3885,7 @@ scores = cross_val_score(grid, X, y, cv=5)
 ---
 
 ## Question 75
+- [ ] Done
 
 **How can you evaluate if dimensionality reduction has preserved the important features of the dataset?**
 
@@ -3886,6 +3961,7 @@ plt.title('PCA Projection')
 ---
 
 ## Question 76
+- [ ] Done
 
 **What preprocessing steps would you take before applying dimensionality reduction algorithms?**
 
@@ -3969,6 +4045,7 @@ X_reduced = full_pipeline.fit_transform(X)
 ---
 
 ## Question 77
+- [ ] Done
 
 **How might advancements in quantum computing impact the field of dimensionality reduction?**
 
@@ -4026,6 +4103,7 @@ This is a forward-looking question. Key points to mention:
 ---
 
 ## Question 78
+- [ ] Done
 
 **What role do you think dimensionality reduction will play in the future of interpretable machine learning?**
 
@@ -4088,6 +4166,7 @@ Emphasize:
 ---
 
 ## Question 79
+- [ ] Done
 
 **Discuss the difference between linear and nonlinear dimensionality reduction techniques.**
 
@@ -4177,6 +4256,7 @@ Is data structure linear?
 ---
 
 ## Question 80
+- [ ] Done
 
 **Discuss the concept of t-Distributed Stochastic Neighbor Embedding (t-SNE).**
 
@@ -4265,6 +4345,7 @@ plt.title('t-SNE Visualization')
 ---
 
 ## Question 81
+- [ ] Done
 
 **Discuss the role of manifold learning in dimensionality reduction. Give examples like Isomap or Locally Linear Embedding (LLE).**
 
@@ -4365,6 +4446,7 @@ X_lle = lle.fit_transform(X)
 ---
 
 ## Question 82
+- [ ] Done
 
 **Discuss the advantages and disadvantages of using Autoencoders for dimensionality reduction.**
 
@@ -4477,6 +4559,7 @@ X_reduced = encoder.predict(X)
 ---
 
 ## Question 83
+- [ ] Done
 
 **Discuss current research topics in the field of dimensionality reduction.**
 

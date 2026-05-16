@@ -1,6 +1,7 @@
 # Autoencoders Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is an autoencoder?**
 
@@ -33,6 +34,7 @@ Think of it as forcing data through a narrow pipe (bottleneck). Only essential i
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the architecture of a basic autoencoder.**
 
@@ -69,6 +71,7 @@ Like an hourglass - wide at input, narrow in middle (bottleneck), wide again at 
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is the difference between an encoder and a decoder?**
 
@@ -98,6 +101,7 @@ Like an hourglass - wide at input, narrow in middle (bottleneck), wide again at 
 ---
 
 ## Question 4
+- [ ] Done
 
 **What are some key applications of autoencoders?**
 
@@ -125,6 +129,7 @@ Like an hourglass - wide at input, narrow in middle (bottleneck), wide again at 
 ---
 
 ## Question 5
+- [ ] Done
 
 **Describe the difference between a traditional autoencoder and a variational autoencoder (VAE).**
 
@@ -161,6 +166,7 @@ $$z = \mu + \sigma \cdot \epsilon, \quad \epsilon \sim \mathcal{N}(0, 1)$$
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is meant by the latent space in the context of autoencoders?**
 
@@ -196,6 +202,7 @@ Think of latent space as a "summary room" where all the key information about an
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain the concept of a sparse autoencoder.**
 
@@ -232,6 +239,7 @@ Like forcing a team where only 2-3 players can be active at a time. Each player 
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is a denoising autoencoder and how does it work?**
 
@@ -272,6 +280,7 @@ Like learning to read handwriting by practicing with smudged text. You learn the
 ---
 
 ## Question 9
+- [ ] Done
 
 **Describe how a contractive autoencoder operates and its benefits.**
 
@@ -308,6 +317,7 @@ Imagine the encoder as a mapping on a rubber sheet. Contractive penalty makes th
 ---
 
 ## Question 10
+- [ ] Done
 
 **What are convolutional autoencoders and in what cases are they preferred?**
 
@@ -348,6 +358,7 @@ Decoder: Dense → Reshape → ConvTranspose → Upsample → ConvTranspose → 
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain the idea behind stacked autoencoders.**
 
@@ -394,6 +405,7 @@ Like building understanding in layers:
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe an application of autoencoders in natural language processing (NLP).**
 
@@ -433,6 +445,7 @@ Input sentence → [LSTM Encoder] → Latent vector → [LSTM Decoder] → Recon
 ---
 
 ## Question 13
+- [ ] Done
 
 **How does backpropagation work in training an autoencoder?**
 
@@ -473,6 +486,7 @@ Reparameterization trick enables backprop through stochastic sampling layer.
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe how autoencoders can be integrated into a semi-supervised learning framework.**
 
@@ -516,6 +530,7 @@ Like learning to recognize animals:
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain how autoencoders can be used for domain adaptation.**
 
@@ -556,6 +571,7 @@ Like translating between languages - find the underlying meaning (latent) that's
 ---
 
 ## Question 16
+- [ ] Done
 
 **What are the challenges and potential solutions in training deep autoencoders?**
 
@@ -594,6 +610,7 @@ Like translating between languages - find the underlying meaning (latent) that's
 ---
 
 ## Question 17
+- [ ] Done
 
 **Describe how autoencoders can be used to create embeddings for graph data.**
 
@@ -637,6 +654,7 @@ Similar to image autoencoders, but instead of pixels, we compress graph connecti
 ---
 
 ## Question 18
+- [ ] Done
 
 **What are the current limitations of autoencoders in unsupervised learning applications?**
 
@@ -674,6 +692,7 @@ Similar to image autoencoders, but instead of pixels, we compress graph connecti
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain the potential role of reinforcement learning in enhancing the capabilities of autoencoders.**
 
@@ -723,6 +742,7 @@ Environment → VAE Encoder → Latent state z
 ---
 
 ## Question 20
+- [ ] Done
 
 **Describe a scenario where autoencoders can be used to enhance collaborative filtering in a recommendation system.**
 
@@ -775,6 +795,7 @@ Recommend: Items 2 and 6 (highest predicted ratings)
 ---
 
 ## Question 21
+- [ ] Done
 
 **Define an autoencoder and its reconstruction objective.**
 
@@ -803,6 +824,7 @@ The network learns the identity function $\hat{x} \approx x$, but the bottleneck
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain encoder-decoder architecture and bottleneck.**
 
@@ -842,6 +864,7 @@ Bottleneck width should match the intrinsic dimensionality of data.
 ---
 
 ## Question 23
+- [ ] Done
 
 **Describe feed-forward vs. convolutional autoencoders.**
 
@@ -875,6 +898,7 @@ Convolutional AE exploits locality - nearby pixels are more related. Feed-forwar
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain denoising autoencoders and corruption process.**
 
@@ -910,6 +934,7 @@ Train to predict clean $x$ from corrupted $\tilde{x}$.
 ---
 
 ## Question 25
+- [ ] Done
 
 **Discuss sparsity penalty and sparse autoencoders.**
 
@@ -947,6 +972,7 @@ Like a team where only few experts are active per task. Each expert becomes high
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain contractive autoencoder and Frobenius norm penalty.**
 
@@ -980,6 +1006,7 @@ $$||J_f||_F^2 = \sum_j h_j^2(1-h_j)^2 \sum_i W_{ji}^2$$
 ---
 
 ## Question 27
+- [ ] Done
 
 **Describe stacked autoencoders and greedy layer-wise pretraining.**
 
@@ -1023,6 +1050,7 @@ With BatchNorm, ReLU, residual connections - can often train deep autoencoders e
 ---
 
 ## Question 28
+- [ ] Done
 
 **Compare autoencoders with PCA in linear case.**
 
@@ -1059,6 +1087,7 @@ Optimal solution: $W_{enc}W_{dec}$ spans same subspace as top-k PCA components.
 ---
 
 ## Question 29
+- [ ] Done
 
 **Explain variational autoencoder (VAE) and reparameterization trick.**
 
@@ -1098,6 +1127,7 @@ x → Encoder → [μ, log σ²]
 ---
 
 ## Question 30
+- [ ] Done
 
 **Discuss beta-VAE and disentanglement.**
 
@@ -1143,6 +1173,7 @@ A representation is disentangled when each latent dimension captures one indepen
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain adversarial autoencoders vs. VAEs.**
 
@@ -1184,6 +1215,7 @@ $$\mathcal{L} = \mathcal{L}_{recon} + \mathcal{L}_{adversarial}$$
 ---
 
 ## Question 32
+- [ ] Done
 
 **Describe sequence autoencoders with RNNs.**
 
@@ -1227,6 +1259,7 @@ Output sequence: [x̂₁, x̂₂, ..., x̂ₜ]
 ---
 
 ## Question 33
+- [ ] Done
 
 **Discuss role of latent space dimensionality.**
 
@@ -1262,6 +1295,7 @@ Output sequence: [x̂₁, x̂₂, ..., x̂ₜ]
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain KL divergence term in VAE loss.**
 
@@ -1296,6 +1330,7 @@ $$D_{KL}(q||p) = \frac{1}{2}\sum_{j=1}^{d} \left[ \mu_j^2 + \sigma_j^2 - \log\si
 ---
 
 ## Question 35
+- [ ] Done
 
 **Describe autoencoders for image super-resolution.**
 
@@ -1328,6 +1363,7 @@ The network learns patterns: edges → textures → object parts. When upsamplin
 ---
 
 ## Question 36
+- [ ] Done
 
 **Explain anomaly detection via reconstruction error.**
 
@@ -1363,6 +1399,7 @@ Train autoencoder on normal data only. Anomalies will have high reconstruction e
 ---
 
 ## Question 37
+- [ ] Done
 
 **Discuss limitations: overfitting and identity function risk.**
 
@@ -1397,6 +1434,7 @@ Train autoencoder on normal data only. Anomalies will have high reconstruction e
 ---
 
 ## Question 38
+- [ ] Done
 
 **Explain tied weights and weight sharing.**
 
@@ -1441,6 +1479,7 @@ decoder_weight = encoder.weight.t()  # Transpose of encoder weight
 ---
 
 ## Question 39
+- [ ] Done
 
 **Describe importance of activation choice (ReLU, sigmoid).**
 
@@ -1476,6 +1515,7 @@ Output activation must match data range. Mismatched activation = training issues
 ---
 
 ## Question 40
+- [ ] Done
 
 **Discuss training with dropout inside autoencoders.**
 
@@ -1512,6 +1552,7 @@ Applying dropout to input is equivalent to masking noise corruption.
 ---
 
 ## Question 41
+- [ ] Done
 
 **Explain contractive vs. Jacobian regularization.**
 
@@ -1543,6 +1584,7 @@ Small input perturbations → very small latent changes. Representations are "co
 ---
 
 ## Question 42
+- [ ] Done
 
 **Describe InfoVAE and MMD regularization.**
 
@@ -1574,6 +1616,7 @@ Where $k$ is a kernel (e.g., RBF), $z \sim q(z)$, $\tilde{z} \sim p(z)$
 ---
 
 ## Question 43
+- [ ] Done
 
 **Explain autoencoder-based collaborative filtering.**
 
@@ -1612,6 +1655,7 @@ For user u, recommend items with highest predicted $\hat{r}_{ui}$.
 ---
 
 ## Question 44
+- [ ] Done
 
 **Describe graph autoencoders for network embeddings.**
 
@@ -1652,6 +1696,7 @@ $$\mathcal{L} = -\sum_{i,j} [A_{ij}\log\hat{A}_{ij} + (1-A_{ij})\log(1-\hat{A}_{
 ---
 
 ## Question 45
+- [ ] Done
 
 **Explain vector quantized VAE for discrete latents.**
 
@@ -1687,6 +1732,7 @@ Where sg = stop gradient
 ---
 
 ## Question 46
+- [ ] Done
 
 **Discuss autoencoders for multimodal fusion.**
 
@@ -1731,6 +1777,7 @@ Image features ⊕ Text features → Joint Encoder → z → Decoders
 ---
 
 ## Question 47
+- [ ] Done
 
 **Explain Wasserstein autoencoders.**
 
@@ -1764,6 +1811,7 @@ Instead of matching $q(z|x)$ to prior for each x (VAE), match aggregate $q(z) = 
 ---
 
 ## Question 48
+- [ ] Done
 
 **Describe beta-TCVAE penalizing total correlation.**
 
@@ -1790,6 +1838,7 @@ Measures dependence between latent dimensions. Low TC → independent (disentang
 ---
 
 ## Question 49
+- [ ] Done
 
 **Discuss InfoGAN vs. autoencoder generative approaches.**
 
@@ -1824,6 +1873,7 @@ Measures dependence between latent dimensions. Low TC → independent (disentang
 ---
 
 ## Question 50
+- [ ] Done
 
 **Explain training stability issues with VAEs.**
 
@@ -1863,6 +1913,7 @@ Use more expressive prior (mixture of Gaussians).
 ---
 
 ## Question 51
+- [ ] Done
 
 **Provide pseudo-code for training a basic autoencoder.**
 
@@ -1903,6 +1954,7 @@ Output: Trained encoder, decoder
 ---
 
 ## Question 52
+- [ ] Done
 
 **Describe visualization of latent space via t-SNE.**
 
@@ -1945,6 +1997,7 @@ t-SNE perplexity affects results. Try multiple values (5-50).
 ---
 
 ## Question 53
+- [ ] Done
 
 **Explain conditional VAEs for label-controlled generation.**
 
@@ -1991,6 +2044,7 @@ $$\mathcal{L} = -\mathbb{E}_{q(z|x,y)}[\log p(x|z,y)] + D_{KL}(q(z|x,y)||p(z|y))
 ---
 
 ## Question 54
+- [ ] Done
 
 **Discuss ladder network and denoising cost.**
 
@@ -2029,6 +2083,7 @@ Where $C_{supervised}$ uses labeled data only, $C_d$ uses all data.
 ---
 
 ## Question 55
+- [ ] Done
 
 **Explain using autoencoders for feature compression on edge devices.**
 
@@ -2071,6 +2126,7 @@ Image (224×224×3) = 150KB → Encoder → Latent (256 floats) = 1KB
 ---
 
 ## Question 56
+- [ ] Done
 
 **Describe use in dimensionality reduction for scRNA-seq.**
 
@@ -2111,6 +2167,7 @@ Latent space can be visualized with t-SNE/UMAP to see cell populations.
 ---
 
 ## Question 57
+- [ ] Done
 
 **Explain out-of-distribution detection with VAEs.**
 
@@ -2150,6 +2207,7 @@ VAEs can assign high likelihood to OOD samples (known issue).
 ---
 
 ## Question 58
+- [ ] Done
 
 **Discuss variational dropout in autoencoders.**
 
@@ -2181,6 +2239,7 @@ High learned dropout rate → connection is unimportant → can be pruned.
 ---
 
 ## Question 59
+- [ ] Done
 
 **Explain energy-based autoencoders.**
 
@@ -2216,6 +2275,7 @@ Denoising autoencoders implicitly learn energy function - denoising direction po
 ---
 
 ## Question 60
+- [ ] Done
 
 **Describe hierarchical VAEs with multiple stochastic layers.**
 
@@ -2255,6 +2315,7 @@ $$p(x, z_1, ..., z_L) = p(z_L) \prod_{l=1}^{L-1} p(z_l|z_{l+1}) \cdot p(x|z_1)$$
 ---
 
 ## Question 61
+- [ ] Done
 
 **Explain temporal convolutional autoencoders for anomaly detection in ECG.**
 
@@ -2295,6 +2356,7 @@ Threshold or use sliding window for anomaly detection.
 ---
 
 ## Question 62
+- [ ] Done
 
 **Discuss invertible autoencoders vs. normalizing flows.**
 
@@ -2326,6 +2388,7 @@ $$\log p(x) = \log p(z) - \sum_k \log|\det J_{f_k}|$$
 ---
 
 ## Question 63
+- [ ] Done
 
 **Explain integration with generative adversarial networks (BiGAN).**
 
@@ -2364,6 +2427,7 @@ Discriminator sees (data, encoding) pairs. Must learn to:
 ---
 
 ## Question 64
+- [ ] Done
 
 **Describe Transformer autoencoders for language pretraining.**
 
@@ -2408,6 +2472,7 @@ After pretraining, fine-tune on specific tasks with small labeled data.
 ---
 
 ## Question 65
+- [ ] Done
 
 **Discuss defense against adversarial attacks via reconstruction.**
 
@@ -2445,6 +2510,7 @@ High reconstruction error → adversarial sample detected
 ---
 
 ## Question 66
+- [ ] Done
 
 **Explain overcomplete autoencoders and regularization needs.**
 
@@ -2484,6 +2550,7 @@ More capacity + no regularization = identity function (useless)
 ---
 
 ## Question 67
+- [ ] Done
 
 **Provide an industry use case: predictive maintenance with autoencoders.**
 
@@ -2535,6 +2602,7 @@ Sensor data window → LSTM/Conv Encoder → Latent → Decoder → Reconstructi
 ---
 
 ## Question 68
+- [ ] Done
 
 **Predict future research in self-supervised contrastive autoencoders.**
 
@@ -2572,6 +2640,7 @@ $$\mathcal{L} = \mathcal{L}_{recon} + \lambda \cdot \mathcal{L}_{contrastive}$$
 ---
 
 ## Question 69
+- [ ] Done
 
 **Explain metrics to evaluate autoencoder quality beyond MSE.**
 
@@ -2608,6 +2677,7 @@ Use multiple metrics - MSE alone doesn't capture perceptual quality.
 ---
 
 ## Question 70
+- [ ] Done
 
 **Summarize pros/cons relative to GANs and diffusion models.**
 

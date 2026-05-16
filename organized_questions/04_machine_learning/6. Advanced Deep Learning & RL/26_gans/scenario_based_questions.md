@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: Discuss the architecture and benefits of Wasserstein GANs (WGANs)
+- [ ] Done
 
 ### Definition
 WGAN replaces the standard GAN loss with Wasserstein distance (Earth Mover's Distance), providing more stable training, meaningful loss values, and eliminating mode collapse through better gradient properties.
@@ -76,6 +77,7 @@ def wgan_gp_loss(critic, real, fake, lambda_gp=10):
 ---
 
 ## Question 2: Discuss Progressive Growing of GANs (PGGANs) and their unique training approach
+- [ ] Done
 
 ### Definition
 PGGAN trains GANs by progressively increasing image resolution, starting from low resolution and gradually adding layers. This stabilizes training and enables generation of high-resolution images (1024x1024+).
@@ -151,6 +153,7 @@ class ProgressiveGenerator(nn.Module):
 ---
 
 ## Question 3: How would you preprocess data for training GANs?
+- [ ] Done
 
 ### Definition
 GAN data preprocessing prepares images for optimal training by normalizing pixel values, resizing to target dimensions, and optionally augmenting to improve model robustness and generalization.
@@ -227,6 +230,7 @@ dataloader = DataLoader(
 ---
 
 ## Question 4: How would you address issues of overfitting in GANs?
+- [ ] Done
 
 ### Definition
 GAN overfitting occurs when the Discriminator memorizes training samples or the Generator produces copies of training data. Addressing it requires regularization, augmentation, and architectural choices.
@@ -307,6 +311,7 @@ def monitor_overfitting(real_batch, generator, fid_calculator):
 ---
 
 ## Question 5: Discuss strategies for selecting optimal number of layers and neurons for Generator and Discriminator
+- [ ] Done
 
 ### Definition
 Selecting GAN architecture involves balancing capacity (ability to learn complex patterns) against overfitting risk, while maintaining balance between Generator and Discriminator capabilities.
@@ -392,6 +397,7 @@ for name, arch in architectures.items():
 ---
 
 ## Question 6: How would you use GANs to improve the realism of synthetic data in a simulation?
+- [ ] Done
 
 ### Scenario
 A company uses simulation for testing autonomous vehicles but simulated images look artificial. GANs can improve realism for better sim-to-real transfer.
@@ -459,6 +465,7 @@ class SimToRealGAN:
 ---
 
 ## Question 7: Propose a GAN architecture for generating photorealistic textures in a game development context
+- [ ] Done
 
 ### Scenario
 Game studio needs to generate varied, seamless textures (stone, wood, fabric) for environments without manual artist work for each variation.
@@ -545,6 +552,7 @@ for alpha in [0, 0.25, 0.5, 0.75, 1.0]:
 ---
 
 ## Question 8: Discuss how you would leverage GANs to enhance low-resolution medical images
+- [ ] Done
 
 ### Scenario
 Hospital has legacy low-resolution X-rays/CT scans that need enhancement for modern AI diagnostic systems without losing clinically important details.
@@ -639,6 +647,7 @@ def validate_medical_sr(model, test_set, radiologist_annotations):
 ---
 
 ## Question 9: How would you detect overfitting in a GAN model that generates music?
+- [ ] Done
 
 ### Scenario
 GAN trained to generate music seems to produce same melodies repeatedly. Need to detect and address potential overfitting or mode collapse.
@@ -736,6 +745,7 @@ if metrics['nearest_neighbor_dist'] < threshold:
 ---
 
 ## Question 10: Discuss recent advances in GAN architectures and their training techniques
+- [ ] Done
 
 ### Definition
 Recent GAN advances focus on improved stability, higher resolution, better controllability, and efficiency. Key developments include StyleGAN series, BigGAN, and training innovations like adaptive augmentation.

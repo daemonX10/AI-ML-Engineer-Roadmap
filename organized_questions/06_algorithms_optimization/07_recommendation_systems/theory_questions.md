@@ -1,6 +1,7 @@
 # Recommendation Systems Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is a recommendation system and how does it work?**
 
@@ -58,6 +59,7 @@ User Data + Item Data → Algorithm → Personalized Recommendations
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you explain the difference between collaborative filtering and content-based recommendations?**
 
@@ -114,6 +116,7 @@ User likes: Action movies with Tom Cruise
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are the main challenges in building recommendation systems?**
 
@@ -174,6 +177,7 @@ User likes: Action movies with Tom Cruise
 ---
 
 ## Question 4
+- [ ] Done
 
 **What are the roles of user profiles and item profiles in a recommendation system?**
 
@@ -241,6 +245,7 @@ Item Profile (who liked it) → Similar Items → Recommend
 ---
 
 ## Question 5
+- [ ] Done
 
 **Describe the concept of implicit versus explicit feedback in the context of recommendation systems.**
 
@@ -308,6 +313,7 @@ Use implicit for most recommendations, explicit to calibrate and improve accurac
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain user-based and item-based collaborative filtering.**
 
@@ -370,6 +376,7 @@ User's Liked Items → Find Similar Items → Recommend
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is the purpose of using Alternating Least Squares (ALS) in recommendation systems?**
 
@@ -423,6 +430,7 @@ $$L = \sum_{(u,i) \in \text{observed}} (r_{ui} - u_u^T v_i)^2 + \lambda(||U||^2 
 ---
 
 ## Question 8
+- [ ] Done
 
 **Can you describe the Singular Value Decomposition (SVD) and its role in recommendations?**
 
@@ -482,6 +490,7 @@ Where:
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain the concept of a recommendation system using association rule mining.**
 
@@ -535,6 +544,7 @@ Lift: 2.0 (2x more likely than random)
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is a hybrid recommendation system and when would you use it?**
 
@@ -591,6 +601,7 @@ final_score = 0.7 * cf_score + 0.3 * cb_score
 ---
 
 ## Question 11
+- [ ] Done
 
 **Describe the use of deep learning in recommendation systems.**
 
@@ -648,6 +659,7 @@ User ratings → Encoder → Latent → Decoder → Reconstructed ratings
 ---
 
 ## Question 12
+- [ ] Done
 
 **How does the Apriori algorithm work in the context of a recommendation engine?**
 
@@ -709,6 +721,7 @@ Confidence: 50% (2 out of 4 transactions with Milk+Bread have Butter)
 ---
 
 ## Question 13
+- [ ] Done
 
 **Describe the data privacy concerns in building recommendation systems.**
 
@@ -769,6 +782,7 @@ Confidence: 50% (2 out of 4 transactions with Milk+Bread have Butter)
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain the importance of A/B testing in the context of deploying recommendation systems.**
 
@@ -828,6 +842,7 @@ A/B testing compares two versions (A = control, B = treatment) of a recommendati
 ---
 
 ## Question 15
+- [ ] Done
 
 **What are the typical performance metrics used for evaluating collaborative filtering systems?**
 
@@ -882,6 +897,7 @@ ndcg = ndcg_at_k(predictions, test, k=10)
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the role of neighborhood models in collaborative filtering.**
 
@@ -937,6 +953,7 @@ Where N(i) = k most similar items to i that user u has rated
 ---
 
 ## Question 17
+- [ ] Done
 
 **What is a Restricted Boltzmann Machine and how can it be applied to recommendation?**
 
@@ -992,6 +1009,7 @@ Known ratings → Hidden features → Reconstruct all ratings
 ---
 
 ## Question 18
+- [ ] Done
 
 **How does reinforcement learning apply to adaptive recommendation systems?**
 
@@ -1055,6 +1073,7 @@ Goal: Maximize session value
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain how to use clustering methods like K-means for user segmentation in recommendations.**
 
@@ -1122,6 +1141,7 @@ elif user_segment == 'budget':
 ---
 
 ## Question 20
+- [ ] Done
 
 **Describe how you would build a recommendation system for an e-commerce platform.**
 
@@ -1192,6 +1212,7 @@ def recommend(user_id, context):
 ---
 
 ## Question 21
+- [ ] Done
 
 **What are the potential ethical issues with recommendation systems and how can they be addressed?**
 
@@ -1246,6 +1267,7 @@ def recommend(user_id, context):
 ---
 
 ## Question 22
+- [ ] Done
 
 **How does context-aware recommendation operate and in what scenarios is it most beneficial?**
 

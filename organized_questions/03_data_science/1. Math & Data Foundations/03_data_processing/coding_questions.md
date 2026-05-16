@@ -1,6 +1,7 @@
 # Data Processing Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you implement a data processing pipeline with scikit-learn?**
 
@@ -62,6 +63,7 @@ predictions = full_pipeline.predict(X_test)
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a Python function to replace missing values with the median in a dataset.**
 
@@ -124,6 +126,7 @@ income: filled 1 values with median 57500.0
 ---
 
 ## Question 3
+- [ ] Done
 
 **Implement min-max scaling on a given dataset without using any libraries.**
 
@@ -196,6 +199,7 @@ print("Scaled:", scaled)
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a function to encode categorical variables using one-hot encoding in Python.**
 
@@ -272,6 +276,7 @@ for row in encoded:
 ---
 
 ## Question 5
+- [ ] Done
 
 **Use sklearn to set up a preprocessing pipeline with feature scaling and PCA.**
 
@@ -323,6 +328,7 @@ X_test_pca = pipeline.transform(X_test)  # Uses same transformation
 ---
 
 ## Question 6
+- [ ] Done
 
 **Write an SQL query to clean and preprocess a dataset with null values and outliers.**
 
@@ -386,6 +392,7 @@ WHERE rn = 1;
 ---
 
 ## Question 7
+- [ ] Done
 
 **Code a Python script to automatically detect and resolve duplicates in a dataset.**
 
@@ -482,6 +489,7 @@ Rows removed: 2
 ---
 
 ## Question 8
+- [ ] Done
 
 **Implement a time-series rolling window feature extraction in pandas.**
 
@@ -563,6 +571,7 @@ print(df.head(10))
 ---
 
 ## Question 9
+- [ ] Done
 
 **Write a Python function to perform sentiment encoding on text data.**
 
@@ -652,6 +661,7 @@ print(df_sentiment)
 ---
 
 ## Question 10
+- [ ] Done
 
 **Perform image augmentation on a batch of images using TensorFlow or PyTorch.**
 
@@ -731,6 +741,7 @@ def preprocess_and_augment(image, label, training=True):
 ---
 
 ## Question 11
+- [ ] Done
 
 **Implement a custom transformer in sklearn that adds a new feature calculated from existing ones.**
 

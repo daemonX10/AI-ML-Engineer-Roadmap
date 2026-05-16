@@ -1,6 +1,7 @@
 # Probability Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you use probability to design a recommendation system model?**
 
@@ -47,6 +48,7 @@ Mention extensions: Bayesian PMF (full posterior), Neural Collaborative Filterin
 ---
 
 ## Question 2
+- [ ] Done
 
 **Propose a method for predicting customer churn using probabilistic models.**
 
@@ -98,6 +100,7 @@ Emphasize: threshold depends on business costs (intervention cost vs customer li
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss how you would use probabilities to detect anomalies in transaction data.**
 
@@ -163,6 +166,7 @@ anomalies = new_transactions[scores < threshold]
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe how you might use Bayesian methods to improve the performance of a spam classifier.**
 
@@ -218,6 +222,7 @@ Mention: Laplace smoothing is equivalent to adding Beta(1,1) prior — connects 
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain a situation where you would use Markov Chains for modeling customer behavior on a website.**
 

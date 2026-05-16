@@ -1,6 +1,7 @@
 # K Nearest Neighbors Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you handle categorical features when implementing K-NN?**
 
@@ -66,6 +67,7 @@ nn.fit(distance_matrix)
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a Python function to implement K-NN from scratch on a simple dataset.**
 
@@ -135,6 +137,7 @@ print(f"Predictions: {predictions}")  # Output: [1, 0]
 ---
 
 ## Question 3
+- [ ] Done
 
 **Use scikit-learn to demonstrate K-NN classification using the Iris dataset.**
 
@@ -203,6 +206,7 @@ Best K: 5 with CV score: 0.9667
 ---
 
 ## Question 4
+- [ ] Done
 
 **Implement a LazyLearningClassifier in Python that uses K-NN under the hood.**
 
@@ -282,6 +286,7 @@ print(f"Accuracy: {clf.score(X_test, y_test):.4f}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Create a Python script to visualize the decision boundary of K-NN on a 2D dataset.**
 
@@ -351,6 +356,7 @@ plt.show()
 ---
 
 ## Question 6
+- [ ] Done
 
 **Develop a weighted K-NN algorithm in Python and test its performance against the standard K-NN.**
 
@@ -430,6 +436,7 @@ K= 7 | Standard: 0.8700 | Weighted: 0.9000
 ---
 
 ## Question 7
+- [ ] Done
 
 **Optimize a K-NN model in a large dataset using approximate nearest neighbors techniques like LSH or kd-trees.**
 
@@ -518,6 +525,7 @@ FAISS IVF: 0.0100s (Recall: 0.95)
 ---
 
 ## Question 8
+- [ ] Done
 
 **Given a dataset with time-series data, how would you apply K-NN for forecasting?**
 
@@ -607,6 +615,7 @@ print(f"Next 10 predictions: {future_preds}")
 ---
 
 ## Question 9
+- [ ] Done
 
 **Discuss a healthcare application where K-NN could be beneficial. How would you implement it?**
 

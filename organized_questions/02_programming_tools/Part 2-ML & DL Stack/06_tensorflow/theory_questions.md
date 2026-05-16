@@ -1,6 +1,7 @@
 # TensorFlow Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is TensorFlow and who developed it?**
 
@@ -35,6 +36,7 @@ print(f"a + b = {c.numpy()}")  # Output: [5 7 9]
 ---
 
 ## Question 2
+- [ ] Done
 
 **What are the main features of TensorFlow?**
 
@@ -76,6 +78,7 @@ print(f"Gradient: {grad.numpy()}")
 ---
 
 ## Question 3
+- [ ] Done
 
 **Can you explain the concept of a computation graph in TensorFlow?**
 
@@ -124,6 +127,7 @@ print(compute_graph.get_concrete_function(x, y).graph.as_graph_def())
 ---
 
 ## Question 4
+- [ ] Done
 
 **What are Tensors in TensorFlow?**
 
@@ -173,6 +177,7 @@ var.assign([4.0, 5.0, 6.0])  # Can change values
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does TensorFlow differ from other Machine Learning libraries?**
 
@@ -213,6 +218,7 @@ clf.fit(X_train, y_train)
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is a Session in TensorFlow?**
 
@@ -255,6 +261,7 @@ print(c.numpy())  # 8.0 - executes immediately!
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is the difference between TensorFlow 1.x and TensorFlow 2.x?**
 
@@ -302,6 +309,7 @@ print(result.numpy())
 ---
 
 ## Question 8
+- [ ] Done
 
 **How does TensorFlow handle automatic differentiation?**
 
@@ -355,6 +363,7 @@ print(f"w: {w.numpy():.4f}, b: {b.numpy():.4f}")  # ~2.0, ~1.0
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is a Placeholder in TensorFlow?**
 
@@ -397,6 +406,7 @@ Placeholders are **obsolete** in TF 2.x. Use:
 ---
 
 ## Question 10
+- [ ] Done
 
 **Could you explain the concept of TensorFlow Lite and where it’s used?**
 
@@ -445,6 +455,7 @@ with open('model.tflite', 'wb') as f:
 ---
 
 ## Question 11
+- [ ] Done
 
 **What are the different data types supported by TensorFlow?**
 
@@ -491,6 +502,7 @@ tf.keras.mixed_precision.set_global_policy(policy)
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain the process of compiling a model in TensorFlow.**
 
@@ -551,6 +563,7 @@ model.compile(
 ---
 
 ## Question 13
+- [ ] Done
 
 **Describe how TensorFlow optimizers work and name a few common ones.**
 
@@ -626,6 +639,7 @@ optimizer_clipped = tf.keras.optimizers.Adam(
 ---
 
 ## Question 14
+- [ ] Done
 
 **What is the role of loss functions in TensorFlow , and can you name some?**
 
@@ -691,6 +705,7 @@ model.compile(optimizer='adam', loss=custom_huber_loss)
 ---
 
 ## Question 15
+- [ ] Done
 
 **What are the differences between sequential and functional APIs in TensorFlow?**
 
@@ -762,6 +777,7 @@ print(func_model.summary())
 ---
 
 ## Question 16
+- [ ] Done
 
 **How does TensorFlow support regularization to prevent overfitting?**
 
@@ -839,6 +855,7 @@ augmentation = tf.keras.Sequential([
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain the concept of saving and restoring a model in TensorFlow.**
 
@@ -911,6 +928,7 @@ tf.saved_model.save(model, 'export/1/')
 ---
 
 ## Question 18
+- [ ] Done
 
 **How does TensorFlow integrate with Keras?**
 
@@ -989,6 +1007,7 @@ custom_model.compile(optimizer='adam', loss='sparse_categorical_crossentropy',
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe the role of tf.data in TensorFlow.**
 
@@ -1072,6 +1091,7 @@ def parse_tfrecord(serialized):
 ---
 
 ## Question 20
+- [ ] Done
 
 **What is TensorFlow Distribution Strategies and when would you use it?**
 
@@ -1141,6 +1161,7 @@ with strategy.scope():
 ---
 
 ## Question 21
+- [ ] Done
 
 **Can you explain TensorFlow Extended (TFX) and its main components?**
 
@@ -1227,6 +1248,7 @@ pusher = Pusher(
 ---
 
 ## Question 22
+- [ ] Done
 
 **What is TensorFlow Serving and how does it facilitate model deployment?**
 
@@ -1305,6 +1327,7 @@ print(status.json())
 ---
 
 ## Question 23
+- [ ] Done
 
 **How does one use TensorFlow’s Estimator API ?**
 
@@ -1380,6 +1403,7 @@ keras_estimator = tf.keras.estimator.model_to_estimator(
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain the concept of quantization in TensorFlow and when it might be used.**
 
@@ -1463,6 +1487,7 @@ print(f"INT8 size: {os.path.getsize('model_int8.tflite') / 1024:.1f} KB")
 ---
 
 ## Question 25
+- [ ] Done
 
 **How does TensorFlow support multi-GPU or distributed training?**
 
@@ -1555,6 +1580,7 @@ def distributed_train_step(dataset_inputs):
 ---
 
 ## Question 26
+- [ ] Done
 
 **What are some best practices for writing efficient TensorFlow code?**
 
@@ -1630,6 +1656,7 @@ def predict(x):
 ---
 
 ## Question 27
+- [ ] Done
 
 **Describe the process of text preprocessing in TensorFlow.**
 
@@ -1710,6 +1737,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy',
 ---
 
 ## Question 28
+- [ ] Done
 
 **Explain how you would approach time-series forecasting with TensorFlow.**
 
@@ -1800,6 +1828,7 @@ lstm_model.compile(optimizer='adam', loss='mae')
 ---
 
 ## Question 29
+- [ ] Done
 
 **How does TensorFlow’s tf.debugging package assist in debugging?**
 
@@ -1886,6 +1915,7 @@ def safe_train_step(model, x, y, optimizer):
 ---
 
 ## Question 30
+- [ ] Done
 
 **What are some of the latest features or additions to TensorFlow that are currently gaining traction?**
 
@@ -1953,6 +1983,7 @@ preprocessing = tf.keras.Sequential([
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain the concept of eager execution in TensorFlow.**
 
@@ -1992,6 +2023,7 @@ def fast_matmul(a, b):
 ---
 
 ## Question 32
+- [ ] Done
 
 **Explain the concept of graph mode versus eager mode in TensorFlow.**
 
@@ -2031,6 +2063,7 @@ result = compute(tf.constant(3.0))  # Runs as optimized graph
 > **Interview Tip:** TF 2.x gives you the best of both worlds: debug in **eager mode**, deploy in **graph mode** using `@tf.function`. Mention that `@tf.function` traces your Python code into a portable, optimizable graph.
 
 ## Question 33
+- [ ] Done
 
 **What is a Session in TensorFlow ? Explain its role**
 
@@ -2071,6 +2104,7 @@ print(c.numpy())  # [4.0, 6.0] - immediate
 ---
 
 ## Question 34
+- [ ] Done
 
 **What is a Placeholder in TensorFlow , and how is it used?**
 
@@ -2112,6 +2146,7 @@ dataset = tf.data.Dataset.from_tensor_slices((images, labels)).batch(32)
 ---
 
 ## Question 35
+- [ ] Done
 
 **How do you use callbacks in TensorFlow ?**
 
@@ -2158,6 +2193,7 @@ class PrintLR(tf.keras.callbacks.Callback):
 ---
 
 ## Question 36
+- [ ] Done
 
 **What strategies does TensorFlow use to handle overfitting during training?**
 
@@ -2200,6 +2236,7 @@ model.fit(X_train, y_train, epochs=100, validation_split=0.2, callbacks=callback
 ---
 
 ## Question 37
+- [ ] Done
 
 **Discuss how to use mixed-precision training in TensorFlow**
 
@@ -2242,6 +2279,7 @@ model.fit(X_train, y_train, epochs=10, batch_size=128)
 ---
 
 ## Question 38
+- [ ] Done
 
 **What support does TensorFlow offer for transfer learning ?**
 
@@ -2292,6 +2330,7 @@ model.fit(train_data, epochs=10)  # Fine-tune
 ---
 
 ## Question 39
+- [ ] Done
 
 **Discuss how GradientTape works in TensorFlow**
 
@@ -2343,6 +2382,7 @@ del tape  # Free resources
 
 ---
 ## Question 40
+- [ ] Done
 
 **How would you go about debugging a TensorFlow model that isn’t learning?**
 
@@ -2394,6 +2434,7 @@ tensorboard_cb = tf.keras.callbacks.TensorBoard('./debug_logs', histogram_freq=1
 ---
 
 ## Question 41
+- [ ] Done
 
 **Discuss common errors encountered in TensorFlow and how to resolve them**
 
@@ -2439,6 +2480,7 @@ print(f"Built with CUDA: {tf.test.is_built_with_cuda()}")
 ---
 
 ## Question 42
+- [ ] Done
 
 **How can the TensorBoard tool be used to debug TensorFlow programs ?**
 

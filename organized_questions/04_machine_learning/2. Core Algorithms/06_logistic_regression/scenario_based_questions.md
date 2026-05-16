@@ -1,6 +1,7 @@
 # Logistic Regression Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you apply logistic regression to a marketing campaign to predict customer conversion?**
 
@@ -120,6 +121,7 @@ Marketing models need interpretability (odds ratios for stakeholders) and calibr
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss how logistic regression can be used for credit scoring in the financial industry.**
 
@@ -232,6 +234,7 @@ Credit scoring requires Gini coefficient (2*AUC - 1) for performance measurement
 ---
 
 ## Question 3
+- [ ] Done
 
 **How would you use logistic regression to analyze the impact of various factors on employee attrition?**
 

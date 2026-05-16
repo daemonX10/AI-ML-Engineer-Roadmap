@@ -1,6 +1,7 @@
 # Q Learning Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement a basic Q-learning agent that learns to navigate a simple gridworld environment.**
 
@@ -75,6 +76,7 @@ for s in range(num_states):
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a function that updates the Q-table given a state, action, reward, and next state.**
 
@@ -143,6 +145,7 @@ print(f"Terminal update Q[9, 2] = {Q[9, 2]:.4f}")
 ---
 
 ## Question 3
+- [ ] Done
 
 **Create a simulation of a Q-learning agent in a stochastic environment and show how the agent improves over time.**
 
@@ -222,6 +225,7 @@ print(f"Last 100 episodes avg: {np.mean(episode_rewards[-100:]):.2f}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Code a solution that demonstrates epsilon-greedy action selection in Q-learning.**
 
@@ -292,6 +296,7 @@ Epsilon starts high (more exploration) and decays over time (more exploitation a
 ---
 
 ## Question 5
+- [ ] Done
 
 **Develop a Python script that visualizes the convergence of Q-values over episodes.**
 
@@ -369,6 +374,7 @@ print(Q.round(2))
 ---
 
 ## Question 6
+- [ ] Done
 
 **Write a Python function that evaluates a Q-learning agent's policy after training.**
 
@@ -450,6 +456,7 @@ print(f"Success Rate: {results['success_rate']:.1f}%")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Create a Q-learning agent that can solve the Taxi-v3 environment from OpenAI Gym.**
 
@@ -534,6 +541,7 @@ env.close()
 ---
 
 ## Question 8
+- [ ] Done
 
 **Implement a Q-learning solution where the agent must learn context-specific rules, such as traffic signal control with variable vehicle flow.**
 
@@ -619,6 +627,7 @@ print("\nLearned: Agent switches lights based on queue lengths")
 ---
 
 ## Question 9
+- [ ] Done
 
 **Code a Q-learning agent to solve a simple maze with dynamic obstacles, demonstrating how you manage changing environments.**
 

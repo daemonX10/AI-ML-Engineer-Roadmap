@@ -1,6 +1,7 @@
 # SQL ML Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Write a SQL query that joins two tables and retrieves only the rows with matching keys**
 
@@ -31,6 +32,7 @@ HAVING COUNT(o.order_id) > 1;
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a SQL query to pivot rows into columns.**
 
@@ -60,6 +62,7 @@ GROUP BY product_id;
 ---
 
 ## Question 3
+- [ ] Done
 
 **Write a SQL query to find duplicate records.**
 
@@ -93,6 +96,7 @@ WHERE id NOT IN (
 ---
 
 ## Question 4
+- [ ] Done
 
 **Write a SQL query to calculate cumulative sum.**
 
@@ -113,6 +117,7 @@ FROM transactions;
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write a SQL query to find the second highest salary.**
 
@@ -139,6 +144,7 @@ WHERE rank = 2;
 ---
 
 ## Question 6
+- [ ] Done
 
 **Write a SQL query to calculate year-over-year growth.**
 
@@ -166,6 +172,7 @@ FROM YearlySales;
 ---
 
 ## Question 7
+- [ ] Done
 
 **Write a SQL query to create ML features from transaction data.**
 
@@ -207,6 +214,7 @@ GROUP BY customer_id;
 ---
 
 ## Question 8
+- [ ] Done
 
 **Write a SQL query to detect outliers using IQR method.**
 
@@ -235,6 +243,7 @@ WHERE t.amount < b.lower_bound OR t.amount > b.upper_bound;
 ---
 
 ## Question 9
+- [ ] Done
 
 **Write a SQL query to create a train/test split.**
 
@@ -276,6 +285,7 @@ FROM Ranked;
 ---
 
 ## Question 10
+- [ ] Done
 
 **Write a SQL query to one-hot encode a categorical column.**
 
@@ -295,6 +305,7 @@ FROM products;
 ---
 
 ## Question 11
+- [ ] Done
 
 **Write a SQL query to calculate moving averages.**
 
@@ -353,6 +364,7 @@ FROM daily_sales_summary;
 ---
 
 ## Question 12
+- [ ] Done
 
 **How can you create lagged features in SQL?**
 
@@ -413,6 +425,7 @@ FROM time_series_data;
 ---
 
 ## Question 13
+- [ ] Done
 
 **Describe how to compute a ratio feature within groups using SQL.**
 
@@ -466,6 +479,7 @@ GROUP BY channel;
 ---
 
 ## Question 14
+- [ ] Done
 
 **In SQL, how would you format strings or concatenate columns for text-based Machine Learning features?**
 
@@ -535,6 +549,7 @@ GROUP BY customer_id;
 ---
 
 ## Question 15
+- [ ] Done
 
 **Write a SQL stored procedure that calls a Machine Learning scoring function.**
 
@@ -610,6 +625,7 @@ EXEC sp_score_customers;
 ---
 
 ## Question 16
+- [ ] Done
 
 **How would you construct a complex SQL query to extract time series features for a Machine Learning model?**
 
@@ -674,6 +690,7 @@ WHERE lag_30 IS NOT NULL;  -- ensure enough history
 ---
 
 ## Question 17
+- [ ] Done
 
 **Discuss ways to implement regular expressions in SQL for natural language processing tasks.**
 
@@ -746,6 +763,7 @@ FROM documents;
 ---
 
 ## Question 18
+- [ ] Done
 
 **Write a SQL script to identify and replace missing values with the column mean.**
 
@@ -815,6 +833,7 @@ CROSS JOIN stats s;
 ---
 
 ## Question 19
+- [ ] Done
 
 **Create a SQL query that normalizes a column (scales between 0 and 1).**
 
@@ -880,6 +899,7 @@ FROM measurements;
 ---
 
 ## Question 20
+- [ ] Done
 
 **Generate a feature that is a count over a rolling time window using SQL.**
 
@@ -940,6 +960,7 @@ WINDOW
 ---
 
 ## Question 21
+- [ ] Done
 
 **Code an SQL function that categorizes continuous variables into bins.**
 
@@ -1011,6 +1032,7 @@ FROM transactions;
 ---
 
 ## Question 22
+- [ ] Done
 
 **Implement a SQL solution to compute the TF-IDF score for text data.**
 
@@ -1094,6 +1116,7 @@ SELECT * FROM ranked WHERE rank <= 10;  -- top 10 keywords per document
 > **Interview Tip:** Computing TF-IDF in pure SQL is complex. In practice, use SQL for text extraction and Python’s `TfidfVectorizer` for the actual computation. The SQL approach is useful for understanding the math and for in-database NLP features.
 
 ## Question 23
+- [ ] Done
 
 **Create a SQL query to pivot a table transforming rows into columns**
 
@@ -1177,6 +1200,7 @@ SELECT product, 'Q2', Q2_revenue FROM pivoted_sales;
 ---
 
 ## Question 24
+- [ ] Done
 
 **Write a SQL query that identifies and removes duplicate records from a dataset**
 

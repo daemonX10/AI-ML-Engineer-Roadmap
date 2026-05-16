@@ -1,6 +1,7 @@
 # Classification Algorithms Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you handle categorical features in a classification problem?**
 
@@ -71,6 +72,7 @@ df['city_freq'] = df['city'].map(freq)
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you select the appropriate metrics for evaluating a classification model?**
 
@@ -142,6 +144,7 @@ print(classification_report(y_true, y_pred))
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the process of feature engineering and its importance in classification.**
 
@@ -225,6 +228,7 @@ print(df.head())
 ---
 
 ## Question 4
+- [ ] Done
 
 **How would you approach a text classification task?**
 
@@ -310,6 +314,7 @@ print(f"Prediction: {model.predict(new_vec)[0]}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss the use of classification algorithms in image recognition.**
 
@@ -404,6 +409,7 @@ datagen = ImageDataGenerator(
 ---
 
 ## Question 6
+- [ ] Done
 
 **How would you handle time-series data for a classification task?**
 
@@ -506,6 +512,7 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss the concept of multi-label classification and how it differs from multiclass classification.**
 
@@ -601,6 +608,7 @@ y_pred_nn = (y_prob > 0.5).astype(int)
 ---
 
 ## Question 8
+- [ ] Done
 
 **Discuss the impact of deep learning on traditional classification algorithms.**
 
@@ -697,6 +705,7 @@ model.fit(X_sequences, labels, epochs=10)
 ---
 
 ## Question 9
+- [ ] Done
 
 **Discuss the role of attention mechanisms in classification tasks.**
 
@@ -818,6 +827,7 @@ attended = mha(x, x)  # Self-attention
 ---
 
 ## Question 10
+- [ ] Done
 
 **What considerations would you take into account when building a credit scoring model?**
 
@@ -873,6 +883,7 @@ Credit scoring predicts loan default probability. It requires special considerat
 ---
 
 ## Question 11
+- [ ] Done
 
 **Describe how you would build a spam detection classifier.**
 
@@ -935,6 +946,7 @@ model = MultinomialNB().fit(X, labels)
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe a real-world application where precision is more important than recall, and vice versa.**
 
@@ -973,6 +985,7 @@ model = MultinomialNB().fit(X, labels)
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain how you could use classification models to predict customer churn.**
 

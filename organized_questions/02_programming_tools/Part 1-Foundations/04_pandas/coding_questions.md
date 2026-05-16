@@ -1,6 +1,7 @@
 # Pandas Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Write a Pandas script to filter rows in a DataFrame based on a column’s value being higher than a specified percentile**
 
@@ -32,6 +33,7 @@ print(f"Threshold value: {df['value'].quantile(0.90):.2f}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Code a function that concatenates two DataFrames and handles overlapping indices correctly.**
 
@@ -73,6 +75,7 @@ print(result)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Implement a data cleaning function that drops columns with more than 50% missing values and fills the remaining ones with column mean.**
 
@@ -128,6 +131,7 @@ print(cleaned)
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a Pandas pipeline that ingests, processes, and summarizes time-series data from a CSV file.**
 
@@ -195,6 +199,7 @@ print(summary)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write a Python function that takes a DataFrame and computes the correlation matrix , then visualizes it using Seaborn’s heatmap**
 
@@ -256,6 +261,7 @@ corr = plot_correlation_matrix(df)
 ---
 
 ## Question 6
+- [ ] Done
 
 **Given a DataFrame with multiple datetime columns, create a new column with the earliest datetime.**
 
@@ -301,6 +307,7 @@ df['earliest'] = df.apply(lambda row: earliest_date_apply(row, datetime_columns)
 ---
 
 ## Question 7
+- [ ] Done
 
 **Develop a routine in Pandas to detect and flag rows that deviate by more than three standard deviations from the mean of specific columns**
 
@@ -358,6 +365,7 @@ print(result[result['is_outlier']])
 ---
 
 ## Question 8
+- [ ] Done
 
 **Outline how to merge multiple time series datasets effectively in Pandas , ensuring correct alignment and handling missing values**
 
@@ -431,6 +439,7 @@ print(merged)
 4. **Duplicates**: Handle duplicate timestamps before merging
 
 ## Question 9
+- [ ] Done
 
 **If you have a DataFrame with multiple datetime columns , detail how you would create a new column combining them into the earliest datetime**
 

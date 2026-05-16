@@ -1,6 +1,7 @@
 # XGBoost Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss how to manage the trade-off between learning rate and n_estimators in XGBoost.**
 
@@ -98,6 +99,7 @@ final_model = xgb.XGBClassifier(
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss how XGBoost can handle highly imbalanced datasets.**
 
@@ -210,6 +212,7 @@ print(f"Average Precision: {average_precision_score(y_test, proba):.4f}")
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss how XGBoost processes sparse data and the benefits of this approach.**
 
@@ -303,6 +306,7 @@ print(f"Speedup: {dense_time/sparse_time:.1f}x")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Suppose you have a dataset with a mixture of categorical and continuous features. How would you preprocess the data before training an XGBoost model?**
 
@@ -436,6 +440,7 @@ model.fit(X, y)
 ---
 
 ## Question 5
+- [ ] Done
 
 **You're tasked with predicting customer churn. How would you go about applying XGBoost to solve this problem?**
 
@@ -579,6 +584,7 @@ print(f"At this threshold - Precision: {precision[optimal_idx]:.3f}, Recall: {re
 ---
 
 ## Question 6
+- [ ] Done
 
 **In a scenario where model interpretability is crucial, how would you justify the use of XGBoost?**
 
@@ -683,6 +689,7 @@ explain_prediction(model, X_test.iloc[[0]], feature_names)
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss the potential advantages of using XGBoost over other gradient boosting frameworks like LightGBM or CatBoost.**
 

@@ -1,6 +1,7 @@
 # Llmops Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **What steps would you take if you noticed a sudden drop in amodel's performance?**
 
@@ -9,6 +10,7 @@
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you addressmodel driftin aproduction environment?**
 
@@ -17,6 +19,7 @@
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss a scenario where you had to scale upmodel servingto handle increased traffic.**
 
@@ -25,6 +28,7 @@
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe your approach to managing and versioning largedatasetsin anMLOps workflow.**
 
@@ -33,6 +37,7 @@
 ---
 
 ## Question 5
+- [ ] Done
 
 **How would you incorporateuser feedbackinto amachine learning model lifecycle?**
 
@@ -41,6 +46,7 @@
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss a strategy for automatedrollbackof amachine learning modelif it performs poorly after release.**
 

@@ -1,6 +1,7 @@
 # Apache Spark Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is Apache Spark and what are its main components?**
 
@@ -52,6 +53,7 @@ spark.stop()
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain RDD, DataFrame, and Dataset in Spark.**
 
@@ -97,6 +99,7 @@ result_df.show()
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is lazy evaluation in Spark?**
 
@@ -140,6 +143,7 @@ transformed.explain(True)
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain Spark's DAG and execution model.**
 
@@ -189,6 +193,7 @@ result = summed.collect()
 ---
 
 ## Question 5
+- [ ] Done
 
 **What are narrow and wide transformations?**
 
@@ -229,6 +234,7 @@ Prefer `reduceByKey` over `groupByKey` as it performs local aggregation before s
 ---
 
 ## Question 6
+- [ ] Done
 
 **How does Spark achieve fault tolerance ?**
 
@@ -270,6 +276,7 @@ print(rdd2.toDebugString())
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is the Catalyst optimizer?**
 
@@ -307,6 +314,7 @@ result.explain(mode="extended")
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain Spark memory management.**
 
@@ -345,6 +353,7 @@ df.unpersist()
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is data shuffling in Spark?**
 
@@ -386,6 +395,7 @@ broadcast_join = large_df.join(broadcast(small_df), "key")
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain Spark Streaming vs Structured Streaming.**
 
@@ -438,6 +448,7 @@ query = result.writeStream \
 # --- Missing Questions Restored from Source (Q11-Q33) ---
 
 ## Question 11
+- [ ] Done
 
 **Describe the various ways to run Spark applications (cluster, client, local modes)**
 
@@ -507,6 +518,7 @@ Use **client mode** for interactive work (spark-shell, Jupyter) so you see outpu
 ---
 
 ## Question 12
+- [ ] Done
 
 **What are Spark’s data source APIs and how do you use them?**
 
@@ -573,6 +585,7 @@ Always specify a **schema** instead of relying on `inferSchema` in production �
 ---
 
 ## Question 14
+- [ ] Done
 
 **How does Tungsten contribute to Spark’s performance ?**
 
@@ -626,6 +639,7 @@ Tungsten is why DataFrame/Dataset operations are **faster than RDD** — RDDs us
 ---
 
 ## Question 15
+- [ ] Done
 
 **Briefly describe the Spark Core API and its features**
 
@@ -691,6 +705,7 @@ Spark Core's RDD API is the **lowest level** API. For most work, prefer **DataFr
 ---
 
 ## Question 16
+- [ ] Done
 
 **What are the transformations and actions in Spark RDDs ?**
 
@@ -752,6 +767,7 @@ Always prefer `reduceByKey` over `groupByKey` — `reduceByKey` combines values 
 ---
 
 ## Question 17
+- [ ] Done
 
 **What are Key-Value pair RDDs , and when would you use them?**
 
@@ -814,6 +830,7 @@ Pair RDDs are the **RDD-level equivalent** of DataFrame `groupBy` operations. In
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain how to perform a join operation in Spark**
 
@@ -887,6 +904,7 @@ The **broadcast join** is the biggest join optimization — it sends the small t
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe the concept of discretized streams (DStreams) in Spark**
 
@@ -957,6 +975,7 @@ DStreams are the **legacy streaming API** in Spark (Spark Streaming). Modern Spa
 ---
 
 ## Question 21
+- [ ] Done
 
 **What are the fault-tolerance mechanisms in Spark Streaming ?**
 
@@ -1026,6 +1045,7 @@ Structured Streaming achieves **exactly-once** end-to-end through checkpointing 
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain watermarks and windowing operations in Structured Streaming**
 
@@ -1107,6 +1127,7 @@ Watermarks solve two problems: **late data handling** and **state cleanup**. Wit
 ---
 
 ## Question 23
+- [ ] Done
 
 **What are some common Spark performance issues and how do you resolve them?**
 
@@ -1166,6 +1187,7 @@ The #1 performance issue is **data skew** — always check with `df.groupBy("key
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain how you would monitor and log a Spark application**
 
@@ -1234,6 +1256,7 @@ Key metrics to monitor: **shuffle read/write size** (indicates data movement), *
 ---
 
 ## Question 25
+- [ ] Done
 
 **What is the role of partitioner objects in Spark and how do they affect performance?**
 
@@ -1308,6 +1331,7 @@ The biggest performance win from partitioning is **avoiding redundant shuffles**
 ---
 
 ## Question 26
+- [ ] Done
 
 **What are the main features of Spark MLlib ?**
 
@@ -1372,6 +1396,7 @@ MLlib's key advantage over scikit-learn is **horizontal scaling** — it can tra
 ---
 
 ## Question 27
+- [ ] Done
 
 **How does Spark MLlib handle machine learning pipelines ?**
 
@@ -1445,6 +1470,7 @@ Pipelines ensure **reproducibility** and prevent data leakage — feature scalin
 ---
 
 ## Question 28
+- [ ] Done
 
 **Describe a use case for MLlib’s collaborative filtering algorithms**
 
@@ -1504,6 +1530,7 @@ ALS handles the **cold start problem** poorly. Use `coldStartStrategy="drop"` fo
 ---
 
 ## Question 29
+- [ ] Done
 
 **Explain the difference between Spark MLlib and external machine learning libraries**
 
@@ -1562,6 +1589,7 @@ The most common real-world pattern is **Spark for ETL + scikit-learn/XGBoost for
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain a big data analytics project where Spark would be a better choice than other big data technologies and why**
 
@@ -1632,6 +1660,7 @@ Spark's **unified engine** is the key selling point — one framework for batch 
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain how Dynamic Resource Allocation works in Spark**
 
@@ -1695,6 +1724,7 @@ DRA requires the **External Shuffle Service** (`spark.shuffle.service.enabled=tr
 ---
 
 ## Question 32
+- [ ] Done
 
 **What are the current research areas or challenges in the Apache Spark ecosystem?**
 
@@ -1744,6 +1774,7 @@ The biggest current trend is the **data lakehouse** (Delta Lake, Iceberg) — co
 ---
 
 ## Question 33
+- [ ] Done
 
 **How does Spark support deep learning workloads and integration with popular deep learning frameworks ?**
 
@@ -1837,6 +1868,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain how Apache Spark differs from Hadoop MapReduce**
 
@@ -1845,6 +1877,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 35
+- [ ] Done
 
 **Describe the concept of RDDs (Resilient Distributed Datasets) in Spark**
 
@@ -1853,6 +1886,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 36
+- [ ] Done
 
 **What are DataFrames in Spark and how do they compare to RDDs ?**
 
@@ -1861,6 +1895,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 37
+- [ ] Done
 
 **What is lazy evaluation and how does it benefit Spark computations ?**
 
@@ -1869,6 +1904,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 38
+- [ ] Done
 
 **What is the role of Spark Driver and Executors ?**
 
@@ -1877,6 +1913,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 39
+- [ ] Done
 
 **How does Spark’s DAG (Directed Acyclic Graph) Scheduler work?**
 
@@ -1885,6 +1922,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 40
+- [ ] Done
 
 **Explain the concept of a Spark Session and its purpose**
 
@@ -1893,6 +1931,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 41
+- [ ] Done
 
 **How does Spark integrate with Hadoop components like HDFS and YARN ?**
 
@@ -1901,6 +1940,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 42
+- [ ] Done
 
 **What is the significance of the Catalyst optimizer in Spark SQL ?**
 
@@ -1909,6 +1949,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 43
+- [ ] Done
 
 **Illustrate the differences between map and flatMap functions in Spark**
 
@@ -1917,6 +1958,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 44
+- [ ] Done
 
 **Detail how window functions work in Spark SQL**
 
@@ -1925,6 +1967,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 45
+- [ ] Done
 
 **How does Structured Streaming differ from DStream-based streaming ?**
 
@@ -1933,6 +1976,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 46
+- [ ] Done
 
 **How do you handle late data and stateful processing in Spark Streaming?**
 
@@ -1941,6 +1985,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 47
+- [ ] Done
 
 **Discuss the advancements in Spark 3.x and their impact on big data processing**
 
@@ -1949,6 +1994,7 @@ Spark is typically used for **data preparation and batch inference**, not traini
 ---
 
 ## Question 48
+- [ ] Done
 
 **How do you implement custom aggregations in Spark?**
 

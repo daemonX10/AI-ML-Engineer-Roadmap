@@ -1,6 +1,7 @@
 # NumPy Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you inspect the shape and size of a NumPy array?**
 
@@ -26,6 +27,7 @@ print(f"Dimensions: {arr.ndim}") # 3
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you perform element-wise operations in NumPy?**
 
@@ -56,6 +58,7 @@ print(a * 10)  # [10, 20, 30]
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you compute the mean , median , and standard deviation with NumPy ?**
 
@@ -90,6 +93,7 @@ Feature normalization: `X_normalized = (X - X.mean(axis=0)) / X.std(axis=0)`
 ---
 
 ## Question 4
+- [ ] Done
 
 **Why is NumPy more efficient than pure Python for numerical computations?**
 
@@ -125,6 +129,7 @@ print(f"NumPy: {time.time() - start:.4f}s")
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you check the memory size of a NumPy array?**
 
@@ -167,6 +172,7 @@ print(f"float32: {arr32.nbytes / 1e6:.1f} MB")  # 4.0 MB
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you handle NaN or infinite values in a NumPy array ?**
 
@@ -221,6 +227,7 @@ np.isnan(np.nan)  # Returns True
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you create a record array in NumPy?**
 
@@ -266,6 +273,7 @@ print(rec.name)  # attribute access works
 ---
 
 ## Question 8
+- [ ] Done
 
 **How can NumPy be used for audio signal processing?**
 
@@ -322,6 +330,7 @@ energy_frames = np.array([np.sum(f**2) for f in frames])
 ---
 
 ## Question 9
+- [ ] Done
 
 **What methods are there in NumPy to deal with missing data?**
 
@@ -391,6 +400,7 @@ np.ma.mean(masked)                  # 3.0 — ignores masked values
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do you find unique values and their counts in a NumPy array?**
 
@@ -443,6 +453,7 @@ mode = values[np.argmax(counts)]  # 1 or 3 (both have count 3)
 ---
 
 ## Question 11
+- [ ] Done
 
 **How can you use NumPy arrays with Cython for performance optimization?**
 

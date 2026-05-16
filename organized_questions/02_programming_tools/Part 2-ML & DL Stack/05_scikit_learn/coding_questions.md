@@ -1,6 +1,7 @@
 ﻿# Scikit-Learn Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement K-Means clustering with Scikit-Learn.**
 
@@ -49,6 +50,7 @@ print(f"Optimal k: {optimal_k}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement a complete classification pipeline with preprocessing.**
 
@@ -112,6 +114,7 @@ print(f"Test accuracy: {pipeline.score(X_test, y_test):.4f}")
 ---
 
 ## Question 3
+- [ ] Done
 
 **Implement hyperparameter tuning with GridSearchCV.**
 
@@ -169,6 +172,7 @@ random_search.fit(X_train, y_train)
 ---
 
 ## Question 4
+- [ ] Done
 
 **Implement cross-validation with multiple metrics.**
 
@@ -209,6 +213,7 @@ for metric in scorers.keys():
 ---
 
 ## Question 5
+- [ ] Done
 
 **Implement a custom transformer for log transformation.**
 
@@ -259,6 +264,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 6
+- [ ] Done
 
 **Implement model evaluation with confusion matrix and ROC curve.**
 
@@ -316,6 +322,7 @@ plt.show()
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement feature importance analysis.**
 
@@ -363,6 +370,7 @@ plt.show()
 ---
 
 ## Question 8
+- [ ] Done
 
 **Implement train-test split with stratification for imbalanced data.**
 
@@ -401,6 +409,7 @@ print(f"Mean F1: {scores.mean():.4f}")
 ---
 
 ## Question 9
+- [ ] Done
 
 **Implement a regression model with regularization.**
 
@@ -455,6 +464,7 @@ print(f"Best CV RMSE: {np.sqrt(-grid.best_score_):.4f}")
 ---
 
 ## Question 10
+- [ ] Done
 
 **Implement learning curve analysis to diagnose bias/variance.**
 
@@ -512,6 +522,7 @@ plot_learning_curve(model, X, y)
 ---
 
 ## Question 11
+- [ ] Done
 
 **Write a Python script using Scikit-Learn to train and evaluate a logistic regression model.**
 
@@ -575,6 +586,7 @@ print(f"\nTop 5 Features:\n{coef_df.head()}")
 ---
 
 ## Question 12
+- [ ] Done
 
 **Implement feature extraction from text using Scikit-Learn’s CountVectorizer or TfidfVectorizer**
 
@@ -652,6 +664,7 @@ vec = TfidfVectorizer(tokenizer=custom_tokenizer)
 ---
 
 ## Question 13
+- [ ] Done
 
 **Normalize a given dataset using Scikit-Learn’s preprocessing module, then train and test a Naive Bayes classifier**
 
@@ -714,6 +727,7 @@ print(f"Confidence for first sample: {y_prob[0].round(3)}")
 ---
 
 ## Question 14
+- [ ] Done
 
 **Use Scikit-Learn to visualize the decision boundary of a SVM with a non-linear kernel.**
 
@@ -785,6 +799,7 @@ plt.show()
 ---
 
 ## Question 15
+- [ ] Done
 
 **Implement dimensionality reduction using PCA with Scikit-Learn and visualize the result.**
 
@@ -847,6 +862,7 @@ print(f"Components needed for 95% variance: {pca_95.n_components_}")
 ---
 
 ## Question 16
+- [ ] Done
 
 **Create a clustering analysis on a dataset using Scikit-Learn’s DBSCAN method**
 
@@ -927,6 +943,7 @@ plt.show()
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you save a trained Scikit-Learn model to disk and load it back for later use?**
 
@@ -996,6 +1013,7 @@ joblib.dump({'model': model, 'metadata': metadata}, 'model_with_meta.joblib')
 > **Interview Tip:** Always save the **Scikit-Learn version** with the model — models may be incompatible across versions. Use `joblib` for Scikit-Learn (optimized for large NumPy arrays). For production, convert to **ONNX** for language-agnostic deployment.
 
 ## Question 18
+- [ ] Done
 
 **Create a Python function that uses Scikit-Learn to perform a k-fold cross-validation on a dataset**
 
@@ -1049,6 +1067,7 @@ result = kfold_cross_validation(X, y, scoring=['accuracy', 'f1_weighted'])
 ---
 
 ## Question 19
+- [ ] Done
 
 **Demonstrate how to use Scikit-Learn’s Pipeline to combine preprocessing and model training steps**
 
@@ -1115,6 +1134,7 @@ print(f"Best params: {grid.best_params_}")
 ---
 
 ## Question 20
+- [ ] Done
 
 **Write a Python function that uses Scikit-Learn’s RandomForestClassifier and performs a grid search to find the best hyperparameters**
 

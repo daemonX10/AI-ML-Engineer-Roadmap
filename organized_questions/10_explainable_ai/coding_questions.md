@@ -1,6 +1,7 @@
 # Explainable Ai Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **What are some challenges faced when trying to implementexplainabilityin AI?**
 
@@ -9,6 +10,7 @@
 ---
 
 ## Question 2
+- [ ] Done
 
 **What are some considerations for implementingXAIinregulated industries?**
 
@@ -17,6 +19,7 @@
 ---
 
 ## Question 3
+- [ ] Done
 
 **ImplementLIMEto explain the predictions of a classifier on a simple dataset.**
 
@@ -25,6 +28,7 @@
 ---
 
 ## Question 4
+- [ ] Done
 
 **Write a function that computesShapley Valuesfor a single prediction in a small dataset.**
 
@@ -33,6 +37,7 @@
 ---
 
 ## Question 5
+- [ ] Done
 
 **Visualizefeature importancesfor aRandomForestmodel trained on a sample dataset.**
 
@@ -41,6 +46,7 @@
 ---
 
 ## Question 6
+- [ ] Done
 
 **Build alinear regression modeland interpret itscoefficientsusingPython.**
 
@@ -49,6 +55,7 @@
 ---
 
 ## Question 7
+- [ ] Done
 
 **Create aPartial Dependence Plotusing aGradient Boosting Classifierand interpret the results.**
 
@@ -57,6 +64,7 @@
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe how you would implementXAIfor acredit scoring model.**
 

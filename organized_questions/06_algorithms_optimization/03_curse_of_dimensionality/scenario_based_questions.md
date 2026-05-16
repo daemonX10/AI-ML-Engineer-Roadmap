@@ -1,6 +1,7 @@
 # Curse Of Dimensionality Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the concept of sparsity in relation to the Curse of Dimensionality.**
 
@@ -51,6 +52,7 @@ Sparsity in high-D is unavoidable without exponentially more data.
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss the differences between feature extraction and feature selection in the context of high-dimensional data.**
 
@@ -100,6 +102,7 @@ New features = combinations of originals
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the technique of variable clustering as a way to address the Curse of Dimensionality.**
 
@@ -157,6 +160,7 @@ Cluster 3: website_visits, clicks, time_on_site → "Engagement"
 ---
 
 ## Question 4
+- [ ] Done
 
 **How would you design a recommendation system that handles hundreds of features for user preference profiling?**
 
@@ -215,6 +219,7 @@ Item Features → Item Tower → Item Embedding (64D)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss a project where you had to deal with a large number of features. What strategies did you employ to deal with the Curse of Dimensionality?**
 
@@ -268,6 +273,7 @@ model = ElasticNetCV(l1_ratio=0.5)  # L1 for sparsity
 ---
 
 ## Question 6
+- [ ] Done
 
 **Consider a text classification task with thousands of features (words). How would you address potential issues caused by high dimensionality?**
 
@@ -325,6 +331,7 @@ embeddings = model.encode(texts)  # 384D dense vectors
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss the theoretical foundations of the Curse of Dimensionality and its implications for the future of Machine Learning.**
 

@@ -1,6 +1,7 @@
 # Linear Regression - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What assumptions are made in linear regression modeling?**
 
@@ -32,6 +33,7 @@ Linear regression relies on several key assumptions (often remembered as **LINE*
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you interpret the coefficients of a linear regression model?**
 
@@ -56,6 +58,7 @@ Each coefficient β_i represents the **expected change in the target variable** 
 ---
 
 ## Question 3
+- [ ] Done
 
 **How is hypothesis testing used in the context of linear regression?**
 
@@ -85,6 +88,7 @@ Hypothesis testing determines whether the relationships found by the regression 
 ---
 
 ## Question 4
+- [ ] Done
 
 **What do you understand by the term "normality of residuals"?**
 
@@ -115,6 +119,7 @@ Normality of residuals means that the **errors** (differences between actual and
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you deal with missing values when preparing data for linear regression?**
 
@@ -143,6 +148,7 @@ Missing values must be handled before fitting a linear regression model, as most
 ---
 
 ## Question 6
+- [ ] Done
 
 **What feature selection methods can be used prior to building a regression model?**
 
@@ -174,6 +180,7 @@ Missing values must be handled before fitting a linear regression model, as most
 ---
 
 ## Question 7
+- [ ] Done
 
 **How is feature scaling relevant to linear regression?**
 
@@ -203,6 +210,7 @@ Missing values must be handled before fitting a linear regression model, as most
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do you address overfitting in linear regression?**
 
@@ -237,6 +245,7 @@ Overfitting occurs when the model captures noise in the training data, leading t
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you use regularization to improve linear regression models?**
 
@@ -269,6 +278,7 @@ Regularization adds a **penalty term** to the loss function to constrain coeffic
 ---
 
 ## Question 10
+- [ ] Done
 
 **How can you optimize the hyperparameters of a regularized linear regression model?**
 
@@ -296,6 +306,7 @@ The main hyperparameter is **λ (alpha)** — the regularization strength. For E
 ---
 
 ## Question 11
+- [ ] Done
 
 **How is influence measured in the context of linear regression?**
 
@@ -327,6 +338,7 @@ Influence measures identify data points that disproportionately affect the regre
 ---
 
 ## Question 12
+- [ ] Done
 
 **How can linear regression be used for price optimization in retail?**
 
@@ -357,6 +369,7 @@ Linear regression models the relationship between **price** and **demand/revenue
 ---
 
 ## Question 13
+- [ ] Done
 
 **Illustrate the process you would follow to model the relationship between advertising spend and revenue generation.**
 
@@ -390,6 +403,7 @@ Revenue = β₀ + β₁(TV_Spend) + β₂(Digital_Spend) + β₃(Print_Spend)
 ---
 
 ## Question 14
+- [ ] Done
 
 **Walk me through a time you diagnosed a poorly performing regression model and how you improved it.**
 
@@ -420,6 +434,7 @@ Revenue = β₀ + β₁(TV_Spend) + β₂(Digital_Spend) + β₃(Print_Spend)
 ---
 
 ## Question 15
+- [ ] Done
 
 **How has the field of linear regression modeling evolved with the advent of big data?**
 
@@ -446,6 +461,7 @@ Revenue = β₀ + β₁(TV_Spend) + β₂(Digital_Spend) + β₃(Print_Spend)
 ---
 
 ## Question 16
+- [ ] Done
 
 **How can linear regression models be made more robust to non-standard data types?**
 
@@ -474,6 +490,7 @@ Revenue = β₀ + β₁(TV_Spend) + β₂(Digital_Spend) + β₃(Print_Spend)
 ---
 
 ## Question 17
+- [ ] Done
 
 **What steps would you take if your linear regression model shows significant bias after deployment?**
 

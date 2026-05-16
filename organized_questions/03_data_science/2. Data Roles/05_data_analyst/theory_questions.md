@@ -1,6 +1,7 @@
 # Data Analyst Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is machine learning and how does it differ from traditional programming?**
 
@@ -38,6 +39,7 @@ Machine Learning is a subset of AI where algorithms learn patterns from data to 
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the difference between supervised and unsupervised learning.**
 
@@ -81,6 +83,7 @@ Supervised learning trains models on labeled data (input-output pairs) to predic
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is the role of feature selection in machine learning?**
 
@@ -137,6 +140,7 @@ importances = rf.feature_importances_  # Select top features
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe the concept of overfitting and underfitting in machine learning models.**
 
@@ -212,6 +216,7 @@ for degree in [1, 3, 15]:
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is cross-validation and why is it important?**
 
@@ -275,6 +280,7 @@ scores = cross_val_score(model, X, y, cv=cv)
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain the bias-variance tradeoff in machine learning.**
 
@@ -326,6 +332,7 @@ Where:
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is regularization and how does it help prevent overfitting?**
 
@@ -390,6 +397,7 @@ elastic.fit(X_train, y_train)
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe the difference between parametric and non-parametric models.**
 
@@ -450,6 +458,7 @@ elastic.fit(X_train, y_train)
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is the curse of dimensionality and how does it impact machine learning?**
 
@@ -510,6 +519,7 @@ X_selected = selector.fit_transform(X, y)
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain the concept of model complexity and its relationship with performance.**
 
@@ -571,6 +581,7 @@ Error
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is data preprocessing and why is it important in machine learning?**
 
@@ -636,6 +647,7 @@ preprocessor = ColumnTransformer([
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain the techniques used for handling missing data.**
 
@@ -705,6 +717,7 @@ df['col_missing'] = df['col'].isnull().astype(int)
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is feature scaling and why is it necessary?**
 
@@ -755,6 +768,7 @@ X_normalized = minmax.fit_transform(X_train)
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe the difference between normalization and standardization.**
 
@@ -822,6 +836,7 @@ print(f"Standardized mean: {X_std.mean():.2f}, std: {X_std.std():.2f}")
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is one-hot encoding and when is it used?**
 
@@ -887,6 +902,7 @@ encoded = encoder.fit_transform(df[['color']])
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the concept of feature engineering and its importance.**
 
@@ -951,6 +967,7 @@ df['price_category'] = pd.cut(df['price'], bins=[0, 100, 200, np.inf],
 ---
 
 ## Question 17
+- [ ] Done
 
 **What are some common techniques for feature extraction?**
 
@@ -1020,6 +1037,7 @@ X_text = tfidf.fit_transform(documents)  # Extract 1000 text features
 ---
 
 ## Question 18
+- [ ] Done
 
 **What is the purpose of dimensionality reduction techniques like PCA (Principal Component Analysis)?**
 
@@ -1082,6 +1100,7 @@ plt.ylabel('Cumulative Variance Explained')
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain the concept of feature importance and how it can be determined.**
 
@@ -1147,6 +1166,7 @@ print(f"Permutation importance: {perm_imp.importances_mean}")
 ---
 
 ## Question 20
+- [ ] Done
 
 **What is linear regression and how does it work?**
 
@@ -1214,6 +1234,7 @@ print(f"RMSE: {mean_squared_error(y_test, y_pred, squared=False):.3f}")
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain the difference between simple linear regression and multiple linear regression.**
 
@@ -1279,6 +1300,7 @@ print(f"Multiple coefficients: {model_multiple.coef_}")
 ---
 
 ## Question 22
+- [ ] Done
 
 **What are the assumptions of linear regression?**
 
@@ -1352,6 +1374,7 @@ print(f"Durbin-Watson: {sm.stats.stattools.durbin_watson(residuals)}")
 ---
 
 ## Question 23
+- [ ] Done
 
 **What is polynomial regression and when is it used?**
 
@@ -1428,6 +1451,7 @@ for d in range(1, 6):
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain the concept of regularization in regression models (e.g., Ridge, Lasso).**
 
@@ -1486,6 +1510,7 @@ print(f"Non-zero coefficients: {sum(lasso_cv.coef_ != 0)}")
 ---
 
 ## Question 25
+- [ ] Done
 
 **What is logistic regression and how does it differ from linear regression?**
 
@@ -1552,6 +1577,7 @@ print(f"Coefficients: {model.coef_}")
 ---
 
 ## Question 26
+- [ ] Done
 
 **Describe the concept of stepwise regression and its variants.**
 
@@ -1619,6 +1645,7 @@ print(f"Selected features: {selected_features}")
 ---
 
 ## Question 27
+- [ ] Done
 
 **What is Elastic Net regularization and how does it combine L1 and L2 penalties?**
 
@@ -1687,6 +1714,7 @@ print(f"Non-zero coefficients: {sum(en_cv.coef_ != 0)}")
 ---
 
 ## Question 28
+- [ ] Done
 
 **Explain the concept of gradient descent in the context of regression.**
 
@@ -1763,6 +1791,7 @@ def gradient_descent(X, y, learning_rate=0.01, iterations=1000):
 ---
 
 ## Question 29
+- [ ] Done
 
 **What is classification in machine learning?**
 
@@ -1832,6 +1861,7 @@ print(classification_report(y_test, y_pred))
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain the difference between binary classification and multi-class classification.**
 
@@ -1900,6 +1930,7 @@ print(multi_clf.predict_proba(X_test[0:1]))  # [P(0), P(1), P(2), ...]
 ---
 
 ## Question 31
+- [ ] Done
 
 **What is logistic regression and how is it used for classification?**
 
@@ -1966,6 +1997,7 @@ print(f"AUC-ROC: {roc_auc_score(y_test, y_proba):.3f}")
 ---
 
 ## Question 32
+- [ ] Done
 
 **Describe the concept of decision trees and how they work.**
 
@@ -2049,6 +2081,7 @@ importance = dt.feature_importances_
 ---
 
 ## Question 33
+- [ ] Done
 
 **What is the random forest algorithm and its advantages?**
 
@@ -2125,6 +2158,7 @@ print(f"CV Accuracy: {cv_scores.mean():.3f} (+/- {cv_scores.std()*2:.3f})")
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain the concept of support vector machines (SVM) and their kernels.**
 
@@ -2197,6 +2231,7 @@ y_proba = svm_proba.predict_proba(X_test)
 ---
 
 ## Question 35
+- [ ] Done
 
 **What is the k-nearest neighbors (KNN) algorithm and how does it work?**
 
@@ -2276,6 +2311,7 @@ for k in range(1, 20, 2):
 ---
 
 ## Question 36
+- [ ] Done
 
 **Describe the Naive Bayes algorithm and its assumptions.**
 
@@ -2346,6 +2382,7 @@ y_pred_text = mnb.predict(X_test_vec)
 ---
 
 ## Question 37
+- [ ] Done
 
 **What is the difference between a hard classifier and a soft classifier?**
 
@@ -2420,6 +2457,7 @@ y_proba_svm = svm_soft.predict_proba(X_test)  # Now soft
 ---
 
 ## Question 38
+- [ ] Done
 
 **Explain the concept of ensemble learning and its techniques (e.g., bagging, boosting).**
 
@@ -2491,6 +2529,7 @@ stacking.fit(X_train, y_train)
 ---
 
 ## Question 39
+- [ ] Done
 
 **What are the common evaluation metrics for classification models?**
 
@@ -2548,6 +2587,7 @@ print(classification_report(y_test, y_pred))
 ---
 
 ## Question 40
+- [ ] Done
 
 **Explain the concept of confusion matrix and its components.**
 
@@ -2617,6 +2657,7 @@ plt.show()
 ---
 
 ## Question 41
+- [ ] Done
 
 **What is the ROC curve and how is it used to evaluate classifier performance?**
 
@@ -2698,6 +2739,7 @@ plt.show()
 ---
 
 ## Question 42
+- [ ] Done
 
 **Describe the concept of precision, recall, and F1-score.**
 
@@ -2771,6 +2813,7 @@ plt.show()
 ---
 
 ## Question 43
+- [ ] Done
 
 **What is the difference between micro-average and macro-average metrics?**
 
@@ -2855,6 +2898,7 @@ print(f"Weighted F1: {f1_weighted:.3f}")
 ---
 
 ## Question 44
+- [ ] Done
 
 **Explain the concept of stratified k-fold cross-validation.**
 
@@ -2930,6 +2974,7 @@ print(f"Mean F1: {scores.mean():.3f} (+/- {scores.std()*2:.3f})")
 ---
 
 ## Question 45
+- [ ] Done
 
 **What is the purpose of a validation set in machine learning?**
 
@@ -2998,6 +3043,7 @@ test_score = model.score(X_test, y_test)  # Final unbiased evaluation
 ---
 
 ## Question 46
+- [ ] Done
 
 **What is the difference between a Type I error and a Type II error?**
 
@@ -3066,6 +3112,7 @@ type_2_rate = fn / (fn + tp)  # False Negative Rate (1 - Recall)
 ---
 
 ## Question 47
+- [ ] Done
 
 **Explain the concept of learning curves and their interpretation.**
 
@@ -3168,6 +3215,7 @@ plt.show()
 ---
 
 ## Question 48
+- [ ] Done
 
 **What is unsupervised learning and how does it differ from supervised learning?**
 
@@ -3220,6 +3268,7 @@ X_reduced = pca.fit_transform(X)
 ---
 
 ## Question 49
+- [ ] Done
 
 **Explain the concept of clustering and its applications.**
 
@@ -3282,6 +3331,7 @@ print(f"Silhouette Score: {silhouette:.3f}")  # -1 to 1, higher is better
 ---
 
 ## Question 50
+- [ ] Done
 
 **What is the k-means clustering algorithm and how does it work?**
 
@@ -3341,6 +3391,7 @@ new_labels = kmeans.predict(X_new)
 ---
 
 ## Question 51
+- [ ] Done
 
 **Describe the difference between hierarchical and partitional clustering.**
 
@@ -3412,6 +3463,7 @@ plt.show()
 ---
 
 ## Question 52
+- [ ] Done
 
 **What is the elbow method and how is it used to determine the optimal number of clusters?**
 
@@ -3481,6 +3533,7 @@ plt.show()
 ---
 
 ## Question 53
+- [ ] Done
 
 **Explain the concept of dimensionality reduction and its techniques.**
 
@@ -3516,6 +3569,7 @@ PCA for general reduction, t-SNE/UMAP for visualization, LDA when class labels a
 ---
 
 ## Question 54
+- [ ] Done
 
 **What is principal component analysis (PCA) and how does it work?**
 
@@ -3557,6 +3611,7 @@ Always standardize data before PCA. Choose components that explain ~95% variance
 ---
 
 ## Question 55
+- [ ] Done
 
 **Describe the concept of t-SNE (t-Distributed Stochastic Neighbor Embedding).**
 
@@ -3604,6 +3659,7 @@ Use t-SNE for visualization only, not for preprocessing. Run multiple times with
 ---
 
 ## Question 56
+- [ ] Done
 
 **What is the difference between PCA and LDA (Linear Discriminant Analysis)?**
 
@@ -3645,6 +3701,7 @@ LDA is limited to (num_classes - 1) components. For binary classification, LDA g
 ---
 
 ## Question 57
+- [ ] Done
 
 **Explain the concept of anomaly detection and its techniques.**
 
@@ -3686,6 +3743,7 @@ Choose method based on data: statistical for simple cases, Isolation Forest for 
 ---
 
 ## Question 58
+- [ ] Done
 
 **What is a neural network and how does it work?**
 
@@ -3727,6 +3785,7 @@ Understand the building blocks: layers, weights, activations, loss, and backprop
 ---
 
 ## Question 59
+- [ ] Done
 
 **Explain the concept of activation functions and their types.**
 
@@ -3765,6 +3824,7 @@ ReLU is the default choice for hidden layers. Know why sigmoid causes vanishing 
 ---
 
 ## Question 60
+- [ ] Done
 
 **What is the difference between a feedforward neural network and a recurrent neural network?**
 
@@ -3809,6 +3869,7 @@ Know that LSTM/GRU solve RNN's gradient problems. Transformers have largely repl
 ---
 
 ## Question 61
+- [ ] Done
 
 **Describe the concept of backpropagation and its role in training neural networks.**
 
@@ -3845,6 +3906,7 @@ Understand chain rule application and how gradients flow backward through layers
 ---
 
 ## Question 62
+- [ ] Done
 
 **What is deep learning and how does it differ from traditional machine learning?**
 
@@ -3888,6 +3950,7 @@ Deep learning excels with large unstructured data; traditional ML is often bette
 ---
 
 ## Question 63
+- [ ] Done
 
 **Explain the concept of convolutional neural networks (CNNs) and their applications.**
 
@@ -3929,6 +3992,7 @@ Know the intuition: early layers detect simple features (edges), deeper layers d
 ---
 
 ## Question 64
+- [ ] Done
 
 **What is transfer learning and how is it used in deep learning?**
 
@@ -3969,6 +4033,7 @@ Start with feature extraction, then try fine-tuning if performance is insufficie
 ---
 
 ## Question 65
+- [ ] Done
 
 **Describe the concept of long short-term memory (LSTM) networks and their use cases.**
 
@@ -4010,6 +4075,7 @@ Know the purpose of each gate: forget (what to remove), input (what to add), out
 ---
 
 ## Question 66
+- [ ] Done
 
 **What is the difference between a shallow neural network and a deep neural network?**
 
@@ -4052,6 +4118,7 @@ Depth enables efficient representation of complex functions that shallow network
 ---
 
 ## Question 67
+- [ ] Done
 
 **Explain the concept of autoencoders and their applications.**
 
@@ -4092,6 +4159,7 @@ Key insight: autoencoders are unsupervised. They learn compressed representation
 ---
 
 ## Question 68
+- [ ] Done
 
 **What is natural language processing (NLP) and its applications?**
 
@@ -4133,6 +4201,7 @@ Modern NLP is dominated by transformer-based models (BERT, GPT) that achieve sta
 ---
 
 ## Question 69
+- [ ] Done
 
 **Explain the concept of tokenization and its techniques.**
 
@@ -4180,6 +4249,7 @@ Subword tokenization (BPE, WordPiece) is preferred in modern transformers becaus
 ---
 
 ## Question 70
+- [ ] Done
 
 **What is stemming and lemmatization in NLP?**
 
@@ -4231,6 +4301,7 @@ Lemmatization needs POS tags for best results. "better" as adj → "good"; as ad
 ---
 
 ## Question 71
+- [ ] Done
 
 **Describe the concept of word embeddings and their types (e.g., Word2Vec, GloVe).**
 
@@ -4275,6 +4346,7 @@ Static embeddings are simpler but contextual embeddings (BERT) handle polysemy a
 ---
 
 ## Question 72
+- [ ] Done
 
 **What is the bag-of-words model and how is it used in NLP?**
 
@@ -4322,6 +4394,7 @@ BoW is a baseline. For better results, use TF-IDF or word embeddings to capture 
 ---
 
 ## Question 73
+- [ ] Done
 
 **Explain the concept of named entity recognition (NER) and its techniques.**
 
@@ -4370,6 +4443,7 @@ Modern NER uses transformer models fine-tuned on labeled data. Know BIO tagging 
 ---
 
 ## Question 74
+- [ ] Done
 
 **What is sentiment analysis and how is it performed?**
 
@@ -4422,6 +4496,7 @@ Know the challenges (sarcasm, negation). Transformer-based models handle these b
 ---
 
 ## Question 75
+- [ ] Done
 
 **Describe the concept of topic modeling and its algorithms (e.g., LDA, NMF).**
 
@@ -4479,6 +4554,7 @@ for topic_idx, topic in enumerate(lda.components_):
 LDA is generative and probabilistic; NMF is deterministic and faster. Choose based on needs.
 
 ## Question 76
+- [ ] Done
 
 **What is the difference between rule-based and statistical approaches in NLP?**
 
@@ -4520,6 +4596,7 @@ Modern NLP is mostly statistical/neural, but rules are valuable for specific pat
 ---
 
 ## Question 77
+- [ ] Done
 
 **Explain the concept of language models and their applications.**
 
@@ -4557,6 +4634,7 @@ Understand the difference: GPT predicts next word (autoregressive); BERT predict
 ---
 
 ## Question 78
+- [ ] Done
 
 **What is a recommender system and its types?**
 
@@ -4596,6 +4674,7 @@ Know the trade-offs: collaborative needs user data but discovers new interests; 
 ---
 
 ## Question 79
+- [ ] Done
 
 **Explain the concept of collaborative filtering and its variants.**
 
@@ -4646,6 +4725,7 @@ Item-based CF is more practical for large systems (items change less than users)
 ---
 
 ## Question 80
+- [ ] Done
 
 **What is content-based filtering and how does it work?**
 
@@ -4690,6 +4770,7 @@ Content-based is great for explainability but risks creating a "filter bubble" w
 ---
 
 ## Question 81
+- [ ] Done
 
 **Describe the concept of matrix factorization in recommender systems.**
 
@@ -4736,6 +4817,7 @@ Matrix factorization won Netflix Prize. Understand latent factors conceptually (
 ---
 
 ## Question 82
+- [ ] Done
 
 **What are the challenges and limitations of recommender systems?**
 
@@ -4778,6 +4860,7 @@ Know cold start and sparsity problems well. Common follow-up: "How would you sol
 ---
 
 ## Question 83
+- [ ] Done
 
 **Explain the concept of cold-start problem in recommender systems and its solutions.**
 
@@ -4822,6 +4905,7 @@ A good answer mentions both user and item cold start, with specific solutions fo
 ---
 
 ## Question 84
+- [ ] Done
 
 **What is the difference between explicit and implicit feedback in recommender systems?**
 
@@ -4865,6 +4949,7 @@ Most real-world systems rely heavily on implicit feedback because explicit ratin
 ---
 
 ## Question 85
+- [ ] Done
 
 **Describe the concept of evaluation metrics for recommender systems (e.g., precision, recall, NDCG).**
 
@@ -4905,6 +4990,7 @@ NDCG is preferred for ranking because it accounts for position. Precision@K is s
 ---
 
 ## Question 86
+- [ ] Done
 
 **What is the role of user-item interactions in recommender systems?**
 
@@ -4948,6 +5034,7 @@ The quality and quantity of interactions directly impact recommendation quality.
 ---
 
 ## Question 87
+- [ ] Done
 
 **Explain the concept of hybrid recommender systems and their advantages.**
 
@@ -4991,6 +5078,7 @@ Most production systems are hybrid. Know specific examples like Netflix or Spoti
 ---
 
 ## Question 88
+- [ ] Done
 
 **What is the role of optimization in machine learning?**
 
@@ -5039,6 +5127,7 @@ Optimization is how ML models learn. Without it, we'd have no training.
 ---
 
 ## Question 89
+- [ ] Done
 
 **Explain the concept of gradient descent and its variants (e.g., batch, stochastic, mini-batch).**
 
@@ -5081,6 +5170,7 @@ Adam is the default choice. Know when to use SGD with momentum (often better gen
 ---
 
 ## Question 90
+- [ ] Done
 
 **What is the difference between a local minimum and a global minimum?**
 
@@ -5127,6 +5217,7 @@ For deep learning, local minima aren't the main problem—saddle points and flat
 ---
 
 ## Question 91
+- [ ] Done
 
 **Describe the concept of learning rate and its impact on model training.**
 
@@ -5173,6 +5264,7 @@ Learning rate is arguably the most important hyperparameter. If training isn't w
 ---
 
 ## Question 92
+- [ ] Done
 
 **What is the purpose of regularization techniques in optimization?**
 
@@ -5216,6 +5308,7 @@ Know L1 gives sparsity (some weights exactly zero), L2 shrinks all weights but k
 ---
 
 ## Question 93
+- [ ] Done
 
 **Explain the concept of hyperparameter tuning and its techniques.**
 
@@ -5260,6 +5353,7 @@ Random search is often better than grid search because it explores the space mor
 ---
 
 ## Question 94
+- [ ] Done
 
 **What is grid search and how is it used for hyperparameter tuning?**
 
@@ -5313,6 +5407,7 @@ Grid search guarantees finding the best in the grid, but random search is usuall
 ---
 
 ## Question 95
+- [ ] Done
 
 **Describe the concept of random search and its advantages over grid search.**
 
@@ -5361,6 +5456,7 @@ Bergstra & Bengio (2012) showed random search is often significantly more effici
 ---
 
 ## Question 96
+- [ ] Done
 
 **What is Bayesian optimization and how does it work for hyperparameter tuning?**
 

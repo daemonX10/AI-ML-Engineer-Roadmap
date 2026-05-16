@@ -1,6 +1,7 @@
 # Cnn Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How doactivation functionsplay a role inCNNs?**
 
@@ -202,6 +203,7 @@ FC → ReLU → FC → Softmax → Output
 ---
 
 ## Question 2
+- [ ] Done
 
 **How doCNNsdeal withoverfitting?**
 
@@ -489,6 +491,7 @@ CNN with:
 ---
 
 ## Question 3
+- [ ] Done
 
 **Why areCNNsparticularly well-suited forimage recognitiontasks?**
 
@@ -800,6 +803,7 @@ Layer 5: Scene understanding
 ---
 
 ## Question 4
+- [ ] Done
 
 **How dodilated convolutionsdiffer from regularconvolutions?**
 
@@ -1141,6 +1145,7 @@ $$\text{RF} = (K-1) \times r + 1$$
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you handleimage resizingornormalizationinCNNs?**
 
@@ -1544,6 +1549,7 @@ val = dataset.map(resize).map(normalize).batch(32).prefetch()
 ---
 
 ## Question 6
+- [ ] Done
 
 **Whatpreprocessing stepswould you apply to animage datasetbefore feeding it into aCNN?**
 
@@ -1984,6 +1990,7 @@ Deployment:
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you choose thenumberandsize of filtersin aconvolutional layer?**
 
@@ -2416,6 +2423,7 @@ Pool:  14×14×256
 ---
 
 ## Question 8
+- [ ] Done
 
 **What techniques can you use toreduce computation timein aCNN?**
 
@@ -2667,6 +2675,7 @@ Advanced (if needed):
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you address the issue ofclass imbalancein training aCNN?**
 
@@ -2968,6 +2977,7 @@ Combination approach (best):
 ---
 
 ## Question 10
+- [ ] Done
 
 **Whatmetricswould you use to evaluate theperformanceof aCNN?**
 
@@ -3176,6 +3186,7 @@ Common Mistakes:
 ---
 
 ## Question 11
+- [ ] Done
 
 **How can youvisualize the featureslearned by aconvolutional layer?**
 
@@ -3476,6 +3487,7 @@ Standalone:
 ---
 
 ## Question 12
+- [ ] Done
 
 **How doResidual Networks (ResNets)facilitate trainingdeeper networks?**
 
@@ -3799,6 +3811,7 @@ $$y = F(x) + x$$
 ---
 
 ## Question 13
+- [ ] Done
 
 **How dogenerative adversarial networks (GANs)leverageconvolutional layers?**
 
@@ -4057,6 +4070,7 @@ Training tricks:
 ---
 
 ## Question 14
+- [ ] Done
 
 **How doCNNsinterpret and process color information differently thangrayscale images?**
 
@@ -4171,6 +4185,7 @@ Disadvantages:
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explore the limitations ofCNNsin understanding contextual information within images.**
 
@@ -4227,6 +4242,7 @@ CNNs have limited contextual understanding due to local receptive fields, lack o
 ---
 
 ## Question 16
+- [ ] Done
 
 **How canrecurrent neural networks (RNNs)be combined withCNNsto process sequential image data?**
 

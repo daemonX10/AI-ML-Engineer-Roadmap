@@ -1,6 +1,7 @@
 # Pandas Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How can you read and write data from and to a CSV file in Pandas ?**
 
@@ -34,6 +35,7 @@ df.to_csv('output.csv',
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you handle missing data in a DataFrame?**
 
@@ -67,6 +69,7 @@ df.interpolate()               # Linear interpolation
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you apply a function to all elements in a DataFrame column?**
 
@@ -100,6 +103,7 @@ df['result'] = df['num'] * 2
 ---
 
 ## Question 4
+- [ ] Done
 
 **Demonstrate how to handle duplicate rows in a DataFrame**
 
@@ -129,6 +133,7 @@ df.duplicated().sum()
 ---
 
 ## Question 5
+- [ ] Done
 
 **How can you pivot data in a DataFrame?**
 
@@ -167,6 +172,7 @@ df_long = pd.melt(pivot.reset_index(),
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you apply conditional logic using where()?**
 
@@ -197,6 +203,7 @@ df['category'] = np.select(conditions, choices)
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you reshape a DataFrame using stack and unstack methods?**
 
@@ -236,6 +243,7 @@ df.stack(level=1)  # Move quarter level to rows
 ---
 
 ## Question 8
+- [ ] Done
 
 **How can you perform statistical aggregation on DataFrame groups?**
 
@@ -269,6 +277,7 @@ df.groupby('category').agg(
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you use window functions in Pandas for running calculations?**
 
@@ -294,6 +303,7 @@ df['rolling_avg'] = df['value'].rolling(window=3, min_periods=1).mean()
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do you normalize data within a DataFrame column?**
 
@@ -321,6 +331,7 @@ df['group_norm'] = df.groupby('category')['value'].transform(
 ---
 
 ## Question 11
+- [ ] Done
 
 **How do you create simple plots from a DataFrame?**
 
@@ -370,6 +381,7 @@ sns.heatmap(df.corr(), annot=True)
 ---
 
 ## Question 12
+- [ ] Done
 
 **What techniques can you use to improve the performance of Pandas operations?**
 
@@ -422,6 +434,7 @@ df['c'] = np.where(df['a'] > 500, df['a'], df['b'])  # Faster than .apply()
 ---
 
 ## Question 13
+- [ ] Done
 
 **Compare and contrast the memory usage in Pandas for categories vs. objects.**
 
@@ -479,6 +492,7 @@ print(size_cat > 'M')  # [False, False, True, True]
 ---
 
 ## Question 14
+- [ ] Done
 
 **How do you manage memory usage when working with large DataFrames?**
 
@@ -563,6 +577,7 @@ df = pd.read_csv('data.csv', dtype_backend='pyarrow')  # ~50% less memory
 ---
 
 ## Question 15
+- [ ] Done
 
 **How can you use chunking to process large CSV files with Pandas?**
 

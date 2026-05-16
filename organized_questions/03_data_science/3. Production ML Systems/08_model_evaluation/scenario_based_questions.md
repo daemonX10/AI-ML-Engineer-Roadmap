@@ -1,6 +1,7 @@
 # Model Evaluation Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you evaluate a time-series forecasting model?**
 
@@ -28,6 +29,7 @@ Standard CV is invalid for time series; use temporal splits.
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you validate a natural language processing model?**
 
@@ -50,6 +52,7 @@ Always validate on data from different distribution.
 ---
 
 ## Question 3
+- [ ] Done
 
 **How would you approach the evaluation of a fraud detection algorithm with highly imbalanced classes?**
 
@@ -77,6 +80,7 @@ Tune threshold based on business cost of FP vs FN.
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss how you would evaluate a computer vision model used for self-driving cars.**
 
@@ -100,6 +104,7 @@ Safety-critical systems need extensive edge case testing.
 ---
 
 ## Question 5
+- [ ] Done
 
 **Propose a framework for continuous evaluation of an online learning system.**
 
@@ -124,6 +129,7 @@ Set up automated retraining triggers.
 ---
 
 ## Question 6
+- [ ] Done
 
 **How would you assess the business impact of precision and recall in a customer churn prediction model?**
 
@@ -148,6 +154,7 @@ Always translate metrics to business dollars.
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss the role of model explainability in model evaluation.**
 

@@ -1,6 +1,7 @@
 # Linear Algebra Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the importance of linear algebra in optimization problems, such as gradient descent.**
 
@@ -72,6 +73,7 @@ print(f"Max stable learning rate: {max_lr:.4f}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you handle large-scale matrix operations efficiently in terms of memory and computation?**
 
@@ -149,6 +151,7 @@ large_matrix = np.memmap('large_matrix.dat', dtype='float32',
 ---
 
 ## Question 3
+- [ ] Done
 
 **Propose a method for dimensionality reduction using linear algebra techniques.**
 
@@ -237,6 +240,7 @@ print(f"Components for 95% variance: {pca.n_components_}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **How would you use matrices to model relational data in databases?**
 
@@ -331,6 +335,7 @@ print(f"Common neighbors A-C: {score}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss how to apply linear algebra to image processing tasks.**
 
@@ -430,6 +435,7 @@ def eigenfaces(images, n_components=50):
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss the role of linear algebra in deep learning, specifically in training convolutional neural networks.**
 
@@ -522,6 +528,7 @@ Y = X @ W.T + b  # Shape: (32, 128)
 ---
 
 ## Question 7
+- [ ] Done
 
 **Propose strategies to visualize high-dimensional data using linear algebra techniques.**
 
@@ -618,6 +625,7 @@ Need interpretability? → PCA (can trace back to features)
 ---
 
 ## Question 8
+- [ ] Done
 
 **Discuss an approach for optimizing memory usage in matrix computations for a large-scale machine learning application.**
 
@@ -719,12 +727,14 @@ Fastest/smallest ←――――――――――――――――――→ Sl
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain how you would use linear algebra to clean and preprocess a dataset.**
 
 ---
 
 ## Question 10
+- [ ] Done
 
 **Given a dataset, determine if PCA would be beneficial and justify your approach.**
 

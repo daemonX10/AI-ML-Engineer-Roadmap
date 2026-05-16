@@ -1,6 +1,7 @@
 # Light Gbm Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement a basic LightGBM model for a binary classification problem using Python.**
 
@@ -65,6 +66,7 @@ print(f"Accuracy: {model.score(X_test, y_test):.4f}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a script to perform grid search hyperparameter tuning for a LightGBM model in Python.**
 
@@ -137,6 +139,7 @@ random_search.fit(X_train, y_train)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Code a LightGBM regression model with custom evaluation metrics in Python.**
 
@@ -200,6 +203,7 @@ print(f"RMSE: {np.sqrt(np.mean((y_test - predictions)**2)):.4f}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Demonstrate feature importance extraction from a trained LightGBM model.**
 
@@ -253,6 +257,7 @@ print("\nTop 5 Features:", dict(sorted(importance_dict.items(),
 ---
 
 ## Question 5
+- [ ] Done
 
 **Create a Python function that uses LightGBM for cross-validation on a given dataset.**
 
@@ -332,6 +337,7 @@ def manual_lightgbm_cv(X, y, params, n_folds=5):
 ---
 
 ## Question 6
+- [ ] Done
 
 **Optimize a LightGBM model using early stopping criteria with Python's lightgbm package.**
 
@@ -401,6 +407,7 @@ print(f"Best iteration (sklearn): {model_sklearn.best_iteration_}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement a multi-class classification using LightGBM and evaluate it using the appropriate metrics.**
 

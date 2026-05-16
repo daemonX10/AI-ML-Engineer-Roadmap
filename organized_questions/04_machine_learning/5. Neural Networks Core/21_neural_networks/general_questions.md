@@ -1,6 +1,7 @@
 # Neural Networks Interview Questions - General Questions
 
 ## Question 1: Elaborate on the structure of a basic artificial neuron
+- [ ] Done
 
 ### Structure Components
 A basic artificial neuron receives multiple inputs, applies weights to each, sums them with a bias, and passes through an activation function.
@@ -27,6 +28,7 @@ x₃ ──w₃──┘    ↑
 ---
 
 ## Question 2: Difference between fully connected and convolutional layers
+- [ ] Done
 
 ### Comparison
 
@@ -47,6 +49,7 @@ x₃ ──w₃──┘    ↑
 ---
 
 ## Question 3: How do batch normalization layers work?
+- [ ] Done
 
 ### Mechanism
 Batch normalization normalizes activations across the mini-batch to zero mean and unit variance, then applies learnable scale (γ) and shift (β).
@@ -67,6 +70,7 @@ $$y = \gamma \hat{x} + \beta$$
 ---
 
 ## Question 4: How to determine number of layers and types
+- [ ] Done
 
 ### Decision Framework
 
@@ -87,6 +91,7 @@ $$y = \gamma \hat{x} + \beta$$
 ---
 
 ## Question 5: Criteria for choosing an optimizer
+- [ ] Done
 
 ### Selection Criteria
 
@@ -109,6 +114,7 @@ Start with Adam (lr=0.001), switch to SGD with momentum for fine-tuning if neede
 ---
 
 ## Question 6: When to choose RNN over feedforward network
+- [ ] Done
 
 ### Use RNN When
 
@@ -130,6 +136,7 @@ For many sequence tasks, Transformers now outperform RNNs but require more compu
 ---
 
 ## Question 7: Transfer learning and when to use it
+- [ ] Done
 
 ### Definition
 Transfer learning uses a model pretrained on a large dataset (e.g., ImageNet) and adapts it to a new task, leveraging learned features instead of training from scratch.
@@ -160,6 +167,7 @@ model.fc = nn.Linear(2048, num_classes)  # Only train this
 ---
 
 ## Question 8: Metrics for evaluating neural network performance
+- [ ] Done
 
 ### Classification Metrics
 
@@ -184,6 +192,7 @@ model.fc = nn.Linear(2048, num_classes)  # Only train this
 ---
 
 ## Question 9: How CNNs achieve translation invariance
+- [ ] Done
 
 ### Mechanisms
 
@@ -202,6 +211,7 @@ model.fc = nn.Linear(2048, num_classes)  # Only train this
 ---
 
 ## Question 10: Effect of data normalization on neural networks
+- [ ] Done
 
 ### Benefits
 
@@ -223,6 +233,7 @@ Always fit normalization on training data only, then apply to test data.
 ---
 
 ## Question 11: Challenge of catastrophic forgetting
+- [ ] Done
 
 ### Definition
 Catastrophic forgetting occurs when a neural network trained on new task B forgets previously learned task A, as weights are updated to optimize for new data only.
@@ -244,6 +255,7 @@ Catastrophic forgetting occurs when a neural network trained on new task B forge
 ---
 
 ## Question 12: Attention mechanisms in transformer models
+- [ ] Done
 
 ### How It Works
 
@@ -270,6 +282,7 @@ $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)
 ---
 
 ## Question 13: Bidirectional RNN and when to use it
+- [ ] Done
 
 ### Definition
 Bidirectional RNN processes sequence in both forward and backward directions, capturing context from both past and future.
@@ -297,6 +310,7 @@ Backward: x₁ ← x₂ ← x₃ ← x₄
 ---
 
 ## Question 14: Handling variable-length sequences
+- [ ] Done
 
 ### Techniques
 
@@ -320,6 +334,7 @@ output, _ = rnn(packed)
 ---
 
 ## Question 15: Ensuring neural network generalizes well
+- [ ] Done
 
 ### Strategies
 
@@ -339,6 +354,7 @@ output, _ = rnn(packed)
 ---
 
 ## Question 16: RNNs for time-series forecasting
+- [ ] Done
 
 ### Approach
 
@@ -370,6 +386,7 @@ class TimeSeriesLSTM(nn.Module):
 ---
 
 ## Question 17: Autoencoders for anomaly detection
+- [ ] Done
 
 ### Approach
 1. Train autoencoder on normal data only
@@ -397,6 +414,7 @@ is_anomaly = error > threshold
 ---
 
 ## Question 18: GANs for image generation and style transfer
+- [ ] Done
 
 ### Image Generation
 - Generator learns to produce realistic images from noise
@@ -420,6 +438,7 @@ is_anomaly = error > threshold
 ---
 
 ## Question 19: Neural network approach for recommendation system
+- [ ] Done
 
 ### Architecture Options
 
@@ -450,6 +469,7 @@ class RecModel(nn.Module):
 ---
 
 ## Question 20: Architecture for self-driving car perception
+- [ ] Done
 
 ### Components
 
@@ -469,6 +489,7 @@ class RecModel(nn.Module):
 ---
 
 ## Question 21: Unsupervised learning in neural networks
+- [ ] Done
 
 ### Applications
 
@@ -492,6 +513,7 @@ class RecModel(nn.Module):
 ---
 
 ## Question 22: Neural networks for predictive maintenance
+- [ ] Done
 
 ### Approach
 

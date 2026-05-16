@@ -1,6 +1,7 @@
 # Feature Engineering Interview Questions - Coding Questions
 
 ## Question 1: Write a function to normalize a feature vector using Min-Max normalization.
+- [ ] Done
 
 ### Answer
 
@@ -84,6 +85,7 @@ print(scaled)  # [-1.0, -0.5, 0.0, 0.5, 1.0]
 ---
 
 ## Question 2: Write a Python function to perform one-hot encoding on a categorical feature.
+- [ ] Done
 
 ### Answer
 
@@ -185,6 +187,7 @@ print(encoded)
 ---
 
 ## Question 3: Write a Python function to perform PCA on a dataset and reduce its dimensions.
+- [ ] Done
 
 ### Answer
 
@@ -312,6 +315,7 @@ def plot_pca_2d(X_pca, y, title="PCA Visualization"):
 ---
 
 ## Question 4: Use Scikit-learn to select the top k features using SelectKBest.
+- [ ] Done
 
 ### Answer
 
@@ -424,6 +428,7 @@ print(f"CV Accuracy: {scores.mean():.4f} (+/- {scores.std() * 2:.4f})")
 ---
 
 ## Question 5: Write a function to impute missing values in a dataset using mean, median, or mode.
+- [ ] Done
 
 ### Answer
 
@@ -561,6 +566,7 @@ print(X_imputed)
 ---
 
 ## Question 6: Write a SQL query to create derived feature columns from existing columns.
+- [ ] Done
 
 ### Answer
 
@@ -685,6 +691,7 @@ ORDER BY product_id, date;
 ---
 
 ## Question 7: Implement feature hashing in Python to handle high-cardinality categorical features.
+- [ ] Done
 
 ### Answer
 
@@ -814,6 +821,7 @@ print("Hashed text shape:", hashed_text.shape)
 ---
 
 ## Question 8: Write a function to identify and remove highly correlated features from a dataset.
+- [ ] Done
 
 ### Answer
 
@@ -940,6 +948,7 @@ def smart_remove_correlated(df, target_col, threshold=0.9):
 ---
 
 ## Question 9: Implement polynomial feature generation in Python.
+- [ ] Done
 
 ### Answer
 
@@ -1070,6 +1079,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 10: Write a function to scale features using standardization and MinMax scaling.
+- [ ] Done
 
 ### Answer
 

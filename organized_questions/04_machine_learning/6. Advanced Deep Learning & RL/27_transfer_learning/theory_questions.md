@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: What is transfer learning and how does it differ from traditional machine learning?
+- [ ] Done
 
 ### Definition
 Transfer learning is a machine learning technique where a model trained on one task (source) is reused as the starting point for a model on a different task (target).
@@ -47,6 +48,7 @@ model.fit(small_dataset)  # Better performance
 ---
 
 ## Question 2: Explain the concept of domain and task in the context of transfer learning
+- [ ] Done
 
 ### Domain Definition
 A domain $\mathcal{D}$ consists of:
@@ -86,6 +88,7 @@ $$\mathcal{T} = \{\mathcal{Y}, f(x)\}$$
 ---
 
 ## Question 3: What are the benefits of using transfer learning techniques?
+- [ ] Done
 
 ### Key Benefits
 
@@ -136,6 +139,7 @@ Epochs to converge:
 ---
 
 ## Question 4: Describe the difference between transductive and inductive transfer learning
+- [ ] Done
 
 ### Inductive Transfer Learning
 **Definition:** Source and target tasks are different, but some labeled data exists in target domain.
@@ -197,6 +201,7 @@ Target Domain → [Task A] without labels
 ---
 
 ## Question 5: Explain the concept of 'negative transfer'. When can it occur?
+- [ ] Done
 
 ### Definition
 Negative transfer occurs when transfer learning hurts performance on the target task compared to training from scratch.
@@ -266,6 +271,7 @@ else:
 ---
 
 ## Question 6: What are feature extractors in the context of transfer learning?
+- [ ] Done
 
 ### Definition
 Feature extractors are the parts of a pre-trained model (typically early/middle layers) used to transform raw inputs into meaningful representations, without being modified during transfer.
@@ -331,6 +337,7 @@ classifier = torch.nn.Linear(2048, num_classes)
 ---
 
 ## Question 7: Describe the process of fine-tuning a pre-trained neural network
+- [ ] Done
 
 ### Definition
 Fine-tuning is the process of taking a pre-trained model and further training it (partially or fully) on a new target dataset.
@@ -413,6 +420,7 @@ for epoch in range(num_epochs):
 ---
 
 ## Question 8: What is one-shot learning and how does it relate to transfer learning?
+- [ ] Done
 
 ### Definition
 One-shot learning is the ability to learn a new class from just one (or very few) example(s).
@@ -485,6 +493,7 @@ Face verification:
 ---
 
 ## Question 9: Explain the differences between few-shot learning and zero-shot learning
+- [ ] Done
 
 ### Few-Shot Learning
 **Definition:** Learn to classify new classes with only a few labeled examples (typically 1-5).
@@ -567,6 +576,7 @@ More realistic but harder
 ---
 
 ## Question 10: What are the common pre-trained models available for use in transfer learning?
+- [ ] Done
 
 ### Computer Vision Models
 
@@ -628,6 +638,7 @@ vgg = VGG16(weights='imagenet')
 ---
 
 ## Question 11: Describe how you would approach transfer learning with an imbalanced dataset
+- [ ] Done
 
 ### The Challenge
 - Transfer learning + class imbalance
@@ -723,6 +734,7 @@ for epoch in range(epochs):
 ---
 
 ## Question 12: What are some challenges when applying transfer learning to sequential data?
+- [ ] Done
 
 ### Challenges
 
@@ -817,6 +829,7 @@ class SequenceClassifier(nn.Module):
 ---
 
 ## Question 13: Can you explain how knowledge distillation works in the context of transfer learning?
+- [ ] Done
 
 ### Definition
 Knowledge distillation transfers knowledge from a large "teacher" model to a smaller "student" model by training the student to mimic the teacher's outputs.
@@ -904,6 +917,7 @@ for x, y in dataloader:
 ---
 
 ## Question 14: Explain the concept of meta-learning and how it applies to transfer learning
+- [ ] Done
 
 ### Definition
 Meta-learning ("learning to learn") trains models to adapt quickly to new tasks using experience from many related tasks.
@@ -980,6 +994,7 @@ def maml_train(model, task_distribution, inner_lr, outer_lr, K=5):
 ---
 
 ## Question 15: What is the role of attention mechanisms in transferring knowledge between tasks?
+- [ ] Done
 
 ### Attention in Transfer Learning
 Attention mechanisms identify which parts of input or which features are most relevant for the target task.
@@ -1053,6 +1068,7 @@ class TaskAdaptiveAttention(nn.Module):
 ---
 
 ## Question 16: How does transfer learning relate to reinforcement learning?
+- [ ] Done
 
 ### Transfer in RL: The Challenge
 RL agents typically learn from scratch for each new environment, which is:
@@ -1136,6 +1152,7 @@ Transfer: Visual features, physics intuition
 ---
 
 ## Question 17: Describe a scenario where transfer learning could significantly reduce the need for labeled data in a mobile app
+- [ ] Done
 
 ### Scenario: Pet Breed Classification App
 
@@ -1214,6 +1231,7 @@ tflite_model = converter.convert()
 ---
 
 ## Question 18: What are the potential risks of bias when using transfer learning, particularly with pre-trained models?
+- [ ] Done
 
 ### Sources of Bias
 

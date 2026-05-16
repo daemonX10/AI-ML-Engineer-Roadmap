@@ -1,6 +1,7 @@
 # Cost Function Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is a cost function in machine learning?**
 
@@ -35,6 +36,7 @@ Think of cost function as a "scoring system" - it tells you how wrong your model
 ---
 
 ## Question 2
+- [ ] Done
 
 **How does a cost function differ from a loss function?**
 
@@ -64,6 +66,7 @@ Many practitioners use these terms interchangeably. In interviews, clarify the d
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain the purpose of a cost function in the context of model training.**
 
@@ -95,6 +98,7 @@ Cost function is like a GPS for optimization - it tells you how far you are from
 ---
 
 ## Question 4
+- [ ] Done
 
 **What are the characteristics of a good cost function?**
 
@@ -128,6 +132,7 @@ Mention trade-offs: MSE is convex but sensitive to outliers; Huber loss is robus
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is the significance of the global minimum in a cost function?**
 
@@ -166,6 +171,7 @@ Finding global minimum is like finding the lowest valley in a mountain range - y
 ---
 
 ## Question 6
+- [ ] Done
 
 **How does the choice of cost function affect the generalization of a model?**
 
@@ -203,6 +209,7 @@ Always connect cost function choice to the data characteristics (noise, outliers
 ---
 
 ## Question 7
+- [ ] Done
 
 **Describe the Mean Squared Error (MSE) cost function and when to use it.**
 
@@ -249,6 +256,7 @@ print(f"MSE: {mse(y_true, y_pred)}")  # Output: 0.375
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain the Cross-Entropy cost function and its applications.**
 
@@ -303,6 +311,7 @@ print(f"BCE: {binary_cross_entropy(y_true, y_pred):.4f}")
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is the Hinge loss, and in which scenarios is it applied?**
 
@@ -358,6 +367,7 @@ print(f"Hinge Loss: {hinge_loss(y_true, y_pred):.4f}")
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is the 0-1 loss function, and why is it often impractical?**
 
@@ -402,6 +412,7 @@ Mention that while we optimize surrogate losses, we often report 0-1 loss (accur
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain the concept of Regularization in cost functions.**
 
@@ -452,6 +463,7 @@ lasso.fit(X_train, y_train)
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain the difference between batch gradient descent and stochastic gradient descent.**
 
@@ -502,6 +514,7 @@ Mention that in practice, mini-batch GD (next question) is most commonly used as
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is mini-batch gradient descent, and how does it balance performance and speed?**
 
@@ -564,6 +577,7 @@ def mini_batch_gd(X, y, batch_size=32, lr=0.01, epochs=100):
 ---
 
 ## Question 14
+- [ ] Done
 
 **How does the choice of learning rate influence the optimization of a cost function?**
 
@@ -612,6 +626,7 @@ Mention that learning rate is often the first hyperparameter to tune, and techni
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is meant by the term “learning rate schedule,” and why is it important?**
 
@@ -670,6 +685,7 @@ for epoch in range(epochs):
 ---
 
 ## Question 16
+- [ ] Done
 
 **What are vanishing and exploding gradients in the context of cost functions?**
 
@@ -711,6 +727,7 @@ Connect to specific architectures: RNNs are prone to vanishing gradients (solved
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain the role of momentum in accelerating convergence of a cost function.**
 
@@ -768,6 +785,7 @@ def sgd_momentum(params, grads, velocity, lr=0.01, momentum=0.9):
 ---
 
 ## Question 18
+- [ ] Done
 
 **What are the adaptive learning rate algorithms, and how do they improve optimization?**
 
@@ -817,6 +835,7 @@ Adaptive optimizers are like having a different gear for each wheel of a car. Wh
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe a scenario where the Huber loss might be more appropriate than the MSE loss.**
 
@@ -870,6 +889,7 @@ def huber_loss(y_true, y_pred, delta=1.0):
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain the concept of loss function shaping and its potential advantages.**
 
@@ -916,6 +936,7 @@ Loss shaping is like a teacher adjusting their grading rubric. Instead of equal 
 ---
 
 ## Question 21
+- [ ] Done
 
 **Describe how you would diagnose and fix issues with cost function optimization in a neural network.**
 

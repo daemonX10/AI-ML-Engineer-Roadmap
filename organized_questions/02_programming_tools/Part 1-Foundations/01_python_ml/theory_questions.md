@@ -1,6 +1,7 @@
 # Python ML Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain the difference between Python 2 and Python 3.**
 
@@ -29,6 +30,7 @@ Always mention that Python 3 is the only choice for production ML work today.
 ---
 
 ## Question 2
+- [ ] Done
 
 **How does Python manage memory?**
 
@@ -73,6 +75,7 @@ b.append(a)
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is PEP 8 and why is it important?**
 
@@ -103,6 +106,7 @@ PEP 8 is Python's official **style guide** that provides conventions for writing
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe how a dictionary works in Python.**
 
@@ -145,6 +149,7 @@ Mention O(1) average time complexity for lookup, insertion, and deletion.
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is list comprehension? Give an example.**
 
@@ -186,6 +191,7 @@ binary_features = [1 if val > threshold else 0 for val in values]
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain generators. How do they differ from list comprehensions?**
 
@@ -233,6 +239,7 @@ for num in count_up_to(5):
 ---
 
 ## Question 7
+- [ ] Done
 
 **How does Python's garbage collection work?**
 
@@ -265,6 +272,7 @@ Reference counting handles ~95% of garbage; cyclic GC handles the edge cases.
 ---
 
 ## Question 8
+- [ ] Done
 
 **What are decorators? Provide an example.**
 
@@ -312,6 +320,7 @@ process_data(100)
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is NumPy and how is it useful in ML?**
 
@@ -353,6 +362,7 @@ NumPy is the foundation; Pandas, scikit-learn, TensorFlow all build on top of it
 ---
 
 ## Question 10
+- [ ] Done
 
 **How does Scikit-learn fit into the ML workflow?**
 
@@ -390,6 +400,7 @@ Scikit-learn is for traditional ML (not deep learning). For neural networks, use
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain Matplotlib and Seaborn for data visualization.**
 
@@ -430,6 +441,7 @@ Use Seaborn for quick EDA, then Matplotlib for final customization.
 ---
 
 ## Question 12
+- [ ] Done
 
 **What is TensorFlow and Keras? How do they relate?**
 
@@ -476,6 +488,7 @@ For most practitioners, `tf.keras` is the recommended approach—Keras simplicit
 # --- Missing Questions Restored from Source (Q13-Q40) ---
 
 ## Question 13
+- [ ] Done
 
 **Explain the process of data cleaning and why it's important in machine learning.**
 
@@ -538,6 +551,7 @@ Always mention that data cleaning typically consumes **60-80% of a data scientis
 ---
 
 ## Question 14
+- [ ] Done
 
 **What are the common steps involved in data preprocessing for a machine learning model?**
 
@@ -600,6 +614,7 @@ Stress that **scaling should be fit only on training data** and then applied to 
 ---
 
 ## Question 15
+- [ ] Done
 
 **Describe the concept of feature scaling and why it is necessary.**
 
@@ -653,6 +668,7 @@ Always clarify: "Fit the scaler on training data only, then transform both train
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the difference between label encoding and one-hot encoding.**
 
@@ -710,6 +726,7 @@ Mention `drop='first'` (or `drop_first=True` in pandas) to avoid the **dummy var
 ---
 
 ## Question 17
+- [ ] Done
 
 **What is the purpose of data splitting into train, validation, and test sets?**
 
@@ -762,6 +779,7 @@ Always mention **stratification** (`stratify=y`) for classification tasks to mai
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe the process of building a machine learning model in Python.**
 
@@ -826,6 +844,7 @@ Emphasize using **sklearn Pipelines** to chain preprocessing and modeling. This 
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain cross-validation and where it fits in the model training process.**
 
@@ -891,6 +910,7 @@ Cross-validation is used during **model selection and hyperparameter tuning**, n
 ---
 
 ## Question 20
+- [ ] Done
 
 **What is the bias-variance tradeoff in machine learning?**
 
@@ -952,6 +972,7 @@ Use the analogy: "Bias is like consistently shooting left of the target (systema
 ---
 
 ## Question 21
+- [ ] Done
 
 **Describe the steps taken to improve a model's accuracy.**
 
@@ -1016,6 +1037,7 @@ Always start with a **simple baseline**, then iterate. Mention that the biggest 
 ---
 
 ## Question 22
+- [ ] Done
 
 **What are hyperparameters, and how do you tune them?**
 
@@ -1086,6 +1108,7 @@ Mention that **Random Search is preferred** over Grid Search for large hyperpara
 ---
 
 ## Question 23
+- [ ] Done
 
 **What is a confusion matrix, and how is it interpreted?**
 
@@ -1151,6 +1174,7 @@ Always mention that **accuracy alone is misleading for imbalanced datasets**. If
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain the ROC curve and the area under the curve (AUC) metric.**
 
@@ -1218,6 +1242,7 @@ Emphasize that ROC-AUC uses **probability scores** (`predict_proba`), not hard p
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain different validation strategies, such as k-fold cross-validation.**
 
@@ -1287,6 +1312,7 @@ Always specify **why** you chose a particular strategy: "I use Stratified K-Fold
 ---
 
 ## Question 26
+- [ ] Done
 
 **Describe steps to take when a model performs well on the training data but poorly on new data.**
 
@@ -1360,6 +1386,7 @@ Always frame overfitting in terms of the **bias-variance tradeoff**: "The model 
 ---
 
 ## Question 27
+- [ ] Done
 
 **Explain the use of regularization in linear models and provide a Python example.**
 
@@ -1424,6 +1451,7 @@ Always mention that **features must be scaled before regularization** because th
 ---
 
 ## Question 28
+- [ ] Done
 
 **What are the advantages of using Stochastic Gradient Descent over standard Gradient Descent?**
 
@@ -1502,6 +1530,7 @@ In practice, **mini-batch GD** (batch size 32–256) is the most common choice a
 ---
 
 ## Question 29
+- [ ] Done
 
 **What is dimensionality reduction, and when would you use it?**
 
@@ -1569,6 +1598,7 @@ Mention the **explained variance ratio** to justify how many components to keep.
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain the difference between batch learning and online learning.**
 
@@ -1636,6 +1666,7 @@ Mention real-world applications: recommendation systems (user preferences change
 ---
 
 ## Question 31
+- [ ] Done
 
 **What is the role of attention mechanisms in natural language processing models?**
 
@@ -1713,6 +1744,7 @@ Emphasize that attention is the **core building block** of Transformers, which p
 ---
 
 ## Question 32
+- [ ] Done
 
 **Explain how to use context managers in Python and provide a machine learning-related example.**
 
@@ -1797,6 +1829,7 @@ Emphasize that context managers prevent **resource leaks** — a common issue in
 ---
 
 ## Question 33
+- [ ] Done
 
 **What are slots in Python classes and how could they be useful in machine learning applications?**
 
@@ -1889,6 +1922,7 @@ print(f"Slots access time:   {slots_time:.4f}s")
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain the concept of microservices architecture in deploying machine learning models.**
 
@@ -1973,6 +2007,7 @@ Mention tools like **Docker** (containerization), **Kubernetes** (orchestration)
 ---
 
 ## Question 35
+- [ ] Done
 
 **What are the considerations for scaling a machine learning application with Python?**
 
@@ -2050,6 +2085,7 @@ Mention specific tools: **Dask** for parallel pandas, **Ray** for distributed co
 ---
 
 ## Question 36
+- [ ] Done
 
 **What is model versioning, and how can it be managed in a real-world application?**
 
@@ -2133,6 +2169,7 @@ Emphasize that model versioning is critical for **regulatory compliance** (finan
 ---
 
 ## Question 37
+- [ ] Done
 
 **Describe a situation where a machine learning model might fail, and how you would investigate the issue using Python.**
 
@@ -2218,6 +2255,7 @@ Walk through a **real scenario**: "In production, I noticed accuracy dropping fr
 ---
 
 ## Question 38
+- [ ] Done
 
 **What are Python's profiling tools and how do they assist in optimizing machine learning code?**
 
@@ -2318,6 +2356,7 @@ Show that profiling is part of your workflow: "Before optimizing, I profile to f
 ---
 
 ## Question 39
+- [ ] Done
 
 **Explain how unit tests and integration tests ensure the correctness of your machine learning code.**
 
@@ -2446,6 +2485,7 @@ Emphasize testing practices: "I write unit tests for preprocessing functions and
 ---
 
 ## Question 40
+- [ ] Done
 
 **What is the role of Explainable AI (XAI) and how can Python libraries help achieve it?**
 
@@ -2538,6 +2578,7 @@ Frame XAI as a **business requirement**, not just a technical nice-to-have: "In 
 # FastAI Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you leverage FastAI's transfer learning capabilities for domain-specific computer vision tasks?**
 
@@ -2588,6 +2629,7 @@ Mention that FastAI's `fine_tune()` implements the proven "gradual unfreezing" s
 ---
 
 ## Question 2
+- [ ] Done
 
 **What are the best practices for using FastAI's data loading and augmentation pipelines efficiently?**
 
@@ -2639,6 +2681,7 @@ Mention FastAI's unique "presizing" strategy: resize to a larger size first (`it
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you implement FastAI model fine-tuning strategies for optimal performance on custom datasets?**
 
@@ -2693,6 +2736,7 @@ Mention that FastAI's `fine_tune()` internally implements: 1 epoch frozen traini
 ---
 
 ## Question 4
+- [ ] Done
 
 **When should you use FastAI's high-level API versus PyTorch's lower-level implementation for different projects?**
 
@@ -2750,6 +2794,7 @@ Position FastAI as "PyTorch + best practices" rather than a separate framework. 
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you optimize FastAI training performance using mixed precision and distributed training?**
 
@@ -2811,6 +2856,7 @@ Mention that FastAI's `to_fp16()` is the simplest way to enable mixed precision 
 ---
 
 ## Question 6
+- [ ] Done
 
 **What techniques help you implement FastAI integration with MLOps and experiment tracking systems?**
 
@@ -2873,6 +2919,7 @@ Highlight that FastAI's callback system makes MLOps integration clean and modula
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you handle FastAI model deployment and production serving workflows?**
 
@@ -2933,6 +2980,7 @@ torch.onnx.export(learn.model, dummy_input, 'model.onnx',
 ---
 
 ## Question 8
+- [ ] Done
 
 **When would you use FastAI's tabular learning capabilities versus other ML frameworks for structured data?**
 
@@ -2988,6 +3036,7 @@ FastAI's key tabular innovation is **entity embeddings** (from the "Entity Embed
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you implement FastAI custom loss functions and metrics for specialized training objectives?**
 
@@ -3059,6 +3108,7 @@ FastAI distinguishes between **loss functions** (used for backprop, must be diff
 ---
 
 ## Question 10
+- [ ] Done
 
 **What strategies help you manage FastAI model interpretability and explanation workflows?**
 
@@ -3126,6 +3176,7 @@ Mention `interp.plot_top_losses()` as a practical debugging tool — it shows th
 ---
 
 ## Question 11
+- [ ] Done
 
 **How do you handle FastAI integration with different data sources and preprocessing pipelines?**
 
@@ -3183,6 +3234,7 @@ FastAI's `DataBlock` API is composable: each step (get_items, splitter, get_y, t
 ---
 
 ## Question 12
+- [ ] Done
 
 **When should you use FastAI's learning rate finding and scheduling techniques for training optimization?**
 
@@ -3243,6 +3295,7 @@ The one-cycle policy (Smith, 2018) achieves "super-convergence" — training fas
 ---
 
 ## Question 13
+- [ ] Done
 
 **How do you implement FastAI model ensembling and prediction combination strategies?**
 
@@ -3317,6 +3370,7 @@ TTA (`learn.tta()`) is the easiest ensemble technique and almost always improves
 ---
 
 ## Question 14
+- [ ] Done
 
 **What techniques help you optimize FastAI memory usage and computational efficiency?**
 
@@ -3380,6 +3434,7 @@ Always start with `to_fp16()` (free 50% memory savings) and `GradientAccumulatio
 ---
 
 ## Question 15
+- [ ] Done
 
 **How do you use FastAI for natural language processing tasks and text classification applications?**
 
@@ -3444,6 +3499,7 @@ ULMFiT (Howard & Ruder, 2018) was a landmark paper that showed **transfer learni
 ---
 
 ## Question 16
+- [ ] Done
 
 **When would you implement FastAI custom architectures versus using pre-built model configurations?**
 
@@ -3507,6 +3563,7 @@ FastAI supports any PyTorch `nn.Module` as a model. The key is providing a `spli
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you handle FastAI model validation and cross-validation strategies for robust evaluation?**
 
@@ -3583,6 +3640,7 @@ For small datasets, always use K-Fold CV to get a reliable accuracy estimate. Fa
 ---
 
 ## Question 18
+- [ ] Done
 
 **What are the best practices for FastAI hyperparameter tuning and optimization workflows?**
 
@@ -3649,6 +3707,7 @@ Mention that FastAI's design philosophy reduces the hyperparameter search space:
 ---
 
 ## Question 19
+- [ ] Done
 
 **How do you implement FastAI integration with cloud platforms and distributed computing resources?**
 
@@ -3720,6 +3779,7 @@ For production cloud deployments, use SageMaker's "script mode" where you provid
 ---
 
 ## Question 20
+- [ ] Done
 
 **When should you use FastAI's progressive resizing and training curriculum strategies?**
 
@@ -3792,6 +3852,7 @@ Progressive resizing is a FastAI innovation that consistently improves both spee
 ---
 
 ## Question 21
+- [ ] Done
 
 **How do you optimize FastAI for specific hardware configurations and acceleration platforms?**
 
@@ -3854,6 +3915,7 @@ The most impactful hardware optimizations are: 1) `to_fp16()` (2x speedup), 2) `
 ---
 
 ## Question 22
+- [ ] Done
 
 **What strategies help you manage FastAI model versioning and reproducibility requirements?**
 
@@ -3930,6 +3992,7 @@ Full reproducibility requires controlling 4 things: **seed** (randomness), **cod
 ---
 
 ## Question 23
+- [ ] Done
 
 **How do you implement FastAI integration with real-time inference and streaming applications?**
 
@@ -4008,6 +4071,7 @@ For real-time serving, always call `learn.model.eval()` and wrap inference in `t
 ---
 
 ## Question 24
+- [ ] Done
 
 **When would you use FastAI's data block API versus traditional PyTorch data loading approaches?**
 
@@ -4089,6 +4153,7 @@ DataBlock is a **declarative** API (you describe *what* your data looks like), w
 ---
 
 ## Question 25
+- [ ] Done
 
 **How do you handle FastAI model compression and quantization for edge deployment?**
 
@@ -4177,6 +4242,7 @@ For edge deployment, the typical pipeline is: Train (FastAI) → Export (ONNX) �
 ---
 
 ## Question 26
+- [ ] Done
 
 **What techniques help you implement FastAI integration with automated machine learning workflows?**
 
@@ -4256,6 +4322,7 @@ FastAI already automates many things (LR finding, one-cycle scheduling, augmenta
 ---
 
 ## Question 27
+- [ ] Done
 
 **How do you use FastAI for medical imaging and healthcare application development?**
 
@@ -4325,6 +4392,7 @@ Always mention **patient-level splitting** — the most common mistake in medica
 ---
 
 ## Question 28
+- [ ] Done
 
 **When should you combine FastAI with other frameworks for comprehensive ML solution development?**
 
@@ -4397,6 +4465,7 @@ FastAI excels at rapid deep learning development but isn't a complete ML platfor
 ---
 
 ## Question 29
+- [ ] Done
 
 **How do you implement FastAI custom data transformations and preprocessing functions?**
 
@@ -4470,6 +4539,7 @@ FastAI transforms use **type dispatch** (`encodes(self, x: TensorImage)`) to aut
 ---
 
 ## Question 30
+- [ ] Done
 
 **What are the considerations for FastAI model security and privacy in production environments?**
 
@@ -4541,6 +4611,7 @@ Model security is an emerging field. Key threats are: **adversarial attacks** (f
 ---
 
 ## Question 31
+- [ ] Done
 
 **How do you handle FastAI integration with feature engineering and selection pipelines?**
 
@@ -4612,6 +4683,7 @@ FastAI's `add_datepart()` is a powerful utility that extracts 13+ features from 
 ---
 
 ## Question 32
+- [ ] Done
 
 **When would you use FastAI's mixed precision training versus full precision for different scenarios?**
 
@@ -4680,6 +4752,7 @@ FP16 is a "free lunch" on modern GPUs — faster training, less memory, negligib
 ---
 
 ## Question 33
+- [ ] Done
 
 **How do you implement FastAI model monitoring and performance tracking in production systems?**
 
@@ -4760,6 +4833,7 @@ The three critical production metrics are: **accuracy drift** (model getting wor
 ---
 
 ## Question 34
+- [ ] Done
 
 **What strategies help you manage FastAI complexity in large-scale machine learning projects?**
 
@@ -4853,6 +4927,7 @@ Large FastAI projects benefit from separating concerns: data loading (DataBlock)
 ---
 
 ## Question 35
+- [ ] Done
 
 **How do you handle FastAI integration with data versioning and pipeline orchestration tools?**
 
@@ -4952,6 +5027,7 @@ DVC + Git gives you reproducibility (track data and code together), while Airflo
 ---
 
 ## Question 36
+- [ ] Done
 
 **When should you use FastAI's callback system versus custom training loop implementations?**
 
@@ -5026,6 +5102,7 @@ FastAI's callback system provides 15+ hook points in the training loop, covering
 ---
 
 ## Question 37
+- [ ] Done
 
 **How do you implement FastAI model testing and validation procedures for quality assurance?**
 
@@ -5108,6 +5185,7 @@ def test_prediction():
 ---
 
 ## Question 38
+- [ ] Done
 
 **What techniques help you optimize FastAI for specific domains like finance, retail, or manufacturing?**
 
@@ -5180,6 +5258,7 @@ Domain knowledge matters more than algorithm choice. In finance, focus on class 
 ---
 
 ## Question 39
+- [ ] Done
 
 **How do you use FastAI for reinforcement learning and sequential decision-making applications?**
 
@@ -5254,6 +5333,7 @@ FastAI's main RL value is as a **feature extractor** — pre-trained vision mode
 ---
 
 ## Question 40
+- [ ] Done
 
 **When would you implement FastAI custom optimizers versus using built-in optimization algorithms?**
 
@@ -5332,6 +5412,7 @@ For most tasks, FastAI's default optimizer (Adam with weight decay) works well. 
 ---
 
 ## Question 41
+- [ ] Done
 
 **How do you handle FastAI integration with business intelligence and reporting systems?**
 
@@ -5413,6 +5494,7 @@ BI integration is about making ML accessible to non-technical stakeholders. The 
 ---
 
 ## Question 42
+- [ ] Done
 
 **What are the best practices for FastAI code organization and project structure management?**
 
@@ -5510,6 +5592,7 @@ The transition from notebook to production is the biggest challenge in ML projec
 ---
 
 ## Question 43
+- [ ] Done
 
 **How do you implement FastAI accessibility features and inclusive AI development practices?**
 
@@ -5596,6 +5679,7 @@ Inclusive AI is not just ethical — it's practical. Biased models fail in produ
 ---
 
 ## Question 45
+- [ ] Done
 
 **How do you handle FastAI integration with collaborative development and team-based workflows?**
 
@@ -5691,6 +5775,7 @@ ML team collaboration requires solving 3 problems that don't exist in traditiona
 ---
 
 ## Question 46
+- [ ] Done
 
 **What strategies help you manage FastAI licensing and intellectual property considerations?**
 
@@ -5756,6 +5841,7 @@ The most common IP mistake is ignoring data licensing. A model trained on non-co
 ---
 
 ## Question 47
+- [ ] Done
 
 **How do you implement FastAI custom evaluation metrics and model selection criteria?**
 
@@ -5840,6 +5926,7 @@ Always choose metrics aligned with business objectives. Accuracy is misleading f
 ---
 
 ## Question 48
+- [ ] Done
 
 **When would you use FastAI's experimental features versus stable APIs for different applications?**
 
@@ -5916,6 +6003,7 @@ In production, use stable APIs and pin library versions. In research, experiment
 ---
 
 ## Question 49
+- [ ] Done
 
 **How do you use FastAI for educational purposes and machine learning curriculum development?**
 
@@ -5999,6 +6087,7 @@ FastAI's educational philosophy is "top-down" — start with complete, working a
 ---
 
 ## Question 50
+- [ ] Done
 
 **What techniques help you integrate FastAI workflows with continuous learning and model updating systems?**
 
@@ -6102,6 +6191,7 @@ Continuous learning has 3 main strategies: **full retraining** (most reliable, e
 ---
 
 ## Question 51
+- [ ] Done
 
 **Explain the difference between Python 2 and Python 3**
 
@@ -6149,6 +6239,7 @@ All modern ML libraries (TensorFlow 2.x, PyTorch, Scikit-learn) **only support P
 ---
 
 ## Question 52
+- [ ] Done
 
 **How does Python manage memory ?**
 
@@ -6225,6 +6316,7 @@ Python's GC uses **generational collection** with 3 generations (0, 1, 2). New o
 ---
 
 ## Question 53
+- [ ] Done
 
 **What is PEP 8 and why is it important?**
 
@@ -6291,6 +6383,7 @@ PEP 8 is important because **code is read more often than written**. In ML teams
 ---
 
 ## Question 54
+- [ ] Done
 
 **Describe how a dictionary works in Python . What are keys and values ?**
 
@@ -6376,6 +6469,7 @@ Dictionaries are the backbone of Python — used in namespaces, class attributes
 ---
 
 ## Question 55
+- [ ] Done
 
 **What is list comprehension and give an example of its use?**
 
@@ -6459,6 +6553,7 @@ List comprehensions are preferred over `map()` and `filter()` in Python for read
 ---
 
 ## Question 56
+- [ ] Done
 
 **Explain the concept of generators in Python . How do they differ from list comprehensions ?**
 
@@ -6542,6 +6637,7 @@ Generators are essential for ML when datasets don't fit in memory. Keras/TensorF
 ---
 
 ## Question 57
+- [ ] Done
 
 **Discuss the usage of *args and **kwargs in function definitions**
 
@@ -6621,6 +6717,7 @@ model = RandomForestClassifier(**params)  # Unpacks dict as keyword args
 ---
 
 ## Question 58
+- [ ] Done
 
 **How does Python’s garbage collection work?**
 
@@ -6683,6 +6780,7 @@ In ML, memory leaks often come from **accumulated training history**, **cached G
 ---
 
 ## Question 59
+- [ ] Done
 
 **What are decorators , and can you provide an example of when you’d use one?**
 
@@ -6749,6 +6847,7 @@ Decorators follow the **Open/Closed Principle**. Common built-ins: `@staticmetho
 ---
 
 ## Question 60
+- [ ] Done
 
 **What is NumPy and how is it useful in machine learning ?**
 
@@ -6818,6 +6917,7 @@ NumPy is fast because operations run in **compiled C code** on **contiguous memo
 ---
 
 ## Question 61
+- [ ] Done
 
 **How does Scikit-learn fit into the machine learning workflow ?**
 
@@ -6895,6 +6995,7 @@ Scikit-learn excels for **tabular data** and **classical ML**. For **deep learni
 ---
 
 ## Question 62
+- [ ] Done
 
 **Explain Matplotlib and Seaborn libraries for data visualization**
 
@@ -6981,6 +7082,7 @@ In ML interviews, demonstrate you use visualization for **EDA** (distributions, 
 ---
 
 ## Question 63
+- [ ] Done
 
 **What is TensorFlow and Keras , and how do they relate to each other?**
 
@@ -7050,6 +7152,7 @@ Since TF 2.0, **Keras is TensorFlow's primary API** — there's no reason to use
 ---
 
 ## Question 64
+- [ ] Done
 
 **Explain the process of data cleaning and why it’s important in machine learning**
 
@@ -7108,6 +7211,7 @@ Always discuss cleaning as a **systematic process**: inspect → handle missing 
 ---
 
 ## Question 65
+- [ ] Done
 
 **What are the common steps involved in data preprocessing for a machine learning model ?**
 
@@ -7194,6 +7298,7 @@ The most important preprocessing rule: **fit on training data, transform on both
 ---
 
 ## Question 66
+- [ ] Done
 
 **Describe the concept of feature scaling and why it is necessary**
 
@@ -7253,6 +7358,7 @@ Critical rule: **fit the scaler on training data only**, then transform both tra
 ---
 
 ## Question 67
+- [ ] Done
 
 **Explain the difference between label encoding and one-hot encoding**
 
@@ -7319,6 +7425,7 @@ Never use label encoding for **nominal** (unordered) categories with linear mode
 ---
 
 ## Question 68
+- [ ] Done
 
 **What is the purpose of data splitting in train , validation , and test sets ?**
 
@@ -7373,6 +7480,7 @@ The test set is a **one-time-use** resource — if you tune hyperparameters base
 ---
 
 ## Question 69
+- [ ] Done
 
 **Describe the process of building a machine learning model in Python**
 
@@ -7457,6 +7565,7 @@ Always frame your answer around the **systematic workflow**: problem definition 
 ---
 
 ## Question 70
+- [ ] Done
 
 **Explain cross-validation and where it fits in the model training process**
 
@@ -7525,6 +7634,7 @@ CV is used for **model selection and hyperparameter tuning**, NOT for final eval
 ---
 
 ## Question 71
+- [ ] Done
 
 **What is the bias-variance tradeoff in machine learning ?**
 
@@ -7589,6 +7699,7 @@ The sweet spot is **low bias + low variance**. Ensemble methods like **Random Fo
 ---
 
 ## Question 72
+- [ ] Done
 
 **Describe the steps taken to improve a model’s accuracy**
 
@@ -7643,6 +7754,7 @@ Always **diagnose before improving**. 80% of gains come from data quality, 20% f
 ---
 
 ## Question 73
+- [ ] Done
 
 **What are hyperparameters , and how do you tune them?**
 
@@ -7715,6 +7827,7 @@ study.optimize(objective, n_trials=100)
 ---
 
 ## Question 74
+- [ ] Done
 
 **What is a confusion matrix , and how is it interpreted?**
 
@@ -7764,6 +7877,7 @@ Always discuss which metric matters for the **specific problem**: medical diagno
 ---
 
 ## Question 75
+- [ ] Done
 
 **Explain the ROC curve and the area under the curve (AUC) metric**
 
@@ -7822,6 +7936,7 @@ AUC is **threshold-independent** — it evaluates the model across all threshold
 ---
 
 ## Question 76
+- [ ] Done
 
 **Explain different validation strategies , such as k-fold cross-validation**
 
@@ -7871,6 +7986,7 @@ Default to **Stratified K-Fold** for classification and **K-Fold** for regressio
 ---
 
 ## Question 77
+- [ ] Done
 
 **What is dimensionality reduction , and when would you use it?**
 
@@ -7929,6 +8045,7 @@ PCA is for **preprocessing** (feed reduced features to a model), while t-SNE/UMA
 ---
 
 ## Question 78
+- [ ] Done
 
 **Explain the difference between batch learning and online learning**
 
@@ -7984,6 +8101,7 @@ Online learning's key parameter is the **learning rate** — too high forgets ol
 ---
 
 ## Question 79
+- [ ] Done
 
 **What is the role of attention mechanisms in natural language processing models?**
 
@@ -8044,6 +8162,7 @@ Attention is the foundation of **all modern NLP**: BERT (bidirectional self-atte
 ---
 
 ## Question 80
+- [ ] Done
 
 **Explain how to use context managers in Python and provide a machine learning-related example**
 
@@ -8130,6 +8249,7 @@ Context managers implement the **RAII pattern** (Resource Acquisition Is Initial
 ---
 
 ## Question 81
+- [ ] Done
 
 **What are slots in Python classes and how could they be useful in machine learning applications?**
 
@@ -8213,6 +8333,7 @@ Use `__slots__` when creating **millions of small objects** (data points, graph 
 ---
 
 ## Question 82
+- [ ] Done
 
 **Explain the concept of microservices architecture in deploying machine learning models**
 
@@ -8289,6 +8410,7 @@ Key tools: **Docker** (containerization), **Kubernetes** (orchestration), **Fast
 ---
 
 ## Question 83
+- [ ] Done
 
 **What are the considerations for scaling a machine learning application with Python ?**
 
@@ -8358,6 +8480,7 @@ The GIL (Global Interpreter Lock) limits Python's multi-threading for CPU-bound 
 ---
 
 ## Question 84
+- [ ] Done
 
 **What is model versioning , and how can it be managed in a real-world application ?**
 
@@ -8428,6 +8551,7 @@ Model versioning is part of **MLOps** — the ML equivalent of DevOps. Key tools
 ---
 
 ## Question 85
+- [ ] Done
 
 **What is the role of Explainable AI (XAI) and how can Python libraries help achieve it?**
 

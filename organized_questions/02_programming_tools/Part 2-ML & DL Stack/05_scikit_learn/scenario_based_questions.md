@@ -1,6 +1,7 @@
 # Scikit-Learn Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Your model achieves 95% accuracy on training data but only 70% on test data. What do you do?**
 
@@ -52,6 +53,7 @@ model = RandomForestClassifier(
 ---
 
 ## Question 2
+- [ ] Done
 
 **You have a dataset with 90% Class A and 10% Class B. How do you handle this imbalance?**
 
@@ -94,6 +96,7 @@ print(f"F1 Score: {f1_score(y_test, y_pred):.4f}")
 ---
 
 ## Question 3
+- [ ] Done
 
 **You need to compare multiple models and select the best one. What's your approach?**
 
@@ -153,6 +156,7 @@ print(f"\nBest model: {best_model_name}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Your dataset has 1000 features but only 500 samples. How do you approach this?**
 
@@ -206,6 +210,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 5
+- [ ] Done
 
 **You need to deploy a trained model. What steps do you follow?**
 
@@ -251,6 +256,7 @@ joblib.dump(metadata, 'model_metadata.joblib')
 ---
 
 ## Question 6
+- [ ] Done
 
 **Your model's performance degrades over time in production. How do you handle this?**
 
@@ -302,6 +308,7 @@ def monitor_predictions(model, new_data, baseline_predictions):
 ---
 
 ## Question 7
+- [ ] Done
 
 **You're asked to explain model predictions to business stakeholders. How do you do it?**
 
@@ -350,6 +357,7 @@ shap.force_plot(
 ---
 
 ## Question 8
+- [ ] Done
 
 **You need to handle missing values in production data differently from training. How?**
 
@@ -408,6 +416,7 @@ imputer_stats = {
 ---
 
 ## Question 9
+- [ ] Done
 
 **Your manager asks for a quick baseline model before building a complex one. What do you do?**
 
@@ -458,6 +467,7 @@ print(f"Worth adding complexity: {improvement > 0.02}")
 ---
 
 ## Question 10
+- [ ] Done
 
 **You discover that two features are highly correlated (0.95). Should you remove one?**
 
@@ -512,6 +522,7 @@ for feat1, feat2, corr in correlated_pairs:
 **Rule of thumb**: Remove for linear models, keep for tree-based models
 
 ## Question 11
+- [ ] Done
 
 **How would you approach building a recommendation system using Scikit-Learn ?**
 
@@ -561,6 +572,7 @@ distances, indices = knn.kneighbors(user_item_matrix[0:1])
 ---
 
 ## Question 12
+- [ ] Done
 
 **Discuss the steps you would take to diagnose and solve performance issues in a machine learning model built with Scikit-Learn**
 
@@ -620,6 +632,7 @@ for name, m in [('RF', RandomForestClassifier()), ('GB', GradientBoostingClassif
 ---
 
 ## Question 13
+- [ ] Done
 
 **Propose a pipeline for processing and analyzing textual data from social media platforms using Scikit-Learn’s tools**
 

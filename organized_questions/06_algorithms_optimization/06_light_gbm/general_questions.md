@@ -1,6 +1,7 @@
 # Light Gbm Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do Gradient-based One-Side Sampling (GOSS) and Exclusive Feature Bundling (EFB) contribute to LightGBM's performance?**
 
@@ -60,6 +61,7 @@ Bundled:   [3, 1, 0, 4, 2]  # Add offset for B
 ---
 
 ## Question 2
+- [ ] Done
 
 **What preprocessing steps would you recommend when preparing data for LightGBM?**
 
@@ -131,6 +133,7 @@ train_data = lgb.Dataset(
 ---
 
 ## Question 3
+- [ ] Done
 
 **In what scenarios would you prefer LightGBM over other machine learning algorithms?**
 
@@ -180,6 +183,7 @@ For structured/tabular data with reasonable size, LightGBM is often the best sta
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you approach hyperparameter optimization for a LightGBM model?**
 
@@ -246,6 +250,7 @@ study.optimize(objective, n_trials=100)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Which metrics can you use to evaluate the performance of a LightGBM model?**
 
@@ -304,6 +309,7 @@ def custom_metric(preds, data):
 ---
 
 ## Question 6
+- [ ] Done
 
 **How can LightGBM be applied to ranking problems, and what parameters are important in this context?**
 
@@ -375,6 +381,7 @@ model = lgb.train(
 ---
 
 ## Question 7
+- [ ] Done
 
 **Detail how LightGBM can be used for multiclass classification problems.**
 
@@ -450,6 +457,7 @@ print(classification_report(y_test, preds))
 ---
 
 ## Question 8
+- [ ] Done
 
 **Outline your approach to building a fraud detection system using LightGBM.**
 
@@ -522,6 +530,7 @@ precision, recall, thresholds = precision_recall_curve(y_test, probs)
 ---
 
 ## Question 9
+- [ ] Done
 
 **How can the interpretability of LightGBM be improved while maintaining its performance?**
 
@@ -595,6 +604,7 @@ params = {
 ---
 
 ## Question 10
+- [ ] Done
 
 **Consider the implications of adversarial examples on LightGBM models and how you would protect against them.**
 
@@ -665,6 +675,7 @@ params = {
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explore the possibility of combining LightGBM with neural networks in a hybrid model for complex tasks.**
 

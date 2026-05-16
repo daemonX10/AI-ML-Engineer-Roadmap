@@ -1,6 +1,7 @@
 # Optimization Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **Why is convexity important in optimization problems?**
 
@@ -34,6 +35,7 @@ for all $\lambda \in [0,1]$
 ---
 
 ## Question 2
+- [ ] Done
 
 **Distinguish between local minima and global minima.**
 
@@ -72,6 +74,7 @@ f(x)
 ---
 
 ## Question 3
+- [ ] Done
 
 **When would you choose to use a conjugate gradient method?**
 
@@ -112,6 +115,7 @@ Use conjugate gradient for **large-scale optimization where storing the full Hes
 ---
 
 ## Question 4
+- [ ] Done
 
 **What factors influence the convergence rate of an optimization algorithm?**
 
@@ -150,6 +154,7 @@ $$\kappa = \frac{\lambda_{max}}{\lambda_{min}}$$
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you approach selecting an appropriate optimization algorithm for a given problem?**
 
@@ -193,6 +198,7 @@ Selection depends on **problem size, function properties, available compute, and
 ---
 
 ## Question 6
+- [ ] Done
 
 **What methods can be used to tune hyperparameters effectively?**
 
@@ -234,6 +240,7 @@ Hyperparameter tuning methods range from **manual search to sophisticated Bayesi
 ---
 
 ## Question 7
+- [ ] Done
 
 **Outline a strategy for optimizing models in a distributed computing environment.**
 

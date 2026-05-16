@@ -1,6 +1,7 @@
 # Cnn Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the trade-offs between usingmax poolingandaverage pooling.**
 
@@ -44,6 +45,7 @@ Max pooling dominates due to empirical success in classification, but understand
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss recent advances inoptimization techniquesforCNNs.**
 
@@ -100,6 +102,7 @@ Mention combination: AdamW + warm-up + cosine + mixed precision = modern standar
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the role ofCNNsin the field ofobject detection and segmentation.**
 

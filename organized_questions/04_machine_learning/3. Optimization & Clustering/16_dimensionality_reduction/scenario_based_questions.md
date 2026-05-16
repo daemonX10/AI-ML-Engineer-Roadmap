@@ -1,6 +1,7 @@
 # Dimensionality Reduction Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you use dimensionality reduction for a dataset containing thousands of features, such as gene expression data?**
 
@@ -109,6 +110,7 @@ UMAP/t-SNE for visualization
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss your approach to reduce dimensionality for text data before performing sentiment analysis.**
 
@@ -226,6 +228,7 @@ clf.fit(X_embeddings[train_idx], labels[train_idx])
 ---
 
 ## Question 3
+- [ ] Done
 
 **How could dimensionality reduction be applied effectively when visualizing high-dimensional data?**
 
@@ -300,6 +303,7 @@ plt.show()
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain the process you would follow to select features for a predictive model in a marketing dataset.**
 
@@ -405,6 +409,7 @@ score_selected = cross_val_score(model, X_selected, y, cv=5).mean()
 ---
 
 ## Question 5
+- [ ] Done
 
 **What are some potential pitfalls when applying dimensionality reduction to time-series data?**
 

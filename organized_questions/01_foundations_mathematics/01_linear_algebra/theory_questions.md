@@ -1,6 +1,7 @@
 # Linear Algebra Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is a vector and how is it used in machine learning?**
 
@@ -56,6 +57,7 @@ dot_product = np.dot(v1, v2)  # 32
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the difference between a scalar and a vector.**
 
@@ -112,6 +114,7 @@ prediction = np.dot(weights, features)  # returns scalar: 2.3
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is a matrix and why is it central to linear algebra?**
 
@@ -181,6 +184,7 @@ A_inv = np.linalg.inv(A)
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain the concept of a tensor in the context of machine learning.**
 
@@ -250,6 +254,7 @@ x_transposed = x.permute(1, 0)   # swap axes
 ---
 
 ## Question 5
+- [ ] Done
 
 **What are the properties of matrix multiplication?**
 
@@ -330,6 +335,7 @@ Y = X @ W                       # (100, 10) - valid
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain the dot product of two vectors and its significance in machine learning.**
 
@@ -410,6 +416,7 @@ prediction = np.dot(weights, features) + bias  # 0.5*2 + (-0.3)*1 + 0.8*3 + 0.1 
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is the cross product of vectors and when is it used?**
 
@@ -490,6 +497,7 @@ def compute_normal(p1, p2, p3):
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is the determinant of a matrix and what information does it provide?**
 
@@ -586,6 +594,7 @@ def multivariate_gaussian_pdf(x, mean, cov):
 ---
 
 ## Question 9
+- [ ] Done
 
 **Can you explain what an eigenvector and eigenvalue are?**
 
@@ -684,6 +693,7 @@ pc1 = eigenvectors[:, 0]
 ---
 
 ## Question 10
+- [ ] Done
 
 **How is the trace of a matrix defined and what is its relevance?**
 
@@ -766,6 +776,7 @@ print(np.isclose(np.trace(A @ B @ C), np.trace(C @ A @ B)))  # True
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is a diagonal matrix and how is it used in linear algebra?**
 
@@ -849,6 +860,7 @@ samples = np.random.randn(100, 3) * np.sqrt(variances)
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain the properties of an identity matrix.**
 
@@ -938,6 +950,7 @@ def residual_block(x, transform_fn):
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is a unit vector and how do you find it?**
 
@@ -1031,6 +1044,7 @@ e3 = np.array([0, 0, 1])
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain the concept of an orthogonal matrix.**
 
@@ -1125,6 +1139,7 @@ print(np.allclose(Q.T @ Q, np.eye(3)))  # True (Q is orthogonal)
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is the rank of a matrix and why is it important?**
 
@@ -1217,6 +1232,7 @@ A_approx = low_rank_approx(A, k=1)  # Rank-1 approximation
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is the method of Gaussian elimination?**
 
@@ -1341,6 +1357,7 @@ print(np.allclose(A @ x, b))  # True
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain the concept of linear dependence and independence.**
 
@@ -1446,6 +1463,7 @@ check_multicollinearity(X)  # Multicollinearity detected
 ---
 
 ## Question 18
+- [ ] Done
 
 **What is the meaning of the solution space of a system of linear equations?**
 
@@ -1547,6 +1565,7 @@ print(analyze_system(A3, b3))  # No solution (inconsistent)
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe the conditions for consistency in linear equations.**
 
@@ -1661,6 +1680,7 @@ x_lstsq, residuals, _, _ = np.linalg.lstsq(A3, b3, rcond=None)
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain the LU decomposition of a matrix.**
 
@@ -1777,6 +1797,7 @@ def solve_upper(U, y):
 ---
 
 ## Question 21
+- [ ] Done
 
 **What are singular or ill-conditioned matrices?**
 
@@ -1879,6 +1900,7 @@ X_pinv = np.linalg.pinv(X)  # Works even when X is rank-deficient
 ---
 
 ## Question 22
+- [ ] Done
 
 **What is the Singular Value Decomposition (SVD) and its applications in machine learning?**
 
@@ -1996,6 +2018,7 @@ def pseudo_inverse(A):
 ---
 
 ## Question 23
+- [ ] Done
 
 **Explain the concept of matrix factorization.**
 
@@ -2116,6 +2139,7 @@ R_approx = U @ V.T  # Predicted ratings (including for 0s)
 ---
 
 ## Question 24
+- [ ] Done
 
 **What is a linear transformation in linear algebra?**
 
@@ -2247,6 +2271,7 @@ def visualize_transform(A, title="Linear Transformation"):
 ---
 
 ## Question 25
+- [ ] Done
 
 **Describe the kernel and image of a linear transformation.**
 
@@ -2365,6 +2390,7 @@ print("Kernel of full-rank B:", kernel_B.shape)  # (2, 0) - empty
 ---
 
 ## Question 26
+- [ ] Done
 
 **How does change of basis affect matrix representation of linear transformations?**
 
@@ -2477,6 +2503,7 @@ X_reconstructed = pca.inverse_transform(X_pca)
 ---
 
 ## Question 27
+- [ ] Done
 
 **Describe the role of linear algebra in neural network computations.**
 
@@ -2610,6 +2637,7 @@ def batch_norm(x, gamma, beta, eps=1e-5):
 ---
 
 ## Question 28
+- [ ] Done
 
 **Explain how the SVD is used in recommendation systems.**
 
@@ -2762,6 +2790,7 @@ def find_similar_items(V, item_idx, top_n=3):
 ---
 
 ## Question 29
+- [ ] Done
 
 **Explain how you would preprocess data to be used in linear algebra computations.**
 
@@ -2892,6 +2921,7 @@ print("L2 norms:", np.linalg.norm(X_l2, axis=1))  # All 1.0
 ---
 
 ## Question 30
+- [ ] Done
 
 **Describe ways to find the rank of a matrix effectively.**
 
@@ -3009,6 +3039,7 @@ for n in sizes:
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain the difference between Cholesky and LU decomposition.**
 
@@ -3142,6 +3173,7 @@ samples = sample_multivariate_normal(mean, cov, 1000)
 ---
 
 ## Question 32
+- [ ] Done
 
 **Describe a scenario where linear algebra could be used to improve model accuracy.**
 
@@ -3272,6 +3304,7 @@ print(f"Whitened covariance:\n{np.round(np.cov(X_whitened.T), 4)}")  # ≈ Ident
 ---
 
 ## Question 33
+- [ ] Done
 
 **What are sparse matrices and how are they efficiently represented and used?**
 
@@ -3414,6 +3447,7 @@ x_iterative, info = cg(A_sparse, b, tol=1e-6)
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain how tensor operations are vital in algorithms working with higher-dimensional data.**
 
@@ -3549,6 +3583,7 @@ def hosvd(tensor):
 ---
 
 ## Question 35
+- [ ] Done
 
 **What is the role of linear algebra in time series analysis?**
 

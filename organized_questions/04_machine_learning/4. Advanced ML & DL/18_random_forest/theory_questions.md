@@ -1,6 +1,7 @@
 # Random Forest Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you determine the number of trees to use in a Random Forest?**
 
@@ -64,6 +65,7 @@ for n_trees in [50, 100, 200, 300, 500]:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Describe the process of bootstrapping in Random Forest.**
 
@@ -117,6 +119,7 @@ def bootstrap_sample(X, y):
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is feature importance, and how does Random Forest calculate it?**
 
@@ -171,6 +174,7 @@ perm_importance = permutation_importance(rf, X_test, y_test, n_repeats=10)
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain the concept of variable proximity in Random Forest.**
 
@@ -225,6 +229,7 @@ def compute_proximity(rf, X):
 ---
 
 ## Question 5
+- [ ] Done
 
 **How can Random Forest be used for feature selection?**
 
@@ -297,6 +302,7 @@ X_selected = selector.fit_transform(X_train, y_train)
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you measure the performance of a Random Forest model?**
 
@@ -357,6 +363,7 @@ print(f"MAE: {mean_absolute_error(y_test, y_pred):.4f}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are the limitations of Random Forest?**
 
@@ -410,6 +417,7 @@ Despite its strengths, Random Forest has limitations including reduced interpret
 ---
 
 ## Question 8
+- [ ] Done
 
 **Discuss the impact of imbalanced datasets on Random Forest.**
 
@@ -481,6 +489,7 @@ predictions = (probas >= 0.3).astype(int)  # Instead of 0.5
 ---
 
 ## Question 9
+- [ ] Done
 
 **How does node purity relate to the Random Forest algorithm?**
 
@@ -525,6 +534,7 @@ Information Gain = 0.42 - 0.24 = 0.18
 ---
 
 ## Question 10
+- [ ] Done
 
 **Can Random Forest handle time series data? If so, how?**
 
@@ -594,6 +604,7 @@ for step in range(forecast_horizon):
 ---
 
 ## Question 11
+- [ ] Done
 
 **Describe the steps involved in training a Random Forest model.**
 
@@ -667,6 +678,7 @@ rf.fit(X_train, y_train)
 ---
 
 ## Question 12
+- [ ] Done
 
 **What are some common implementation challenges with Random Forest?**
 
@@ -776,6 +788,7 @@ perm_imp = permutation_importance(rf, X_test, y_test, n_repeats=10)
 ---
 
 ## Question 13
+- [ ] Done
 
 **How do you deal with categorical variables in Random Forest?**
 
@@ -846,6 +859,7 @@ lgb_clf = lgb.LGBMClassifier()
 ---
 
 ## Question 14
+- [ ] Done
 
 **Discuss strategies to deal with high dimensionality in Random Forest.**
 
@@ -932,6 +946,7 @@ X_reduced = pd.DataFrame(X).drop(to_drop, axis=1)
 ---
 
 ## Question 15
+- [ ] Done
 
 **What practices should be followed to scale Random Forest for big data?**
 
@@ -1014,6 +1029,7 @@ X_sparse = sparse.csr_matrix(X)
 ---
 
 ## Question 16
+- [ ] Done
 
 **How does the Random Forest algorithm handle collinearity among features?**
 
@@ -1066,6 +1082,7 @@ to_drop = [col for col in upper.columns if any(upper[col] > 0.95)]
 ---
 
 ## Question 17
+- [ ] Done
 
 **What model validation techniques would you apply for a Random Forest algorithm?**
 
@@ -1140,6 +1157,7 @@ nested_scores = cross_val_score(grid_search, X, y, cv=outer_cv)
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain how Random Forest can be parallelized.**
 
@@ -1203,6 +1221,7 @@ final_pred = np.mean(predictions, axis=0)
 ---
 
 ## Question 19
+- [ ] Done
 
 **How do you tune a Random Forest model's hyperparameters systematically?**
 
@@ -1288,6 +1307,7 @@ bayes_search.fit(X_train, y_train)
 ---
 
 ## Question 20
+- [ ] Done
 
 **How would you explain the Random Forest model to a non-technical stakeholder?**
 
@@ -1338,6 +1358,7 @@ Random Forest works the same way - it builds 100 'decision trees' (like doctors)
 ---
 
 ## Question 21
+- [ ] Done
 
 **Discuss current research trends in ensemble learning and Random Forest.**
 
@@ -1447,6 +1468,7 @@ upper = GradientBoostingRegressor(loss='quantile', alpha=0.9)
 ---
 
 ## Question 22
+- [ ] Done
 
 **What are some ensemble learning techniques that can be combined with Random Forest for enhanced performance?**
 
@@ -1515,6 +1537,7 @@ Level 2: Combine Level 1 predictions with meta-model
 ---
 
 ## Question 23
+- [ ] Done
 
 **Explain how out-of-bag samples can be leveraged for model assessment.**
 
@@ -1585,6 +1608,7 @@ from sklearn.inspection import permutation_importance
 ---
 
 ## Question 24
+- [ ] Done
 
 **How is Random Forest used in the analysis of genomic and bioinformatics data?**
 
@@ -1654,6 +1678,7 @@ X_filtered = selector.fit_transform(X)
 ---
 
 ## Question 25
+- [ ] Done
 
 **What role does Random Forest play in complex systems like self-driving cars or high-frequency trading algorithms?**
 

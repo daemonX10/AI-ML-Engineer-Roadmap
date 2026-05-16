@@ -1,6 +1,7 @@
 # XGBoost Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Write a Python code to load a dataset, create an XGBoost model, and fit it to the data.**
 
@@ -195,6 +196,7 @@ AUC-ROC: 0.9912
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement a Python function that uses cross-validation to optimize the hyperparameters of an XGBoost model.**
 
@@ -431,6 +433,7 @@ best_model, results = random_search_xgboost(X, y, n_iter=30)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Code a Python script that demonstrates how to use XGBoost's built-in feature importance to rank features.**
 
@@ -631,6 +634,7 @@ comparison = compare_importance_methods(model, X_test, y_test, X.columns.tolist(
 ---
 
 ## Question 4
+- [ ] Done
 
 **Implement an XGBoost model on a given dataset and use SHAP values to interpret the model's predictions.**
 

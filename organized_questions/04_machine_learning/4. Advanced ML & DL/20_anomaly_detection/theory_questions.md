@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: What preprocessing steps are important before applying anomaly detection algorithms?
+- [ ] Done
 
 ### Answer
 
@@ -114,6 +115,7 @@ def handle_categorical_for_anomaly(df, categorical_cols):
 ---
 
 ## Question 2: How do you select the threshold for flagging anomalies using a given method?
+- [ ] Done
 
 ### Answer
 
@@ -234,6 +236,7 @@ If FP cost >> FN cost: Higher threshold (more specific)
 ---
 
 ## Question 3: Explain the importance of feature selection in improving anomaly detection
+- [ ] Done
 
 ### Answer
 
@@ -305,6 +308,7 @@ Location → Distance_from_home, country_code
 ---
 
 ## Question 4: How would you deal with class imbalance in a dataset for supervised anomaly detection?
+- [ ] Done
 
 ### Answer
 
@@ -464,6 +468,7 @@ def create_cost_sensitive_model(input_dim, pos_weight=10):
 ---
 
 ## Question 5: What metrics would you use to evaluate the performance of an anomaly detection model?
+- [ ] Done
 
 ### Answer
 
@@ -590,6 +595,7 @@ Use ROC-AUC when:
 ---
 
 ## Question 6: How can you ensure your anomaly detection model is not overfitting?
+- [ ] Done
 
 ### Answer
 
@@ -713,6 +719,7 @@ early_stopping = tf.keras.callbacks.EarlyStopping(
 ---
 
 ## Question 7: Describe a process for tuning hyperparameters of anomaly detection algorithms
+- [ ] Done
 
 ### Answer
 
@@ -816,6 +823,7 @@ def inject_synthetic_anomalies(X, n_anomalies=100, method='gaussian'):
 ---
 
 ## Question 8: How can anomaly detection models be updated over time as new data comes in?
+- [ ] Done
 
 ### Answer
 
@@ -967,6 +975,7 @@ def adaptive_update(detector, X_new, old_scores, significance=0.05):
 ---
 
 ## Question 9: Explain how Support Vector Machines (SVM) can be adapted for anomaly detection
+- [ ] Done
 
 ### Answer
 
@@ -1080,6 +1089,7 @@ $$||x_i - c||^2 \leq R^2 + \xi_i$$
 ---
 
 ## Question 10: How is DBSCAN clustering used for anomaly detection?
+- [ ] Done
 
 ### Answer
 
@@ -1219,6 +1229,7 @@ def hdbscan_anomaly_detection(X, min_cluster_size=15, min_samples=5):
 ---
 
 ## Question 11: What is the Local Outlier Factor algorithm and how does it work?
+- [ ] Done
 
 ### Answer
 
@@ -1327,6 +1338,7 @@ def lof_novelty_detection(X_train, X_test, n_neighbors=20):
 ---
 
 ## Question 12: Explain the concept of anomaly detection using the One-Class SVM
+- [ ] Done
 
 ### Answer
 
@@ -1460,6 +1472,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 13: How does a Random Cut Forest algorithm detect anomalies?
+- [ ] Done
 
 ### Answer
 
@@ -1594,6 +1607,7 @@ scores = rcf.score_samples(X_test)
 ---
 
 ## Question 14: Explain the concept of time-series anomaly detection and the unique challenges it presents
+- [ ] Done
 
 ### Answer
 
@@ -1739,6 +1753,7 @@ def create_time_features(df, timestamp_col):
 ---
 
 ## Question 15: Discuss recent advances in deep learning for anomaly detection
+- [ ] Done
 
 ### Answer
 
@@ -2009,6 +2024,7 @@ class GNNAnomalyDetector:
 ---
 
 ## Question 16: How does the concept of collective anomalies apply to anomaly detection, and what are the challenges associated with it?
+- [ ] Done
 
 ### Answer
 
@@ -2137,6 +2153,7 @@ def sliding_window_anomaly(sequence, window_size=10, step=1):
 ---
 
 ## Question 17: What are the implications of adversarial attacks on anomaly detection systems?
+- [ ] Done
 
 ### Answer
 
@@ -2285,6 +2302,7 @@ class EnsembleAnomalyDetector:
 ---
 
 ## Question 18: How can transfer learning be applied to anomaly detection in different domains?
+- [ ] Done
 
 ### Answer
 
@@ -2469,6 +2487,7 @@ class PretrainedFeatureAnomalyDetector:
 ---
 
 ## Question 19: What is the role of active learning in the context of anomaly detection?
+- [ ] Done
 
 ### Answer
 
@@ -2635,6 +2654,7 @@ def active_learning_simulation(X, y_true, n_iterations=10, batch_size=10):
 # --- Missing Questions Restored from Source (Q26-Q40) ---
 
 ## Question 26
+- [ ] Done
 
 **State the intuition behind "isolating anomalies" via random splits.**
 
@@ -2669,6 +2689,7 @@ Imagine randomly slicing a 2D scatter plot with lines. A point far from all othe
 ---
 
 ## Question 27
+- [ ] Done
 
 **Describe how isolation depth relates to anomaly scores.**
 
@@ -2706,6 +2727,7 @@ In Isolation Forest, the anomaly score of a point is derived from its average pa
 ---
 
 ## Question 28
+- [ ] Done
 
 **How is an isolation tree (iTree) constructed?**
 
@@ -2757,6 +2779,7 @@ FUNCTION iTree(X, current_depth, max_depth):
 ---
 
 ## Question 29
+- [ ] Done
 
 **Explain average path length normalization.**
 
@@ -2798,6 +2821,7 @@ Average path length normalization adjusts raw path lengths by the expected avera
 ---
 
 ## Question 30
+- [ ] Done
 
 **Contrast Isolation Forest with Random Forest feature selection.**
 
@@ -2838,6 +2862,7 @@ Isolation Forest and Random Forest are both tree ensemble methods, but they serv
 ---
 
 ## Question 31
+- [ ] Done
 
 **Why does Isolation Forest handle high dimensionality better than distance-based methods?**
 
@@ -2878,6 +2903,7 @@ Isolation Forest handles high dimensionality better than distance-based methods 
 ---
 
 ## Question 32
+- [ ] Done
 
 **Explain sub-sampling and its role in anomaly detection quality.**
 
@@ -2917,6 +2943,7 @@ Sub-sampling in Isolation Forest refers to drawing a small random subset of data
 ---
 
 ## Question 33
+- [ ] Done
 
 **Discuss expected path length in a random binary tree.**
 
@@ -2956,6 +2983,7 @@ The expected path length to isolate a point in a random binary tree provides the
 ---
 
 ## Question 34
+- [ ] Done
 
 **How do you set n_estimators and sample size?**
 
@@ -3012,6 +3040,7 @@ scores = clf.decision_function(X_test)
 ---
 
 ## Question 35
+- [ ] Done
 
 **Describe contamination parameter and its effect on thresholding.**
 
@@ -3061,6 +3090,7 @@ anomalies = X_test[scores < threshold]
 ---
 
 ## Question 36
+- [ ] Done
 
 **Explain why Isolation Forest is unsupervised yet can be semi-supervised.**
 
@@ -3109,6 +3139,7 @@ scores = clf.decision_function(X_test)
 ---
 
 ## Question 37
+- [ ] Done
 
 **Compare Isolation Forest with LOF (Local Outlier Factor).**
 
@@ -3149,6 +3180,7 @@ Isolation Forest (IF) and Local Outlier Factor (LOF) are two popular anomaly det
 ---
 
 ## Question 38
+- [ ] Done
 
 **Discuss computational complexity and scalability.**
 
@@ -3194,6 +3226,7 @@ Isolation Forest has favorable computational complexity compared to many anomaly
 ---
 
 ## Question 39
+- [ ] Done
 
 **Explain how categorical features are handled (one-hot, hashing).**
 
@@ -3246,6 +3279,7 @@ clf.fit(X_combined)
 ---
 
 ## Question 40
+- [ ] Done
 
 **What are "extended" Isolation Forests and axis-parallel vs. oblique splits?**
 
@@ -3293,6 +3327,7 @@ scores = forest.compute_paths(X_test)
 ---
 
 ## Question 41
+- [ ] Done
 
 **Discuss bias when features have vastly different ranges.**
 
@@ -3341,6 +3376,7 @@ predictions = pipeline.predict(X_test)
 ---
 
 ## Question 42
+- [ ] Done
 
 **Provide pseudo-code for training one isolation tree.**
 
@@ -3401,6 +3437,7 @@ FUNCTION IsolationForest_Train(X, t=100, psi=256):
 ---
 
 ## Question 43
+- [ ] Done
 
 **Explain score aggregation across trees.**
 
@@ -3452,6 +3489,7 @@ FUNCTION AnomalyScore(x, forest, psi):
 ---
 
 ## Question 44
+- [ ] Done
 
 **Describe early stopping in tree growth for efficiency.**
 
@@ -3490,6 +3528,7 @@ Early stopping in isolation tree growth limits tree depth to ceil(log2(psi)) whe
 ---
 
 ## Question 45
+- [ ] Done
 
 **Compare IF to One-Class SVM in memory usage.**
 
@@ -3533,6 +3572,7 @@ Isolation Forest and One-Class SVM are both unsupervised anomaly detection metho
 ---
 
 ## Question 46
+- [ ] Done
 
 **How does noise in training data influence splits?**
 
@@ -3583,6 +3623,7 @@ clf = IsolationForest(
 ---
 
 ## Question 47
+- [ ] Done
 
 **Discuss robustness to concept drift.**
 
@@ -3642,6 +3683,7 @@ class DriftAwareIF:
 ---
 
 ## Question 48
+- [ ] Done
 
 **Explain streaming Isolation Forest variants.**
 
@@ -3700,6 +3742,7 @@ class StreamingIF:
 ---
 
 ## Question 49
+- [ ] Done
 
 **Describe IF for image anomaly detection after embedding.**
 
@@ -3763,6 +3806,7 @@ scores = clf.decision_function(X_test_pca)
 ---
 
 ## Question 50
+- [ ] Done
 
 **Discuss interpretability: how to trace a specific anomaly path.**
 
@@ -3821,6 +3865,7 @@ shap.force_plot(explainer.expected_value, shap_values[0], X_anomaly[0])
 ---
 
 ## Question 51
+- [ ] Done
 
 **Explain why Isolation Forest is suitable for large-scale credit-card fraud.**
 
@@ -3869,6 +3914,7 @@ scores = clf.decision_function(new_transactions)
 ---
 
 ## Question 52
+- [ ] Done
 
 **Provide methods to tune Isolation Forest hyper-parameters.**
 
@@ -3926,6 +3972,7 @@ for n_est in [50, 100, 200]:
 ---
 
 ## Question 53
+- [ ] Done
 
 **Compare using Gini impurity vs. random split in IF.**
 
@@ -3962,6 +4009,7 @@ Standard Isolation Forest uses random splits (no criterion), while traditional d
 ---
 
 ## Question 54
+- [ ] Done
 
 **Discuss distance to normal instances in path length terms.**
 
@@ -4000,6 +4048,7 @@ In Isolation Forest, the path length to isolate a point can be interpreted as an
 ---
 
 ## Question 55
+- [ ] Done
 
 **Explain ensemble diversity importance.**
 
@@ -4049,6 +4098,7 @@ clf = IsolationForest(
 ---
 
 ## Question 56
+- [ ] Done
 
 **What is "SCiForest" (scalable clustered Isolation Forest)?**
 
@@ -4081,6 +4131,7 @@ SCiForest (Scalable Clustered Isolation Forest) is an extension that uses random
 ---
 
 ## Question 57
+- [ ] Done
 
 **Describe visualizing isolation paths in low dimensions.**
 
@@ -4129,6 +4180,7 @@ if X.shape[1] == 2:
 ---
 
 ## Question 58
+- [ ] Done
 
 **Discuss effect of correlated features on split randomness.**
 
@@ -4174,6 +4226,7 @@ clf.fit(X_decorrelated)
 ---
 
 ## Question 59
+- [ ] Done
 
 **Explain IF adaptation to mixed numerical and textual features.**
 
@@ -4228,6 +4281,7 @@ clf.fit(X_combined)
 ---
 
 ## Question 60
+- [ ] Done
 
 **How would you parallelize Isolation Forest on Spark?**
 
@@ -4289,6 +4343,7 @@ def score_udf(*features):
 ---
 
 ## Question 61
+- [ ] Done
 
 **Discuss GPU implementations for IF.**
 
@@ -4339,6 +4394,7 @@ scores = fil_model.predict(X_gpu)
 ---
 
 ## Question 62
+- [ ] Done
 
 **Explain score calibration for probabilistic interpretation.**
 
@@ -4394,6 +4450,7 @@ calibrated = [calibrate_score(s, raw_scores) for s in raw_scores]
 ---
 
 ## Question 63
+- [ ] Done
 
 **How to integrate Isolation Forest into MLOps pipelines.**
 
@@ -4453,6 +4510,7 @@ with mlflow.start_run():
 ---
 
 ## Question 64
+- [ ] Done
 
 **Describe incremental update strategies when new data arrives.**
 
@@ -4514,6 +4572,7 @@ class IncrementalIF:
 ---
 
 ## Question 65
+- [ ] Done
 
 **Discuss ethical implications of false positives in anomaly detection.**
 
@@ -4557,6 +4616,7 @@ False positives in anomaly detection—flagging normal instances as anomalies—
 ---
 
 ## Question 66
+- [ ] Done
 
 **Explain memory vs. accuracy trade-off with sub-sampling size.**
 
@@ -4593,6 +4653,7 @@ The sub-sampling size (psi/max_samples) in Isolation Forest creates a direct tra
 ---
 
 ## Question 67
+- [ ] Done
 
 **Provide a case study of IF detecting bot traffic on websites.**
 
@@ -4646,6 +4707,7 @@ bots = df[df['is_bot'] == -1].sort_values('anomaly_score')
 ---
 
 ## Question 68
+- [ ] Done
 
 **Explain how IF can initialize rare-class oversampling.**
 
@@ -4692,6 +4754,7 @@ X_resampled, y_resampled = smote.fit_resample(X_train, y_train)
 ---
 
 ## Question 69
+- [ ] Done
 
 **Discuss performance on highly imbalanced industrial sensor data.**
 
@@ -4749,6 +4812,7 @@ clf.fit(features)
 ---
 
 ## Question 70
+- [ ] Done
 
 **Explain adaptive isolation forests for drift detection.**
 
@@ -4812,6 +4876,7 @@ class AdaptiveIF:
 ---
 
 ## Question 71
+- [ ] Done
 
 **Compare IF to HBOS (Histogram-based outlier score).**
 
@@ -4854,6 +4919,7 @@ HBOS (Histogram-Based Outlier Score) is a fast anomaly detection method that com
 ---
 
 ## Question 72
+- [ ] Done
 
 **Describe combining IF with autoencoder reconstruction error.**
 
@@ -4915,6 +4981,7 @@ combined_score = 0.5 * normalize(if_scores) + 0.5 * normalize(recon_error)
 ---
 
 ## Question 73
+- [ ] Done
 
 **Predict emerging research on explainable anomaly detection.**
 
@@ -4967,6 +5034,7 @@ shap.waterfall_plot(shap.Explanation(values=shap_values[0],
 ---
 
 ## Question 74
+- [ ] Done
 
 **List pitfalls when evaluating unsupervised anomaly detection.**
 
@@ -5018,6 +5086,7 @@ auc = roc_auc_score(y_true, scores)
 ---
 
 ## Question 75
+- [ ] Done
 
 **Summarize pros/cons of IF compared to tree-based ensembles.**
 

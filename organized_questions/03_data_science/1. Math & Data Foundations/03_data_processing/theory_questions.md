@@ -1,6 +1,7 @@
 # Data Processing Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is data preprocessing in the context of machine learning?**
 
@@ -30,6 +31,7 @@ Data preprocessing is the process of transforming raw data into a clean, structu
 ---
 
 ## Question 2
+- [ ] Done
 
 **What are common data quality issues you might encounter?**
 
@@ -57,6 +59,7 @@ Data quality issues are problems in datasets that can lead to incorrect analysis
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain the difference between structured and unstructured data.**
 
@@ -86,6 +89,7 @@ Structured data is organized in a predefined format (rows and columns) like data
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is the role of feature scaling, and when do you use it?**
 
@@ -115,6 +119,7 @@ Feature scaling transforms numerical features to a similar scale without distort
 ---
 
 ## Question 5
+- [ ] Done
 
 **Describe different types of data normalization techniques.**
 
@@ -155,6 +160,7 @@ $$x_{log} = \log(x + 1)$$
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is data augmentation, and how can it be useful?**
 
@@ -188,6 +194,7 @@ Data augmentation is a technique to artificially increase training data size by 
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain the concept of data encoding and why it's important.**
 
@@ -212,6 +219,7 @@ Data encoding is the process of converting categorical (non-numerical) data into
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is the difference between imputation and deletion of missing values?**
 
@@ -239,6 +247,7 @@ Imputation replaces missing values with estimated values (mean, median, mode, or
 ---
 
 ## Question 9
+- [ ] Done
 
 **Describe the pros and cons of mean, median, and mode imputation.**
 
@@ -260,6 +269,7 @@ Mean, median, and mode are simple statistical imputation methods that replace mi
 ---
 
 ## Question 10
+- [ ] Done
 
 **How does K-Nearest Neighbors imputation work?**
 
@@ -291,6 +301,7 @@ Where $N_k(i)$ = K nearest neighbors of record i
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is one-hot encoding, and when should it be used?**
 
@@ -326,6 +337,7 @@ df_encoded = pd.get_dummies(df, columns=['color'])
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain the difference between label encoding and one-hot encoding.**
 
@@ -350,6 +362,7 @@ Label encoding assigns a unique integer to each category (Cat=0, Dog=1, Bird=2),
 ---
 
 ## Question 13
+- [ ] Done
 
 **Describe the process of feature extraction.**
 
@@ -379,6 +392,7 @@ Feature extraction is the process of transforming raw data into a set of meaning
 ---
 
 ## Question 14
+- [ ] Done
 
 **What is a Fourier transform, and how is it applied in data processing?**
 
@@ -406,6 +420,7 @@ $$X_k = \sum_{n=0}^{N-1} x_n e^{-i2\pi kn/N}$$
 ---
 
 ## Question 15
+- [ ] Done
 
 **What are interaction features, and when might they be useful?**
 
@@ -435,6 +450,7 @@ Interaction features are new features created by combining two or more existing 
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the concept of feature importance and how to measure it.**
 
@@ -463,6 +479,7 @@ $$Importance(f) = \sum_{nodes\ using\ f} n_{samples} \times \Delta Impurity$$
 ---
 
 ## Question 17
+- [ ] Done
 
 **How does feature selection help prevent overfitting?**
 
@@ -491,6 +508,7 @@ Feature selection reduces the number of input features by removing irrelevant or
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain the min-max scaling process.**
 
@@ -526,6 +544,7 @@ X_test_scaled = scaler.transform(X_test)
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is the effect of scaling on gradient descent optimization?**
 
@@ -558,6 +577,7 @@ Feature scaling significantly improves gradient descent convergence by making th
 ---
 
 ## Question 20
+- [ ] Done
 
 **Describe the "dummy variable trap" and how to avoid it.**
 
@@ -588,6 +608,7 @@ pd.get_dummies(df, columns=['color'], drop_first=True)
 ---
 
 ## Question 21
+- [ ] Done
 
 **How does frequency encoding work?**
 
@@ -624,6 +645,7 @@ df['city_encoded'] = df['city'].map(freq_map)
 ---
 
 ## Question 22
+- [ ] Done
 
 **What is target mean encoding, and when is it appropriate to use?**
 
@@ -655,6 +677,7 @@ $$encoded = \frac{n \times category\_mean + m \times global\_mean}{n + m}$$
 ---
 
 ## Question 23
+- [ ] Done
 
 **Explain how window functions are used in time-series data.**
 
@@ -687,6 +710,7 @@ df['ewm_7'] = df['value'].ewm(span=7).mean()
 ---
 
 ## Question 24
+- [ ] Done
 
 **Describe techniques for detrending a time series.**
 
@@ -724,6 +748,7 @@ detrended = df['value'] - result.trend
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain how lag features can be used in time-series analysis.**
 
@@ -761,6 +786,7 @@ for lag in [1, 7, 30]:
 ---
 
 ## Question 26
+- [ ] Done
 
 **What are the key components of an efficient preprocessing pipeline?**
 
@@ -803,6 +829,7 @@ X_test_processed = pipeline.transform(X_test)
 ---
 
 ## Question 27
+- [ ] Done
 
 **What is the role of the ColumnTransformer class in scikit-learn?**
 
@@ -845,6 +872,7 @@ preprocessor = ColumnTransformer([
 ---
 
 ## Question 28
+- [ ] Done
 
 **Explain the methods of tokenization, stemming, and lemmatization.**
 
@@ -887,6 +915,7 @@ lemmatized = [lemmatizer.lemmatize(w) for w in tokens]  # ['The', 'cat', 'are', 
 ---
 
 ## Question 29
+- [ ] Done
 
 **What is the difference between Bag-of-Words and TF-IDF?**
 
@@ -929,6 +958,7 @@ X_tfidf = tfidf.fit_transform(documents)
 ---
 
 ## Question 30
+- [ ] Done
 
 **Describe how word embeddings are used in data processing for NLP.**
 
@@ -970,6 +1000,7 @@ def doc_embedding(text, model):
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain how you might normalize pixel values in images.**
 
@@ -1013,6 +1044,7 @@ image_standardized = (image - mean) / std
 ---
 
 ## Question 32
+- [ ] Done
 
 **What is image augmentation, and why is it useful?**
 
@@ -1053,6 +1085,7 @@ augmentation = transforms.Compose([
 ---
 
 ## Question 33
+- [ ] Done
 
 **How does resizing or cropping images affect model training?**
 
@@ -1088,6 +1121,7 @@ Resizing changes image dimensions to match model input requirements; cropping ex
 ---
 
 ## Question 34
+- [ ] Done
 
 **Describe how you handle different image aspect ratios during preprocessing.**
 
@@ -1127,6 +1161,7 @@ def resize_with_padding(image, target_size):
 ---
 
 ## Question 35
+- [ ] Done
 
 **What are the common steps for data validation?**
 
@@ -1173,6 +1208,7 @@ def validate_data(df):
 ---
 
 ## Question 36
+- [ ] Done
 
 **Explain how you manage duplicate data in your dataset.**
 
@@ -1215,6 +1251,7 @@ df.drop_duplicates(keep='first')  # or 'last' or False (remove all)
 ---
 
 ## Question 37
+- [ ] Done
 
 **Describe the steps you would take to preprocess a dataset for a recommender system.**
 
@@ -1265,6 +1302,7 @@ test = df[df['timestamp'] >= cutoff_date]
 ---
 
 ## Question 38
+- [ ] Done
 
 **Explain how to process a dataset for a model that is sensitive to unbalanced data.**
 
@@ -1307,6 +1345,7 @@ model = LogisticRegression(class_weight='balanced')
 ---
 
 ## Question 39
+- [ ] Done
 
 **What is the concept of automated feature engineering, and what tools are available for it?**
 
@@ -1351,6 +1390,7 @@ features, feature_names = ft.dfs(entityset=es,
 ---
 
 ## Question 40
+- [ ] Done
 
 **What is the role of generative adversarial networks in data augmentation?**
 
@@ -1386,6 +1426,7 @@ GANs generate synthetic training data that resembles real data by learning the u
 ---
 
 ## Question 41
+- [ ] Done
 
 **How does online normalization work, and in what scenarios is it used?**
 
@@ -1434,6 +1475,7 @@ class OnlineNormalizer:
 ---
 
 ## Question 42
+- [ ] Done
 
 **What are some of the cutting-edge preprocessing techniques for dealing with non-numerical data?**
 
@@ -1471,6 +1513,7 @@ embeddings = outputs.last_hidden_state  # Contextual embeddings
 ---
 
 ## Question 43
+- [ ] Done
 
 **What are some challenges in automatic data preprocessing for machine learning?**
 
@@ -1504,6 +1547,7 @@ Automatic data preprocessing (AutoML preprocessing) faces challenges in generali
 ---
 
 ## Question 44
+- [ ] Done
 
 **How does the concept of fairness apply to data processing?**
 
@@ -1538,6 +1582,7 @@ Fairness in data processing ensures preprocessing steps don't introduce or ampli
 ---
 
 ## Question 45
+- [ ] Done
 
 **What are some strategies to detect and mitigate bias in datasets?**
 
@@ -1578,6 +1623,7 @@ for group in df['gender'].unique():
 ---
 
 ## Question 46
+- [ ] Done
 
 **What are the unique challenges in preprocessing data for IoT devices?**
 
@@ -1612,6 +1658,7 @@ IoT data preprocessing faces challenges from resource constraints, data quality 
 ---
 
 ## Question 47
+- [ ] Done
 
 **Explain how you would preprocess geospatial data for location-based services.**
 
@@ -1657,6 +1704,7 @@ h3_index = h3.geo_to_h3(40.7128, -74.0060, resolution=9)
 ---
 
 ## Question 48
+- [ ] Done
 
 **Describe the preprocessing considerations for biometric data used in security systems.**
 
@@ -1696,6 +1744,7 @@ Biometric data (fingerprints, faces, iris, voice) requires specialized preproces
 ---
 
 ## Question 49
+- [ ] Done
 
 **What is one-hot encoding and when should you use it for categorical variables?**
 
@@ -1727,6 +1776,7 @@ Green         0          0           1
 ---
 
 ## Question 50
+- [ ] Done
 
 **How does one-hot encoding handle missing values in categorical data?**
 
@@ -1760,6 +1810,7 @@ encoder = OneHotEncoder(handle_unknown='ignore', sparse=False)
 ---
 
 ## Question 51
+- [ ] Done
 
 **What are the advantages and disadvantages of one-hot encoding compared to other encoding methods?**
 
@@ -1793,6 +1844,7 @@ One-hot encoding is straightforward and prevents ordinal assumptions but increas
 ---
 
 ## Question 52
+- [ ] Done
 
 **In machine learning pipelines, how do you ensure consistent one-hot encoding between training and test sets?**
 
@@ -1830,6 +1882,7 @@ pipeline.predict(X_test)  # Uses same encoder
 ---
 
 ## Question 53
+- [ ] Done
 
 **How do you handle high-cardinality categorical variables when using one-hot encoding?**
 
@@ -1859,6 +1912,7 @@ df_encoded = pd.get_dummies(df, columns=['city_grouped'])
 ---
 
 ## Question 54
+- [ ] Done
 
 **What is the curse of dimensionality in the context of one-hot encoding, and how do you mitigate it?**
 
@@ -1888,6 +1942,7 @@ The curse of dimensionality refers to problems arising when data has too many fe
 ---
 
 ## Question 55
+- [ ] Done
 
 **How do you implement one-hot encoding for categorical variables with hierarchical relationships?**
 
@@ -1922,6 +1977,7 @@ df['location_code'] = df['country'] + '_' + df['state'] + '_' + df['city']
 ---
 
 ## Question 56
+- [ ] Done
 
 **In deep learning, how does one-hot encoding affect gradient computation and model training?**
 
@@ -1958,6 +2014,7 @@ embedding = nn.Embedding(num_categories, embedding_dim)
 ---
 
 ## Question 57
+- [ ] Done
 
 **How do you handle new categorical values in production that weren't present during training?**
 
@@ -1996,6 +2053,7 @@ def encode_with_fallback(value, known_categories):
 ---
 
 ## Question 58
+- [ ] Done
 
 **What's the difference between one-hot encoding and dummy variable encoding?**
 
@@ -2035,6 +2093,7 @@ pd.get_dummies(df, columns=['color'], drop_first=True)
 ---
 
 ## Question 59
+- [ ] Done
 
 **How do you optimize memory usage when working with large datasets and one-hot encoded features?**
 
@@ -2077,6 +2136,7 @@ X_efficient = X_sparse.astype('int8')
 ---
 
 ## Question 60
+- [ ] Done
 
 **In time-series data, how do you apply one-hot encoding to temporal categorical features?**
 
@@ -2117,6 +2177,7 @@ df['day_cos'] = np.cos(2 * np.pi * df['day_of_week'] / 7)
 ---
 
 ## Question 61
+- [ ] Done
 
 **How does one-hot encoding impact the interpretability of machine learning models?**
 
@@ -2151,6 +2212,7 @@ Color_Green      -1.2 → Green decreases target by 1.2 vs Red
 ---
 
 ## Question 62
+- [ ] Done
 
 **What are sparse matrices and how do they help with one-hot encoded data storage?**
 
@@ -2195,6 +2257,7 @@ print(f"Density: {X_sparse.nnz / (X_sparse.shape[0] * X_sparse.shape[1]):.4f}")
 ---
 
 ## Question 63
+- [ ] Done
 
 **How do you handle one-hot encoding in streaming data processing scenarios?**
 
@@ -2236,6 +2299,7 @@ X_hashed = hasher.transform(stream_data)
 ---
 
 ## Question 64
+- [ ] Done
 
 **In recommendation systems, how do you use one-hot encoding for user and item features?**
 
@@ -2278,6 +2342,7 @@ class NCF(nn.Module):
 ---
 
 ## Question 65
+- [ ] Done
 
 **How do you validate the correctness of one-hot encoding transformations?**
 
@@ -2325,6 +2390,7 @@ def validate_one_hot(original, encoded, categories):
 ---
 
 ## Question 66
+- [ ] Done
 
 **What's the impact of one-hot encoding on different machine learning algorithms (tree-based vs. linear)?**
 
@@ -2362,6 +2428,7 @@ df = pd.get_dummies(df, columns=['category'])
 ---
 
 ## Question 67
+- [ ] Done
 
 **How do you handle multi-label categorical variables with one-hot encoding?**
 
@@ -2410,6 +2477,7 @@ genre_encoded = pd.DataFrame(
 ---
 
 ## Question 68
+- [ ] Done
 
 **In feature selection, how do you evaluate the importance of one-hot encoded features?**
 
@@ -2452,6 +2520,7 @@ for group, columns in feature_groups.items():
 ---
 
 ## Question 69
+- [ ] Done
 
 **How do you implement one-hot encoding for categorical variables in distributed computing environments?**
 
@@ -2507,6 +2576,7 @@ df = encoder.fit_transform(df)
 ---
 
 ## Question 70
+- [ ] Done
 
 **What are the computational complexity considerations when applying one-hot encoding to large datasets?**
 
@@ -2561,6 +2631,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 # --- Missing Questions Restored from Source (Q71-Q198) ---
 
 ## Question 71
+- [ ] Done
 
 **How do you handle ordinal categorical variables differently from nominal variables in one-hot encoding?**
 
@@ -2569,6 +2640,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 72
+- [ ] Done
 
 **In cross-validation, how do you ensure proper one-hot encoding to avoid data leakage?**
 
@@ -2577,6 +2649,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 73
+- [ ] Done
 
 **How does one-hot encoding interact with regularization techniques in linear models?**
 
@@ -2585,6 +2658,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 74
+- [ ] Done
 
 **What are the best practices for naming conventions when creating one-hot encoded features?**
 
@@ -2593,6 +2667,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 75
+- [ ] Done
 
 **How do you handle categorical variables with rare categories when using one-hot encoding?**
 
@@ -2601,6 +2676,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 76
+- [ ] Done
 
 **In ensemble methods, how does one-hot encoding affect feature importance calculations?**
 
@@ -2609,6 +2685,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 77
+- [ ] Done
 
 **How do you implement custom one-hot encoding for domain-specific categorical data?**
 
@@ -2617,6 +2694,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 78
+- [ ] Done
 
 **What are the considerations for one-hot encoding in federated learning environments?**
 
@@ -2625,6 +2703,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 79
+- [ ] Done
 
 **How do you monitor and debug issues related to one-hot encoding in production ML systems?**
 
@@ -2633,6 +2712,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 80
+- [ ] Done
 
 **In AutoML systems, how is one-hot encoding automatically selected and applied?**
 
@@ -2641,6 +2721,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 81
+- [ ] Done
 
 **How do you handle categorical variables with seasonal or temporal patterns in one-hot encoding?**
 
@@ -2649,6 +2730,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 82
+- [ ] Done
 
 **What's the relationship between one-hot encoding and feature hashing for categorical variables?**
 
@@ -2657,6 +2739,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 83
+- [ ] Done
 
 **How do you implement incremental one-hot encoding for online learning scenarios?**
 
@@ -2665,6 +2748,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 84
+- [ ] Done
 
 **In neural networks, how does one-hot encoding compare to embedding layers for categorical features?**
 
@@ -2673,6 +2757,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 85
+- [ ] Done
 
 **How do you handle one-hot encoding when categorical variables have geographic or spatial relationships?**
 
@@ -2681,6 +2766,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 86
+- [ ] Done
 
 **What are the security and privacy considerations when sharing one-hot encoded datasets?**
 
@@ -2689,6 +2775,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 87
+- [ ] Done
 
 **How do you optimize one-hot encoding for real-time inference in production systems?**
 
@@ -2697,6 +2784,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 88
+- [ ] Done
 
 **In transfer learning, how do you adapt one-hot encoded features from source to target domains?**
 
@@ -2705,6 +2793,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 89
+- [ ] Done
 
 **How do you evaluate the statistical significance of one-hot encoded categorical features?**
 
@@ -2713,6 +2802,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 90
+- [ ] Done
 
 **What are the considerations for one-hot encoding in multi-language or international datasets?**
 
@@ -2721,6 +2811,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 91
+- [ ] Done
 
 **How do you handle one-hot encoding for categorical variables with fuzzy or uncertain membership?**
 
@@ -2729,6 +2820,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 92
+- [ ] Done
 
 **In A/B testing, how does one-hot encoding affect experimental design and analysis?**
 
@@ -2737,6 +2829,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 93
+- [ ] Done
 
 **How do you implement parallel processing for one-hot encoding of multiple categorical variables?**
 
@@ -2745,6 +2838,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 94
+- [ ] Done
 
 **What are the version control and reproducibility considerations for one-hot encoding transformations?**
 
@@ -2753,6 +2847,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 95
+- [ ] Done
 
 **How do you handle one-hot encoding when dealing with categorical variables that change over time?**
 
@@ -2761,6 +2856,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 96
+- [ ] Done
 
 **In causal inference, how does one-hot encoding affect the identification of causal relationships?**
 
@@ -2769,6 +2865,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 97
+- [ ] Done
 
 **How do you implement error handling and exception management in one-hot encoding pipelines?**
 
@@ -2777,6 +2874,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 98
+- [ ] Done
 
 **What are the emerging alternatives to traditional one-hot encoding in modern machine learning?**
 
@@ -2785,6 +2883,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 99
+- [ ] Done
 
 **What is label encoding and how does it differ from one-hot encoding for categorical variables?**
 
@@ -2793,6 +2892,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 100
+- [ ] Done
 
 **When is label encoding preferred over other categorical encoding methods?**
 
@@ -2801,6 +2901,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 101
+- [ ] Done
 
 **How do you handle the implicit ordering assumption in label encoding for nominal categorical variables?**
 
@@ -2809,6 +2910,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 102
+- [ ] Done
 
 **What are the potential biases introduced by label encoding in machine learning models?**
 
@@ -2817,6 +2919,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 103
+- [ ] Done
 
 **How do you implement consistent label encoding across training, validation, and test datasets?**
 
@@ -2825,6 +2928,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 104
+- [ ] Done
 
 **In deep learning, how does label encoding affect gradient flow and model convergence?**
 
@@ -2833,6 +2937,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 105
+- [ ] Done
 
 **How do you handle unseen categories during inference when using label encoding?**
 
@@ -2841,6 +2946,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 106
+- [ ] Done
 
 **What's the relationship between label encoding and target encoding for categorical variables?**
 
@@ -2849,6 +2955,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 107
+- [ ] Done
 
 **How does label encoding impact feature importance interpretation in tree-based models?**
 
@@ -2857,6 +2964,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 108
+- [ ] Done
 
 **In time-series forecasting, how do you apply label encoding to temporal categorical features?**
 
@@ -2865,6 +2973,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 109
+- [ ] Done
 
 **How do you validate that label encoding preserves the meaningful relationships in ordinal data?**
 
@@ -2873,6 +2982,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 110
+- [ ] Done
 
 **What are the memory efficiency advantages of label encoding compared to other encoding methods?**
 
@@ -2881,6 +2991,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 111
+- [ ] Done
 
 **How do you handle missing values in categorical variables before applying label encoding?**
 
@@ -2889,6 +3000,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 112
+- [ ] Done
 
 **In ensemble methods, how does label encoding affect the diversity of base learners?**
 
@@ -2897,6 +3009,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 113
+- [ ] Done
 
 **How do you implement reversible label encoding for interpretability purposes?**
 
@@ -2905,6 +3018,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 114
+- [ ] Done
 
 **What are the considerations for label encoding in distributed computing environments?**
 
@@ -2913,6 +3027,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 115
+- [ ] Done
 
 **How does label encoding interact with feature scaling and normalization techniques?**
 
@@ -2921,6 +3036,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 116
+- [ ] Done
 
 **In online learning scenarios, how do you update label encodings incrementally?**
 
@@ -2929,6 +3045,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 117
+- [ ] Done
 
 **How do you choose between frequency-based and alphabetical label encoding strategies?**
 
@@ -2937,6 +3054,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 118
+- [ ] Done
 
 **What's the impact of label encoding on correlation analysis between categorical and numerical features?**
 
@@ -2945,6 +3063,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 119
+- [ ] Done
 
 **How do you handle hierarchical categorical variables with label encoding?**
 
@@ -2953,6 +3072,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 120
+- [ ] Done
 
 **In cross-validation, how do you prevent data leakage when applying label encoding?**
 
@@ -2961,6 +3081,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 121
+- [ ] Done
 
 **How does label encoding affect the interpretability of linear regression coefficients?**
 
@@ -2969,6 +3090,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 122
+- [ ] Done
 
 **What are the strategies for handling high-cardinality categorical variables with label encoding?**
 
@@ -2977,6 +3099,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 123
+- [ ] Done
 
 **How do you implement custom ordering logic in label encoding for domain-specific requirements?**
 
@@ -2985,6 +3108,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 124
+- [ ] Done
 
 **In recommendation systems, how do you use label encoding for user and item categorical features?**
 
@@ -2993,6 +3117,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 125
+- [ ] Done
 
 **How do you monitor and detect drift in label-encoded categorical features in production?**
 
@@ -3001,6 +3126,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 126
+- [ ] Done
 
 **What's the relationship between label encoding and ordinal encoding techniques?**
 
@@ -3009,6 +3135,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 127
+- [ ] Done
 
 **How do you handle label encoding for multi-label categorical variables?**
 
@@ -3017,6 +3144,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 128
+- [ ] Done
 
 **In feature engineering pipelines, how do you optimize the order of label encoding operations?**
 
@@ -3025,6 +3153,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 129
+- [ ] Done
 
 **How do you evaluate the effectiveness of different label encoding strategies for your dataset?**
 
@@ -3033,6 +3162,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 130
+- [ ] Done
 
 **What are the security implications of label encoding in privacy-sensitive applications?**
 
@@ -3041,6 +3171,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 131
+- [ ] Done
 
 **How do you implement error handling for invalid categorical values in label encoding?**
 
@@ -3049,6 +3180,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 132
+- [ ] Done
 
 **In transfer learning, how do you adapt label encodings between different domains?**
 
@@ -3057,6 +3189,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 133
+- [ ] Done
 
 **How does label encoding affect the performance of different distance metrics in clustering?**
 
@@ -3065,6 +3198,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 134
+- [ ] Done
 
 **What are the best practices for documenting and versioning label encoding transformations?**
 
@@ -3073,6 +3207,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 135
+- [ ] Done
 
 **How do you handle label encoding for categorical variables with geographic or spatial relationships?**
 
@@ -3081,6 +3216,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 136
+- [ ] Done
 
 **In AutoML systems, how is label encoding automatically selected and optimized?**
 
@@ -3089,6 +3225,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 137
+- [ ] Done
 
 **How do you implement parallel processing for label encoding of multiple categorical variables?**
 
@@ -3097,6 +3234,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 138
+- [ ] Done
 
 **What are the considerations for label encoding in streaming data processing scenarios?**
 
@@ -3105,6 +3243,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 139
+- [ ] Done
 
 **How do you handle label encoding for categorical variables that change over time?**
 
@@ -3113,6 +3252,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 140
+- [ ] Done
 
 **In causal inference, how does label encoding affect the identification of causal relationships?**
 
@@ -3121,6 +3261,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 141
+- [ ] Done
 
 **How do you implement robust label encoding that handles data quality issues?**
 
@@ -3129,6 +3270,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 142
+- [ ] Done
 
 **What's the impact of label encoding on model fairness and bias detection?**
 
@@ -3137,6 +3279,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 143
+- [ ] Done
 
 **How do you optimize label encoding for real-time inference in production systems?**
 
@@ -3145,6 +3288,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 144
+- [ ] Done
 
 **In federated learning, how do you ensure consistent label encoding across distributed datasets?**
 
@@ -3153,6 +3297,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 145
+- [ ] Done
 
 **How do you handle label encoding for categorical variables with fuzzy or uncertain boundaries?**
 
@@ -3161,6 +3306,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 146
+- [ ] Done
 
 **What are the emerging alternatives and improvements to traditional label encoding?**
 
@@ -3169,6 +3315,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 147
+- [ ] Done
 
 **How do you implement testing and validation for label encoding transformations?**
 
@@ -3177,6 +3324,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 148
+- [ ] Done
 
 **In explainable AI, how does label encoding affect model interpretability and feature attribution?**
 
@@ -3185,6 +3333,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 149
+- [ ] Done
 
 **What's the difference between normalization and standardization, and when should you use each?**
 
@@ -3193,6 +3342,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 150
+- [ ] Done
 
 **How do you choose between Min-Max normalization and Z-score standardization for your dataset?**
 
@@ -3201,6 +3351,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 151
+- [ ] Done
 
 **What are the assumptions underlying different normalization and standardization techniques?**
 
@@ -3209,6 +3360,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 152
+- [ ] Done
 
 **How do outliers affect normalization and standardization, and how do you handle them?**
 
@@ -3217,6 +3369,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 153
+- [ ] Done
 
 **In machine learning pipelines, when should you apply normalization/standardization in the preprocessing chain?**
 
@@ -3225,6 +3378,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 154
+- [ ] Done
 
 **How do you ensure consistent normalization parameters between training and inference datasets?**
 
@@ -3233,6 +3387,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 155
+- [ ] Done
 
 **What's the impact of normalization on different types of machine learning algorithms?**
 
@@ -3241,6 +3396,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 156
+- [ ] Done
 
 **How do you handle normalization for features with different scales and distributions?**
 
@@ -3249,6 +3405,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 157
+- [ ] Done
 
 **In time-series data, how do you apply normalization while preserving temporal relationships?**
 
@@ -3257,6 +3414,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 158
+- [ ] Done
 
 **What are robust scaling techniques and when should you use them instead of standard methods?**
 
@@ -3265,6 +3423,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 159
+- [ ] Done
 
 **How do you handle normalization for sparse features and high-dimensional data?**
 
@@ -3273,6 +3432,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 160
+- [ ] Done
 
 **What's the relationship between feature scaling and regularization in machine learning models?**
 
@@ -3281,6 +3441,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 161
+- [ ] Done
 
 **How do you implement normalization for streaming data and online learning scenarios?**
 
@@ -3289,6 +3450,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 162
+- [ ] Done
 
 **In deep learning, how does batch normalization differ from input feature normalization?**
 
@@ -3297,6 +3459,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 163
+- [ ] Done
 
 **How do you validate that normalization has been applied correctly to your dataset?**
 
@@ -3305,6 +3468,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 164
+- [ ] Done
 
 **What are the computational complexity considerations for different normalization techniques?**
 
@@ -3313,6 +3477,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 165
+- [ ] Done
 
 **How do you handle normalization when dealing with missing values in your features?**
 
@@ -3321,6 +3486,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 166
+- [ ] Done
 
 **In ensemble methods, how does feature normalization affect the combination of different models?**
 
@@ -3329,6 +3495,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 167
+- [ ] Done
 
 **How do you choose normalization techniques for features with skewed or non-normal distributions?**
 
@@ -3337,6 +3504,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 168
+- [ ] Done
 
 **What's the impact of normalization on feature importance and model interpretability?**
 
@@ -3345,6 +3513,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 169
+- [ ] Done
 
 **How do you implement unit vector scaling and when is it appropriate for your data?**
 
@@ -3353,6 +3522,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 170
+- [ ] Done
 
 **In cross-validation, how do you prevent data leakage when applying normalization?**
 
@@ -3361,6 +3531,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 171
+- [ ] Done
 
 **How do you handle normalization for categorical features that have been numerically encoded?**
 
@@ -3369,6 +3540,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 172
+- [ ] Done
 
 **What are the best practices for storing and versioning normalization parameters?**
 
@@ -3377,6 +3549,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 173
+- [ ] Done
 
 **How do you adapt normalization techniques for domain-specific requirements (images, text, audio)?**
 
@@ -3385,6 +3558,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 174
+- [ ] Done
 
 **In distributed computing, how do you implement consistent normalization across multiple nodes?**
 
@@ -3393,6 +3567,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 175
+- [ ] Done
 
 **How do you handle normalization when your dataset has features with vastly different ranges?**
 
@@ -3401,6 +3576,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 176
+- [ ] Done
 
 **What's the relationship between normalization and data transformation techniques like log or square root?**
 
@@ -3409,6 +3585,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 177
+- [ ] Done
 
 **How do you monitor and detect when normalization parameters need to be updated in production?**
 
@@ -3417,6 +3594,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 178
+- [ ] Done
 
 **In transfer learning, how do you adapt normalization parameters between source and target domains?**
 
@@ -3425,6 +3603,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 179
+- [ ] Done
 
 **How do you implement error handling and validation for normalization transformations?**
 
@@ -3433,6 +3612,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 180
+- [ ] Done
 
 **What are the security and privacy implications of sharing normalization parameters?**
 
@@ -3441,6 +3621,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 181
+- [ ] Done
 
 **How do you handle normalization for features that are naturally bounded (percentages, probabilities)?**
 
@@ -3449,6 +3630,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 182
+- [ ] Done
 
 **In AutoML systems, how are normalization techniques automatically selected and applied?**
 
@@ -3457,6 +3639,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 183
+- [ ] Done
 
 **How do you optimize normalization for real-time inference and low-latency applications?**
 
@@ -3465,6 +3648,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 184
+- [ ] Done
 
 **What's the impact of normalization on gradient descent convergence in neural networks?**
 
@@ -3473,6 +3657,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 185
+- [ ] Done
 
 **How do you handle normalization for multi-modal data with different feature types?**
 
@@ -3481,6 +3666,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 186
+- [ ] Done
 
 **In federated learning, how do you ensure consistent normalization across distributed clients?**
 
@@ -3489,6 +3675,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 187
+- [ ] Done
 
 **How do you implement adaptive normalization that adjusts to changing data distributions?**
 
@@ -3497,6 +3684,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 188
+- [ ] Done
 
 **What are the considerations for normalization in causal inference and treatment effect estimation?**
 
@@ -3505,6 +3693,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 189
+- [ ] Done
 
 **How do you evaluate the effectiveness of different normalization strategies for your specific use case?**
 
@@ -3513,6 +3702,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 190
+- [ ] Done
 
 **What's the relationship between normalization and dimensionality reduction techniques?**
 
@@ -3521,6 +3711,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 191
+- [ ] Done
 
 **How do you handle normalization for features with seasonal or cyclical patterns?**
 
@@ -3529,6 +3720,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 192
+- [ ] Done
 
 **In reinforcement learning, how does state and action normalization affect learning performance?**
 
@@ -3537,6 +3729,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 193
+- [ ] Done
 
 **How do you implement custom normalization techniques for domain-specific applications?**
 
@@ -3545,6 +3738,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 194
+- [ ] Done
 
 **What are the emerging trends and research directions in feature scaling and normalization?**
 
@@ -3553,6 +3747,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 195
+- [ ] Done
 
 **How do you handle normalization in the presence of concept drift and distribution shift?**
 
@@ -3561,6 +3756,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 196
+- [ ] Done
 
 **In model fairness evaluation, how does normalization affect bias detection and mitigation?**
 
@@ -3569,6 +3765,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 197
+- [ ] Done
 
 **How do you implement testing and quality assurance for normalization pipelines?**
 
@@ -3577,6 +3774,7 @@ This file covers Questions 1-70. The remaining questions (71-198) follow similar
 ---
 
 ## Question 198
+- [ ] Done
 
 **What are the trade-offs between computational efficiency and accuracy in different normalization methods?**
 

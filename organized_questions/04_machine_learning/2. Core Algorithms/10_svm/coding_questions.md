@@ -1,6 +1,7 @@
 # Svm Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement a basic linear SVM from scratch using Python.**
 
@@ -86,6 +87,7 @@ print(f"Accuracy: {accuracy:.2f}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a Python function to select an optimal C parameter for an SVM using cross-validation.**
 
@@ -155,6 +157,7 @@ best_C = find_best_C_gridsearch(X_scaled, y)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Code an SVM model in scikit-learn to classify text data using TF-IDF features.**
 
@@ -228,6 +231,7 @@ print(f"Prediction for new text: {'Positive' if new_pred[0] == 1 else 'Negative'
 ---
 
 ## Question 4
+- [ ] Done
 
 **Develop a multi-class SVM classifier on a given dataset using the one-vs-one strategy.**
 
@@ -293,6 +297,7 @@ print(f"\nSupport vectors per class: {svm_ovo.n_support_}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Use Python to demonstrate the impact of different kernels on SVM decision boundaries with a 2D dataset.**
 
@@ -371,6 +376,7 @@ plt.show()
 ---
 
 ## Question 6
+- [ ] Done
 
 **Implement an SVM in Python using a stochastic gradient descent approach.**
 
@@ -452,6 +458,7 @@ print(f"Bias: {sgd_svm.intercept_[0]:.4f}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Write a script to visualize support vectors in a trained SVM model.**
 
@@ -537,6 +544,7 @@ for i, sv in enumerate(support_vectors):
 ---
 
 ## Question 8
+- [ ] Done
 
 **Create a Python function for grid search optimization to find the best kernel and its parameters for an SVM.**
 
@@ -637,6 +645,7 @@ print(top5)
 ---
 
 ## Question 9
+- [ ] Done
 
 **How would you implement an anomaly detection system using a one-class SVM?**
 

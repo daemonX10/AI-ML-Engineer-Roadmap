@@ -1,6 +1,7 @@
 # Deep Learning Interview Questions - Scenario-Based Questions
 
 ## Question 1: Architecture and applications of LSTMs
+- [ ] Done
 
 ### Architecture
 LSTM (Long Short-Term Memory) addresses vanishing gradients with gating mechanisms.
@@ -28,6 +29,7 @@ $$C_t = f_t \odot C_{t-1} + i_t \odot \tilde{C}_t$$
 ---
 
 ## Question 2: Role of learning rate and its impact
+- [ ] Done
 
 ### Impact
 
@@ -55,6 +57,7 @@ $$C_t = f_t \odot C_{t-1} + i_t \odot \tilde{C}_t$$
 ---
 
 ## Question 3: Importance of data augmentation in deep learning
+- [ ] Done
 
 ### Benefits
 
@@ -81,6 +84,7 @@ $$C_t = f_t \odot C_{t-1} + i_t \odot \tilde{C}_t$$
 ---
 
 ## Question 4: Style transfer in deep learning
+- [ ] Done
 
 ### Concept
 Style transfer combines the content of one image with the artistic style of another using neural networks.
@@ -103,6 +107,7 @@ $$L_{total} = \alpha L_{content} + \beta L_{style}$$
 ---
 
 ## Question 5: Deep learning in NLP
+- [ ] Done
 
 ### Evolution
 
@@ -130,6 +135,7 @@ $$L_{total} = \alpha L_{content} + \beta L_{style}$$
 ---
 
 ## Question 6: Deep learning for self-driving cars
+- [ ] Done
 
 ### Architecture Components
 
@@ -153,6 +159,7 @@ $$L_{total} = \alpha L_{content} + \beta L_{style}$$
 ---
 
 ## Question 7: Deep learning for medical image diagnosis
+- [ ] Done
 
 ### Strategy
 
@@ -178,6 +185,7 @@ $$L_{total} = \alpha L_{content} + \beta L_{style}$$
 ---
 
 ## Question 8: Neural network for stock price prediction
+- [ ] Done
 
 ### Approach
 
@@ -211,6 +219,7 @@ class StockPredictor(nn.Module):
 ---
 
 ## Question 9: Real-time object detection in videos
+- [ ] Done
 
 ### Approach
 
@@ -240,6 +249,7 @@ Frame → Resize → YOLO → NMS → Tracker → Display
 ---
 
 ## Question 10: Deep learning for chatbots
+- [ ] Done
 
 ### Architecture Options
 
@@ -263,6 +273,7 @@ Fine-tune large language model (GPT, LLaMA) on dialogue data with:
 ---
 
 ## Question 11: Handling high variance in models
+- [ ] Done
 
 ### Definition
 High variance = overfitting = model memorizes training data
@@ -286,6 +297,7 @@ High variance = overfitting = model memorizes training data
 ---
 
 ## Question 12: Precision-Recall curves and their importance
+- [ ] Done
 
 ### Why Use PR Curves
 
@@ -317,6 +329,7 @@ High variance = overfitting = model memorizes training data
 ---
 
 ## Question 13: Steps to create a recommendation system using deep learning
+- [ ] Done
 
 ### Architecture Approaches
 
@@ -351,6 +364,7 @@ class TwoTowerModel(nn.Module):
 ---
 
 ## Question 14: Approach for sentiment analysis on social media using deep learning
+- [ ] Done
 
 ### Pipeline
 

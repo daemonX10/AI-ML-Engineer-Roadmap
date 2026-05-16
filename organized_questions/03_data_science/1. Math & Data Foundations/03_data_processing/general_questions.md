@@ -1,6 +1,7 @@
 # Data Processing Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **Why is data cleaning essential before model training?**
 
@@ -24,6 +25,7 @@ Data cleaning removes errors, inconsistencies, and noise that would otherwise pr
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you handle missing data within a dataset?**
 
@@ -60,6 +62,7 @@ X_imputed = knn_imputer.fit_transform(X)
 ---
 
 ## Question 3
+- [ ] Done
 
 **When would you recommend using regression imputation?**
 
@@ -93,6 +96,7 @@ X_imputed = imputer.fit_transform(X)
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do missing values impact machine learning models?**
 
@@ -123,6 +127,7 @@ Missing values directly affect model training and predictions. Most algorithms c
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do principal component analysis (PCA) and linear discriminant analysis (LDA) differ?**
 
@@ -151,6 +156,7 @@ PCA is an unsupervised dimensionality reduction technique that maximizes varianc
 ---
 
 ## Question 6
+- [ ] Done
 
 **Why is feature engineering critical in model performance?**
 
@@ -184,6 +190,7 @@ df['amount_per_hour'] = df.groupby('hour')['amount'].transform('mean')
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you design and select features for a machine learning model?**
 
@@ -223,6 +230,7 @@ X_selected = rfe.fit_transform(X, y)
 ---
 
 ## Question 8
+- [ ] Done
 
 **When should you apply Z-score normalization?**
 
@@ -257,6 +265,7 @@ X_test_scaled = scaler.transform(X_test)  # Use train statistics!
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you decide which feature scaling method to use?**
 
@@ -300,6 +309,7 @@ else:
 ---
 
 ## Question 10
+- [ ] Done
 
 **Compare and contrast standardization vs normalization.**
 
@@ -325,6 +335,7 @@ Standardization (Z-score) centers data around mean=0 with std=1. Normalization (
 ---
 
 ## Question 11
+- [ ] Done
 
 **Why do you need to convert categorical data into numerical format?**
 
@@ -351,6 +362,7 @@ Machine learning algorithms perform mathematical operations (distances, gradient
 ---
 
 ## Question 12
+- [ ] Done
 
 **What special considerations are there when processing time-series data?**
 
@@ -387,6 +399,7 @@ df['rolling_mean_7'] = df['value'].rolling(7).mean()
 ---
 
 ## Question 13
+- [ ] Done
 
 **How do you handle seasonality in time-series data?**
 
@@ -424,6 +437,7 @@ df['month_cos'] = np.cos(2 * np.pi * df['month'] / 12)
 ---
 
 ## Question 14
+- [ ] Done
 
 **How do you incorporate custom transformers within a preprocessing pipeline?**
 
@@ -467,6 +481,7 @@ predictions = pipeline.predict(X_test)
 ---
 
 ## Question 15
+- [ ] Done
 
 **How do you preprocess text data for natural language processing?**
 
@@ -505,6 +520,7 @@ X = vectorizer.fit_transform(texts_clean)
 ---
 
 ## Question 16
+- [ ] Done
 
 **How do you deal with a large vocabulary size in text data?**
 
@@ -541,6 +557,7 @@ hasher = HashingVectorizer(n_features=10000)
 ---
 
 ## Question 17
+- [ ] Done
 
 **What preprocessing steps are commonly applied to image data?**
 
@@ -586,6 +603,7 @@ train_transform = transforms.Compose([
 ---
 
 ## Question 18
+- [ ] Done
 
 **How do you identify and resolve data inconsistencies?**
 
@@ -628,6 +646,7 @@ df['city'] = df['city'].replace(mapping)
 ---
 
 ## Question 19
+- [ ] Done
 
 **How do you verify the correctness of the data after cleaning?**
 
@@ -672,6 +691,7 @@ def verify_cleaning(df_before, df_after, config):
 ---
 
 ## Question 20
+- [ ] Done
 
 **What tools and libraries do you prefer for data preprocessing in Python?**
 
@@ -709,6 +729,7 @@ Python's data preprocessing ecosystem includes pandas for data manipulation, sci
 ---
 
 ## Question 21
+- [ ] Done
 
 **How do you keep track of different preprocessing and feature engineering steps you have tested?**
 
@@ -748,6 +769,7 @@ with mlflow.start_run():
 ---
 
 ## Question 22
+- [ ] Done
 
 **How can deep learning be used for feature extraction in unstructured data?**
 
@@ -787,6 +809,7 @@ with torch.no_grad():
 ---
 
 ## Question 23
+- [ ] Done
 
 **How is unsupervised learning used for preprocessing and feature extraction?**
 
@@ -828,6 +851,7 @@ encoded_features = encoder.predict(X)
 ---
 
 ## Question 24
+- [ ] Done
 
 **How do advances in hardware (like GPUs, TPUs) influence data processing techniques?**
 
@@ -866,6 +890,7 @@ gdf = gdf.fillna(gdf.mean())  # GPU-accelerated
 ---
 
 ## Question 25
+- [ ] Done
 
 **How can preprocessing steps impact data bias in your models?**
 
@@ -902,6 +927,7 @@ for group in df['demographic'].unique():
 ---
 
 ## Question 26
+- [ ] Done
 
 **What measures can be taken to prevent introducing bias during data cleaning?**
 
@@ -935,6 +961,7 @@ print(df.groupby('demographic')['target'].mean())
 ---
 
 ## Question 27
+- [ ] Done
 
 **How do data preprocessing requirements differ between industries like finance, healthcare, and retail?**
 
@@ -963,6 +990,7 @@ Each industry has unique data characteristics, regulatory requirements, and busi
 ---
 
 ## Question 28
+- [ ] Done
 
 **How do data privacy regulations affect data preprocessing in sensitive fields?**
 

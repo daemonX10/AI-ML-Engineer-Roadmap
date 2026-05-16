@@ -3,6 +3,7 @@
 ## Core Questions
 
 ## Question 1
+- [ ] Done
 **What is text classification and what are common approaches (Naive Bayes, SVM, Neural Networks)?**
 
 **Answer:**
@@ -96,6 +97,7 @@ print(f"BERT: {classifier(test_text)}")
 ---
 
 ## Question 2
+- [ ] Done
 **Explain the difference between multi-class and multi-label text classification.**
 
 **Answer:**
@@ -218,6 +220,7 @@ print(f"Multi-label Macro-F1: {f1_score(y_true_ml, y_pred_ml, average='macro')}"
 ---
 
 ## Question 3
+- [ ] Done
 **What is sentiment analysis? Explain the difference between lexicon-based and ML-based approaches.**
 
 **Answer:**
@@ -350,6 +353,7 @@ class SimpleLexiconSentiment:
 ---
 
 ## Question 4
+- [ ] Done
 **What is aspect-based sentiment analysis (ABSA) and how does it differ from document-level sentiment?**
 
 **Answer:**
@@ -478,6 +482,7 @@ for r in results:
 ---
 
 ## Question 5
+- [ ] Done
 **Explain LDA (Latent Dirichlet Allocation) and how it discovers topics in documents.**
 
 **Answer:**
@@ -612,6 +617,7 @@ for idx, topic in lda_gensim.print_topics():
 ---
 
 ## Question 6
+- [ ] Done
 **What is TF-IDF and why is it fundamental for text classification and retrieval?**
 
 **Answer:**
@@ -740,6 +746,7 @@ tfidf_full = TfidfVectorizer(
 ---
 
 ## Question 7
+- [ ] Done
 **How do word embeddings (Word2Vec, GloVe, FastText) improve text classification?**
 
 **Answer:**
@@ -863,6 +870,7 @@ print(f"FastText handles OOV: {ft_model.wv[oov_word][:5]}...")
 ---
 
 ## Question 8
+- [ ] Done
 **What is the bag-of-words model and what are its limitations?**
 
 **Answer:**
@@ -977,6 +985,7 @@ tfidf_matrix = tfidf.fit_transform(docs)
 ---
 
 ## Question 9
+- [ ] Done
 **How do CNNs and RNNs differ in their approach to text classification?**
 
 **Answer:**
@@ -1131,6 +1140,7 @@ print(f"RNN output: {rnn_out.shape}")  # (32, 2)
 ---
 
 ## Question 10
+- [ ] Done
 **How do transformer models like BERT revolutionize text classification tasks?**
 
 **Answer:**
@@ -1265,6 +1275,7 @@ print(result)  # [{'label': 'POSITIVE', 'score': 0.9998}]
 ## Interview Questions
 
 ## Question 11
+- [ ] Done
 **How do you handle extremely imbalanced datasets in text classification?**
 
 **Answer:**
@@ -1337,6 +1348,7 @@ def predict_with_threshold(probs, threshold=0.3):
 ---
 
 ## Question 12
+- [ ] Done
 **What techniques work best for multi-label classification with label dependencies?**
 
 **Answer:**
@@ -1391,6 +1403,7 @@ class LabelAwareClassifier(nn.Module):
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement domain adaptation when training data differs from target domain?**
 
 **Answer:**
@@ -1433,6 +1446,7 @@ model = AutoModelForSequenceClassification.from_pretrained('./domain-adapted-mod
 ---
 
 ## Question 14
+- [ ] Done
 **What strategies help with classifying very long documents that exceed model context limits?**
 
 **Answer:**
@@ -1490,6 +1504,7 @@ model = LongformerForSequenceClassification.from_pretrained('allenai/longformer-
 ---
 
 ## Question 15
+- [ ] Done
 **How do you build effective text classifiers with limited labeled data (few-shot learning)?**
 
 **Answer:**
@@ -1541,6 +1556,7 @@ model.predict(["This is amazing!"])
 ---
 
 ## Question 16
+- [ ] Done
 **What approaches work best for multilingual and cross-lingual text classification?**
 
 **Answer:**
@@ -1590,6 +1606,7 @@ for text in [french_text, spanish_text]:
 ---
 
 ## Question 17
+- [ ] Done
 **How do you handle sentiment analysis for texts with sarcasm and irony?**
 
 **Answer:**
@@ -1657,6 +1674,7 @@ print(sarcasm_aware_sentiment("Oh great, another Monday"))
 ---
 
 ## Question 18
+- [ ] Done
 **What techniques help detect and handle mixed/conflicting sentiments in reviews?**
 
 **Answer:**
@@ -1729,6 +1747,7 @@ aspects = {
 ---
 
 ## Question 19
+- [ ] Done
 **How do you implement fine-grained emotion detection beyond positive/negative sentiment?**
 
 **Answer:**
@@ -1799,6 +1818,7 @@ print(predict_emotions("This is absolutely wonderful!"))
 ---
 
 ## Question 20
+- [ ] Done
 **What challenges arise in cross-cultural sentiment analysis and how do you address them?**
 
 **Answer:**
@@ -1874,6 +1894,7 @@ def culture_calibrated_sentiment(text, culture):
 ---
 
 ## Question 21
+- [ ] Done
 **How do you choose the optimal number of topics in LDA? Explain coherence scores.**
 
 **Answer:**
@@ -1954,6 +1975,7 @@ print(f"Optimal K: {best_k}")
 ---
 
 ## Question 22
+- [ ] Done
 **What preprocessing steps are critical before applying topic modeling?**
 
 **Answer:**
@@ -2029,6 +2051,7 @@ corpus = [dictionary.doc2bow(text) for text in texts]
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle topic modeling for short texts like tweets?**
 
 **Answer:**
@@ -2102,6 +2125,7 @@ pooled_docs = pool_by_hashtag(tweet_data)
 ---
 
 ## Question 24
+- [ ] Done
 **What is dynamic topic modeling and when should you use it?**
 
 **Answer:**
@@ -2174,6 +2198,7 @@ topic_model.visualize_topics_over_time(topics_over_time)
 ---
 
 ## Question 25
+- [ ] Done
 **How do you explain and interpret topic model results to non-technical stakeholders?**
 
 **Answer:**
@@ -2254,6 +2279,7 @@ def topic_summary(lda_model, corpus):
 ---
 
 ## Question 26
+- [ ] Done
 **What is the difference between extractive and neural topic models (BERTopic, Top2Vec)?**
 
 **Answer:**
@@ -2344,6 +2370,7 @@ from gensim.models import LdaModel
 ---
 
 ## Question 27
+- [ ] Done
 **How do you make text classifiers explainable (LIME, SHAP, attention visualization)?**
 
 **Answer:**
@@ -2423,6 +2450,7 @@ def visualize_attention(model, tokenizer, text):
 ---
 
 ## Question 28
+- [ ] Done
 **What is adversarial robustness in text classification and how do you improve it?**
 
 **Answer:**
@@ -2500,6 +2528,7 @@ prediction = model.predict(clean_text)
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement hierarchical text classification with parent-child category relationships?**
 
 **Answer:**
@@ -2586,6 +2615,7 @@ class HierarchyConstrainedClassifier:
 ---
 
 ## Question 30
+- [ ] Done
 **What are the key evaluation metrics for text classification (accuracy, F1, macro/micro averaging)?**
 
 **Answer:**
@@ -2661,6 +2691,7 @@ print(confusion_matrix(y_true, y_pred))
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle concept drift when text patterns change over time?**
 
 **Answer:**
@@ -2750,6 +2781,7 @@ class AdaptiveClassifier:
 ---
 
 ## Question 32
+- [ ] Done
 **What is zero-shot text classification and how do models like BART/GPT enable it?**
 
 **Answer:**
@@ -2819,6 +2851,7 @@ predicted = candidate_labels[scores.argmax()]
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement real-time sentiment analysis for streaming social media data?**
 
 **Answer:**
@@ -2906,6 +2939,7 @@ async def analyze_sentiment(text: str):
 ---
 
 ## Question 34
+- [ ] Done
 **What techniques reduce bias in sentiment analysis across demographic groups?**
 
 **Answer:**
@@ -2995,6 +3029,7 @@ class DebiasingClassifier(nn.Module):
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle sentiment analysis for domain-specific language (finance, healthcare)?**
 
 **Answer:**
@@ -3073,6 +3108,7 @@ model = AutoModelForSequenceClassification.from_pretrained('domain-adapted-bert'
 ---
 
 ## Question 36
+- [ ] Done
 **What is contrastive learning and how does it improve text representations?**
 
 **Answer:**
@@ -3149,6 +3185,7 @@ class ContrastiveModel(nn.Module):
 ---
 
 ## Question 37
+- [ ] Done
 **How do you build intent classification systems for chatbots and virtual assistants?**
 
 **Answer:**
@@ -3233,6 +3270,7 @@ def extract_intent_and_slots(text):
 ---
 
 ## Question 38
+- [ ] Done
 **What is knowledge distillation and how do you compress large classification models?**
 
 **Answer:**
@@ -3310,6 +3348,7 @@ model = DistilBertModel.from_pretrained('distilbert-base-uncased')
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle out-of-scope/out-of-domain detection in classification systems?**
 
 **Answer:**
@@ -3393,6 +3432,7 @@ training_data = [
 ---
 
 ## Question 40
+- [ ] Done
 **What is calibration in text classification and why does it matter for production systems?**
 
 **Answer:**
@@ -3487,6 +3527,7 @@ def calibrate_temperature(model, val_loader):
 ---
 
 ## Question 41
+- [ ] Done
 **How do you combine topic modeling with classification for better feature engineering?**
 
 **Answer:**
@@ -3566,6 +3607,7 @@ class TopicAwareClassifier(nn.Module):
 ---
 
 ## Question 42
+- [ ] Done
 **What are the differences between supervised, semi-supervised, and unsupervised topic models?**
 
 **Answer:**
@@ -3641,6 +3683,7 @@ topics, _ = topic_model.fit_transform(docs, y=partial_labels)
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle spam/fake review detection using classification and sentiment analysis?**
 
 **Answer:**
@@ -3733,6 +3776,7 @@ class FakeReviewDetector(nn.Module):
 ---
 
 ## Question 44
+- [ ] Done
 **What is document embedding and how do Doc2Vec, USE, and sentence-BERT work?**
 
 **Answer:**
@@ -3815,6 +3859,7 @@ clf.fit(train_embeddings, train_labels)
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement online learning for classification models that update continuously?**
 
 **Answer:**
@@ -3901,6 +3946,7 @@ class OnlineNeuralClassifier:
 ---
 
 ## Question 46
+- [ ] Done
 **What role does attention mechanism play in understanding which words drive classification?**
 
 **Answer:**
@@ -3981,6 +4027,7 @@ Research shows attention weights don't always correlate with feature importance.
 ---
 
 ## Question 47
+- [ ] Done
 **How do you benchmark and compare different text classification approaches fairly?**
 
 **Answer:**
@@ -4065,6 +4112,7 @@ def generate_results_table(results):
 ---
 
 ## Question 48
+- [ ] Done
 **What is prompt engineering for text classification with large language models?**
 
 **Answer:**
@@ -4166,6 +4214,7 @@ Format:
 ---
 
 ## Question 49
+- [ ] Done
 **How do you handle privacy-preserving text classification for sensitive content?**
 
 **Answer:**
@@ -4264,6 +4313,7 @@ result = session.run(None, {"input_ids": input_ids})
 ---
 
 ## Question 50
+- [ ] Done
 **What are best practices for deploying text classification models in production (latency, throughput, monitoring)?**
 
 **Answer:**
@@ -4388,6 +4438,7 @@ def monitored_predict(text):
 # Sentiment Analysis - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you handle sentiment analysis for texts with mixed or conflicting sentiments?**
 **Answer:**
 
@@ -4442,6 +4493,7 @@ for r in mixed_sentiment_analysis(text):
 ---
 
 ## Question 2
+- [ ] Done
 **What techniques work best for aspect-based sentiment analysis in product reviews?**
 **Answer:**
 
@@ -4499,6 +4551,7 @@ print(extract_aspect_opinions("The camera quality is excellent but price is high
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement sentiment analysis that captures emotional nuance beyond positive/negative?**
 **Answer:**
 
@@ -4562,6 +4615,7 @@ print(lexicon_emotions("I feel happy but also a bit afraid", nrc_lexicon))
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies help with handling sarcasm and irony in sentiment analysis?**
 **Answer:**
 
@@ -4627,6 +4681,7 @@ print(sarcasm_aware_sentiment("Oh GREAT, another Monday... just what I needed!!!
 ---
 
 ## Question 5
+- [ ] Done
 **How do you design sentiment analyzers that work across different cultural contexts?**
 **Answer:**
 
@@ -4695,6 +4750,7 @@ print(culture_aware_sentiment("It was acceptable", culture="US"))
 ---
 
 ## Question 6
+- [ ] Done
 **What approaches work best for sentiment analysis in multilingual or code-mixed texts?**
 **Answer:**
 
@@ -4760,6 +4816,7 @@ for text in texts:
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle sentiment analysis for informal text like social media posts?**
 **Answer:**
 
@@ -4822,6 +4879,7 @@ print(f"Sentiment: {twitter_sa(cleaned)[0]}")
 ---
 
 ## Question 8
+- [ ] Done
 **What techniques help with explaining sentiment analysis decisions and confidence scores?**
 **Answer:**
 
@@ -4883,6 +4941,7 @@ print(f"Calibrated:  {temperature_scale(raw_logits, 1.5)}")
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement domain adaptation for sentiment analysis across different industries?**
 **Answer:**
 
@@ -4951,6 +5010,7 @@ print(lexicon_features("The app is innovative but buggy", "tech"))
 ---
 
 ## Question 10
+- [ ] Done
 **What strategies work best for sentiment analysis of long-form documents or articles?**
 **Answer:**
 
@@ -5024,6 +5084,7 @@ print(f"Chunks: {len(result['chunk_results'])}")
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle sentiment analysis quality control and bias detection?**
 **Answer:**
 
@@ -5099,6 +5160,7 @@ print(f"Counterfactual: {counterfactual_augment(text, swaps)}")
 ---
 
 ## Question 12
+- [ ] Done
 **What approaches help with sentiment analysis robustness against adversarial examples?**
 **Answer:**
 
@@ -5178,6 +5240,7 @@ def augment_with_perturbations(texts, labels, augment_ratio=0.3):
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement knowledge distillation for compressing sentiment analysis models?**
 **Answer:**
 
@@ -5264,6 +5327,7 @@ for model, stats in compression_stats.items():
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques work best for real-time sentiment analysis with low latency requirements?**
 **Answer:**
 
@@ -5366,6 +5430,7 @@ def benchmark_latency(model_fn, text, n_runs=100):
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle sentiment analysis for texts requiring temporal context?**
 **Answer:**
 
@@ -5458,6 +5523,7 @@ for t in tracker.get_trend():
 ---
 
 ## Question 16
+- [ ] Done
 **What strategies help with sentiment analysis consistency across different text sources?**
 **Answer:**
 
@@ -5543,6 +5609,7 @@ analyzer = CrossSourceSentimentAnalyzer()
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement online learning for sentiment analyzers adapting to new domains?**
 **Answer:**
 
@@ -5628,6 +5695,7 @@ print(f"Buffer size: {len(learner.replay_buffer)}")
 ---
 
 ## Question 18
+- [ ] Done
 **What approaches work best for sentiment analysis in conversational or customer service contexts?**
 **Answer:**
 
@@ -5727,6 +5795,7 @@ print(f"Escalation risk: {result['escalation_risk']}")
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle sentiment analysis optimization for specific business applications?**
 **Answer:**
 
@@ -5813,6 +5882,7 @@ for topic, score in [("safety", 0.2), ("billing", 0.4), ("feature_request", 0.3)
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help with sentiment analysis for texts with implicit or subtle emotions?**
 **Answer:**
 
@@ -5894,6 +5964,7 @@ for text in implicit_texts:
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement fairness-aware sentiment analysis to reduce demographic bias?**
 **Answer:**
 
@@ -5989,6 +6060,7 @@ for t, l in zip(aug_texts, aug_labels):
 ---
 
 ## Question 22
+- [ ] Done
 **What strategies work best for sentiment analysis with fine-grained emotion categories?**
 **Answer:**
 
@@ -6063,6 +6135,7 @@ if complex_e:
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle sentiment analysis quality assessment with subjective annotations?**
 **Answer:**
 
@@ -6147,6 +6220,7 @@ for i, sl in enumerate(soft_labels):
 ---
 
 ## Question 24
+- [ ] Done
 **What approaches help with sentiment analysis for texts in low-resource languages?**
 **Answer:**
 
@@ -6226,6 +6300,7 @@ print(f"Swahili lexicon: {sw_lexicon}")
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement privacy-preserving sentiment analysis for personal communications?**
 **Answer:**
 
@@ -6317,6 +6392,7 @@ print(f"DP mean (ε=1.0): {dp_aggregate_sentiment(scores, epsilon=1.0)}")
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques work best for sentiment analysis with contextual dependency modeling?**
 **Answer:**
 
@@ -6420,6 +6496,7 @@ for text in texts:
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle sentiment analysis adaptation to emerging social media platforms?**
 **Answer:**
 
@@ -6511,6 +6588,7 @@ for text, platform in tests:
 ---
 
 ## Question 28
+- [ ] Done
 **What strategies help with sentiment analysis for texts requiring background knowledge?**
 **Answer:**
 
@@ -6594,6 +6672,7 @@ for text, domain in texts:
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement robust error handling for sentiment analysis in production systems?**
 **Answer:**
 
@@ -6714,6 +6793,7 @@ for text in test_cases:
 ---
 
 ## Question 30
+- [ ] Done
 **What approaches work best for combining sentiment analysis with other text analytics?**
 **Answer:**
 
@@ -6816,6 +6896,7 @@ print(f"Entities: {result['entities']}")
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle sentiment analysis for texts with varying lengths and formats?**
 **Answer:**
 
@@ -6907,6 +6988,7 @@ for text in tests:
 ---
 
 ## Question 32
+- [ ] Done
 **What techniques help with sentiment analysis consistency in distributed processing?**
 **Answer:**
 
@@ -6998,6 +7080,7 @@ for r in results:
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement efficient batch processing for large-scale sentiment analysis?**
 **Answer:**
 
@@ -7102,6 +7185,7 @@ print(f"\nFinal stats: {processor.get_stats()}")
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for sentiment analysis with regulatory compliance requirements?**
 **Answer:**
 
@@ -7218,6 +7302,7 @@ print(f"Compliance report: {analyzer.compliance_report()}")
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle sentiment analysis for texts requiring expert domain knowledge?**
 **Answer:**
 
@@ -7307,6 +7392,7 @@ for text, domain in tests:
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with sentiment analysis adaptation to user-specific preferences?**
 **Answer:**
 
@@ -7396,6 +7482,7 @@ for user in ["user_A", "user_B"]:
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement monitoring and drift detection for sentiment analysis systems?**
 **Answer:**
 
@@ -7506,6 +7593,7 @@ print(f"KS statistic: {result['ks_statistic']}, p-value: {result['ks_pvalue']}")
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for sentiment analysis in texts with multimedia content?**
 **Answer:**
 
@@ -7613,6 +7701,7 @@ print(f"Audio+Text: {audio_result['final']} (sarcastic={audio_result['likely_sar
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle sentiment analysis optimization when balancing speed and accuracy?**
 **Answer:**
 
@@ -7716,6 +7805,7 @@ print(system.predict("Great product!", latency_budget_ms=500))
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with sentiment analysis for emerging text types and communication modes?**
 **Answer:**
 
@@ -7816,6 +7906,7 @@ for text, ttype in tests:
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement transfer learning for cross-domain sentiment analysis?**
 **Answer:**
 
@@ -7908,6 +7999,7 @@ transfer.evaluate_transfer("movie_reviews", "finance", None)
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for sentiment analysis with minimal annotation requirements?**
 **Answer:**
 
@@ -7999,6 +8091,7 @@ def uncertainty_sampling(model_fn, unlabeled_texts, n_select=10):
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle sentiment analysis integration with recommendation and personalization systems?**
 **Answer:**
 
@@ -8094,6 +8187,7 @@ for item, score, profile in results:
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with sentiment analysis for texts requiring temporal sentiment tracking?**
 **Answer:**
 
@@ -8202,6 +8296,7 @@ print(f"\nChange points detected: {len(changes)}")
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement customizable sentiment analysis for different business needs?**
 **Answer:**
 
@@ -8307,6 +8402,7 @@ print(f"Label: {result['label']}, Action: {result['action']}")
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for sentiment analysis in high-volume streaming applications?**
 **Answer:**
 
@@ -8422,6 +8518,7 @@ print(processor.get_current_metrics())
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle sentiment analysis quality benchmarking across different datasets?**
 **Answer:**
 
@@ -8523,6 +8620,7 @@ benchmark.compare_models()
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with sentiment analysis for texts with evolving language trends?**
 **Answer:**
 
@@ -8627,6 +8725,7 @@ print(f"New vocab in {result['month']}: {result['new_words']} words")
 ---
 
 ## Question 49
+- [ ] Done
 **How do you implement efficient caching and storage for sentiment analysis results?**
 **Answer:**
 
@@ -8744,6 +8843,7 @@ print(f"Hit rate: {service.cache.get_hit_rate()}")
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques work best for balancing sentiment analysis accuracy with interpretability requirements?**
 **Answer:**
 
@@ -8852,6 +8952,7 @@ for f in result['top_positive_features']:
 # Topic Modeling (LDA) - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you choose the optimal number of topics in LDA using different evaluation metrics?**
 **Answer:**
 
@@ -8932,6 +9033,7 @@ texts = ["machine learning algorithm data"] * 50 + ["deep neural network trainin
 ---
 
 ## Question 2
+- [ ] Done
 **What techniques work best for preprocessing text data before applying LDA?**
 **Answer:**
 
@@ -9017,6 +9119,7 @@ texts = [
 ---
 
 ## Question 3
+- [ ] Done
 **How do you handle LDA for documents with varying lengths and content density?**
 **Answer:**
 
@@ -9110,6 +9213,7 @@ processed = prepare_length_balanced_corpus(texts, min_words=3, max_words=50)
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies help with interpreting and labeling discovered topics meaningfully?**
 **Answer:**
 
@@ -9205,6 +9309,7 @@ print("Topic interpretation strategies: top-N words, representative docs, LLM la
 ---
 
 ## Question 5
+- [ ] Done
 **How do you implement dynamic topic models that capture temporal evolution of topics?**
 **Answer:**
 
@@ -9308,6 +9413,7 @@ print("Dynamic topic modeling captures how topics evolve over time periods")
 ---
 
 ## Question 6
+- [ ] Done
 **What approaches work best for LDA in multilingual or cross-lingual document collections?**
 **Answer:**
 
@@ -9387,6 +9493,7 @@ print(f"Multilingual corpus: {result}")
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle topic modeling for short texts like tweets or social media posts?**
 **Answer:**
 
@@ -9502,6 +9609,7 @@ for topic in model.get_topics():
 ---
 
 ## Question 8
+- [ ] Done
 **What techniques help with evaluating topic model quality and coherence?**
 **Answer:**
 
@@ -9582,6 +9690,7 @@ print("Use multiple metrics: coherence for quality, diversity for redundancy")
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement supervised or guided LDA with prior knowledge?**
 **Answer:**
 
@@ -9655,6 +9764,7 @@ print("Guided LDA steers topic discovery with seed words")
 ---
 
 ## Question 10
+- [ ] Done
 **What strategies work best for topic modeling in specialized domains with technical vocabulary?**
 **Answer:**
 
@@ -9739,6 +9849,7 @@ print(f"Domain-processed tokens: {tokens}")
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle topic modeling quality control and stability assessment?**
 **Answer:**
 
@@ -9822,6 +9933,7 @@ assess_stability(texts, n_topics=2, n_runs=3)
 ---
 
 ## Question 12
+- [ ] Done
 **What approaches help with explaining topic modeling results to non-technical users?**
 **Answer:**
 
@@ -9897,6 +10009,7 @@ print("Topic cards + executive summaries for non-technical stakeholders")
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement online or streaming LDA for continuously updated document collections?**
 **Answer:**
 
@@ -9983,6 +10096,7 @@ otm.update(["transformer attention mechanism"] * 20)
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques work best for topic modeling with computational efficiency constraints?**
 **Answer:**
 
@@ -10063,6 +10177,7 @@ model = efficient_lda(texts, n_topics=5)
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle topic modeling for documents requiring hierarchical topic structures?**
 **Answer:**
 
@@ -10148,6 +10263,7 @@ htm.show_hierarchy()
 ---
 
 ## Question 16
+- [ ] Done
 **What strategies help with topic modeling consistency across different document sources?**
 **Answer:**
 
@@ -10238,6 +10354,7 @@ print("Cross-source: normalize vocabulary and check for source-correlated topics
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement active learning for improving topic model quality?**
 **Answer:**
 
@@ -10332,6 +10449,7 @@ uncertain = al.select_uncertain_documents(n=3)
 ---
 
 ## Question 18
+- [ ] Done
 **What approaches work best for topic modeling in conversational or dialogue data?**
 **Answer:**
 
@@ -10423,6 +10541,7 @@ print(f"Aggregated {len(conversations)} conversations into {len(docs)} documents
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle topic modeling optimization for specific information retrieval tasks?**
 **Answer:**
 
@@ -10512,6 +10631,7 @@ print("Topic-enhanced IR: semantic search, query expansion, faceted navigation")
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help with topic modeling for documents with mixed content types?**
 **Answer:**
 
@@ -10617,6 +10737,7 @@ print(f"Extracted: {extractor.extract(doc)[:100]}")
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement fairness-aware topic modeling to avoid bias in discovered topics?**
 **Answer:**
 
@@ -10720,6 +10841,7 @@ print("Fairness audit: check for group-biased topic distributions")
 ---
 
 ## Question 22
+- [ ] Done
 **What strategies work best for topic modeling with fine-grained topic distinctions?**
 **Answer:**
 
@@ -10802,6 +10924,7 @@ coarse, fine = fine_grained_topics(texts, coarse_k=3, fine_k_per_coarse=2)
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle topic modeling quality assessment without ground truth topics?**
 **Answer:**
 
@@ -10884,6 +11007,7 @@ comprehensive_evaluation(texts, k_range=range(2, 8))
 ---
 
 ## Question 24
+- [ ] Done
 **What approaches help with topic modeling for documents in low-resource languages?**
 **Answer:**
 
@@ -10973,6 +11097,7 @@ print(f"Char n-gram tokens: {tokens[:10]}")
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement privacy-preserving topic modeling for sensitive document collections?**
 **Answer:**
 
@@ -11070,6 +11195,7 @@ print(f"Anonymized: {anon}")
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques work best for topic modeling with external knowledge integration?**
 **Answer:**
 
@@ -11169,6 +11295,7 @@ print("Knowledge integration: synonyms, embeddings, ontologies")
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle topic modeling adaptation to emerging document types and formats?**
 **Answer:**
 
@@ -11265,6 +11392,7 @@ print(f"Cleaned chat: {clean_chat}")
 ---
 
 ## Question 28
+- [ ] Done
 **What strategies help with topic modeling for documents requiring domain expertise?**
 **Answer:**
 
@@ -11362,6 +11490,7 @@ print("Expert-in-the-loop: seeds → train → review → refine → repeat")
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement robust preprocessing and cleaning for noisy document collections?**
 **Answer:**
 
@@ -11477,6 +11606,7 @@ print(f"Cleaned: {cleaned}")
 ---
 
 ## Question 30
+- [ ] Done
 **What approaches work best for combining topic modeling with other text mining techniques?**
 **Answer:**
 
@@ -11568,6 +11698,7 @@ print("Combine topics with sentiment, NER, and classification for richer analysi
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle topic modeling for documents with varying temporal relevance?**
 **Answer:**
 
@@ -11663,6 +11794,7 @@ print(f"Temporal weights (newest to oldest): {weights.round(2)}")
 ---
 
 ## Question 32
+- [ ] Done
 **What techniques help with topic modeling consistency in distributed computing environments?**
 **Answer:**
 
@@ -11751,6 +11883,7 @@ print(f"Distributed model: {model.num_topics} topics, {len(dictionary)} vocab")
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement efficient batch processing for large-scale topic modeling?**
 **Answer:**
 
@@ -11846,6 +11979,7 @@ print(f"Dictionary built: {len(dict_)} terms")
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for topic modeling with specific business intelligence requirements?**
 **Answer:**
 
@@ -11937,6 +12071,7 @@ print("BI topic analytics: customer voice, trends, alerts")
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle topic modeling for documents requiring expert validation?**
 **Answer:**
 
@@ -12048,6 +12183,7 @@ print("Expert validation: review packets, feedback processing, intrusion tests")
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with topic modeling adaptation to user-specific information needs?**
 **Answer:**
 
@@ -12144,6 +12280,7 @@ print("User-adaptive topics: personal profiles, interaction tracking, personaliz
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement monitoring and quality control for topic modeling systems?**
 **Answer:**
 
@@ -12269,6 +12406,7 @@ print("Topic model monitoring: data quality, OOV, latency, coverage")
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for topic modeling in documents with structured metadata?**
 **Answer:**
 
@@ -12375,6 +12513,7 @@ print("Metadata-enhanced: author-topic, category-stratified, tag-guided")
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle topic modeling optimization when balancing interpretability and accuracy?**
 **Answer:**
 
@@ -12456,6 +12595,7 @@ find_interpretability_accuracy_tradeoff(texts, k_range=range(2, 12, 2))
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with topic modeling for emerging research areas and disciplines?**
 **Answer:**
 
@@ -12580,6 +12720,7 @@ tracker.detect_new_terms(current, historical)
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement transfer learning for topic modeling across different domains?**
 **Answer:**
 
@@ -12679,6 +12820,7 @@ target_model, _, _ = tl.transfer_to_target(target)
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for topic modeling with minimal computational resources?**
 **Answer:**
 
@@ -12780,6 +12922,7 @@ model, corpus, dictionary = lightweight_lda(texts, n_topics=3, max_vocab=1000)
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle topic modeling integration with search and recommendation systems?**
 **Answer:**
 
@@ -12892,6 +13035,7 @@ print("Topic-enhanced: semantic search, recommendations, diversified results")
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with topic modeling for documents requiring trend analysis?**
 **Answer:**
 
@@ -13004,6 +13148,7 @@ print("Topic trends: emerging detection, bursts, growth tracking")
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement customizable topic modeling for different analytical frameworks?**
 **Answer:**
 
@@ -13126,6 +13271,7 @@ for model_type in ["lda_gensim", "nmf_sklearn"]:
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for topic modeling in real-time content analysis scenarios?**
 **Answer:**
 
@@ -13233,6 +13379,7 @@ print("Real-time topics: fast inference, batch processing, live monitoring")
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle topic modeling quality benchmarking across different algorithms?**
 **Answer:**
 
@@ -13339,6 +13486,7 @@ benchmark_topic_models(texts, n_topics=3)
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with topic modeling for documents with evolving vocabularies?**
 **Answer:**
 
@@ -13461,6 +13609,7 @@ print(f"OOV rate: {oov:.1%}")
 ---
 
 ## Question 49
+- [ ] Done
 **How do you implement efficient storage and retrieval of topic modeling results?**
 **Answer:**
 
@@ -13565,6 +13714,7 @@ print("Topic storage: model files, doc vectors, JSON summaries, quick lookup")
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques work best for balancing topic modeling granularity with practical utility?**
 **Answer:**
 
@@ -13674,6 +13824,7 @@ for use_case in ["business", "research"]:
 # Sequence-to-Sequence Models - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you handle sequence-to-sequence learning for tasks with extreme length disparities?**
 **Answer:**
 
@@ -13763,6 +13914,7 @@ print(f"Input: {long_input.shape[1]} tokens → Encoded: {enc_out.shape}")
 ---
 
 ## Question 2
+- [ ] Done
 **What techniques work best for implementing attention mechanisms in seq2seq architectures?**
 **Answer:**
 
@@ -13856,6 +14008,7 @@ print(f"Multi-head: output={out.shape}, weights={wts.shape}")
 ---
 
 ## Question 3
+- [ ] Done
 **How do you design seq2seq models that maintain semantic consistency across transformations?**
 **Answer:**
 
@@ -13951,6 +14104,7 @@ print(f"Copy-gen combined: {probs.shape}, sum={probs.sum(-1)}")
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies help with handling rare or out-of-vocabulary tokens in seq2seq models?**
 **Answer:**
 
@@ -14059,6 +14213,7 @@ print(f"OOV '{oov_test}' → {oov_tokens}")
 ---
 
 ## Question 5
+- [ ] Done
 **How do you implement beam search and other decoding strategies for optimal sequence generation?**
 **Answer:**
 
@@ -14164,6 +14319,7 @@ for temp in [0.3, 0.7, 1.0, 1.5]:
 ---
 
 ## Question 6
+- [ ] Done
 **What approaches work best for seq2seq models in multilingual or cross-lingual settings?**
 **Answer:**
 
@@ -14245,6 +14401,7 @@ print(f"Adapter: {sum(p.numel() for p in adapter.parameters())} params")
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle seq2seq training with limited parallel data?**
 **Answer:**
 
@@ -14337,6 +14494,7 @@ for src, tgt in augmented[:5]:
 ---
 
 ## Question 8
+- [ ] Done
 **What techniques help with explaining seq2seq model decisions and generated sequences?**
 **Answer:**
 
@@ -14445,6 +14603,7 @@ for e in exps:
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement curriculum learning for progressive seq2seq model training?**
 **Answer:**
 
@@ -14546,6 +14705,7 @@ for epoch in range(0, 20, 5):
 ---
 
 ## Question 10
+- [ ] Done
 **What strategies work best for seq2seq models in specialized domains with technical vocabulary?**
 **Answer:**
 
@@ -14643,6 +14803,7 @@ print(f"Restored: {restored}")
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle seq2seq model quality control and output validation?**
 **Answer:**
 
@@ -14767,6 +14928,7 @@ for text, meta in tests:
 ---
 
 ## Question 12
+- [ ] Done
 **What approaches help with seq2seq model robustness against input variations?**
 **Answer:**
 
@@ -14869,6 +15031,7 @@ for v in aug.augment(text, 5):
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement knowledge distillation for compressing large seq2seq models?**
 **Answer:**
 
@@ -14969,6 +15132,7 @@ print(f"Compression: {teacher_params/1e6:.0f}M → {student_params/1e6:.0f}M "
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques work best for real-time seq2seq inference with latency constraints?**
 **Answer:**
 
@@ -15094,6 +15258,7 @@ print("Targets: p50<50ms, p95<100ms, p99<200ms")
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle seq2seq models for tasks requiring temporal consistency?**
 **Answer:**
 
@@ -15212,6 +15377,7 @@ print(f"Temporal order: {result}")
 ---
 
 ## Question 16
+- [ ] Done
 **What strategies help with seq2seq model adaptation to new domains or tasks?**
 **Answer:**
 
@@ -15314,6 +15480,7 @@ apply_lora(model, rank=8)
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement online learning for seq2seq models adapting to user feedback?**
 **Answer:**
 
@@ -15440,6 +15607,7 @@ for src, model_out, corrected, fb_type in feedbacks:
 ---
 
 ## Question 18
+- [ ] Done
 **What approaches work best for seq2seq models in interactive or conversational systems?**
 **Answer:**
 
@@ -15564,6 +15732,7 @@ for turn in turns:
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle seq2seq optimization for specific downstream applications?**
 **Answer:**
 
@@ -15681,6 +15850,7 @@ print(f"Summarization reward: {reward:.3f}")
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help with seq2seq models for tasks requiring external knowledge?**
 **Answer:**
 
@@ -15790,6 +15960,7 @@ print(f"KG encoding: {kg_encoded.shape}")
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement fairness-aware seq2seq modeling to reduce generation bias?**
 **Answer:**
 
@@ -15914,6 +16085,7 @@ print(f"Swapped: {debiaser.counterfactual_augment('He went to his office')}")
 ---
 
 ## Question 22
+- [ ] Done
 **What strategies work best for seq2seq models with structured or constrained outputs?**
 **Answer:**
 
@@ -16039,6 +16211,7 @@ print(validate_json_output('{"name": "broken"'))
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle seq2seq quality assessment with subjective or creative outputs?**
 **Answer:**
 
@@ -16160,6 +16333,7 @@ print(f"Coherence: {evaluator.coherence_score(outputs)}")
 ---
 
 ## Question 24
+- [ ] Done
 **What approaches help with seq2seq models for low-resource or minority languages?**
 **Answer:**
 
@@ -16267,6 +16441,7 @@ for s, t in augs:
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement privacy-preserving seq2seq modeling for sensitive data?**
 **Answer:**
 
@@ -16391,6 +16566,7 @@ print(f"Anonymized: {anonymized}")
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques work best for seq2seq models with multi-modal input or output?**
 **Answer:**
 
@@ -16487,6 +16663,7 @@ print(f"Text: {text_ids.shape}, Image: {img_features.shape} → Fused: {fused.sh
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle seq2seq model adaptation to emerging data formats or protocols?**
 **Answer:**
 
@@ -16614,6 +16791,7 @@ for text in formats:
 ---
 
 ## Question 28
+- [ ] Done
 **What strategies help with seq2seq models requiring domain-specific expertise validation?**
 **Answer:**
 
@@ -16741,6 +16919,7 @@ print(f"\nStats: {pipeline.get_stats()}")
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement robust error handling and recovery in seq2seq generation?**
 **Answer:**
 
@@ -16806,6 +16985,7 @@ class RobustSeq2SeqGenerator:
 ---
 
 ## Question 30
+- [ ] Done
 **What approaches work best for combining seq2seq models with other NLP components?**
 **Answer:**
 
@@ -16866,6 +17046,7 @@ class HybridNLPPipeline:
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle seq2seq models for tasks with varying complexity requirements?**
 **Answer:**
 
@@ -16927,6 +17108,7 @@ class AdaptiveSeq2Seq:
 ---
 
 ## Question 32
+- [ ] Done
 **What techniques help with seq2seq model consistency in distributed processing environments?**
 **Answer:**
 
@@ -16991,6 +17173,7 @@ class ConsistentSeq2SeqInference:
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement efficient batch processing for large-scale seq2seq applications?**
 **Answer:**
 
@@ -17063,6 +17246,7 @@ class EfficientBatchProcessor:
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for seq2seq models with regulatory or compliance requirements?**
 **Answer:**
 
@@ -17135,6 +17319,7 @@ class CompliantSeq2Seq:
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle seq2seq models for tasks requiring high factual accuracy?**
 **Answer:**
 
@@ -17201,6 +17386,7 @@ class FactualSeq2Seq:
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with seq2seq model customization for different user preferences?**
 **Answer:**
 
@@ -17263,6 +17449,7 @@ class PersonalizedGenerator:
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement monitoring and quality control for seq2seq systems in production?**
 **Answer:**
 
@@ -17331,6 +17518,7 @@ class Seq2SeqMonitor:
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for seq2seq models handling structured data formats?**
 **Answer:**
 
@@ -17403,6 +17591,7 @@ class StructuredSeq2Seq:
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle seq2seq optimization when balancing fluency and faithfulness?**
 **Answer:**
 
@@ -17472,6 +17661,7 @@ class FluencyFaithfulnessBalancer:
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with seq2seq models for emerging application domains?**
 **Answer:**
 
@@ -17544,6 +17734,7 @@ class DomainAdaptiveSeq2Seq:
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement transfer learning for seq2seq models across different tasks?**
 **Answer:**
 
@@ -17618,6 +17809,7 @@ def progressive_finetune(model, train_dataset, num_layers=6):
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for seq2seq models with minimal computational resources?**
 **Answer:**
 
@@ -17686,6 +17878,7 @@ class EfficientSeq2Seq:
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle seq2seq integration with information retrieval and knowledge systems?**
 **Answer:**
 
@@ -17751,6 +17944,7 @@ class RAGSeq2Seq:
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with seq2seq models for tasks requiring creative or novel outputs?**
 **Answer:**
 
@@ -17822,6 +18016,7 @@ class CreativeGenerator:
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement controllable generation in seq2seq models?**
 **Answer:**
 
@@ -17902,6 +18097,7 @@ class ControllableSeq2Seq:
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for seq2seq models in high-throughput processing scenarios?**
 **Answer:**
 
@@ -17983,6 +18179,7 @@ class HighThroughputServer:
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle seq2seq quality benchmarking across different model architectures?**
 **Answer:**
 
@@ -18062,6 +18259,7 @@ class Seq2SeqBenchmark:
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with seq2seq models for tasks with evolving requirements?**
 **Answer:**
 
@@ -18136,6 +18334,7 @@ class ContinualSeq2Seq:
 ---
 
 ## Question 49
+- [ ] Done
 **How do you implement efficient memory management for large seq2seq model inference?**
 **Answer:**
 
@@ -18213,6 +18412,7 @@ class MemoryEfficientInference:
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques work best for balancing seq2seq model complexity with interpretability?**
 **Answer:**
 
@@ -18303,6 +18503,7 @@ class InterpretableSeq2Seq:
 # Machine Translation - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you handle machine translation quality assessment without human reference translations?**
 **Answer:**
 
@@ -18365,6 +18566,7 @@ class MTQualityEstimator:
 ---
 
 ## Question 2
+- [ ] Done
 **What techniques work best for low-resource language pairs with minimal parallel data?**
 **Answer:**
 
@@ -18425,6 +18627,7 @@ class LowResourceMTAugmenter:
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement domain adaptation for machine translation across different text types?**
 **Answer:**
 
@@ -18488,6 +18691,7 @@ class DomainAdaptedMT:
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies help with handling linguistic phenomena like idioms and cultural references?**
 **Answer:**
 
@@ -18563,6 +18767,7 @@ class IdiomAwareMT:
 ---
 
 ## Question 5
+- [ ] Done
 **How do you design MT systems that preserve formatting and document structure?**
 **Answer:**
 
@@ -18637,6 +18842,7 @@ class FormatPreservingMT:
 ---
 
 ## Question 6
+- [ ] Done
 **What approaches work best for real-time machine translation with latency constraints?**
 **Answer:**
 
@@ -18709,6 +18915,7 @@ class RealTimeMT:
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle machine translation for morphologically rich or agglutinative languages?**
 **Answer:**
 
@@ -18784,6 +18991,7 @@ class MorphologyAwareMT:
 ---
 
 ## Question 8
+- [ ] Done
 **What techniques help with explaining translation decisions and alternative options?**
 **Answer:**
 
@@ -18858,6 +19066,7 @@ class ExplainableMT:
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement active learning for improving MT models with minimal annotation effort?**
 **Answer:**
 
@@ -18944,6 +19153,7 @@ class ActiveLearningMT:
 ---
 
 ## Question 10
+- [ ] Done
 **What strategies work best for machine translation in specialized domains like legal or medical?**
 **Answer:**
 
@@ -19022,6 +19232,7 @@ class SpecializedMT:
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle MT quality control and confidence scoring for production systems?**
 **Answer:**
 
@@ -19111,6 +19322,7 @@ class MTQualityControl:
 ---
 
 ## Question 12
+- [ ] Done
 **What approaches help with MT robustness against input noise and variations?**
 **Answer:**
 
@@ -19194,6 +19406,7 @@ class RobustMT:
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement knowledge distillation for compressing large translation models?**
 **Answer:**
 
@@ -19275,6 +19488,7 @@ class MTDistillation:
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques work best for multilingual MT systems serving multiple language pairs?**
 **Answer:**
 
@@ -19344,6 +19558,7 @@ class MultilingualMT:
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle machine translation for languages with different writing systems?**
 **Answer:**
 
@@ -19430,6 +19645,7 @@ class CrossScriptMT:
 ---
 
 ## Question 16
+- [ ] Done
 **What strategies help with MT consistency across different document types and sources?**
 **Answer:**
 
@@ -19511,6 +19727,7 @@ class ConsistentMT:
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement online learning for MT systems adapting to user corrections?**
 **Answer:**
 
@@ -19590,6 +19807,7 @@ class OnlineLearningMT:
 ---
 
 ## Question 18
+- [ ] Done
 **What approaches work best for machine translation in interactive or conversational contexts?**
 **Answer:**
 
@@ -19664,6 +19882,7 @@ class ConversationalMT:
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle MT optimization for specific use cases like subtitle translation?**
 **Answer:**
 
@@ -19747,6 +19966,7 @@ class SubtitleMT:
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help with machine translation for texts requiring cultural sensitivity?**
 **Answer:**
 
@@ -19823,6 +20043,7 @@ class CulturallyAwareMT:
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement fairness-aware MT to reduce bias across different language varieties?**
 **Answer:**
 
@@ -19902,6 +20123,7 @@ class FairMT:
 ---
 
 ## Question 22
+- [ ] Done
 **What strategies work best for machine translation with length and formatting constraints?**
 **Answer:**
 
@@ -19978,6 +20200,7 @@ class LengthConstrainedMT:
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle MT quality assessment with dialectal or regional language variations?**
 **Answer:**
 
@@ -20059,6 +20282,7 @@ class DialectAwareMTEval:
 ---
 
 ## Question 24
+- [ ] Done
 **What approaches help with machine translation for historical or archaic text varieties?**
 **Answer:**
 
@@ -20138,6 +20362,7 @@ class HistoricalTextMT:
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement privacy-preserving machine translation for sensitive documents?**
 **Answer:**
 
@@ -20223,6 +20448,7 @@ class PrivacyPreservingMT:
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques work best for machine translation with terminology consistency requirements?**
 **Answer:**
 
@@ -20299,6 +20525,7 @@ class TerminologyConsistentMT:
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle MT adaptation to emerging language trends and neologisms?**
 **Answer:**
 
@@ -20372,6 +20599,7 @@ class NeologismAwareMT:
 ---
 
 ## Question 28
+- [ ] Done
 **What strategies help with machine translation requiring subject matter expertise validation?**
 **Answer:**
 
@@ -20448,6 +20676,7 @@ class SMEValidatedMT:
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement robust error handling and fallback mechanisms in MT systems?**
 **Answer:**
 
@@ -20538,6 +20767,7 @@ class RobustMTService:
 ---
 
 ## Question 30
+- [ ] Done
 **What approaches work best for combining machine translation with other language technologies?**
 **Answer:**
 
@@ -20609,6 +20839,7 @@ class MultilingualPipeline:
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle machine translation for texts with mixed languages or code-switching?**
 **Answer:**
 
@@ -20694,6 +20925,7 @@ class CodeSwitchingMT:
 ---
 
 ## Question 32
+- [ ] Done
 **What techniques help with MT consistency in federated or distributed processing scenarios?**
 **Answer:**
 
@@ -20775,6 +21007,7 @@ class DistributedMTCoordinator:
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement efficient batch processing for large-scale translation applications?**
 **Answer:**
 
@@ -20867,6 +21100,7 @@ class BatchMTProcessor:
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for machine translation with regulatory compliance requirements?**
 **Answer:**
 
@@ -20955,6 +21189,7 @@ class RegulatoryCompliantMT:
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle machine translation for texts requiring high accuracy and reliability?**
 **Answer:**
 
@@ -21031,90 +21266,105 @@ class HighAccuracyMT:
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with MT customization for different user preferences and styles?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement monitoring and quality drift detection for MT systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for machine translation of structured data formats?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle MT optimization when balancing fluency and adequacy?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with machine translation for emerging communication platforms?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement transfer learning for machine translation across related languages?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for machine translation with minimal computational resources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle MT integration with content management and localization workflows?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with machine translation for texts requiring creative or literary quality?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement controllable translation with style and register adaptation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for machine translation in high-volume processing environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle MT quality benchmarking across different model architectures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with machine translation for evolving language standards?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 49
+- [ ] Done
 **How do you implement efficient caching and optimization for MT inference pipelines?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques work best for balancing machine translation accuracy with processing speed?**
 **Answer:** _To be filled_
 
@@ -21128,300 +21378,350 @@ class HighAccuracyMT:
 # Question Answering - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you design QA systems that handle questions requiring multi-hop reasoning?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What techniques work best for open-domain QA when answers aren't in the provided context?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement reading comprehension models that understand implicit information?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies help with handling ambiguous or under-specified questions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you design QA systems that work effectively across different question types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What approaches work best for conversational QA with context tracking across turns?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle QA for domain-specific knowledge bases and structured data?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What techniques help with explaining QA system reasoning and confidence levels?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement active learning for improving QA models with minimal annotation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What strategies work best for QA in specialized domains requiring expert knowledge?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle QA quality control and answer validation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What approaches help with QA robustness against adversarial or trick questions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement knowledge distillation for compressing large QA models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques work best for real-time QA with response time constraints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle QA for questions requiring temporal or factual knowledge updates?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What strategies help with QA consistency across different knowledge sources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement online learning for QA systems adapting to new information?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What approaches work best for QA in interactive or educational applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle QA optimization for specific use cases like customer support?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help with QA for questions requiring common sense reasoning?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement fairness-aware QA to reduce bias in answer generation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What strategies work best for QA with multi-modal inputs (text, images, tables)?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle QA quality assessment with subjective or opinion-based questions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What approaches help with QA for questions in low-resource or minority languages?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement privacy-preserving QA for sensitive or personal information?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques work best for QA systems requiring external knowledge integration?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle QA adaptation to emerging topics and current events?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What strategies help with QA for questions requiring specialized domain validation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement robust error handling when QA systems cannot find answers?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What approaches work best for combining QA with other information retrieval tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle QA for questions with multiple valid answers or perspectives?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What techniques help with QA consistency in distributed processing environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement efficient batch processing for large-scale QA applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for QA with regulatory or compliance accuracy requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle QA for questions requiring high precision and reliability?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with QA customization for different user expertise levels?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement monitoring and performance tracking for QA systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for QA handling structured and semi-structured data?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle QA optimization when balancing answer quality and response speed?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with QA for emerging question types and interaction patterns?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement transfer learning for QA across different domains?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for QA with minimal computational and memory resources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle QA integration with search engines and knowledge management systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with QA for questions requiring creative or analytical thinking?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement controllable QA with adjustable answer detail and style?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for QA in high-traffic and concurrent user scenarios?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle QA quality benchmarking across different model architectures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with QA for evolving information landscapes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 49
+- [ ] Done
 **How do you implement efficient indexing and retrieval for QA knowledge bases?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques work best for balancing QA accuracy with system interpretability?**
 **Answer:** _To be filled_
 

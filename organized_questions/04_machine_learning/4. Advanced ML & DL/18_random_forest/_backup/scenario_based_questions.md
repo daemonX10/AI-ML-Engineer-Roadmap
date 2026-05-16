@@ -1,6 +1,7 @@
 # Random Forest Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the impact of imbalanced datasets on Random Forest.**
 
@@ -72,6 +73,7 @@ predictions = (probas >= 0.3).astype(int)  # Instead of 0.5
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss strategies to deal with high dimensionality in Random Forest.**
 
@@ -158,6 +160,7 @@ X_reduced = pd.DataFrame(X).drop(to_drop, axis=1)
 ---
 
 ## Question 3
+- [ ] Done
 
 **How would you explain the Random Forest model to a non-technical stakeholder?**
 
@@ -208,6 +211,7 @@ Random Forest works the same way - it builds 100 'decision trees' (like doctors)
 ---
 
 ## Question 4
+- [ ] Done
 
 **How would you use Random Forest for a real-time recommendation system?**
 
@@ -304,6 +308,7 @@ def get_recommendations(user, candidate_items, top_n=10):
 ---
 
 ## Question 5
+- [ ] Done
 
 **How would you apply Random Forest for predictive maintenance in manufacturing?**
 
@@ -408,6 +413,7 @@ importance_df = pd.DataFrame({
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss the use of Random Forest in natural language processing (NLP) applications.**
 
@@ -503,6 +509,7 @@ rf.fit(embeddings, labels)
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss current research trends in ensemble learning and Random Forest.**
 

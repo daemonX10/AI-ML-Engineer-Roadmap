@@ -5,6 +5,7 @@
 ## Linear Models and General Techniques
 
 ### Question 1: Describe Linear Regression
+- [ ] Done
 
 **Definition:**  
 Linear Regression is a supervised algorithm that models the relationship between input features and a continuous target as a linear function. It finds the best-fit line/hyperplane by minimizing the sum of squared errors (Ordinary Least Squares).
@@ -51,6 +52,7 @@ print(f"R2 Score: {r2_score(y_test, y_pred):.4f}")
 ---
 
 ### Question 2: Difference between Simple and Multiple Linear Regression
+- [ ] Done
 
 **Definition:**  
 **Simple Linear Regression** uses one input feature to predict the target, modeling a straight line. **Multiple Linear Regression** uses two or more features, modeling a hyperplane in multi-dimensional space.
@@ -82,6 +84,7 @@ print(f"R2 Score: {r2_score(y_test, y_pred):.4f}")
 ---
 
 ### Question 3: What is Logistic Regression and when is it used?
+- [ ] Done
 
 **Definition:**  
 Logistic Regression is a classification algorithm that predicts the probability of a binary outcome by applying the sigmoid function to a linear combination of features. Despite its name, it's used for classification, not regression.
@@ -125,6 +128,7 @@ print(classification_report(y_test, y_pred))
 ---
 
 ### Question 4: How does Ridge Regression prevent Overfitting?
+- [ ] Done
 
 **Definition:**  
 Ridge Regression prevents overfitting by adding an L2 penalty (sum of squared weights) to the loss function. This forces the model to keep coefficients small, reducing model complexity and sensitivity to training data noise.
@@ -161,6 +165,7 @@ print(f"Coefficients: {ridge_cv.coef_}")
 ---
 
 ### Question 5: Describe Lasso Regression and its Unique Property
+- [ ] Done
 
 **Definition:**  
 Lasso Regression uses L1 regularization (sum of absolute weights) which has the unique property of forcing some coefficients to exactly zero, performing **automatic feature selection** and producing sparse models.
@@ -200,6 +205,7 @@ print(f"Number of features used: {np.sum(lasso.coef_ != 0)}")
 ---
 
 ### Question 6: Explain the Principle of Support Vector Machine (SVM)
+- [ ] Done
 
 **Definition:**  
 SVM finds the optimal hyperplane that maximizes the margin (distance) between classes. The decision boundary is defined by support vectors (nearest points to the boundary). For non-linear data, the kernel trick projects data to higher dimensions where it becomes linearly separable.
@@ -239,6 +245,7 @@ print(f"Number of support vectors: {len(svm_rbf.support_vectors_)}")
 ---
 
 ### Question 7: Handling Categorical Variables
+- [ ] Done
 
 **Definition:**  
 Categorical variables must be converted to numerical format for most ML models. The encoding method depends on whether the variable is **nominal** (no order) or **ordinal** (has order).
@@ -274,6 +281,7 @@ df_encoded = pd.get_dummies(df, columns=['color'], drop_first=True)
 ---
 
 ### Question 8: What are Ensemble Methods?
+- [ ] Done
 
 **Definition:**  
 Ensemble methods combine predictions from multiple individual models (base learners) to produce a final prediction. They improve performance by reducing variance (bagging), reducing bias (boosting), or leveraging diverse model strengths (stacking).
@@ -312,6 +320,7 @@ print(f"Ensemble Accuracy: {ensemble.score(X_test, y_test):.4f}")
 ---
 
 ### Question 9: Difference between Bagging and Boosting
+- [ ] Done
 
 **Definition:**  
 **Bagging** trains models independently on random data subsets and averages predictions (reduces variance). **Boosting** trains models sequentially where each model corrects errors of previous ones (reduces bias).
@@ -360,6 +369,7 @@ boosting = AdaBoostClassifier(
 ---
 
 ### Question 10: Explain Feature Scaling and its Importance
+- [ ] Done
 
 **Definition:**  
 Feature scaling transforms numerical features to a similar scale/range. It's critical for gradient-based algorithms (convergence speed) and distance-based algorithms (equal feature contribution), but not needed for tree-based models.
@@ -401,6 +411,7 @@ X_test_norm = minmax.transform(X_test)
 ## Decision Trees and Random Forests
 
 ### Question 11: How is a Decision Tree Constructed?
+- [ ] Done
 
 **Definition:**  
 A decision tree is built using recursive partitioning. At each node, the algorithm finds the best feature and split point that maximizes purity (minimizes impurity) in the resulting child nodes. This process repeats until stopping criteria are met.
@@ -438,6 +449,7 @@ plt.show()
 ---
 
 ### Question 12: Pros and Cons of Decision Trees
+- [ ] Done
 
 **Definition:**  
 Decision trees are interpretable models that recursively partition data based on feature thresholds. They're easy to understand but prone to overfitting and instability.
@@ -465,6 +477,7 @@ Decision trees are interpretable models that recursively partition data based on
 ---
 
 ### Question 13: Explain Gini Impurity and Information Gain
+- [ ] Done
 
 **Definition:**  
 **Gini Impurity** measures probability of misclassifying a randomly chosen element. **Information Gain** (based on Entropy) measures reduction in uncertainty after a split. Both guide the tree to find the best splits.
@@ -511,6 +524,7 @@ print(f"Entropy: {entropy(y):.4f}")
 ---
 
 ### Question 14: How Random Forest Improves on Decision Trees
+- [ ] Done
 
 **Definition:**  
 Random Forest improves on single decision trees by using two sources of randomness: **Bootstrap Aggregating (Bagging)** trains trees on random data samples, and **Feature Randomness** considers random feature subsets at each split. This creates decorrelated trees whose averaged predictions reduce variance.
@@ -547,6 +561,7 @@ print(f"Feature Importances: {rf.feature_importances_}")
 ---
 
 ### Question 15: What is Feature Importance?
+- [ ] Done
 
 **Definition:**  
 Feature importance scores indicate how useful each feature was for making predictions. In tree-based models, it's calculated as the total reduction in impurity (Gini/Entropy) brought by that feature across all splits, averaged over all trees.
@@ -587,6 +602,7 @@ perm_imp = permutation_importance(rf, X_test, y_test, n_repeats=10)
 ## Neural Networks and Deep Learning
 
 ### Question 16: Basic Components of a Neural Network
+- [ ] Done
 
 **Definition:**  
 A neural network consists of **neurons** organized in **layers** (input, hidden, output), connected by **weights**. Each neuron computes a weighted sum of inputs, adds a **bias**, and applies an **activation function** to introduce non-linearity.
@@ -630,6 +646,7 @@ class SimpleNN(nn.Module):
 ---
 
 ### Question 17: Role of Activation Functions
+- [ ] Done
 
 **Definition:**  
 Activation functions introduce non-linearity into neural networks. Without them, any deep network would collapse to a single linear transformation and couldn't learn complex patterns.
@@ -658,6 +675,7 @@ Activation functions introduce non-linearity into neural networks. Without them,
 ---
 
 ### Question 18: Preventing Overfitting in Neural Networks
+- [ ] Done
 
 **Definition:**  
 Neural networks are especially prone to overfitting due to their high capacity. Key techniques include Dropout, weight regularization, data augmentation, early stopping, and batch normalization.
@@ -697,6 +715,7 @@ model.fit(X, y, validation_split=0.2, callbacks=[early_stop], epochs=100)
 ---
 
 ### Question 19: Discuss backpropagation and its significance in neural networks.
+- [ ] Done
 
 ### Definition
 Backpropagation is the algorithm used to compute gradients of the loss function with respect to all weights in a neural network, enabling gradient descent optimization.
@@ -742,6 +761,7 @@ $$\frac{\partial L}{\partial w^{(l)}} = \frac{\partial L}{\partial a^{(L)}} \cdo
 ---
 
 ### Question 20: Shallow vs Deep Neural Networks
+- [ ] Done
 
 **Definition:**  
 A **shallow network** has one hidden layer; a **deep network** has two or more. Depth enables hierarchical feature learning where early layers learn simple patterns and later layers learn complex abstractions.
@@ -772,6 +792,7 @@ A **shallow network** has one hidden layer; a **deep network** has two or more. 
 ## Evaluation Metrics
 
 ### Question 21: Confusion Matrix, Precision, Recall, F1 Score
+- [ ] Done
 
 **Definition:**  
 A **confusion matrix** summarizes classification results into TP, TN, FP, FN. **Precision** measures accuracy of positive predictions. **Recall** measures coverage of actual positives. **F1 Score** is the harmonic mean balancing both.
@@ -810,6 +831,7 @@ print(classification_report(y_test, y_pred))
 ---
 
 ### Question 22: Accuracy and Why It's Not Always the Best Metric
+- [ ] Done
 
 **Definition:**  
 Accuracy = (Correct Predictions) / (Total Predictions). It's misleading for **imbalanced datasets** because a model predicting only the majority class achieves high accuracy while being useless.
@@ -836,6 +858,7 @@ $$Accuracy = \frac{TP + TN}{TP + TN + FP + FN}$$
 ---
 
 ### Question 23: ROC Curve and AUC
+- [ ] Done
 
 **Definition:**  
 **ROC curve** plots True Positive Rate (Recall) vs False Positive Rate at various classification thresholds. **AUC** (Area Under Curve) summarizes performance as a single value between 0 and 1, where 1 is perfect and 0.5 is random.
@@ -878,6 +901,7 @@ plt.show()
 ---
 
 ### Question 24: Compare RMSE and MAE
+- [ ] Done
 
 **Definition:**  
 Both are regression error metrics. **MAE** (Mean Absolute Error) treats all errors equally. **RMSE** (Root Mean Squared Error) penalizes large errors more heavily due to squaring.
@@ -914,6 +938,7 @@ print(f"RMSE: {rmse:.4f}")
 ---
 
 ### Question 25: When to Use MAPE
+- [ ] Done
 
 **Definition:**  
 MAPE (Mean Absolute Percentage Error) measures average percentage error. Use it when you need **relative error** that's easy to explain to stakeholders or when comparing forecasts across different scales.
@@ -949,6 +974,7 @@ print(f"MAPE: {mape(y_true, y_pred):.2f}%")
 ## Model Tuning and Optimization
 
 ### Question 26: Importance of Hyperparameter Tuning
+- [ ] Done
 
 ### Definition
 Hyperparameter tuning is the process of finding optimal values for model parameters that are set before training (not learned from data).
@@ -1004,6 +1030,7 @@ random_search.fit(X_train, y_train)
 ---
 
 ### Question 27: Grid Search for Hyperparameter Optimization
+- [ ] Done
 
 **Definition:**  
 Grid Search exhaustively evaluates all combinations of specified hyperparameter values using cross-validation. It's guaranteed to find the best combination within the grid but is computationally expensive.
@@ -1043,6 +1070,7 @@ best_model = grid_search.best_estimator_
 ---
 
 ### Question 28: Random Search vs Grid Search
+- [ ] Done
 
 **Definition:**  
 Random Search samples random hyperparameter combinations from specified distributions instead of exhaustively searching a grid. It's more efficient because it explores the search space more broadly with fewer evaluations.
@@ -1086,6 +1114,7 @@ print(f"Best parameters: {random_search.best_params_}")
 ---
 
 ### Question 29: Role of Learning Rate in Neural Network Convergence
+- [ ] Done
 
 ### Definition
 The learning rate (η) controls the step size when updating weights during gradient descent. It determines how much to adjust weights based on the computed gradient.
@@ -1138,6 +1167,7 @@ Just Right:  →→→→ ✓ (smooth descent to minimum)
 ---
 
 ### Question 30: What is Early Stopping?
+- [ ] Done
 
 **Definition:**  
 Early stopping monitors validation loss during training and halts when it stops improving for a specified number of epochs (patience). It prevents overfitting by stopping before the model memorizes training noise.
@@ -1174,6 +1204,7 @@ model.fit(
 ## Algorithm-Specific Questions
 
 ### Question 31: Handling Imbalanced Datasets
+- [ ] Done
 
 **Definition:**  
 Imbalanced datasets have skewed class distributions. Solutions include appropriate metrics, resampling techniques, and algorithm-level modifications like class weights.
@@ -1219,6 +1250,7 @@ rf = RandomForestClassifier(class_weight={0: 1, 1: 10})  # 10x penalty for class
 ---
 
 ### Question 32: SVMs with Non-linear Kernels
+- [ ] Done
 
 **Definition:**  
 When data isn't linearly separable, SVMs use the **kernel trick** to implicitly map data to higher-dimensional space where a linear boundary becomes possible. The RBF kernel is most common, enabling complex, curved decision boundaries.
@@ -1255,6 +1287,7 @@ param_grid = {'C': [0.1, 1, 10], 'gamma': [0.01, 0.1, 1]}
 ---
 
 ### Question 33: How Decision Trees are Pruned
+- [ ] Done
 
 ### Why Prune?
 
@@ -1317,6 +1350,7 @@ Use pre-pruning via hyperparameter tuning with cross-validation - simpler and us
 ---
 
 ### Question 34: AdaBoost Algorithm
+- [ ] Done
 
 **Definition:**  
 AdaBoost (Adaptive Boosting) sequentially trains weak learners (typically stumps), giving more weight to misclassified samples after each iteration. The final prediction is a weighted vote where better-performing models have higher influence.
@@ -1348,6 +1382,7 @@ ada.fit(X_train, y_train)
 ---
 
 ### Question 35: Gradient Boosting vs AdaBoost
+- [ ] Done
 
 **Definition:**  
 Both are boosting methods that train models sequentially. **AdaBoost** reweights samples based on misclassification. **Gradient Boosting** fits each new model to the residual errors of the current ensemble, making it more flexible with any differentiable loss function.
@@ -1386,6 +1421,7 @@ gb.fit(X_train, y_train)
 ## Dataset Handling
 
 ### Question 36: Handling Missing Data
+- [ ] Done
 
 **Definition:**  
 Missing data handling depends on the mechanism (MCAR, MAR, MNAR) and percentage missing. Strategies include deletion, simple imputation (mean/median/mode), or advanced imputation (KNN, iterative models).
@@ -1423,6 +1459,7 @@ imputer = SimpleImputer(strategy='constant', fill_value=-999)
 ---
 
 ### Question 37: Dataset Preparation Steps
+- [ ] Done
 
 **Definition:**  
 Dataset preparation involves systematic cleaning, engineering, transformation, and splitting of data before model training. Proper preparation prevents data leakage and ensures model reliability.
@@ -1470,6 +1507,7 @@ full_pipeline = Pipeline([
 ---
 
 ### Question 38: Handling Textual Data in Supervised Learning
+- [ ] Done
 
 ### Step 1: Text Preprocessing
 
@@ -1530,6 +1568,7 @@ model = BertForSequenceClassification.from_pretrained('bert-base-uncased')
 ---
 
 ### Question 39: When is Dimensionality Reduction Useful?
+- [ ] Done
 
 **Definition:**  
 Dimensionality reduction reduces the number of features to combat curse of dimensionality, reduce overfitting, speed up training, handle multicollinearity, and enable visualization.
@@ -1568,6 +1607,7 @@ X_selected = selector.fit_transform(X, y)
 ---
 
 ### Question 40: Data Augmentation Techniques
+- [ ] Done
 
 **Definition:**  
 Data augmentation artificially increases training data by creating modified copies of existing samples. This regularizes the model, prevents overfitting, and improves generalization.
@@ -1608,6 +1648,7 @@ X_resampled, y_resampled = smote.fit_resample(X_train, y_train)
 ## Advanced Topics
 
 ### Question 41: Transfer Learning in Supervised Models
+- [ ] Done
 
 ### Definition
 Transfer learning reuses a model trained on a large general dataset as a starting point for a specific task with limited data.
@@ -1669,6 +1710,7 @@ Transfer learning is now the **default approach** in deep learning, not an optim
 ---
 
 ### Question 42: End-to-End Learning
+- [ ] Done
 
 **Definition:**  
 End-to-end learning trains a single neural network to directly map raw inputs to final outputs, automatically learning all intermediate representations. It eliminates manual feature engineering but requires large data and compute.
@@ -1699,6 +1741,7 @@ End-to-end learning trains a single neural network to directly map raw inputs to
 ---
 
 ### Question 43: Multitask Learning
+- [ ] Done
 
 **Definition:**  
 Multitask learning trains a single model to perform multiple related tasks simultaneously, sharing representations in common layers. This acts as regularization, improves generalization, and is more efficient than separate models.
@@ -1727,6 +1770,7 @@ Single model with shared CNN backbone:
 ---
 
 ### Question 44: Framing RL as Supervised Learning
+- [ ] Done
 
 **Definition:**  
 Reinforcement Learning can be framed as supervised learning through **Imitation Learning** (predict expert actions from states) or **Value Function Fitting** (predict Q-values using regression).
@@ -1761,6 +1805,7 @@ predicted_action = policy.predict(new_state)
 ---
 
 ### Question 45: Role of Attention Mechanisms
+- [ ] Done
 
 **Definition:**  
 Attention mechanisms allow neural networks to dynamically focus on relevant parts of input when generating output. They compute weighted combinations of input elements, where weights indicate importance for the current task.

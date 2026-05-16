@@ -1,6 +1,7 @@
 # Random Forest Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you handle missing values in a Random Forest model?**
 
@@ -58,6 +59,7 @@ from sklearn.ensemble import HistGradientBoostingClassifier
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can Random Forest be used for both classification and regression tasks?**
 
@@ -111,6 +113,7 @@ Both support multi-output (multiple targets simultaneously).
 ---
 
 ## Question 3
+- [ ] Done
 
 **Compare Random Forest with Gradient Boosting Machine (GBM).**
 
@@ -158,6 +161,7 @@ $$\hat{f}_m(x) = \hat{f}_{m-1}(x) + \gamma_m T_m(x) \quad \text{(additive)}$$
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you determine the number of trees to use in a Random Forest?**
 
@@ -221,6 +225,7 @@ for n_trees in [50, 100, 200, 300, 500]:
 ---
 
 ## Question 5
+- [ ] Done
 
 **How can Random Forest be used for feature selection?**
 
@@ -293,6 +298,7 @@ X_selected = selector.fit_transform(X_train, y_train)
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you measure the performance of a Random Forest model?**
 
@@ -353,6 +359,7 @@ print(f"MAE: {mean_absolute_error(y_test, y_pred):.4f}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Can Random Forest handle time series data? If so, how?**
 
@@ -422,6 +429,7 @@ for step in range(forecast_horizon):
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do you deal with categorical variables in Random Forest?**
 
@@ -492,6 +500,7 @@ lgb_clf = lgb.LGBMClassifier()
 ---
 
 ## Question 9
+- [ ] Done
 
 **What practices should be followed to scale Random Forest for big data?**
 
@@ -574,6 +583,7 @@ X_sparse = sparse.csr_matrix(X)
 ---
 
 ## Question 10
+- [ ] Done
 
 **What model validation techniques would you apply for a Random Forest algorithm?**
 
@@ -648,6 +658,7 @@ nested_scores = cross_val_score(grid_search, X, y, cv=outer_cv)
 ---
 
 ## Question 11
+- [ ] Done
 
 **How do you tune a Random Forest model's hyperparameters systematically?**
 
@@ -733,6 +744,7 @@ bayes_search.fit(X_train, y_train)
 ---
 
 ## Question 12
+- [ ] Done
 
 **How is Random Forest used in the analysis of genomic and bioinformatics data?**
 
@@ -802,6 +814,7 @@ X_filtered = selector.fit_transform(X)
 ---
 
 ## Question 13
+- [ ] Done
 
 **What role does Random Forest play in complex systems like self-driving cars or high-frequency trading algorithms?**
 

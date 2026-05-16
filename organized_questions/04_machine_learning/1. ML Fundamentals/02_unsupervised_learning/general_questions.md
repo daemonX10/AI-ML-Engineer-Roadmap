@@ -1,6 +1,7 @@
 # Unsupervised Learning - General Questions
 
 ## Question 1: What is unsupervised learning and how does it differ from supervised learning?
+- [ ] Done
 
 ### Definition
 Unsupervised learning is a paradigm where algorithms are trained on **unlabeled data** to discover hidden patterns, structures, and relationships without a "teacher" providing correct outputs.
@@ -22,6 +23,7 @@ Unsupervised learning is a paradigm where algorithms are trained on **unlabeled 
 ---
 
 ## Question 2: Name the main types of problems addressed by unsupervised learning.
+- [ ] Done
 
 ### The Four Main Problem Types
 
@@ -42,6 +44,7 @@ Unsupervised learning is a paradigm where algorithms are trained on **unlabeled 
 ---
 
 ## Question 3: Explain the concept of dimensionality reduction and why it's important.
+- [ ] Done
 
 ### Definition
 Dimensionality reduction transforms high-dimensional data into lower-dimensional space while retaining meaningful information.
@@ -63,6 +66,7 @@ Dimensionality reduction transforms high-dimensional data into lower-dimensional
 ---
 
 ## Question 4: What is clustering, and how can it be used to gain insights into data?
+- [ ] Done
 
 ### Definition
 Clustering groups data points into subsets (clusters) where:
@@ -81,6 +85,7 @@ Clustering groups data points into subsets (clusters) where:
 ---
 
 ## Question 5: Can you discuss the differences between hard and soft clustering?
+- [ ] Done
 
 ### Definition
 
@@ -113,6 +118,7 @@ Clustering groups data points into subsets (clusters) where:
 ---
 
 ## Question 6: What preprocessing steps are suggested before performing unsupervised learning?
+- [ ] Done
 
 ### Essential Preprocessing Pipeline
 
@@ -142,6 +148,7 @@ Missing Values → One-Hot Encode → Scale → PCA → K-means
 ---
 
 ## Question 7: How do you handle missing values in an unsupervised learning context?
+- [ ] Done
 
 ### Strategies by Complexity
 
@@ -176,6 +183,7 @@ Missing Values → One-Hot Encode → Scale → PCA → K-means
 ---
 
 ## Question 8: Describe the steps you would take to scale and normalize data for clustering.
+- [ ] Done
 
 ### Why Scale?
 Distance-based algorithms (K-means, DBSCAN) are dominated by features with larger scales.
@@ -205,6 +213,7 @@ X_scaled = scaler.fit_transform(X)
 ---
 
 ## Question 9: Discuss how you could evaluate the performance of a clustering algorithm.
+- [ ] Done
 
 ### Without Ground Truth (Real-World Scenario)
 
@@ -239,6 +248,7 @@ X_scaled = scaler.fit_transform(X)
 ---
 
 ## Question 10: Explain the importance of feature selection in unsupervised learning.
+- [ ] Done
 
 ### Why It Matters
 
@@ -259,6 +269,7 @@ X_scaled = scaler.fit_transform(X)
 ---
 
 ## Question 11: How would you implement clustering on a large, distributed dataset?
+- [ ] Done
 
 ### Approach: Use Apache Spark MLlib
 
@@ -309,6 +320,7 @@ print(f"Silhouette Score: {silhouette:.4f}")
 ---
 
 ## Question 12: Describe a scenario where unsupervised learning could add value to a business process.
+- [ ] Done
 
 ### Scenario: E-commerce Customer Segmentation
 
@@ -339,6 +351,7 @@ print(f"Silhouette Score: {silhouette:.4f}")
 ---
 
 ## Question 13: Discuss how unsupervised learning can be used in image segmentation.
+- [ ] Done
 
 ### Core Idea
 Treat each pixel as a data point → Cluster pixels → Segments = Clusters
@@ -377,6 +390,7 @@ Treat each pixel as a data point → Cluster pixels → Segments = Clusters
 ---
 
 ## Question 14: Explain how recommendation systems utilize unsupervised learning techniques.
+- [ ] Done
 
 ### Collaborative Filtering (Unsupervised)
 
@@ -402,6 +416,7 @@ Treat each pixel as a data point → Cluster pixels → Segments = Clusters
 ---
 
 ## Question 15: How can unsupervised learning be applied to anomaly detection?
+- [ ] Done
 
 ### Core Idea
 Learn what "normal" looks like → Flag points that don't fit

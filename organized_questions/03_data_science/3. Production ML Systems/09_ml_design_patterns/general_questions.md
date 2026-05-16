@@ -1,6 +1,7 @@
 # Ml Design Patterns Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How is the 'Evaluation Store' design pattern applied to keep track of model performances?**
 
@@ -152,6 +153,7 @@ for exp in comparison:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Define the 'Start Simple' principle in the context of an ML model development.**
 
@@ -248,6 +250,7 @@ Stage 5 - Random Forest: 0.967
 ---
 
 ## Question 3
+- [ ] Done
 
 **What considerations should be taken into account when using 'Replicated Prediction Servers'?**
 
@@ -403,6 +406,7 @@ spec:
 ---
 
 ## Question 4
+- [ ] Done
 
 **How might 'Recursive Feature Elimination' fit into a design pattern for feature selection?**
 
@@ -560,6 +564,7 @@ for step in logging_rfe.history[-5:]:
 ---
 
 ## Question 5
+- [ ] Done
 
 **How can we make sure that the 'Model Lineage' design pattern is maintained throughout the model lifecycle?**
 
@@ -771,6 +776,7 @@ training_workflow()
 ---
 
 ## Question 6
+- [ ] Done
 
 **What design patterns would you recommend for a system requiring high throughput and low latency predictions?**
 
@@ -996,6 +1002,7 @@ Performance metrics:
 ---
 
 ## Question 7
+- [ ] Done
 
 **Share examples of 'Monitoring and Alerts' in an AI system that follow best design practices.**
 
@@ -1269,6 +1276,7 @@ data_monitor.check_record({'age': -5})  # Missing user_id, negative age
 ---
 
 ## Question 8
+- [ ] Done
 
 **What process would you follow to tune hyperparameters in a system that employs multiple model design patterns?**
 
@@ -1605,6 +1613,7 @@ print(f"Checkpoints saved: {list(tuner.checkpoints.keys())}")
 ---
 
 ## Question 9
+- [ ] Done
 
 **What 'Rollback' strategies could be put in place for deployed machine learning models?**
 
@@ -1963,6 +1972,7 @@ print(f"Rollback history: {manager.rollback_history}")
 ---
 
 ## Question 10
+- [ ] Done
 
 **How would you scale a machine learning pipeline according to the 'Horizontal Scaling' design pattern?**
 
@@ -2098,6 +2108,7 @@ print(k8s_deployment)
 ---
 
 ## Question 11
+- [ ] Done
 
 **Discuss the 'Model Decay' design pattern and strategies to overcome it.**
 
@@ -2226,6 +2237,7 @@ if monitor.should_retrain():
 ---
 
 ## Question 12
+- [ ] Done
 
 **Discuss how 'Continuous Evaluation' helps in maintaining model quality.**
 
@@ -2366,6 +2378,7 @@ print(f"Message: {message}")
 ---
 
 ## Question 13
+- [ ] Done
 
 **How would you approach 'Model Serving' in an environment with strict data regulations?**
 
@@ -2577,6 +2590,7 @@ print(f"\nAudit log entries: {len(server.audit_log)}")
 ---
 
 ## Question 14
+- [ ] Done
 
 **Discuss 'Dynamic Training' approaches in a scenario where data distributions change rapidly.**
 
@@ -2775,6 +2789,7 @@ print(f"Total model updates: {trainer.update_count}")
 ---
 
 ## Question 15
+- [ ] Done
 
 **Discuss the implications of implementing the 'Stateless Model' design pattern in distributed systems.**
 

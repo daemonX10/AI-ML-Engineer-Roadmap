@@ -1,6 +1,7 @@
 # Rnn Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What types of sequences are RNNs good at modeling?**
 
@@ -36,6 +37,7 @@ RNNs are designed to model sequential data where the order of elements matters a
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do attention mechanisms work in conjunction with RNNs?**
 
@@ -88,6 +90,7 @@ With Attention:    Input → Encoder RNN → Weighted Sum of ALL hidden states �
 ---
 
 ## Question 3
+- [ ] Done
 
 **What considerations do you take into account when initializing RNN weights?**
 
@@ -132,6 +135,7 @@ Always mention orthogonal initialization for recurrent weights and forget gate b
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you prevent overfitting while training an RNN model?**
 
@@ -202,6 +206,7 @@ Mention variational/recurrent dropout specifically for RNNs, as standard dropout
 ---
 
 ## Question 5
+- [ ] Done
 
 **What metrics are most commonly used to evaluate the performance of an RNN?**
 
@@ -258,6 +263,7 @@ Always mention perplexity for language models and BLEU for translation tasks - t
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you assess the impact of different RNN architectures on your model's performance?**
 
@@ -330,6 +336,7 @@ Mention that GRU often performs comparably to LSTM with fewer parameters, making
 ---
 
 ## Question 7
+- [ ] Done
 
 **What techniques can be used to visualize and interpret RNN models or their predictions?**
 
@@ -410,6 +417,7 @@ Attention visualization is the most commonly used interpretation technique - alw
 ---
 
 ## Question 8
+- [ ] Done
 
 **In what ways can RNNs be utilized for speech recognition?**
 
@@ -480,6 +488,7 @@ Mention CTC loss as the key innovation that enabled end-to-end speech recognitio
 ---
 
 ## Question 9
+- [ ] Done
 
 **How can RNNs be applied to video frame prediction?**
 
@@ -561,6 +570,7 @@ Emphasize ConvLSTM as the key architecture that maintains spatial structure whil
 ---
 
 ## Question 10
+- [ ] Done
 
 **Provide an example of how RNNs can be used in a recommendation systems context.**
 
@@ -654,6 +664,7 @@ Mention GRU4Rec paper as the pioneering work for session-based recommendations w
 ---
 
 ## Question 11
+- [ ] Done
 
 **How has the advent of transfer learning influenced RNN applications in NLP?**
 
@@ -745,6 +756,7 @@ Mention ELMo and ULMFiT as the pivotal RNN-based works that demonstrated transfe
 ---
 
 ## Question 12
+- [ ] Done
 
 **How do sequence-to-sequence models work, and in what applications are they commonly used?**
 
@@ -854,6 +866,7 @@ Always mention the information bottleneck problem of basic Seq2Seq and how atten
 ---
 
 ## Question 13
+- [ ] Done
 
 **Compare convolutional neural networks (CNNs) to RNNs in processing sequence data.**
 
@@ -938,6 +951,7 @@ Highlight that CNNs are faster and capture local patterns well, while RNNs are b
 ---
 
 ## Question 14
+- [ ] Done
 
 **How do you monitor and maintain an RNN model in production?**
 

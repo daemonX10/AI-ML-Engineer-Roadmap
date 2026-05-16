@@ -1,6 +1,7 @@
 # Recommendation Systems Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the importance of serendipity, novelty, and diversity in recommendation systems.**
 
@@ -61,6 +62,7 @@ serendipity = unexpected_items ∩ liked_items
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you handle scalability and sparsity issues in recommendation systems?**
 
@@ -130,6 +132,7 @@ Candidate Generation → Ranking
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the application of the Gradient Boosting Machines (GBM) in recommendation engines.**
 
@@ -200,6 +203,7 @@ features = [
 ---
 
 ## Question 4
+- [ ] Done
 
 **How would you approach designing a music recommendation engine?**
 
@@ -272,6 +276,7 @@ def recommend(user, context):
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss a personalized approach for recommendations in a video streaming service.**
 
@@ -341,6 +346,7 @@ def generate_rows(user):
 ---
 
 ## Question 6
+- [ ] Done
 
 **How would you develop a recommendation system for a social network to suggest new connections?**
 
@@ -411,6 +417,7 @@ connection_score = gbm_model.predict(features)
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss the state-of-the-art models used in recommendation systems, such as Neural Collaborative Filtering.**
 

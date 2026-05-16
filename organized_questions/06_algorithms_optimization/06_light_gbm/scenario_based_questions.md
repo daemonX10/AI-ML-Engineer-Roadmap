@@ -1,6 +1,7 @@
 # Light Gbm Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the types of tree learners available in LightGBM.**
 
@@ -66,6 +67,7 @@ params = {
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you tune the number of leaves or maximum depth of trees in LightGBM?**
 
@@ -136,6 +138,7 @@ def objective(trial):
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the impact of using a large versus small bagging_fraction in LightGBM.**
 
@@ -206,6 +209,7 @@ params = {
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss the support of weight-based sampling in LightGBM.**
 
@@ -278,6 +282,7 @@ model.fit(X_train, y_train, sample_weight=weights)
 ---
 
 ## Question 5
+- [ ] Done
 
 **How would you use LightGBM to predict customer churn based on usage data?**
 
@@ -354,6 +359,7 @@ auc = roc_auc_score(y_test, churn_prob)
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss how LightGBM could be utilized in a high-frequency trading algorithm.**
 
@@ -426,6 +432,7 @@ def predict(features):
 ---
 
 ## Question 7
+- [ ] Done
 
 **Propose a methodology for using LightGBM to detect anomalies in time-series sensor data.**
 
@@ -498,6 +505,7 @@ anomalies = residuals > threshold  # e.g., 3 std
 ---
 
 ## Question 8
+- [ ] Done
 
 **Discuss the current research trends and advancements in the field of gradient boosting and LightGBM.**
 

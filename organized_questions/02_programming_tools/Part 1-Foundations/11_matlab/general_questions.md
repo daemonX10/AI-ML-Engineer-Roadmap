@@ -1,6 +1,7 @@
 # MATLAB Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you read and write data in MATLAB?**
 
@@ -55,6 +56,7 @@ fclose(fid);
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you handle missing data in MATLAB?**
 
@@ -105,6 +107,7 @@ T.Cat = fillmissing(T.Cat, 'constant', 'Unknown');
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you visualize data in MATLAB?**
 
@@ -167,6 +170,7 @@ saveas(gcf, 'figure.png');
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you debug MATLAB code?**
 
@@ -227,6 +231,7 @@ dbclear all
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you optimize MATLAB code performance?**
 
@@ -295,6 +300,7 @@ A_sparse = sparse(eye(10000));  % Much less memory
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do MATLAB scripts differ from functions?**
 
@@ -341,6 +347,7 @@ end
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you create 3D plots in MATLAB?**
 
@@ -404,6 +411,7 @@ subplot(1,2,2); mesh(X,Y,Z); title('Mesh');
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do you deal with time series data in MATLAB?**
 
@@ -461,6 +469,7 @@ fprintf('ADF test p-value: %.4f (stationary: %d)\n', pValue, h);
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do loops work in MATLAB , and when would you use them?**
 
@@ -532,6 +541,7 @@ result = sin(x) .* cos(x);  % ~10-100x faster
 ---
 
 ## Question 10
+- [ ] Done
 
 **Demonstrate how to use conditional statements in MATLAB.**
 
@@ -600,6 +610,7 @@ result = (x > 10) * 100 + (x <= 10) * 0;  % Workaround
 ---
 
 ## Question 11
+- [ ] Done
 
 **How do you create and use MATLAB cell arrays?**
 
@@ -657,6 +668,7 @@ cell2table(C)                 % Convert to table
 ---
 
 ## Question 12
+- [ ] Done
 
 **How to import data from a CSV file into MATLAB?**
 
@@ -714,6 +726,7 @@ writematrix(M, 'output.csv');
 ---
 
 ## Question 13
+- [ ] Done
 
 **What toolbox does MATLAB offer for machine learning , and what features does it include?**
 
@@ -776,6 +789,7 @@ net = trainNetwork(X_train, y_train, layers, options);
 ---
 
 ## Question 14
+- [ ] Done
 
 **How do neural networks work in MATLAB?**
 
@@ -853,6 +867,7 @@ lgraph = connectLayers(lgraph, 'pool5', 'new_fc');
 ---
 
 ## Question 15
+- [ ] Done
 
 **What functions does MATLAB provide for cross-validation?**
 
@@ -911,6 +926,7 @@ cv = cvpartition(y, 'KFold', 5);  % Automatically stratified for categorical y
 ---
 
 ## Question 16
+- [ ] Done
 
 **How is parallel computing supported in MATLAB?**
 
@@ -969,6 +985,7 @@ result = mapreduce(ds, @mapFun, @reduceFun);
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you call a C/C++ library function from MATLAB?**
 
@@ -1021,6 +1038,7 @@ mex -setup c++        % Select C++ compiler
 ---
 
 ## Question 18
+- [ ] Done
 
 **How can you run Python scripts within MATLAB?**
 
@@ -1084,6 +1102,7 @@ result = my_mod.my_function(42);
 ---
 
 ## Question 19
+- [ ] Done
 
 **How do you perform time-series analysis in MATLAB?**
 
@@ -1148,6 +1167,7 @@ plot(f, 10*log10(pxx)); title('Power Spectrum');
 ---
 
 ## Question 20
+- [ ] Done
 
 **How do you train a Long Short-Term Memory (LSTM) network in MATLAB?**
 
@@ -1222,6 +1242,7 @@ layers_bi = [
 ---
 
 ## Question 21
+- [ ] Done
 
 **Present a strategy for using MATLAB to analyze genomic data.**
 
@@ -1289,6 +1310,7 @@ topGenes = geneNames(idx(1:20));               % Top 20 important genes
 ---
 
 ## Question 22
+- [ ] Done
 
 **How can you utilize MATLAB’s App Designer to create interactive applications featuring machine learning models ?**
 

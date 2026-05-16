@@ -1,6 +1,7 @@
 ﻿# Ml Design Patterns Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement a basic â€˜Replayâ€™ pattern mechanism using Python to simulate model retraining with different datasets.**
 
@@ -300,6 +301,7 @@ for run in comparison:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Develop a simple ensemble model using Python, following the â€˜Model Ensembleâ€™ design pattern.**
 
@@ -573,6 +575,7 @@ for name, model_class in [('RandomForest', RandomForestClassifier),
 ---
 
 ## Question 3
+- [ ] Done
 
 **Write a script to perform batch serving of a machine learning model using dummy data.**
 
@@ -835,6 +838,7 @@ print(results['prediction'].value_counts())
 ---
 
 ## Question 4
+- [ ] Done
 
 **Code a 'Model Checkpointing' system during training using TensorFlow/Keras.**
 
@@ -915,6 +919,7 @@ keras_checkpointing()
 ---
 
 ## Question 5
+- [ ] Done
 
 **Create a feature store simulation in Python to demonstrate sharing and reuse of feature transformation code.**
 
@@ -1072,6 +1077,7 @@ print(f"\nTraining data:\n{training_data}")
 ---
 
 ## Question 6
+- [ ] Done
 
 **Implement a 'Warm Start' to accelerate training for a new model using an established pretrained model.**
 
@@ -1211,6 +1217,7 @@ keras_warm_start()
 ---
 
 ## Question 7
+- [ ] Done
 
 **Simulate a horizontal scaling of a machine learning pipeline handling increasing workloads.**
 
@@ -1366,6 +1373,7 @@ print(scaler.get_metrics())
 ---
 
 ## Question 8
+- [ ] Done
 
 **Write a Python function that demonstrates the 'Handling Missing Data' pattern.**
 
@@ -1568,6 +1576,7 @@ print("\nValidation passed: No missing values")
 ---
 
 ## Question 9
+- [ ] Done
 
 **Code a simplified 'Hyperparameter Database' to track experiments in machine learning.**
 
@@ -1823,6 +1832,7 @@ os.remove("demo_experiments.db")
 ---
 
 ## Question 10
+- [ ] Done
 
 **Develop a basic implementation of 'Model Factories' using Python for creating and deploying models.**
 
@@ -2079,6 +2089,7 @@ shutil.rmtree("deployed_models")
 ---
 
 ## Question 11
+- [ ] Done
 
 **Simulate a 'Data Validator' using Python to check for data skew or anomalies as new data arrives.**
 
@@ -2397,6 +2408,7 @@ validator.print_report(result)
 ---
 
 ## Question 12
+- [ ] Done
 
 **Create a 'Feature Monitoring' tool using Python and a visualization library to track changes over time.**
 
@@ -2687,6 +2699,7 @@ for alert in alerts[-3:]:  # Show last 3
 ---
 
 ## Question 13
+- [ ] Done
 
 **Implement a 'Retry' pattern in a Python script for a machine learning service that handles intermittent failures.**
 

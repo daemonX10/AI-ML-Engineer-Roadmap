@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: Write a Python script to fine-tune a pre-trained CNN on a new dataset using Keras
+- [ ] Done
 
 ### Complete Implementation
 
@@ -164,6 +165,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 2: Implement a transfer learning model with PyTorch using a pre-trained BERT model for text classification
+- [ ] Done
 
 ### Complete Implementation
 
@@ -360,6 +362,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 3: Fine-tune a pre-trained image recognition network to classify a new set of images
+- [ ] Done
 
 ### Complete PyTorch Implementation
 
@@ -519,6 +522,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 4: Code an example that demonstrates transfer of learning from a source model trained on MNIST to a target dataset of hand-written letters
+- [ ] Done
 
 ### Complete Implementation
 
@@ -738,6 +742,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 5: Using TensorFlow, extract feature vectors from a pre-trained model and use them to train a new classifier
+- [ ] Done
 
 ### Complete Implementation
 
@@ -929,6 +934,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 6: How would you implement transfer learning for enhancing a model trained to recognize car models to also recognize trucks?
+- [ ] Done
 
 ### Complete Implementation
 

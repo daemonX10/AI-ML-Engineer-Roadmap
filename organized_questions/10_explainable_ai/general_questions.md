@@ -1,6 +1,7 @@
 # Explainable Ai Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How can thecoefficientsof alinear modelbe interpreted?**
 
@@ -9,6 +10,7 @@
 ---
 
 ## Question 2
+- [ ] Done
 
 **What role does thePartial Dependence Plot (PDP)play inmodel interpretation?**
 
@@ -17,6 +19,7 @@
 ---
 
 ## Question 3
+- [ ] Done
 
 **How can you use theActivation Maximizationtechnique inneural networksforinterpretability?**
 
@@ -25,6 +28,7 @@
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you assess thequality of an explanationprovided by anXAI method?**
 
@@ -33,6 +37,7 @@
 ---
 
 ## Question 5
+- [ ] Done
 
 **Imagine you are tasked with developing ahealthcare diagnostic tool. How wouldXAIfactor into your approach?**
 
@@ -41,6 +46,7 @@
 ---
 
 ## Question 6
+- [ ] Done
 
 **What could be the potential risks of not usingXAIinautonomous vehicle technology?**
 

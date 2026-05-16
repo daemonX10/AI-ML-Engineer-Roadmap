@@ -1,6 +1,7 @@
 # Probability Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Write a Python function that calculates the probability of rolling a sum of 'S' on two dice.**
 
@@ -42,6 +43,7 @@ print(f"P(sum=2) = {probability_of_sum(2):.4f}")   # 1/36 = 0.0278
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement a function that simulates a biased coin flip n times and estimates the probability of heads.**
 
@@ -75,6 +77,7 @@ Law of Large Numbers: As n increases, estimate → true probability.
 ---
 
 ## Question 3
+- [ ] Done
 
 **Code a Gaussian Naive Bayes classifier from scratch using Python.**
 
@@ -132,6 +135,7 @@ print(f"Accuracy: {np.mean(gnb.predict(X) == y):.2f}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Simulate the Law of Large Numbers using Python: verify that as the number of coin tosses increases, the average of the results becomes closer to the expected value.**
 
@@ -180,6 +184,7 @@ simulate_lln(100000)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write a Python script that estimates the mean and variance of a dataset and plots the corresponding Gaussian distribution.**
 

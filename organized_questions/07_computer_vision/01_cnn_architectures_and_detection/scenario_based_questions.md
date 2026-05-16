@@ -1,6 +1,7 @@
 # Computer Vision Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the role ofconvolutional neural networks (CNNs)in computer vision.**
 
@@ -512,6 +513,7 @@ CNNs have fundamentally transformed computer vision by providing an architecture
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss the concept ofcolor spacesand their importance inimage processing.**
 
@@ -1048,6 +1050,7 @@ Color spaces are essential tools in computer vision and image processing, enabli
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the concept and advantages of usingpre-trained modelsin computer vision.**
 
@@ -1643,6 +1646,7 @@ Pre-trained models have democratized access to state-of-the-art computer vision 
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss theRegion-based CNN (R-CNN)family of algorithms for object detection.**
 
@@ -2707,6 +2711,7 @@ The R-CNN family fundamentally transformed object detection by introducing deep 
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss applications ofscene understandingin computer vision.**
 
@@ -3821,6 +3826,7 @@ Scene understanding represents the convergence of multiple computer vision techn
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discussfew-shot learningand its challenges incomputer vision.**
 
@@ -5025,6 +5031,7 @@ Few-shot learning represents a paradigm shift toward more human-like learning, e
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss the importance ofcross-validationin assessing avision model.**
 
@@ -5879,6 +5886,7 @@ Cross-validation is essential for building trustworthy computer vision systems, 
 ---
 
 ## Question 8
+- [ ] Done
 
 **How would you design acomputer vision systemforautomatic license plate recognition?**
 
@@ -7290,6 +7298,7 @@ The ALPR system provides a comprehensive solution for automatic license plate re
 ---
 
 ## Question 9
+- [ ] Done
 
 **Propose an approach for medical image analysis using computer vision.**
 
@@ -8153,6 +8162,7 @@ The approach ensures that computer vision solutions for medical imaging meet bot
 ---
 
 ## Question 10
+- [ ] Done
 
 **Discuss the use of computer vision in retail for product recognition and tracking.**
 

@@ -1,6 +1,7 @@
 # Linear Algebra Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you perform matrix addition and subtraction?**
 
@@ -61,6 +62,7 @@ def matrix_add(A, B):
 ---
 
 ## Question 2
+- [ ] Done
 
 **Define the transpose of a matrix.**
 
@@ -128,6 +130,7 @@ print(np.allclose(S, S.T))  # True
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you calculate the norm of a vector and what does it represent?**
 
@@ -204,6 +207,7 @@ spectral = np.linalg.norm(A, 2)       # Largest singular value
 ---
 
 ## Question 4
+- [ ] Done
 
 **Define the concept of orthogonality in linear algebra.**
 
@@ -293,6 +297,7 @@ def project_subspace(v, Q):
 ---
 
 ## Question 5
+- [ ] Done
 
 **Define what a symmetric matrix is.**
 
@@ -380,6 +385,7 @@ print(f"Reconstruction correct: {np.allclose(A, A_reconstructed)}")
 ---
 
 ## Question 6
+- [ ] Done
 
 **Define positive definiteness of a matrix.**
 
@@ -484,6 +490,7 @@ def make_positive_definite(A, eps=1e-6):
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you represent a system of linear equations using matrices?**
 
@@ -581,6 +588,7 @@ print(f"Solutions match: {np.allclose(w, w_lstsq)}")
 ---
 
 ## Question 8
+- [ ] Done
 
 **Define and differentiate between homogenous and non-homogenous systems.**
 
@@ -687,6 +695,7 @@ print(f"Verify: A @ x_general = {A_inf @ x_general}")  # Should ≈ b_inf
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you compute the inverse of a matrix and when is it possible?**
 
@@ -806,6 +815,7 @@ print(f"Near-singular condition: {np.linalg.cond(C)}")  # Very large!
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do you perform QR decomposition?**
 
@@ -931,6 +941,7 @@ print(f"True eigenvalues: {sorted(eigenvalues_true)}")
 ---
 
 ## Question 11
+- [ ] Done
 
 **How can you represent linear transformation using a matrix?**
 
@@ -1057,6 +1068,7 @@ print(f"Input dim: {x.shape}, Output dim: {y.shape}")
 ---
 
 ## Question 12
+- [ ] Done
 
 **How is linear regression related to linear algebra?**
 
@@ -1169,6 +1181,7 @@ print(f"X^T @ residual ≈ 0: {np.allclose(X.T @ residual, 0)}")
 ---
 
 ## Question 13
+- [ ] Done
 
 **How do eigenvalues and eigenvectors apply to Principal Component Analysis (PCA)?**
 
@@ -1296,6 +1309,7 @@ print(f"Cumulative variance: {cumsum}")
 ---
 
 ## Question 14
+- [ ] Done
 
 **What would you consider when choosing a library for linear algebra operations?**
 
@@ -1458,6 +1472,7 @@ print(decision_tree)
 ---
 
 ## Question 15
+- [ ] Done
 
 **How do you ensure numerical stability when performing matrix computations?**
 
@@ -1679,6 +1694,7 @@ print(f"Regularized ||x||: {np.linalg.norm(x_reg):.2e}")
 ---
 
 ## Question 16
+- [ ] Done
 
 **How do graph theory and linear algebra intersect in machine learning?**
 
@@ -1929,6 +1945,7 @@ print(f"Graph partition: {partition.astype(int)}")
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you evaluate and choose dimensionality reduction techniques?**
 
@@ -2202,6 +2219,7 @@ for n_comp in [5, 10, 20, 30, 50]:
 ---
 
 ## Question 18
+- [ ] Done
 
 **Design a linear algebra solution for a collaborative filtering problem in a movie recommendation system.**
 

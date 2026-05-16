@@ -3,6 +3,7 @@
 ## Core Transformer Architecture
 
 ### Question 1
+- [ ] Done
 **Explain the core innovation of the Transformer architecture and why it replaced RNNs/LSTMs.**
 
 **Answer:**
@@ -40,6 +41,7 @@ Think of RNN as reading a book word-by-word, remembering through a single "memor
 ---
 
 ### Question 2
+- [ ] Done
 **What is the self-attention mechanism and how does it compute attention weights?**
 
 **Answer:**
@@ -122,6 +124,7 @@ print("Attention weights shape:", weights.shape)  # (4, 4) - each token attends 
 ---
 
 ### Question 3
+- [ ] Done
 **Describe the multi-head attention mechanism and why multiple heads are beneficial.**
 
 **Answer:**
@@ -216,6 +219,7 @@ print("Output shape:", output.shape)  # (5, 32)
 ---
 
 ### Question 4
+- [ ] Done
 **How are Query, Key, and Value matrices computed in attention and what role does each play?**
 
 **Answer:**
@@ -304,6 +308,7 @@ print("Attention scores:\n", scores)  # (3, 3) - token i to token j
 ---
 
 ### Question 5
+- [ ] Done
 **Explain the scaled dot-product attention formula and why scaling by √d_k is necessary.**
 
 **Answer:**
@@ -403,6 +408,7 @@ print("Scaled scores:", scaled_scores.max())  # ~1-2
 ---
 
 ### Question 6
+- [ ] Done
 **What is positional encoding and why is it necessary in Transformers?**
 
 **Answer:**
@@ -488,6 +494,7 @@ input_with_position = token_embeddings + PE
 ---
 
 ### Question 7
+- [ ] Done
 **Describe the encoder-decoder structure and how cross-attention connects them.**
 
 **Answer:**
@@ -584,6 +591,7 @@ print("Attention to encoder tokens:", weights)  # Shows which source words decod
 ---
 
 ### Question 8
+- [ ] Done
 **How do residual connections and layer normalization work in Transformer blocks?**
 
 **Answer:**
@@ -704,6 +712,7 @@ print("Output std:", output.std())    # Close to 1
 ---
 
 ### Question 9
+- [ ] Done
 **What is the purpose of the feed-forward network (FFN) in each Transformer layer?**
 
 **Answer:**
@@ -807,6 +816,7 @@ print("FFN parameters:", d_model*d_ff + d_ff + d_ff*d_model + d_model)
 ---
 
 ### Question 10
+- [ ] Done
 **How does masked attention work in decoder layers for autoregressive generation?**
 
 **Answer:**
@@ -917,6 +927,7 @@ print(np.round(weights, 2))
 ## Attention Mechanism Deep Dive
 
 ### Question 11
+- [ ] Done
 **What is the difference between additive (Bahdanau) and multiplicative (Luong) attention?**
 
 **Answer:**
@@ -1029,6 +1040,7 @@ print("Multiplicative weights:", np.round(mult_weights, 3))
 ---
 
 ### Question 12
+- [ ] Done
 **Explain global vs local attention mechanisms and their trade-offs.**
 
 **Answer:**
@@ -1155,6 +1167,7 @@ print((local_w > 0.01).astype(int))  # Sparse, banded
 ---
 
 ### Question 13
+- [ ] Done
 **What is the computational complexity O(n²) of self-attention and how does it limit context length?**
 
 **Answer:**
@@ -1258,6 +1271,7 @@ for r in results:
 ---
 
 ### Question 14
+- [ ] Done
 **Describe sparse attention patterns (Longformer, BigBird) and their benefits for long sequences.**
 
 **Answer:**
@@ -1386,6 +1400,7 @@ print(f"Reduction: {100*(1-sparse_connections/full_connections):.1f}%")
 ---
 
 ### Question 15
+- [ ] Done
 **Explain Flash Attention and why it's critical for memory-efficient training and inference.**
 
 **Answer:**
@@ -1523,6 +1538,7 @@ print("Output shape:", output.shape)
 ---
 
 ### Question 16
+- [ ] Done
 **What is linear attention and how do variants like Performer approximate full attention?**
 
 **Answer:**
@@ -1663,6 +1679,7 @@ print("Linear output shape:", out_linear.shape)
 ---
 
 ### Question 17
+- [ ] Done
 **How do you visualize and interpret attention weights for model explainability?**
 
 **Answer:**
@@ -1805,6 +1822,7 @@ tokens = tokenizer.convert_ids_to_tokens(inputs['input_ids'][0])
 ## BERT & Encoder Models
 
 ### Question 18
+- [ ] Done
 **How do you choose between BERT, RoBERTa, and DistilBERT for production deployment?**
 
 **Answer:**
@@ -1923,6 +1941,7 @@ print("Balanced:", select_model(50, 'medium'))        # bert
 ---
 
 ### Question 19
+- [ ] Done
 **What are the key architectural differences between BERT's masked language modeling and RoBERTa's training approach?**
 
 **Answer:**
@@ -2039,6 +2058,7 @@ for model, config in training_comparison.items():
 ---
 
 ### Question 20
+- [ ] Done
 **When should you use BERT's [CLS] token versus pooling strategies for document-level representations?**
 
 **Answer:**
@@ -2159,6 +2179,7 @@ print("Max embedding shape:", max_emb.shape)   # (1, 768)
 ---
 
 ### Question 21
+- [ ] Done
 **What are the best practices for handling long documents that exceed BERT's 512-token limit?**
 
 **Answer:**
@@ -2307,6 +2328,7 @@ outputs = model(**inputs)
 ---
 
 ### Question 22
+- [ ] Done
 **How do you implement domain adaptation when fine-tuning BERT for specialized text classification?**
 
 **Answer:**
@@ -2450,6 +2472,7 @@ model.resize_token_embeddings(len(tokenizer))
 ---
 
 ### Question 23
+- [ ] Done
 **What techniques help reduce overfitting when fine-tuning BERT on small specialized datasets?**
 
 **Answer:**
@@ -2596,6 +2619,7 @@ def gradual_unfreeze_training(model, train_dataset, val_dataset):
 ---
 
 ### Question 24
+- [ ] Done
 **When should you use specialized BERT variants (BioBERT, FinBERT, LegalBERT) over general models?**
 
 **Answer:**
@@ -2718,6 +2742,7 @@ def fine_tune_domain_model(domain, train_data, num_labels):
 ---
 
 ### Question 25
+- [ ] Done
 **How do you handle catastrophic forgetting when continually fine-tuning BERT on new domains?**
 
 **Answer:**
@@ -2882,6 +2907,7 @@ def create_replay_dataloader(old_data, new_data, replay_ratio=0.2):
 ## GPT & Decoder Models
 
 ### Question 26
+- [ ] Done
 **What are the cost-efficiency considerations when choosing between GPT-3.5-turbo and GPT-4?**
 
 **Answer:**
@@ -3027,6 +3053,7 @@ complex_messages = [{"role": "user", "content": "Analyze and compare these two a
 ---
 
 ### Question 27
+- [ ] Done
 **When would you choose fine-tuning GPT-2 locally versus using GPT-4's in-context learning?**
 
 **Answer:**
@@ -3196,6 +3223,7 @@ print(choose_approach(reqs))  # → "Fine-tune GPT-2 locally"
 ---
 
 ### Question 28
+- [ ] Done
 **What techniques help reduce hallucination in GPT models for factual content generation?**
 
 **Answer:**
@@ -3377,6 +3405,7 @@ Factual answer:"""
 ---
 
 ### Question 29
+- [ ] Done
 **How do you handle rate limiting, API quotas, and error recovery in GPT production systems?**
 
 **Answer:**
@@ -3588,6 +3617,7 @@ client = RobustLLMClient()
 ---
 
 ### Question 30
+- [ ] Done
 **What strategies help control the creativity vs consistency trade-off using temperature and top-p?**
 
 **Answer:**
@@ -3756,6 +3786,7 @@ task_settings = {
 ---
 
 ### Question 31
+- [ ] Done
 **How do you implement effective context management for multi-turn conversations with GPT?**
 
 **Answer:**
@@ -3954,6 +3985,7 @@ print(f"Context has {len(context)} messages")
 ---
 
 ### Question 32
+- [ ] Done
 **When should you use GPT-4's function calling capabilities versus traditional API integrations?**
 
 **Answer:**
@@ -4156,6 +4188,7 @@ print(should_use_function_calling({
 ---
 
 ### Question 33
+- [ ] Done
 **How do you optimize GPT's context window utilization for long-document summarization?**
 
 **Answer:**
@@ -4378,6 +4411,7 @@ long_document = "..." * 10000  # Very long document
 ## Open Source LLMs (LLaMA, Falcon, Mistral)
 
 ### Question 34
+- [ ] Done
 **How do you choose between LLaMA, Falcon, and Mistral based on deployment constraints and licensing?**
 
 **Answer:**
@@ -4537,6 +4571,7 @@ print(recommend_model(reqs))
 ---
 
 ### Question 35
+- [ ] Done
 **What are the memory optimization techniques for deploying LLaMA models on consumer hardware?**
 
 **Answer:**
@@ -4701,6 +4736,7 @@ for setup, config in consumer_setups.items():
 ---
 
 ### Question 36
+- [ ] Done
 **How do you optimize Mistral's sliding window attention for long-sequence processing?**
 
 **Answer:**
@@ -4885,6 +4921,7 @@ KV cache memory:
 ---
 
 ### Question 37
+- [ ] Done
 **When should you use Mistral's mixture-of-experts (MoE) architecture versus dense models?**
 
 **Answer:**
@@ -5053,6 +5090,7 @@ compare_moe_vs_dense()
 ---
 
 ### Question 38
+- [ ] Done
 **What quantization strategies (INT8, INT4, GPTQ, AWQ) work best for each model family?**
 
 **Answer:**
@@ -5248,6 +5286,7 @@ def benchmark_quantization(model_name, methods):
 ---
 
 ### Question 39
+- [ ] Done
 **When should you use LoRA (Low-Rank Adaptation) versus full fine-tuning for open-source LLMs?**
 
 **Answer:**
@@ -5463,6 +5502,7 @@ print("QLoRA (4-bit): ~4GB (frozen) + ~100MB trainable = ~6GB")
 ---
 
 ### Question 40
+- [ ] Done
 **How do you implement efficient serving infrastructure using vLLM, TensorRT-LLM, or text-generation-inference?**
 
 **Answer:**
@@ -5672,6 +5712,7 @@ print(config.recommend_setup())
 ---
 
 ### Question 41
+- [ ] Done
 **When would you choose Code Llama versus general-purpose models for programming tasks?**
 
 **Answer:**
@@ -5837,6 +5878,7 @@ for t in tasks:
 ## Encoder-Decoder Models (T5, BART)
 
 ### Question 42
+- [ ] Done
 **How do you choose between T5's text-to-text approach and BART's denoising pre-training?**
 
 **Answer:**
@@ -5972,6 +6014,7 @@ print(choose_model(['summarization', 'translation'], {}))
 ---
 
 ### Question 43
+- [ ] Done
 **What are the advantages of T5's unified framework for multi-task learning systems?**
 
 **Answer:**
@@ -6054,6 +6097,7 @@ system = UnifiedT5System()
 ---
 
 ### Question 44
+- [ ] Done
 **What are the best practices for fine-tuning BART on abstractive summarization tasks?**
 
 **Answer:**
@@ -6184,6 +6228,7 @@ def generate_summary(model, tokenizer, article):
 ---
 
 ### Question 45
+- [ ] Done
 **When should you use T5's encoder-decoder architecture versus decoder-only models?**
 
 **Answer:**
@@ -6273,6 +6318,7 @@ def choose_architecture(task):
 ---
 
 ### Question 46
+- [ ] Done
 **How do you implement effective beam search and decoding strategies for optimal generation quality?**
 
 **Answer:**
@@ -6416,6 +6462,7 @@ strategies = {
 ## Model Training & Optimization
 
 ### Question 47
+- [ ] Done
 **Explain gradient accumulation and why it's essential for training large models on limited GPU memory.**
 
 **Answer:**
@@ -6546,6 +6593,7 @@ calculate_effective_batch_size()
 ---
 
 ### Question 48
+- [ ] Done
 **How does warmup and learning rate scheduling (linear decay, cosine) affect training convergence?**
 
 **Answer:**
@@ -6696,6 +6744,7 @@ recommended_settings = {
 ---
 
 ### Question 49
+- [ ] Done
 **What is gradient checkpointing and how does it trade compute for memory savings?**
 
 **Answer:**
@@ -6818,6 +6867,7 @@ compare_memory_usage()
 ---
 
 ### Question 50
+- [ ] Done
 **How do you implement model parallelism (tensor, pipeline) for training very large models?**
 
 **Answer:**
@@ -6969,6 +7019,7 @@ def train_with_accelerate():
 ---
 
 ### Question 51
+- [ ] Done
 **Describe knowledge distillation and how DistilBERT achieves 40% size reduction with minimal quality loss.**
 
 **Answer:**
@@ -7093,6 +7144,7 @@ comparison = {
 ---
 
 ### Question 52
+- [ ] Done
 **What are RLHF (Reinforcement Learning from Human Feedback) and DPO for aligning LLMs?**
 
 **Answer:**
@@ -7255,6 +7307,7 @@ alignment_methods = {
 ## Tokenization & Input Processing
 
 ### Question 53
+- [ ] Done
 **What is subword tokenization (BPE, WordPiece, SentencePiece) and why is it used over word-level?**
 
 **Answer:**
@@ -7387,6 +7440,7 @@ compare_tokenizers()
 ---
 
 ### Question 54
+- [ ] Done
 **How do you handle out-of-vocabulary words and tokenization mismatches across different models?**
 
 **Answer:**
@@ -7530,6 +7584,7 @@ token_labels = align_labels_with_tokens(text, word_labels, tokenizer)
 ---
 
 ### Question 55
+- [ ] Done
 **When should you implement custom tokenization versus using the model's default tokenizer?**
 
 **Answer:**
@@ -7670,6 +7725,7 @@ print(should_customize_tokenizer({
 ## Model Deployment & Production
 
 ### Question 56
+- [ ] Done
 **What techniques help maintain LLM performance when quantizing models for production deployment?**
 
 **Answer:**
@@ -7795,6 +7851,7 @@ def evaluate_quantization_quality(original_model, quantized_model, test_data):
 ---
 
 ### Question 57
+- [ ] Done
 **How do you implement efficient batch processing for LLM inference in high-throughput systems?**
 
 **Answer:**
@@ -7970,6 +8027,7 @@ class ContinuousBatcher:
 ---
 
 ### Question 58
+- [ ] Done
 **What are the strategies for A/B testing different LLM variants in production environments?**
 
 **Answer:**
@@ -8141,6 +8199,7 @@ print(f"User assigned to: {user_variant}")
 ---
 
 ### Question 59
+- [ ] Done
 **How do you handle version control and model lifecycle management for LLM deployments?**
 
 **Answer:**
@@ -8323,6 +8382,7 @@ class DeploymentConfig:
 ---
 
 ### Question 60
+- [ ] Done
 **What monitoring strategies help detect performance degradation in deployed LLMs?**
 
 **Answer:**
@@ -8528,6 +8588,7 @@ def generate_dashboard_metrics(monitor: LLMMonitor) -> Dict:
 ## Advanced Topics
 
 ### Question 61
+- [ ] Done
 **What is the Vision Transformer (ViT) and how does it apply self-attention to images?**
 
 **Answer:**
@@ -8704,6 +8765,7 @@ print(f"Output shape: {outputs.shape}")  # (4, 1000)
 ---
 
 ### Question 62
+- [ ] Done
 **How do Transformers handle multilingual and cross-lingual transfer learning?**
 
 **Answer:**
@@ -8906,6 +8968,7 @@ def evaluate_cross_lingual(model, tokenizer, test_data_by_language):
 ---
 
 ### Question 63
+- [ ] Done
 **Explain the concept of emergent abilities in large language models at scale.**
 
 **Answer:**
@@ -9081,6 +9144,7 @@ def scaling_law_vs_emergence(task, model_sizes, performances):
 ---
 
 ### Question 64
+- [ ] Done
 **What are the limitations and failure modes of Transformer-based models?**
 
 **Answer:**
@@ -9313,6 +9377,7 @@ def mitigation_strategies():
 ---
 
 ### Question 65
+- [ ] Done
 **What are recent advances in efficient architectures (Mamba, RWKV, state space models)?**
 
 **Answer:**
@@ -9586,300 +9651,350 @@ def compare_architectures():
 # BERT/RoBERTa/DistilBERT - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you choose between BERT, RoBERTa, and DistilBERT for a production sentiment analysis system with latency constraints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the key architectural differences between BERT's masked language modeling and RoBERTa's training approach?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement domain adaptation when fine-tuning BERT for specialized medical text classification?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **In what scenarios would you choose DistilBERT's 40% size reduction over BERT's full performance capabilities?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you handle the computational trade-offs when deploying RoBERTa-large versus BERT-base in real-time applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What preprocessing considerations are unique to BERT's WordPiece tokenization for multilingual text processing?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you implement incremental learning with BERT models when new labeled data arrives continuously?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What are the best practices for handling long documents that exceed BERT's 512-token limit?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you optimize DistilBERT's knowledge distillation process for domain-specific tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **When would you use RoBERTa's dynamic masking strategy over BERT's static masking approach?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you implement efficient batch processing for BERT inference in high-throughput production systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What techniques help reduce overfitting when fine-tuning BERT on small specialized datasets?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you handle class imbalance when fine-tuning BERT for multi-class classification tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What are the memory optimization strategies for deploying BERT models on edge devices?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you implement effective warm-up strategies during BERT fine-tuning for optimal convergence?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **When should you use BERT's [CLS] token versus pooling strategies for document-level representations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you handle multilingual requirements when choosing between mBERT and language-specific BERT variants?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What are the considerations for using DistilBERT in privacy-sensitive applications where model size matters?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you implement gradient accumulation for BERT training when GPU memory is limited?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What evaluation metrics best capture the performance differences between BERT variants on your specific task?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you handle tokenization mismatches when transferring between different BERT model variants?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What are the best practices for implementing BERT model ensembles to improve robustness?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you optimize the learning rate schedule for different BERT architectures during fine-tuning?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **When would you implement custom attention mechanisms on top of pre-trained BERT representations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you handle catastrophic forgetting when continually fine-tuning BERT on new domains?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques help maintain BERT's performance when quantizing models for mobile deployment?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you implement effective data augmentation strategies specifically for BERT-based models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What are the considerations for using BERT in few-shot learning scenarios with limited examples per class?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you handle the computational cost of BERT's attention mechanism in very long sequence processing?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **When should you use specialized BERT variants like BioBERT, FinBERT, or LegalBERT over general models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you implement model compression techniques beyond distillation for BERT deployment?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What are the best practices for handling noisy or adversarial inputs in BERT-based production systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you optimize BERT's performance for cross-lingual transfer learning tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What monitoring strategies help detect performance degradation in deployed BERT models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you implement effective prompt engineering techniques for BERT-style masked language models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **When would you choose task-specific fine-tuning versus feature extraction approaches with BERT?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you handle the interpretability requirements when deploying BERT in regulated industries?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What are the strategies for maintaining BERT model performance under dataset shift conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you implement cost-effective inference scaling for BERT models in cloud environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What techniques help reduce the environmental impact of training and deploying large BERT models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you handle version control and model lifecycle management for BERT variant deployments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What are the considerations for implementing BERT in real-time recommendation systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you optimize BERT's throughput while maintaining quality in high-volume text processing pipelines?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **When should you implement custom pre-training for BERT on domain-specific corpora?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you handle the trade-offs between model accuracy and inference speed in BERT deployment?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What are the best practices for A/B testing different BERT variants in production environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you implement effective error handling and fallback mechanisms for BERT-based applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What techniques help ensure consistent BERT model performance across different hardware configurations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 49
+- [ ] Done
 **How do you optimize BERT's performance for streaming text processing applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 50
+- [ ] Done
 **What are the key considerations when migrating from older transformer models to modern BERT variants?**
 **Answer:** _To be filled_
 
@@ -9893,300 +10008,350 @@ def compare_architectures():
 # GPT-2/GPT-3/GPT-4 - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you optimize GPT-4's context window utilization for long-document summarization tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the cost-efficiency considerations when choosing between GPT-3.5-turbo and GPT-4 for production applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement effective prompt engineering strategies that work consistently across GPT-2, GPT-3, and GPT-4?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **When would you choose fine-tuning GPT-2 locally versus using GPT-4's in-context learning capabilities?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you handle rate limiting and API quotas when building production systems around GPT-3/GPT-4?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What techniques help reduce hallucination in GPT models for factual content generation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you implement retrieval-augmented generation (RAG) to enhance GPT model accuracy?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What are the best practices for handling sensitive data when using cloud-based GPT APIs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you measure and optimize the coherence of long-form text generated by GPT models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **When should you use GPT-4's multimodal capabilities versus separate vision and language models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you implement effective content filtering and safety measures for GPT-generated text?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What strategies help maintain consistent writing style and tone across GPT model generations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you handle the computational requirements for self-hosting GPT-2 versus using API-based solutions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What are the techniques for implementing few-shot learning effectively with different GPT variants?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you optimize prompt design for complex reasoning tasks using GPT-4's advanced capabilities?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **When would you implement custom stopping criteria for GPT text generation in production systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you handle context management for multi-turn conversations using GPT models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What are the best practices for implementing GPT model caching to reduce API costs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you measure and improve the factual accuracy of GPT-generated content?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help control the creativity versus consistency trade-off in GPT text generation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement effective batch processing for high-volume GPT API requests?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **When should you use GPT-4's function calling capabilities versus traditional API integrations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle version migration when OpenAI updates GPT model versions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What are the strategies for implementing GPT models in multilingual content generation systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you optimize GPT model performance for domain-specific technical writing tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques help ensure GPT-generated content meets specific compliance and regulatory requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you implement effective quality assessment for GPT-generated content at scale?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **When would you combine multiple GPT model variants in an ensemble approach?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you handle the latency requirements for real-time applications using GPT APIs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What are the best practices for implementing GPT models in customer-facing chatbot applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you optimize GPT prompt engineering for code generation and programming tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What strategies help maintain GPT model performance consistency across different user contexts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement effective monitoring and alerting for GPT-based production systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **When should you use GPT-4's advanced reasoning capabilities versus simpler, faster alternatives?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle the scalability challenges of GPT model deployment in enterprise environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What techniques help reduce bias in GPT-generated content for diverse user bases?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement cost optimization strategies for large-scale GPT API usage?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What are the considerations for implementing GPT models in privacy-sensitive applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle error recovery and fallback mechanisms in GPT-based systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **When would you implement custom fine-tuning versus using GPT's built-in adaptability features?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you optimize GPT model selection based on specific use case requirements and constraints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What strategies help ensure GPT-generated content maintains brand voice and messaging consistency?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you implement effective testing and validation procedures for GPT-based applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help manage the unpredictability of GPT model outputs in production systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you handle data retention and privacy concerns when using GPT APIs with user data?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What are the best practices for implementing GPT models in content moderation workflows?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you optimize GPT performance for specific industries like healthcare, finance, or legal services?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **When should you implement custom preprocessing versus relying on GPT's built-in text processing?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 49
+- [ ] Done
 **How do you handle the integration challenges when combining GPT models with existing enterprise systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 50
+- [ ] Done
 **What are the key performance indicators for measuring GPT model success in production applications?**
 **Answer:** _To be filled_
 
@@ -10200,300 +10365,350 @@ def compare_architectures():
 # LLaMA/Falcon/Mistral - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you choose between LLaMA, Falcon, and Mistral based on specific deployment constraints and performance requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the licensing implications when deploying LLaMA versus Falcon or Mistral in commercial applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you optimize Mistral 7B's sliding window attention for long-sequence processing tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **When would you choose Falcon's 40B model over other alternatives for enterprise-scale applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you implement efficient fine-tuning strategies for LLaMA models on domain-specific datasets?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What are the memory optimization techniques specific to deploying LLaMA models on consumer hardware?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle the computational trade-offs between model size and inference speed across these three model families?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What quantization strategies work best for each model family while maintaining performance quality?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement effective instruction tuning for LLaMA, Falcon, and Mistral models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **When should you use Mistral's mixture-of-experts architecture versus traditional dense models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you optimize batch processing efficiency for different model architectures in production environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What are the best practices for implementing RLHF (Reinforcement Learning from Human Feedback) with these models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you handle multilingual capabilities comparison between LLaMA, Falcon, and Mistral variants?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques help reduce inference latency when deploying these models in real-time applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you implement effective model parallelism strategies for large LLaMA or Falcon deployments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **When would you choose specialized variants like Code Llama versus general-purpose models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you optimize memory usage during training and inference for resource-constrained environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What are the strategies for implementing continual learning with LLaMA, Falcon, or Mistral models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle the evaluation challenges when comparing performance across different model architectures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help maintain model performance when adapting to new domains or tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement efficient serving infrastructure for high-throughput applications using these models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **When should you use LoRA (Low-Rank Adaptation) versus full fine-tuning for each model family?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you optimize the balance between model capability and deployment cost across different options?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What are the best practices for implementing safety measures and content filtering with these models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you handle version control and model lifecycle management for open-source model deployments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What strategies help ensure consistent performance across different hardware configurations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you implement effective prompt engineering techniques optimized for each model's characteristics?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **When would you combine multiple models in an ensemble versus using a single larger model?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you optimize storage and loading efficiency for frequent model switching in production?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What techniques help reduce the environmental impact of training and deploying these large models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you implement effective monitoring and performance tracking for self-hosted model deployments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What are the considerations for implementing these models in edge computing scenarios?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you handle the interpretability and explainability requirements for regulated industry deployments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **When should you implement custom tokenization versus using the model's default tokenizer?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you optimize these models for specific use cases like code generation, creative writing, or analysis?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What strategies help maintain model security and prevent unauthorized access in self-hosted deployments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement effective load balancing and scaling strategies for high-demand applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques help optimize the training efficiency when customizing these models for specific domains?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle the integration challenges when incorporating these models into existing ML pipelines?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **When would you choose between different quantization formats (INT8, INT4, FP16) for each model family?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement effective caching strategies to improve response times and reduce computational costs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What are the best practices for handling model updates and migrations in production environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you optimize these models for specific hardware accelerators like GPUs, TPUs, or specialized AI chips?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What strategies help ensure reliable performance under varying load conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement effective A/B testing frameworks for comparing different model variants?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What techniques help optimize the model selection process based on real-time performance metrics?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle the complexity of managing multiple model versions and configurations simultaneously?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **When should you implement custom inference optimizations versus using existing frameworks like vLLM or TensorRT?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 49
+- [ ] Done
 **How do you optimize these models for specific deployment patterns like serverless, containerized, or bare-metal?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 50
+- [ ] Done
 **What are the key considerations for long-term maintenance and support of self-hosted model deployments?**
 **Answer:** _To be filled_
 
@@ -10507,300 +10722,350 @@ def compare_architectures():
 # T5/BART - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you choose between T5's text-to-text approach and BART's encoder-decoder architecture for specific NLP tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the advantages of T5's unified framework when building multi-task learning systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you optimize BART's denoising pre-training approach for domain-specific text generation tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **When would you use T5's prefix-based task specification versus BART's task-specific fine-tuning?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you handle the computational requirements differences between T5 and BART in production environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What techniques help optimize T5's performance for extremely long input sequences?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you implement effective prompt design strategies for T5's text-to-text paradigm?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What are the best practices for fine-tuning BART on abstractive summarization tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you handle the memory optimization challenges when deploying large T5 or BART models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **When should you use T5's multi-task capabilities versus training separate specialized models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you optimize BART's attention mechanisms for document-level understanding tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What strategies help improve T5's performance on few-shot learning scenarios?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement effective evaluation metrics for comparing T5 and BART on generation tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques help reduce hallucination in both T5 and BART text generation outputs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle the tokenization differences between T5 and BART when processing diverse text types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **When would you implement custom pre-training objectives for T5 or BART on domain-specific corpora?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you optimize batch processing efficiency for T5 and BART in high-throughput applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What are the best practices for implementing controllable text generation with T5 and BART?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle the scalability challenges when deploying T5 or BART for real-time applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help maintain consistency in generated outputs across different input contexts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement effective transfer learning strategies from general T5/BART to specialized domains?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **When should you use T5's encoder-decoder architecture versus decoder-only models for specific tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you optimize BART's performance for multilingual text processing and generation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What strategies help improve the factual accuracy of T5 and BART generated content?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you handle the evaluation challenges when comparing T5 and BART across different task types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques help optimize the training efficiency for large T5 and BART model variants?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you implement effective quality control measures for T5 and BART generated outputs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **When would you combine T5 and BART in ensemble approaches for improved performance?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you optimize memory usage during inference for T5 and BART in resource-constrained environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What are the best practices for implementing T5 and BART in conversational AI systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle the context management challenges in multi-turn applications using T5 or BART?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What strategies help ensure T5 and BART model robustness against adversarial inputs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement effective beam search and decoding strategies for optimal generation quality?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **When should you use T5's span corruption objective versus BART's document corruption approach?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you optimize T5 and BART for specific text generation tasks like dialogue, summaries, or creative writing?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What techniques help maintain T5 and BART performance consistency across different deployment environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you handle the versioning and model lifecycle management for T5 and BART deployments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What are the considerations for implementing T5 and BART in privacy-sensitive applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you optimize the prompt engineering approaches specific to T5's text-to-text framework?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **When would you implement custom loss functions versus standard objectives for T5 and BART training?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you handle the integration challenges when incorporating T5 or BART into existing NLP pipelines?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What strategies help optimize T5 and BART performance for domain-specific vocabularies and terminology?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you implement effective monitoring and performance tracking for T5 and BART production systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help reduce the computational overhead of T5 and BART attention mechanisms?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you optimize T5 and BART for specific hardware configurations and acceleration platforms?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **When should you use progressive training strategies versus standard fine-tuning for T5 and BART?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle the data preprocessing requirements specific to T5's text-to-text format?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What are the best practices for implementing T5 and BART in content creation workflows?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 49
+- [ ] Done
 **How do you optimize the trade-offs between generation quality and inference speed for production deployment?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 50
+- [ ] Done
 **What strategies help ensure T5 and BART generated content meets specific style and format requirements?**
 **Answer:** _To be filled_
 
@@ -10814,6 +11079,7 @@ def compare_architectures():
 # Llms Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What areLarge Language Models (LLMs)and how do they work?**
 
@@ -10822,6 +11088,7 @@ def compare_architectures():
 ---
 
 ## Question 2
+- [ ] Done
 
 **Describe the architecture of atransformer modelthat is commonly used in LLMs.**
 
@@ -10830,6 +11097,7 @@ def compare_architectures():
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are the main differences betweenLLMsand traditionalstatistical language models?**
 
@@ -10838,6 +11106,7 @@ def compare_architectures():
 ---
 
 ## Question 4
+- [ ] Done
 
 **Can you explain the concept ofattention mechanismsin transformer models?**
 
@@ -10846,6 +11115,7 @@ def compare_architectures():
 ---
 
 ## Question 5
+- [ ] Done
 
 **What arepositional encodingsin the context of LLMs?**
 
@@ -10854,6 +11124,7 @@ def compare_architectures():
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is the role oftransformersin achieving parallelization in LLMs?**
 
@@ -10862,6 +11133,7 @@ def compare_architectures():
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are some prominentapplicationsof LLMs today?**
 
@@ -10870,6 +11142,7 @@ def compare_architectures():
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe how LLMs can be used in thegeneration of synthetic text.**
 
@@ -10878,6 +11151,7 @@ def compare_architectures():
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain how LLMs can improveinformation retrievalanddocument summarization.**
 
@@ -10886,6 +11160,7 @@ def compare_architectures():
 ---
 
 ## Question 10
+- [ ] Done
 
 **Describe theBERT (Bidirectional Encoder Representations from Transformers)model and its significance.**
 
@@ -10894,6 +11169,7 @@ def compare_architectures():
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain the core idea behind theT5 (Text-to-Text Transfer Transformer)model.**
 
@@ -10902,6 +11178,7 @@ def compare_architectures():
 ---
 
 ## Question 12
+- [ ] Done
 
 **What is theRoBERTa modeland how does it differ from standard BERT?**
 
@@ -10910,6 +11187,7 @@ def compare_architectures():
 ---
 
 ## Question 13
+- [ ] Done
 
 **How does theGPT (Generative Pre-trained Transformer)series of models work?**
 
@@ -10918,6 +11196,7 @@ def compare_architectures():
 ---
 
 ## Question 14
+- [ ] Done
 
 **What are some of thelimitationsof the Transformer architecture in LLMs?**
 
@@ -10926,6 +11205,7 @@ def compare_architectures():
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is the importance ofbatch sizeandsequence lengthin LLM training?**
 
@@ -10934,6 +11214,7 @@ def compare_architectures():
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the concept ofgradient checkpointingin the context of training efficiency.**
 
@@ -10942,6 +11223,7 @@ def compare_architectures():
 ---
 
 ## Question 17
+- [ ] Done
 
 **Can you describe techniques tomonitor and maintainLLMs in production?**
 
@@ -10950,6 +11232,7 @@ def compare_architectures():
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain the factors to consider when selectinghardwarefor training LLMs.**
 
@@ -10958,6 +11241,7 @@ def compare_architectures():
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explainmodel versioningstrategies when updating LLMs in production.**
 
@@ -10966,6 +11250,7 @@ def compare_architectures():
 ---
 
 ## Question 20
+- [ ] Done
 
 **Describe a method to efficiently roll back to a previous LLM model state in case of failures.**
 
@@ -10974,6 +11259,7 @@ def compare_architectures():
 ---
 
 ## Question 21
+- [ ] Done
 
 **What are the potential futureapplicationsof LLMs that are currently being researched?**
 
@@ -10982,6 +11268,7 @@ def compare_architectures():
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain howcapsule networksmight be integrated with LLMs.**
 
@@ -10990,6 +11277,7 @@ def compare_architectures():
 ---
 
 ## Question 23
+- [ ] Done
 
 **What arezero-shotandfew-shot learningcapabilities in LLMs?**
 
@@ -11005,6 +11293,7 @@ def compare_architectures():
 # Llms Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Write a Python function usingPyTorchorTensorFlowto tokenize input text forGPT-2.**
 
@@ -11013,6 +11302,7 @@ def compare_architectures():
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement a simpletransformer blockusingPyTorchorTensorFlow.**
 
@@ -11021,6 +11311,7 @@ def compare_architectures():
 ---
 
 ## Question 3
+- [ ] Done
 
 **Train aminiature transformer modelon a small text corpus.**
 
@@ -11029,6 +11320,7 @@ def compare_architectures():
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a function that performsgreedy decodingfor text generation using a pre-trained transformer model.**
 
@@ -11037,6 +11329,7 @@ def compare_architectures():
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write code tovisualize attention weightsfrom a pre-trained transformer model.**
 
@@ -11045,6 +11338,7 @@ def compare_architectures():
 ---
 
 ## Question 6
+- [ ] Done
 
 **Modify a pre-trainedBERT modelfor a classification task usingtransfer learning.**
 
@@ -11053,6 +11347,7 @@ def compare_architectures():
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement abeam search algorithmfor better text generation in language models.**
 
@@ -11061,6 +11356,7 @@ def compare_architectures():
 ---
 
 ## Question 8
+- [ ] Done
 
 **Develop a customloss functionfor a transformer model that accounts for both forward and backward prediction.**
 
@@ -11069,6 +11365,7 @@ def compare_architectures():
 ---
 
 ## Question 9
+- [ ] Done
 
 **Fine-tune aGPT-2 modelfor a specific text style or author usingPyTorchorTensorFlow.**
 
@@ -11077,6 +11374,7 @@ def compare_architectures():
 ---
 
 ## Question 10
+- [ ] Done
 
 **Code a routine to performabstractive text summarizationusing a pre-trainedT5 model.**
 
@@ -11092,6 +11390,7 @@ def compare_architectures():
 # Llms Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do LLMs handlecontextandlong-term dependenciesin text?**
 
@@ -11100,6 +11399,7 @@ def compare_architectures():
 ---
 
 ## Question 2
+- [ ] Done
 
 **How isGPT-4different from its predecessors likeGPT-3in terms of capabilities and applications?**
 
@@ -11108,6 +11408,7 @@ def compare_architectures():
 ---
 
 ## Question 3
+- [ ] Done
 
 **Can you mention anydomain-specificadaptations of LLMs?**
 
@@ -11116,6 +11417,7 @@ def compare_architectures():
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do LLMs contribute to the field ofsentiment analysis?**
 
@@ -11124,6 +11426,7 @@ def compare_architectures():
 ---
 
 ## Question 5
+- [ ] Done
 
 **In what ways can LLMs be utilized forlanguage translation?**
 
@@ -11132,6 +11435,7 @@ def compare_architectures():
 ---
 
 ## Question 6
+- [ ] Done
 
 **How dohyperparametersaffect the performance of LLMs?**
 
@@ -11140,6 +11444,7 @@ def compare_architectures():
 ---
 
 ## Question 7
+- [ ] Done
 
 **How can one useknowledge distillationin the context of LLMs?**
 
@@ -11148,6 +11453,7 @@ def compare_architectures():
 ---
 
 ## Question 8
+- [ ] Done
 
 **Whatpreprocessing stepsare crucial when dealing with input data for LLMs?**
 
@@ -11156,6 +11462,7 @@ def compare_architectures():
 ---
 
 ## Question 9
+- [ ] Done
 
 **How istokenizationperformed in the context of LLMs, and why is it important?**
 
@@ -11164,6 +11471,7 @@ def compare_architectures():
 ---
 
 ## Question 10
+- [ ] Done
 
 **What considerations should be taken into account for handling differentlanguagesin LLMs?**
 
@@ -11172,6 +11480,7 @@ def compare_architectures():
 ---
 
 ## Question 11
+- [ ] Done
 
 **How do you address the challenge ofoverfittingin LLMs?**
 
@@ -11180,6 +11489,7 @@ def compare_architectures():
 ---
 
 ## Question 12
+- [ ] Done
 
 **What approach would you take to build achatbotusing LLMs?**
 
@@ -11188,6 +11498,7 @@ def compare_architectures():
 ---
 
 ## Question 13
+- [ ] Done
 
 **Design a system using LLMs to generatecode snippetsfrom natural language descriptions.**
 
@@ -11196,6 +11507,7 @@ def compare_architectures():
 ---
 
 ## Question 14
+- [ ] Done
 
 **Whatmetricswould you use to evaluate the performance of a fine-tuned LLM?**
 
@@ -11204,6 +11516,7 @@ def compare_architectures():
 ---
 
 ## Question 15
+- [ ] Done
 
 **How canreinforcement learningbe applied to further train or fine-tune LLMs?**
 
@@ -11219,6 +11532,7 @@ def compare_architectures():
 # Llms Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the significance ofpre-trainingandfine-tuningin the context of LLMs.**
 
@@ -11227,6 +11541,7 @@ def compare_architectures():
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss theapplicationof LLMs inconversation AIandchatbots.**
 
@@ -11235,6 +11550,7 @@ def compare_architectures():
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the technique of ‘masking’ in transformer models like BERT.**
 
@@ -11243,6 +11559,7 @@ def compare_architectures():
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss the role oflearning rate schedulesin training LLMs.**
 
@@ -11251,6 +11568,7 @@ def compare_architectures():
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss techniques for reducing thememory footprintof LLMs during training.**
 
@@ -11259,6 +11577,7 @@ def compare_architectures():
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss the process ofvocabulary creationand management in LLMs.**
 
@@ -11267,6 +11586,7 @@ def compare_architectures():
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss strategies forefficient deploymentof LLMs in production environments.**
 
@@ -11275,6 +11595,7 @@ def compare_architectures():
 ---
 
 ## Question 8
+- [ ] Done
 
 **Discuss the role ofmulti-GPUanddistributed trainingin LLMs.**
 
@@ -11283,6 +11604,7 @@ def compare_architectures():
 ---
 
 ## Question 9
+- [ ] Done
 
 **How would you set up a LLM to create anews article summarizer?**
 
@@ -11291,6 +11613,7 @@ def compare_architectures():
 ---
 
 ## Question 10
+- [ ] Done
 
 **Discuss techniques to adapt a LLM for alegal document reviewapplication.**
 
@@ -11299,6 +11622,7 @@ def compare_architectures():
 ---
 
 ## Question 11
+- [ ] Done
 
 **Propose a framework to use LLMs in creatingpersonalized content recommendations.**
 
@@ -11307,6 +11631,7 @@ def compare_architectures():
 ---
 
 ## Question 12
+- [ ] Done
 
 **How would you conductA/B testingfor a new version of an LLM-based application?**
 
@@ -11315,6 +11640,7 @@ def compare_architectures():
 ---
 
 ## Question 13
+- [ ] Done
 
 **Discussgenerative adversarial networks (GANs)in the context of text generation with LLMs.**
 
@@ -11323,6 +11649,7 @@ def compare_architectures():
 ---
 
 ## Question 14
+- [ ] Done
 
 **Discuss the concept ofcatastrophic forgettingin LLMs and potential solutions.**
 
@@ -11331,6 +11658,7 @@ def compare_architectures():
 ---
 
 ## Question 15
+- [ ] Done
 
 **Discuss the implications ofattention flowin multi-head attention mechanisms.**
 

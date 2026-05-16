@@ -1,6 +1,7 @@
 # PyTorch Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is PyTorch and what are its main features?**
 
@@ -45,6 +46,7 @@ model = nn.Sequential(
 ---
 
 ## Question 2
+- [ ] Done
 
 **What is the difference between PyTorch and TensorFlow?**
 
@@ -90,6 +92,7 @@ output = model(x)  # Can set breakpoints here
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain the concept of tensors in PyTorch.**
 
@@ -139,6 +142,7 @@ back_to_numpy = tensor_from_numpy.numpy()
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is Autograd in PyTorch?**
 
@@ -192,6 +196,7 @@ detached = y_pred.detach()
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is the difference between torch.Tensor and torch.tensor?**
 
@@ -235,6 +240,7 @@ arange = torch.arange(0, 10, 2)  # [0, 2, 4, 6, 8]
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain torch.nn.Module and how to create custom modules.**
 
@@ -293,6 +299,7 @@ print(f"Output shape: {output.shape}")  # [32, 2]
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are the different optimizers available in PyTorch?**
 
@@ -348,6 +355,7 @@ for epoch in range(100):
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain loss functions in PyTorch.**
 
@@ -409,6 +417,7 @@ class FocalLoss(nn.Module):
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is the difference between model.train() and model.eval()?**
 
@@ -463,6 +472,7 @@ model.train()
 ---
 
 ## Question 10
+- [ ] Done
 
 **How does PyTorch handle GPU computation?**
 
@@ -526,6 +536,7 @@ torch.cuda.empty_cache()
 # --- Missing Questions Restored from Source (Q11-Q21) ---
 
 ## Question 11
+- [ ] Done
 
 **What is the purpose of zero_grad() in PyTorch, and when is it used?**
 
@@ -583,6 +594,7 @@ Always explain that PyTorch accumulates gradients by design (useful for gradient
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe the process of backpropagation in PyTorch**
 
@@ -650,6 +662,7 @@ PyTorch uses **dynamic computation graphs** (define-by-run), meaning the graph i
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain how gradient clipping works in PyTorch and why it may be necessary**
 
@@ -712,6 +725,7 @@ if ||gradient|| > max_norm:
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain batch normalization and its effects on training convergence**
 
@@ -776,6 +790,7 @@ Critical distinction: **train mode** uses current batch statistics, **eval mode*
 ---
 
 ## Question 15
+- [ ] Done
 
 **How does PyTorch handle weight initialization for neural networks?**
 
@@ -835,6 +850,7 @@ The key insight: Xavier init assumes linear activations, Kaiming init accounts f
 ---
 
 ## Question 16
+- [ ] Done
 
 **What are some common issues you may encounter when training models in PyTorch, and how do you troubleshoot them?**
 
@@ -905,6 +921,7 @@ The best debugging technique is the **overfit-one-batch test**: if your model ca
 ---
 
 ## Question 17
+- [ ] Done
 
 **What is the use of transforms in PyTorch’s torchvision package?**
 
@@ -976,6 +993,7 @@ Always apply augmentation only to training data, not validation/test. The `Norma
 ---
 
 ## Question 18
+- [ ] Done
 
 **What is PyTorch’s TorchScript , and how does it aid in deploying PyTorch models in production environments?**
 
@@ -1047,6 +1065,7 @@ Use `torch.jit.trace` for simple feed-forward models and `torch.jit.script` for 
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain the concept of “model quantization” in PyTorch and when it is useful.**
 
@@ -1123,6 +1142,7 @@ Dynamic quantization is a "free lunch" for inference — one line of code for 2-
 ---
 
 ## Question 20
+- [ ] Done
 
 **What is the role of PyTorch in reinforcement learning research, and can you provide an example?**
 
@@ -1212,6 +1232,7 @@ PyTorch dominates RL research because `torch.distributions` + autograd makes imp
 ---
 
 ## Question 21
+- [ ] Done
 
 **Describe your experience contributing to PyTorch’s open-source community or using community-created tools.**
 
@@ -1284,6 +1305,7 @@ Mention specific community tools you've used (Lightning for training, timm for m
 ---
 
 ## Question 22
+- [ ] Done
 
 **What is PyTorch and how does it differ from other deep learning frameworks like TensorFlow ?**
 
@@ -1319,6 +1341,7 @@ tensor = torch.randn(3, 3).to(device)
 ---
 
 ## Question 23
+- [ ] Done
 
 **In PyTorch, what is the difference between a Tensor and a Variable ?**
 
@@ -1357,6 +1380,7 @@ print(x.grad)  # tensor([2., 4., 6.])
 ---
 
 ## Question 24
+- [ ] Done
 
 **How can you convert a NumPy array to a PyTorch Tensor ?**
 
@@ -1389,6 +1413,7 @@ np_array2 = tensor.detach().cpu().numpy()  # Safe: detach from graph, move to CP
 ---
 
 ## Question 25
+- [ ] Done
 
 **What is the purpose of the .grad attribute in PyTorch Tensors ?**
 
@@ -1430,6 +1455,7 @@ optimizer.step()         # Update parameters using gradients
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain what CUDA is and how it relates to PyTorch**
 
@@ -1479,6 +1505,7 @@ print(torch.cuda.memory_allocated())      # Current GPU memory usage
 ---
 
 ## Question 27
+- [ ] Done
 
 **How does automatic differentiation work in PyTorch using Autograd ?**
 
@@ -1531,6 +1558,7 @@ class MyReLU(torch.autograd.Function):
 ---
 
 ## Question 28
+- [ ] Done
 
 **Describe the steps for creating a neural network model in PyTorch**
 
@@ -1591,6 +1619,7 @@ for epoch in range(num_epochs):
 ---
 
 ## Question 29
+- [ ] Done
 
 **What is a Sequential model in PyTorch, and how does it differ from using the Module class?**
 
@@ -1657,6 +1686,7 @@ class Encoder(nn.Module):
 ---
 
 ## Question 30
+- [ ] Done
 
 **What is the role of the forward method in a PyTorch Module ?**
 
@@ -1707,6 +1737,7 @@ output = model(input_tensor)
 ---
 
 ## Question 31
+- [ ] Done
 
 **In PyTorch, what are optimizers , and how do you use them?**
 
@@ -1755,6 +1786,7 @@ for epoch in range(epochs):
 ---
 
 ## Question 32
+- [ ] Done
 
 **How do you create a data loader in PyTorch for custom datasets ?**
 
@@ -1815,6 +1847,7 @@ loader = DataLoader(dataset, batch_size=32, collate_fn=custom_collate)
 ---
 
 ## Question 33
+- [ ] Done
 
 **How do you manage and preprocess time-series data in PyTorch for RNNs ?**
 
@@ -1874,6 +1907,7 @@ class TimeSeriesLSTM(nn.Module):
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain the concept of data augmentation and its implementation in PyTorch**
 
@@ -1925,6 +1959,7 @@ train_transform = transforms.Compose([
 ---
 
 ## Question 35
+- [ ] Done
 
 **How do you use GPU accelerators for distributed training in PyTorch?**
 
@@ -1982,6 +2017,7 @@ def train(rank, world_size):
 ---
 
 ## Question 36
+- [ ] Done
 
 **Compare recurrent neural networks (RNNs) , long short-term memory networks (LSTMs) , and gated recurrent units (GRUs) in the context of PyTorch**
 
@@ -2025,6 +2061,7 @@ output, h_n = gru(input_tensor)           # GRU has no cell state
 ---
 
 ## Question 37
+- [ ] Done
 
 **Discuss the latest research on neural architecture search (NAS) and its application within PyTorch**
 
@@ -2078,6 +2115,7 @@ class SearchableBlock(nn.Module):
 ---
 
 ## Question 38
+- [ ] Done
 
 **How can generative adversarial networks (GANs) be implemented in PyTorch, and what are some of their challenges?**
 
@@ -2151,6 +2189,7 @@ for epoch in range(epochs):
 
 ---
 ## Question 39
+- [ ] Done
 
 **How do you implement custom layers in PyTorch?**
 
@@ -2231,6 +2270,7 @@ print(output.shape)  # torch.Size([32, 10])
 ---
 
 ## Question 40
+- [ ] Done
 
 **How can you implement learning rate scheduling in PyTorch?**
 
@@ -2304,6 +2344,7 @@ for epoch in range(num_epochs):
 ---
 
 ## Question 41
+- [ ] Done
 
 **Explain transfer learning and its implementation in PyTorch.**
 
@@ -2392,6 +2433,7 @@ for epoch in range(10):
 ---
 
 ## Question 42
+- [ ] Done
 
 **What are Graph Neural Networks (GNNs) and how can they be implemented in PyTorch?**
 
@@ -2484,6 +2526,7 @@ class GAT(nn.Module):
 > **Interview Tip:** GNNs follow a message-passing paradigm: each node aggregates features from its neighbors, applies a transformation, and updates its representation. PyTorch Geometric provides optimized implementations for production use.
 
 ## Question 43
+- [ ] Done
 
 **How do you check if your PyTorch model is utilizing the GPU ?**
 
@@ -2527,6 +2570,7 @@ data = data.to(device)
 ---
 
 ## Question 44
+- [ ] Done
 
 **What strategies can you use to monitor and decrease overfitting in a PyTorch model?**
 
@@ -2592,6 +2636,7 @@ for epoch in range(epochs):
 ---
 
 ## Question 45
+- [ ] Done
 
 **How would you create a PyTorch extension module with custom C++/CUDA operations ?**
 
@@ -2653,6 +2698,7 @@ class MyCustomOp(torch.autograd.Function):
 ---
 
 ## Question 46
+- [ ] Done
 
 **How do you ensure reproducibility of experiments when using PyTorch?**
 
@@ -2718,6 +2764,7 @@ torch.save(checkpoint, 'checkpoint.pt')
 ---
 
 ## Question 47
+- [ ] Done
 
 **Portray how PyTorch Lightning can simplify the standard PyTorch workflow**
 

@@ -1,6 +1,7 @@
 # Neural Networks Interview Questions - Scenario-Based Questions
 
 ## Question 1: Importance of data augmentation in training neural networks
+- [ ] Done
 
 ### Why It's Important
 Data augmentation artificially increases training data diversity by applying transformations, helping neural networks generalize better and reducing overfitting.
@@ -28,6 +29,7 @@ Data augmentation artificially increases training data diversity by applying tra
 ---
 
 ## Question 2: GANs and their typical applications
+- [ ] Done
 
 ### Architecture
 - **Generator**: Creates fake samples from noise
@@ -52,6 +54,7 @@ Data augmentation artificially increases training data diversity by applying tra
 ---
 
 ## Question 3: SGD vs Mini-batch Gradient Descent
+- [ ] Done
 
 ### Comparison
 
@@ -72,6 +75,7 @@ Mini-batch is the default for deep learning:
 ---
 
 ## Question 4: Tackling overfitting in deep neural networks
+- [ ] Done
 
 ### Strategy (Priority Order)
 
@@ -103,6 +107,7 @@ optimizer = torch.optim.Adam(model.parameters(), weight_decay=1e-4)
 ---
 
 ## Question 5: Implications of batch size on training
+- [ ] Done
 
 ### Effects
 
@@ -129,6 +134,7 @@ optimizer = torch.optim.Adam(model.parameters(), weight_decay=1e-4)
 ---
 
 ## Question 6: Gradient tracking loss and solutions
+- [ ] Done
 
 ### Problem: Vanishing/Exploding Gradients
 Gradients become too small or too large during backpropagation, preventing learning.
@@ -153,6 +159,7 @@ nn.init.kaiming_normal_(layer.weight, mode='fan_in', nonlinearity='relu')
 ---
 
 ## Question 7: CNNs vs Capsule Networks
+- [ ] Done
 
 ### Comparison
 
@@ -170,6 +177,7 @@ Capsules preserve spatial relationships between features (e.g., knowing a face h
 ---
 
 ## Question 8: Challenges of sequence modeling
+- [ ] Done
 
 ### Main Challenges
 
@@ -190,6 +198,7 @@ Capsules preserve spatial relationships between features (e.g., knowing a face h
 ---
 
 ## Question 9: Sequence padding importance and effects
+- [ ] Done
 
 ### Why Padding is Needed
 Batching requires same-length sequences; padding fills shorter sequences to match the longest.
@@ -213,6 +222,7 @@ mask = (padded != 0)
 ---
 
 ## Question 10: Reducing inference time in production
+- [ ] Done
 
 ### Strategies
 
@@ -234,6 +244,7 @@ mask = (padded != 0)
 ---
 
 ## Question 11: Neural networks in NLP
+- [ ] Done
 
 ### Applications
 
@@ -254,6 +265,7 @@ mask = (padded != 0)
 ---
 
 ## Question 12: Real-time object detection in video
+- [ ] Done
 
 ### Architecture Choice
 **YOLO (You Only Look Once)** - single-pass detection for speed
@@ -280,6 +292,7 @@ Video Frame → Resize → YOLO → NMS → Tracking → Output
 ---
 
 ## Question 13: Architecture for automatic speech recognition
+- [ ] Done
 
 ### Modern Pipeline
 
@@ -303,6 +316,7 @@ Video Frame → Resize → YOLO → NMS → Tracking → Output
 ---
 
 ## Question 14: Recent advances in neural network architectures
+- [ ] Done
 
 ### Notable Advances (2020-2024)
 
@@ -322,6 +336,7 @@ Video Frame → Resize → YOLO → NMS → Tracking → Output
 ---
 
 ## Question 15: Neural Architecture Search (NAS)
+- [ ] Done
 
 ### Definition
 Automated process of designing neural network architectures using algorithms rather than manual trial-and-error.
@@ -343,6 +358,7 @@ Automated process of designing neural network architectures using algorithms rat
 ---
 
 ## Question 16: Energy-efficient neural networks
+- [ ] Done
 
 ### Why Important
 - Environmental concerns (carbon footprint)
@@ -362,6 +378,7 @@ Automated process of designing neural network architectures using algorithms rat
 ---
 
 ## Question 17: Neural networks in autonomous vehicle systems
+- [ ] Done
 
 ### Applications
 

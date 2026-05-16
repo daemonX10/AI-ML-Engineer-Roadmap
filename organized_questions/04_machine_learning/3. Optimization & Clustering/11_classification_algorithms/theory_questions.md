@@ -1,6 +1,7 @@
 ﻿# Classification Algorithms Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is classification in the context of machine learning?**
 
@@ -62,6 +63,7 @@ print(f"Accuracy: {accuracy_score(y_test, y_pred):.2f}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **How does a classification algorithm learn from data?**
 
@@ -123,6 +125,7 @@ print(f"Test Accuracy: {model.score(X_test, y_test):.2f}")
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is the role of a loss function in classification algorithms?**
 
@@ -179,6 +182,7 @@ print(f"Bad predictions loss: {cross_entropy_loss(y_true, y_pred_bad):.4f}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **What are the differences between generative and discriminative models?**
 
@@ -229,6 +233,7 @@ print(f"Naive Bayes: {gen_model.score(X_test, y_test):.2f}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain the concept of decision boundaries in classification.**
 
@@ -285,6 +290,7 @@ plt.show()
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is the "Curse of Dimensionality" and how does it affect classification?**
 
@@ -338,6 +344,7 @@ for d in dimensions:
 ---
 
 ## Question 7
+- [ ] Done
 
 **Briefly describe the working principle of Logistic Regression.**
 
@@ -390,6 +397,7 @@ print(f"Sample probabilities: {model.predict_proba(X_test)[:3, 1]}")
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain the concept of Support Vector Machines (SVM).**
 
@@ -442,6 +450,7 @@ print(f"Accuracy: {svm.score(X_test_scaled, y_test):.2f}")
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is the Naive Bayes classifier and how does it work?**
 
@@ -487,6 +496,7 @@ print(f"Accuracy: {model.score(X_test, y_test):.2f}")
 ---
 
 ## Question 10
+- [ ] Done
 
 **Describe how a Decision Tree works in classification tasks.**
 
@@ -539,6 +549,7 @@ print(f"Accuracy: {tree.score(X_test, y_test):.2f}")
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is a Random Forest and why is it often more effective than a single Decision Tree?**
 
@@ -589,6 +600,7 @@ print(f"Accuracy: {rf.score(X_test, y_test):.2f}")
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain what Gradient Boosting Machines (GBM) are and how they work.**
 
@@ -639,6 +651,7 @@ print(f"Accuracy: {gbm.score(X_test, y_test):.2f}")
 ---
 
 ## Question 13
+- [ ] Done
 
 **How does the k-Nearest Neighbours (k-NN) algorithm classify data points?**
 
@@ -691,6 +704,7 @@ print(f"Accuracy: {knn.score(X_test_scaled, y_test):.2f}")
 ---
 
 ## Question 14
+- [ ] Done
 
 **What are Artificial Neural Networks and how can they be used for classification tasks?**
 
@@ -747,6 +761,7 @@ print(f"Accuracy: {nn.score(X_test_scaled, y_test):.2f}")
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is cross-validation and why is it important?**
 
@@ -792,6 +807,7 @@ print(f"Accuracy: {scores.mean():.3f} (+/- {scores.std():.3f})")
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the concept of hyperparameter tuning in the context of classification models.**
 
@@ -843,6 +859,7 @@ print(f"Best CV score: {grid_search.best_score_:.3f}")
 ---
 
 ## Question 17
+- [ ] Done
 
 **What is model ensemble and how can it improve classification performance?**
 
@@ -892,6 +909,7 @@ print(f"Voting Ensemble: {scores.mean():.3f}")
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain the "Kernel trick" in SVMs and why it is useful.**
 
@@ -940,6 +958,7 @@ print(f"RBF: {rbf_svm.score(X, y):.2f}")
 ---
 
 ## Question 19
+- [ ] Done
 
 **What are the advantages of using ensemble methods like Bagging and Boosting?**
 
@@ -992,6 +1011,7 @@ print(f"Boosting: {cross_val_score(boosting, X, y, cv=5).mean():.3f}")
 ---
 
 ## Question 20
+- [ ] Done
 
 **What are the challenges of using Neural Networks for classification problems?**
 
@@ -1041,6 +1061,7 @@ model = MLPClassifier(
 ---
 
 ## Question 21
+- [ ] Done
 
 **What is one-class classification and in what scenarios is it used?**
 
@@ -1096,6 +1117,7 @@ print(f"Detected anomalies: {sum(predictions == -1)}")
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain how semi-supervised learning can be used for classification tasks.**
 
@@ -1148,6 +1170,7 @@ print(f"Propagated labels for {sum(y == -1)} unlabeled points")
 ---
 
 ## Question 23
+- [ ] Done
 
 **Explain the concept of transfer learning and its relevance to classification.**
 
@@ -1209,6 +1232,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 24
+- [ ] Done
 
 **What are adversarial examples and how do they affect classification models?**
 
@@ -1271,6 +1295,7 @@ def fgsm_attack(model, x, y, epsilon=0.1):
 ---
 
 ## Question 25
+- [ ] Done
 
 **What are the theoretical foundations of statistical learning theory for classification?**
 
@@ -1309,6 +1334,7 @@ $$\text{Error} = \text{Bias}^2 + \text{Variance} + \text{Noise}$$
 ---
 
 ## Question 26
+- [ ] Done
 
 **How do you analyze the sample complexity and generalization bounds for classifiers?**
 
@@ -1351,6 +1377,7 @@ $$|R_{true}(h) - R_{train}(h)| \leq O\left(\sqrt{\frac{VC(H)}{n}}\right)$$
 ---
 
 ## Question 27
+- [ ] Done
 
 **What is the VC-dimension and its role in classification algorithm analysis?**
 
@@ -1390,6 +1417,7 @@ $$P[\text{error}] \leq \hat{\text{error}} + O\left(\sqrt{\frac{VC \cdot \log(n/V
 ---
 
 ## Question 28
+- [ ] Done
 
 **How do you implement ensemble classification methods effectively?**
 
@@ -1446,6 +1474,7 @@ stacking = StackingClassifier(
 ---
 
 ## Question 29
+- [ ] Done
 
 **What are voting classifiers and their different voting strategies?**
 
@@ -1504,6 +1533,7 @@ weighted_vote = VotingClassifier(
 ---
 
 ## Question 30
+- [ ] Done
 
 **How do you implement stacking and blending for classification?**
 
@@ -1566,6 +1596,7 @@ stacking = StackingClassifier(
 ---
 
 ## Question 31
+- [ ] Done
 
 **What is cascading classification and when is it useful?**
 
@@ -1626,6 +1657,7 @@ class CascadeClassifier:
 ---
 
 ## Question 32
+- [ ] Done
 
 **How do you handle hierarchical classification problems?**
 
@@ -1685,6 +1717,7 @@ class HierarchicalClassifier:
 ---
 
 ## Question 33
+- [ ] Done
 
 **What are the considerations for multi-label classification algorithms?**
 
@@ -1744,6 +1777,7 @@ print(f"Hamming Loss: {hamming_loss(Y, Y_pred):.3f}")
 ---
 
 ## Question 34
+- [ ] Done
 
 **How do you implement binary relevance and classifier chains for multi-label problems?**
 
@@ -1813,6 +1847,7 @@ class ClassifierChain:
 ---
 
 ## Question 35
+- [ ] Done
 
 **What is label powerset transformation in multi-label classification?**
 
@@ -1876,6 +1911,7 @@ model = LogisticRegression()
 ---
 
 ## Question 36
+- [ ] Done
 
 **How do you handle ordinal classification with ordered class labels?**
 
@@ -1941,6 +1977,7 @@ y = np.array([1, 2, 3, 4, 5, 2, 3, 4])
 ---
 
 ## Question 37
+- [ ] Done
 
 **What are cost-sensitive classification algorithms and their applications?**
 
@@ -2001,6 +2038,7 @@ def cost_sensitive_predict(model, X, cost_fp, cost_fn):
 ---
 
 ## Question 38
+- [ ] Done
 
 **How do you handle classification with reject option and uncertainty quantification?**
 
@@ -2063,6 +2101,7 @@ clf = ClassifierWithReject(LogisticRegression(), threshold=0.8)
 ---
 
 ## Question 39
+- [ ] Done
 
 **What are probabilistic classifiers and how do they provide uncertainty estimates?**
 
@@ -2119,6 +2158,7 @@ plt.title('Calibration Curve')
 ---
 
 ## Question 40
+- [ ] Done
 
 **How do you implement calibration for classification probability outputs?**
 
@@ -2179,6 +2219,7 @@ calibrated_proba = rf_sigmoid.predict_proba(X_test)
 ---
 
 ## Question 41
+- [ ] Done
 
 **What is Platt scaling and isotonic regression for probability calibration?**
 
@@ -2243,6 +2284,7 @@ def isotonic_calibration(scores, y_true):
 ---
 
 ## Question 42
+- [ ] Done
 
 **How do you handle classification in non-stationary environments?**
 
@@ -2312,6 +2354,7 @@ model = SGDClassifier(loss='log_loss')
 ---
 
 ## Question 43
+- [ ] Done
 
 **What are adaptive classification algorithms for concept drift?**
 
@@ -2377,6 +2420,7 @@ def process_stream(X_stream, y_stream):
 ---
 
 ## Question 44
+- [ ] Done
 
 **How do you implement online learning algorithms for classification?**
 
@@ -2437,6 +2481,7 @@ nb = MultinomialNB()
 ---
 
 ## Question 45
+- [ ] Done
 
 **What is incremental learning and its applications in classification?**
 
@@ -2505,6 +2550,7 @@ rf.fit(X1, y1)  # Must use same data, adds trees
 ---
 
 ## Question 46
+- [ ] Done
 
 **How do you handle classification with limited labeled data?**
 
@@ -2557,6 +2603,7 @@ self_training.fit(X, y_partial)
 ---
 
 ## Question 47
+- [ ] Done
 
 **What are semi-supervised classification techniques and their benefits?**
 
@@ -2616,6 +2663,7 @@ print(f"Self-Training: {st.score(X, y):.3f}")
 ---
 
 ## Question 48
+- [ ] Done
 
 **How do you implement self-training and co-training for classification?**
 
@@ -2694,6 +2742,7 @@ class CoTraining:
 ---
 
 ## Question 49
+- [ ] Done
 
 **What is active learning and its role in classification with limited labels?**
 
@@ -2756,6 +2805,7 @@ learner = ActiveLearner(LogisticRegression())
 ---
 
 ## Question 50
+- [ ] Done
 
 **How do you implement query strategies for active learning in classification?**
 
@@ -2824,6 +2874,7 @@ uncertain_samples = qs.entropy_sampling(X_pool, n=10)
 ---
 
 ## Question 51
+- [ ] Done
 
 **What are transfer learning approaches for classification tasks?**
 
@@ -2892,6 +2943,7 @@ transfer_pipeline = Pipeline([
 ---
 
 ## Question 52
+- [ ] Done
 
 **How do you implement domain adaptation for classification across different domains?**
 
@@ -2956,6 +3008,7 @@ predictions = adapter.clf.predict(X_target)
 ---
 
 ## Question 53
+- [ ] Done
 
 **What is few-shot learning and its applications in classification?**
 
@@ -3026,6 +3079,7 @@ proto_clf.fit(support_X, support_y)
 ---
 
 ## Question 54
+- [ ] Done
 
 **How do you implement meta-learning algorithms for classification?**
 
@@ -3110,6 +3164,7 @@ class SimpleMAML:
 ---
 
 ## Question 55
+- [ ] Done
 
 **What are prototypical networks and their use in few-shot classification?**
 
@@ -3192,6 +3247,7 @@ preds = proto_net.predict(X_query)
 ---
 
 ## Question 56
+- [ ] Done
 
 **How do you handle classification with noisy labels?**
 
@@ -3265,6 +3321,7 @@ def symmetric_cross_entropy(y_true, y_pred, alpha=0.1, beta=1.0):
 ---
 
 ## Question 57
+- [ ] Done
 
 **What are robust classification methods for label noise?**
 
@@ -3340,6 +3397,7 @@ class CoTeaching:
 ---
 
 ## Question 58
+- [ ] Done
 
 **How do you implement classification for streaming and real-time data?**
 
@@ -3420,6 +3478,7 @@ for x, y in data_stream:
 ---
 
 ## Question 59
+- [ ] Done
 
 **What are the computational complexity considerations for large-scale classification?**
 
@@ -3478,6 +3537,7 @@ for X_batch, y_batch in data_generator:
 ---
 
 ## Question 60
+- [ ] Done
 
 **How do you implement distributed classification for very large datasets?**
 
@@ -3537,6 +3597,7 @@ model.fit(X_dask, y_dask)
 ---
 
 ## Question 61
+- [ ] Done
 
 **What is federated learning and how does it apply to classification?**
 
@@ -3625,6 +3686,7 @@ for round in range(num_rounds):
 ---
 
 ## Question 62
+- [ ] Done
 
 **How do you implement privacy-preserving classification techniques?**
 
@@ -3702,6 +3764,7 @@ class DifferentiallyPrivateSGD:
 ---
 
 ## Question 63
+- [ ] Done
 
 **What is differential privacy and its application in classification?**
 
@@ -3780,6 +3843,7 @@ class DPLogisticRegression:
 ---
 
 ## Question 64
+- [ ] Done
 
 **How do you implement secure multi-party computation for classification?**
 
@@ -3858,6 +3922,7 @@ class SecureDotProduct:
 ---
 
 ## Question 65
+- [ ] Done
 
 **How do you build classifiers that are robust to adversarial attacks?**
 
@@ -3947,6 +4012,7 @@ class RandomizedSmoothing:
 ---
 
 ## Question 66
+- [ ] Done
 
 **What are certified defenses for classification models?**
 
@@ -4027,6 +4093,7 @@ print(f"Prediction: {pred}, Certified radius: {radius:.3f}")
 ---
 
 ## Question 67
+- [ ] Done
 
 **How do you detect and defend against adversarial examples?**
 
@@ -4119,6 +4186,7 @@ class AdversarialDefender:
 ---
 
 ## Question 68
+- [ ] Done
 
 **What is fairness in machine learning classification and why is it important?**
 
@@ -4203,6 +4271,7 @@ print(f"Positive rates: {rates}, Disparity: {disparity:.3f}")
 ---
 
 ## Question 69
+- [ ] Done
 
 **How do you implement bias detection and mitigation in classification?**
 
@@ -4300,6 +4369,7 @@ class FairThresholdClassifier:
 ---
 
 ## Question 70
+- [ ] Done
 
 **What are fairness-aware classification algorithms?**
 
@@ -4388,6 +4458,7 @@ class AdversarialDebiasing:
 ---
 
 ## Question 71
+- [ ] Done
 
 **How do you interpret and explain classification model predictions?**
 
@@ -4464,6 +4535,7 @@ PartialDependenceDisplay.from_estimator(model, X_train, features=[0, 1])
 ---
 
 ## Question 72
+- [ ] Done
 
 **What are LIME and SHAP, and how do they work for classification?**
 
@@ -4549,6 +4621,7 @@ shap.summary_plot(shap_values[1], X_test, feature_names=feature_names)
 ---
 
 ## Question 73
+- [ ] Done
 
 **How do you implement feature importance analysis for classifiers?**
 
@@ -4622,6 +4695,7 @@ shap_importance = np.abs(shap_values[1]).mean(axis=0)
 ---
 
 ## Question 74
+- [ ] Done
 
 **How do Convolutional Neural Networks (CNNs) perform classification?**
 
@@ -4705,6 +4779,7 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 ---
 
 ## Question 75
+- [ ] Done
 
 **How do Recurrent Neural Networks (RNNs) and LSTMs perform sequence classification?**
 
@@ -4780,6 +4855,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 ---
 
 ## Question 76
+- [ ] Done
 
 **How do Transformer models perform classification tasks?**
 
@@ -4858,6 +4934,7 @@ trainer.train()
 ---
 
 ## Question 77
+- [ ] Done
 
 **What is attention mechanism and its role in classification?**
 
@@ -4945,6 +5022,7 @@ class AttentionClassifier(nn.Module):
 ---
 
 ## Question 78
+- [ ] Done
 
 **How do you implement deep learning classification with PyTorch or TensorFlow?**
 
@@ -5053,6 +5131,7 @@ history = model.fit(
 ---
 
 ## Question 79
+- [ ] Done
 
 **What are the best practices for training deep classification models?**
 
@@ -5163,6 +5242,7 @@ for epoch in range(100):
 ---
 
 ## Question 80
+- [ ] Done
 
 **How do you deploy classification models to production?**
 
@@ -5254,6 +5334,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 ---
 
 ## Question 81
+- [ ] Done
 
 **What are the considerations for model serialization and loading?**
 
@@ -5342,6 +5423,7 @@ with open('model_metadata.json', 'w') as f:
 ---
 
 ## Question 82
+- [ ] Done
 
 **How do you monitor classification model performance in production?**
 
@@ -5450,6 +5532,7 @@ def predict_with_monitoring(model, X):
 ---
 
 ## Question 83
+- [ ] Done
 
 **What is A/B testing for classification models?**
 
@@ -5558,6 +5641,7 @@ def required_sample_size(baseline_rate, mde, alpha=0.05, power=0.8):
 ---
 
 ## Question 84
+- [ ] Done
 
 **How do you implement model versioning and experiment tracking?**
 
@@ -5653,6 +5737,7 @@ loaded_model = mlflow.sklearn.load_model(model_uri)
 ---
 
 ## Question 85
+- [ ] Done
 
 **What is continuous integration and deployment (CI/CD) for ML models?**
 
@@ -5786,6 +5871,7 @@ def test_no_data_leakage():
 ---
 
 ## Question 86
+- [ ] Done
 
 **How do you handle model retraining and updates?**
 
@@ -5907,6 +5993,7 @@ class RetrainingPipeline:
 ---
 
 ## Question 87
+- [ ] Done
 
 **What are the emerging trends in classification algorithms?**
 
@@ -5996,6 +6083,7 @@ class ContinualClassifier:
 ---
 
 ## Question 88
+- [ ] Done
 
 **What is Neural Architecture Search (NAS) for classification?**
 
@@ -6079,6 +6167,7 @@ best_hp = tuner.get_best_hyperparameters()[0]
 ---
 
 ## Question 89
+- [ ] Done
 
 **How do you implement AutoML for classification tasks?**
 
@@ -6168,6 +6257,7 @@ final = finalize_model(tuned)
 ---
 
 ## Question 90
+- [ ] Done
 
 **What are Graph Neural Networks and how do they perform classification?**
 
@@ -6263,6 +6353,7 @@ for epoch in range(200):
 ---
 
 ## Question 91
+- [ ] Done
 
 **How do you handle extremely imbalanced classification with deep learning?**
 
@@ -6356,6 +6447,7 @@ class BalancedBatchSampler:
 ---
 
 ## Question 92
+- [ ] Done
 
 **What is contrastive learning and its application to classification?**
 
@@ -6447,6 +6539,7 @@ model.encoder.fc = nn.Linear(encoder.output_dim, num_classes)
 ---
 
 ## Question 93
+- [ ] Done
 
 **How do you implement self-supervised learning for classification?**
 
@@ -6550,6 +6643,7 @@ class SelfSupervisedPipeline:
 ---
 
 ## Question 94
+- [ ] Done
 
 **What is knowledge distillation for classification model compression?**
 
@@ -6642,6 +6736,7 @@ class SelfDistillation(nn.Module):
 ---
 
 ## Question 95
+- [ ] Done
 
 **How do you implement model pruning for efficient classification?**
 
@@ -6743,6 +6838,7 @@ def prune_filters(model, layer_name, prune_ratio=0.3):
 ---
 
 ## Question 96
+- [ ] Done
 
 **What is quantization and how does it help classification model efficiency?**
 
@@ -6838,6 +6934,7 @@ model_int8 = torch.quantization.convert(model_qat)
 ---
 
 ## Question 97
+- [ ] Done
 
 **What are the future directions and open problems in classification?**
 
@@ -6937,6 +7034,7 @@ class CausalClassifier:
 10. **Ethics**: Fairness, privacy, robustness
 
 ## Question 98
+- [ ] Done
 
 **Discuss the differences between L1 and L2 regularization in the context of Logistic Regression.**
 

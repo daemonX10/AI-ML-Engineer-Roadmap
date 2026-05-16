@@ -1,6 +1,7 @@
 # Naive Bayes Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss how the Naive Bayes classifier can be applied to recommendation systems.**
 
@@ -95,6 +96,7 @@ def collaborative_nb(user_item_matrix, target_user, item):
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you use Naive Bayes to build an email categorization system (e.g., important, social, promotions)?**
 
@@ -218,6 +220,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 3
+- [ ] Done
 
 **Propose a strategy for using Naive Bayes in a real-time bidding system for online advertising.**
 

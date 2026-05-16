@@ -1,6 +1,7 @@
 # Deep Learning Interview Questions - Coding Questions
 
 ## Question 1: Implement a simple neural network from scratch
+- [ ] Done
 
 ### Code
 ```python
@@ -78,6 +79,7 @@ nn = NeuralNetwork([784, 128, 64, 10])
 ---
 
 ## Question 2: CNN in TensorFlow for MNIST
+- [ ] Done
 
 ### Code
 ```python
@@ -117,6 +119,7 @@ print(f"Test accuracy: {test_acc:.4f}")
 ---
 
 ## Question 3: Real-time data augmentation with Keras
+- [ ] Done
 
 ### Code
 ```python
@@ -176,6 +179,7 @@ def visualize_augmentations(image, datagen, num_samples=6):
 ---
 
 ## Question 4: RNN with LSTM for text generation
+- [ ] Done
 
 ### Code
 ```python
@@ -246,6 +250,7 @@ def generate_text(model, seed, char2idx, idx2char, length=200, temperature=0.8):
 ---
 
 ## Question 5: GAN in PyTorch
+- [ ] Done
 
 ### Code
 ```python
@@ -330,6 +335,7 @@ for epoch in range(100):
 ---
 
 ## Question 6: Autoencoder for dimensionality reduction
+- [ ] Done
 
 ### Code
 ```python
@@ -384,6 +390,7 @@ print(f"Encoded shape: {encoded_data.shape}")
 ---
 
 ## Question 7: Seq2Seq chatbot
+- [ ] Done
 
 ### Code
 ```python
@@ -449,6 +456,7 @@ model = Seq2Seq(encoder, decoder, device='cuda')
 ---
 
 ## Question 8: ResNet with transfer learning in Keras
+- [ ] Done
 
 ### Code
 ```python
@@ -515,6 +523,7 @@ model.fit(train_generator, epochs=5)
 ---
 
 ## Question 9: Transformer for language translation
+- [ ] Done
 
 ### Code
 ```python
@@ -576,6 +585,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
 ---
 
 ## Question 10: Anomaly detection with autoencoder
+- [ ] Done
 
 ### Code
 ```python

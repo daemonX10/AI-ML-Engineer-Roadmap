@@ -1,6 +1,7 @@
 # MATLAB Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What are the main features of MATLAB that make it suitable for machine learning?**
 
@@ -43,6 +44,7 @@ title('Iris Dataset');
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain MATLAB's matrix operations and their importance.**
 
@@ -93,6 +95,7 @@ Always use `\` (backslash) for solving linear systems instead of `inv()` - it's 
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are MATLAB toolboxes and which ones are relevant for ML?**
 
@@ -145,6 +148,7 @@ options = trainingOptions('adam', 'MaxEpochs', 100);
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain the difference between scripts and functions in MATLAB.**
 
@@ -194,6 +198,7 @@ end
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is vectorization in MATLAB and why is it important?**
 
@@ -249,6 +254,7 @@ result = A.^2;  % Faster, vectorized
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain memory management in MATLAB.**
 
@@ -301,6 +307,7 @@ whos I
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are cell arrays and structures in MATLAB?**
 
@@ -349,6 +356,7 @@ disp(T(1,:)); % Access row
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain parallel computing in MATLAB.**
 
@@ -408,6 +416,7 @@ Not all loops can be parallelized with `parfor` - iterations must be independent
 # --- Missing Questions Restored from Source (Q9-Q25) ---
 
 ## Question 9
+- [ ] Done
 
 **What is the purpose of the ‘ eig ’ function, and how is it used?**
 
@@ -476,6 +485,7 @@ reduced = data * V_sorted(:, 1:2);
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain how to customize plots in MATLAB (e.g. adding labels, titles, legends)**
 
@@ -538,6 +548,7 @@ Use `set(gca, ...)` for axis properties and `set(gcf, ...)` for figure propertie
 ---
 
 ## Question 11
+- [ ] Done
 
 **What are the functions used to plot multiple data series in MATLAB ?**
 
@@ -596,6 +607,7 @@ Prefer `tiledlayout`/`nexttile` over `subplot` for modern MATLAB (R2019b+) — i
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain the various methods for data normalization and standardization in MATLAB**
 
@@ -658,6 +670,7 @@ Always normalize using **training set statistics** and apply those same paramete
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain the concept of recursion in MATLAB**
 
@@ -729,6 +742,7 @@ MATLAB has a **recursion limit** (default ~500). Check with `get(0, 'RecursionLi
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain how to export MATLAB data to an Excel file**
 
@@ -787,6 +801,7 @@ Use `writetable` for most cases — it handles headers, mixed types, and multipl
 ---
 
 ## Question 15
+- [ ] Done
 
 **What are the different data formats that MATLAB supports for import and export ?**
 
@@ -839,6 +854,7 @@ Use `.mat` format (v7.3) for large MATLAB data — it's HDF5-based and supports 
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain the process of embedding MATLAB code in a Java application**
 
@@ -916,6 +932,7 @@ The key distinction: **MATLAB Compiler SDK** creates standalone JARs (no MATLAB 
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe MATLAB’s capabilities for hypothesis testing**
 
@@ -981,6 +998,7 @@ Always check **assumptions** before running parametric tests: normality (`lillie
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain how to use MATLAB for principal component analysis (PCA)**
 
@@ -1076,6 +1094,7 @@ Always **standardize** data before PCA if features have different scales. `pca()
 ---
 
 ## Question 20
+- [ ] Done
 
 **What is the Deep Learning Toolbox in MATLAB , and what can it be used for?**
 
@@ -1149,6 +1168,7 @@ MATLAB's Deep Learning Toolbox excels in **rapid prototyping** and **embedded de
 ---
 
 ## Question 21
+- [ ] Done
 
 **Describe how MATLAB could be utilized for signal processing and analysis**
 
@@ -1218,6 +1238,7 @@ MATLAB is the **industry standard** for signal processing, especially in communi
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain how MATLAB can be applied to design and train a predictive model for financial time-series data**
 
@@ -1308,6 +1329,7 @@ For financial time-series: **never shuffle** data (use chronological train/test 
 ---
 
 ## Question 23
+- [ ] Done
 
 **How does MATLAB support the deployment of machine learning models ?**
 
@@ -1374,6 +1396,7 @@ MATLAB's deployment strength is **embedded systems** — MATLAB Coder generates 
 ---
 
 ## Question 24
+- [ ] Done
 
 **What are the benefits and limitations of using MATLAB for machine learning in comparison to other programming languages like Python ?**
 
@@ -1438,6 +1461,7 @@ The honest answer: **Python dominates ML** in industry due to cost, community, a
 ---
 
 ## Question 25
+- [ ] Done
 
 **Describe how MATLAB can be used for image and video processing tasks in the context of machine learning**
 
@@ -1521,6 +1545,7 @@ MATLAB's Computer Vision Toolbox provides **end-to-end workflows** from data lab
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain the MATLAB environment and its primary components**
 
@@ -1577,6 +1602,7 @@ savepath                  % save path for future sessions
 ---
 
 ## Question 27
+- [ ] Done
 
 **What is the difference between MATLAB and Octave ?**
 
@@ -1648,6 +1674,7 @@ Octave  →  Learning MATLAB syntax for free, academic projects,
 ---
 
 ## Question 28
+- [ ] Done
 
 **Explain the use of the MATLAB workspace and how it helps in managing variables**
 
@@ -1724,6 +1751,7 @@ openvar('A')   % open matrix in spreadsheet-like editor
 ---
 
 ## Question 29
+- [ ] Done
 
 **What are MATLAB’s built-in functions for statistical analysis ?**
 
@@ -1805,6 +1833,7 @@ normrnd(mu, sigma, [m,n])  % random samples
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain how matrix operations are performed in MATLAB**
 
@@ -1910,6 +1939,7 @@ A(:)               % flatten to column vector
 ---
 
 ## Question 31
+- [ ] Done
 
 **What are element-wise operations , and how do you perform them in MATLAB ?**
 
@@ -1999,6 +2029,7 @@ X_norm = (X - mean(X)) ./ std(X);   % z-score, element-wise
 ---
 
 ## Question 32
+- [ ] Done
 
 **Explain the concept of broadcasting in MATLAB**
 
@@ -2089,6 +2120,7 @@ C = A + B;                   % new way (implicit expansion)
 ---
 
 ## Question 33
+- [ ] Done
 
 **How do you create a basic plot in MATLAB ?**
 
@@ -2197,6 +2229,7 @@ exportgraphics(gcf, 'plot.pdf');% high-quality PDF (R2020a+)
 ---
 
 ## Question 34
+- [ ] Done
 
 **How can you improve the performance of your MATLAB code ?**
 
@@ -2331,6 +2364,7 @@ data_logical = logical(mask); % 1 byte per element
 ---
 
 ## Question 35
+- [ ] Done
 
 **Explain the use of vectorization for optimizing computations in MATLAB**
 
@@ -2459,6 +2493,7 @@ cost = (1/(2*m)) * sum((h - y).^2);
 ---
 
 ## Question 36
+- [ ] Done
 
 **Discuss the implementation of logistic regression in MATLAB**
 

@@ -1,6 +1,7 @@
 # Apache Spark Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you handle partitioning in Spark to optimize performance?**
 
@@ -47,6 +48,7 @@ df.write.partitionBy("date", "country").parquet("/data/output")
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you handle data skew in Spark?**
 
@@ -89,6 +91,7 @@ def salt_join(df_large, df_small, key_col, num_salts=10):
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is the difference between cache() and persist()?**
 
@@ -132,6 +135,7 @@ df.unpersist()
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you optimize Spark joins?**
 
@@ -168,6 +172,7 @@ large_df.write.bucketBy(100, "key").sortBy("key").saveAsTable("bucketed_large")
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you debug and monitor Spark applications?**
 
@@ -206,6 +211,7 @@ print(f"Partitions: {df.rdd.getNumPartitions()}")
 ---
 
 ## Question 6
+- [ ] Done
 
 **What configuration parameters are important for Spark performance?**
 
@@ -247,6 +253,7 @@ for item in spark.sparkContext.getConf().getAll():
 ---
 
 ## Question 7
+- [ ] Done
 
 **How can you minimize data shuffling in Spark?**
 
@@ -255,6 +262,7 @@ for item in spark.sparkContext.getConf().getAll():
 ---
 
 ## Question 8
+- [ ] Done
 
 **Discuss the importance and methods of caching/persistence in Spark**
 

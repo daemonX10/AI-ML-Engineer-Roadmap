@@ -1,6 +1,7 @@
 # Pca Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss how PCA can suffer from outlier sensitivity and ways to address it.**
 
@@ -46,6 +47,7 @@ Always visualize data before PCA. If outliers exist, address them first—PCA re
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you use PCA for data compression in a real-time streaming application?**
 
@@ -111,6 +113,7 @@ reconstructed = ipca.inverse_transform(compressed)
 ---
 
 ## Question 3
+- [ ] Done
 
 **How would you decide whether to use PCA or a classification algorithm for a given dataset?**
 
@@ -159,6 +162,7 @@ Data → Standardize → PCA → Classification Algorithm → Prediction
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss a case where PCA helped improve model performance by reducing overfitting.**
 
@@ -216,6 +220,7 @@ PCA acts as implicit regularization by constraining the model to a lower-dimensi
 ---
 
 ## Question 5
+- [ ] Done
 
 **Give an example of how PCA might be incorrectly applied to a dataset and propose a solution.**
 
@@ -270,6 +275,7 @@ X_pca = pca.fit_transform(X_scaled)
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss how you would ensure the robustness of PCA results against variations in the dataset.**
 
@@ -340,6 +346,7 @@ for _ in range(n_bootstrap):
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain how you would apply PCA in a stock market data analysis situation.**
 
@@ -380,6 +387,7 @@ PCA on stock return data identifies independent factors driving market movements
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe a scenario where using PCA might be detrimental to the performance of a machine learning model.**
 

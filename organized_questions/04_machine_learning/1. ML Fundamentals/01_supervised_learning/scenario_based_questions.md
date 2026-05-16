@@ -1,6 +1,7 @@
 # Supervised Learning - Scenario-Based Questions
 
 ## Question 1: How would you design a supervised learning model for predicting customer churn?
+- [ ] Done
 
 ### Problem Setup
 
@@ -62,6 +63,7 @@ model = XGBClassifier(scale_pos_weight=10)  # If 10:1 ratio
 ---
 
 ## Question 2: Discuss your strategy for developing a sentiment analysis model with supervised learning.
+- [ ] Done
 
 ### Two-Phase Strategy
 
@@ -134,6 +136,7 @@ training_args = TrainingArguments(
 ---
 
 ## Question 3: Propose a supervised learning approach for fraud detection in transactions.
+- [ ] Done
 
 ### Challenges
 
@@ -225,6 +228,7 @@ Transaction → Feature Generation → Model Score → Threshold → Action
 ---
 
 ## Question 4: Predictive Maintenance System
+- [ ] Done
 
 **Definition:**  
 Predictive maintenance uses supervised learning to predict equipment failures before they occur. It's framed as classification (failure within N days?) or regression (remaining useful life) using sensor data features.
@@ -254,6 +258,7 @@ df['temp_trend'] = df['temperature'].diff(24)  # slope
 ---
 
 ## Question 5: Automating Medical Image Diagnosis
+- [ ] Done
 
 **Definition:**  
 Medical image diagnosis automation uses CNNs with transfer learning to classify or segment medical images. It requires expert-labeled data, rigorous validation, interpretability (Grad-CAM), and careful deployment as a clinical decision support tool.

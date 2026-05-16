@@ -1,6 +1,7 @@
 # PyTorch Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement a complete training loop in PyTorch.**
 
@@ -99,6 +100,7 @@ trained_model = train_model(model, train_loader, train_loader, epochs=5)
 ---
 
 ## Question 2
+- [ ] Done
 
 **Build a CNN for image classification.**
 
@@ -173,6 +175,7 @@ print(f"Output shape: {output.shape}")  # [32, 10]
 ---
 
 ## Question 3
+- [ ] Done
 
 **Implement LSTM for sequence classification.**
 
@@ -248,6 +251,7 @@ print(f"Output shape: {output.shape}")  # [32, 2]
 ---
 
 ## Question 4
+- [ ] Done
 
 **Build a Transformer encoder from scratch.**
 
@@ -364,6 +368,7 @@ print(f"Output shape: {output.shape}")  # [32, 10]
 ---
 
 ## Question 5
+- [ ] Done
 
 **Implement a custom Dataset and DataLoader with data augmentation.**
 
@@ -462,6 +467,7 @@ class TensorDataset(Dataset):
 ---
 
 ## Question 6
+- [ ] Done
 
 **Build a Variational Autoencoder (VAE).**
 
@@ -545,6 +551,7 @@ def generate(model, num_samples=10):
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement a GAN (Generative Adversarial Network).**
 
@@ -645,6 +652,7 @@ train_gan(generator, discriminator, train_loader)
 ---
 
 ## Question 8
+- [ ] Done
 
 **Implement multi-GPU training with DataParallel and DistributedDataParallel.**
 
@@ -725,6 +733,7 @@ def train_distributed(rank, world_size):
 ---
 
 ## Question 9
+- [ ] Done
 
 **Create a custom loss function with gradient computation.**
 
@@ -807,6 +816,7 @@ class CombinedLoss(nn.Module):
 ---
 
 ## Question 10
+- [ ] Done
 
 **Implement model inference optimization with TorchScript and ONNX export.**
 
@@ -898,6 +908,7 @@ print(f"Quantized: {benchmark(quantized_model, x):.2f} ms")
 ---
 
 ## Question 11
+- [ ] Done
 
 **Code a Python script that demonstrates tensor operations, such as slicing, indexing, concatenating , and transposing , using PyTorch**
 
@@ -977,6 +988,7 @@ print(torch.matmul(a.float(), b))  # Matrix multiply
 ---
 
 ## Question 12
+- [ ] Done
 
 **Create a simple feedforward neural network in PyTorch that works on the MNIST dataset.**
 
@@ -1055,6 +1067,7 @@ for epoch in range(10):
 ---
 
 ## Question 13
+- [ ] Done
 
 **Write a PyTorch function to manually compute the gradients for a basic linear regression model.**
 
@@ -1125,6 +1138,7 @@ print(f"Autograd: w={w_t.item():.4f}, b={b_t.item():.4f}")
 ---
 
 ## Question 14
+- [ ] Done
 
 **Write a Python script using PyTorch that saves and loads a trained model.**
 
@@ -1202,6 +1216,7 @@ torch.onnx.export(model, dummy_input, 'model.onnx',
 ---
 
 ## Question 15
+- [ ] Done
 
 **Implement a PyTorch DataLoader for a given CSV dataset**
 
@@ -1258,6 +1273,7 @@ for epoch in range(10):
 ---
 
 ## Question 16
+- [ ] Done
 
 **Use PyTorch to implement a convolutional neural network (CNN) for image classification**
 

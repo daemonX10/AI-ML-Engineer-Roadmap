@@ -1,6 +1,7 @@
 # Decision Tree Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you approach a real-world problem requiring a Decision Tree model?**
 
@@ -114,6 +115,7 @@ If single tree performance insufficient:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Imagine you have a highly imbalanced dataset, how would you fine-tune a Decision Tree to handle it?**
 
@@ -225,6 +227,7 @@ skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss how you would apply a Decision Tree for a time-series prediction problem.**
 

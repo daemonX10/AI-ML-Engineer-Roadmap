@@ -1,6 +1,7 @@
 # Bias And Variance Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement k-fold cross-validation on a dataset to diagnose model bias and variance.**
 
@@ -122,6 +123,7 @@ Model: RandomForestClassifier
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a Python script to plot learning curves for understanding model bias and variance.**
 
@@ -271,6 +273,7 @@ GOOD FIT:
 ---
 
 ## Question 3
+- [ ] Done
 
 **Use L1 (Lasso) and L2 (Ridge) regularization to address a high-variance problem in a linear regression model.**
 
@@ -396,6 +399,7 @@ Coefficient Analysis:
 ---
 
 ## Question 4
+- [ ] Done
 
 **Code an ensemble method to combine multiple decision trees with the intention of reducing variance.**
 
@@ -561,6 +565,7 @@ Bagging:
 ---
 
 ## Question 5
+- [ ] Done
 
 **Implement a Grid Search in scikit-learn to find the optimal parameters and balance bias-variance in an SVM model.**
 

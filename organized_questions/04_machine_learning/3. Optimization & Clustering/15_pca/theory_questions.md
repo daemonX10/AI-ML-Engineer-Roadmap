@@ -1,6 +1,7 @@
 # Pca Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is Principal Component Analysis (PCA)?**
 
@@ -40,6 +41,7 @@ Imagine a 3D cloud of data points. PCA finds the best 2D plane to project this c
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you explain the concept of eigenvalues and eigenvectors in PCA?**
 
@@ -79,6 +81,7 @@ Think of eigenvectors as the natural axes of data spread. The largest eigenvalue
 ---
 
 ## Question 3
+- [ ] Done
 
 **Describe the role of the covariance matrix in PCA.**
 
@@ -115,6 +118,7 @@ The covariance matrix defines the shape and orientation of the data cloud. PCA f
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is the variance explained by a principal component?**
 
@@ -151,6 +155,7 @@ If eigenvalues are [4.0, 2.0, 0.5, 0.3, 0.2]:
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does scaling of features affect PCA?**
 
@@ -195,6 +200,7 @@ X_pca = pca.fit_transform(X_scaled)
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is the difference between PCA and Factor Analysis?**
 
@@ -229,6 +235,7 @@ For test scores (math, logic, reading, vocabulary):
 ---
 
 ## Question 7
+- [ ] Done
 
 **Can you explain the Singular Value Decomposition (SVD) and its relationship with PCA?**
 
@@ -265,6 +272,7 @@ SVD is like breaking down any transformation into three steps: rotation → scal
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is meant by 'loading' in the context of PCA?**
 
@@ -309,6 +317,7 @@ PC1 = "Socioeconomic Status", PC2 = "Life Stage"
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain the process of eigenvalue decomposition in PCA.**
 
@@ -351,6 +360,7 @@ The equation $Cv = \lambda v$ means: when covariance matrix acts on eigenvector,
 ---
 
 ## Question 10
+- [ ] Done
 
 **What are the limitations of PCA when it comes to handling non-linear relationships?**
 
@@ -387,6 +397,7 @@ When asked about PCA limitations → Non-linearity is the primary answer. Mentio
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain the curse of dimensionality and how PCA can help to mitigate it.**
 
@@ -425,6 +436,7 @@ Always mention PCA removes redundant information (correlated features) and noise
 ---
 
 ## Question 12
+- [ ] Done
 
 **How does PCA handle missing values in the data?**
 
@@ -471,6 +483,7 @@ Mention that imputation should be fit on training data only to avoid data leakag
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is the difference between PCA and t-SNE for dimensionality reduction?**
 
@@ -510,6 +523,7 @@ t-SNE cluster sizes and between-cluster distances are NOT meaningful!
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain how PCA can be used as a noise reduction technique.**
 
@@ -559,6 +573,7 @@ This works best when noise is uniformly distributed across all directions while 
 ---
 
 ## Question 15
+- [ ] Done
 
 **Describe how you would apply PCA for visualization purposes.**
 
@@ -610,6 +625,7 @@ plt.show()
 ---
 
 ## Question 16
+- [ ] Done
 
 **What are the advantages and drawbacks of kernel PCA compared to linear PCA?**
 
@@ -651,6 +667,7 @@ Kernel PCA extends PCA to handle non-linear data by using the kernel trick to im
 ---
 
 ## Question 17
+- [ ] Done
 
 **What are the best practices in visualizing the components obtained from PCA?**
 
@@ -700,6 +717,7 @@ plt.legend()
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain how Incremental PCA differs from standard PCA and when you would use it.**
 
@@ -750,6 +768,7 @@ Larger batch size → Better approximation but more memory.
 ---
 
 ## Question 19
+- [ ] Done
 
 **How does Generalized PCA differ from standard PCA and what are its applications?**
 
@@ -791,6 +810,7 @@ Standard PCA minimizing squared error is like maximizing Gaussian likelihood. Fo
 ---
 
 ## Question 20
+- [ ] Done
 
 **Define PCA and its optimization objective.**
 
@@ -825,6 +845,7 @@ Since total variance is constant:
 ---
 
 ## Question 21
+- [ ] Done
 
 **Show link between PCA and eigen-decomposition of covariance.**
 
@@ -864,6 +885,7 @@ $$\text{Variance} = v^T C v = v^T (\lambda v) = \lambda$$
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain variance maximization vs. reconstruction error minimization.**
 
@@ -901,6 +923,7 @@ $$\max(\text{Preserved}) \equiv \min(\text{Lost})$$
 ---
 
 ## Question 23
+- [ ] Done
 
 **Derive PCA via Singular Value Decomposition.**
 
@@ -946,6 +969,7 @@ $$T = XV = U\Sigma V^T V = U\Sigma$$
 ---
 
 ## Question 24
+- [ ] Done
 
 **Discuss importance of data centering before PCA.**
 
@@ -993,6 +1017,7 @@ X_scaled = StandardScaler().fit_transform(X)
 ---
 
 ## Question 25
+- [ ] Done
 
 **Why does scaling features change component loadings?**
 
@@ -1038,6 +1063,7 @@ Scaling changes feature variances, which changes their influence on PCA. Since l
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain meaning of scree plot and elbow criteria.**
 
@@ -1089,6 +1115,7 @@ plt.ylabel('Eigenvalue')
 ---
 
 ## Question 27
+- [ ] Done
 
 **How to decide number of components via Kaiser rule.**
 
@@ -1132,6 +1159,7 @@ Combine Kaiser rule with scree plot and cumulative variance for robust decision.
 ---
 
 ## Question 28
+- [ ] Done
 
 **Describe cumulative explained variance ratio.**
 
@@ -1180,6 +1208,7 @@ k = np.argmax(cumsum >= 0.95) + 1  # +1 for 0-indexing
 ---
 
 ## Question 29
+- [ ] Done
 
 **Explain whitening transformation and its risks.**
 
@@ -1224,6 +1253,7 @@ Whitening destroys the "principal" nature of PCA—all components become equally
 ---
 
 ## Question 30
+- [ ] Done
 
 **Compare PCA with Factor Analysis.**
 
@@ -1249,6 +1279,7 @@ Whitening destroys the "principal" nature of PCA—all components become equally
 ---
 
 ## Question 31
+- [ ] Done
 
 **Describe kernel PCA and nonlinear embeddings.**
 
@@ -1284,6 +1315,7 @@ A low-dimensional representation that preserves non-linear manifold structure.
 ---
 
 ## Question 32
+- [ ] Done
 
 **Discuss incremental PCA for streaming data.**
 
@@ -1319,6 +1351,7 @@ while new_batch_arrives:
 ---
 
 ## Question 33
+- [ ] Done
 
 **Explain randomized SVD acceleration.**
 
@@ -1358,6 +1391,7 @@ Very close to exact PCA for most practical purposes.
 ---
 
 ## Question 34
+- [ ] Done
 
 **Describe robust PCA and handling outliers.**
 
@@ -1397,6 +1431,7 @@ Standard PCA objective uses squared error—outliers have disproportionate influ
 ---
 
 ## Question 35
+- [ ] Done
 
 **Explain projecting new samples into PCA space.**
 
@@ -1438,6 +1473,7 @@ Using `fit_transform()` on test data → Creates incompatible transformation!
 ---
 
 ## Question 36
+- [ ] Done
 
 **Discuss PCA for missing-value imputation.**
 
@@ -1481,6 +1517,7 @@ X_imputed = imputer.fit_transform(X_with_missing)
 ---
 
 ## Question 37
+- [ ] Done
 
 **Compare PCA vs. autoencoders for dimensionality reduction.**
 
@@ -1521,6 +1558,7 @@ Linear autoencoder (no activation functions) with single hidden layer learns the
 ---
 
 ## Question 38
+- [ ] Done
 
 **Explain biplot interpretation.**
 
@@ -1573,6 +1611,7 @@ Understanding relationships between samples AND features simultaneously.
 ---
 
 ## Question 39
+- [ ] Done
 
 **Derive the PCA from the optimization perspective, i.e., minimization of reconstruction error.**
 
@@ -1604,6 +1643,7 @@ Maximize $Tr(V_k^T C V_k)$ subject to $V_k^T V_k = I$
 ---
 
 ## Question 40
+- [ ] Done
 
 **How do you determine the number of principal components to use?**
 
@@ -1632,6 +1672,7 @@ k = np.argmax(cumsum >= 0.95) + 1
 ---
 
 ## Question 41
+- [ ] Done
 
 **Provide examples of how PCA can be used in image processing.**
 
@@ -1661,6 +1702,7 @@ k = np.argmax(cumsum >= 0.95) + 1
 ---
 
 ## Question 42
+- [ ] Done
 
 **Can PCA be applied to categorical data? Why or why not?**
 
@@ -1691,6 +1733,7 @@ Standard PCA is NOT appropriate for categorical data.
 ---
 
 ## Question 43
+- [ ] Done
 
 **How can PCA be parallelized to handle very large datasets?**
 
@@ -1729,6 +1772,7 @@ IncrementalPCA(n_components=k, batch_size=1000)
 ---
 
 ## Question 44
+- [ ] Done
 
 **Compare the use of PCA to select features with other feature selection methods.**
 
@@ -1764,6 +1808,7 @@ PCA is feature EXTRACTION (creates new features), not feature SELECTION (picks o
 ---
 
 ## Question 45
+- [ ] Done
 
 **What recent advancements have been made concerning PCA for big data?**
 
@@ -1803,6 +1848,7 @@ PCA is feature EXTRACTION (creates new features), not feature SELECTION (picks o
 ---
 
 ## Question 46
+- [ ] Done
 
 **Discuss the importance of the trace of a matrix in the context of PCA.**
 
@@ -1838,6 +1884,7 @@ $$\text{Reconstruction Error} = Tr(C) - \sum_{i=1}^{k} \lambda_i$$
 ---
 
 ## Question 47
+- [ ] Done
 
 **Discuss the application of PCA in feature engineering.**
 
@@ -1879,6 +1926,7 @@ PCA is unsupervised—components maximize variance, not predictive power. Valida
 ---
 
 ## Question 48
+- [ ] Done
 
 **Discuss how Randomized PCA is used and its benefits over traditional PCA.**
 
@@ -1930,6 +1978,7 @@ sklearn defaults to 'auto' which uses randomized for large data with small k. Re
 ---
 
 ## Question 49
+- [ ] Done
 
 **Discuss how robust PCA attempts to handle outliers and its practical implications.**
 

@@ -3,6 +3,7 @@
 ## Semantic Segmentation
 
 ### Question 1
+- [ ] Done
 **Explain U-Net's encoder-decoder architecture with skip connections. Why are skip connections crucial for segmentation?**
 
 **Answer:**
@@ -111,6 +112,7 @@ class UNet(nn.Module):
 ---
 
 ### Question 2
+- [ ] Done
 **What are the key innovations in DeepLabv3+ (atrous convolutions, ASPP, encoder-decoder) for boundary delineation?**
 
 **Answer:**
@@ -284,6 +286,7 @@ class DeepLabV3Plus(nn.Module):
 ---
 
 ### Question 3
+- [ ] Done
 **Compare Dice loss vs. Cross-entropy for segmentation. When would you use focal loss or Lovász loss?**
 
 **Answer:**
@@ -451,6 +454,7 @@ class CombinedLoss(nn.Module):
 ---
 
 ### Question 4
+- [ ] Done
 **How do atrous/dilated convolutions capture multi-scale context without losing resolution?**
 
 **Answer:**
@@ -595,6 +599,7 @@ Use hybrid rates (e.g., 6, 12, 18) rather than powers of 2 to avoid systematic g
 ---
 
 ### Question 5
+- [ ] Done
 **Explain U-Net variants: U-Net++, Attention U-Net, and TransUNet. What problems does each solve?**
 
 **Answer:**
@@ -821,6 +826,7 @@ class TransUNet(nn.Module):
 ---
 
 ### Question 6
+- [ ] Done
 **How do you handle class imbalance in segmentation when some classes occupy very few pixels?**
 
 **Answer:**
@@ -1030,6 +1036,7 @@ class CopyPasteAugmentation:
 ---
 
 ### Question 7
+- [ ] Done
 **What techniques improve segmentation performance on small or thin objects (boundary loss, deep supervision)?**
 
 **Answer:**
@@ -1256,6 +1263,7 @@ class HighResolutionBranch(nn.Module):
 ---
 
 ### Question 8
+- [ ] Done
 **Explain the overlap-tile strategy for inference on large images that don't fit in memory.**
 
 **Answer:**
@@ -1470,6 +1478,7 @@ def predict_with_soft_accumulation(model, image, tile_size, overlap, num_classes
 ---
 
 ### Question 9
+- [ ] Done
 **How do you implement data augmentation that preserves spatial relationships for segmentation?**
 
 **Answer:**
@@ -1722,6 +1731,7 @@ train_transform = A.Compose([
 ---
 
 ### Question 10
+- [ ] Done
 **What approaches work for real-time semantic segmentation (BiSeNet, Fast-SCNN, EfficientPS)?**
 
 **Answer:**
@@ -1957,6 +1967,7 @@ class FastSCNN(nn.Module):
 ---
 
 ### Question 11
+- [ ] Done
 **How do you handle segmentation of objects with fuzzy or ambiguous boundaries?**
 
 **Answer:**
@@ -2171,6 +2182,7 @@ def generate_trimap(mask, erosion=10, dilation=10):
 ---
 
 ### Question 12
+- [ ] Done
 **Explain weakly supervised segmentation using image-level labels or bounding boxes instead of pixel masks.**
 
 **Answer:**
@@ -2410,6 +2422,7 @@ class IterativePseudoLabeling:
 ## Instance Segmentation
 
 ### Question 13
+- [ ] Done
 **How does Mask R-CNN's architecture balance object detection and pixel-level segmentation?**
 
 **Answer:**
@@ -2607,6 +2620,7 @@ def get_maskrcnn_model(num_classes):
 ---
 
 ### Question 14
+- [ ] Done
 **Explain the difference between ROIPool and ROIAlign. Why is ROIAlign crucial for mask quality?**
 
 **Answer:**
@@ -2793,6 +2807,7 @@ def compare_pool_vs_align():
 ---
 
 ### Question 15
+- [ ] Done
 **What are the trade-offs between two-stage (Mask R-CNN) and single-stage (YOLACT, SOLOv2) instance segmentation?**
 
 **Answer:**
@@ -2891,6 +2906,7 @@ def solov2_mask(features, kernels):
 ---
 
 ### Question 16
+- [ ] Done
 **How do you handle overlapping instances in dense object arrangements?**
 
 **Answer:**
@@ -3105,6 +3121,7 @@ class OcclusionAwareMaskHead(nn.Module):
 ---
 
 ### Question 17
+- [ ] Done
 **Explain panoptic segmentation and how it combines semantic and instance segmentation.**
 
 **Answer:**
@@ -3342,6 +3359,7 @@ def compute_pq(pred_segments, gt_segments, num_classes):
 ---
 
 ### Question 18
+- [ ] Done
 **What techniques help with segmenting objects with complex or irregular shapes?**
 
 **Answer:**
@@ -3573,6 +3591,7 @@ class BoundaryRefinementModule(nn.Module):
 ---
 
 ### Question 19
+- [ ] Done
 **How do you optimize Mask R-CNN for real-time applications without significant accuracy loss?**
 
 **Answer:**
@@ -3777,6 +3796,7 @@ def benchmark_configs():
 ## Vision Transformers (ViT)
 
 ### Question 20
+- [ ] Done
 **Explain the core innovation of Vision Transformers compared to CNNs. What inductive biases does ViT lack?**
 
 **Answer:**
@@ -3949,6 +3969,7 @@ def data_requirement_intuition():
 ---
 
 ### Question 21
+- [ ] Done
 **How are images converted into patch embeddings in ViT? Explain the linear projection layer.**
 
 **Answer:**
@@ -4099,6 +4120,7 @@ def verify_equivalence():
 ---
 
 ### Question 22
+- [ ] Done
 **What is the role of the [CLS] token and positional encodings in Vision Transformers?**
 
 **Answer:**
@@ -4282,6 +4304,7 @@ Learned position embeddings often show:
 ---
 
 ### Question 23
+- [ ] Done
 **Explain the computational complexity of ViT (O(n²) attention) and how it limits resolution scalability.**
 
 **Answer:**
@@ -4452,6 +4475,7 @@ class WindowedAttention(nn.Module):
 ---
 
 ### Question 24
+- [ ] Done
 **What are the data requirements for training ViT from scratch vs. using pre-trained models?**
 
 **Answer:**
@@ -4635,6 +4659,7 @@ class SmallDatasetStrategies:
 ---
 
 ### Question 25
+- [ ] Done
 **Explain DeiT (Data-efficient Image Transformers) and how knowledge distillation improves ViT training on smaller datasets.**
 
 **Answer:**
@@ -4830,6 +4855,7 @@ def train_deit():
 ---
 
 ### Question 26
+- [ ] Done
 **Describe Masked Autoencoder (MAE) pre-training for Vision Transformers. How does masking 75% of patches work?**
 
 **Answer:**
@@ -5044,6 +5070,7 @@ def finetune_from_mae(mae_model, num_classes):
 ---
 
 ### Question 27
+- [ ] Done
 **How do hybrid architectures combine CNN feature extraction with transformer attention?**
 
 **Answer:**
@@ -5195,6 +5222,7 @@ class EarlyConvViT(nn.Module):
 ---
 
 ### Question 28
+- [ ] Done
 **Explain attention visualization in ViT. How do you interpret attention patterns across layers?**
 
 **Answer:**
@@ -5371,6 +5399,7 @@ Different attention heads often specialize:
 ---
 
 ### Question 29
+- [ ] Done
 **What are the architectural variants of ViT (ViT-B, ViT-L, ViT-H) and their trade-offs?**
 
 **Answer:**
@@ -5525,6 +5554,7 @@ for variant in ['tiny', 'small', 'base', 'large', 'huge']:
 ---
 
 ### Question 30
+- [ ] Done
 **How does ViT handle different input image resolutions during fine-tuning vs. pre-training?**
 
 **Answer:**
@@ -5671,6 +5701,7 @@ class LearnablePositionInterpolation(nn.Module):
 ## Swin Transformer
 
 ### Question 31
+- [ ] Done
 **Explain shifted window partitioning in Swin Transformer. How does it enable cross-window connections?**
 
 **Answer:**
@@ -5863,6 +5894,7 @@ class SwinTransformerBlock(nn.Module):
 ---
 
 ### Question 32
+- [ ] Done
 **How does Swin Transformer's hierarchical representation differ from ViT's flat structure?**
 
 **Answer:**
@@ -6055,6 +6087,7 @@ class SwinFPN(nn.Module):
 ---
 
 ### Question 33
+- [ ] Done
 **Explain the linear complexity (O(n)) of Swin vs. quadratic complexity of ViT. How is this achieved?**
 
 **Answer:**
@@ -6236,6 +6269,7 @@ def benchmark_complexity(img_sizes=[224, 448, 672, 896]):
 ---
 
 ### Question 34
+- [ ] Done
 **Describe patch merging layers and how they create multi-scale feature maps.**
 
 **Answer:**
@@ -6427,6 +6461,7 @@ mask = upernet_decoder(features)
 ---
 
 ### Question 35
+- [ ] Done
 **Explain relative positional bias in Swin vs. absolute positional encoding in ViT.**
 
 **Answer:**
@@ -6594,6 +6629,7 @@ For window size M=7:
 ---
 
 ### Question 36
+- [ ] Done
 **How is Swin Transformer used as a backbone for object detection (Swin + FPN) and segmentation (Swin + UPerNet)?**
 
 **Answer:**
@@ -6839,6 +6875,7 @@ def build_segmentation_model():
 ---
 
 ### Question 37
+- [ ] Done
 **Compare Swin-T, Swin-S, Swin-B, and Swin-L configurations. How do you choose for your task?**
 
 **Answer:**
@@ -6963,6 +7000,7 @@ print(get_stage_channels('large'))  # [192, 384, 768, 1536]
 ---
 
 ### Question 38
+- [ ] Done
 **Explain Swin-V2 improvements: log-scaled continuous position bias, residual post-norm, and scaled cosine attention.**
 
 **Answer:**
@@ -7162,6 +7200,7 @@ class SwinV2Block(nn.Module):
 ---
 
 ### Question 39
+- [ ] Done
 **How does Video Swin Transformer extend the architecture for temporal modeling?**
 
 **Answer:**
@@ -7414,6 +7453,7 @@ class VideoSwinTransformer(nn.Module):
 ---
 
 ### Question 40
+- [ ] Done
 **Compare Swin Transformer to ConvNeXt. What design principles from Swin were adopted back into CNNs?**
 
 **Answer:**
@@ -7594,6 +7634,7 @@ def convnext_base():
 ## Segmentation Transformers
 
 ### Question 41
+- [ ] Done
 **Explain SETR (Segmentation Transformer) and how pure transformers handle dense prediction.**
 
 **Answer:**
@@ -7803,6 +7844,7 @@ class SETR_MLA(SETR):
 ---
 
 ### Question 42
+- [ ] Done
 **Describe SegFormer architecture and its efficient self-attention mechanism for segmentation.**
 
 **Answer:**
@@ -8071,6 +8113,7 @@ Where R = spatial reduction ratio (8,4,2,1 per stage)
 ---
 
 ### Question 43
+- [ ] Done
 **How does Mask2Former unify semantic, instance, and panoptic segmentation with a single architecture?**
 
 **Answer:**
@@ -8295,6 +8338,7 @@ def panoptic_inference(pred_classes, pred_masks, thing_ids, stuff_ids):
 ---
 
 ### Question 44
+- [ ] Done
 **Explain SAM (Segment Anything Model) and its promptable segmentation capabilities.**
 
 **Answer:**
@@ -8559,6 +8603,7 @@ def segment_with_sam(sam_model, image, points):
 ## Practical Considerations
 
 ### Question 45
+- [ ] Done
 **How do you handle temporal consistency in video semantic/instance segmentation?**
 
 **Answer:**
@@ -8796,6 +8841,7 @@ def temporal_smoothing(predictions, window_size=5):
 ---
 
 ### Question 46
+- [ ] Done
 **What approaches work for domain adaptation in segmentation across different imaging modalities?**
 
 **Answer:**
@@ -9016,6 +9062,7 @@ class FeatureAlignmentAdapter(nn.Module):
 ---
 
 ### Question 47
+- [ ] Done
 **Explain active learning strategies for efficient mask annotation in segmentation tasks.**
 
 **Answer:**
@@ -9253,6 +9300,7 @@ def annotation_cost_aware_selection(images, model, budget):
 ---
 
 ### Question 48
+- [ ] Done
 **How do you implement uncertainty quantification in segmentation predictions?**
 
 **Answer:**
@@ -9500,6 +9548,7 @@ def calibration_analysis(predictions, uncertainties, targets):
 ---
 
 ### Question 49
+- [ ] Done
 **What techniques help segment objects in adverse weather or lighting conditions?**
 
 **Answer:**
@@ -9776,6 +9825,7 @@ def train_with_adverse_augmentation():
 ---
 
 ### Question 50
+- [ ] Done
 **How do you handle segmentation with limited computational resources or memory on edge devices?**
 
 **Answer:**
@@ -10046,6 +10096,7 @@ def export_to_edge(model, example_input, format='onnx'):
 ## Evaluation & Medical Imaging
 
 ### Question 51
+- [ ] Done
 **Explain IoU, Dice coefficient, and boundary F1-score for segmentation evaluation. When to use each?**
 
 **Answer:**
@@ -10246,6 +10297,7 @@ Prediction: Shifted by 1 pixel
 ---
 
 ### Question 52
+- [ ] Done
 **How do you optimize U-Net architectures for medical image segmentation (3D U-Net, nnU-Net)?**
 
 **Answer:**
@@ -10506,6 +10558,7 @@ def medical_augmentation(volume, mask):
 ---
 
 ### Question 53
+- [ ] Done
 **What are the challenges of segmentation in specialized domains like satellite imagery or microscopy?**
 
 **Answer:**
@@ -10761,6 +10814,7 @@ def handle_class_imbalance(dataloader, num_classes):
 ---
 
 ### Question 54
+- [ ] Done
 **Explain federated learning for medical image segmentation across hospitals with privacy constraints.**
 
 **Answer:**
@@ -11026,6 +11080,7 @@ class FedProx:
 ---
 
 ### Question 55
+- [ ] Done
 **How do you handle noisy or inconsistent annotations in segmentation ground truth?**
 
 **Answer:**
@@ -11311,6 +11366,7 @@ def clean_labels_with_pretrained(model, dataset, threshold=0.9):
 ## Advanced Topics
 
 ### Question 56
+- [ ] Done
 **Explain few-shot segmentation in novel semantic categories without retraining.**
 
 **Answer:**
@@ -11564,6 +11620,7 @@ def few_shot_episode(model, query_loader, support_set, threshold=0.5):
 ---
 
 ### Question 57
+- [ ] Done
 **How do you implement knowledge distillation for compressing large segmentation models?**
 
 **Answer:**
@@ -11846,6 +11903,7 @@ def distillation_training(teacher, student, train_loader, epochs=100):
 ---
 
 ### Question 58
+- [ ] Done
 **What techniques help with explaining segmentation decisions for model interpretability?**
 
 **Answer:**
@@ -12148,6 +12206,7 @@ def visualize_explanation(image, explanation, title="Explanation"):
 ---
 
 ### Question 59
+- [ ] Done
 **How do you integrate conditional random fields (CRF) as post-processing for segmentation refinement?**
 
 **Answer:**
@@ -12438,6 +12497,7 @@ def apply_crf_batch(model, images, num_classes):
 ---
 
 ### Question 60
+- [ ] Done
 **Explain multi-task learning that combines segmentation with depth estimation or other vision tasks.**
 
 **Answer:**
@@ -12858,6 +12918,7 @@ def train_multi_task():
 # Vision Transformers (ViT) Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Describe the positional encoding scheme used in ViT.**
 
@@ -12866,6 +12927,7 @@ def train_multi_task():
 ---
 
 ## Question 2
+- [ ] Done
 
 **How does the self-attention mechanism work with image patches?**
 
@@ -12874,6 +12936,7 @@ def train_multi_task():
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are the computational advantages of patch-based processing?**
 
@@ -12882,6 +12945,7 @@ def train_multi_task():
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain the linear projection layer in ViT patch embedding.**
 
@@ -12890,6 +12954,7 @@ def train_multi_task():
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is the significance of patch size in ViT performance?**
 
@@ -12898,6 +12963,7 @@ def train_multi_task():
 ---
 
 ## Question 6
+- [ ] Done
 
 **Describe the pre-training strategy for large-scale ViT models.**
 
@@ -12906,6 +12972,7 @@ def train_multi_task():
 ---
 
 ## Question 7
+- [ ] Done
 
 **How does ViT compare to ResNet in terms of inductive biases?**
 
@@ -12914,6 +12981,7 @@ def train_multi_task():
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain the role of layer normalization in ViT blocks.**
 
@@ -12922,6 +12990,7 @@ def train_multi_task():
 ---
 
 ## Question 9
+- [ ] Done
 
 **How does transfer learning work with pre-trained ViT models?**
 
@@ -12930,6 +12999,7 @@ def train_multi_task():
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is the computational complexity of ViT compared to CNNs?**
 
@@ -12938,6 +13008,7 @@ def train_multi_task():
 ---
 
 ## Question 11
+- [ ] Done
 
 **Describe the MLP head used for classification in ViT.**
 
@@ -12946,6 +13017,7 @@ def train_multi_task():
 ---
 
 ## Question 12
+- [ ] Done
 
 **How do you visualize attention patterns in Vision Transformers?**
 
@@ -12954,6 +13026,7 @@ def train_multi_task():
 ---
 
 ## Question 13
+- [ ] Done
 
 **What are the limitations of ViT on small datasets?**
 
@@ -12962,6 +13035,7 @@ def train_multi_task():
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain the scaling laws for Vision Transformers.**
 
@@ -12970,6 +13044,7 @@ def train_multi_task():
 ---
 
 ## Question 15
+- [ ] Done
 
 **How does ViT handle object detection tasks (DETR)?**
 
@@ -12978,6 +13053,7 @@ def train_multi_task():
 ---
 
 ## Question 16
+- [ ] Done
 
 **What are hybrid architectures combining CNN and ViT?**
 
@@ -12986,6 +13062,7 @@ def train_multi_task():
 ---
 
 ## Question 17
+- [ ] Done
 
 **Describe the DeiT (Data-efficient image Transformers) approach.**
 
@@ -12994,6 +13071,7 @@ def train_multi_task():
 ---
 
 ## Question 18
+- [ ] Done
 
 **How does knowledge distillation improve ViT training?**
 
@@ -13002,6 +13080,7 @@ def train_multi_task():
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is the role of the distillation token in DeiT?**
 
@@ -13010,6 +13089,7 @@ def train_multi_task():
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain masked image modeling in ViT (MAE).**
 
@@ -13018,6 +13098,7 @@ def train_multi_task():
 ---
 
 ## Question 21
+- [ ] Done
 
 **How do you implement efficient attention for high-resolution images?**
 
@@ -13026,6 +13107,7 @@ def train_multi_task():
 ---
 
 ## Question 22
+- [ ] Done
 
 **Describe the fine-tuning process for downstream tasks.**
 
@@ -13034,6 +13116,7 @@ def train_multi_task():
 ---
 
 ## Question 23
+- [ ] Done
 
 **How does ViT perform on different types of visual tasks?**
 
@@ -13042,6 +13125,7 @@ def train_multi_task():
 ---
 
 ## Question 24
+- [ ] Done
 
 **What is the effect of different attention head configurations?**
 
@@ -13050,6 +13134,7 @@ def train_multi_task():
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain the role of dropout in ViT training.**
 
@@ -13058,6 +13143,7 @@ def train_multi_task():
 ---
 
 ## Question 26
+- [ ] Done
 
 **How do you handle class imbalance in ViT classification?**
 
@@ -13066,6 +13152,7 @@ def train_multi_task():
 ---
 
 ## Question 27
+- [ ] Done
 
 **Describe the attention rollout technique for interpretability.**
 
@@ -13074,6 +13161,7 @@ def train_multi_task():
 ---
 
 ## Question 28
+- [ ] Done
 
 **How does ViT handle multi-scale features?**
 
@@ -13082,6 +13170,7 @@ def train_multi_task():
 ---
 
 ## Question 29
+- [ ] Done
 
 **What are the optimization challenges specific to ViT training?**
 
@@ -13090,6 +13179,7 @@ def train_multi_task():
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain the concept of attention distance in ViT.**
 
@@ -13098,6 +13188,7 @@ def train_multi_task():
 ---
 
 ## Question 31
+- [ ] Done
 
 **How do you implement ViT for video understanding?**
 
@@ -13106,6 +13197,7 @@ def train_multi_task():
 ---
 
 ## Question 32
+- [ ] Done
 
 **What is the impact of batch size on ViT training stability?**
 
@@ -13114,6 +13206,7 @@ def train_multi_task():
 ---
 
 ## Question 33
+- [ ] Done
 
 **Describe the gradient flow characteristics in deep ViT models.**
 
@@ -13122,6 +13215,7 @@ def train_multi_task():
 ---
 
 ## Question 34
+- [ ] Done
 
 **How does ViT compare to EfficientNet in efficiency metrics?**
 
@@ -13130,6 +13224,7 @@ def train_multi_task():
 ---
 
 ## Question 35
+- [ ] Done
 
 **What are the deployment considerations for ViT models?**
 
@@ -13138,6 +13233,7 @@ def train_multi_task():
 ---
 
 ## Question 36
+- [ ] Done
 
 **Explain the role of warmup in ViT optimization.**
 
@@ -13146,6 +13242,7 @@ def train_multi_task():
 ---
 
 ## Question 37
+- [ ] Done
 
 **How do you handle computational constraints in ViT inference?**
 
@@ -13154,6 +13251,7 @@ def train_multi_task():
 ---
 
 ## Question 38
+- [ ] Done
 
 **What are the failure modes of Vision Transformers?**
 
@@ -13162,6 +13260,7 @@ def train_multi_task():
 ---
 
 ## Question 39
+- [ ] Done
 
 **Describe the attention patterns learned by different ViT layers.**
 
@@ -13170,6 +13269,7 @@ def train_multi_task():
 ---
 
 ## Question 40
+- [ ] Done
 
 **How does ViT perform on out-of-distribution images?**
 
@@ -13178,6 +13278,7 @@ def train_multi_task():
 ---
 
 ## Question 41
+- [ ] Done
 
 **What are the recent advances in efficient ViT architectures?**
 
@@ -13186,6 +13287,7 @@ def train_multi_task():
 ---
 
 ## Question 42
+- [ ] Done
 
 **Explain the relationship between ViT and CLIP models.**
 
@@ -13194,6 +13296,7 @@ def train_multi_task():
 ---
 
 ## Question 43
+- [ ] Done
 
 **What are the future research directions for Vision Transformers?**
 
@@ -13209,6 +13312,7 @@ def train_multi_task():
 # Swin Transformer Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain shifted window partitioning.**
 
@@ -13217,6 +13321,7 @@ def train_multi_task():
 ---
 
 ## Question 2
+- [ ] Done
 
 **Describe hierarchical representation in Swin.**
 
@@ -13225,6 +13330,7 @@ def train_multi_task():
 ---
 
 ## Question 3
+- [ ] Done
 
 **Compare Swin-T, Swin-S, Swin-B and Swin-L.**
 
@@ -13233,6 +13339,7 @@ def train_multi_task():
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain limitation of global attention and Swin's solution.**
 
@@ -13241,6 +13348,7 @@ def train_multi_task():
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss computational cost versus ViT.**
 
@@ -13249,6 +13357,7 @@ def train_multi_task():
 ---
 
 ## Question 6
+- [ ] Done
 
 **Describe patch merging and linear embedding.**
 
@@ -13257,6 +13366,7 @@ def train_multi_task():
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain Swin in object detection pipelines (Swin + FPN).**
 
@@ -13265,6 +13375,7 @@ def train_multi_task():
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe Swin for semantic segmentation (UPerNet).**
 
@@ -13273,6 +13384,7 @@ def train_multi_task():
 ---
 
 ## Question 9
+- [ ] Done
 
 **Discuss Swin-MST variant for super-resolution.**
 
@@ -13281,6 +13393,7 @@ def train_multi_task():
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain linear complexity to image size in Swin.**
 
@@ -13289,6 +13402,7 @@ def train_multi_task():
 ---
 
 ## Question 11
+- [ ] Done
 
 **Compare window size hyperparameter effects.**
 
@@ -13297,6 +13411,7 @@ def train_multi_task():
 ---
 
 ## Question 12
+- [ ] Done
 
 **Discuss window attention masking implementation.**
 
@@ -13305,6 +13420,7 @@ def train_multi_task():
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain gradient flow across windows.**
 
@@ -13313,6 +13429,7 @@ def train_multi_task():
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe Swin's performance on ImageNet-22K.**
 
@@ -13321,6 +13438,7 @@ def train_multi_task():
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain layer normalisation placement in Swin.**
 
@@ -13329,6 +13447,7 @@ def train_multi_task():
 ---
 
 ## Question 16
+- [ ] Done
 
 **Discuss data augmentation differences vs. CNNs.**
 
@@ -13337,6 +13456,7 @@ def train_multi_task():
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain adapting Swin for video (Swin-V2, Swin Transformer 3-D).**
 
@@ -13345,6 +13465,7 @@ def train_multi_task():
 ---
 
 ## Question 18
+- [ ] Done
 
 **Compare Swin to ConvNeXt performance.**
 
@@ -13353,6 +13474,7 @@ def train_multi_task():
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain meta-former perspective on Swin.**
 
@@ -13361,6 +13483,7 @@ def train_multi_task():
 ---
 
 ## Question 20
+- [ ] Done
 
 **Discuss Swin's transfer to medical image tasks.**
 
@@ -13369,6 +13492,7 @@ def train_multi_task():
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain model-scaling rules in Swin-V2.**
 
@@ -13377,6 +13501,7 @@ def train_multi_task():
 ---
 
 ## Question 22
+- [ ] Done
 
 **Describe training stability improvements in Swin-V2.**
 
@@ -13385,6 +13510,7 @@ def train_multi_task():
 ---
 
 ## Question 23
+- [ ] Done
 
 **Explain log-scaled continuous position bias.**
 
@@ -13393,6 +13519,7 @@ def train_multi_task():
 ---
 
 ## Question 24
+- [ ] Done
 
 **Discuss memory savings via zero-redundancy optimizer.**
 
@@ -13401,6 +13528,7 @@ def train_multi_task():
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain Swin's robustness to translation.**
 
@@ -13409,6 +13537,7 @@ def train_multi_task():
 ---
 
 ## Question 26
+- [ ] Done
 
 **Describe window-wise activation checkpointing.**
 
@@ -13417,6 +13546,7 @@ def train_multi_task():
 ---
 
 ## Question 27
+- [ ] Done
 
 **Discuss sparsity patterns for Swin inference acceleration.**
 
@@ -13425,6 +13555,7 @@ def train_multi_task():
 ---
 
 ## Question 28
+- [ ] Done
 
 **Explain distillation of Swin into smaller models.**
 
@@ -13433,6 +13564,7 @@ def train_multi_task():
 ---
 
 ## Question 29
+- [ ] Done
 
 **Describe challenges of Swin on non-square images.**
 
@@ -13441,6 +13573,7 @@ def train_multi_task():
 ---
 
 ## Question 30
+- [ ] Done
 
 **Discuss Swin in panoptic segmentation.**
 
@@ -13449,6 +13582,7 @@ def train_multi_task():
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain adapting Swin for multi-modal tasks.**
 
@@ -13457,6 +13591,7 @@ def train_multi_task():
 ---
 
 ## Question 32
+- [ ] Done
 
 **Describe cross-window attention variants.**
 
@@ -13465,6 +13600,7 @@ def train_multi_task():
 ---
 
 ## Question 33
+- [ ] Done
 
 **Discuss Swin's receptive field growth.**
 
@@ -13473,6 +13609,7 @@ def train_multi_task():
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain efficient attention kernels for Swin on GPUs.**
 
@@ -13481,6 +13618,7 @@ def train_multi_task():
 ---
 
 ## Question 35
+- [ ] Done
 
 **Discuss Swin for LiDAR point clouds.**
 
@@ -13489,6 +13627,7 @@ def train_multi_task():
 ---
 
 ## Question 36
+- [ ] Done
 
 **Explain hierarchical clustering vs. fixed windows.**
 
@@ -13497,6 +13636,7 @@ def train_multi_task():
 ---
 
 ## Question 37
+- [ ] Done
 
 **Discuss fine-tuning Swin on small datasets.**
 
@@ -13505,6 +13645,7 @@ def train_multi_task():
 ---
 
 ## Question 38
+- [ ] Done
 
 **Explain window size search with NAS.**
 
@@ -13513,6 +13654,7 @@ def train_multi_task():
 ---
 
 ## Question 39
+- [ ] Done
 
 **Discuss self-distillation in Swin.**
 
@@ -13521,6 +13663,7 @@ def train_multi_task():
 ---
 
 ## Question 40
+- [ ] Done
 
 **Explain cyclic shift and overlap ratio.**
 
@@ -13529,6 +13672,7 @@ def train_multi_task():
 ---
 
 ## Question 41
+- [ ] Done
 
 **Describe global average pooling head for classification.**
 
@@ -13537,6 +13681,7 @@ def train_multi_task():
 ---
 
 ## Question 42
+- [ ] Done
 
 **Discuss label smoothing and Mixup for Swin.**
 
@@ -13545,6 +13690,7 @@ def train_multi_task():
 ---
 
 ## Question 43
+- [ ] Done
 
 **Explain zero-shot robustness of Swin.**
 
@@ -13553,6 +13699,7 @@ def train_multi_task():
 ---
 
 ## Question 44
+- [ ] Done
 
 **Discuss quantisation aware training of Swin.**
 
@@ -13561,6 +13708,7 @@ def train_multi_task():
 ---
 
 ## Question 45
+- [ ] Done
 
 **Explain data efficient training recipe (DeiT) applied to Swin.**
 
@@ -13569,6 +13717,7 @@ def train_multi_task():
 ---
 
 ## Question 46
+- [ ] Done
 
 **Describe 3-D Swin for video action detection.**
 
@@ -13577,6 +13726,7 @@ def train_multi_task():
 ---
 
 ## Question 47
+- [ ] Done
 
 **Explain weakly supervised Swin pre-training.**
 
@@ -13585,6 +13735,7 @@ def train_multi_task():
 ---
 
 ## Question 48
+- [ ] Done
 
 **Discuss open-vocabulary detection with Swin backbones.**
 
@@ -13593,6 +13744,7 @@ def train_multi_task():
 ---
 
 ## Question 49
+- [ ] Done
 
 **Predict future Swin research directions.**
 
@@ -13608,6 +13760,7 @@ def train_multi_task():
 # U-Net Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain encoder–decoder structure of U-Net.**
 
@@ -13616,6 +13769,7 @@ def train_multi_task():
 ---
 
 ## Question 2
+- [ ] Done
 
 **Describe skip connections and why crucial.**
 
@@ -13624,6 +13778,7 @@ def train_multi_task():
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss U-Net for biomedical segmentation.**
 
@@ -13632,6 +13787,7 @@ def train_multi_task():
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain Dice loss vs. cross-entropy for segmentation.**
 
@@ -13640,6 +13796,7 @@ def train_multi_task():
 ---
 
 ## Question 5
+- [ ] Done
 
 **Describe training with patch extraction.**
 
@@ -13648,6 +13805,7 @@ def train_multi_task():
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain U-Net variants (U-Net++, UNet-3+).**
 
@@ -13656,6 +13814,7 @@ def train_multi_task():
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss attention U-Net.**
 
@@ -13664,6 +13823,7 @@ def train_multi_task():
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain 3-D U-Net.**
 
@@ -13672,6 +13832,7 @@ def train_multi_task():
 ---
 
 ## Question 9
+- [ ] Done
 
 **Describe residual U-Net.**
 
@@ -13680,6 +13841,7 @@ def train_multi_task():
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain multi-scale supervision.**
 
@@ -13688,6 +13850,7 @@ def train_multi_task():
 ---
 
 ## Question 11
+- [ ] Done
 
 **Discuss cascaded U-Nets for coarse-to-fine.**
 
@@ -13696,6 +13859,7 @@ def train_multi_task():
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain why symmetric depth helpful.**
 
@@ -13704,6 +13868,7 @@ def train_multi_task():
 ---
 
 ## Question 13
+- [ ] Done
 
 **Describe memory optimisation via tiled prediction.**
 
@@ -13712,6 +13877,7 @@ def train_multi_task():
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain deep supervision in U-Net++.**
 
@@ -13720,6 +13886,7 @@ def train_multi_task():
 ---
 
 ## Question 15
+- [ ] Done
 
 **Discuss efficient channel attention in U-Net.**
 
@@ -13728,6 +13895,7 @@ def train_multi_task():
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain use of dilated convolutions.**
 
@@ -13736,6 +13904,7 @@ def train_multi_task():
 ---
 
 ## Question 17
+- [ ] Done
 
 **Discuss domain adaptation in medical U-Nets.**
 
@@ -13744,6 +13913,7 @@ def train_multi_task():
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain UNet for self-driving car lane detection.**
 
@@ -13752,6 +13922,7 @@ def train_multi_task():
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe label smoothing for segmentation.**
 
@@ -13760,6 +13931,7 @@ def train_multi_task():
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain data augmentation specifics (elastic deformation).**
 
@@ -13768,6 +13940,7 @@ def train_multi_task():
 ---
 
 ## Question 21
+- [ ] Done
 
 **Discuss combined BCE+Dice loss.**
 
@@ -13776,6 +13949,7 @@ def train_multi_task():
 ---
 
 ## Question 22
+- [ ] Done
 
 **Describe group norm vs. batch norm in small batch segmentation.**
 
@@ -13784,6 +13958,7 @@ def train_multi_task():
 ---
 
 ## Question 23
+- [ ] Done
 
 **Explain Mobile U-Net for on-device.**
 
@@ -13792,6 +13967,7 @@ def train_multi_task():
 ---
 
 ## Question 24
+- [ ] Done
 
 **Discuss U-Net in GAN generator (Pix2Pix).**
 
@@ -13800,6 +13976,7 @@ def train_multi_task():
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain integrating transformers into U-Net (TransUNet).**
 
@@ -13808,6 +13985,7 @@ def train_multi_task():
 ---
 
 ## Question 26
+- [ ] Done
 
 **Describe U-NeXt and meta-former perspectives.**
 
@@ -13816,6 +13994,7 @@ def train_multi_task():
 ---
 
 ## Question 27
+- [ ] Done
 
 **Explain probabilistic U-Net for uncertainty.**
 
@@ -13824,6 +14003,7 @@ def train_multi_task():
 ---
 
 ## Question 28
+- [ ] Done
 
 **Discuss anisotropic receptive fields in 3-D U-Net.**
 
@@ -13832,6 +14012,7 @@ def train_multi_task():
 ---
 
 ## Question 29
+- [ ] Done
 
 **Explain federated learning with U-Nets across hospitals.**
 
@@ -13840,6 +14021,7 @@ def train_multi_task():
 ---
 
 ## Question 30
+- [ ] Done
 
 **Describe neural architecture search for U-Net blocks.**
 
@@ -13848,6 +14030,7 @@ def train_multi_task():
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain morphological post-processing.**
 
@@ -13856,6 +14039,7 @@ def train_multi_task():
 ---
 
 ## Question 32
+- [ ] Done
 
 **Discuss pyramid pooling vs. U-Net skip.**
 
@@ -13864,6 +14048,7 @@ def train_multi_task():
 ---
 
 ## Question 33
+- [ ] Done
 
 **Explain attention gates for organ segmentation.**
 
@@ -13872,6 +14057,7 @@ def train_multi_task():
 ---
 
 ## Question 34
+- [ ] Done
 
 **Describe class imbalance handling.**
 
@@ -13880,6 +14066,7 @@ def train_multi_task():
 ---
 
 ## Question 35
+- [ ] Done
 
 **Explain U-Net in domain generalisation tasks.**
 
@@ -13888,6 +14075,7 @@ def train_multi_task():
 ---
 
 ## Question 36
+- [ ] Done
 
 **Discuss adversarial training to refine segmentation.**
 
@@ -13896,6 +14084,7 @@ def train_multi_task():
 ---
 
 ## Question 37
+- [ ] Done
 
 **Explain boundary loss for thin structures.**
 
@@ -13904,6 +14093,7 @@ def train_multi_task():
 ---
 
 ## Question 38
+- [ ] Done
 
 **Describe ensemble of U-Nets.**
 
@@ -13912,6 +14102,7 @@ def train_multi_task():
 ---
 
 ## Question 39
+- [ ] Done
 
 **Explain quantisation for real-time semantic segmentation.**
 
@@ -13920,6 +14111,7 @@ def train_multi_task():
 ---
 
 ## Question 40
+- [ ] Done
 
 **Discuss semi-supervised consistency loss in U-Net.**
 
@@ -13928,6 +14120,7 @@ def train_multi_task():
 ---
 
 ## Question 41
+- [ ] Done
 
 **Explain multi-modal input (RGB + Depth) U-Net.**
 
@@ -13936,6 +14129,7 @@ def train_multi_task():
 ---
 
 ## Question 42
+- [ ] Done
 
 **Describe integration with conditional random fields.**
 
@@ -13944,6 +14138,7 @@ def train_multi_task():
 ---
 
 ## Question 43
+- [ ] Done
 
 **Explain hypertuning patch size and stride.**
 
@@ -13952,6 +14147,7 @@ def train_multi_task():
 ---
 
 ## Question 44
+- [ ] Done
 
 **Discuss memory attention U-Net.**
 
@@ -13960,6 +14156,7 @@ def train_multi_task():
 ---
 
 ## Question 45
+- [ ] Done
 
 **Explain jointly learning segmentation and uncertainty maps.**
 
@@ -13968,6 +14165,7 @@ def train_multi_task():
 ---
 
 ## Question 46
+- [ ] Done
 
 **Describe auto-context U-Net pipelines.**
 
@@ -13976,6 +14174,7 @@ def train_multi_task():
 ---
 
 ## Question 47
+- [ ] Done
 
 **Explain label propagation with U-Net.**
 
@@ -13984,6 +14183,7 @@ def train_multi_task():
 ---
 
 ## Question 48
+- [ ] Done
 
 **Discuss limitations of U-Net on very large images.**
 
@@ -13992,6 +14192,7 @@ def train_multi_task():
 ---
 
 ## Question 49
+- [ ] Done
 
 **Predict future U-Net innovations.**
 

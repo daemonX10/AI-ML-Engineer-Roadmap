@@ -1,6 +1,7 @@
 # Svm Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the use of SVM in bioinformatics and computational biology.**
 
@@ -42,6 +43,7 @@
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you apply SVM for image classification tasks?**
 
@@ -96,6 +98,7 @@ svm.fit(X_train, y_train)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the application of SVMs in text categorization.**
 
@@ -151,6 +154,7 @@ predictions = pipeline.predict(texts_test)
 ---
 
 ## Question 4
+- [ ] Done
 
 **How would you leverage SVM for intrusion detection in cybersecurity?**
 
@@ -206,6 +210,7 @@ oc_svm.fit(normal_data)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Propose an application of SVM in the healthcare industry for disease diagnosis.**
 
@@ -263,6 +268,7 @@ proba = pipeline.predict_proba(X_test)  # Probability for clinical use
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss the role of SVMs in the development of self-driving cars.**
 

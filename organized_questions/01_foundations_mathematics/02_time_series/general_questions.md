@@ -1,12 +1,13 @@
 # Time Series Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do time series differ from cross-sectional data?**
 
 **Definition:**
-- **Time Series:** Observations of a single entity over time
-- **Cross-Sectional:** Observations of multiple entities at a single point in time
+- **Time Series:** Observations of a single entity over time; order matters and values are correlated
+- **Cross-Sectional:** Observations of multiple entities at a single point in time; order does not matter
 
 **Key Differences:**
 
@@ -28,9 +29,15 @@
 - Cross-sectional: "Which companies have highest revenue today?"
 - Panel: "How do factors affect performance across companies over time?"
 
+**Practical Implications:**
+- Time series needs time-based splits; random shuffling leaks future information.
+- Cross-sectional methods assume independence; time series violates that.
+- Panel data usually needs entity-level effects to avoid mixing apples and oranges.
+
 ---
 
 ## Question 2
+- [ ] Done
 
 **How is seasonality addressed in the SARIMA (Seasonal ARIMA) model?**
 
@@ -51,6 +58,11 @@ SARIMA extends ARIMA with seasonal components: SARIMA(p,d,q)(P,D,Q)s
 | Seasonal AR (P) | Depends on $Y_{t-s}, Y_{t-2s}...$ | This January depends on last January |
 | Seasonal MA (Q) | Depends on $\epsilon_{t-s}, \epsilon_{t-2s}...$ | Seasonal shock effects |
 
+**Practical Guidance:**
+- Set $s$ from the calendar (7 for daily -> weekly, 12 for monthly -> yearly).
+- Use seasonal differencing only if the seasonal pattern is not stable.
+- Check residual ACF at seasonal lags; spikes mean seasonality remains.
+
 **Python Example:**
 ```python
 from statsmodels.tsa.statespace.sarimax import SARIMAX
@@ -63,6 +75,7 @@ result = model.fit()
 ---
 
 ## Question 3
+- [ ] Done
 
 **What metrics are commonly used to evaluate the accuracy of time series models?**
 
@@ -85,6 +98,15 @@ result = model.fit()
 |--------|---------------|----------|
 | **MASE** | < 1 beats naive, > 1 worse than naive | Best general-purpose metric |
 
+**Other Useful Metrics:**
+- **sMAPE:** Handles zeros better than MAPE for intermittent demand.
+- **WAPE:** Weighted absolute error; useful across many SKUs.
+- **Pinball Loss:** For quantile forecasts (prediction intervals).
+
+**Practical Notes:**
+- Report metrics by horizon (1-day, 7-day, 30-day) because errors grow with horizon.
+- Use a business-weighted metric if under-forecast and over-forecast costs differ.
+
 **Python Example:**
 ```python
 from sklearn.metrics import mean_absolute_error, mean_squared_error
@@ -98,6 +120,7 @@ mape = np.mean(np.abs((actual - forecast) / actual)) * 100
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you ensure that a time series forecasting model is not overfitting?**
 
@@ -126,9 +149,15 @@ mape = np.mean(np.abs((actual - forecast) / actual)) * 100
 - L1/L2 penalties on coefficients
 - Dropout in neural networks
 
+**Practical Checks:**
+- Always compare to a naive baseline.
+- Inspect residual ACF; remaining structure means the model is too simple or mis-specified.
+- Tune hyperparameters inside backtesting, not on the test set.
+
 ---
 
 ## Question 5
+- [ ] Done
 
 **In what ways can machine learning models be applied to time series forecasting?**
 
@@ -152,6 +181,11 @@ mape = np.mean(np.abs((actual - forecast) / actual)) * 100
 - Easily handles many exogenous variables
 - Captures non-linear relationships
 
+**Practical Notes:**
+- Leakage risk is high: lag and rolling features must use only past data.
+- Global models (one model for many series) often outperform per-series models at scale.
+- Multi-horizon forecasting is better done with direct or sequence-to-sequence targets.
+
 **Python Example:**
 ```python
 import pandas as pd
@@ -172,6 +206,7 @@ model.fit(X_train, y_train)
 ---
 
 ## Question 6
+- [ ] Done
 
 **What considerations should be taken into account when using time series analysis for climate change research?**
 
@@ -190,9 +225,15 @@ model.fit(X_train, y_train)
 - Graph Neural Networks for spatial dependencies
 - Long-term trend modeling (not differencing)
 
+**Practical Notes:**
+- Separate long-term trend (signal) from short-term variability (noise).
+- Use anomalies (de-meaned series) to compare across regions.
+- Report uncertainty bands; point estimates alone are misleading.
+
 ---
 
 ## Question 7
+- [ ] Done
 
 **How can time series models improve the forecasting of inventory levels in supply chain management?**
 
@@ -212,9 +253,15 @@ model.fit(X_train, y_train)
 
 **Model Choice:** SARIMAX (seasonal + external variables like promotions)
 
+**Practical Notes:**
+- Forecast lead-time demand, not just daily demand.
+- Use prediction intervals to set safety stock by service level.
+- For intermittent demand, use Croston/TSB or zero-inflated models.
+
 ---
 
 ## Question 8
+- [ ] Done
 
 **Outline a time series analysis method to identify trends in social media engagement.**
 
@@ -226,6 +273,11 @@ model.fit(X_train, y_train)
 3. **Analyze Trend:** Plot $T_t$ alone - shows long-term growth/decline
 4. **Analyze Seasonality:** Weekly patterns (best days to post)
 5. **Analyze Residuals:** Large spikes = viral posts or campaign effects
+
+**Practical Notes:**
+- Normalize by impressions or followers to avoid growth bias.
+- Tag campaigns and platform changes; they create step changes in trend.
+- Use changepoint detection if the trend shifts abruptly.
 
 **Python Example:**
 ```python
@@ -241,6 +293,7 @@ result.plot()
 ---
 
 ## Question 9
+- [ ] Done
 
 **How are Fourier transforms used in analyzing time series data?**
 
@@ -259,6 +312,11 @@ Fourier transform decomposes a signal from **time domain** to **frequency domain
 - Loses time information (knows "what frequency" but not "when")
 - For non-stationary: use wavelets instead
 
+**Practical Notes:**
+- Use windowing (e.g., Hann) to reduce spectral leakage.
+- Frequency resolution depends on series length and sampling rate.
+- Best for stable seasonal patterns; avoid if the period changes over time.
+
 **Python Example:**
 ```python
 import numpy as np
@@ -274,8 +332,9 @@ frequencies = np.fft.fftfreq(len(signal), d=1/sampling_rate)
 ---
 
 ## Question 10
+- [ ] Done
 
-**How candeep learning models, such asLong Short-Term Memory (LSTM) networks, be utilized for complextime series analysis tasks?**
+**How can deep learning models, such as Long Short-Term Memory (LSTM) networks, be utilized for complex time series analysis tasks?**
 
 **Why LSTMs for Time Series:**
 - Handle **long-range dependencies** (events from months ago still matter)
@@ -313,5 +372,10 @@ model.fit(X_train, y_train, epochs=50)
 - LSTM for complex patterns; ARIMA for simpler, interpretable cases
 - LSTMs need more data to train effectively
 - Consider Transformers as state-of-the-art alternative
+
+**Practical Tips:**
+- Always start with a strong baseline and backtest across horizons.
+- Scale inputs and use early stopping to avoid overfitting.
+- Use sequence-to-sequence outputs for multi-step forecasts rather than rolling 1-step.
 
 ---

@@ -1,6 +1,7 @@
 # Ensemble Learning Interview Questions - General Questions
 
 ## Question 1: What is ensemble learning in machine learning?
+- [ ] Done
 
 ### Definition
 Ensemble learning combines multiple base models (learners) to produce a single predictive model that is more robust and accurate than any individual model alone. The key idea is that diverse models make different errors, and combining them cancels out individual weaknesses.
@@ -29,6 +30,7 @@ Like consulting multiple doctors before surgery - each may have different expert
 ---
 
 ## Question 2: Explain the difference between bagging, boosting, and stacking
+- [ ] Done
 
 ### Definition
 **Bagging** trains models in parallel on different bootstrap samples. **Boosting** trains models sequentially, each focusing on previous errors. **Stacking** trains a meta-model to combine diverse base model predictions.
@@ -69,6 +71,7 @@ Like consulting multiple doctors before surgery - each may have different expert
 ---
 
 ## Question 3: Describe what a weak learner is and how it's used in ensemble methods
+- [ ] Done
 
 ### Definition
 A weak learner is a model that performs only slightly better than random guessing (accuracy > 50% for binary classification). Ensemble methods, especially boosting, combine many weak learners to create a strong learner with high accuracy.
@@ -99,6 +102,7 @@ Like building a committee of specialists - each knows a little about one thing, 
 ---
 
 ## Question 4: What are the advantages of using ensemble learning methods over single models?
+- [ ] Done
 
 ### Definition
 Ensemble methods provide improved accuracy, robustness, and generalization by combining multiple models, effectively reducing both bias and variance while being more resistant to noise and outliers.
@@ -130,6 +134,7 @@ Ensemble methods provide improved accuracy, robustness, and generalization by co
 ---
 
 ## Question 5: How does ensemble learning help with the variance and bias trade-off?
+- [ ] Done
 
 ### Definition
 Different ensemble methods target different components of error. **Bagging** primarily reduces variance by averaging diverse models. **Boosting** primarily reduces bias by sequentially correcting errors. The choice depends on whether the base model suffers from high bias or high variance.
@@ -159,6 +164,7 @@ Variance reduces as M increases.
 ---
 
 ## Question 6: What is a bootstrap sample and how is it used in bagging?
+- [ ] Done
 
 ### Definition
 A bootstrap sample is a dataset created by randomly sampling N observations from the original dataset **with replacement**, where N equals the original dataset size. In bagging, each base model is trained on a different bootstrap sample to introduce diversity.
@@ -198,6 +204,7 @@ def create_bootstrap_sample(X, y):
 ---
 
 ## Question 7: Explain the main idea behind the Random Forest algorithm
+- [ ] Done
 
 ### Definition
 Random Forest is a bagging ensemble of decision trees with an additional layer of randomness: each tree is trained on a bootstrap sample AND considers only a random subset of features at each split. This dual randomization creates highly diverse trees.
@@ -235,6 +242,7 @@ Random Forest is a bagging ensemble of decision trees with an additional layer o
 ---
 
 ## Question 8: How does the boosting technique improve weak learners?
+- [ ] Done
 
 ### Definition
 Boosting improves weak learners by training them sequentially, where each new learner focuses on the mistakes of the ensemble so far. It converts high-bias, low-variance models into a low-bias, lower-variance ensemble.
@@ -271,6 +279,7 @@ Where:
 ---
 
 ## Question 9: What is model stacking and how do you select base learners for it?
+- [ ] Done
 
 ### Definition
 Stacking (Stacked Generalization) trains a meta-model to optimally combine predictions from diverse base learners. The meta-model learns which base model to trust for different types of inputs.
@@ -319,6 +328,7 @@ Level 1 (Meta-Model):
 ---
 
 ## Question 10: How can ensemble learning be used for both classification and regression tasks?
+- [ ] Done
 
 ### Definition
 Ensemble methods work for both classification and regression by changing only the aggregation method. Classification uses voting (hard or soft), while regression uses averaging or weighted averaging of predictions.
@@ -368,6 +378,7 @@ Ensemble methods work for both classification and regression by changing only th
 ---
 
 ## Question 11: Describe the AdaBoost algorithm and its process
+- [ ] Done
 
 ### Definition
 AdaBoost (Adaptive Boosting) sequentially trains weak classifiers, giving more weight to misclassified samples at each iteration. The final prediction is a weighted vote where better classifiers have more influence.
@@ -402,6 +413,7 @@ AdaBoost (Adaptive Boosting) sequentially trains weak classifiers, giving more w
 ---
 
 ## Question 12: How does Gradient Boosting work and what makes it different from AdaBoost?
+- [ ] Done
 
 ### Definition
 Gradient Boosting builds an ensemble by sequentially fitting new models to the **negative gradient (residuals)** of the loss function. Unlike AdaBoost which adjusts sample weights, Gradient Boosting directly fits to prediction errors.
@@ -435,6 +447,7 @@ Gradient Boosting builds an ensemble by sequentially fitting new models to the *
 ---
 
 ## Question 13: Explain XGBoost and its advantages over other boosting methods
+- [ ] Done
 
 ### Definition
 XGBoost (Extreme Gradient Boosting) is an optimized, scalable implementation of gradient boosting with regularization, parallel processing, and advanced algorithmic optimizations that make it faster and more accurate.
@@ -484,6 +497,7 @@ params = {
 ---
 
 ## Question 14: Discuss the principle behind the LightGBM algorithm
+- [ ] Done
 
 ### Definition
 LightGBM (Light Gradient Boosting Machine) is a gradient boosting framework that uses histogram-based learning and leaf-wise tree growth for faster training and lower memory usage while maintaining high accuracy.
@@ -553,6 +567,7 @@ params = {
 ---
 
 ## Question 15: How does CatBoost handle categorical features differently from other boosting algorithms?
+- [ ] Done
 
 ### Definition
 CatBoost (Categorical Boosting) uses **Ordered Target Statistics** to encode categorical features without data leakage, and employs **Ordered Boosting** to reduce prediction shift, making it superior for datasets with many categorical variables.
@@ -596,6 +611,7 @@ $$\hat{x}_i^k = \frac{\sum_{j<i, x_j=k} y_j + a \cdot p}{\sum_{j<i, x_j=k} 1 + a
 ---
 
 ## Question 16: What is the concept of feature bagging and how does it relate to Random Forests?
+- [ ] Done
 
 ### Definition
 Feature bagging (feature subspace method) randomly selects a subset of features to consider at each split point in a decision tree. In Random Forest, this creates tree diversity beyond what bootstrap sampling alone provides.
@@ -638,6 +654,7 @@ Lower correlation (ρ) → lower ensemble variance
 ---
 
 ## Question 17: Describe the voting classifier and when it should be used
+- [ ] Done
 
 ### Definition
 A Voting Classifier combines predictions from multiple different classifiers. **Hard voting** uses majority class. **Soft voting** averages class probabilities and picks the highest.
@@ -698,6 +715,7 @@ soft_voting = VotingClassifier(
 ---
 
 ## Question 18: Explain the concept of homogeneous and heterogeneous ensembles
+- [ ] Done
 
 ### Definition
 **Homogeneous ensembles** use the same base algorithm with different training data/parameters. **Heterogeneous ensembles** combine different algorithms. This distinction affects how diversity is achieved.
@@ -744,6 +762,7 @@ soft_voting = VotingClassifier(
 ---
 
 ## Question 19: What is the out-of-bag error in a Random Forest and how is it useful?
+- [ ] Done
 
 ### Definition
 Out-of-Bag (OOB) error is an estimate of generalization error using samples not included in each tree's bootstrap sample. Since ~37% of data is left out per tree, each sample can be predicted by trees that didn't train on it.
@@ -792,6 +811,7 @@ print(f"OOB Score: {rf.oob_score_:.4f}")
 ---
 
 ## Question 20: How does ensemble diversity affect the performance of an ensemble model?
+- [ ] Done
 
 ### Definition
 Ensemble diversity measures how differently base models make errors. Higher diversity means models disagree on which samples they misclassify. Maximum benefit comes when models are both accurate AND diverse - making different mistakes that cancel out.

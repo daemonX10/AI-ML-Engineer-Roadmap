@@ -1,6 +1,7 @@
 # K Nearest Neighbors Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you apply the K-NN algorithm in a recommendation system?**
 

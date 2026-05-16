@@ -1,6 +1,7 @@
 # Feature Engineering Interview Questions - Scenario-Based Questions
 
 ## Question 1: Explain how you would perform feature engineering for a recommendation system.
+- [ ] Done
 
 ### Answer
 
@@ -72,6 +73,7 @@ def create_interaction_features(user_id, item_id, df):
 ---
 
 ## Question 2: Describe the feature engineering process you would use for a customer churn prediction model.
+- [ ] Done
 
 ### Answer
 
@@ -150,6 +152,7 @@ def engineer_churn_features(df, snapshot_date):
 ---
 
 ## Question 3: You're building a predictive maintenance model. What types of features would you engineer from sensor data?
+- [ ] Done
 
 ### Answer
 
@@ -356,6 +359,7 @@ def predictive_maintenance_features(df, sensor_cols, sampling_rate=100):
 ---
 
 ## Question 4: You're implementing a real-time anomaly detection system. What feature engineering strategies would you employ to detect anomalies in streaming data?
+- [ ] Done
 
 ### Answer
 
@@ -681,6 +685,7 @@ for reading in data_stream:
 ---
 
 ## Question 5: You're working on a sentiment analysis project for social media. What features would you engineer from the text data to improve the model's performance?
+- [ ] Done
 
 ### Answer
 

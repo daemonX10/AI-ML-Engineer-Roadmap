@@ -3,6 +3,7 @@
 ## Prompt Engineering Fundamentals
 
 ### Question 1
+- [ ] Done
 **How do you design prompts that consistently elicit desired behaviors across different LLM architectures?**
 
 **Answer:**
@@ -96,6 +97,7 @@ class CrossArchitecturePrompt:
 ---
 
 ### Question 2
+- [ ] Done
 **Explain chain-of-thought (CoT) prompting and when it significantly improves reasoning performance.**
 
 **Answer:**
@@ -208,6 +210,7 @@ Solve this problem by following these steps:
 ---
 
 ### Question 3
+- [ ] Done
 **How do you implement few-shot prompting with optimal example selection strategies?**
 
 **Answer:**
@@ -371,6 +374,7 @@ def build_few_shot_prompt(examples: List[dict], query: str) -> str:
 ---
 
 ### Question 4
+- [ ] Done
 **What is zero-shot vs few-shot vs many-shot prompting and when to use each approach?**
 
 **Answer:**
@@ -516,6 +520,7 @@ Accuracy
 ---
 
 ### Question 5
+- [ ] Done
 **What approaches work best for reducing prompt sensitivity and improving output robustness?**
 
 **Answer:**
@@ -681,6 +686,7 @@ Respond with ONLY the requested output, no explanations.
 ---
 
 ### Question 6
+- [ ] Done
 **How do you design prompts that minimize harmful, biased, or hallucinated outputs?**
 
 **Answer:**
@@ -831,6 +837,7 @@ Response:"""
 ---
 
 ### Question 7
+- [ ] Done
 **What techniques help with measuring and evaluating prompt effectiveness quantitatively?**
 
 **Answer:**
@@ -1004,6 +1011,7 @@ def create_evaluation_suite():
 ## Advanced Prompting Techniques
 
 ### Question 8
+- [ ] Done
 **Explain self-consistency prompting and how it improves reasoning reliability.**
 
 **Answer:**
@@ -1191,6 +1199,7 @@ class SelfConsistency:
 ---
 
 ### Question 9
+- [ ] Done
 **What is Tree-of-Thoughts (ToT) prompting and when does it outperform linear CoT?**
 
 **Answer:**
@@ -1384,6 +1393,7 @@ Score (just the number):"""
 ---
 
 ### Question 10
+- [ ] Done
 **How do you implement meta-prompting strategies for complex multi-step tasks?**
 
 **Answer:**
@@ -1591,6 +1601,7 @@ Response:"""
 ---
 
 ### Question 11
+- [ ] Done
 **How do you design prompts for specific output formats (JSON, code, structured data)?**
 
 **Answer:**
@@ -1778,6 +1789,7 @@ Only return the JSON, no explanation."""
 ---
 
 ### Question 12
+- [ ] Done
 **What strategies help with prompt consistency across different model versions and providers?**
 
 **Answer:**
@@ -1969,6 +1981,7 @@ def create_classification_template():
 ---
 
 ### Question 13
+- [ ] Done
 **How do you implement dynamic prompting that adapts to context and user needs?**
 
 **Answer:**
@@ -2150,6 +2163,7 @@ Improved response:"""
 ---
 
 ### Question 14
+- [ ] Done
 **What approaches work best for prompt engineering in specialized domains (legal, medical, technical)?**
 
 **Answer:**
@@ -2334,6 +2348,7 @@ Patient Education Content:"""
 ## Production Prompt Management
 
 ### Question 15
+- [ ] Done
 **How do you handle prompt versioning and management in production systems?**
 
 **Answer:**
@@ -2531,6 +2546,7 @@ class PromptManager:
 ---
 
 ### Question 16
+- [ ] Done
 **What strategies help with A/B testing different prompts in production?**
 
 **Answer:**
@@ -2724,6 +2740,7 @@ def run_prompt_experiment():
 ---
 
 ### Question 17
+- [ ] Done
 **How do you implement robust error handling when prompts produce unexpected outputs?**
 
 **Answer:**
@@ -2918,6 +2935,7 @@ class RateLimitError(Exception):
 ---
 
 ### Question 18
+- [ ] Done
 **What approaches work best for combining prompt engineering with fine-tuning strategies?**
 
 **Answer:**
@@ -3102,6 +3120,7 @@ Need domain knowledge? → RAG + either
 ---
 
 ### Question 19
+- [ ] Done
 **How do you implement efficient prompt testing and validation pipelines?**
 
 **Answer:**
@@ -3325,6 +3344,7 @@ class PromptTestPipeline:
 ---
 
 ### Question 20
+- [ ] Done
 **What techniques work best for prompt engineering with regulatory compliance needs?**
 
 **Answer:**
@@ -3569,6 +3589,7 @@ Every response must include:
 ## RAG Architecture Fundamentals
 
 ### Question 21
+- [ ] Done
 **How do you design RAG systems that effectively balance retrieval relevance and generation quality?**
 
 **Answer:**
@@ -3744,6 +3765,7 @@ class AdaptiveRAG:
 ---
 
 ### Question 22
+- [ ] Done
 **What techniques work best for chunking and indexing documents in RAG knowledge bases?**
 
 **Answer:**
@@ -3964,6 +3986,7 @@ class DocumentIndexer:
 ---
 
 ### Question 23
+- [ ] Done
 **How do you determine optimal chunk size and overlap for different document types?**
 
 **Answer:**
@@ -4154,6 +4177,7 @@ class ChunkOptimizer:
 ---
 
 ### Question 24
+- [ ] Done
 **Explain dense retrieval vs sparse retrieval (BM25) and when to use hybrid approaches.**
 
 **Answer:**
@@ -4345,6 +4369,7 @@ class HybridRetriever:
 ---
 
 ### Question 25
+- [ ] Done
 **How do you design RAG architectures that maintain factual accuracy and reduce hallucination?**
 
 **Answer:**
@@ -4549,6 +4574,7 @@ class HallucinationDetector:
 ---
 
 ### Question 26
+- [ ] Done
 **What approaches work best for real-time RAG with sub-second latency requirements?**
 
 **Answer:**
@@ -4736,6 +4762,7 @@ class QueryOptimizations:
 ## RAG Retrieval Strategies
 
 ### Question 27
+- [ ] Done
 **How do you implement re-ranking strategies to improve retrieval quality?**
 
 **Answer:**
@@ -4940,6 +4967,7 @@ Ranking:"""
 ---
 
 ### Question 28
+- [ ] Done
 **What is HyDE (Hypothetical Document Embeddings) and when does it improve retrieval?**
 
 **Answer:**
@@ -5130,6 +5158,7 @@ Hypothetical answer paragraph:
 ---
 
 ### Question 29
+- [ ] Done
 **How do you implement dynamic retrieval strategies that adapt to query complexity?**
 
 **Answer:**
@@ -5329,6 +5358,7 @@ Follow-up query:"""
 ---
 
 ### Question 30
+- [ ] Done
 **How do you handle RAG for queries requiring information from multiple documents?**
 
 **Answer:**
@@ -5550,6 +5580,7 @@ Answer:"""
 ---
 
 ### Question 31
+- [ ] Done
 **What techniques help with explaining RAG decisions and providing source attribution?**
 
 **Answer:**
@@ -5766,6 +5797,7 @@ Answer:"""
 ---
 
 ### Question 32
+- [ ] Done
 **How do you implement parent-child document retrieval and hierarchical chunking?**
 
 **Answer:**
@@ -5973,6 +6005,7 @@ class HierarchicalRetriever:
 ## RAG Evaluation & Quality
 
 ### Question 33
+- [ ] Done
 **How do you evaluate RAG systems when ground truth answers aren't available?**
 
 **Answer:**
@@ -6143,6 +6176,7 @@ Score:"""
 ---
 
 ### Question 34
+- [ ] Done
 **What metrics (faithfulness, relevance, context precision) best measure RAG quality?**
 
 **Answer:**
@@ -6332,6 +6366,7 @@ Score (1-5):"""
 ---
 
 ### Question 35
+- [ ] Done
 **How do you handle RAG quality control and confidence scoring for generated answers?**
 
 **Answer:**
@@ -6551,6 +6586,7 @@ class ConfidenceScorer:
 ---
 
 ### Question 36
+- [ ] Done
 **What approaches help with RAG robustness against noisy or outdated knowledge sources?**
 
 **Answer:**
@@ -6744,6 +6780,7 @@ Conflicting?"""
 ---
 
 ### Question 37
+- [ ] Done
 **How do you handle RAG quality assessment when sources have conflicting information?**
 
 **Answer:**
@@ -6986,6 +7023,7 @@ Answer:"""
 ## RAG Knowledge Management
 
 ### Question 38
+- [ ] Done
 **How do you handle RAG knowledge base updates while maintaining retrieval consistency?**
 
 **Answer:**
@@ -7193,6 +7231,7 @@ class IncrementalUpdater:
 ---
 
 ### Question 39
+- [ ] Done
 **What strategies help with RAG for questions requiring temporal or current information?**
 
 **Answer:**
@@ -7380,6 +7419,7 @@ Answer (noting dates of information):"""
 ---
 
 ### Question 40
+- [ ] Done
 **How do you implement RAG with structured knowledge graphs and databases?**
 
 **Answer:**
@@ -7555,6 +7595,7 @@ Answer:"""
 ---
 
 ### Question 41
+- [ ] Done
 **What approaches help with RAG for low-resource domains with limited knowledge bases?**
 
 **Answer:**
@@ -7758,6 +7799,7 @@ Question:"""
 ---
 
 ### Question 42
+- [ ] Done
 **How do you implement multi-modal RAG combining text, images, and structured data?**
 
 **Answer:**
@@ -7976,6 +8018,7 @@ class ImageRAG:
 ## RAG Production & Scaling
 
 ### Question 43
+- [ ] Done
 **How do you implement privacy-preserving RAG for sensitive organizational knowledge?**
 
 **Answer:**
@@ -8190,6 +8233,7 @@ class DataMasker:
 ---
 
 ### Question 44
+- [ ] Done
 **What strategies work best for RAG with regulatory compliance and audit requirements?**
 
 **Answer:**
@@ -8408,6 +8452,7 @@ class ComplianceRAG:
 ---
 
 ### Question 45
+- [ ] Done
 **How do you implement monitoring and performance tracking for RAG systems?**
 
 **Answer:**
@@ -8617,6 +8662,7 @@ class InstrumentedRAG:
 ---
 
 ### Question 46
+- [ ] Done
 **What techniques work best for RAG in high-concurrency and multi-user environments?**
 
 **Answer:**
@@ -8845,6 +8891,7 @@ class BatchProcessor:
 ---
 
 ### Question 47
+- [ ] Done
 **How do you implement efficient batch processing for large-scale RAG applications?**
 
 **Answer:**
@@ -9061,6 +9108,7 @@ class ChunkedFileProcessor:
 ---
 
 ### Question 48
+- [ ] Done
 **How do you handle RAG integration with existing enterprise search and knowledge systems?**
 
 **Answer:**
@@ -9308,6 +9356,7 @@ class HybridEnterpriseSearch:
 ## Advanced RAG Patterns
 
 ### Question 49
+- [ ] Done
 **What is Agentic RAG and how does it differ from standard RAG pipelines?**
 
 **Answer:**
@@ -9536,6 +9585,7 @@ class ReactAgent:
 ---
 
 ### Question 50
+- [ ] Done
 **How do you implement Corrective RAG (CRAG) for self-correcting retrieval?**
 
 **Answer:**
@@ -9752,6 +9802,7 @@ Score (0-1):"""
 ---
 
 ### Question 51
+- [ ] Done
 **What is Self-RAG and when does reflective retrieval improve quality?**
 
 **Answer:**
@@ -9983,6 +10034,7 @@ class AdaptiveRAG:
 ---
 
 ### Question 52
+- [ ] Done
 **How do you implement conversational RAG with multi-turn context tracking?**
 
 **Answer:**
@@ -10227,6 +10279,7 @@ Standalone question:"""
 ---
 
 ### Question 53
+- [ ] Done
 **What approaches help with RAG personalization for different user contexts?**
 
 **Answer:**
@@ -10464,6 +10517,7 @@ Expertise level:"""
 ## LLM Application Patterns
 
 ### Question 54
+- [ ] Done
 **How do you implement LLM-based agents with tool use and function calling?**
 
 **Answer:**
@@ -10679,6 +10733,7 @@ class AgentWithMemory:
 ---
 
 ### Question 55
+- [ ] Done
 **What are the best practices for implementing content filtering and safety measures?**
 
 **Answer:**
@@ -10917,6 +10972,7 @@ class SafeLLM:
 ---
 
 ### Question 56
+- [ ] Done
 **How do you handle data retention and privacy concerns when using LLM APIs with user data?**
 
 **Answer:**
@@ -11125,6 +11181,7 @@ class SensitivityDetector:
 ---
 
 ### Question 57
+- [ ] Done
 **What strategies help ensure LLM-generated content meets specific brand voice and style requirements?**
 
 **Answer:**
@@ -11354,6 +11411,7 @@ def create_brand_guidelines():
 ---
 
 ### Question 58
+- [ ] Done
 **How do you implement cost optimization strategies for large-scale LLM API usage?**
 
 **Answer:**
@@ -11580,6 +11638,7 @@ class CostMonitor:
 ---
 
 ### Question 59
+- [ ] Done
 **What are the key performance indicators (KPIs) for measuring LLM application success?**
 
 **Answer:**
@@ -11821,6 +11880,7 @@ class LLMKPITracker:
 ---
 
 ### Question 60
+- [ ] Done
 **How do you implement effective fallback mechanisms when LLM services are unavailable?**
 
 **Answer:**
@@ -12107,6 +12167,7 @@ class GracefulDegradation:
 # Chatgpt Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What isChatGPTand how does it relate to language models likeGPT-3?**
 
@@ -12115,6 +12176,7 @@ class GracefulDegradation:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the concept of alanguage model.**
 
@@ -12123,6 +12185,7 @@ class GracefulDegradation:
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain the significance offine-tuningin language models.**
 
@@ -12131,6 +12194,7 @@ class GracefulDegradation:
 ---
 
 ## Question 4
+- [ ] Done
 
 **How doestokenizationwork in the context oftransformer models?**
 
@@ -12139,6 +12203,7 @@ class GracefulDegradation:
 ---
 
 ## Question 5
+- [ ] Done
 
 **What arepositional encodings, and why are they important intransformers?**
 
@@ -12147,6 +12212,7 @@ class GracefulDegradation:
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain the concept ofattention mechanismsinGPT models.**
 
@@ -12155,6 +12221,7 @@ class GracefulDegradation:
 ---
 
 ## Question 7
+- [ ] Done
 
 **How does thedecoder-only architectureof GPT facilitate language generation?**
 
@@ -12163,6 +12230,7 @@ class GracefulDegradation:
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe thetraining processof aGPT model.**
 
@@ -12171,6 +12239,7 @@ class GracefulDegradation:
 ---
 
 ## Question 9
+- [ ] Done
 
 **What are some common issues faced during thetraining of large language models?**
 
@@ -12179,6 +12248,7 @@ class GracefulDegradation:
 ---
 
 ## Question 10
+- [ ] Done
 
 **What are the steps involved inpre-processing input datafor ChatGPT?**
 
@@ -12187,6 +12257,7 @@ class GracefulDegradation:
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain how to handlepost-processingof the output generated by ChatGPT.**
 
@@ -12195,6 +12266,7 @@ class GracefulDegradation:
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe thehyperparameter tuningprocess for improving model performance.**
 
@@ -12203,6 +12275,7 @@ class GracefulDegradation:
 ---
 
 ## Question 13
+- [ ] Done
 
 **What are some methods for mitigatingbiasin the responses ofChatGPT?**
 
@@ -12211,6 +12284,7 @@ class GracefulDegradation:
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain the importance ofhardware acceleratorslikeGPUsfor trainingChatGPT.**
 
@@ -12219,6 +12293,7 @@ class GracefulDegradation:
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain how to conducterror analysison the outputs ofChatGPT.**
 
@@ -12227,6 +12302,7 @@ class GracefulDegradation:
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain howChatGPTcan be customized to act as apersonal assistant.**
 
@@ -12235,6 +12311,7 @@ class GracefulDegradation:
 ---
 
 ## Question 17
+- [ ] Done
 
 **Describe howChatGPTcould be augmented formulti-lingual support.**
 
@@ -12243,6 +12320,7 @@ class GracefulDegradation:
 ---
 
 ## Question 18
+- [ ] Done
 
 **How doesreinforcement learning from human feedback (RLHF)shape the responses of models likeChatGPT?**
 
@@ -12251,6 +12329,7 @@ class GracefulDegradation:
 ---
 
 ## Question 19
+- [ ] Done
 
 **What isprompt engineering, and how does it apply to optimizingChatGPToutputs?**
 
@@ -12259,6 +12338,7 @@ class GracefulDegradation:
 ---
 
 ## Question 20
+- [ ] Done
 
 **What are the dataprivacy considerationswhen usingChatGPTin applications that handle sensitive information?**
 
@@ -12267,6 +12347,7 @@ class GracefulDegradation:
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain thecompliance issuesthat might arise withChatGPTin regulated industries.**
 
@@ -12275,6 +12356,7 @@ class GracefulDegradation:
 ---
 
 ## Question 22
+- [ ] Done
 
 **Describe the steps you would take ifChatGPTbegan to provide incorrect or inconsistent information.**
 
@@ -12290,6 +12372,7 @@ class GracefulDegradation:
 # Chatgpt Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you measure the success of aChatGPT implementationin a business?**
 
@@ -12298,6 +12381,7 @@ class GracefulDegradation:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write aPython scriptto generate creative stories using a pre-trained model likeGPT-2.**
 
@@ -12306,6 +12390,7 @@ class GracefulDegradation:
 ---
 
 ## Question 3
+- [ ] Done
 
 **Implement achatbotthat usesChatGPTto answer domain-specific questions.**
 
@@ -12314,6 +12399,7 @@ class GracefulDegradation:
 ---
 
 ## Question 4
+- [ ] Done
 
 **Code an example offine-tuning GPT-3forsentiment analysison movie reviews.**
 
@@ -12322,6 +12408,7 @@ class GracefulDegradation:
 ---
 
 ## Question 5
+- [ ] Done
 
 **Demonstrate how to use thetransformers libraryto integrateChatGPTwith a web application.**
 
@@ -12330,6 +12417,7 @@ class GracefulDegradation:
 ---
 
 ## Question 6
+- [ ] Done
 
 **Create aPython functionthat preprocesses input text fortokenizationspecific toGPT models.**
 
@@ -12338,6 +12426,7 @@ class GracefulDegradation:
 ---
 
 ## Question 7
+- [ ] Done
 
 **Write aPython scriptthat interacts withOpenAI’s APIto useChatGPTfor summarizing text documents.**
 
@@ -12353,6 +12442,7 @@ class GracefulDegradation:
 # Chatgpt Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How dotransformers, the architecture behind ChatGPT, work?**
 
@@ -12361,6 +12451,7 @@ class GracefulDegradation:
 ---
 
 ## Question 2
+- [ ] Done
 
 **What differentiatesChatGPTfrom rule-based chatbots?**
 
@@ -12369,6 +12460,7 @@ class GracefulDegradation:
 ---
 
 ## Question 3
+- [ ] Done
 
 **Give a detailed description of theGPT model architecture.**
 
@@ -12377,6 +12469,7 @@ class GracefulDegradation:
 ---
 
 ## Question 4
+- [ ] Done
 
 **How can you fine-tune a pre-trained model likeGPT-3for a specific task?**
 
@@ -12385,6 +12478,7 @@ class GracefulDegradation:
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you ensure thepromptgiven to ChatGPT is effective for the intended purpose?**
 
@@ -12393,6 +12487,7 @@ class GracefulDegradation:
 ---
 
 ## Question 6
+- [ ] Done
 
 **Provide examples of howChatGPTcan be integrated into different industry workflows.**
 
@@ -12401,6 +12496,7 @@ class GracefulDegradation:
 ---
 
 ## Question 7
+- [ ] Done
 
 **How canChatGPTbe used forcreative writing applications?**
 
@@ -12409,6 +12505,7 @@ class GracefulDegradation:
 ---
 
 ## Question 8
+- [ ] Done
 
 **How canChatGPTbe used in conjunction with otherAI services?**
 
@@ -12417,6 +12514,7 @@ class GracefulDegradation:
 ---
 
 ## Question 9
+- [ ] Done
 
 **What approaches can be used to reduce theinference timeof language models?**
 
@@ -12425,6 +12523,7 @@ class GracefulDegradation:
 ---
 
 ## Question 10
+- [ ] Done
 
 **Suggest methods to improveresponse qualityandrelevancein ChatGPT.**
 
@@ -12433,6 +12532,7 @@ class GracefulDegradation:
 ---
 
 ## Question 11
+- [ ] Done
 
 **How can you useA/B testingto improve ChatGPT interactions?**
 
@@ -12441,6 +12541,7 @@ class GracefulDegradation:
 ---
 
 ## Question 12
+- [ ] Done
 
 **How canexternal knowledge sourcesbe integrated intoChatGPT?**
 
@@ -12449,6 +12550,7 @@ class GracefulDegradation:
 ---
 
 ## Question 13
+- [ ] Done
 
 **How couldintellectual property rightsaffect the deployment of ChatGPT-based solutions?**
 
@@ -12464,6 +12566,7 @@ class GracefulDegradation:
 # Chatgpt Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss thecostandresource implicationsof training models likeGPT-3.**
 
@@ -12472,6 +12575,7 @@ class GracefulDegradation:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss the challenges of deployingChatGPTin aproduction environment.**
 
@@ -12480,6 +12584,7 @@ class GracefulDegradation:
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss thescalability challengesfor models likeGPT-3.**
 
@@ -12488,6 +12593,7 @@ class GracefulDegradation:
 ---
 
 ## Question 4
+- [ ] Done
 
 **How would you handleperformance bottleneckswhen usingChatGPT?**
 
@@ -12496,6 +12602,7 @@ class GracefulDegradation:
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss howquantizationandpruningmay be used withGPT models.**
 
@@ -12504,6 +12611,7 @@ class GracefulDegradation:
 ---
 
 ## Question 6
+- [ ] Done
 
 **How would you analyze the performance ofChatGPTon a given text task?**
 
@@ -12512,6 +12620,7 @@ class GracefulDegradation:
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss the role ofcontextin maintaining coherent conversations withChatGPT.**
 
@@ -12520,6 +12629,7 @@ class GracefulDegradation:
 ---
 
 ## Question 8
+- [ ] Done
 
 **Discuss recent research advancements intransformer models.**
 
@@ -12528,6 +12638,7 @@ class GracefulDegradation:
 ---
 
 ## Question 9
+- [ ] Done
 
 **Discusszero-shotandfew-shotlearning capabilities ofGPT models.**
 
@@ -12536,6 +12647,7 @@ class GracefulDegradation:
 ---
 
 ## Question 10
+- [ ] Done
 
 **How would you debug issues related to the language generation quality ofChatGPT?**
 
@@ -12544,6 +12656,7 @@ class GracefulDegradation:
 ---
 
 ## Question 11
+- [ ] Done
 
 **What are some commonfailure modesof ChatGPT in real-world applications and how would you address them?**
 
@@ -12556,6 +12669,7 @@ class GracefulDegradation:
 # --- Hugging Face Transformers Questions (from source .txt) ---
 
 ## Question 1
+- [ ] Done
 
 **How do you choose the optimal Hugging Face model variant for specific NLP tasks considering computational constraints?**
 
@@ -12564,6 +12678,7 @@ class GracefulDegradation:
 ---
 
 ## Question 2
+- [ ] Done
 
 **What are the best practices for fine-tuning Hugging Face transformers on domain-specific datasets efficiently?**
 
@@ -12572,6 +12687,7 @@ class GracefulDegradation:
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you implement custom tokenization strategies with Hugging Face transformers for specialized text processing?**
 
@@ -12580,6 +12696,7 @@ class GracefulDegradation:
 ---
 
 ## Question 4
+- [ ] Done
 
 **When should you use Hugging Face's pipeline API versus direct model/tokenizer usage for production applications?**
 
@@ -12588,6 +12705,7 @@ class GracefulDegradation:
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you optimize Hugging Face model inference speed and memory usage for real-time applications?**
 
@@ -12596,6 +12714,7 @@ class GracefulDegradation:
 ---
 
 ## Question 6
+- [ ] Done
 
 **What techniques help you implement efficient batch processing with Hugging Face transformers for high-throughput scenarios?**
 
@@ -12604,6 +12723,7 @@ class GracefulDegradation:
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you handle Hugging Face model versioning and updates in production environments?**
 
@@ -12612,6 +12732,7 @@ class GracefulDegradation:
 ---
 
 ## Question 8
+- [ ] Done
 
 **When would you implement custom Hugging Face model architectures versus using pretrained models?**
 
@@ -12620,6 +12741,7 @@ class GracefulDegradation:
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you use Hugging Face datasets library for efficient data loading and preprocessing pipelines?**
 
@@ -12628,6 +12750,7 @@ class GracefulDegradation:
 ---
 
 ## Question 10
+- [ ] Done
 
 **What strategies help you manage GPU memory when working with large Hugging Face models?**
 
@@ -12636,6 +12759,7 @@ class GracefulDegradation:
 ---
 
 ## Question 11
+- [ ] Done
 
 **How do you implement Hugging Face model quantization and compression for edge deployment?**
 
@@ -12644,6 +12768,7 @@ class GracefulDegradation:
 ---
 
 ## Question 12
+- [ ] Done
 
 **When should you use Hugging Face's Trainer class versus custom training loops for model fine-tuning?**
 
@@ -12652,6 +12777,7 @@ class GracefulDegradation:
 ---
 
 ## Question 13
+- [ ] Done
 
 **How do you handle Hugging Face model integration with distributed training frameworks?**
 
@@ -12660,6 +12786,7 @@ class GracefulDegradation:
 ---
 
 ## Question 14
+- [ ] Done
 
 **What techniques help you implement effective prompt engineering with Hugging Face language models?**
 
@@ -12668,6 +12795,7 @@ class GracefulDegradation:
 ---
 
 ## Question 15
+- [ ] Done
 
 **How do you optimize Hugging Face model loading and initialization times for serverless deployments?**
 
@@ -12676,6 +12804,7 @@ class GracefulDegradation:
 ---
 
 ## Question 16
+- [ ] Done
 
 **When would you use Hugging Face's model hub versus self-hosted model repositories?**
 
@@ -12684,6 +12813,7 @@ class GracefulDegradation:
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you implement Hugging Face model evaluation and benchmarking workflows?**
 
@@ -12692,6 +12822,7 @@ class GracefulDegradation:
 ---
 
 ## Question 18
+- [ ] Done
 
 **What are the best practices for Hugging Face model deployment using containerization and orchestration?**
 
@@ -12700,6 +12831,7 @@ class GracefulDegradation:
 ---
 
 ## Question 19
+- [ ] Done
 
 **How do you handle Hugging Face model fine-tuning with limited computational resources?**
 
@@ -12708,6 +12840,7 @@ class GracefulDegradation:
 ---
 
 ## Question 20
+- [ ] Done
 
 **When should you use Hugging Face's automatic model selection versus manual model configuration?**
 
@@ -12716,6 +12849,7 @@ class GracefulDegradation:
 ---
 
 ## Question 21
+- [ ] Done
 
 **How do you implement Hugging Face model integration with vector databases and retrieval systems?**
 
@@ -12724,6 +12858,7 @@ class GracefulDegradation:
 ---
 
 ## Question 22
+- [ ] Done
 
 **What strategies help you manage Hugging Face model licensing and compliance requirements?**
 
@@ -12732,6 +12867,7 @@ class GracefulDegradation:
 ---
 
 ## Question 23
+- [ ] Done
 
 **How do you handle Hugging Face model adaptation for multilingual and cross-lingual applications?**
 
@@ -12740,6 +12876,7 @@ class GracefulDegradation:
 ---
 
 ## Question 24
+- [ ] Done
 
 **When would you implement custom Hugging Face data collators versus using default ones?**
 
@@ -12748,6 +12885,7 @@ class GracefulDegradation:
 ---
 
 ## Question 25
+- [ ] Done
 
 **How do you optimize Hugging Face model performance for specific hardware accelerators?**
 
@@ -12756,6 +12894,7 @@ class GracefulDegradation:
 ---
 
 ## Question 26
+- [ ] Done
 
 **What techniques help you implement Hugging Face model interpretability and explanation workflows?**
 
@@ -12764,6 +12903,7 @@ class GracefulDegradation:
 ---
 
 ## Question 27
+- [ ] Done
 
 **How do you handle Hugging Face model integration with streaming and real-time processing systems?**
 
@@ -12772,6 +12912,7 @@ class GracefulDegradation:
 ---
 
 ## Question 28
+- [ ] Done
 
 **When should you use Hugging Face's model parallelism versus data parallelism for large model training?**
 
@@ -12780,6 +12921,7 @@ class GracefulDegradation:
 ---
 
 ## Question 29
+- [ ] Done
 
 **How do you implement Hugging Face model monitoring and performance tracking in production?**
 
@@ -12788,6 +12930,7 @@ class GracefulDegradation:
 ---
 
 ## Question 30
+- [ ] Done
 
 **What are the considerations for Hugging Face model security and vulnerability management?**
 
@@ -12796,6 +12939,7 @@ class GracefulDegradation:
 ---
 
 ## Question 31
+- [ ] Done
 
 **How do you handle Hugging Face model fine-tuning with noisy or limited labeled data?**
 
@@ -12804,6 +12948,7 @@ class GracefulDegradation:
 ---
 
 ## Question 32
+- [ ] Done
 
 **When would you use Hugging Face's model optimization tools versus external optimization frameworks?**
 
@@ -12812,6 +12957,7 @@ class GracefulDegradation:
 ---
 
 ## Question 33
+- [ ] Done
 
 **How do you implement Hugging Face model integration with MLOps and experiment tracking systems?**
 
@@ -12820,6 +12966,7 @@ class GracefulDegradation:
 ---
 
 ## Question 34
+- [ ] Done
 
 **What strategies help you manage Hugging Face model complexity in microservices architectures?**
 
@@ -12828,6 +12975,7 @@ class GracefulDegradation:
 ---
 
 ## Question 35
+- [ ] Done
 
 **How do you handle Hugging Face model deployment across different cloud providers and platforms?**
 
@@ -12836,6 +12984,7 @@ class GracefulDegradation:
 ---
 
 ## Question 36
+- [ ] Done
 
 **When should you use Hugging Face's model compression techniques versus maintaining full precision?**
 
@@ -12844,6 +12993,7 @@ class GracefulDegradation:
 ---
 
 ## Question 37
+- [ ] Done
 
 **How do you implement Hugging Face model A/B testing and gradual rollout strategies?**
 
@@ -12852,6 +13002,7 @@ class GracefulDegradation:
 ---
 
 ## Question 38
+- [ ] Done
 
 **What techniques help you optimize Hugging Face model training convergence and stability?**
 
@@ -12860,6 +13011,7 @@ class GracefulDegradation:
 ---
 
 ## Question 39
+- [ ] Done
 
 **How do you handle Hugging Face model integration with feature stores and data versioning systems?**
 
@@ -12868,6 +13020,7 @@ class GracefulDegradation:
 ---
 
 ## Question 40
+- [ ] Done
 
 **When would you implement custom Hugging Face model heads versus using pre-defined architectures?**
 
@@ -12876,6 +13029,7 @@ class GracefulDegradation:
 ---
 
 ## Question 41
+- [ ] Done
 
 **How do you use Hugging Face transformers for multimodal applications combining text, images, and audio?**
 
@@ -12884,6 +13038,7 @@ class GracefulDegradation:
 ---
 
 ## Question 42
+- [ ] Done
 
 **What are the best practices for Hugging Face model debugging and troubleshooting?**
 
@@ -12892,6 +13047,7 @@ class GracefulDegradation:
 ---
 
 ## Question 43
+- [ ] Done
 
 **How do you handle Hugging Face model adaptation for specific industries like healthcare or finance?**
 
@@ -12900,6 +13056,7 @@ class GracefulDegradation:
 ---
 
 ## Question 44
+- [ ] Done
 
 **When should you use Hugging Face's model distillation techniques for creating smaller, faster models?**
 
@@ -12908,6 +13065,7 @@ class GracefulDegradation:
 ---
 
 ## Question 45
+- [ ] Done
 
 **How do you implement Hugging Face model integration with business intelligence and reporting systems?**
 
@@ -12916,6 +13074,7 @@ class GracefulDegradation:
 ---
 
 ## Question 46
+- [ ] Done
 
 **What strategies help you manage Hugging Face model dependencies and environment configuration?**
 
@@ -12924,6 +13083,7 @@ class GracefulDegradation:
 ---
 
 ## Question 47
+- [ ] Done
 
 **How do you handle Hugging Face model migration and legacy system integration?**
 
@@ -12932,6 +13092,7 @@ class GracefulDegradation:
 ---
 
 ## Question 48
+- [ ] Done
 
 **When would you implement Hugging Face model custom loss functions versus using standard objectives?**
 
@@ -12940,6 +13101,7 @@ class GracefulDegradation:
 ---
 
 ## Question 49
+- [ ] Done
 
 **How do you use Hugging Face transformers for specialized tasks like code generation or mathematical reasoning?**
 
@@ -12948,6 +13110,7 @@ class GracefulDegradation:
 ---
 
 ## Question 50
+- [ ] Done
 
 **What techniques help you integrate Hugging Face models with automated ML pipelines and continuous deployment systems?**
 

@@ -1,6 +1,7 @@
 # Unsupervised Learning - Coding Questions
 
 ## Question 1: Implement K-means clustering from scratch in Python.
+- [ ] Done
 
 ### Algorithm
 1. Initialize K random centroids
@@ -62,6 +63,7 @@ print(f"Centroids:\n{kmeans.centroids}")
 ---
 
 ## Question 2: Write a Python function to compute the silhouette coefficient for a given clustering.
+- [ ] Done
 
 ### Formula
 $$s(i) = \frac{b(i) - a(i)}{\max(a(i), b(i))}$$
@@ -136,6 +138,7 @@ print(f"Sklearn: {sk_silhouette(X, labels):.4f}")
 ---
 
 ## Question 3: Use PCA with scikit-learn to reduce the dimensions of a dataset.
+- [ ] Done
 
 ### Steps
 1. Standardize the data
@@ -188,6 +191,7 @@ print(f"Components for 95% variance: {pca_auto.n_components_}")
 ---
 
 ## Question 4: Code an example using the DBSCAN algorithm to cluster a given spatial dataset.
+- [ ] Done
 
 ### DBSCAN Advantages
 - No need to specify K
@@ -244,6 +248,7 @@ plt.show()
 ---
 
 ## Question 5: Implement an Apriori algorithm in Python to find frequent itemsets in transaction data.
+- [ ] Done
 
 ### Apriori Principle
 If {A, B} is infrequent, then {A, B, C} must be infrequent. This prunes the search space.

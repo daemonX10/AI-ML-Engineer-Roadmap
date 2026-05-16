@@ -1,6 +1,7 @@
 # Light Gbm Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is LightGBM and how does it differ from other gradient boosting frameworks?**
 
@@ -53,6 +54,7 @@ LightGBM (Light Gradient Boosting Machine) is a fast, distributed, high-performa
 ---
 
 ## Question 2
+- [ ] Done
 
 **How does LightGBM handle categorical features differently from other tree-based algorithms?**
 
@@ -109,6 +111,7 @@ df['category_col'] = df['category_col'].astype('category')
 ---
 
 ## Question 3
+- [ ] Done
 
 **Can you explain the concept of Gradient Boosting and how LightGBM utilizes it?**
 
@@ -159,6 +162,7 @@ $$\text{prediction} += \text{learning\_rate} \times \text{leaf\_value}$$
 ---
 
 ## Question 4
+- [ ] Done
 
 **What are some of the advantages of LightGBM over XGBoost or CatBoost?**
 
@@ -215,6 +219,7 @@ $$\text{prediction} += \text{learning\_rate} \times \text{leaf\_value}$$
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does LightGBM achieve faster training and lower memory usage?**
 
@@ -268,6 +273,7 @@ Total: ~30% of data with similar accuracy
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain the histogram-based approach used by LightGBM.**
 
@@ -322,6 +328,7 @@ Only compute histogram for smaller child, get other by subtraction.
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is meant by "leaf-wise" tree growth in LightGBM, and how is it different from "depth-wise" growth?**
 
@@ -392,6 +399,7 @@ params = {
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain how LightGBM deals with overfitting.**
 
@@ -454,6 +462,7 @@ params = {
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is Feature Parallelism and Data Parallelism in the context of LightGBM?**
 
@@ -519,6 +528,7 @@ params = {
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain the role of the learning rate in the LightGBM algorithm.**
 
@@ -577,6 +587,7 @@ params = {
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is the significance of the min_data_in_leaf parameter in LightGBM?**
 
@@ -635,6 +646,7 @@ params = {
 ---
 
 ## Question 12
+- [ ] Done
 
 **How does LightGBM handle missing values?**
 
@@ -695,6 +707,7 @@ params = {
 ---
 
 ## Question 13
+- [ ] Done
 
 **What are the potential pitfalls when using LightGBM on small datasets?**
 
@@ -753,6 +766,7 @@ params = {
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain the importance of early stopping in training LightGBM models.**
 
@@ -810,6 +824,7 @@ model = lgb.train(
 ---
 
 ## Question 15
+- [ ] Done
 
 **Describe a strategy for updating a LightGBM model as new data becomes available.**
 
@@ -876,6 +891,7 @@ if validation_metric < threshold:
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain how LightGBM models can be interpreted and what tools can assist in model interpretation.**
 
@@ -945,6 +961,7 @@ lgb.plot_tree(model, tree_index=0)  # Visualize first tree
 ---
 
 ## Question 17
+- [ ] Done
 
 **What is a decision tree's "gain" and "split" in the context of LightGBM, and how are they important?**
 
@@ -1004,6 +1021,7 @@ params = {'min_gain_to_split': 0.1}
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe how you would train a LightGBM model to recommend products based on user behavior data.**
 
@@ -1077,6 +1095,7 @@ top_n = np.argsort(scores)[::-1][:10]
 ---
 
 ## Question 19
+- [ ] Done
 
 **What are the challenges and strategies associated with distributed training of LightGBM models?**
 

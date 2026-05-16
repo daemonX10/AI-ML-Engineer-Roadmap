@@ -1,6 +1,7 @@
 # Cost Function Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the role of the Huber loss and where it is preferable over MSE.**
 
@@ -38,6 +39,7 @@ $$L_\delta = \begin{cases} \frac{1}{2}(y - \hat{y})^2 & \text{if } |y - \hat{y}|
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss the trade-off between bias and variance in cost function optimization.**
 
@@ -78,6 +80,7 @@ $$J(\theta) = \underbrace{\frac{1}{n}\sum(y_i - \hat{y}_i)^2}_{\text{Fit trainin
 ---
 
 ## Question 3
+- [ ] Done
 
 **How would you select an appropriate cost function for a stock price prediction model?**
 
@@ -124,6 +127,7 @@ $$L = \begin{cases} \alpha(y - \hat{y})^2 & \text{if } y > \hat{y} \\ (y - \hat{
 ---
 
 ## Question 4
+- [ ] Done
 
 **Propose a strategy for choosing a cost function when dealing with imbalanced classification tasks.**
 
@@ -185,6 +189,7 @@ criterion = nn.CrossEntropyLoss(weight=weights)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss how you would modify the cost function in a situation where false negatives are more costly than false positives.**
 
@@ -248,6 +253,7 @@ Threshold: 0.7 → Fewer FP, more FN (risky for cancer)
 ---
 
 ## Question 6
+- [ ] Done
 
 **What are some recently proposed cost functions in academic literature for specialized machine learning tasks?**
 
@@ -295,6 +301,7 @@ Threshold: 0.7 → Fewer FP, more FN (risky for cancer)
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss the application of cost functions in reinforcement learning, particularly in reward shaping strategies.**
 

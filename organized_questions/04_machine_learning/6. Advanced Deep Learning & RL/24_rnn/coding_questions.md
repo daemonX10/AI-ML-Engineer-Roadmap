@@ -1,6 +1,7 @@
 # Rnn Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Describe the process of implementing an RNN with TensorFlow or PyTorch.**
 
@@ -136,6 +137,7 @@ loss, accuracy = model.evaluate(X, y)
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement a basic RNN to classify sequential data in Python using a library of your choice.**
 
@@ -314,6 +316,7 @@ Input: "I love this movie"
 ---
 
 ## Question 3
+- [ ] Done
 
 **Write Python code using TensorFlow/Keras to build and train an LSTM network on a text dataset.**
 
@@ -491,6 +494,7 @@ model.compile(
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a GRU-based neural network in PyTorch for predicting the next item in a sequence.**
 
@@ -695,6 +699,7 @@ Output: Item 3 most likely
 ---
 
 ## Question 5
+- [ ] Done
 
 **Develop an RNN model with attention that translates sentences from English to French.**
 
@@ -919,6 +924,7 @@ French: "J'aime les chats"
 ---
 
 ## Question 6
+- [ ] Done
 
 **Code a function that visualizes the hidden state dynamics of an RNN during sequence processing.**
 

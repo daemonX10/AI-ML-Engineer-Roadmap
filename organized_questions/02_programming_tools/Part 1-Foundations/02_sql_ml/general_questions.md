@@ -1,6 +1,7 @@
 # SQL ML Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What does GROUP BY do in a SQL query?**
 
@@ -59,6 +60,7 @@ GROUP BY customer_id;
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain indexes and their importance for ML pipelines.**
 
@@ -90,6 +92,7 @@ CREATE INDEX idx_cust_date ON orders(customer_id, order_date);
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you handle NULL values in SQL?**
 
@@ -126,6 +129,7 @@ WHERE column <=> other_column;
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is a Common Table Expression (CTE)?**
 
@@ -176,6 +180,7 @@ LEFT JOIN customer_returns cr ON co.customer_id = cr.customer_id;
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is the difference between UNION and UNION ALL?**
 
@@ -206,6 +211,7 @@ Use UNION ALL unless you specifically need deduplication - it's more efficient.
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you calculate running totals and moving averages in SQL?**
 
@@ -249,6 +255,7 @@ FROM transactions;
 ---
 
 ## Question 7
+- [ ] Done
 
 **How can you aggregate data in SQL (e.g., COUNT , AVG , SUM , MAX , MIN )?**
 
@@ -302,6 +309,7 @@ HAVING COUNT(*) >= 5;  -- filter after aggregation
 ---
 
 ## Question 8
+- [ ] Done
 
 **How can you extract time-based features from a SQL datetime field for use in a Machine Learning model?**
 
@@ -356,6 +364,7 @@ FROM orders;
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you join transactional data to a dimension table in such a way that features for Machine Learning can be extracted?**
 
@@ -420,6 +429,7 @@ GROUP BY c.customer_id, c.age, c.gender, c.membership_tier,
 ---
 
 ## Question 10
+- [ ] Done
 
 **How can you deal with outliers in a SQL database before passing data to Machine Learning algorithms?**
 
@@ -485,6 +495,7 @@ CROSS JOIN bounds b;
 ---
 
 ## Question 11
+- [ ] Done
 
 **How can you execute a Machine Learning model stored in a database (such as a SQL Server with R or Python integration)?**
 
@@ -548,6 +559,7 @@ SELECT * FROM ML.PREDICT(MODEL `project.dataset.churn_model`,
 ---
 
 ## Question 12
+- [ ] Done
 
 **Can you update a Machine Learning model directly from SQL? If so, how might you do it?**
 
@@ -611,6 +623,7 @@ New Data → SQL Trigger/Schedule → Retrain Model → Evaluate → Deploy if b
 ---
 
 ## Question 13
+- [ ] Done
 
 **What strategies can be used to efficiently update a large SQL-based Machine Learning model?**
 
@@ -661,6 +674,7 @@ WHERE region = @target_region;  -- only retrain one region's model
 ---
 
 ## Question 14
+- [ ] Done
 
 **How do you ensure the consistency and reliability of SQL data used for Machine Learning?**
 
@@ -721,6 +735,7 @@ ALTER TABLE customers ADD CONSTRAINT chk_email CHECK (email LIKE '%@%.%');
 ---
 
 ## Question 15
+- [ ] Done
 
 **What SQL features are there for report generation that might be useful for analyzing Machine Learning model performance?**
 
@@ -794,6 +809,7 @@ ORDER BY decile;
 ---
 
 ## Question 16
+- [ ] Done
 
 **How can you use SQL to visualize the distribution of data points before feeding them into an ML algorithm?**
 
@@ -861,6 +877,7 @@ plt.show()
 ---
 
 ## Question 17
+- [ ] Done
 
 **Can SQL be used to visualize false positives and false negatives in classification models? If so, how?**
 
@@ -920,6 +937,7 @@ ORDER BY error_rate_pct DESC;
 ---
 
 ## Question 18
+- [ ] Done
 
 **What strategies might you use to automate the retraining and evaluation of Machine Learning models from within SQL?**
 

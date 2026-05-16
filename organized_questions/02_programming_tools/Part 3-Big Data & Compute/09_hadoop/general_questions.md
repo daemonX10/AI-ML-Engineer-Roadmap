@@ -1,6 +1,7 @@
 # Hadoop Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you monitor a Hadoop cluster?**
 
@@ -83,6 +84,7 @@ print(monitor.check_health())
 ---
 
 ## Question 2
+- [ ] Done
 
 **What is rack awareness in Hadoop?**
 
@@ -142,6 +144,7 @@ def get_rack_info(namenode_url):
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you handle small files problem in Hadoop?**
 
@@ -208,6 +211,7 @@ def merge_small_files(input_dir, output_file, hdfs_client):
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is data locality in Hadoop?**
 
@@ -257,6 +261,7 @@ Best practices:
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you tune Hadoop performance?**
 
@@ -331,6 +336,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 6
+- [ ] Done
 
 **How can you diagnose and troubleshoot Hadoop performance issues ?**
 
@@ -339,6 +345,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 7
+- [ ] Done
 
 **How can job scheduling be optimized in Hadoop ?**
 

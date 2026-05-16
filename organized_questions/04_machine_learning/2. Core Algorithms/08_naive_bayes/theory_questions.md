@@ -1,6 +1,7 @@
 # Naive Bayes Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is the Naive Bayes classifier and how does it work?**
 
@@ -41,6 +42,7 @@ Think of a doctor diagnosing disease. Given symptoms (fever, cough), the doctor 
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain Bayes' Theorem and how it applies to the Naive Bayes algorithm.**
 
@@ -81,6 +83,7 @@ Imagine testing for a rare disease. Bayes' Theorem tells us: even if the test is
 ---
 
 ## Question 3
+- [ ] Done
 
 **Can you list and describe the types of Naive Bayes classifiers?**
 
@@ -121,6 +124,7 @@ $$P(X|Y) = \prod_i P(X_i|Y)^{X_i} \cdot (1 - P(X_i|Y))^{(1-X_i)}$$
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is the 'naive' assumption in the Naive Bayes classifier?**
 
@@ -157,6 +161,7 @@ Be ready to explain why Naive Bayes works despite this unrealistic assumption - 
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does the Naive Bayes classifier handle categorical and numerical features?**
 
@@ -194,6 +199,7 @@ When asked about mixed feature types, mention that scikit-learn's `CategoricalNB
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain the concept of 'class conditional independence' in Naive Bayes.**
 
@@ -234,6 +240,7 @@ Conditional on Gender:
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are the advantages and disadvantages of using a Naive Bayes classifier?**
 
@@ -279,6 +286,7 @@ Naive Bayes excels in simplicity, speed, and performance with small data and hig
 ---
 
 ## Question 8
+- [ ] Done
 
 **How does the Multinomial Naive Bayes classifier differ from the Gaussian Naive Bayes classifier?**
 
@@ -319,6 +327,7 @@ $$P(X_i | Y = c) = \frac{1}{\sqrt{2\pi\sigma_c^2}} \exp\left(-\frac{(X_i - \mu_c
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain how a Naive Bayes classifier can be used for spam detection.**
 
@@ -364,6 +373,7 @@ Prediction: Ham (not spam)
 ---
 
 ## Question 10
+- [ ] Done
 
 **How does Naive Bayes perform in terms of model interpretability compared to other classifiers?**
 
@@ -406,6 +416,7 @@ Emphasize that Naive Bayes gives probability scores per feature, enabling featur
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain how feature selection affects the performance of a Naive Bayes model.**
 
@@ -455,6 +466,7 @@ Mention that unlike some models, NB doesn't automatically penalize irrelevant fe
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe how you would perform parameter tuning for Naive Bayes models.**
 
@@ -508,6 +520,7 @@ best_alpha = grid_search.best_params_['alpha']
 ---
 
 ## Question 13
+- [ ] Done
 
 **How does Naive Bayes handle irrelevant features in a dataset?**
 
@@ -547,6 +560,7 @@ While NB tolerates irrelevant features better than many algorithms, removing cle
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain the Bernoulli Naive Bayes classifier and in what context it is useful.**
 
@@ -589,6 +603,7 @@ For sentiment analysis of tweets: "not" being absent in a positive tweet is info
 ---
 
 ## Question 15
+- [ ] Done
 
 **How does Naive Bayes deal with continuous data, and what are the challenges?**
 
@@ -645,6 +660,7 @@ X_discrete = discretizer.fit_transform(X_continuous)
 ---
 
 ## Question 16
+- [ ] Done
 
 **Can Naive Bayes be used with kernel methods? If yes, explain how.**
 
@@ -695,6 +711,7 @@ log_likelihood = kde.score_samples(X_test)
 ---
 
 ## Question 17
+- [ ] Done
 
 **Describe a practical application of Naive Bayes in medical diagnosis.**
 
@@ -741,6 +758,7 @@ $$P(heart\_disease|symptoms) = \frac{P(symptoms|heart\_disease) \cdot P(heart\_d
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain how you would apply Naive Bayes to customer sentiment analysis from product reviews.**
 
@@ -797,6 +815,7 @@ predictions = sentiment_pipeline.predict(new_reviews)
 ---
 
 ## Question 19
+- [ ] Done
 
 **What are the recent advancements in Naive Bayes for handling big data?**
 
@@ -855,6 +874,7 @@ X = hasher.transform(documents)  # No vocabulary storage
 ---
 
 ## Question 20
+- [ ] Done
 
 **How does the concept of distributional semantics enhance Naive Bayes text classification?**
 
@@ -912,6 +932,7 @@ def doc_to_vector(doc, model):
 ---
 
 ## Question 21
+- [ ] Done
 
 **What are the mathematical foundations and derivation of Naive Bayes classification?**
 
@@ -958,6 +979,7 @@ $$\mu_c = \frac{1}{|D_c|}\sum_{x \in D_c} x, \quad \sigma_c^2 = \frac{1}{|D_c|}\
 ---
 
 ## Question 22
+- [ ] Done
 
 **How do you handle the zero probability problem in Naive Bayes?**
 
@@ -1006,6 +1028,7 @@ nb = MultinomialNB(alpha=0.1)  # Lighter smoothing for large vocabularies
 ---
 
 ## Question 23
+- [ ] Done
 
 **What is Laplace smoothing and how does it work in Naive Bayes?**
 
@@ -1047,6 +1070,7 @@ $$P(X_i=v|Y=c) = \frac{count(X_i=v, Y=c) + \alpha}{count(Y=c) + \alpha|V|}$$
 ---
 
 ## Question 24
+- [ ] Done
 
 **How do you implement Gaussian Naive Bayes for continuous features?**
 
@@ -1115,6 +1139,7 @@ predictions = gnb.predict(X_test)
 ---
 
 ## Question 25
+- [ ] Done
 
 **What is Multinomial Naive Bayes and when should you use it?**
 
@@ -1175,6 +1200,7 @@ text_clf.fit(train_texts, train_labels)
 ---
 
 ## Question 26
+- [ ] Done
 
 **How does Bernoulli Naive Bayes differ from other variants?**
 
@@ -1214,6 +1240,7 @@ Multinomial: Only uses P(quick|class), ignores lazy
 ---
 
 ## Question 27
+- [ ] Done
 
 **What are the assumptions and limitations of the Naive Bayes classifier?**
 
@@ -1254,6 +1281,7 @@ The core assumption is conditional independence - features are independent given
 ---
 
 ## Question 28
+- [ ] Done
 
 **How do you handle missing values in Naive Bayes classification?**
 
@@ -1300,6 +1328,7 @@ This is equivalent to integrating over all values of Xi (marginalization).
 ---
 
 ## Question 29
+- [ ] Done
 
 **What is the role of prior probabilities in Naive Bayes?**
 
@@ -1351,6 +1380,7 @@ Disease diagnosis where disease prevalence is 1%:
 ---
 
 ## Question 30
+- [ ] Done
 
 **How do you implement feature selection for Naive Bayes classifiers?**
 
@@ -1400,6 +1430,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 31
+- [ ] Done
 
 **What are the computational complexity advantages of Naive Bayes?**
 
@@ -1447,6 +1478,7 @@ Where: n=samples, d=features, k=classes, n_sv=support vectors
 ---
 
 ## Question 32
+- [ ] Done
 
 **How do you handle high-dimensional data with Naive Bayes?**
 
@@ -1502,6 +1534,7 @@ vectorizer = TfidfVectorizer(
 ---
 
 ## Question 33
+- [ ] Done
 
 **What is the role of Naive Bayes in text classification and NLP?**
 
@@ -1550,6 +1583,7 @@ text_classifier.fit(train_texts, train_labels)
 ---
 
 ## Question 34
+- [ ] Done
 
 **How do you implement TF-IDF with Naive Bayes for text analysis?**
 
@@ -1605,6 +1639,7 @@ accuracy = pipeline.score(X_test, y_test)
 ---
 
 ## Question 35
+- [ ] Done
 
 **What are n-gram features and their use in Naive Bayes text classification?**
 
@@ -1664,6 +1699,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 36
+- [ ] Done
 
 **How do you handle class imbalance in Naive Bayes classification?**
 
@@ -1721,6 +1757,7 @@ Use appropriate metrics for imbalanced data:
 ---
 
 ## Question 37
+- [ ] Done
 
 **What are the evaluation metrics specific to Naive Bayes performance?**
 
@@ -1768,6 +1805,7 @@ prob_true, prob_pred = calibration_curve(y_test, probs[:,1], n_bins=10)
 ---
 
 ## Question 38
+- [ ] Done
 
 **How do you implement cross-validation for Naive Bayes models?**
 
@@ -1813,6 +1851,7 @@ print(f"Best alpha: {grid_search.best_params_}")
 ---
 
 ## Question 39
+- [ ] Done
 
 **What is the relationship between Naive Bayes and logistic regression?**
 
@@ -1848,6 +1887,7 @@ $$w_i = \frac{\mu_{i,1} - \mu_{i,0}}{\sigma_i^2}$$
 ---
 
 ## Question 40
+- [ ] Done
 
 **How do you handle multi-class classification with Naive Bayes?**
 
@@ -1892,6 +1932,7 @@ probabilities = nb.predict_proba(X_test)  # Shape: (n_samples, 20)
 ---
 
 ## Question 41
+- [ ] Done
 
 **What are ensemble methods for Naive Bayes and their benefits?**
 
@@ -1944,6 +1985,7 @@ predictions = combined_probs.argmax(axis=1)
 ---
 
 ## Question 42
+- [ ] Done
 
 **How do you implement Naive Bayes for spam email detection?**
 
@@ -2009,6 +2051,7 @@ probability = spam_detector.predict_proba(new_email)
 ---
 
 ## Question 43
+- [ ] Done
 
 **What is sentiment analysis using Naive Bayes classifiers?**
 
@@ -2062,6 +2105,7 @@ print(f"Confidence: {probabilities[0].max():.2%}")
 ---
 
 ## Question 44
+- [ ] Done
 
 **How do you handle negation and context in Naive Bayes text classification?**
 
@@ -2123,6 +2167,7 @@ Negation marking: ["not", "NOT_good"] - NOT_good learned as negative
 ---
 
 ## Question 45
+- [ ] Done
 
 **What are the challenges of Naive Bayes in real-world applications?**
 
@@ -2161,6 +2206,7 @@ calibrated_nb.fit(X_train, y_train)
 ---
 
 ## Question 46
+- [ ] Done
 
 **How do you implement incremental learning with Naive Bayes?**
 
@@ -2212,6 +2258,7 @@ prediction = nb.predict(X_new)
 ---
 
 ## Question 47
+- [ ] Done
 
 **What is online Naive Bayes for streaming data classification?**
 
@@ -2276,6 +2323,7 @@ filter.update("Meeting tomorrow at 2pm", 0)  # ham
 ---
 
 ## Question 48
+- [ ] Done
 
 **How do you handle concept drift in Naive Bayes models?**
 
@@ -2330,6 +2378,7 @@ if detect_drift(recent_acc, hist_acc):
 ---
 
 ## Question 49
+- [ ] Done
 
 **What are kernel-based extensions to Naive Bayes?**
 
@@ -2390,6 +2439,7 @@ class KernelNaiveBayes:
 ---
 
 ## Question 50
+- [ ] Done
 
 **How do you implement semi-supervised learning with Naive Bayes?**
 
@@ -2456,6 +2506,7 @@ def semi_supervised_nb(X_labeled, y_labeled, X_unlabeled, max_iter=10):
 ---
 
 ## Question 51
+- [ ] Done
 
 **What is the role of Naive Bayes in anomaly detection?**
 
@@ -2511,6 +2562,7 @@ anomalies = nb.predict(X_test) == 1
 ---
 
 ## Question 52
+- [ ] Done
 
 **How do you handle hierarchical classification with Naive Bayes?**
 
@@ -2582,6 +2634,7 @@ class HierarchicalNB:
 ---
 
 ## Question 53
+- [ ] Done
 
 **What are the privacy-preserving techniques for Naive Bayes?**
 
@@ -2646,6 +2699,7 @@ def aggregate_stats(all_stats):
 ---
 
 ## Question 54
+- [ ] Done
 
 **How do you implement federated learning with Naive Bayes?**
 
@@ -2723,6 +2777,7 @@ class FederatedNBServer:
 ---
 
 ## Question 55
+- [ ] Done
 
 **What is the interpretability advantage of Naive Bayes over other classifiers?**
 
@@ -2777,6 +2832,7 @@ Evidence for SPAM:
 ---
 
 ## Question 56
+- [ ] Done
 
 **How do you explain Naive Bayes predictions to stakeholders?**
 
@@ -2840,6 +2896,7 @@ def explain_confidence(nb, X):
 ---
 
 ## Question 57
+- [ ] Done
 
 **What are feature importance measures in Naive Bayes?**
 
@@ -2898,6 +2955,7 @@ def plot_feature_importance(importance, feature_names, top_n=20):
 ---
 
 ## Question 58
+- [ ] Done
 
 **How do you handle categorical features with high cardinality in Naive Bayes?**
 
@@ -2956,6 +3014,7 @@ nb = MultinomialNB(alpha=10.0)  # Higher than default 1.0
 ---
 
 ## Question 59
+- [ ] Done
 
 **What is the role of Naive Bayes in recommendation systems?**
 
@@ -3011,6 +3070,7 @@ indices, scores = rec.recommend(new_movies)
 ---
 
 ## Question 60
+- [ ] Done
 
 **How do you implement Naive Bayes for image classification?**
 
@@ -3070,6 +3130,7 @@ print(f"PCA + NB Accuracy: {pipeline.score(X_test, y_test):.3f}")
 ---
 
 ## Question 61
+- [ ] Done
 
 **What are the considerations for Naive Bayes in big data environments?**
 
@@ -3126,6 +3187,7 @@ model = nb.fit(training_df)  # Distributed training
 ---
 
 ## Question 62
+- [ ] Done
 
 **How do you implement distributed Naive Bayes algorithms?**
 
@@ -3190,6 +3252,7 @@ def build_nb_from_counts(class_counts, feature_sums, alpha=1.0):
 ---
 
 ## Question 63
+- [ ] Done
 
 **What is the role of Naive Bayes in MapReduce and Spark frameworks?**
 
@@ -3249,6 +3312,7 @@ print(f"Accuracy: {accuracy}")
 ---
 
 ## Question 64
+- [ ] Done
 
 **How do you handle memory optimization for large-scale Naive Bayes?**
 
@@ -3312,6 +3376,7 @@ model_compact = {
 ---
 
 ## Question 65
+- [ ] Done
 
 **What are the advances in neural Naive Bayes and deep learning integration?**
 
@@ -3371,6 +3436,7 @@ class NaiveBayesLayer(nn.Module):
 ---
 
 ## Question 66
+- [ ] Done
 
 **How do you combine Naive Bayes with deep learning architectures?**
 
@@ -3428,6 +3494,7 @@ def nb_regularized_loss(predictions, targets, model, nb_model, lambda_nb=0.1):
 ---
 
 ## Question 67
+- [ ] Done
 
 **What is the role of Naive Bayes in transfer learning?**
 
@@ -3495,6 +3562,7 @@ transferred_model = transfer_nb(source_nb, movie_X_small, movie_y_small, blend=0
 ---
 
 ## Question 68
+- [ ] Done
 
 **How do you handle domain adaptation with Naive Bayes classifiers?**
 
@@ -3570,6 +3638,7 @@ def instance_weighted_nb(source_X, source_y, target_X_unlabeled):
 ---
 
 ## Question 69
+- [ ] Done
 
 **What are the considerations for Naive Bayes model deployment?**
 
@@ -3649,6 +3718,7 @@ def validate_input(text):
 ---
 
 ## Question 70
+- [ ] Done
 
 **How do you monitor and maintain Naive Bayes models in production?**
 
@@ -3715,6 +3785,7 @@ class NBMonitor:
 ---
 
 ## Question 71
+- [ ] Done
 
 **What is A/B testing and model versioning for Naive Bayes?**
 
@@ -3788,6 +3859,7 @@ def save_versioned_model(model, metadata):
 ---
 
 ## Question 72
+- [ ] Done
 
 **How do you handle real-time inference with Naive Bayes?**
 
@@ -3851,6 +3923,7 @@ def benchmark(model, texts, n_iterations=1000):
 ---
 
 ## Question 73
+- [ ] Done
 
 **What are the considerations for Naive Bayes in edge computing?**
 
@@ -3915,6 +3988,7 @@ class EdgeNB:
 ---
 
 ## Question 74
+- [ ] Done
 
 **How do you implement Naive Bayes for IoT and sensor data classification?**
 
@@ -3994,6 +4068,7 @@ for reading in sensor_stream:
 ---
 
 ## Question 75
+- [ ] Done
 
 **What are the fairness and bias considerations in Naive Bayes?**
 
@@ -4060,6 +4135,7 @@ def fairness_audit(y_true, y_pred, protected_attribute):
 ---
 
 ## Question 76
+- [ ] Done
 
 **How do you address algorithmic bias in Naive Bayes classifiers?**
 
@@ -4127,6 +4203,7 @@ fair_preds = fair_predict(nb, X_test, protected_test, group_thresholds)
 ---
 
 ## Question 77
+- [ ] Done
 
 **What are the ethical implications of using Naive Bayes in decision-making?**
 
@@ -4186,6 +4263,7 @@ class EthicalNBClassifier:
 ---
 
 ## Question 78
+- [ ] Done
 
 **How do you implement adversarial robustness for Naive Bayes?**
 
@@ -4257,6 +4335,7 @@ def ensemble_predict(models, X):
 ---
 
 ## Question 79
+- [ ] Done
 
 **What are the security considerations for Naive Bayes models?**
 
@@ -4323,6 +4402,7 @@ def train_with_dp(X, y, epsilon=1.0):
 ---
 
 ## Question 80
+- [ ] Done
 
 **How do you handle data poisoning attacks on Naive Bayes?**
 
@@ -4409,6 +4489,7 @@ def cap_feature_influence(nb, max_ratio=10):
 ---
 
 ## Question 81
+- [ ] Done
 
 **What is the role of Naive Bayes in AutoML and automated model selection?**
 
@@ -4471,6 +4552,7 @@ print(automl.leaderboard())  # Shows NB if it performed well
 ---
 
 ## Question 82
+- [ ] Done
 
 **How do you implement hyperparameter optimization for Naive Bayes?**
 
@@ -4547,6 +4629,7 @@ grid.fit(texts, labels)
 ---
 
 ## Question 83
+- [ ] Done
 
 **What are the emerging research directions in Naive Bayes algorithms?**
 
@@ -4612,6 +4695,7 @@ def few_shot_nb(support_X, support_y, query_X, prior_model=None):
 ---
 
 ## Question 84
+- [ ] Done
 
 **How do you implement Naive Bayes for multi-modal data classification?**
 
@@ -4686,6 +4770,7 @@ class LateFusionNB:
 ---
 
 ## Question 85
+- [ ] Done
 
 **What is the relationship between Naive Bayes and probabilistic graphical models?**
 
@@ -4764,6 +4849,7 @@ class BayesianNetworkNB:
 ---
 
 ## Question 86
+- [ ] Done
 
 **How do you implement Naive Bayes for time-series classification?**
 
@@ -4840,6 +4926,7 @@ nb.fit(X_encoded, labels)
 ---
 
 ## Question 87
+- [ ] Done
 
 **What are the considerations for Naive Bayes in reinforcement learning?**
 
@@ -4911,6 +4998,7 @@ def nb_exploration_bonus(nb, state, actions):
 ---
 
 ## Question 88
+- [ ] Done
 
 **How do you handle sequential data with Naive Bayes classifiers?**
 
@@ -4990,6 +5078,7 @@ def sequence_to_features(sequences):
 ---
 
 ## Question 89
+- [ ] Done
 
 **What is the role of Naive Bayes in causal inference?**
 
@@ -5055,6 +5144,7 @@ def ipw_estimate(Y, treatment, propensity):
 ---
 
 ## Question 90
+- [ ] Done
 
 **How do you implement Naive Bayes for medical diagnosis applications?**
 
@@ -5134,6 +5224,7 @@ class MedicalDiagnosisNB:
 ---
 
 ## Question 91
+- [ ] Done
 
 **What are the regulatory compliance considerations for Naive Bayes in healthcare?**
 
@@ -5212,6 +5303,7 @@ class CompliantMedicalNB:
 ---
 
 ## Question 92
+- [ ] Done
 
 **How do you implement Naive Bayes for financial fraud detection?**
 
@@ -5295,6 +5387,7 @@ class FraudDetectionNB:
 ---
 
 ## Question 93
+- [ ] Done
 
 **What is the role of Naive Bayes in customer segmentation and marketing?**
 
@@ -5377,6 +5470,7 @@ lead_scores = (lead_probs * 100).astype(int)  # 0-100 score
 ---
 
 ## Question 94
+- [ ] Done
 
 **How do you handle multi-language text classification with Naive Bayes?**
 
@@ -5464,6 +5558,7 @@ def create_bilingual_features(text, lang, translation_dict):
 ---
 
 ## Question 95
+- [ ] Done
 
 **What are the considerations for Naive Bayes in social media analysis?**
 
@@ -5551,6 +5646,7 @@ class SocialMediaSentimentNB:
 ---
 
 ## Question 96
+- [ ] Done
 
 **How do you implement Naive Bayes for content recommendation systems?**
 
@@ -5645,6 +5741,7 @@ recs = recommender.recommend('user123', candidates)
 ---
 
 ## Question 97
+- [ ] Done
 
 **What is the future of Naive Bayes in the era of transformer models?**
 
@@ -5711,6 +5808,7 @@ def distill_to_nb(transformer_model, unlabeled_data):
 ---
 
 ## Question 98
+- [ ] Done
 
 **How do you combine Naive Bayes with modern NLP techniques?**
 
@@ -5801,6 +5899,7 @@ class NBWeightedBERT(nn.Module):
 ---
 
 ## Question 99
+- [ ] Done
 
 **What are the best practices for Naive Bayes model lifecycle management?**
 
@@ -5904,6 +6003,7 @@ class NBModelLifecycle:
 ---
 
 ## Question 100
+- [ ] Done
 
 **How do you implement end-to-end Naive Bayes classification pipelines?**
 
@@ -6060,6 +6160,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 101
+- [ ] Done
 
 **How would you handle an imbalanced dataset when using a Naive Bayes classifier?**
 
@@ -6134,6 +6235,7 @@ precision, recall, thresholds = precision_recall_curve(y_test, probs)
 ---
 
 ## Question 102
+- [ ] Done
 
 **Discuss the impact of feature scaling on Naive Bayes classifiers.**
 
@@ -6208,6 +6310,7 @@ Unlike SVM, KNN, or Neural Networks, you don't need to scale features for Naive 
 ---
 
 ## Question 103
+- [ ] Done
 
 **How can overfitting occur in Naive Bayes, and how would you prevent it?**
 
@@ -6294,6 +6397,7 @@ nb = MultinomialNB(fit_prior=False)
 ---
 
 ## Question 104
+- [ ] Done
 
 **Discuss improvements over standard Naive Bayes for dealing with highly correlated features.**
 

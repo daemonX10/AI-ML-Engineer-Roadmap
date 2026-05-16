@@ -1,6 +1,7 @@
 # Q Learning Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the concept of state and action space in Q-learning.**
 
@@ -55,6 +56,7 @@ State representation should capture enough information for Markov property (next
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss how Q-learning can be applied to continuous action spaces.**
 
@@ -111,6 +113,7 @@ For continuous action spaces, use Actor-Critic methods rather than pure Q-learni
 ---
 
 ## Question 3
+- [ ] Done
 
 **How would you address the problem of large state spaces in Q-learning?**
 
@@ -176,6 +179,7 @@ Use deep neural networks (DQN) with:
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss the concept of function approximation in Q-learning. How does this overcome some of the limitations of tabular Q-learning?**
 
@@ -238,6 +242,7 @@ Function approximation trades exact lookup for generalization ability, enabling 
 ---
 
 ## Question 5
+- [ ] Done
 
 **Given a scenario involving an autonomous vehicle at an intersection, how would you model the environment's states and actions for Q-learning?**
 
@@ -303,6 +308,7 @@ Function approximation trades exact lookup for generalization ability, enabling 
 ---
 
 ## Question 6
+- [ ] Done
 
 **Propose a strategy for using Q-learning in a multi-agent setting, such as training agents to play a doubles tennis match.**
 
@@ -375,6 +381,7 @@ Use value decomposition methods to factorize team Q-value while allowing coordin
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss the impact of deep learning on Q-learning methodologies.**
 

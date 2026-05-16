@@ -1,6 +1,7 @@
 # Ensemble Learning Interview Questions - General Questions
 
 ## Question 1: How can ensemble learning be used for both classification and regression tasks?
+- [ ] Done
 
 ### Definition
 Ensemble methods work for both classification and regression by changing only the aggregation method. Classification uses voting (hard or soft), while regression uses averaging or weighted averaging of predictions.
@@ -50,6 +51,7 @@ Ensemble methods work for both classification and regression by changing only th
 ---
 
 ## Question 2: How do you decide the number of learners to include in an ensemble?
+- [ ] Done
 
 ### Definition
 The optimal number of learners balances improved accuracy against computational cost and diminishing returns. Use validation curves, cross-validation, or out-of-bag error to determine when adding more learners stops helping.
@@ -103,6 +105,7 @@ print(f"Best iteration: {model.best_iteration}")
 ---
 
 ## Question 3: What strategies can be used to reduce overfitting in ensemble models?
+- [ ] Done
 
 ### Definition
 Ensemble overfitting occurs when the combined model memorizes training data. Strategies include regularization, limiting model complexity, proper validation, and controlling ensemble size.
@@ -163,6 +166,7 @@ model = xgb.XGBClassifier(
 ---
 
 ## Question 4: How are hyperparameters optimized in ensemble models such as XGBoost or Random Forest?
+- [ ] Done
 
 ### Definition
 Hyperparameter optimization for ensembles involves systematically searching parameter space using Grid Search, Random Search, or Bayesian Optimization, with cross-validation to evaluate each configuration.
@@ -251,6 +255,7 @@ bayes_search = BayesSearchCV(
 ---
 
 ## Question 5: What ensemble methods would you suggest for a time-series forecasting problem and why?
+- [ ] Done
 
 ### Definition
 Time-series ensembles must respect temporal ordering. Standard bagging/boosting can work if features are properly engineered. Specialized methods include combining statistical models with ML, or temporal cross-validation approaches.
@@ -324,6 +329,7 @@ for train_idx, val_idx in tscv.split(X):
 ---
 
 ## Question 6: How can ensemble models be applied in natural language processing tasks?
+- [ ] Done
 
 ### Definition
 NLP ensembles combine multiple text representation methods (TF-IDF, embeddings) or multiple model architectures (transformers, RNNs, traditional ML) to improve robustness and accuracy on text tasks.
@@ -406,6 +412,7 @@ final_pred = (bert_pred + roberta_pred + xlnet_pred) / 3
 ---
 
 ## Question 7: What considerations would you take into account when building an ensemble model for health-related data?
+- [ ] Done
 
 ### Definition
 Healthcare ensembles require special attention to interpretability, fairness, reliability, regulatory compliance, and handling of sensitive data characteristics like class imbalance and missing values.
@@ -475,6 +482,7 @@ ci_upper = mean_pred + 1.96 * std_pred
 ---
 
 ## Question 8: What role does diversity of base learners play in the success of an ensemble model?
+- [ ] Done
 
 ### Definition
 Diversity ensures base learners make different errors. When models are diverse, their mistakes tend to cancel out when aggregated, leading to better ensemble performance than any single model.
@@ -547,6 +555,7 @@ def pairwise_diversity(predictions_list):
 ---
 
 ## Question 9: How can deep learning models be incorporated into ensemble learning?
+- [ ] Done
 
 ### Definition
 Deep learning models can be base learners in ensembles, combined through voting/averaging, or used with traditional ML in hybrid ensembles. Special techniques handle their unique properties like dropout-based ensembling.
@@ -622,6 +631,7 @@ def ensemble_predict(models, x):
 ---
 
 ## Question 10: How can reinforcement learning strategies benefit from ensemble methods?
+- [ ] Done
 
 ### Definition
 Ensemble methods in RL combine multiple policies or value functions to reduce variance, improve exploration, and achieve more stable learning. This addresses RL's inherent high variance from stochastic environments and policies.
@@ -676,6 +686,7 @@ class EnsemblePolicy:
 ---
 
 ## Question 11: What developments have been made in the use of ensemble methods for anomaly detection?
+- [ ] Done
 
 ### Definition
 Ensemble anomaly detection combines multiple detectors to improve robustness, reduce false positives, and detect diverse anomaly types. Key developments include Isolation Forest, feature bagging, and combining supervised and unsupervised methods.

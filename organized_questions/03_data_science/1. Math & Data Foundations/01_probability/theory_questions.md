@@ -1,6 +1,7 @@
 # Probability Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is probability, and how is it used in machine learning?**
 
@@ -56,6 +57,7 @@ def classify_email(features, model):
 ---
 
 ## Question 2
+- [ ] Done
 
 **What is the difference between discrete and continuous probability distributions?**
 
@@ -108,6 +110,7 @@ prob = norm.cdf(180, 170, 10) - norm.cdf(160, 170, 10)  # ≈ 0.68
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain the differences between joint, marginal, and conditional probabilities.**
 
@@ -168,6 +171,7 @@ p_rain_given_heavy = joint_table[('rain','heavy')] / p_heavy  # 0.10/0.25 = 0.40
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe Bayes' Theorem and provide an example of how it's used.**
 
@@ -230,6 +234,7 @@ print(f"P(Disease | Positive Test) = {p_disease_given_positive:.3f}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is a probability density function (PDF)?**
 
@@ -286,6 +291,7 @@ print(f"P(-1 ≤ X ≤ 1): {prob:.4f}")
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is the role of the cumulative distribution function (CDF)?**
 
@@ -343,6 +349,7 @@ print(f"95th percentile = {x_95th:.3f}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain the Central Limit Theorem and its significance in machine learning.**
 
@@ -404,6 +411,7 @@ print(f"Mean of sample means: {np.mean(sample_means):.2f}")
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is the Law of Large Numbers?**
 
@@ -466,6 +474,7 @@ LLN is WHY ML works — learning from finite training data generalizes because s
 ---
 
 ## Question 9
+- [ ] Done
 
 **What are the characteristics of a Gaussian (Normal) distribution?**
 
@@ -528,6 +537,7 @@ If asked "why is Normal distribution so common?" → CLT: sums of many independe
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain the utility of the Binomial distribution in machine learning.**
 
@@ -592,6 +602,7 @@ Use Binomial when you can count BOTH successes AND failures (denominator n is kn
 ---
 
 ## Question 11
+- [ ] Done
 
 **How does the Poisson distribution differ from the Binomial distribution?**
 
@@ -654,6 +665,7 @@ Poisson is simpler (1 parameter vs 2) for rare events. If n is huge and p is tin
 ---
 
 ## Question 12
+- [ ] Done
 
 **What is the relevance of the Bernoulli distribution in machine learning?**
 
@@ -718,6 +730,7 @@ Cross-entropy loss = negative Bernoulli log-likelihood. This connection explains
 ---
 
 ## Question 13
+- [ ] Done
 
 **In machine learning, what are Naive Bayes classifiers, and why are they 'naive'?**
 
@@ -779,6 +792,7 @@ score_spam = p_spam * p_word_free_given_spam * p_word_money_given_spam
 ---
 
 ## Question 14
+- [ ] Done
 
 **How does logistic regression utilize probability?**
 
@@ -841,6 +855,7 @@ prediction = "Default" if prob_default > 0.5 else "No Default"
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is the concept of entropy in information theory, and how does it relate to machine learning models?**
 
@@ -901,6 +916,7 @@ print(f"Fair die: {entropy([1/6]*6):.2f} bits")          # 2.58
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the relationship between Maximum Likelihood Estimation (MLE) and probability.**
 
@@ -957,6 +973,7 @@ print(f"MLE estimate: {mle_p:.2f}")  # ≈ 0.8
 ---
 
 ## Question 17
+- [ ] Done
 
 **Describe how to update probabilities using the concept of prior, likelihood, and posterior.**
 
@@ -1018,6 +1035,7 @@ posteriors = {h: unnorm[h] / total for h in priors}
 ---
 
 ## Question 18
+- [ ] Done
 
 **What are p-values and confidence intervals, and how are they interpreted?**
 
@@ -1075,6 +1093,7 @@ print(f"95% CI: {ci}")  # Doesn't contain 0 → significant
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe how a probabilistic graphical model (PGM) works.**
 
@@ -1129,6 +1148,7 @@ prob = p_rain['T'] * p_sprinkler['F'] * p_wet_given[('T','F')]['T']
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain the concepts of "Markov Chains" and how they apply to machine learning.**
 
@@ -1184,6 +1204,7 @@ Stationary distribution: Run chain forever → probability of being in each stat
 ---
 
 ## Question 21
+- [ ] Done
 
 **What is Expectation-Maximization (EM) algorithm and how does probability play a role in it?**
 
@@ -1247,6 +1268,7 @@ def m_step(X, resp):
 ---
 
 ## Question 22
+- [ ] Done
 
 **Describe how Monte Carlo simulations are used in machine learning for approximation of probabilities.**
 
@@ -1306,6 +1328,7 @@ Use Monte Carlo when analytical solutions are intractable — common in high-dim
 ---
 
 ## Question 23
+- [ ] Done
 
 **What are the probabilistic underpinnings of Active Learning and how might they be utilized in algorithm design?**
 

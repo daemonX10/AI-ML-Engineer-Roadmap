@@ -1,6 +1,7 @@
 # NumPy Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you create a NumPy array from a regular Python list ?**
 
@@ -29,6 +30,7 @@ print(arr_float)  # [1. 2. 3.]
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you reshape a NumPy array?**
 
@@ -61,6 +63,7 @@ arr_ravel = arr_3x4.ravel()     # Returns view (if possible)
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you slice and index NumPy arrays?**
 
@@ -100,6 +103,7 @@ print(arr[indices])   # Rows 0 and 2
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you perform matrix multiplication using NumPy ?**
 
@@ -143,6 +147,7 @@ print(A @ B)  # Matrix mult:  [[19 22], [43 50]]
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you concatenate and stack arrays?**
 
@@ -177,6 +182,7 @@ np.hstack([a, b])  # Same as concatenate axis=1
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you generate random numbers with NumPy?**
 
@@ -220,6 +226,7 @@ integers = rng.integers(0, 10, size=(3, 4))
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you find unique values and their counts?**
 
@@ -245,6 +252,7 @@ print(indices)  # [0 1 3 6] - first occurrence indices
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do you normalize an array in NumPy ?**
 
@@ -285,6 +293,7 @@ print(np.sort(arr_2d, axis=0))
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you implement standardization (Z-score normalization)?**
 
@@ -314,6 +323,7 @@ print(f"Std after: {X_standardized.std(axis=0).round(2)}")    # [1, 1, 1]
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do you implement Min-Max normalization?**
 
@@ -349,6 +359,7 @@ print(f"Max: {X_normalized.max(axis=0)}")  # [1, 1]
 ---
 
 ## Question 11
+- [ ] Done
 
 **How do you compute the dot product and cross product?**
 
@@ -375,6 +386,7 @@ print(f"Cross product: {cross}")  # [-3, 6, -3]
 ---
 
 ## Question 12
+- [ ] Done
 
 **How do you compute eigenvalues and eigenvectors?**
 
@@ -407,6 +419,7 @@ print(f"λ * v: {lambda_1 * v}")
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain how to invert a matrix in NumPy.**
 
@@ -451,6 +464,7 @@ else:
 ---
 
 ## Question 14
+- [ ] Done
 
 **How do you calculate the determinant of a matrix?**
 
@@ -491,6 +505,7 @@ actual_det = sign * np.exp(logdet)
 ---
 
 ## Question 15
+- [ ] Done
 
 **Describe how you would flatten a multi-dimensional array.**
 
@@ -537,6 +552,7 @@ for val in arr.flat:
 ---
 
 ## Question 16
+- [ ] Done
 
 **How can you reverse an array in NumPy?**
 
@@ -584,6 +600,7 @@ arr[:] = arr[::-1]  # In-place reversal
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you apply a conditional filter to a NumPy array?**
 
@@ -627,6 +644,7 @@ arr2d[row_mask]                  # [[3, 4], [5, 6]]
 ---
 
 ## Question 18
+- [ ] Done
 
 **How can you compute percentiles with NumPy?**
 
@@ -678,6 +696,7 @@ outliers = arr[(arr < Q1 - 1.5*IQR) | (arr > Q3 + 1.5*IQR)]
 ---
 
 ## Question 19
+- [ ] Done
 
 **How do you calculate the correlation coefficient using NumPy?**
 
@@ -729,6 +748,7 @@ def spearman_corr(x, y):
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain the use of the np.cumsum() and np.cumprod() functions.**
 
@@ -778,6 +798,7 @@ np.nancumprod(arr_nan)  # [1.0, 1.0, 3.0]
 ---
 
 ## Question 21
+- [ ] Done
 
 **Describe the process for creating a structured array in NumPy.**
 
@@ -836,6 +857,7 @@ sorted_emp = np.sort(employees, order='salary')  # Sort by salary
 ---
 
 ## Question 22
+- [ ] Done
 
 **How do you save and load NumPy arrays to and from disk?**
 
@@ -894,6 +916,7 @@ mmap_read = np.memmap('huge_array.dat', dtype='float64', mode='r', shape=(10000,
 ---
 
 ## Question 23
+- [ ] Done
 
 **Write a NumPy code to create a 3x3 identity matrix.**
 
@@ -944,6 +967,7 @@ np.allclose(A @ np.eye(3), A)  # True — AI = A
 ---
 
 ## Question 24
+- [ ] Done
 
 **Code a function in NumPy to compute the moving average of a 1D array.**
 
@@ -989,6 +1013,7 @@ def moving_average_padded(arr, window_size):
 ---
 
 ## Question 25
+- [ ] Done
 
 **Generate a 2D NumPy array of random integers and normalize it between 0 and 1.**
 
@@ -1042,6 +1067,7 @@ print(f"Min: {normalized.min()}, Max: {normalized.max()}")
 ---
 
 ## Question 26
+- [ ] Done
 
 **Create a NumPy code snippet to extract all odd numbers from an array.**
 
@@ -1081,6 +1107,7 @@ result = np.where(arr % 2 != 0, arr, 0)  # [1, 0, 3, 0, 5, 0, 7, 0, 9, 0]
 ---
 
 ## Question 27
+- [ ] Done
 
 **Implement a routine to calculate the outer product of two vectors in NumPy.**
 
@@ -1131,6 +1158,7 @@ attention_score = np.outer(query, key)  # QK^T pattern
 ---
 
 ## Question 28
+- [ ] Done
 
 **Write a NumPy program to create a checkerboard 8x8 matrix using the tile function.**
 
@@ -1171,6 +1199,7 @@ print(np.sum(checkerboard))  # 32 (half of 64)
 ---
 
 ## Question 29
+- [ ] Done
 
 **Code a NumPy snippet to create a border around an existing array.**
 
@@ -1228,6 +1257,7 @@ bordered = np.pad(arr, pad_width=2, mode='constant', constant_values=9)
 ---
 
 ## Question 30
+- [ ] Done
 
 **Write a function to compute the convolution of two matrices in NumPy.**
 
@@ -1283,6 +1313,7 @@ print(convolve2d_vectorized(image, kernel))
 ---
 
 ## Question 31
+- [ ] Done
 
 **Implement a script that computes the Fibonacci sequence using a NumPy matrix.**
 
@@ -1335,6 +1366,7 @@ fib_array = np.array([fib_golden(i) for i in range(15)])
 ---
 
 ## Question 32
+- [ ] Done
 
 **Write a code to replace all elements greater than a certain threshold in a NumPy array with a specific value.**
 
@@ -1385,6 +1417,7 @@ result = np.select(
 ---
 
 ## Question 33
+- [ ] Done
 
 **Implement an efficient rolling window calculation for a 1D array using NumPy.**
 
@@ -1444,6 +1477,7 @@ windows_2d = rolling_window_2d(arr2d, 3, 3)  # Shape: (3, 3, 3, 3)
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain how you would implement gradient descent optimization with NumPy.**
 
@@ -1538,6 +1572,7 @@ print(f"Weights: {w}, Bias: {b:.2f}")  # Close to [2, -1, 0.5], 3.0
 > **Interview Tip:** Know three variants: **Batch GD** (full dataset), **SGD** (random samples), **Mini-batch** (batches of 32-128). **Adam** is the default optimizer in deep learning due to adaptive learning rates.
 
 ## Question 35
+- [ ] Done
 
 **How do you concatenate two arrays in NumPy ?**
 
@@ -1599,6 +1634,7 @@ result = np.concatenate([A, B], axis=0)  # OK → 5×4
 ---
 
 ## Question 36
+- [ ] Done
 
 **How do you calculate the eigenvalues and eigenvectors of a matrix in NumPy ?**
 
@@ -1671,6 +1707,7 @@ print(f"Variance explained: {var_explained}")
 ---
 
 ## Question 37
+- [ ] Done
 
 **Explain how to generate random data with NumPy**
 
@@ -1744,6 +1781,7 @@ def bootstrap_sample(X, y):
 ---
 
 ## Question 38
+- [ ] Done
 
 **How do you stack multiple arrays vertically and horizontally ?**
 

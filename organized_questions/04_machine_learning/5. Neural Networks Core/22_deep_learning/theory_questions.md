@@ -1,6 +1,7 @@
 # Deep Learning Interview Questions - Theory Questions
 
 ## Question 1: What is an artificial neural network?
+- [ ] Done
 
 ### Definition
 An artificial neural network (ANN) is a computational model inspired by biological neurons, consisting of interconnected nodes organized in layers that learn to map inputs to outputs through weighted connections and non-linear activation functions.
@@ -27,6 +28,7 @@ $$y = \sigma\left(\sum_{i=1}^{n} w_i x_i + b\right)$$
 ---
 
 ## Question 2: Explain the concept of 'depth' in deep learning
+- [ ] Done
 
 ### Definition
 Depth refers to the number of hidden layers in a neural network. Deep learning uses networks with multiple layers (typically >2) to learn hierarchical representations of data automatically.
@@ -53,6 +55,7 @@ Depth refers to the number of hidden layers in a neural network. Deep learning u
 ---
 
 ## Question 3: What are activation functions, and why are they necessary?
+- [ ] Done
 
 ### Definition
 Activation functions introduce non-linearity into neural networks, enabling them to learn complex patterns. Without them, any deep network would collapse to a single linear transformation.
@@ -74,6 +77,7 @@ Activation functions introduce non-linearity into neural networks, enabling them
 ---
 
 ## Question 4: Describe the role of weights and biases in neural networks
+- [ ] Done
 
 ### Definition
 **Weights** control the strength of connections between neurons, determining how much each input contributes to the output. **Biases** allow shifting the activation function, enabling neurons to activate even when inputs are zero.
@@ -95,6 +99,7 @@ $$a = \sigma(z)$$
 ---
 
 ## Question 5: What is the vanishing gradient problem, and how can it be avoided?
+- [ ] Done
 
 ### Definition
 The vanishing gradient problem occurs when gradients become exponentially small during backpropagation through many layers, causing early layers to learn extremely slowly or not at all.
@@ -116,6 +121,7 @@ The vanishing gradient problem occurs when gradients become exponentially small 
 ---
 
 ## Question 6: Explain the difference between shallow and deep neural networks
+- [ ] Done
 
 ### Definition
 **Shallow networks** have one hidden layer; **deep networks** have two or more. Deep networks learn hierarchical features automatically, while shallow networks require manual feature engineering.
@@ -138,6 +144,7 @@ The vanishing gradient problem occurs when gradients become exponentially small 
 ---
 
 ## Question 7: What is the universal approximation theorem?
+- [ ] Done
 
 ### Definition
 The universal approximation theorem states that a neural network with a single hidden layer containing enough neurons can approximate any continuous function on a bounded domain to arbitrary precision.
@@ -163,6 +170,7 @@ The universal approximation theorem states that a neural network with a single h
 ---
 
 ## Question 8: What is forward propagation and backpropagation?
+- [ ] Done
 
 ### Definition
 **Forward propagation** computes the output by passing inputs through the network layer by layer. **Backpropagation** computes gradients of the loss with respect to all weights by propagating error backwards using the chain rule.
@@ -189,6 +197,7 @@ $$\frac{\partial L}{\partial w} = \frac{\partial L}{\partial a} \cdot \frac{\par
 ---
 
 ## Question 9: What is a Convolutional Neural Network (CNN), and when would you use it?
+- [ ] Done
 
 ### Definition
 A CNN is a neural network that uses convolutional layers to automatically learn spatial hierarchies of features from grid-like data (images), leveraging local connectivity and weight sharing.
@@ -230,6 +239,7 @@ model = nn.Sequential(
 ---
 
 ## Question 10: Explain Recurrent Neural Networks (RNNs) and their use cases
+- [ ] Done
 
 ### Definition
 RNNs are neural networks with recurrent connections that maintain a hidden state across time steps, enabling them to process sequential data of variable length.
@@ -255,6 +265,7 @@ $$y_t = W_y h_t$$
 ---
 
 ## Question 11: What is the significance of Residual Networks (ResNets)?
+- [ ] Done
 
 ### Definition
 ResNets introduce skip connections that add the input of a layer directly to its output, enabling training of very deep networks (100+ layers) by solving the degradation problem.
@@ -291,6 +302,7 @@ class ResidualBlock(nn.Module):
 ---
 
 ## Question 12: How does a Transformer architecture function?
+- [ ] Done
 
 ### Definition
 Transformers use self-attention mechanisms to process all positions in parallel, capturing long-range dependencies without recurrence. They form the basis of modern NLP (BERT, GPT).
@@ -323,6 +335,7 @@ $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)
 ---
 
 ## Question 13: What are Generative Adversarial Networks (GANs)?
+- [ ] Done
 
 ### Definition
 GANs consist of two networks trained adversarially: a **Generator** creates fake samples trying to fool a **Discriminator** that distinguishes real from fake. Through competition, the generator learns to create realistic data.
@@ -354,6 +367,7 @@ $$\min_G \max_D \mathbb{E}[\log D(x)] + \mathbb{E}[\log(1 - D(G(z)))]$$
 ---
 
 ## Question 14: Describe how U-Net architecture works for image segmentation
+- [ ] Done
 
 ### Definition
 U-Net is an encoder-decoder architecture with skip connections between corresponding encoder and decoder layers, designed for precise image segmentation with limited training data.
@@ -390,6 +404,7 @@ Encoder (contracting)     Decoder (expanding)
 ---
 
 ## Question 15: Explain the concept of attention mechanisms in deep learning
+- [ ] Done
 
 ### Definition
 Attention mechanisms allow models to dynamically focus on relevant parts of the input when producing each output element, computing weighted combinations where weights indicate importance.
@@ -416,6 +431,7 @@ $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)
 ---
 
 ## Question 16: What is a Siamese Neural Network?
+- [ ] Done
 
 ### Definition
 A Siamese network uses two identical subnetworks with shared weights to learn a similarity function between input pairs, enabling comparison-based tasks like verification and one-shot learning.
@@ -445,6 +461,7 @@ $$L = (1-y) \cdot D^2 + y \cdot \max(0, m-D)^2$$
 ---
 
 ## Question 17: What are loss functions, and why are they important?
+- [ ] Done
 
 ### Definition
 Loss functions quantify the error between model predictions and true values, providing a scalar objective that the optimization algorithm minimizes during training.
@@ -466,6 +483,7 @@ Loss functions quantify the error between model predictions and true values, pro
 ---
 
 ## Question 18: Explain the concept of gradient descent
+- [ ] Done
 
 ### Definition
 Gradient descent is an iterative optimization algorithm that finds a function's minimum by repeatedly moving in the direction opposite to the gradient (direction of steepest descent).
@@ -488,6 +506,7 @@ $$\theta_{new} = \theta_{old} - \eta \cdot \nabla_\theta L$$
 ---
 
 ## Question 19: Differences between batch, stochastic, and mini-batch gradient descent
+- [ ] Done
 
 ### Definition
 The three variants differ in how much data is used to compute each gradient update.
@@ -523,6 +542,7 @@ for epoch in range(epochs):
 ---
 
 ## Question 20: What are optimization algorithms like Adam, RMSprop, and AdaGrad?
+- [ ] Done
 
 ### Definition
 These are adaptive learning rate optimizers that adjust the learning rate per-parameter based on historical gradient information.
@@ -551,6 +571,7 @@ optimizer = torch.optim.RMSprop(model.parameters(), lr=0.001)
 ---
 
 ## Question 21: How does Batch Normalization work?
+- [ ] Done
 
 ### Definition
 Batch Normalization normalizes layer inputs across the mini-batch to have zero mean and unit variance, then applies learnable scale and shift parameters. This stabilizes training and enables higher learning rates.
@@ -580,6 +601,7 @@ model = nn.Sequential(
 ---
 
 ## Question 22: Describe the process of hyperparameter tuning
+- [ ] Done
 
 ### Definition
 Hyperparameter tuning searches for optimal values of parameters set before training (learning rate, batch size, architecture) to maximize model performance.
@@ -609,6 +631,7 @@ Hyperparameter tuning searches for optimal values of parameters set before train
 ---
 
 ## Question 23: What is early stopping, and how does it prevent overfitting?
+- [ ] Done
 
 ### Definition
 Early stopping monitors validation loss during training and halts when it stops improving for a specified number of epochs (patience), preventing the model from memorizing training noise.
@@ -643,6 +666,7 @@ class EarlyStopping:
 ---
 
 ## Question 24: Explain the trade-off between bias and variance
+- [ ] Done
 
 ### Definition
 The bias-variance trade-off describes the tension between model complexity: simple models have high bias (underfit), complex models have high variance (overfit). The goal is finding optimal complexity.
@@ -667,6 +691,7 @@ $$\text{Error} = \text{Bias}^2 + \text{Variance} + \text{Noise}$$
 ---
 
 ## Question 25: What are popular libraries and frameworks for deep learning?
+- [ ] Done
 
 ### Major Frameworks
 
@@ -689,6 +714,7 @@ $$\text{Error} = \text{Bias}^2 + \text{Variance} + \text{Noise}$$
 ---
 
 ## Question 26: Explain how a deep learning model can be deployed into production
+- [ ] Done
 
 ### Deployment Pipeline
 
@@ -726,6 +752,7 @@ async def predict(input_data: InputData):
 ---
 
 ## Question 27: What are considerations for scaling deep learning models?
+- [ ] Done
 
 ### Key Considerations
 
@@ -746,6 +773,7 @@ async def predict(input_data: InputData):
 ---
 
 ## Question 28: Explain how to perform feature extraction using pretrained models
+- [ ] Done
 
 ### Definition
 Feature extraction uses a pretrained model as a fixed feature extractor, removing the classification head and using intermediate representations as input to a new classifier.
@@ -785,6 +813,7 @@ model = nn.Sequential(
 ---
 
 ## Question 29: What are adversarial examples, and why do they pose a threat?
+- [ ] Done
 
 ### Definition
 Adversarial examples are inputs with small, carefully crafted perturbations that cause neural networks to make incorrect predictions with high confidence, despite being imperceptible to humans.
@@ -810,6 +839,7 @@ $$x_{adv} = x + \epsilon \cdot \text{sign}(\nabla_x L)$$
 ---
 
 ## Question 30: What are challenges in training deep reinforcement learning models?
+- [ ] Done
 
 ### Key Challenges
 
@@ -831,6 +861,7 @@ $$x_{adv} = x + \epsilon \cdot \text{sign}(\nabla_x L)$$
 ---
 
 ## Question 31: Explain few-shot learning and its significance
+- [ ] Done
 
 ### Definition
 Few-shot learning enables models to learn new classes from only a few examples (1-10) per class, rather than thousands, by leveraging prior knowledge from related tasks.
@@ -851,6 +882,7 @@ Few-shot learning enables models to learn new classes from only a few examples (
 ---
 
 ## Question 32: What are zero-shot learning and one-shot learning?
+- [ ] Done
 
 ### Definition
 **Zero-shot**: Classify classes never seen during training using auxiliary information (attributes, descriptions). **One-shot**: Learn from exactly one example per new class.
@@ -870,6 +902,7 @@ Few-shot learning enables models to learn new classes from only a few examples (
 ---
 
 ## Question 33: Relationship between deep learning and computer vision
+- [ ] Done
 
 ### Definition
 Deep learning revolutionized computer vision by enabling automatic feature learning from raw pixels, replacing hand-crafted features (SIFT, HOG) with learned hierarchical representations.
@@ -892,6 +925,7 @@ Deep learning revolutionized computer vision by enabling automatic feature learn
 ---
 
 ## Question 34: How does deep learning contribute to speech recognition and synthesis?
+- [ ] Done
 
 ### Speech Recognition (ASR)
 - **Input**: Audio waveform or spectrogram
@@ -914,6 +948,7 @@ Deep learning revolutionized computer vision by enabling automatic feature learn
 ---
 
 ## Question 35: Describe reinforcement learning and its connection to deep learning
+- [ ] Done
 
 ### Definition
 Reinforcement learning trains agents to make sequential decisions by maximizing cumulative reward. Deep RL uses neural networks to approximate value functions or policies for complex, high-dimensional problems.
@@ -936,6 +971,7 @@ Reinforcement learning trains agents to make sequential decisions by maximizing 
 ---
 
 ## Question 36: What is multimodal learning in deep learning?
+- [ ] Done
 
 ### Definition
 Multimodal learning processes and relates information from multiple modalities (text, image, audio, video) to enable cross-modal understanding and generation.
@@ -957,6 +993,7 @@ Multimodal learning processes and relates information from multiple modalities (
 ---
 
 ## Question 37: Significance of ROC curves and AUC in model performance
+- [ ] Done
 
 ### Definition
 **ROC curve** plots True Positive Rate vs False Positive Rate at various thresholds. **AUC** (Area Under Curve) summarizes discriminative ability as a single number (0.5 = random, 1.0 = perfect).
@@ -985,6 +1022,7 @@ roc_auc = auc(fpr, tpr)
 ---
 
 ## Question 38: Methods for model introspection and feature importance
+- [ ] Done
 
 ### Techniques
 
@@ -1009,6 +1047,7 @@ saliency = input_image.grad.abs()
 ---
 
 ## Question 39: What is model explainability, and why is it important?
+- [ ] Done
 
 ### Definition
 Model explainability is the ability to understand and interpret why a model makes specific predictions, making it trustworthy, debuggable, and compliant with regulations.
@@ -1047,6 +1086,7 @@ Model explainability is the ability to understand and interpret why a model make
 # Transformers Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain the core innovation of the Transformer architecture.**
 
@@ -1055,6 +1095,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 2
+- [ ] Done
 
 **What is the self-attention mechanism and how does it work?**
 
@@ -1063,6 +1104,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 3
+- [ ] Done
 
 **Describe the multi-head attention mechanism.**
 
@@ -1071,6 +1113,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 4
+- [ ] Done
 
 **How are Query, Key, and Value matrices computed?**
 
@@ -1079,6 +1122,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain the scaled dot-product attention formula.**
 
@@ -1087,6 +1131,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is positional encoding and why is it necessary?**
 
@@ -1095,6 +1140,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 7
+- [ ] Done
 
 **Describe the encoder-decoder structure of Transformers.**
 
@@ -1103,6 +1149,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do residual connections work in Transformer blocks?**
 
@@ -1111,6 +1158,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain layer normalization in Transformer architecture.**
 
@@ -1119,6 +1167,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is the purpose of the feed-forward network in Transformers?**
 
@@ -1127,6 +1176,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 11
+- [ ] Done
 
 **How does masked attention work in decoder layers?**
 
@@ -1135,6 +1185,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 12
+- [ ] Done
 
 **What is teacher forcing in Transformer training?**
 
@@ -1143,6 +1194,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain the computational complexity of self-attention.**
 
@@ -1151,6 +1203,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 14
+- [ ] Done
 
 **How do Transformers handle variable-length sequences?**
 
@@ -1159,6 +1212,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 15
+- [ ] Done
 
 **What are the advantages of Transformers over RNNs?**
 
@@ -1167,6 +1221,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 16
+- [ ] Done
 
 **Describe the training process for Transformer models.**
 
@@ -1175,6 +1230,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you implement beam search for Transformer decoding?**
 
@@ -1183,6 +1239,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 18
+- [ ] Done
 
 **What is the Vision Transformer (ViT) approach?**
 
@@ -1191,6 +1248,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain BERT and its bidirectional training approach.**
 
@@ -1199,6 +1257,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 20
+- [ ] Done
 
 **What is GPT and autoregressive language modeling?**
 
@@ -1207,6 +1266,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 21
+- [ ] Done
 
 **Describe the differences between BERT and GPT architectures.**
 
@@ -1215,6 +1275,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 22
+- [ ] Done
 
 **How does attention visualization help interpret Transformers?**
 
@@ -1223,6 +1284,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 23
+- [ ] Done
 
 **What are the memory requirements for Transformer training?**
 
@@ -1231,6 +1293,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain gradient accumulation in Transformer training.**
 
@@ -1239,6 +1302,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 25
+- [ ] Done
 
 **How do you handle long sequences in Transformers?**
 
@@ -1247,6 +1311,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 26
+- [ ] Done
 
 **What is the Longformer and sparse attention patterns?**
 
@@ -1255,6 +1320,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 27
+- [ ] Done
 
 **Describe efficient Transformer variants (Linformer, Performer).**
 
@@ -1263,6 +1329,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 28
+- [ ] Done
 
 **What is cross-attention in encoder-decoder Transformers?**
 
@@ -1271,6 +1338,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 29
+- [ ] Done
 
 **How do you fine-tune pre-trained Transformer models?**
 
@@ -1279,6 +1347,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain the concept of attention heads and their specialization.**
 
@@ -1287,6 +1356,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 31
+- [ ] Done
 
 **What are the regularization techniques used in Transformers?**
 
@@ -1295,6 +1365,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 32
+- [ ] Done
 
 **How does warmup and learning rate scheduling work?**
 
@@ -1303,6 +1374,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 33
+- [ ] Done
 
 **Describe the tokenization process for Transformer inputs.**
 
@@ -1311,6 +1383,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 34
+- [ ] Done
 
 **What is subword tokenization (BPE, WordPiece)?**
 
@@ -1319,6 +1392,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 35
+- [ ] Done
 
 **How do you handle out-of-vocabulary words in Transformers?**
 
@@ -1327,6 +1401,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 36
+- [ ] Done
 
 **Explain the concept of attention weights and their interpretation.**
 
@@ -1335,6 +1410,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 37
+- [ ] Done
 
 **What are the challenges of training large Transformer models?**
 
@@ -1343,6 +1419,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 38
+- [ ] Done
 
 **How do you implement model parallelism for Transformers?**
 
@@ -1351,6 +1428,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 39
+- [ ] Done
 
 **Describe gradient checkpointing for memory efficiency.**
 
@@ -1359,6 +1437,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 40
+- [ ] Done
 
 **What is the role of attention dropout in Transformers?**
 
@@ -1367,6 +1446,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 41
+- [ ] Done
 
 **How do you evaluate Transformer model performance?**
 
@@ -1375,6 +1455,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 42
+- [ ] Done
 
 **Explain the concept of transfer learning with Transformers.**
 
@@ -1383,6 +1464,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 43
+- [ ] Done
 
 **What is prompt engineering and in-context learning?**
 
@@ -1391,6 +1473,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 44
+- [ ] Done
 
 **How do you compress and distill Transformer models?**
 
@@ -1399,6 +1482,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 45
+- [ ] Done
 
 **Describe quantization techniques for Transformer deployment.**
 
@@ -1407,6 +1491,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 46
+- [ ] Done
 
 **What are the limitations and failure modes of Transformers?**
 
@@ -1415,6 +1500,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 47
+- [ ] Done
 
 **How do Transformers handle multilingual and cross-lingual tasks?**
 
@@ -1423,6 +1509,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 48
+- [ ] Done
 
 **Explain the concept of emergent abilities in large Transformers.**
 
@@ -1431,6 +1518,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 49
+- [ ] Done
 
 **What are recent advances in Transformer architecture design?**
 
@@ -1439,6 +1527,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 50
+- [ ] Done
 
 **Describe the environmental and computational costs of large Transformers.**
 
@@ -1454,6 +1543,7 @@ Model explainability is the ability to understand and interpret why a model make
 # Attention Mechanisms Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain the fundamental concept of attention in neural networks.**
 
@@ -1462,6 +1552,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 2
+- [ ] Done
 
 **What problem does attention solve in sequence-to-sequence models?**
 
@@ -1470,6 +1561,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 3
+- [ ] Done
 
 **Describe the original attention mechanism in Bahdanau et al.**
 
@@ -1478,6 +1570,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 4
+- [ ] Done
 
 **How does Luong attention differ from Bahdanau attention?**
 
@@ -1486,6 +1579,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain the three main components of attention: Query, Key, Value.**
 
@@ -1494,6 +1588,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is the difference between additive and multiplicative attention?**
 
@@ -1502,6 +1597,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you compute attention weights (alignment scores)?**
 
@@ -1510,6 +1606,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe the softmax normalization in attention mechanisms.**
 
@@ -1518,6 +1615,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is the attention context vector and how is it computed?**
 
@@ -1526,6 +1624,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain global vs local attention mechanisms.**
 
@@ -1534,6 +1633,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is self-attention and how does it work?**
 
@@ -1542,6 +1642,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 12
+- [ ] Done
 
 **How does multi-head attention improve upon single-head attention?**
 
@@ -1550,6 +1651,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 13
+- [ ] Done
 
 **Describe the scaled dot-product attention formula.**
 
@@ -1558,6 +1660,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 14
+- [ ] Done
 
 **Why is scaling important in dot-product attention?**
 
@@ -1566,6 +1669,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 15
+- [ ] Done
 
 **What are the computational complexities of different attention types?**
 
@@ -1574,6 +1678,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain cross-attention in encoder-decoder architectures.**
 
@@ -1582,6 +1687,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 17
+- [ ] Done
 
 **How does attention help with the vanishing gradient problem?**
 
@@ -1590,6 +1696,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 18
+- [ ] Done
 
 **What is the attention bottleneck and how to address it?**
 
@@ -1598,6 +1705,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe sparse attention patterns and their benefits.**
 
@@ -1606,6 +1714,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 20
+- [ ] Done
 
 **What is window-based attention in long sequences?**
 
@@ -1614,6 +1723,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain linear attention and its approximations.**
 
@@ -1622,6 +1732,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 22
+- [ ] Done
 
 **How do you visualize and interpret attention weights?**
 
@@ -1630,6 +1741,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 23
+- [ ] Done
 
 **What are attention heatmaps and how to create them?**
 
@@ -1638,6 +1750,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 24
+- [ ] Done
 
 **Describe attention mechanisms in computer vision.**
 
@@ -1646,6 +1759,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 25
+- [ ] Done
 
 **What is spatial attention and channel attention?**
 
@@ -1654,6 +1768,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain the Squeeze-and-Excitation (SE) attention module.**
 
@@ -1662,6 +1777,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 27
+- [ ] Done
 
 **How does attention work in image captioning models?**
 
@@ -1670,6 +1786,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 28
+- [ ] Done
 
 **What is hard vs soft attention?**
 
@@ -1678,6 +1795,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 29
+- [ ] Done
 
 **Describe attention mechanisms in speech recognition.**
 
@@ -1686,6 +1804,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 30
+- [ ] Done
 
 **How do you implement attention in recurrent models?**
 
@@ -1694,6 +1813,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 31
+- [ ] Done
 
 **What is the coverage mechanism in attention?**
 
@@ -1702,6 +1822,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 32
+- [ ] Done
 
 **How does attention help with alignment in translation?**
 
@@ -1710,6 +1831,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 33
+- [ ] Done
 
 **Explain attention regularization techniques.**
 
@@ -1718,6 +1840,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 34
+- [ ] Done
 
 **What is attention dropout and when to use it?**
 
@@ -1726,6 +1849,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 35
+- [ ] Done
 
 **How do you handle attention for variable-length sequences?**
 
@@ -1734,6 +1858,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 36
+- [ ] Done
 
 **Describe masked attention in causal language models.**
 
@@ -1742,6 +1867,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 37
+- [ ] Done
 
 **What are the memory requirements for attention computation?**
 
@@ -1750,6 +1876,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 38
+- [ ] Done
 
 **How do you optimize attention computation for efficiency?**
 
@@ -1758,6 +1885,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 39
+- [ ] Done
 
 **Explain flash attention and memory-efficient implementations.**
 
@@ -1766,6 +1894,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 40
+- [ ] Done
 
 **What is the attention mechanism in Graph Neural Networks?**
 
@@ -1774,6 +1903,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 41
+- [ ] Done
 
 **How does attention work in recommendation systems?**
 
@@ -1782,6 +1912,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 42
+- [ ] Done
 
 **Describe hierarchical attention mechanisms.**
 
@@ -1790,6 +1921,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 43
+- [ ] Done
 
 **What is co-attention and when is it useful?**
 
@@ -1798,6 +1930,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 44
+- [ ] Done
 
 **How do you implement position-aware attention?**
 
@@ -1806,6 +1939,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 45
+- [ ] Done
 
 **Explain relative position encoding in attention.**
 
@@ -1814,6 +1948,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 46
+- [ ] Done
 
 **What are the limitations of attention mechanisms?**
 
@@ -1822,6 +1957,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 47
+- [ ] Done
 
 **How does attention relate to human cognitive attention?**
 
@@ -1830,6 +1966,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 48
+- [ ] Done
 
 **Describe recent advances in attention research.**
 
@@ -1838,6 +1975,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 49
+- [ ] Done
 
 **What are alternatives to attention for sequence modeling?**
 
@@ -1846,6 +1984,7 @@ Model explainability is the ability to understand and interpret why a model make
 ---
 
 ## Question 50
+- [ ] Done
 
 **How do you debug and improve attention model performance?**
 

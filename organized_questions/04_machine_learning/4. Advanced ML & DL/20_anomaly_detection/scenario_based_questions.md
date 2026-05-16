@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: How would you approach anomaly detection in a network security context?
+- [ ] Done
 
 ### Answer
 
@@ -262,6 +263,7 @@ class RealTimeNetworkMonitor:
 ---
 
 ## Question 2: Propose a method for detecting fraud in credit card transactions
+- [ ] Done
 
 ### Answer
 
@@ -517,6 +519,7 @@ class RulesEngine:
 ---
 
 ## Question 3: Discuss how you would set up an anomaly detection system for monitoring industrial equipment
+- [ ] Done
 
 ### Answer
 
@@ -797,6 +800,7 @@ class VibrationAnalyzer:
 ---
 
 ## Question 4: Describe your approach to identifying bot behavior in web traffic data
+- [ ] Done
 
 ### Answer
 
@@ -1080,6 +1084,7 @@ class RealTimeBotScorer:
 ---
 
 ## Question 5: Present a framework for detecting anomalies in social media trend data
+- [ ] Done
 
 ### Answer
 
@@ -1287,6 +1292,7 @@ class RealTimeSocialMonitor:
 ---
 
 ## Question 6: How would you detect anomalies in a multi-tenant cloud system's resource utilization?
+- [ ] Done
 
 ### Answer
 

@@ -1,39 +1,45 @@
 # Time Series Interview Questions - Theory Questions
 
 ## Question 1
+- [x] Done
 
 **What is a time series?**
 
 **Definition:**
-A time series is a sequence of data points collected at successive, equally spaced points in time. The temporal ordering is critical, as adjacent observations are typically dependent on each other.
+A time series is a stochastic process $\{Y_t\}$ indexed by time (discrete or continuous) where ordering matters and observations are typically dependent. The sampling frequency defines what $t$ represents and the forecasting horizon.
 
 **Core Concepts:**
-- **Trend (T):** Long-term direction (increasing, decreasing, or stable)
-- **Seasonality (S):** Predictable, repeating patterns at fixed intervals (daily, weekly, yearly)
-- **Cyclicity (C):** Irregular patterns tied to economic or business cycles
-- **Noise/Residual (ε):** Random, unpredictable component
+- **Trend (T):** Long-term level movement (deterministic or stochastic drift)
+- **Seasonality (S):** Fixed-period patterns tied to calendars
+- **Cyclicity (C):** Irregular, longer-horizon oscillations not tied to a fixed period
+- **Noise/Residual (ε):** Short-term, unpredictable variation
+- **Regime Shifts:** Structural breaks or level changes
 
 **Mathematical Formulation:**
 - Additive Model: $Y_t = T_t + S_t + C_t + \epsilon_t$
 - Multiplicative Model: $Y_t = T_t \times S_t \times C_t \times \epsilon_t$
+- State-Space View: $Y_t = \ell_t + s_t + \eta_t$ with latent states for level/seasonality
 
-**Intuition:**
-Think of stock prices, temperature readings, or monthly sales - each value is influenced by what came before it, and patterns often repeat over time.
+**Practical Notes:**
+- Use the ACF to see how far back the series "remembers"; flat ACF suggests little dependence.
+- A frequency view (periodogram) helps reveal hidden cycles and multiple seasonalities.
+- If behavior changes over time, use rolling statistics or split the series by regime.
 
-**Practical Relevance:**
-- **Finance:** Stock price prediction, volatility modeling
-- **Retail:** Demand forecasting, inventory optimization
-- **IoT:** Anomaly detection in sensor data
-- **Healthcare:** Patient vital monitoring
+**Engineering Considerations:**
+- Validate timestamps (time zones, daylight savings, missing intervals) and treat gaps explicitly.
+- Choose aggregation levels to balance signal and noise; avoid leakage by preventing future data in features.
+- If seasonal amplitude grows with level, use a log transform or multiplicative seasonality.
 
 **Python Example:**
 ```python
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # Pipeline: Create time series -> Visualize -> Observe patterns
 
 # Step 1: Create sample time series data
+np.random.seed(42)
 dates = pd.date_range(start='2023-01-01', periods=365, freq='D')
 values = [100 + 0.5*i + 10*np.sin(2*np.pi*i/30) + np.random.randn()*5 
           for i in range(365)]  # trend + seasonality + noise
@@ -52,22 +58,25 @@ plt.show()
 ```
 
 **Interview Tips:**
-- Always mention the four components (Trend, Seasonality, Cyclicity, Noise)
-- Know when to use additive vs multiplicative (multiplicative when seasonal amplitude changes with level)
-- First step with any time series: **plot it**
+- State sampling frequency, forecast horizon, and whether the time index is regular or irregular.
+- Call out multiple seasonalities or regime shifts early; they drive model choice.
+- Mention both time-domain and frequency-domain perspectives for senior-level discussions.
 
 ---
 
 ## Question 2
+- [x] Done
 
 **In the context of time series, what is stationarity, and why is it important?**
 
 **Definition:**
-A time series is stationary if its statistical properties (mean, variance, autocorrelation) remain constant over time. It's the foundation assumption for most classical time series models.
+A time series is stationary if its distribution does not change over time. In practice, weak (covariance) stationarity is assumed: constant mean, variance, and autocovariance. Distinguish trend-stationary processes from difference-stationary (unit root) processes.
 
 **Core Concepts:**
-- **Strict Stationarity:** Joint probability distribution is unchanged by time shifts (very rare)
-- **Weak (Covariance) Stationarity:** Mean, variance, and autocovariance are constant (practical definition)
+- **Strict Stationarity:** Full joint distribution is invariant to time shifts (rare in practice)
+- **Weak (Covariance) Stationarity:** Constant mean/variance/autocovariance (practical definition)
+- **Trend-Stationary vs Unit Root:** Detrend vs difference; a unit root means one differencing step is needed
+- **Structural Breaks:** Regime changes can break stationarity even if each regime is stable
 
 **Conditions for Weak Stationarity:**
 1. $E[Y_t] = \mu$ (constant mean - no trend)
@@ -77,21 +86,27 @@ A time series is stationary if its statistical properties (mean, variance, autoc
 **Why It's Important:**
 | Reason | Explanation |
 |--------|-------------|
-| Model Assumption | ARMA/ARIMA models require stationarity to work correctly |
-| Predictability | Constant statistical properties mean past patterns continue into future |
-| Simplicity | Removes trend/seasonality complexity before modeling |
+| Model Validity | ARMA/ARIMA inference relies on stable moments and autocovariance |
+| Forecast Behavior | Error variance and prediction intervals depend on stationarity |
+| Spurious Regression Risk | Non-stationarity can create misleading relationships |
 
 **How to Check Stationarity:**
-1. **Visual Inspection:** Plot series, look for trends or changing variance
-2. **Summary Statistics:** Compare mean/variance across different time windows
-3. **ADF Test (Augmented Dickey-Fuller):**
-   - $H_0$: Series is non-stationary (has unit root)
-   - $H_1$: Series is stationary
-   - If p-value < 0.05 → Reject $H_0$ → Series is stationary
+1. **Visual + Rolling Stats:** Look for drift, variance changes, and breaks
+2. **ADF Test (Augmented Dickey-Fuller):**
+    - $H_0$: Unit root (non-stationary)
+3. **KPSS Test:**
+    - $H_0$: Stationary (use alongside ADF for bracketing)
+4. **Seasonal Checks:** ACF spikes at seasonal lags can signal seasonal non-stationarity
+5. **Break Checks:** If you suspect a regime change, test or split the series
+
+**Remedies:**
+- Detrend or difference (including seasonal differencing) only when needed
+- Variance-stabilizing transforms (log, Box-Cox)
+- Model time-varying variance explicitly (ARCH/GARCH)
 
 **Python Example:**
 ```python
-from statsmodels.tsa.stattools import adfuller
+from statsmodels.tsa.stattools import adfuller, kpss
 import numpy as np
 
 # Pipeline: Generate data -> Apply ADF test -> Interpret result
@@ -99,37 +114,41 @@ import numpy as np
 # Step 1: Sample data
 data = np.cumsum(np.random.randn(100))  # Random walk (non-stationary)
 
-# Step 2: ADF Test
-result = adfuller(data)
-print(f'ADF Statistic: {result[0]:.4f}')
-print(f'p-value: {result[1]:.4f}')
+# Step 2: ADF and KPSS Tests
+adf_result = adfuller(data)
+kpss_stat, kpss_p, _, _ = kpss(data, regression='c', nlags='auto')
+print(f'ADF Statistic: {adf_result[0]:.4f}, p-value: {adf_result[1]:.4f}')
+print(f'KPSS Statistic: {kpss_stat:.4f}, p-value: {kpss_p:.4f}')
 
 # Step 3: Interpret
-if result[1] < 0.05:
+if adf_result[1] < 0.05 and kpss_p > 0.05:
     print("Stationary")
 else:
     print("Non-stationary - differencing needed")
 
-# Output: p-value > 0.05 indicates non-stationarity for random walk
+# Output: ADF p-value > 0.05 and KPSS p-value < 0.05 indicate non-stationarity
 ```
 
 **Interview Tips:**
-- If ADF p-value > 0.05, apply differencing and re-test
-- Don't confuse stationarity with having no pattern - stationary series can have autocorrelation
-- Mention ADF test by name - it's the standard
+- Use ADF + KPSS together; conflicting results often indicate trend-stationarity or breaks.
+- Structural breaks can look like unit roots; test for breaks before over-differencing.
+- Stationarity does not mean no autocorrelation; it means stable moments.
 
 ---
 
 ## Question 3
+- [x] Done
 
 **What is seasonality in time series analysis, and how do you detect it?**
 
 **Definition:**
-Seasonality refers to predictable, periodic fluctuations that occur at fixed intervals (daily, weekly, monthly, yearly). It's tied to calendar/clock patterns and is distinct from irregular cycles.
+Seasonality refers to predictable, periodic fluctuations that occur at fixed intervals (daily, weekly, monthly, yearly). It is tied to calendar/clock effects and is distinct from irregular business cycles.
 
 **Core Concepts:**
-- **Examples:** Retail sales spike in December, ice cream sales peak in summer, website traffic higher on weekdays
-- **Difference from Cycles:** Seasonality has fixed period; cycles have irregular intervals
+- **Deterministic vs Stochastic Seasonality:** Fixed seasonal pattern vs seasonality that evolves over time
+- **Multiple Seasonalities:** Weekly + yearly patterns in daily data are common
+- **Amplitude Effects:** Additive vs multiplicative seasonality (amplitude grows with level)
+- **Calendar Effects:** Holidays, trading days, and special events
 
 **Detection Methods:**
 
@@ -139,14 +158,17 @@ Seasonality refers to predictable, periodic fluctuations that occur at fixed int
 | Seasonal Subseries Plot | Group by season (e.g., all Januaries) - similar patterns confirm seasonality |
 | Box Plots by Period | Different distributions across months/days indicate seasonality |
 | ACF Plot | Significant spikes at seasonal lag and multiples (lag 12, 24, 36 for monthly data) |
+| Periodogram / STL | Dominant seasonal frequencies; stable seasonal component |
 
 **Handling Seasonality:**
 1. **Seasonal Differencing:** $Y'_t = Y_t - Y_{t-s}$ (where $s$ = seasonal period)
-2. **Decomposition:** Separate into trend, seasonal, residual components
-3. **Seasonal Models:** SARIMA, Holt-Winters
+2. **Decomposition:** STL to separate trend/seasonal/residual and model the remainder
+3. **Seasonal Regressors:** Fourier terms or calendar dummies
+4. **Seasonal Models:** SARIMA, TBATS, Holt-Winters
 
 **Python Example:**
 ```python
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from statsmodels.graphics.tsaplots import plot_acf
@@ -169,13 +191,14 @@ plt.show()
 ```
 
 **Interview Tips:**
-- Seasonal period $s$: 12 for monthly→yearly, 7 for daily→weekly, 4 for quarterly→yearly
-- ACF spikes at lag $s$, $2s$, $3s$ = clear seasonality signal
-- Always state the period when discussing seasonality
+- State all seasonal periods explicitly (e.g., weekly and yearly for daily data).
+- Check whether seasonality is stable over time; if not, prefer STL/State-Space approaches.
+- Calendar effects often explain residual seasonality after standard seasonal differencing.
 
 ---
 
 ## Question 4
+- [x] Done
 
 **Explain the concept of trend in time series analysis.**
 
@@ -183,10 +206,10 @@ plt.show()
 A trend is the underlying long-term direction of a time series - a persistent increase, decrease, or stable movement in the data's level over time.
 
 **Core Concepts:**
-- **Upward Trend:** Data generally increases (e.g., global population, CO₂ levels)
-- **Downward Trend:** Data generally decreases (e.g., mortality rates, technology costs)
-- **No Trend:** Data fluctuates around a constant level (stationary)
-- Trend can be linear, quadratic, exponential, or changing
+- **Deterministic Trend:** Modeled directly as a function of time (trend-stationary)
+- **Stochastic Trend:** Unit root with drift (difference-stationary)
+- **Structural Breaks:** Trend changes at specific times (regime shifts)
+- **Nonlinear Trends:** Exponential, logistic, or piecewise trends
 
 **Methods to Identify and Handle Trend:**
 
@@ -194,12 +217,15 @@ A trend is the underlying long-term direction of a time series - a persistent in
 |--------|-------------|----------|
 | Visual Inspection | Plot the series | Initial exploration |
 | Moving Average | Rolling mean smooths out noise | Visualization |
-| Regression | Fit $Y_t = \beta_0 + \beta_1 t$ | Explicit trend modeling |
-| Differencing | $Y'_t = Y_t - Y_{t-1}$ | Make series stationary |
+| Regression | Fit $Y_t = \beta_0 + \beta_1 t$ | Deterministic trend modeling |
+| Unit Root Tests | ADF/KPSS to separate deterministic vs stochastic trend | Model choice |
+| State-Space Trend | Local level/linear trend | Time-varying trends |
+| Differencing | $Y'_t = Y_t - Y_{t-1}$ | Remove stochastic trend |
 
 **Mathematical Formulation:**
 - Linear trend: $Y_t = \beta_0 + \beta_1 t + \epsilon_t$
 - Quadratic trend: $Y_t = \beta_0 + \beta_1 t + \beta_2 t^2 + \epsilon_t$
+- Stochastic trend (random walk with drift): $Y_t = Y_{t-1} + \delta + \epsilon_t$
 - First difference removes linear trend
 - Second difference removes quadratic trend
 
@@ -225,19 +251,20 @@ print(f"Differenced mean: {differenced.mean():.2f}")  # ~2 (the slope)
 ```
 
 **Interview Tips:**
-- Don't confuse trend with cyclicity - trend is monotonic direction, cycles fluctuate
-- Over-differencing introduces artificial patterns (watch for strong negative ACF at lag 1)
-- Moving average for visualization, differencing for modeling
+- Decide whether the trend is deterministic or stochastic; it changes the model class.
+- Check for structural breaks before differencing; breaks can mimic trends.
+- Over-differencing inflates variance and can induce negative lag-1 autocorrelation.
 
 ---
 
 ## Question 5
+- [x] Done
 
 **Describe the difference between white noise and a random walk in time series.**
 
 **Definition:**
-- **White Noise:** A sequence of i.i.d. random variables with zero mean and constant variance - completely unpredictable
-- **Random Walk:** Current value = previous value + white noise - has memory but no predictable pattern
+- **White Noise:** i.i.d. random variables with zero mean and constant variance; no temporal dependence
+- **Random Walk:** $Y_t = Y_{t-1} + \epsilon_t$ (often with drift); unit-root process with cumulative shocks
 
 **Mathematical Formulation:**
 - White Noise: $Y_t = \epsilon_t$ where $\epsilon_t \sim N(0, \sigma^2)$
@@ -252,11 +279,14 @@ print(f"Differenced mean: {differenced.mean():.2f}")  # ~2 (the slope)
 | Autocorrelation | Zero (ACF = 0 for all lags) | High, slowly decaying ACF |
 | Variance | Constant ($\sigma^2$) | Grows with time ($t \cdot \sigma^2$) |
 | Best Forecast | Mean (0) | Last observed value |
+| Integration Order | I(0) | I(1) |
 | After Differencing | Introduces correlation | Becomes white noise |
 
-**Intuition:**
-- White noise: Like coin flips - each value independent, no memory
-- Random walk: Like a drunk person walking - each step is random, but position depends on where they were
+**Advanced Notes:**
+**Practical Notes:**
+- A random walk has no predictable direction; the best forecast is the last value plus drift.
+- Forecast uncertainty grows with horizon, unlike white noise.
+- Unit-root tests (ADF/KPSS) help distinguish random walks from stationary noise.
 
 **Python Example:**
 ```python
@@ -287,13 +317,14 @@ plt.show()
 ```
 
 **Interview Tips:**
-- Differencing a random walk → white noise
-- Differencing white noise → introduces negative autocorrelation (over-differencing)
-- Random walk is the simplest non-stationary process - know this example well
+- Distinguish random walk with drift from deterministic trend; they imply different forecasts.
+- Over-differencing white noise yields negative lag-1 autocorrelation.
+- Use unit-root language (I(1) vs I(0)) for senior-level discussions.
 
 ---
 
 ## Question 6
+- [x] Done
 
 **What is meant by autocorrelation, and how is it quantified in time series?**
 
@@ -309,6 +340,12 @@ Autocorrelation measures the correlation of a time series with a lagged version 
 $$ACF(k) = \frac{Cov(Y_t, Y_{t-k})}{Var(Y_t)} = \frac{\gamma_k}{\gamma_0}$$
 
 where $\gamma_k$ is the autocovariance at lag $k$.
+
+**Estimation and Inference:**
+- Sample ACF is biased for small samples; significance bands are approximate.
+- For white noise, a common 95% band is $\pm 1.96/\sqrt{N}$.
+- Ljung-Box Q-test checks whether a set of autocorrelations is jointly zero.
+- Non-stationary data can create spurious autocorrelation patterns.
 
 **Interpreting ACF Plot:**
 
@@ -346,14 +383,14 @@ plt.show()
 ```
 
 **Interview Tips:**
-- ACF at lag 0 is always 1 (series perfectly correlated with itself)
-- Blue shaded area = 95% confidence band; spikes outside are significant
-- ACF identifies MA order; PACF identifies AR order
-- Slow decay in ACF → series needs differencing
+- Use ACF for MA order hints and PACF for AR order hints, but confirm with diagnostics.
+- Report confidence bands and avoid over-interpreting single spikes.
+- Always assess residual ACF after fitting a model.
 
 ---
 
 ## Question 7
+- [x] Done
 
 **Explain the purpose of differencing in time series analysis.**
 
@@ -361,14 +398,21 @@ plt.show()
 Differencing is a transformation that computes the difference between consecutive observations to make a non-stationary series stationary. It removes trends and seasonality.
 
 **Core Concepts:**
-- **First-Order Differencing:** $Y'_t = Y_t - Y_{t-1}$ (removes linear trend)
+- **Difference Operator:** $(1 - B)^d Y_t$ where $B$ is the backshift operator
+- **First-Order Differencing:** $Y'_t = Y_t - Y_{t-1}$ (removes stochastic linear trend)
 - **Second-Order Differencing:** $Y''_t = Y'_t - Y'_{t-1}$ (removes quadratic trend)
-- **Seasonal Differencing:** $Y'_t = Y_t - Y_{t-s}$ (removes seasonality, where $s$ = period)
+- **Seasonal Differencing:** $(1 - B^s)Y_t$ for seasonal unit roots
+- **Fractional Differencing:** Preserves long memory while achieving stationarity (ARFIMA)
 
 **Why Differencing is Needed:**
 1. **Achieve Stationarity:** Required for ARMA/ARIMA models
 2. **Stabilize Mean:** Removes trend so series fluctuates around constant level
 3. **Enable Modeling:** The "I" in ARIMA(p,d,q) - parameter $d$ is the differencing order
+
+**Advanced Notes:**
+- Over-differencing inflates variance and can introduce negative lag-1 autocorrelation.
+- Differencing can destroy long-run relationships; use VECM when cointegration exists.
+- Seasonal + non-seasonal differencing can be combined but should be minimized.
 
 **Algorithm to Determine d:**
 ```
@@ -409,13 +453,14 @@ adf_test(differenced, "Differenced")   # p < 0.05 (stationary)
 ```
 
 **Interview Tips:**
-- Over-differencing sign: Strong negative spike at lag 1 in ACF
-- Random walk → one difference → white noise
-- Seasonal differencing: use $Y_t - Y_{t-12}$ for monthly data with yearly seasonality
+- Prefer the smallest $d$ that achieves stationarity; confirm with ADF/KPSS.
+- If residual ACF shows strong negative lag 1, back off differencing.
+- Use seasonal differencing only when a seasonal unit root is present.
 
 ---
 
 ## Question 8
+- [x] Done
 
 **What is an AR model (Autoregressive Model) in time series?**
 
@@ -431,8 +476,10 @@ where:
 - $c$ = constant/intercept
 - $\epsilon_t$ = white noise error
 
-**Intuition:**
-AR captures **momentum** - if a value was high yesterday, it tends to be high today. Like temperature: today's temp depends on yesterday's.
+**Stationarity and Estimation:**
+- AR is stationary iff all roots of $1 - \phi_1 z - ... - \phi_p z^p = 0$ lie outside the unit circle (shocks die out).
+- Parameters are commonly estimated via Yule-Walker, OLS, or maximum likelihood.
+- Order selection uses AIC/BIC plus residual diagnostics.
 
 **Identifying Order p (Using PACF):**
 - PACF (Partial ACF) measures **direct** correlation at lag $k$ after removing effects of shorter lags
@@ -475,13 +522,14 @@ AR Model Identification:
 ```
 
 **Interview Tips:**
-- AR requires stationarity
-- PACF cuts off → AR; ACF cuts off → MA
-- AR(1) with $|\phi_1| < 1$ is stationary
+- Quote the unit-circle root condition for stationarity.
+- PACF cutoff is a heuristic; validate with residual checks and information criteria.
+- Use AIC/BIC or cross-validation to avoid overfitting high-order AR models.
 
 ---
 
 ## Question 9
+- [x] Done
 
 **Describe a MA model (Moving Average Model) and its use in time series.**
 
@@ -497,8 +545,10 @@ where:
 - $\mu$ = mean of the series
 - $\epsilon_t$ = white noise shock at time $t$
 
-**Intuition:**
-MA captures **short-term shocks** that linger for a finite period. Example: A surprise announcement affects stock price for a few days, then the effect fades.
+**Invertibility and Estimation:**
+- MA is invertible iff roots of $1 + \theta_1 z + ... + \theta_q z^q = 0$ lie outside the unit circle.
+- Invertibility gives a unique parameterization; without it, different parameters fit the same data.
+- Parameters are typically estimated by MLE or the innovations algorithm.
 
 **Identifying Order q (Using ACF):**
 - For MA(q): ACF **cuts off sharply** after lag $q$
@@ -541,13 +591,14 @@ print(f"MA Coefficients: {model.params}")
 ```
 
 **Interview Tips:**
-- MA models have finite memory (shock effects die out after $q$ lags)
-- ACF cutoff → MA order
-- MA is stationary by construction (finite sum of white noise terms)
+- ACF cutoff is a heuristic; confirm with residual diagnostics and information criteria.
+- Mention invertibility when discussing identifiability of MA models.
+- MA is stationary by construction but can be non-invertible without constraints.
 
 ---
 
 ## Question 10
+- [x] Done
 
 **Explain the ARMA (Autoregressive Moving Average) model.**
 
@@ -566,6 +617,10 @@ ARMA(p, q) where:
 - Real series often have both momentum (AR) and shock memory (MA)
 - More flexible with fewer parameters
 
+**Stationarity and Invertibility:**
+- ARMA requires AR roots outside the unit circle (stationarity) and MA roots outside the unit circle (invertibility).
+- Non-invertible MA components can lead to non-unique parameterizations.
+
 **Identifying Orders (p, q):**
 
 | Model | ACF | PACF |
@@ -574,7 +629,7 @@ ARMA(p, q) where:
 | MA(q) | Cuts off at lag q | Tails off |
 | ARMA(p,q) | Tails off | Tails off |
 
-**When both ACF and PACF tail off → ARMA model needed**
+**When both ACF and PACF tail off, ARMA is a candidate (not definitive)**
 
 Use **AIC/BIC** to select best (p, q):
 - Fit multiple models: ARMA(1,1), ARMA(1,2), ARMA(2,1), etc.
@@ -606,13 +661,14 @@ for p in [1, 2]:
 ```
 
 **Interview Tips:**
-- ARMA requires stationarity - difference first if needed (→ ARIMA)
-- Lower AIC = better model (penalizes extra parameters)
-- If unsure, start simple: ARMA(1,1) is a good baseline
+- Use information criteria and residual whiteness tests (Ljung-Box) to confirm fit.
+- ACF/PACF patterns are suggestive; identification is often ambiguous in finite samples.
+- ARMA is most effective on stationary series with stable variance.
 
 ---
 
 ## Question 11
+- [x] Done
 
 **How does the ARIMA (Autoregressive Integrated Moving Average) model extend the ARMA model?**
 
@@ -630,6 +686,8 @@ ARIMA(p, d, q):
 2. **Fit ARMA(p, q)** to $Y'_t$
 3. **Forecast** and integrate back (reverse differencing)
 
+Equivalently, ARIMA applies $(1 - B)^d$ to the original series and models the stationary result.
+
 **Key Extension:**
 - ARMA requires stationary data
 - ARIMA can handle **trends** via differencing
@@ -643,6 +701,11 @@ ARIMA(p, d, q):
 | ARIMA(0,1,1) | Simple exponential smoothing |
 | ARIMA(1,1,0) | Differenced first-order AR |
 | ARIMA(1,1,1) | Common general model |
+
+**Advanced Notes:**
+- Include a drift term when differencing removes a non-zero mean.
+- Seasonal ARIMA extends ARIMA with seasonal AR/MA and seasonal differencing.
+- Forecast intervals widen with horizon; for $d>0$ they grow faster than stationary models.
 
 **Box-Jenkins Method (Algorithm):**
 ```
@@ -684,13 +747,14 @@ print(f"Next 10 forecasts: {forecast[:5]}...")
 ```
 
 **Interview Tips:**
-- d is rarely > 2; if ADF still fails, reconsider the model
-- "I" stands for Integrated because forecasts are integrated (summed) back
-- auto_arima from pmdarima can automatically select (p, d, q)
+- Choose $d$ with unit-root tests and residual diagnostics, not just ADF alone.
+- Avoid over-differencing; it can mask structure and inflate variance.
+- Mention seasonal ARIMA when strong seasonality remains after differencing.
 
 ---
 
 ## Question 12
+- [x] Done
 
 **What is the role of the ACF (autocorrelation function) and PACF (partial autocorrelation function) in time series analysis?**
 
@@ -715,6 +779,11 @@ print(f"Next 10 forecasts: {forecast[:5]}...")
 **Mathematical Insight:**
 - ACF(k) = Total correlation (direct + all indirect paths)
 - PACF(k) = Correlation after removing linear effects of lags $1, 2, ..., k-1$
+
+**Advanced Notes:**
+- PACF can be computed via successive regressions or the Durbin-Levinson recursion.
+- ACF is the inverse Fourier transform of the spectral density.
+- Use ACF/PACF for residual diagnostics; remaining structure implies model misspecification.
 
 **Python Example:**
 ```python
@@ -752,13 +821,14 @@ Model Selection from ACF/PACF:
 ```
 
 **Interview Tips:**
-- Blue bands = 95% confidence interval; spikes outside are significant
-- ACF for MA order, PACF for AR order
-- Both tailing off = need both AR and MA components
+- Confidence bands are approximate; treat isolated spikes cautiously.
+- Use AIC/BIC alongside ACF/PACF to avoid overfitting.
+- Always check residual ACF after fitting ARIMA/SARIMA.
 
 ---
 
 ## Question 13
+- [x] Done
 
 **What is Exponential Smoothing, and when would you use it in time series forecasting?**
 
@@ -788,6 +858,11 @@ Equivalently: New forecast = $\alpha \times$ (actual) + $(1-\alpha) \times$ (pre
 - When recent data is more important than distant past
 - Automated forecasting at scale (thousands of SKUs)
 - When interpretability matters (clear level/trend/seasonal components)
+
+**State-Space (ETS) View:**
+- ETS models represent exponential smoothing as a probabilistic state-space system.
+- Error, trend, and seasonality can be additive or multiplicative (ETS(A,A,A), ETS(M,A,M), etc.).
+- Parameters are estimated by maximum likelihood, enabling principled intervals.
 
 **Equivalence to ARIMA:**
 - SES ≈ ARIMA(0,1,1)
@@ -819,15 +894,16 @@ print(f"Holt forecast: {holt_forecast[0]:.2f}")
 ```
 
 **Interview Tips:**
-- Start with exponential smoothing as baseline before complex models
-- Holt-Winters: 'additive' seasonality (constant amplitude) vs 'multiplicative' (amplitude grows with level)
-- If $\alpha$ = 1, it's a naive forecast (just last value)
+- Mention damped trends for long-horizon stability.
+- ETS often outperforms ARIMA on short series with strong seasonality.
+- Use likelihood-based model selection for ETS variants, not just visual fit.
 
 ---
 
 ## Question 14
+- [x] Done
 
-**Describe the steps involved in building atime series forecasting model.**
+**Describe the steps involved in building a time series forecasting model.**
 
 **Definition:**
 Building a time series model is an iterative process that involves understanding data, selecting appropriate models, validating performance, and deploying for production use.
@@ -840,45 +916,42 @@ STEP 1: PROBLEM DEFINITION
 ├── Forecast horizon? (1 day, 1 week, 1 month?)
 └── Business decision to support?
 
-STEP 2: DATA COLLECTION & EDA
-├── Gather historical time series data
-├── ALWAYS PLOT THE DATA FIRST
-├── Look for: Trend, Seasonality, Outliers, Structural breaks
-└── Plot ACF/PACF for autocorrelation patterns
+STEP 2: DATA AUDIT & EDA
+├── Validate timestamps, frequency, gaps, time zones
+├── Plot data; check trend, seasonality, outliers, breaks
+└── Inspect ACF/PACF and seasonal subseries patterns
 
-STEP 3: PREPROCESSING
-├── Handle missing values (interpolation)
-├── Remove or treat outliers
-├── Variance stabilization (log transform if needed)
-└── Check stationarity (ADF test) → Difference if needed
+STEP 3: PREPROCESSING & FEATURES
+├── Handle missingness and outliers with documented rules
+├── Variance stabilization (log/Box-Cox) if needed
+├── Calendar and exogenous features (holidays, promos)
+└── Check stationarity; apply differencing or trend models
 
-STEP 4: MODEL SELECTION
-├── No trend, no seasonality → SES, ARIMA
-├── Trend only → Holt's, ARIMA with d>0
-├── Trend + Seasonality → Holt-Winters, SARIMA
-├── Complex patterns → ML models (XGBoost), Deep Learning (LSTM)
-└── Always create NAIVE BASELINE first
+STEP 4: BASELINES & CANDIDATES
+├── Naive and seasonal-naive baselines
+├── ETS/ARIMA/SARIMA for classical patterns
+├── ML/GBM or global models for large-scale forecasting
+└── Consider probabilistic models for uncertainty
 
-STEP 5: TRAIN-TEST SPLIT (TIME-BASED!)
-├── Training set: Earlier time period
-├── Test set: Later time period (NEVER shuffle!)
-└── Use time-series cross-validation for robustness
+STEP 5: BACKTESTING (TIME-BASED)
+├── Rolling-origin evaluation (no shuffling)
+├── Multi-horizon metrics (MAE, RMSE, MAPE, MASE)
+└── Use the same feature pipeline as production
 
-STEP 6: MODEL TRAINING & TUNING
-├── Fit candidate models on training data
-├── Use ACF/PACF for ARIMA orders
-├── Grid search or auto_arima for hyperparameters
-└── Compare models using AIC/BIC
+STEP 6: MODEL SELECTION & DIAGNOSTICS
+├── Compare AIC/BIC or validation scores
+├── Check residuals (ACF, Ljung-Box, distribution)
+└── Stress-test with scenario or holiday effects
 
-STEP 7: EVALUATION
-├── Forecast on test set
-├── Calculate metrics: MAE, RMSE, MAPE, MASE
-└── Choose best model based on validation performance
+STEP 7: FORECASTING
+├── Produce point forecasts and prediction intervals
+├── Validate calibration (coverage vs nominal)
+└── Reconcile hierarchical forecasts if needed
 
 STEP 8: DEPLOYMENT & MONITORING
-├── Retrain on full data
-├── Generate forecasts with prediction intervals
-└── Monitor performance, retrain periodically
+├── Automate retraining and drift checks
+├── Track performance by segment and horizon
+└── Trigger alerts when accuracy degrades
 ```
 
 **Python Example:**
@@ -909,18 +982,19 @@ print(f"MAE: {mae:.2f}")
 ```
 
 **Interview Tips:**
-- Never shuffle time series data - temporal order is sacred
-- Always start with a naive baseline (last value or seasonal naive)
-- Residuals should be white noise - if not, model is missing something
+- Emphasize data leakage prevention and time-aware validation.
+- Baselines are mandatory; advanced models must beat them consistently.
+- Residual diagnostics are as important as headline metrics.
 
 ---
 
 ## Question 15
+- [x] Done
 
 **Explain the concept of cross-validation in the context of time series analysis.**
 
 **Definition:**
-Time series cross-validation is a technique to estimate model performance on unseen future data while respecting temporal order. Standard k-fold CV cannot be used because shuffling destroys time dependencies.
+Time series cross-validation (backtesting) estimates model performance on unseen future data while respecting temporal order. It evaluates models across multiple forecast origins and horizons without training on the future.
 
 **Why Standard K-Fold Fails:**
 - Shuffles data randomly → model trains on future, tests on past
@@ -934,6 +1008,7 @@ Time series cross-validation is a technique to estimate model performance on uns
 | **Rolling Forecast Origin** | Train on [1...k], test on k+1; Train on [1...k+1], test on k+2; ... | Most realistic, computationally expensive |
 | **Expanding Window** | Training window grows, test window slides forward | General purpose |
 | **Sliding Window** | Fixed-size training window slides forward | When old data is less relevant |
+| **Blocked CV with Gap** | Leave a buffer between train/test to avoid leakage | Feature pipelines with lagged aggregates |
 
 **Rolling Forecast Origin (Walk-Forward) Algorithm:**
 ```
@@ -947,6 +1022,11 @@ For i = 1 to n_folds:
     
 Final score = Average of all fold errors
 ```
+
+**Advanced Notes:**
+- Evaluate multiple horizons (1-step, 7-step, 30-step) to capture horizon-dependent error.
+- Use a gap/embargo when features use rolling windows to prevent leakage.
+- For hyperparameter tuning, nested backtesting avoids optimistic bias.
 
 **Visual Representation:**
 ```
@@ -998,13 +1078,14 @@ print(f"Average MAE across folds: {np.mean(errors):.3f}")
 ```
 
 **Interview Tips:**
-- NEVER use standard k-fold for time series
-- Rolling forecast origin = most realistic production scenario
-- Consistent performance across folds → well-generalized model
+- Report how many origins and horizons were evaluated.
+- Keep preprocessing (scaling, imputation) inside each fold.
+- Choose window strategy based on stationarity and concept drift.
 
 ---
 
 ## Question 16
+- [ ] Done
 
 **How does the ARCH (Autoregressive Conditional Heteroskedasticity) model deal with time series volatility?**
 
@@ -1028,8 +1109,10 @@ where:
 - $\epsilon_{t-1}^2$ = squared error (shock) from previous period
 - Large past shock → high current variance → volatility clustering
 
-**Intuition:**
-Think of stock markets: after a big price swing (crash or rally), the next few days also tend to have big swings. ARCH captures this "fear" or "excitement" persistence.
+**Diagnostics and Constraints:**
+- Test for ARCH effects using Engle's LM test on residuals.
+- Positivity constraints: $\alpha_0 > 0$, $\alpha_i \ge 0$.
+- Weak stationarity requires $\sum_{i=1}^q \alpha_i < 1$ (finite unconditional variance).
 
 **How ARCH Captures Volatility Clustering:**
 - Large $\epsilon_{t-1}^2$ → high $\sigma_t^2$ → expect large moves at time $t$
@@ -1066,13 +1149,14 @@ print(f"\nForecast variance: {forecast.variance.values[-1]}")
 - **Portfolio Optimization:** Understanding risk dynamics
 
 **Interview Tips:**
-- ARCH for modeling variance, ARIMA for modeling mean
-- ARCH(q) needs many lags → GARCH is more parsimonious
-- Volatility clustering is a "stylized fact" of financial markets
+- Model the mean first (ARMA/ARIMA), then apply ARCH to residuals.
+- ARCH often requires large $q$; GARCH is typically preferred.
+- Use heavy-tailed innovations (Student-t) when returns exhibit fat tails.
 
 ---
 
 ## Question 17
+- [ ] Done
 
 **Describe the GARCH (Generalized Autoregressive Conditional Heteroskedasticity) model and its application.**
 
@@ -1098,11 +1182,12 @@ $$\sigma_t^2 = \alpha_0 + \alpha_1 \epsilon_{t-1}^2 + \beta_1 \sigma_{t-1}^2$$
 | Persistence | Requires many lags | Built-in via $\sigma_{t-1}^2$ term |
 | Practice | Rarely used alone | Industry standard |
 
-**Intuition:**
-Today's volatility = weighted average of:
-1. Long-run average (constant)
-2. Yesterday's surprise ($\epsilon_{t-1}^2$)
-3. Yesterday's volatility ($\sigma_{t-1}^2$)
+**Advanced Notes:**
+**Advanced Notes:**
+- Stationarity (finite variance) typically requires $\alpha_1 + \beta_1 < 1$.
+- Persistence near 1 means shocks decay very slowly.
+- Leverage effects are modeled with EGARCH or GJR-GARCH.
+- Heavy tails are handled with Student-t or GED innovations.
 
 **Python Example:**
 ```python
@@ -1137,13 +1222,14 @@ print("\nVolatility forecast:", np.sqrt(forecast.variance.values[-1]))
 - **Trading Strategies:** Volatility-based signals
 
 **Interview Tips:**
-- GARCH(1,1) is the workhorse model - know it well
-- If $\alpha + \beta \approx 1$, shocks have very long-lasting effects (IGARCH)
-- For financial data: mean model often just constant, focus on variance model
+- Report persistence ($\alpha + \beta$) and unconditional variance.
+- Choose EGARCH/GJR when negative shocks increase volatility more than positive shocks.
+- Always check standardized residuals for remaining ARCH effects.
 
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain the concepts of cointegration and error correction models in time series.**
 
@@ -1153,11 +1239,11 @@ print("\nVolatility forecast:", np.sqrt(forecast.variance.values[-1]))
 
 **Core Concepts:**
 
-**Cointegration Intuition:**
-Imagine two drunk friends walking home together. Each walks randomly (non-stationary), but they're tied by a rope (long-run relationship). They can't drift too far apart.
+**Interpretation:**
+Cointegration implies shared stochastic trends. Even though each series is I(1), a specific linear combination is I(0), indicating a long-run equilibrium.
 
 **Mathematical Formulation:**
-If $Y_t$ and $X_t$ are both I(1) (non-stationary), but $Y_t - \gamma X_t$ is I(0) (stationary), then $Y_t$ and $X_t$ are cointegrated.
+If $Y_t$ and $X_t$ are both I(1) (one difference makes them stationary), but $Y_t - \gamma X_t$ is I(0) (stationary), then $Y_t$ and $X_t$ are cointegrated.
 
 **Error Correction Model:**
 $$\Delta Y_t = \alpha(Y_{t-1} - \gamma X_{t-1}) + \beta \Delta X_t + \epsilon_t$$
@@ -1181,6 +1267,11 @@ Step 2: Build ECM (if cointegrated)
 
 **Example:**
 Stock prices on NYSE and LSE for same company - both non-stationary, but their difference (spread) should be stationary due to arbitrage.
+
+**Advanced Notes:**
+- Johansen tests estimate cointegration rank for multivariate systems.
+- VECM generalizes ECM with multiple cointegration relationships.
+- Structural breaks can invalidate cointegration tests; use break-robust methods when needed.
 
 **Python Example:**
 ```python
@@ -1210,13 +1301,14 @@ if pvalue < 0.05:
 ```
 
 **Interview Tips:**
-- Cointegration ≠ correlation; two series can be correlated but not cointegrated
-- Spurious regression: regressing non-stationary on non-stationary gives meaningless results - cointegration avoids this
-- ECM requires cointegration as prerequisite
+- Always verify each series is I(1) before cointegration testing.
+- Use Johansen for multivariate systems; Engle-Granger is bivariate and order-dependent.
+- Interpret $\alpha$ in ECM/VECM as the speed of adjustment back to equilibrium.
 
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is meant by multivariate time series analysis, and how does it differ from univariate time series analysis?**
 
@@ -1245,6 +1337,12 @@ if pvalue < 0.05:
 2. **VECM (Vector Error Correction Model):**
    - VAR for cointegrated non-stationary series
    - Includes error correction term
+
+**Advanced Considerations:**
+- VAR stability requires all eigenvalues within the unit circle.
+- Use impulse response functions (IRF) and forecast error variance decomposition (FEVD) to interpret dynamics.
+- High-dimensional systems often need regularization (Lasso VAR) or dynamic factor models.
+- VARX includes exogenous drivers; mixed-frequency data may require state-space models.
 
 **When to Use Multivariate:**
 - Variables are related (e.g., sales and advertising spend)
@@ -1282,13 +1380,14 @@ print("Joint forecast:\n", pd.DataFrame(forecast, columns=['Y', 'X']))
 ```
 
 **Interview Tips:**
-- Univariate: start here, it's simpler and often sufficient
-- Multivariate: use when you believe variables influence each other
-- VAR for stationary; VECM for cointegrated non-stationary series
+- Confirm stationarity (or cointegration) before fitting VAR/VECM.
+- Report IRFs/FEVD for interpretability, not just point forecasts.
+- Consider dimensionality and sample size; VAR parameters grow quickly with lags.
 
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain the concept of Granger causality in time series analysis.**
 
@@ -1319,6 +1418,12 @@ $$Y_t = \beta_0 + \beta_1 Y_{t-1} + ... + \beta_p Y_{t-p} + \gamma_1 X_{t-1} + .
 | Omitted variable | Z might cause both X and Y, making X appear to cause Y |
 | Stationarity required | Series should be stationary for valid test |
 | Bidirectional | Test both directions (X→Y and Y→X) |
+
+**Advanced Notes:**
+- Select lag length using AIC/BIC to avoid under- or over-conditioning.
+- If series are cointegrated, use VECM-based Granger tests.
+- Conditional Granger causality controls for other variables in a multivariate system.
+- Nonlinear Granger variants exist for regime-dependent effects.
 
 **Python Example:**
 ```python
@@ -1353,15 +1458,16 @@ result = grangercausalitytests(data[['Y', 'X']], maxlag=3, verbose=True)
 - Possible outcomes: X→Y, Y→X, bidirectional, or no causality
 
 **Interview Tips:**
-- "Granger-causes" means "helps predict", not "truly causes"
-- Always test in both directions
-- Beware of spurious results from omitted common cause
+- Report the lag order and test type (VAR vs VECM).
+- Use conditional tests when multiple related series exist.
+- Treat results as predictive, not causal, and validate with domain knowledge.
 
 ---
 
 ## Question 21
+- [ ] Done
 
-**Describe howtime series analysiscould be used fordemand forecastinginretail.**
+**Describe how time series analysis could be used for demand forecasting in retail.**
 
 **Definition:**
 Time series analysis enables data-driven demand forecasting by capturing historical patterns (trend, seasonality) and external factors to predict future product demand, optimizing inventory management.
@@ -1391,6 +1497,12 @@ Time series analysis enables data-driven demand forecasting by capturing histori
 - Point forecast → baseline order quantity
 - Prediction intervals → safety stock decisions
 - What-if analysis → "If we run a promotion, how much extra demand?"
+
+**Advanced Considerations:**
+- **Hierarchical Forecasting:** Reconcile SKU/store/category forecasts for coherence.
+- **Intermittent Demand:** Use Croston/TSB or zero-inflated models for sparse items.
+- **Global vs Local Models:** Global models share strength across SKUs to reduce cold-start issues.
+- **Probabilistic Forecasts:** Quantiles or full distributions support safety stock decisions.
 
 **Python Example:**
 ```python
@@ -1430,15 +1542,16 @@ print(f"95% CI: {forecast.conf_int().iloc[:3]}")
 ```
 
 **Interview Tips:**
-- Always include exogenous variables (promotions, holidays) in retail forecasting
-- Prediction intervals crucial for safety stock decisions
-- SARIMAX is the go-to model for seasonal retail data
+- Tie forecast evaluation to business costs (stockout vs overstock).
+- Use WAPE/MASE for comparability across SKUs and scales.
+- Emphasize reconciliation and probabilistic outputs for inventory planning.
 
 ---
 
 ## Question 22
+- [ ] Done
 
-**Describe how you would usetime series datato optimizepricing strategiesover time.**
+**Describe how you would use time series data to optimize pricing strategies over time.**
 
 **Definition:**
 Using time series analysis to understand price elasticity of demand and find the revenue-maximizing price point. This is a causal inference + optimization problem.
@@ -1471,6 +1584,12 @@ Use model to find $P^*$ that maximizes revenue:
 **Step 4: Implementation**
 - A/B test the optimal price vs current price
 - Monitor and retrain as market conditions change
+
+**Advanced Considerations:**
+- Use causal methods (IV, diff-in-diff, synthetic control) when price changes are endogenous.
+- Model cross-elasticities and competitor response in multi-product settings.
+- Apply guardrails for inventory, margin, and customer fairness constraints.
+- Consider dynamic pricing or bandit approaches for continuous learning.
 
 **Python Example:**
 ```python
@@ -1506,16 +1625,16 @@ print(f"Revenue Gain: ${revenue(optimal_price) - revenue(base_price):.2f}")
 ```
 
 **Interview Tips:**
-- Price elasticity interpretation: $\beta_1 = -1.5$ means elastic demand
-- If $|\beta_1| > 1$: lowering price increases revenue
-- If $|\beta_1| < 1$: raising price increases revenue
-- Always A/B test before full rollout
+- Separate correlation from causation; price is usually endogenous.
+- Report elasticity with confidence intervals and sensitivity analysis.
+- Treat pricing as an optimization under constraints, not just a point estimate.
 
 ---
 
 ## Question 23
+- [ ] Done
 
-**What are some currentresearch areasintime series analysis and forecasting?**
+**What are some current research areas in time series analysis and forecasting?**
 
 **Definition:**
 Time series research is rapidly evolving, driven by big data, compute power, and new application domains.
@@ -1555,6 +1674,14 @@ Time series research is rapidly evolving, driven by big data, compute power, and
 - Transfer learning to new domains with minimal fine-tuning
 - Examples: TimesFM (Google), Chronos (Amazon)
 
+**7. Uncertainty Calibration**
+- Conformal prediction for distribution-free intervals
+- Probabilistic calibration metrics (PIT, coverage)
+
+**8. Change Point and Regime Detection**
+- Online detection of structural breaks and regime shifts
+- Adaptive models for non-stationary data
+
 **Practical Relevance:**
 
 | Area | Industry Application |
@@ -1566,15 +1693,16 @@ Time series research is rapidly evolving, driven by big data, compute power, and
 | Hierarchical | Multi-store retail, organizational budgets |
 
 **Interview Tips:**
-- Mention Transformers for time series - it's cutting edge
-- Probabilistic forecasting > point forecasting for business decisions
-- Know about auto_arima and AutoML tools
+- Highlight uncertainty calibration and change-point detection for production systems.
+- Foundation models are emerging; emphasize transfer learning and zero-shot forecasting.
+- Pair deep learning advances with classical diagnostics for robustness.
 
 ---
 
 ## Question 24
+- [ ] Done
 
-**Describe the concept ofwavelet analysisin the context oftime series.**
+**Describe the concept of wavelet analysis in the context of time series.**
 
 **Definition:**
 Wavelet analysis decomposes a time series into frequency components while preserving time localization. Unlike Fourier transform (frequency only), wavelets show **when** different frequencies occur.
@@ -1594,6 +1722,12 @@ Wavelet analysis decomposes a time series into frequency components while preser
 - **Wavelet:** Small, wave-like oscillation localized in time
 - **High-scale wavelets:** Stretched → capture low-frequency, long-term features
 - **Low-scale wavelets:** Compressed → capture high-frequency, short-term events
+
+**Advanced Notes:**
+- **CWT vs DWT:** CWT provides a continuous time-frequency map; DWT enables fast multiresolution analysis via filter banks.
+- **MODWT:** Handles non-dyadic lengths and is shift-invariant (useful for real data).
+- **Boundary Effects:** Edge artifacts require padding or tapering; interpret edges cautiously.
+- **Wavelet Choice:** Mother wavelet and decomposition level control time-frequency resolution.
 
 **Use Cases in Time Series:**
 
@@ -1648,8 +1782,8 @@ denoised = pywt.waverec(coeffs_thresholded, 'db4')
 ```
 
 **Interview Tips:**
-- Wavelets for non-stationary signals where frequency content changes over time
-- Fourier tells you "what frequencies", wavelets tell you "what and when"
-- Common wavelets: Morlet (continuous), Daubechies (discrete)
+- Mention multiresolution analysis and filter-bank implementation for efficiency.
+- Discuss boundary handling and choice of mother wavelet as practical concerns.
+- Use wavelets when frequency content is time-varying or transient.
 
 ---

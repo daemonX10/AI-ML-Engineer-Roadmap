@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: Write a Python function to identify outliers in a dataset using the IQR (Interquartile Range) method
+- [ ] Done
 
 ### Complete Implementation
 
@@ -203,6 +204,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 2: Implement a k-NN algorithm to detect anomalies in a two-dimensional dataset
+- [ ] Done
 
 ### Complete Implementation
 
@@ -399,6 +401,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 3: Code an example of using the Isolation Forest algorithm with scikit-learn
+- [ ] Done
 
 ### Complete Implementation
 
@@ -682,6 +685,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 4: Simulate a dataset with outliers and demonstrate how PCA can be used to detect these points
+- [ ] Done
 
 ### Complete Implementation
 
@@ -948,6 +952,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 5: Use TensorFlow/Keras to build a simple autoencoder for anomaly detection on a sample dataset
+- [ ] Done
 
 ### Complete Implementation
 
@@ -1253,6 +1258,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 6: Write an SQL query to spot potential anomalies in a transaction table based on statistical z-scores
+- [ ] Done
 
 ### Complete Implementation
 
@@ -1557,6 +1563,7 @@ SELECT * FROM v_transaction_anomalies WHERE status = 'ANOMALY';
 ---
 
 ## Question 7: Implement a simple version of the Local Outlier Factor algorithm in Python
+- [ ] Done
 
 ### Complete Implementation
 
@@ -1772,6 +1779,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 8: Create a Python script using pandas that flags outliers in time-series data based on moving averages
+- [ ] Done
 
 ### Complete Implementation
 
@@ -2021,6 +2029,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 9: Write a Python function that flags anomalies in a dataset by evaluating cluster compactness after running K-means
+- [ ] Done
 
 ### Complete Implementation
 

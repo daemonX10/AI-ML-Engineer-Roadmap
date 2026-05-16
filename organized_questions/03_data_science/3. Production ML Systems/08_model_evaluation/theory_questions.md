@@ -1,6 +1,7 @@
 # Model Evaluation Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is model evaluation in the context of machine learning?**
 
@@ -56,6 +57,7 @@ Never use test data for any decision-making. Test set is a "sealed envelope" ope
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the difference between training, validation, and test datasets.**
 
@@ -142,6 +144,7 @@ When someone says "80/20 train-test split," ask: "Where are you tuning hyperpara
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is cross-validation, and why is it used?**
 
@@ -232,6 +235,7 @@ scores = cross_val_score(model, X, y, cv=skf, scoring='f1')
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain the concept of the ROC curve and AUC.**
 
@@ -358,6 +362,7 @@ plt.show()
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is meant by ‘overfitting’ and ‘underfitting’ in machine learning models?**
 
@@ -383,6 +388,7 @@ Use validation curves to diagnose which problem you have.
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is the difference between explained variance and R-squared?**
 
@@ -403,6 +409,7 @@ Use adjusted R² when comparing models with different feature counts.
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain the use of the Mean Squared Error (MSE) in regression models.**
 
@@ -425,6 +432,7 @@ Use RMSE for interpretation, MAE when outliers are concern.
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is the distinction between macro-average and micro-average in classification metrics?**
 
@@ -443,6 +451,7 @@ Use macro when all classes equally important.
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is the Brier score, and when would you use it?**
 
@@ -461,6 +470,7 @@ Use for evaluating probability calibration.
 ---
 
 ## Question 10
+- [ ] Done
 
 **Describe how you would use bootstrapping in model evaluation.**
 
@@ -479,6 +489,7 @@ Bootstrapping gives confidence intervals for metrics.
 ---
 
 ## Question 11
+- [ ] Done
 
 **What are the trade-offs between the different model evaluation metrics?**
 
@@ -500,6 +511,7 @@ Choose metric based on business cost of errors.
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain the concept of p-value in the context of model evaluation.**
 
@@ -519,6 +531,7 @@ Statistical significance ≠ practical significance.
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is a receiver operating characteristic (ROC) curve, and what does it tell us?**
 
@@ -539,6 +552,7 @@ Use PR curves for highly imbalanced datasets.
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe model selection criteria based on AIC and BIC.**
 
@@ -558,6 +572,7 @@ Lower AIC/BIC is better.
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is the Elbow Method, and how is it used to evaluate models?**
 
@@ -577,6 +592,7 @@ Combine with silhouette score for reliability.
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is the best way to evaluate a recommendation system?**
 
@@ -597,6 +613,7 @@ A/B testing is crucial for recommendation systems.
 ---
 
 ## Question 17
+- [ ] Done
 
 **Describe a method for evaluating the performance of a clustering algorithm.**
 
@@ -613,6 +630,7 @@ Use silhouette score for unsupervised evaluation.
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe how you would set up an A/B test to evaluate changes in a machine learning model.**
 
@@ -632,6 +650,7 @@ Ensure statistical power before running test.
 ---
 
 ## Question 19
+- [ ] Done
 
 **How does transfer learning affect the way we evaluate models?**
 
@@ -648,6 +667,7 @@ Pre-trained features may not transfer to very different domains.
 ---
 
 ## Question 20
+- [ ] Done
 
 **What are ensemble learning models, and how do their evaluation strategies differ?**
 
@@ -669,6 +689,7 @@ OOB error is a free validation estimate for Random Forest.
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain adversarial validation and where it might be used.**
 
@@ -689,6 +710,7 @@ High adversarial AUC indicates potential problem.
 ---
 
 ## Question 22
+- [ ] Done
 
 **What is the concept of ‘model drift’, and how do you measure it?**
 

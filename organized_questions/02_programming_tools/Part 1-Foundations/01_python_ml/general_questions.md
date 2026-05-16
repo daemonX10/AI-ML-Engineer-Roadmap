@@ -1,6 +1,7 @@
 ﻿# Python ML Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **List the Python libraries that are most commonly used in machine learning and their primary purposes.**
 
@@ -36,6 +37,7 @@ NLP                   → spaCy, Transformers (Hugging Face)
 ---
 
 ## Question 2
+- [ ] Done
 
 **Give an overview of Pandas and its significance in data manipulation.**
 
@@ -83,6 +85,7 @@ print(df.isnull().sum())  # missing values per column
 ---
 
 ## Question 3
+- [ ] Done
 
 **Contrast the differences between Scipy and Numpy.**
 
@@ -123,6 +126,7 @@ result = optimize.minimize(cost_function, x0=initial_guess)
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you deal with missing or corrupted data in a dataset using Python?**
 
@@ -185,6 +189,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 5
+- [ ] Done
 
 **How can you handle categorical data in machine learning models?**
 
@@ -242,6 +247,7 @@ Is there natural order? → Yes → Ordinal Encoding
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you ensure that your model is not overfitting?**
 
@@ -297,6 +303,7 @@ plt.show()
 ---
 
 ## Question 7
+- [ ] Done
 
 **Define precision and recall in the context of classification problems.**
 
@@ -344,6 +351,7 @@ f1 = f1_score(y_true, y_pred, average='weighted')
 ---
 
 ## Question 8
+- [ ] Done
 
 **How can you use a learning curve to diagnose a model’s performance ?**
 
@@ -420,6 +428,7 @@ Score
 ---
 
 ## Question 9
+- [ ] Done
 
 **How can you parallelize computations in Python for machine learning?**
 
@@ -483,6 +492,7 @@ Distributed?       → Ray or Dask distributed
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do you interpret the coefficients of a logistic regression model?**
 
@@ -542,6 +552,7 @@ is_student     1.20          3.32     → Being student → 3.3x higher odds
 ---
 
 ## Question 11
+- [ ] Done
 
 **Define generative adversarial networks (GANs) and their use cases.**
 
@@ -599,6 +610,7 @@ $$\min_G \max_D \; \mathbb{E}[\log D(x)] + \mathbb{E}[\log(1 - D(G(z)))]$$
 ---
 
 ## Question 12
+- [ ] Done
 
 **How do Python’s global, nonlocal , and local scopes affect variable access within a machine learning model ?**
 
@@ -671,6 +683,7 @@ class Trainer:
 ---
 
 ## Question 13
+- [ ] Done
 
 **How can containerization with tools like Docker benefit machine learning applications?**
 
@@ -744,6 +757,7 @@ Develop → Build Image → Test → Push to Registry → Deploy
 ---
 
 ## Question 14
+- [ ] Done
 
 **How do you handle exceptions and manage error handling in Python when deploying machine learning models?**
 
@@ -831,6 +845,7 @@ async def predict(request: PredictionRequest):
 ---
 
 ## Question 15
+- [ ] Done
 
 **How have recent advancements in deep learning influenced natural language processing (NLP) tasks in Python?**
 

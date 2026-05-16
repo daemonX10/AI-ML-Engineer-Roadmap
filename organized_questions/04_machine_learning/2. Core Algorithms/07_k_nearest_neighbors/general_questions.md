@@ -1,6 +1,7 @@
 # K Nearest Neighbors Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What does the 'K' in K-NN stand for, and how do you choose its value?**
 
@@ -42,6 +43,7 @@ best_k = k_range[np.argmax(scores)]
 ---
 
 ## Question 2
+- [ ] Done
 
 **List the pros and cons of using the K-NN algorithm.**
 
@@ -83,6 +85,7 @@ best_k = k_range[np.argmax(scores)]
 ---
 
 ## Question 3
+- [ ] Done
 
 **In what kind of situations is K-NN not an ideal choice?**
 
@@ -116,6 +119,7 @@ Avoid K-NN when: (1) high-dimensional data (curse of dimensionality), (2) large 
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explore the differences between K-NN and Radius Neighbors.**
 
@@ -158,6 +162,7 @@ Radius Neighbors can fail if no points within radius. Use `outlier_label` parame
 ---
 
 ## Question 5
+- [ ] Done
 
 **If you have a large dataset, how can you make K-NN's computation faster?**
 
@@ -208,6 +213,7 @@ D, I = index.search(query, k=5)  # Fast approximate search
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you assess the similarity between instances in K-NN?**
 
@@ -256,6 +262,7 @@ knn = KNeighborsClassifier(metric='euclidean')  # or 'manhattan', 'cosine'
 ---
 
 ## Question 7
+- [ ] Done
 
 **Outline strategies you would use to select an appropriate distance metric for K-NN.**
 
@@ -305,6 +312,7 @@ Always mention that metric choice is problem-dependent and should be validated e
 ---
 
 ## Question 8
+- [ ] Done
 
 **How can ensemble methods be used in conjunction with K-NN?**
 
@@ -363,6 +371,7 @@ stacking = StackingClassifier(
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explore the use of K-NN for outlier detection and the rationale behind it.**
 
@@ -415,6 +424,7 @@ outlier_scores = -lof.negative_outlier_factor_
 ---
 
 ## Question 10
+- [ ] Done
 
 **Compare and contrast the use of K-NN in a supervised context versus its use in unsupervised learning (e.g., clustering).**
 
@@ -469,6 +479,7 @@ X_imputed = imputer.fit_transform(X)  # No labels
 ---
 
 ## Question 11
+- [ ] Done
 
 **Summarize the main ideas of a few recent research papers on improving the K-NN algorithm.**
 
@@ -513,6 +524,7 @@ Mention that modern K-NN research is driven by embedding search and RAG applicat
 ---
 
 ## Question 12
+- [ ] Done
 
 **How can K-NN be combined with deep learning techniques?**
 

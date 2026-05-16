@@ -1,6 +1,7 @@
 # Nlp Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Write a Python function for tokenizing text using NLTK.**
 
@@ -82,6 +83,7 @@ print(f"Cleaned: {clean_tokens}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement an n-gram language model in Python from scratch.**
 
@@ -233,6 +235,7 @@ print(f"Generated: {model.generate(max_length=10)}")
 ---
 
 ## Question 3
+- [ ] Done
 
 **Code a regular expression in Python for extracting email addresses from text.**
 
@@ -316,6 +319,7 @@ for e in test_emails:
 ---
 
 ## Question 4
+- [ ] Done
 
 **Design a Python function that calculates cosine similarity between two text documents.**
 
@@ -409,6 +413,7 @@ print(f"doc1 vs doc3 (TF-IDF): {tfidf_cosine_similarity(doc1, doc3):.4f}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Implement a simple sentiment analysis classifier using a bag-of-words model and Scikit-learn.**
 

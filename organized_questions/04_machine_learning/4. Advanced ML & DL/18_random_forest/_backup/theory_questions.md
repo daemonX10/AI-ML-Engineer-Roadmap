@@ -1,6 +1,7 @@
 # Random Forest Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is a Random Forest, and how does it work?**
 
@@ -35,6 +36,7 @@ Imagine asking 100 experts, each with slightly different knowledge (trained on d
 ---
 
 ## Question 2
+- [ ] Done
 
 **How does a Random Forest differ from a single decision tree?**
 
@@ -67,6 +69,7 @@ If trees are decorrelated (low ρ), variance decreases significantly.
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are the main advantages of using a Random Forest?**
 
@@ -113,6 +116,7 @@ Random Forest offers multiple advantages including high accuracy, resistance to 
 ---
 
 ## Question 4
+- [ ] Done
 
 **How does Random Forest achieve feature randomness?**
 
@@ -155,6 +159,7 @@ Find best split: $\arg\min_{j \in S, t} \text{ImpurityReduction}(j, t)$
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is out-of-bag (OOB) error in Random Forest?**
 
@@ -198,6 +203,7 @@ print(f"OOB Error: {1 - rf.oob_score_:.4f}")
 ---
 
 ## Question 6
+- [ ] Done
 
 **Are Random Forests biased towards attributes with more levels? Explain your answer.**
 
@@ -237,6 +243,7 @@ Yes, Random Forests (like single decision trees) can be biased toward features w
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are the key hyperparameters of a Random Forest, and how do they affect the model?**
 
@@ -274,6 +281,7 @@ min_samples_leaf: 1-5 for classification, 5-10 for regression
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is the concept of ensemble learning, and how does Random Forest fit into it?**
 
@@ -314,6 +322,7 @@ $$\hat{f}_{bag}(x) = \frac{1}{B}\sum_{b=1}^{B} \hat{f}^{*b}(x)$$
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is the difference between Random Forest and Extra Trees classifiers?**
 
@@ -361,6 +370,7 @@ et = ExtraTreesClassifier(n_estimators=100)
 ---
 
 ## Question 10
+- [ ] Done
 
 **How does Random Forest prevent overfitting in comparison to decision trees?**
 
@@ -407,6 +417,7 @@ Where ρ = correlation between trees. Lower ρ (from randomness) = lower varianc
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain the differences between Random Forest and AdaBoost.**
 
@@ -456,6 +467,7 @@ AdaBoost:
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe the process of bootstrapping in Random Forest.**
 
@@ -509,6 +521,7 @@ def bootstrap_sample(X, y):
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is feature importance, and how does Random Forest calculate it?**
 
@@ -563,6 +576,7 @@ perm_importance = permutation_importance(rf, X_test, y_test, n_repeats=10)
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain the concept of variable proximity in Random Forest.**
 
@@ -617,6 +631,7 @@ def compute_proximity(rf, X):
 ---
 
 ## Question 15
+- [ ] Done
 
 **What are the limitations of Random Forest?**
 
@@ -670,6 +685,7 @@ Despite its strengths, Random Forest has limitations including reduced interpret
 ---
 
 ## Question 16
+- [ ] Done
 
 **How does node purity relate to the Random Forest algorithm?**
 
@@ -714,6 +730,7 @@ Information Gain = 0.42 - 0.24 = 0.18
 ---
 
 ## Question 17
+- [ ] Done
 
 **Describe the steps involved in training a Random Forest model.**
 
@@ -787,6 +804,7 @@ rf.fit(X_train, y_train)
 ---
 
 ## Question 18
+- [ ] Done
 
 **How does the Random Forest algorithm handle collinearity among features?**
 
@@ -839,6 +857,7 @@ to_drop = [col for col in upper.columns if any(upper[col] > 0.95)]
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain how Random Forest can be parallelized.**
 
@@ -902,6 +921,7 @@ final_pred = np.mean(predictions, axis=0)
 ---
 
 ## Question 20
+- [ ] Done
 
 **Describe a scenario where Random Forest could be applied to detect credit card fraud.**
 
@@ -969,6 +989,7 @@ proba = rf.predict_proba(X_test)[:, 1]
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain how Random Forest might be used for customer segmentation.**
 
@@ -1037,6 +1058,7 @@ importance = rf.feature_importances_
 ---
 
 ## Question 22
+- [ ] Done
 
 **What are some ensemble learning techniques that can be combined with Random Forest for enhanced performance?**
 
@@ -1105,6 +1127,7 @@ Level 2: Combine Level 1 predictions with meta-model
 ---
 
 ## Question 23
+- [ ] Done
 
 **Explain how out-of-bag samples can be leveraged for model assessment.**
 

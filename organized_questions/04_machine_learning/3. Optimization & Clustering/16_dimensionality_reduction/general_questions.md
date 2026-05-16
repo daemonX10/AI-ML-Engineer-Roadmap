@@ -1,6 +1,7 @@
 # Dimensionality Reduction Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How can dimensionality reduction prevent overfitting?**
 
@@ -51,6 +52,7 @@ score_reduced = cross_val_score(model, X_reduced, y, cv=5).mean()
 ---
 
 ## Question 2
+- [ ] Done
 
 **When would you use dimensionality reduction in the machine learning pipeline?**
 
@@ -101,6 +103,7 @@ score = pipeline.score(X_test, y_test)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Can dimensionality reduction be reversed? Why or why not?**
 

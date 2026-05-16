@@ -1,6 +1,7 @@
 # Rnn Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What are Recurrent Neural Networks (RNNs), and how do they differ from Feedforward Neural Networks?**
 
@@ -66,6 +67,7 @@ The key insight is that RNNs have a "memory" through the hidden state $h_t$ that
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the concept of time steps in the context of RNNs.**
 
@@ -124,6 +126,7 @@ Time steps are the "unrolling" dimension of an RNN. The same weights are applied
 ---
 
 ## Question 3
+- [ ] Done
 
 **Can you describe how the hidden state in an RNN operates?**
 
@@ -195,6 +198,7 @@ Think of hidden state as a "summary" that gets progressively updated. It's the m
 ---
 
 ## Question 4
+- [ ] Done
 
 **What are the challenges associated with training vanilla RNNs?**
 
@@ -265,6 +269,7 @@ The vanishing gradient is THE fundamental problem of vanilla RNNs. It's why LSTM
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does backpropagation through time (BPTT) work in RNNs?**
 
@@ -340,6 +345,7 @@ BPTT is just backpropagation applied to the unrolled computational graph. The ke
 ---
 
 ## Question 6
+- [ ] Done
 
 **What are some limitations of BPTT, and how can they be mitigated?**
 
@@ -426,6 +432,7 @@ The most important mitigations are: (1) LSTM/GRU for vanishing gradients, (2) gr
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain the vanishing gradient problem in RNNs and why it matters.**
 
@@ -506,6 +513,7 @@ The key insight: multiplying many numbers < 1 gives ~0. LSTM solves this by havi
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is the exploding gradient problem, and how can it affect RNN performance?**
 
@@ -600,6 +608,7 @@ Exploding gradients are easier to detect (NaN, spikes) and fix (clipping) than v
 ---
 
 ## Question 9
+- [ ] Done
 
 **What are Long Short-Term Memory (LSTM) networks, and how do they address the vanishing gradient problem?**
 
@@ -687,6 +696,7 @@ The cell state acts as a "conveyor belt" where information flows with minimal mo
 ---
 
 ## Question 10
+- [ ] Done
 
 **Describe the gating mechanism of an LSTM cell.**
 
@@ -769,6 +779,7 @@ Think of gates as learned "switches" that the network discovers during training.
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain the differences between LSTM and GRU (Gated Recurrent Unit) networks.**
 
@@ -858,6 +869,7 @@ GRU is often the better default choice - similar performance with fewer paramete
 ---
 
 ## Question 12
+- [ ] Done
 
 **What are Bidirectional RNNs, and when would you use them?**
 
@@ -944,6 +956,7 @@ Use bidirectional when you have the entire sequence available before making pred
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain how you would use an RNN for generating text sequences.**
 
@@ -1059,6 +1072,7 @@ Key concepts: (1) Train as language model (predict next token), (2) Generate by 
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe a method for tuning hyperparameters of an RNN model.**
 
@@ -1184,6 +1198,7 @@ Start with learning rate (most impactful), then architecture (hidden size, layer
 ---
 
 ## Question 15
+- [ ] Done
 
 **What are the considerations when using RNNs for natural language processing (NLP) tasks?**
 
@@ -1282,6 +1297,7 @@ Key points: (1) Pre-trained embeddings help significantly, (2) Proper padding/ma
 ---
 
 ## Question 16
+- [ ] Done
 
 **What are some exciting research areas related to RNNs and sequential data modeling?**
 
@@ -1374,6 +1390,7 @@ Mention State Space Models (S4, Mamba) as the cutting edge - they achieve RNN's 
 ---
 
 ## Question 17
+- [ ] Done
 
 **Describe the role of RNNs in the context of reinforcement learning and agent decision-making.**
 
@@ -1491,6 +1508,7 @@ The key insight is that RNNs turn POMDPs (partially observable) into effective M
 ---
 
 ## Question 18
+- [ ] Done
 
 **What are potential applications of RNNs in the emerging field of edge computing and IoT devices?**
 
@@ -1602,6 +1620,7 @@ RNNs are ideal for edge because of O(1) inference memory - they only need to mai
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe how RNNs could be used for anomaly detection in sequential data.**
 
@@ -1742,6 +1761,7 @@ The key idea is simple: train on normal data to learn patterns, anomalies are wh
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain the application of RNNs in multi-agent systems and the complexities involved.**
 
@@ -1868,6 +1888,7 @@ The main challenges are non-stationarity (other agents are also learning) and cr
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain the process of deploying an RNN model to production and the challenges involved.**
 
@@ -2005,6 +2026,7 @@ Key RNN-specific challenge: stateful inference. Unlike stateless models, RNNs ma
 ---
 
 ## Question 22
+- [ ] Done
 
 **What is model versioning, and why is it important for RNNs deployed in practice?**
 
@@ -2155,6 +2177,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 # LSTM Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain the LSTM architecture and its key components.**
 
@@ -2163,6 +2186,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 2
+- [ ] Done
 
 **What are the three gates in LSTM and their functions?**
 
@@ -2171,6 +2195,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 3
+- [ ] Done
 
 **How does the forget gate work in LSTM?**
 
@@ -2179,6 +2204,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe the input gate mechanism in LSTM.**
 
@@ -2187,6 +2213,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain the output gate and hidden state computation.**
 
@@ -2195,6 +2222,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is the cell state and how does it flow through LSTM?**
 
@@ -2203,6 +2231,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do LSTMs solve the vanishing gradient problem?**
 
@@ -2211,6 +2240,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 8
+- [ ] Done
 
 **Derive the LSTM forward pass equations.**
 
@@ -2219,6 +2249,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain the LSTM backward pass and gradient computation.**
 
@@ -2227,6 +2258,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 10
+- [ ] Done
 
 **What are the advantages of LSTM over vanilla RNN?**
 
@@ -2235,6 +2267,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 11
+- [ ] Done
 
 **Describe different LSTM variants (peephole, coupled gates).**
 
@@ -2243,6 +2276,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 12
+- [ ] Done
 
 **What are bidirectional LSTMs and their benefits?**
 
@@ -2251,6 +2285,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain stacked/deep LSTM architectures.**
 
@@ -2259,6 +2294,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 14
+- [ ] Done
 
 **How do you initialize LSTM weights and biases?**
 
@@ -2267,6 +2303,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is the role of activation functions in LSTM gates?**
 
@@ -2275,6 +2312,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 16
+- [ ] Done
 
 **Describe LSTM regularization techniques (dropout, recurrent dropout).**
 
@@ -2283,6 +2321,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you handle variable-length sequences in LSTM?**
 
@@ -2291,6 +2330,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 18
+- [ ] Done
 
 **What is stateful vs stateless LSTM training?**
 
@@ -2299,6 +2339,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain attention mechanisms with LSTM encoders.**
 
@@ -2307,6 +2348,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 20
+- [ ] Done
 
 **How do you implement LSTM for sequence classification?**
 
@@ -2315,6 +2357,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 21
+- [ ] Done
 
 **Describe LSTM applications in language modeling.**
 
@@ -2323,6 +2366,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 22
+- [ ] Done
 
 **What are encoder-decoder LSTM architectures?**
 
@@ -2331,6 +2375,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 23
+- [ ] Done
 
 **How do LSTMs handle long-term dependencies?**
 
@@ -2339,6 +2384,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain the computational complexity of LSTM training.**
 
@@ -2347,6 +2393,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 25
+- [ ] Done
 
 **What are the memory requirements for LSTM models?**
 
@@ -2355,6 +2402,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 26
+- [ ] Done
 
 **How do you optimize LSTM hyperparameters?**
 
@@ -2363,6 +2411,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 27
+- [ ] Done
 
 **Describe LSTM performance on different sequence lengths.**
 
@@ -2371,6 +2420,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 28
+- [ ] Done
 
 **What is teacher forcing in LSTM sequence generation?**
 
@@ -2379,6 +2429,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 29
+- [ ] Done
 
 **How do you implement beam search with LSTM decoders?**
 
@@ -2387,6 +2438,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain LSTM applications in time series forecasting.**
 
@@ -2395,6 +2447,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 31
+- [ ] Done
 
 **What are the challenges of training very deep LSTMs?**
 
@@ -2403,6 +2456,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 32
+- [ ] Done
 
 **How do you handle missing values in LSTM input sequences?**
 
@@ -2411,6 +2465,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 33
+- [ ] Done
 
 **Describe LSTM-based autoencoders for sequence learning.**
 
@@ -2419,6 +2474,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 34
+- [ ] Done
 
 **What is the difference between LSTM and GRU?**
 
@@ -2427,6 +2483,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 35
+- [ ] Done
 
 **How do you implement multi-task learning with LSTMs?**
 
@@ -2435,6 +2492,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 36
+- [ ] Done
 
 **Explain LSTM applications in speech recognition.**
 
@@ -2443,6 +2501,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 37
+- [ ] Done
 
 **What are convolutional LSTMs (ConvLSTM)?**
 
@@ -2451,6 +2510,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 38
+- [ ] Done
 
 **How do you visualize and interpret LSTM hidden states?**
 
@@ -2459,6 +2519,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 39
+- [ ] Done
 
 **Describe techniques for LSTM model compression.**
 
@@ -2467,6 +2528,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 40
+- [ ] Done
 
 **What are the limitations of LSTM architectures?**
 
@@ -2475,6 +2537,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 41
+- [ ] Done
 
 **How do you debug LSTM training convergence issues?**
 
@@ -2483,6 +2546,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 42
+- [ ] Done
 
 **Explain LSTM applications in anomaly detection.**
 
@@ -2491,6 +2555,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 43
+- [ ] Done
 
 **What is curriculum learning for LSTM training?**
 
@@ -2499,6 +2564,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 44
+- [ ] Done
 
 **How do you implement online learning with LSTMs?**
 
@@ -2507,6 +2573,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 45
+- [ ] Done
 
 **Describe LSTM ensemble methods and voting.**
 
@@ -2515,6 +2582,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 46
+- [ ] Done
 
 **What are highway networks and their relation to LSTMs?**
 
@@ -2523,6 +2591,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 47
+- [ ] Done
 
 **How do LSTMs compare to Transformer attention models?**
 
@@ -2531,6 +2600,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 48
+- [ ] Done
 
 **Explain LSTM applications in reinforcement learning.**
 
@@ -2539,6 +2609,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 49
+- [ ] Done
 
 **What are recent advances and improvements to LSTM?**
 
@@ -2547,6 +2618,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 50
+- [ ] Done
 
 **Describe deployment considerations for LSTM models in production.**
 
@@ -2562,6 +2634,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 # GRU Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain the GRU architecture and its design motivation.**
 
@@ -2570,6 +2643,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 2
+- [ ] Done
 
 **What are the two gates in GRU and their functions?**
 
@@ -2578,6 +2652,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 3
+- [ ] Done
 
 **How does the reset gate work in GRU?**
 
@@ -2586,6 +2661,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe the update gate mechanism in GRU.**
 
@@ -2594,6 +2670,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does GRU compute the candidate hidden state?**
 
@@ -2602,6 +2679,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 6
+- [ ] Done
 
 **Derive the complete GRU forward pass equations.**
 
@@ -2610,6 +2688,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are the key differences between GRU and LSTM?**
 
@@ -2618,6 +2697,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 8
+- [ ] Done
 
 **How does GRU handle the vanishing gradient problem?**
 
@@ -2626,6 +2706,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain the computational efficiency advantages of GRU.**
 
@@ -2634,6 +2715,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is the parameter count comparison between GRU and LSTM?**
 
@@ -2642,6 +2724,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 11
+- [ ] Done
 
 **Describe the GRU backward pass and gradient flow.**
 
@@ -2650,6 +2733,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 12
+- [ ] Done
 
 **How do you initialize GRU weights and biases?**
 
@@ -2658,6 +2742,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 13
+- [ ] Done
 
 **What activation functions are used in GRU gates?**
 
@@ -2666,6 +2751,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain bidirectional GRU architectures.**
 
@@ -2674,6 +2760,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 15
+- [ ] Done
 
 **How do you stack multiple GRU layers?**
 
@@ -2682,6 +2769,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 16
+- [ ] Done
 
 **Describe GRU regularization techniques.**
 
@@ -2690,6 +2778,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 17
+- [ ] Done
 
 **What is the role of the reset gate in memory selection?**
 
@@ -2698,6 +2787,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 18
+- [ ] Done
 
 **How does the update gate control information flow?**
 
@@ -2706,6 +2796,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain GRU variants and modifications.**
 
@@ -2714,6 +2805,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 20
+- [ ] Done
 
 **What are minimal gated units (MGU)?**
 
@@ -2722,6 +2814,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 21
+- [ ] Done
 
 **How do you implement GRU for sequence-to-sequence tasks?**
 
@@ -2730,6 +2823,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 22
+- [ ] Done
 
 **Describe GRU applications in natural language processing.**
 
@@ -2738,6 +2832,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 23
+- [ ] Done
 
 **What are the memory advantages of GRU over LSTM?**
 
@@ -2746,6 +2841,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 24
+- [ ] Done
 
 **How does GRU performance compare to LSTM empirically?**
 
@@ -2754,6 +2850,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain GRU training dynamics and convergence.**
 
@@ -2762,6 +2859,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 26
+- [ ] Done
 
 **What hyperparameters are important for GRU tuning?**
 
@@ -2770,6 +2868,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 27
+- [ ] Done
 
 **How do you handle variable-length sequences in GRU?**
 
@@ -2778,6 +2877,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 28
+- [ ] Done
 
 **Describe GRU-based attention mechanisms.**
 
@@ -2786,6 +2886,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 29
+- [ ] Done
 
 **What are the limitations of GRU architectures?**
 
@@ -2794,6 +2895,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 30
+- [ ] Done
 
 **How do you implement GRU for time series forecasting?**
 
@@ -2802,6 +2904,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain GRU applications in speech recognition.**
 
@@ -2810,6 +2913,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 32
+- [ ] Done
 
 **What is the computational graph structure of GRU?**
 
@@ -2818,6 +2922,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 33
+- [ ] Done
 
 **How do you visualize GRU gate activations?**
 
@@ -2826,6 +2931,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 34
+- [ ] Done
 
 **Describe GRU ensemble methods and combinations.**
 
@@ -2834,6 +2940,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 35
+- [ ] Done
 
 **What are convolutional GRU (ConvGRU) architectures?**
 
@@ -2842,6 +2949,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 36
+- [ ] Done
 
 **How do you implement teacher forcing with GRU?**
 
@@ -2850,6 +2958,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 37
+- [ ] Done
 
 **Explain GRU applications in anomaly detection.**
 
@@ -2858,6 +2967,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 38
+- [ ] Done
 
 **What debugging techniques work for GRU training?**
 
@@ -2866,6 +2976,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 39
+- [ ] Done
 
 **How do you handle overfitting in GRU models?**
 
@@ -2874,6 +2985,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 40
+- [ ] Done
 
 **Describe GRU transfer learning strategies.**
 
@@ -2882,6 +2994,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 41
+- [ ] Done
 
 **What are the interpretability challenges with GRU?**
 
@@ -2890,6 +3003,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 42
+- [ ] Done
 
 **How do you compress and quantize GRU models?**
 
@@ -2898,6 +3012,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 43
+- [ ] Done
 
 **Explain GRU applications in reinforcement learning.**
 
@@ -2906,6 +3021,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 44
+- [ ] Done
 
 **What is the role of highway connections in GRU?**
 
@@ -2914,6 +3030,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 45
+- [ ] Done
 
 **How do GRUs handle long-term dependencies?**
 
@@ -2922,6 +3039,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 46
+- [ ] Done
 
 **Describe GRU-based autoencoders for representation learning.**
 
@@ -2930,6 +3048,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 47
+- [ ] Done
 
 **What are the deployment considerations for GRU models?**
 
@@ -2938,6 +3057,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 48
+- [ ] Done
 
 **How do GRUs compare to Transformer models?**
 
@@ -2946,6 +3066,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 49
+- [ ] Done
 
 **Explain recent improvements and variants of GRU.**
 
@@ -2954,6 +3075,7 @@ Emphasize that model versioning is not just about saving weights—it includes e
 ---
 
 ## Question 50
+- [ ] Done
 
 **What are the best practices for GRU implementation?**
 

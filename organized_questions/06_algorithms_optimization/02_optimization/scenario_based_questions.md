@@ -1,6 +1,7 @@
 # Optimization Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the trade-off between bias and variance in model optimization.**
 
@@ -37,6 +38,7 @@ $$\text{Total Error} = \text{Bias}^2 + \text{Variance} + \text{Irreducible Noise
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss the Adam optimization algorithm and its key features.**
 
@@ -79,6 +81,7 @@ $$\text{Total Error} = \text{Bias}^2 + \text{Variance} + \text{Irreducible Noise
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the idea behind elastic net regularization.**
 
@@ -120,6 +123,7 @@ model = ElasticNet(alpha=1.0, l1_ratio=0.5)  # 50% L1, 50% L2
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss strategies for optimizing algorithms on non-convex loss functions.**
 
@@ -167,6 +171,7 @@ model = ElasticNet(alpha=1.0, l1_ratio=0.5)  # 50% L1, 50% L2
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss the importance of feature scaling for optimization algorithms.**
 
@@ -219,6 +224,7 @@ Unscaled:               Scaled:
 ---
 
 ## Question 6
+- [ ] Done
 
 **How would you optimize adeep neural networkforimage recognition tasks?**
 
@@ -274,6 +280,7 @@ Fine-tuning → Lower learning rate (1e-5)
 ---
 
 ## Question 7
+- [ ] Done
 
 **Propose an approach to optimize a recommendation system that deals with sparse data.**
 
@@ -331,6 +338,7 @@ $$\min_{U,V} \sum_{(i,j) \in \text{observed}} (r_{ij} - u_i^T v_j)^2 + \lambda(|
 ---
 
 ## Question 8
+- [ ] Done
 
 **Discuss how you would optimize a machine learning model for fast inference on mobile devices.**
 
@@ -391,6 +399,7 @@ Train Full Model → Prune → Quantize → Convert to TFLite/CoreML → Benchma
 ---
 
 ## Question 9
+- [ ] Done
 
 **Discuss the minimax optimization problem and its application in adversarial networks.**
 

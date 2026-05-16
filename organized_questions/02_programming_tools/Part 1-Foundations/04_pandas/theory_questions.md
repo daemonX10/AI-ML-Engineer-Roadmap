@@ -1,6 +1,7 @@
 # Pandas Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is Pandas in Python and why is it used for data analysis?**
 
@@ -38,6 +39,7 @@ sales_by_region = df.groupby('region')['amount'].sum()
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the difference between a Series and a DataFrame in Pandas**
 
@@ -75,6 +77,7 @@ print(type(df['name']))  # <class 'pandas.core.series.Series'>
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are Pandas indexes , and how are they used?**
 
@@ -114,6 +117,7 @@ df['new_price'] = prices_new  # Auto-aligns by index
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain the concept of data alignment and broadcasting in Pandas**
 
@@ -152,6 +156,7 @@ result = df - row
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is data slicing vs filtering in Pandas?**
 
@@ -189,6 +194,7 @@ print(df[(df['A'] > 20) & (df['B'] == 'y')])
 ---
 
 ## Question 6
+- [ ] Done
 
 **Describe how joining and merging data works in Pandas**
 
@@ -232,6 +238,7 @@ result = pd.merge(customers, orders, on='customer_id', how='left')
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you convert categorical data to numerical?**
 
@@ -270,6 +277,7 @@ df['risk_code'] = df['risk'].map(risk_map)
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is the purpose of the apply() function in Pandas ?**
 
@@ -312,6 +320,7 @@ df['result'] = df['A'] + df['B']
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain astype, to_numeric, and pd.to_datetime.**
 
@@ -343,6 +352,7 @@ pd.to_datetime(s, errors='coerce')  # [2023-01-01, 2023-02-15, NaT]
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain data ranking in Pandas.**
 
@@ -370,6 +380,7 @@ print(s.rank(method='dense'))    # [2.0, 1.0, 3.0, 1.0, 4.0]
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is a crosstab in Pandas?**
 
@@ -401,6 +412,7 @@ print(pd.crosstab(df['gender'], df['product'],
 ---
 
 ## Question 12
+- [ ] Done
 
 **How do you perform a MultiIndex query?**
 
@@ -432,6 +444,7 @@ print(df.xs(1, level='number'))  # All rows where number=1
 ---
 
 ## Question 13
+- [ ] Done
 
 **How do you export a DataFrame to different file formats?**
 
@@ -467,6 +480,7 @@ df.to_parquet('output.parquet')
 ---
 
 ## Question 14
+- [ ] Done
 
 **How to handle larger-than-memory data with Dask or Modin?**
 
@@ -499,6 +513,7 @@ df.groupby('category').mean()  # Uses all CPU cores
 ---
 
 ## Question 15
+- [ ] Done
 
 **How to use Pandas to preprocess data for ML?**
 
@@ -533,6 +548,7 @@ y = df['target']
 ---
 
 ## Question 16
+- [ ] Done
 
 **What are some strategies for optimizing Pandas code performance ?**
 
@@ -569,6 +585,7 @@ df.query('age > 30 and salary > 50000')
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain the importance of categorical data types.**
 
@@ -603,6 +620,7 @@ df[df['size'] > 'M']  # Returns L and XL
 ```
 
 ## Question 18
+- [ ] Done
 
 **Discuss the use of groupby in Pandas and provide an example**
 
@@ -686,6 +704,7 @@ df['dept_rank'] = df.groupby('department')['salary'].rank(ascending=False)
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is data slicing in Pandas , and how does it differ from filtering ?**
 
@@ -760,6 +779,7 @@ df[df['age'] > 30]  # rows 2, 3, 4 — could be any pattern
 ---
 
 ## Question 20
+- [ ] Done
 
 **Describe how you would convert categorical data into numeric format**
 
@@ -834,6 +854,7 @@ Linear models              →  One-Hot Encoding required
 ---
 
 ## Question 21
+- [ ] Done
 
 **Show how to apply conditional logic to columns using the where() method**
 
@@ -909,6 +930,7 @@ df['pass_fail'] = df['letter_grade'].map({'A': 'Pass', 'B': 'Pass',
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain the usage and differences between astype , to_numeric , and pd.to_datetime**
 
@@ -998,6 +1020,7 @@ Memory optimization       →  astype() with specific dtypes (int32, float32)
 ---
 
 ## Question 23
+- [ ] Done
 
 **Discuss how to deal with time series data in Pandas**
 
@@ -1078,6 +1101,7 @@ def create_ts_features(df, target_col='value'):
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain the different types of data ranking available in Pandas**
 
@@ -1143,6 +1167,7 @@ from sklearn.preprocessing import QuantileTransformer
 ---
 
 ## Question 25
+- [ ] Done
 
 **What is a crosstab in Pandas , and when would you use it?**
 
@@ -1222,6 +1247,7 @@ plt.show()
 ---
 
 ## Question 26
+- [ ] Done
 
 **Describe how to perform a multi-index query on a DataFrame**
 
@@ -1307,6 +1333,7 @@ df_mi.swaplevel().sort_index()
 ---
 
 ## Question 27
+- [ ] Done
 
 **Provide an example of how to normalize data within a DataFrame column**
 
@@ -1376,6 +1403,7 @@ Clustering (K-Means)             →  REQUIRED
 ---
 
 ## Question 28
+- [ ] Done
 
 **Show how to create simple plots from a DataFrame using Pandas ’ visualization tools**
 
@@ -1457,6 +1485,7 @@ df.plot(subplots=True, layout=(2, 1), figsize=(10, 8), sharex=True)
 ---
 
 ## Question 29
+- [ ] Done
 
 **Discuss how Pandas integrates with Matplotlib and Seaborn for data visualization**
 
@@ -1535,6 +1564,7 @@ sns.jointplot(data=df, x='sales', y='expenses', kind='hex')
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain how you would export a DataFrame to different file formats for reporting purposes**
 
@@ -1608,6 +1638,7 @@ df.to_pickle('report.pkl')
 ---
 
 ## Question 31
+- [ ] Done
 
 **How does one use Dask or Modin to handle larger-than-memory data in Pandas ?**
 
@@ -1682,6 +1713,7 @@ Data > 100 GB, distributed     →  Spark (PySpark)
 ---
 
 ## Question 32
+- [ ] Done
 
 **Discuss the advantages of vectorized operations in Pandas over iteration**
 
@@ -1767,6 +1799,7 @@ df['category'] = np.where(df['value'] > 0, 'positive', 'negative')
 ---
 
 ## Question 33
+- [ ] Done
 
 **Explain the importance of using categorical data types , especially when working with a large number of unique values**
 

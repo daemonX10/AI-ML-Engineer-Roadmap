@@ -1,6 +1,7 @@
 # Neural Networks Interview Questions - Theory Questions
 
 ## Question 1: What is a neural network, and how does it resemble human brain functionality?
+- [ ] Done
 
 ### Definition
 A neural network is a computational model inspired by biological neurons, consisting of interconnected nodes (neurons) organized in layers that learn patterns from data through weighted connections and non-linear transformations.
@@ -38,6 +39,7 @@ Where $w_i$ are weights, $b$ is bias, and $\sigma$ is activation function.
 ---
 
 ## Question 2: Describe the architecture of a multi-layer perceptron (MLP)
+- [ ] Done
 
 ### Definition
 An MLP is a fully-connected feedforward neural network with at least three layers: input layer, one or more hidden layers, and an output layer, where each neuron connects to all neurons in adjacent layers.
@@ -83,6 +85,7 @@ class MLP(nn.Module):
 ---
 
 ## Question 3: How does feedforward neural network differ from recurrent neural networks (RNNs)?
+- [ ] Done
 
 ### Definition
 **Feedforward networks** process information in one direction (input → output) with no cycles. **RNNs** have recurrent connections that create internal memory, allowing them to process sequential data by passing information across time steps.
@@ -122,6 +125,7 @@ RNN:           Input₁ → Hidden₁ → Output₁
 ---
 
 ## Question 4: What is backpropagation, and why is it important in neural networks?
+- [ ] Done
 
 ### Definition
 Backpropagation is the algorithm used to compute gradients of the loss function with respect to all weights in a neural network by applying the chain rule, enabling gradient descent optimization.
@@ -149,6 +153,7 @@ $$\frac{\partial L}{\partial w^{(l)}} = \frac{\partial L}{\partial a^{(L)}} \cdo
 ---
 
 ## Question 5: Explain the role of an activation function. Give examples of common activation functions
+- [ ] Done
 
 ### Definition
 Activation functions introduce non-linearity into neural networks, enabling them to learn complex patterns. Without them, any deep network would collapse to a single linear transformation.
@@ -188,6 +193,7 @@ softmax_out = F.softmax(x, dim=0)
 ---
 
 ## Question 6: Describe the concept of deep learning in relation to neural networks
+- [ ] Done
 
 ### Definition
 Deep learning refers to neural networks with multiple hidden layers (typically >2) that can automatically learn hierarchical feature representations from raw data, eliminating the need for manual feature engineering.
@@ -225,6 +231,7 @@ Layer 4: Objects (faces, cars)
 ---
 
 ## Question 7: What is a vanishing gradient problem? How does it affect training?
+- [ ] Done
 
 ### Definition
 The vanishing gradient problem occurs when gradients become extremely small as they propagate backward through many layers, causing early layers to learn very slowly or not at all.
@@ -259,6 +266,7 @@ $$\frac{\partial L}{\partial w^{(1)}} = \underbrace{0.25 \times 0.25 \times ... 
 ---
 
 ## Question 8: How does the exploding gradient problem occur, and what are the potential solutions?
+- [ ] Done
 
 ### Definition
 The exploding gradient problem occurs when gradients grow exponentially large during backpropagation, causing unstable weight updates, numerical overflow, and divergent training.
@@ -297,6 +305,7 @@ optimizer.step()
 ---
 
 ## Question 9: Explain the trade-offs between bias and variance
+- [ ] Done
 
 ### Definition
 The bias-variance trade-off is the tension between a model's ability to fit training data (low bias) and its ability to generalize to new data (low variance). Reducing one typically increases the other.
@@ -329,6 +338,7 @@ $$\text{Expected Error} = \text{Bias}^2 + \text{Variance} + \text{Irreducible Er
 ---
 
 ## Question 10: What is regularization in neural networks, and why is it used?
+- [ ] Done
 
 ### Definition
 Regularization comprises techniques that constrain neural network complexity to prevent overfitting, improving generalization to unseen data by trading slight increase in training error for better test performance.
@@ -364,6 +374,7 @@ self.dropout = nn.Dropout(p=0.5)
 ---
 
 ## Question 11: What are dropout layers, and how do they help in preventing overfitting?
+- [ ] Done
 
 ### Definition
 Dropout is a regularization technique that randomly sets a fraction of neurons to zero during each training iteration, preventing neurons from co-adapting and forcing the network to learn redundant representations.
@@ -408,6 +419,7 @@ class ModelWithDropout(nn.Module):
 ---
 
 ## Question 12: What are skip connections and residual blocks in neural networks?
+- [ ] Done
 
 ### Definition
 Skip connections (residual connections) allow gradients and information to bypass one or more layers by adding the input directly to the output, enabling training of very deep networks by solving the vanishing gradient problem.
@@ -470,6 +482,7 @@ class ResidualBlock(nn.Module):
 ---
 
 ## Question 13: Explain how to initialize neural network weights effectively
+- [ ] Done
 
 ### Definition
 Weight initialization sets the starting values for network parameters. Proper initialization ensures signals neither explode nor vanish during forward/backward passes, enabling stable and efficient training.
@@ -509,6 +522,7 @@ model = nn.Linear(100, 50)  # Uses Kaiming uniform by default
 ---
 
 ## Question 14: Explain the difference between local minima and global minima in neural networks
+- [ ] Done
 
 ### Definition
 The **global minimum** is the point where the loss function achieves its lowest possible value. **Local minima** are points that are lower than all nearby points but not necessarily the lowest overall.
@@ -548,6 +562,7 @@ Loss
 ---
 
 ## Question 15: Describe the role of learning rate and learning rate schedules in training
+- [ ] Done
 
 ### Definition
 The **learning rate** controls the step size of parameter updates. **Learning rate schedules** adjust this value during training to achieve faster convergence and better final performance.
@@ -591,6 +606,7 @@ for epoch in range(epochs):
 ---
 
 ## Question 16: What are GRUs and LSTMs? What problems do they solve?
+- [ ] Done
 
 ### Definition
 **LSTM** (Long Short-Term Memory) and **GRU** (Gated Recurrent Unit) are RNN architectures with gating mechanisms that control information flow, solving the vanishing gradient problem and enabling learning of long-range dependencies.
@@ -635,6 +651,7 @@ output, h_n = gru(x)          # GRU only returns hidden state
 ---
 
 ## Question 17: Define and explain the significance of Convolutional Neural Networks (CNNs)
+- [ ] Done
 
 ### Definition
 CNNs are neural networks that use convolutional layers to automatically learn spatial hierarchies of features from grid-like data (images), using local connectivity, weight sharing, and translation equivariance.
@@ -684,6 +701,7 @@ class SimpleCNN(nn.Module):
 ---
 
 ## Question 18: What are the common use cases for CNNs in comparison to RNNs?
+- [ ] Done
 
 ### Definition
 **CNNs** excel at spatial pattern recognition in grid-like data (images). **RNNs** excel at sequential pattern recognition where order matters (text, time series).
@@ -716,6 +734,7 @@ class SimpleCNN(nn.Module):
 ---
 
 ## Question 19: Explain what deconvolutional layers are and their role in neural networks
+- [ ] Done
 
 ### Definition
 Deconvolutional layers (transposed convolutions) perform the inverse of convolution, upsampling feature maps to higher spatial resolutions. They're used in decoder networks for tasks like image segmentation and generation.
@@ -761,6 +780,7 @@ deconv = nn.ConvTranspose2d(
 ---
 
 ## Question 20: What is attention mechanism in neural networks? Give an example of its application
+- [ ] Done
 
 ### Definition
 Attention mechanisms allow neural networks to dynamically focus on relevant parts of the input when producing output, computing weighted combinations where weights indicate importance for the current task.
@@ -807,6 +827,7 @@ class SelfAttention(nn.Module):
 ---
 
 ## Question 21: What are the challenges in training deep neural networks?
+- [ ] Done
 
 ### Definition
 Training deep networks presents unique challenges including vanishing/exploding gradients, computational cost, overfitting, hyperparameter sensitivity, and difficulty in debugging.
@@ -832,6 +853,7 @@ Training deep networks presents unique challenges including vanishing/exploding 
 ---
 
 ## Question 22: Explain the concept of semantic segmentation in the context of CNNs
+- [ ] Done
 
 ### Definition
 Semantic segmentation classifies each pixel in an image into a predefined category, producing a dense pixel-level mask. Unlike classification (one label per image), segmentation provides pixel-level understanding.
@@ -875,6 +897,7 @@ prediction = output.argmax(dim=1)  # Pixel-wise class prediction
 ---
 
 ## Question 23: What is the purpose of pooling layers in CNNs?
+- [ ] Done
 
 ### Definition
 Pooling layers reduce spatial dimensions of feature maps while retaining important information, providing translation invariance and reducing computational cost.
@@ -914,6 +937,7 @@ gap = nn.AdaptiveAvgPool2d(1)
 ---
 
 ## Question 24: Describe the differences between 1D, 2D, and 3D convolutions
+- [ ] Done
 
 ### Definition
 Convolution dimensionality refers to the number of spatial dimensions the filter slides across. 1D for sequences, 2D for images, 3D for videos or volumetric data.
@@ -951,6 +975,7 @@ conv3d = nn.Conv3d(in_channels=3, out_channels=64, kernel_size=3)
 ---
 
 ## Question 25: What is gradient clipping, and why might it be useful?
+- [ ] Done
 
 ### Definition
 Gradient clipping limits the magnitude of gradients during backpropagation to prevent exploding gradients, which cause unstable training with very large weight updates.
@@ -986,6 +1011,7 @@ torch.nn.utils.clip_grad_value_(model.parameters(), clip_value=1.0)
 ---
 
 ## Question 26: Explain the concepts of momentum and Nesterov accelerated gradient
+- [ ] Done
 
 ### Definition
 **Momentum** accelerates SGD by accumulating past gradients, helping to navigate ravines and maintain direction. **Nesterov momentum** looks ahead before computing the gradient for smarter updates.
@@ -1020,6 +1046,7 @@ optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9, nesterov=
 ---
 
 ## Question 27: What is Adam optimization, and how does it differ from SGD?
+- [ ] Done
 
 ### Definition
 Adam (Adaptive Moment Estimation) combines momentum with adaptive per-parameter learning rates, maintaining running averages of both gradients and squared gradients.
@@ -1057,6 +1084,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=0.001, weight_decay=0.01)
 ---
 
 ## Question 28: What are the main strategies for hyperparameter tuning in neural networks?
+- [ ] Done
 
 ### Definition
 Hyperparameter tuning searches for optimal values of parameters set before training (learning rate, batch size, architecture) to maximize model performance.
@@ -1107,6 +1135,7 @@ study.optimize(objective, n_trials=100)
 ---
 
 ## Question 29: What is the role of recurrent connections in RNNs?
+- [ ] Done
 
 ### Definition
 Recurrent connections pass the hidden state from one time step to the next, enabling the network to maintain memory of past inputs and process sequential data of variable length.
@@ -1138,6 +1167,7 @@ $$h_t = \sigma(W_x x_t + W_h h_{t-1} + b)$$
 ---
 
 ## Question 30: Explain the theory behind Siamese networks and their use cases
+- [ ] Done
 
 ### Definition
 Siamese networks use two identical subnetworks with shared weights to learn a similarity function between pairs of inputs, useful for one-shot learning and verification tasks.
@@ -1191,6 +1221,7 @@ class SiameseNetwork(nn.Module):
 ---
 
 ## Question 31: Describe how an autoencoder works and potential applications
+- [ ] Done
 
 ### Definition
 An autoencoder is an unsupervised neural network that learns to compress input into a lower-dimensional latent representation and then reconstruct the original input, learning efficient data encodings.
@@ -1248,6 +1279,7 @@ class Autoencoder(nn.Module):
 ---
 
 ## Question 32: How do LSTMs work, and what are their advantages over basic RNNs?
+- [ ] Done
 
 ### Definition
 LSTMs use a gated architecture with a separate cell state that acts as a "conveyor belt" for information, allowing selective reading, writing, and erasing of memory to capture long-range dependencies.
@@ -1293,6 +1325,7 @@ output, (h_n, c_n) = lstm(x)
 ---
 
 ## Question 33: Describe the process to debug a model that is not learning
+- [ ] Done
 
 ### Definition
 Debugging a non-learning model involves systematically checking data pipeline, model architecture, training setup, and hyperparameters to identify and fix the issue.
@@ -1340,6 +1373,7 @@ print(f"Target distribution: {np.bincount(y)}")
 ---
 
 ## Question 34: What are strategies to improve computational efficiency in neural network training?
+- [ ] Done
 
 ### Definition
 Computational efficiency involves reducing training time and memory usage while maintaining model performance through hardware, software, and algorithmic optimizations.
@@ -1385,6 +1419,7 @@ train_loader = DataLoader(
 ---
 
 ## Question 35: Explain the importance of checkpoints and early stopping
+- [ ] Done
 
 ### Definition
 **Checkpoints** save model state during training for recovery and selecting best model. **Early stopping** halts training when validation performance stops improving to prevent overfitting.
@@ -1438,6 +1473,7 @@ class EarlyStopping:
 ---
 
 ## Question 36: Describe a real-world application where CNNs could be applied
+- [ ] Done
 
 ### Application: Automated Quality Inspection in Manufacturing
 
@@ -1473,6 +1509,7 @@ Camera → Preprocessing → CNN Model → Defect? → Actuator (accept/reject)
 ---
 
 ## Question 37: Describe a strategy to use neural networks for sentiment analysis on social media posts
+- [ ] Done
 
 ### Definition
 Sentiment analysis classifies text into positive, negative, or neutral sentiment. For social media, must handle informal language, emojis, and short texts.
@@ -1517,6 +1554,7 @@ model = AutoModelForSequenceClassification.from_pretrained(model_name)
 ---
 
 ## Question 38: What are zero-shot and few-shot learning in neural networks?
+- [ ] Done
 
 ### Definition
 **Zero-shot learning** performs tasks on classes never seen during training by leveraging semantic knowledge. **Few-shot learning** learns from only a handful (1-10) of examples per class.
@@ -1563,6 +1601,7 @@ prediction = torch.argmin(torch.stack(distances))
 ---
 
 ## Question 39: Describe research in neural network interpretability
+- [ ] Done
 
 ### Definition
 Interpretability research aims to understand why neural networks make specific predictions, making them more trustworthy, debuggable, and compliant with regulations.
@@ -1607,6 +1646,7 @@ def grad_cam(model, image, target_class):
 ---
 
 ## Question 40: Explain quantum neural networks and their potential
+- [ ] Done
 
 ### Definition
 Quantum neural networks (QNNs) leverage quantum computing principles (superposition, entanglement) to potentially solve certain problems exponentially faster than classical neural networks.
@@ -1641,6 +1681,7 @@ Quantum neural networks (QNNs) leverage quantum computing principles (superposit
 ---
 
 ## Question 41: Describe how adversarial examples affect neural networks and defense methods
+- [ ] Done
 
 ### Definition
 Adversarial examples are inputs with imperceptible perturbations that cause neural networks to make incorrect predictions with high confidence, revealing vulnerabilities in neural network robustness.
@@ -1689,6 +1730,7 @@ for x, y in dataloader:
 ---
 
 ## Question 42: What is reinforcement learning, and how do deep neural networks play a role?
+- [ ] Done
 
 ### Definition
 Reinforcement learning (RL) trains agents to make sequential decisions by maximizing cumulative reward through trial and error. Deep RL uses neural networks to approximate value functions or policies for complex, high-dimensional problems.
@@ -1746,6 +1788,7 @@ action = q_values.argmax() if random.random() > epsilon else random_action
 ---
 
 ## Question 43: Explain neural networks' contribution to drug discovery
+- [ ] Done
 
 ### Definition
 Neural networks accelerate drug discovery by predicting molecular properties, generating novel compounds, and identifying drug-target interactions, reducing the time and cost of bringing new drugs to market.
@@ -1797,6 +1840,7 @@ class MoleculeGNN(nn.Module):
 ---
 
 ## Question 44: How can neural networks be used for credit scoring and fraud detection in finance?
+- [ ] Done
 
 ### Definition
 Neural networks analyze transaction patterns and customer data to assess creditworthiness and detect fraudulent activities with higher accuracy than traditional rule-based systems.
@@ -1852,6 +1896,7 @@ criterion = nn.BCELoss(weight=torch.tensor([1.0, 100.0]))  # 100x weight for fra
 ---
 
 ## Question 45: Describe application of neural networks in medical image analysis
+- [ ] Done
 
 ### Definition
 Neural networks analyze medical images (X-rays, CT, MRI, histopathology) to assist in diagnosis, detecting diseases often with accuracy comparable to or exceeding human experts.
@@ -1902,6 +1947,7 @@ optimizer = torch.optim.Adam([
 ---
 
 ## Question 46: Explain how virtual assistants like Siri or Alexa use neural networks
+- [ ] Done
 
 ### Definition
 Virtual assistants use a pipeline of neural networks for speech recognition (ASR), natural language understanding (NLU), dialog management, and speech synthesis (TTS) to understand and respond to voice commands.

@@ -1,6 +1,7 @@
 # Genetic Algorithms Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is a genetic algorithm (GA) and how is it inspired by biological evolution?**
 
@@ -47,6 +48,7 @@ A **Genetic Algorithm** is a metaheuristic optimization technique inspired by na
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you explain the terms ‘chromosome,’ ‘gene,’ and ‘allele’ in the context of GAs?**
 
@@ -94,6 +96,7 @@ Chromosome encoding choice affects which crossover/mutation operators work effec
 ---
 
 ## Question 3
+- [ ] Done
 
 **Describe the process of 'selection' in genetic algorithms.**
 
@@ -140,6 +143,7 @@ Tournament selection is most commonly used in practice - easy to implement, tuna
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain 'crossover' and 'mutation' operations in genetic algorithms.**
 
@@ -197,6 +201,7 @@ After:  [1, 0, 0, 1, 0]  (bit 3 flipped)
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is a 'fitness function' in the context of a genetic algorithm?**
 
@@ -247,6 +252,7 @@ Designing a good fitness function is often the hardest part - it must capture wh
 ---
 
 ## Question 6
+- [ ] Done
 
 **How does a GA differ from other optimization techniques?**
 
@@ -297,6 +303,7 @@ Designing a good fitness function is often the hardest part - it must capture wh
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are the typical stopping conditions for a GA?**
 
@@ -356,6 +363,7 @@ Use stagnation detection - if best fitness hasn't improved for many generations,
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is ‘elitism’ in GAs and why might it be used?**
 
@@ -413,6 +421,7 @@ Keep 1-2 elite individuals per generation.
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain the concept of ‘genetic drift’ in GAs.**
 
@@ -464,6 +473,7 @@ Genetic drift is why small populations converge prematurely - always balance pop
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is a 'multi-objective genetic algorithm'?**
 
@@ -518,6 +528,7 @@ Not one solution, but a set of Pareto-optimal solutions. Decision-maker chooses 
 ---
 
 ## Question 11
+- [ ] Done
 
 **Can you describe what ‘gene expression programming’ is?**
 
@@ -573,6 +584,7 @@ GEP is used when you want to evolve mathematical expressions or programs, not ju
 ---
 
 ## Question 12
+- [ ] Done
 
 **What are ‘memetic algorithms’ and how do they differ from traditional GAs?**
 
@@ -625,6 +637,7 @@ Memetic algorithms are hybrid - "nature + nurture" - combining evolutionary expl
 ---
 
 ## Question 13
+- [ ] Done
 
 **How does 'parallelization' improve the performance of genetic algorithms?**
 
@@ -677,6 +690,7 @@ Periodic migration of best individuals
 ---
 
 ## Question 14
+- [ ] Done
 
 **What is a 'steady-state genetic algorithm'?**
 
@@ -729,6 +743,7 @@ A **steady-state GA** replaces only 1-2 individuals per generation (rather than 
 ---
 
 ## Question 15
+- [ ] Done
 
 **Describe 'island model GAs' and their benefits.**
 
@@ -782,6 +797,7 @@ Migration: periodic exchange of best individuals
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is the role of ‘crowding’ and ‘niche’ in GAs?**
 
@@ -831,6 +847,7 @@ Finding multiple peaks of a function - niching keeps solutions at each peak inst
 ---
 
 ## Question 17
+- [ ] Done
 
 **What is ‘gene duplication’ and ‘gene deletion’ in the context of GAs?**
 
@@ -885,6 +902,7 @@ Variable-length GAs are useful for structure optimization where the optimal size
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe an application of GAs in machine learning model optimization.**
 
@@ -936,6 +954,7 @@ GA can handle mixed types (categorical + continuous) and complex interactions be
 ---
 
 ## Question 19
+- [ ] Done
 
 **What are the challenges of using GAs in real-time applications?**
 
@@ -987,6 +1006,7 @@ Time T+1: Initialize population near S
 ---
 
 ## Question 20
+- [ ] Done
 
 **Describe how GAs can be used to optimize portfolio allocations in finance.**
 
@@ -1042,6 +1062,7 @@ Child:    [0.2, 0.4, 0.4]  (blend, then normalize)
 ---
 
 ## Question 21
+- [ ] Done
 
 **What are the common genetic representation schemes used for different problem types?**
 
@@ -1089,6 +1110,7 @@ Scheduling: [2, 0, 1] → Job order
 ---
 
 ## Question 22
+- [ ] Done
 
 **What are some methods to ensure genetic diversity in a GA population?**
 
@@ -1145,6 +1167,7 @@ Adaptive approaches - increase mutation or add immigrants when diversity drops -
 ---
 
 ## Question 23
+- [ ] Done
 
 **Can you explain how to deal with constraints in genetic algorithms?**
 
@@ -1202,6 +1225,7 @@ if not is_feasible(x):
 ---
 
 ## Question 24
+- [ ] Done
 
 **Describe how a GA might become trapped in a local optimum and how to avoid it.**
 
@@ -1264,6 +1288,7 @@ Premature convergence is GA's main failure mode - always monitor diversity and h
 ---
 
 ## Question 25
+- [ ] Done
 
 **Describe strategies for parallelizing genetic algorithms and the trade-offs involved.**
 
@@ -1324,6 +1349,7 @@ Gradual spread of good genes
 ---
 
 ## Question 26
+- [ ] Done
 
 **Describe how you would apply a GA to an image recognition problem with many features.**
 
@@ -1384,6 +1410,7 @@ Threshold to select features
 ---
 
 ## Question 27
+- [ ] Done
 
 **Explain how you might use a GA to optimize the parameters of an algorithm trading model.**
 
@@ -1445,6 +1472,7 @@ Average performance across all test periods
 ---
 
 ## Question 28
+- [ ] Done
 
 **Describe recent advancements in hybrid genetic algorithms combining other AI techniques.**
 
@@ -1499,6 +1527,7 @@ Modern evolutionary computation is increasingly hybrid, combining evolutionary g
 ---
 
 ## Question 29
+- [ ] Done
 
 **What is the significance of ‘multi-level selection’ in GAs?**
 
@@ -1582,6 +1611,7 @@ Multi-level selection is particularly powerful when the problem itself has hiera
 ---
 
 ## Question 30
+- [ ] Done
 
 **What are the advantages of using GAs for ensemble model selection and optimization?**
 

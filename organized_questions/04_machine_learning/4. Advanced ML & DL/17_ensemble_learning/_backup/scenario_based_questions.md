@@ -1,6 +1,7 @@
 # Ensemble Learning Interview Questions - Scenario-Based Questions
 
 ## Question 1: Discuss the principle behind the LightGBM algorithm
+- [ ] Done
 
 ### Definition
 LightGBM (Light Gradient Boosting Machine) is a gradient boosting framework that uses histogram-based learning and leaf-wise tree growth for faster training and lower memory usage while maintaining high accuracy.
@@ -70,6 +71,7 @@ params = {
 ---
 
 ## Question 2: How would you approach feature selection for ensemble models?
+- [ ] Done
 
 ### Definition
 Feature selection for ensembles can leverage built-in importance measures, use wrapper methods with the ensemble itself, or apply filter methods before ensemble training. Tree ensembles provide natural feature importance rankings.
@@ -151,6 +153,7 @@ selected = X_train.columns[selector.support_].tolist()
 ---
 
 ## Question 3: Discuss how ensemble learning can be applied in a distributed computing environment
+- [ ] Done
 
 ### Definition
 Distributed ensemble learning partitions data or models across multiple machines to train large-scale ensembles efficiently. Key approaches include data parallelism (same model, different data) and model parallelism (different models).
@@ -245,6 +248,7 @@ predictions = rf.predict(ddf)
 ---
 
 ## Question 4: How would you configure an ensemble model for real-time prediction in a production environment?
+- [ ] Done
 
 ### Definition
 Real-time ensemble deployment requires optimizing for latency, throughput, and reliability. Key strategies include model compression, parallel inference, caching, and proper infrastructure design.
@@ -345,6 +349,7 @@ async def predict(features: list):
 ---
 
 ## Question 5: Discuss how ensemble learning can be used to improve recommendation systems
+- [ ] Done
 
 ### Definition
 Recommendation system ensembles combine collaborative filtering, content-based, and deep learning approaches to leverage their complementary strengths and provide more robust, diverse recommendations.
@@ -431,6 +436,7 @@ def switching_recommend(user_id):
 ---
 
 ## Question 6: If model interpretability is crucial, how would you ensure ensemble models are understandable?
+- [ ] Done
 
 ### Definition
 Interpretable ensembles require post-hoc explanation methods (SHAP, LIME), simpler ensemble designs, or distillation into interpretable models. The choice depends on whether global understanding or individual prediction explanations are needed.
@@ -527,6 +533,7 @@ for rule in rules.rules_:
 ---
 
 ## Question 7: How would you deploy an ensemble learning model for detecting fraudulent transactions in a banking system?
+- [ ] Done
 
 ### Definition
 Fraud detection ensembles require real-time scoring, handling extreme class imbalance, continuous model updates, and robust monitoring. The system must balance precision (avoiding false positives) with recall (catching fraud).
@@ -632,6 +639,7 @@ if metrics['precision'] < threshold:
 ---
 
 ## Question 8: Propose an ensemble learning strategy for a large-scale image classification problem
+- [ ] Done
 
 ### Definition
 Large-scale image classification ensembles typically combine multiple CNN architectures (transfer learning), use test-time augmentation, and may include vision transformers. The strategy balances accuracy gains against computational costs.
@@ -731,6 +739,7 @@ def predict_with_tta(model, image, n_augments=5):
 ---
 
 ## Question 9: Discuss the latest research trends around ensemble learning methods
+- [ ] Done
 
 ### Definition
 Current research focuses on neural ensemble techniques, automated ensemble construction (AutoML), interpretability, uncertainty quantification, and efficient ensemble inference.
@@ -798,6 +807,7 @@ scheduler = torch.optim.lr_scheduler.CosineAnnealingWarmRestarts(
 ---
 
 ## Question 10: Discuss dynamic ensembling and its potential for adaptive learning over time
+- [ ] Done
 
 ### Definition
 Dynamic ensembling adapts the ensemble composition or weights based on changing data distributions or incoming feedback. This enables continuous learning without full retraining and handles concept drift effectively.

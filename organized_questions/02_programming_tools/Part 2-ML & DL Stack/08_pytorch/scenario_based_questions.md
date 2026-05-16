@@ -1,6 +1,7 @@
 # PyTorch Interview Questions - Scenario Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Your PyTorch model is running out of GPU memory. How do you diagnose and fix this?**
 
@@ -89,6 +90,7 @@ torch.cuda.empty_cache()
 ---
 
 ## Question 2
+- [ ] Done
 
 **Your model training is very slow. How do you identify bottlenecks and speed it up?**
 
@@ -174,6 +176,7 @@ print(timer.timeit(100))
 ---
 
 ## Question 3
+- [ ] Done
 
 **Your model achieves good training accuracy but poor validation accuracy. How do you handle this?**
 
@@ -282,6 +285,7 @@ criterion = nn.CrossEntropyLoss(label_smoothing=0.1)
 ---
 
 ## Question 4
+- [ ] Done
 
 **You need to deploy a PyTorch model to production. What's your approach?**
 
@@ -369,6 +373,7 @@ torch.jit.save(torch.jit.script(quantized_model), 'quantized_model.pt')
 ---
 
 ## Question 5
+- [ ] Done
 
 **Your model works on your machine but gives different results in production. How do you debug?**
 
@@ -466,6 +471,7 @@ def validate_input(input_tensor, expected_shape, expected_dtype):
 ---
 
 ## Question 6
+- [ ] Done
 
 **You need to train on a dataset that doesn't fit in memory. How do you handle this?**
 
@@ -578,6 +584,7 @@ loader = DataLoader(
 ---
 
 ## Question 7
+- [ ] Done
 
 **You notice your gradients are exploding or vanishing. How do you diagnose and fix this?**
 
@@ -707,6 +714,7 @@ class WarmupScheduler:
 ---
 
 ## Question 8
+- [ ] Done
 
 **You need to implement a custom attention mechanism for your model. How do you approach this?**
 
@@ -818,6 +826,7 @@ print(f"Output: {output.shape}, Weights: {weights.shape}")
 ---
 
 ## Question 9
+- [ ] Done
 
 **You need to fine-tune a large pre-trained model but have limited GPU memory. What techniques do you use?**
 
@@ -925,6 +934,7 @@ count_trainable_params(model)
 ---
 
 ## Question 10
+- [ ] Done
 
 **You need to implement a real-time inference system with PyTorch. What's your approach?**
 
@@ -1083,6 +1093,7 @@ class InferenceService:
 ```
 
 ## Question 11
+- [ ] Done
 
 **How would you handle imbalanced classes when training a classification model in PyTorch?**
 
@@ -1131,6 +1142,7 @@ class FocalLoss(nn.Module):
 ---
 
 ## Question 12
+- [ ] Done
 
 **How can PyTorch be utilized for real-time inference , and what concerns would you have in such a setting?**
 
@@ -1179,6 +1191,7 @@ input_tensor = input_tensor.half()
 ---
 
 ## Question 13
+- [ ] Done
 
 **Discuss a scenario where you would need to convert a PyTorch model to ONNX format**
 
@@ -1237,6 +1250,7 @@ assert np.allclose(torch_out, onnx_out, atol=1e-5)
 ---
 
 ## Question 14
+- [ ] Done
 
 **Propose a method for deploying a PyTorch model as a REST API service**
 
@@ -1305,6 +1319,7 @@ async def predict(file: UploadFile = File(...)):
 ---
 
 ## Question 15
+- [ ] Done
 
 **Describe your approach to fine-tuning a pre-trained model in PyTorch for a new task**
 
@@ -1364,6 +1379,7 @@ scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=10)
 ---
 
 ## Question 16
+- [ ] Done
 
 **Discuss a project where PyTorch played a key role in developing a machine learning solution**
 

@@ -1,6 +1,7 @@
 # Model Evaluation Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **Define precision, recall, and F1-score.**
 
@@ -17,6 +18,7 @@ Choose based on cost: FP cost → precision; FN cost → recall.
 ---
 
 ## Question 2
+- [ ] Done
 
 **What do you understand by the term “Confusion Matrix”?**
 
@@ -35,6 +37,7 @@ Can derive all classification metrics from confusion matrix.
 ---
 
 ## Question 3
+- [ ] Done
 
 **Why is accuracy not always the best metric for model evaluation?**
 
@@ -53,6 +56,7 @@ Always check class distribution before using accuracy.
 ---
 
 ## Question 4
+- [ ] Done
 
 **How can learning curves help in model evaluation?**
 
@@ -72,6 +76,7 @@ Use learning curves to decide if more data would help.
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you evaluate a regression model's performance?**
 
@@ -88,6 +93,7 @@ RMSE for interpretable units, R² for explained variance.
 ---
 
 ## Question 6
+- [ ] Done
 
 **What metrics would you use to evaluate a classifier's performance?**
 
@@ -104,6 +110,7 @@ Match metric to business problem.
 ---
 
 ## Question 7
+- [ ] Done
 
 **How is the Area Under the Precision-Recall Curve (AUPRC) beneficial?**
 
@@ -120,6 +127,7 @@ Use PR-AUC when positives are rare (fraud, disease).
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do you interpret a model's calibration curve?**
 
@@ -139,6 +147,7 @@ Always calibrate before using probabilities for decisions.
 ---
 
 ## Question 9
+- [ ] Done
 
 **When is it appropriate to use the Matthews Correlation Coefficient (MCC)?**
 
@@ -158,6 +167,7 @@ MCC is most balanced metric for binary classification.
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do you assess statistical significance in differences of model performance?**
 
@@ -174,6 +184,7 @@ Statistical significance ≠ practical significance.
 ---
 
 ## Question 11
+- [ ] Done
 
 **What role do confidence intervals play in model evaluation?**
 
@@ -190,6 +201,7 @@ Non-overlapping CIs suggest significant difference.
 ---
 
 ## Question 12
+- [ ] Done
 
 **How can Bayesian methods be used in model evaluation?**
 
@@ -210,6 +222,7 @@ Bayesian methods give probability of one model being better.
 ---
 
 ## Question 13
+- [ ] Done
 
 **How do you compare multiple models with each other?**
 
@@ -227,6 +240,7 @@ Use critical difference diagrams for multiple comparisons.
 ---
 
 ## Question 14
+- [ ] Done
 
 **When would you choose to use AIC over BIC?**
 
@@ -247,6 +261,7 @@ BIC has stronger penalty, more conservative.
 ---
 
 ## Question 15
+- [ ] Done
 
 **How is the Gini Coefficient used in evaluating classification models?**
 
@@ -268,6 +283,7 @@ Gini and AUC are directly related.
 ---
 
 ## Question 16
+- [ ] Done
 
 **What special considerations are there for evaluating models on imbalanced datasets?**
 

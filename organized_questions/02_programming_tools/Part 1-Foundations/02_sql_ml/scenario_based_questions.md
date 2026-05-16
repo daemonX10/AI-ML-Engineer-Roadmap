@@ -1,6 +1,7 @@
 # SQL ML Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you write a SQL query to select distinct values from a column?**
 
@@ -19,6 +20,7 @@ SELECT DISTINCT city, state FROM customers;
 ---
 
 ## Question 2
+- [ ] Done
 
 **Scenario: You have a customer table with duplicate emails. How would you identify and handle them?**
 
@@ -58,6 +60,7 @@ WHERE id NOT IN (
 ---
 
 ## Question 3
+- [ ] Done
 
 **Scenario: Build a churn prediction feature set for customers who haven't purchased in 30 days.**
 
@@ -96,6 +99,7 @@ FROM CustomerActivity;
 ---
 
 ## Question 4
+- [ ] Done
 
 **Scenario: Calculate customer RFM (Recency, Frequency, Monetary) scores.**
 
@@ -139,6 +143,7 @@ ORDER BY total_score DESC;
 ---
 
 ## Question 5
+- [ ] Done
 
 **Scenario: Find products frequently bought together for recommendation system.**
 
@@ -170,6 +175,7 @@ LIMIT 20;
 ---
 
 ## Question 6
+- [ ] Done
 
 **Scenario: Detect anomalous transactions (potential fraud).**
 
@@ -209,6 +215,7 @@ ORDER BY z_score DESC;
 ---
 
 ## Question 7
+- [ ] Done
 
 **Scenario: Create time-based features for time series forecasting.**
 
@@ -244,6 +251,7 @@ ORDER BY sale_date;
 ---
 
 ## Question 8
+- [ ] Done
 
 **Scenario: Segment customers into tiers based on spending.**
 

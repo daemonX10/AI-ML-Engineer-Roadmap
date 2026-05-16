@@ -1,6 +1,7 @@
 # Data Mining Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Write a SQL query that selects the top 3 most frequent purchasers from a sales table.**
 
@@ -69,6 +70,7 @@ ORDER BY
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement the Apriori algorithm in Python to generate association rules from a transaction dataset.**
 
@@ -180,6 +182,7 @@ for rule in rules:
 ---
 
 ## Question 3
+- [ ] Done
 
 **Create a Python function to normalize a vector using Min-Max normalization.**
 
@@ -263,6 +266,7 @@ def min_max_scale(vector, a=0, b=1):
 ---
 
 ## Question 4
+- [ ] Done
 
 **Use scikit-learn to perform k-means clustering on a sample multi-dimensional dataset.**
 
@@ -347,6 +351,7 @@ print(f"Silhouette Score: {score:.3f}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write a Python script to preprocess text data, including tokenization and stemming.**
 
@@ -447,6 +452,7 @@ def simple_preprocess(text):
 ---
 
 ## Question 6
+- [ ] Done
 
 **Implement a decision tree classifier from scratch in Python.**
 
@@ -583,6 +589,7 @@ print(f"Accuracy: {accuracy:.2f}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Write a Python function that calculates the Gini index for a given data split in a decision tree.**
 
@@ -692,6 +699,7 @@ print(f"3-class Gini: {gini_impurity(y_multiclass):.3f}")
 ---
 
 ## Question 8
+- [ ] Done
 
 **Use Pandas and NumPy to process and clean a dataset, handling missing values and outliers.**
 

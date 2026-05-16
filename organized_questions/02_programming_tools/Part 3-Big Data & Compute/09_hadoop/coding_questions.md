@@ -1,6 +1,7 @@
 # Hadoop Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Write a MapReduce job to count word frequencies.**
 
@@ -46,6 +47,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a MapReduce job to find top N most frequent words.**
 
@@ -105,6 +107,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 3
+- [ ] Done
 
 **Write a MapReduce job to calculate average.**
 
@@ -166,6 +169,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 4
+- [ ] Done
 
 **Write a MapReduce job to perform a join operation.**
 
@@ -230,6 +234,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write a MapReduce job to find duplicate records.**
 
@@ -271,6 +276,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 6
+- [ ] Done
 
 **Write a MapReduce job to compute inverted index.**
 
@@ -324,6 +330,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 7
+- [ ] Done
 
 **Write code to upload and process files in HDFS.**
 
@@ -404,6 +411,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 8
+- [ ] Done
 
 **Write a MapReduce job to compute percentiles.**
 
@@ -471,6 +479,7 @@ if __name__ == '__main__':
 ```
 
 ## Question 9
+- [ ] Done
 
 **Write a MapReduce job in Java that counts the number of words in a text file**
 
@@ -479,6 +488,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 10
+- [ ] Done
 
 **Create an HDFS command script that copies files from a local file system to HDFS**
 
@@ -487,6 +497,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 11
+- [ ] Done
 
 **Implement a simple Hive query to summarize data from a Hive table**
 
@@ -495,6 +506,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 12
+- [ ] Done
 
 **Code a Pig Latin script to process and transform a dataset into a desired format**
 
@@ -503,6 +515,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 13
+- [ ] Done
 
 **Automate a process to import data from a MySQL database into HDFS using Sqoop**
 
@@ -511,6 +524,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 14
+- [ ] Done
 
 **Implement a Spark job in Scala or Python to perform a join operation on two datasets**
 
@@ -519,6 +533,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 15
+- [ ] Done
 
 **Develop an Oozie workflow that schedules and runs a set of MapReduce and Hive jobs**
 
@@ -527,6 +542,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 16
+- [ ] Done
 
 **Write a Java program to implement custom input and output format classes in Hadoop**
 

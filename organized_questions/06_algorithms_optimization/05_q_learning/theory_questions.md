@@ -1,6 +1,7 @@
 # Q Learning Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is Q-learning, and how does it fit in the field of reinforcement learning?**
 
@@ -38,6 +39,7 @@ Agent interacts with environment, receives rewards, and updates its Q-table to e
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you describe the concept of the Q-table in Q-learning?**
 
@@ -80,6 +82,7 @@ Function approximation (neural networks) → Deep Q-Networks (DQN)
 ---
 
 ## Question 3
+- [ ] Done
 
 **How does Q-learning differ from other types of reinforcement learning such as policy gradient methods?**
 
@@ -119,6 +122,7 @@ Function approximation (neural networks) → Deep Q-Networks (DQN)
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain what is meant by the term 'action-value function' in the context of Q-learning.**
 
@@ -159,6 +163,7 @@ Think of Q(s,a) as answering: "If I'm in situation s and do action a, how much t
 ---
 
 ## Question 5
+- [ ] Done
 
 **Describe the role of the learning rate (α) and discount factor (γ) in the Q-learning algorithm.**
 
@@ -212,6 +217,7 @@ $$Q(s,a) \leftarrow Q(s,a) + \alpha [r + \gamma \max_{a'} Q(s',a') - Q(s,a)]$$
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is the exploration-exploitation trade-off in Q-learning, and how is it typically handled?**
 
@@ -260,6 +266,7 @@ Start with high exploration, gradually shift to exploitation as agent learns.
 ---
 
 ## Question 7
+- [ ] Done
 
 **Describe the process of updating the Q-values in Q-learning.**
 
@@ -312,6 +319,7 @@ Q-values are updated toward the **target** (immediate reward + discounted future
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is the Bellman Equation, and how does it relate to Q-learning?**
 
@@ -355,6 +363,7 @@ $$Q(s,a) \leftarrow Q(s,a) + \alpha \underbrace{[r + \gamma \max_{a'} Q(s',a') -
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain the importance of convergence in Q-learning. How is it achieved?**
 
@@ -405,6 +414,7 @@ Convergence in Q-learning means the Q-values stabilize and approach the true opt
 ---
 
 ## Question 10
+- [ ] Done
 
 **What are the conditions necessary for Q-learning to find the optimal policy?**
 
@@ -455,6 +465,7 @@ $$\sum_{t=0}^{\infty} \alpha_t = \infty \quad \text{and} \quad \sum_{t=0}^{\inft
 ---
 
 ## Question 11
+- [ ] Done
 
 **What are common strategies for initializing the Q-table?**
 
@@ -517,6 +528,7 @@ Optimistic initialization is often recommended as it ensures comprehensive explo
 ---
 
 ## Question 12
+- [ ] Done
 
 **What is experience replay in the context of Q-learning, and why is it useful?**
 
@@ -566,6 +578,7 @@ Experience replay is crucial for training stability in DQN because:
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain the role of target networks in some Q-learning variants.**
 
@@ -620,6 +633,7 @@ Q_target = tau * Q_network + (1-tau) * Q_target  # Soft update
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe the Deep Q-Network (DQN) and its relation to Q-learning.**
 
@@ -677,6 +691,7 @@ DQN achieved human-level performance on Atari games (2015), pioneering deep RL.
 ---
 
 ## Question 15
+- [ ] Done
 
 **How does Double Q-learning aim to reduce overestimation of Q-values?**
 
@@ -729,6 +744,7 @@ Double DQN achieves better performance on Atari games with more stable Q-value e
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain how Prioritized Experience Replay enhances the training of a Q-learning agent.**
 
@@ -781,6 +797,7 @@ Uses sum-tree data structure for O(log n) sampling and updates.
 ---
 
 ## Question 17
+- [ ] Done
 
 **What is Dueling Network Architecture in DQN and how does it differ from traditional DQN?**
 
@@ -839,6 +856,7 @@ $$Q(s,a) = V(s) + \left(A(s,a) - \frac{1}{|A|}\sum_{a'} A(s,a')\right)$$
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain the role of eligibility traces in Temporal Difference (TD) learning and how it relates to Q-learning.**
 
@@ -893,6 +911,7 @@ Where δ_t = TD error = r + γQ(s',a') - Q(s,a)
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is Rainbow DQN, and which problems in DQN does it address?**
 
@@ -937,6 +956,7 @@ These improvements are complementary and combine synergistically.
 ---
 
 ## Question 20
+- [ ] Done
 
 **How does Q-learning adapt to non-stationary (dynamic) environments?**
 
@@ -995,6 +1015,7 @@ In non-stationary environments, transition probabilities P(s'|s,a) or reward fun
 ---
 
 ## Question 21
+- [ ] Done
 
 **Describe how a Q-learning agent could be taught to play a simple video game. What unique challenges might you face?**
 
@@ -1055,6 +1076,7 @@ Input: 84×84×4 frames
 ---
 
 ## Question 22
+- [ ] Done
 
 **What are the current limitations of Q-learning, and how might recent research address these challenges?**
 
@@ -1114,6 +1136,7 @@ Input: 84×84×4 frames
 ---
 
 ## Question 23
+- [ ] Done
 
 **What are some common issues to look out for when debugging a Q-learning agent?**
 

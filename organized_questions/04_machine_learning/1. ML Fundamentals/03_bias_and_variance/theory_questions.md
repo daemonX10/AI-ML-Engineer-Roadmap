@@ -2,6 +2,7 @@
 
 
 ## Question 1
+- [ ] Done
 
 **How do you use cross-validation to estimate bias and variance?**
 
@@ -67,6 +68,7 @@ Std of Validation: Low
 
 
 ## Question 2
+- [ ] Done
 
 **What techniques are used to reduce bias in machine learning models?**
 
@@ -126,6 +128,7 @@ Std of Validation: Low
 
 
 ## Question 3
+- [ ] Done
 
 **Can you list some methods to lower variance in a model without increasing bias?**
 
@@ -193,6 +196,7 @@ For tabular: SMOTE, noise injection
 
 
 ## Question 4
+- [ ] Done
 
 **What is regularization, and how does it help with bias and variance?**
 
@@ -235,6 +239,7 @@ $$\text{Regularized Loss} = \text{Original Loss} + \lambda \times \text{Penalty 
 
 
 ## Question 5
+- [ ] Done
 
 **Describe how boosting helps to reduce bias.**
 
@@ -288,6 +293,7 @@ Where:
 
 
 ## Question 6
+- [ ] Done
 
 **How does bagging help to reduce variance?**
 
@@ -347,6 +353,7 @@ Averaging n models reduces variance by factor of n (for perfectly independent mo
 
 
 ## Question 7
+- [ ] Done
 
 **In what ways can feature selection impact bias and variance?**
 
@@ -406,6 +413,7 @@ If important features removed:
 
 
 ## Question 8
+- [ ] Done
 
 **How does increasing the size of the training set affect bias and variance?**
 
@@ -458,6 +466,7 @@ Error
 
 
 ## Question 9
+- [ ] Done
 
 **How would you balance bias and variance while developing models?**
 
@@ -528,6 +537,7 @@ If Train Error = Low, Val Error = High (large gap):
 
 
 ## Question 10
+- [ ] Done
 
 **Can you discuss some strategies to overcome underfitting and overfitting?**
 
@@ -589,6 +599,7 @@ model = DecisionTreeClassifier(max_depth=5, min_samples_leaf=10)
 
 
 ## Question 11
+- [ ] Done
 
 **What role does model complexity play in the bias-variance trade-off?**
 
@@ -643,6 +654,7 @@ Total Test Error
 
 
 ## Question 12
+- [ ] Done
 
 **How would you decide when a model is sufficiently good for deployment considering bias and variance?**
 
@@ -717,6 +729,7 @@ Example (Fraud Detection):
 
 
 ## Question 13
+- [ ] Done
 
 **Explain the concept of the "No Free Lunch" theorem in relation to bias and variance.**
 
@@ -759,6 +772,7 @@ Small datasets        →   Simple models (complex ones overfit)
 
 
 ## Question 14
+- [ ] Done
 
 **What is Occam's razor principle, and how does it apply to the bias-variance dilemma?**
 
@@ -813,6 +827,7 @@ Simplest Model That Works
 
 
 ## Question 15
+- [ ] Done
 
 **Discuss how decision tree depth impacts bias and variance.**
 
@@ -882,6 +897,7 @@ Result: Memorizes every training point
 
 
 ## Question 16
+- [ ] Done
 
 **How does the choice of kernel in a Support Vector Machine affect bias and variance?**
 
@@ -935,6 +951,7 @@ $$K(x, x') = (\gamma x \cdot x' + r)^d$$
 
 
 ## Question 17
+- [ ] Done
 
 **In neural networks, how do you control for bias and variance through architectural decisions?**
 
@@ -999,6 +1016,7 @@ model = Sequential([
 
 
 ## Question 18
+- [ ] Done
 
 **Describe how the number of nearest neighbors in k-NN affects model bias and variance.**
 
@@ -1047,6 +1065,7 @@ k = 1 (High Variance)          k = 15 (High Bias)
 
 
 ## Question 19
+- [ ] Done
 
 **Explain how ensemble methods can lead to models with a better bias-variance trade-off.**
 
@@ -1102,6 +1121,7 @@ High Bias + Low Variance       →    Low Bias + Controlled Variance
 
 
 ## Question 20
+- [ ] Done
 
 **How do hyperparameters tuning in gradient boosting models affect bias and variance?**
 
@@ -1164,6 +1184,7 @@ colsample_bytree=0.8 # Use 80% of features per tree
 
 
 ## Question 21
+- [ ] Done
 
 **What are the implications of the curse of dimensionality on bias and variance?**
 
@@ -1220,6 +1241,7 @@ Low Dimensions (p=2)          High Dimensions (p=100)
 
 
 ## Question 22
+- [ ] Done
 
 **How does the concept of the Bayesian approach relate to bias and variance?**
 
@@ -1268,6 +1290,7 @@ $$\hat{y} = \int f(x; \theta) P(\theta | D) d\theta$$
 
 
 ## Question 23
+- [ ] Done
 
 **Discuss how meta-learning can influence the bias-variance trade-off in model development.**
 
@@ -1363,6 +1386,7 @@ This enables models that generalize from very few examples - something tradition
 
 
 ## Question 24
+- [ ] Done
 
 **What do you think about the potential impacts of deep learning techniques on bias and variance?**
 
@@ -1421,6 +1445,7 @@ Massive over-parameterized models can sometimes generalize well despite having m
 
 
 ## Question 25
+- [ ] Done
 
 **How could you potentially leverage active learning to mitigate bias and/or variance in a model?**
 

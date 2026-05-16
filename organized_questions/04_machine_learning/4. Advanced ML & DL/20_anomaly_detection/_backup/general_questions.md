@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: How do you handle high-dimensional data in anomaly detection?
+- [ ] Done
 
 ### Answer
 
@@ -105,6 +106,7 @@ def high_dim_anomaly_detection(X, method='pca', target_dim=10):
 ---
 
 ## Question 2: What preprocessing steps are important before applying anomaly detection algorithms?
+- [ ] Done
 
 ### Answer
 
@@ -216,6 +218,7 @@ def handle_categorical_for_anomaly(df, categorical_cols):
 ---
 
 ## Question 3: How do you select the threshold for flagging anomalies using a given method?
+- [ ] Done
 
 ### Answer
 
@@ -336,6 +339,7 @@ If FP cost >> FN cost: Higher threshold (more specific)
 ---
 
 ## Question 4: What metrics would you use to evaluate the performance of an anomaly detection model?
+- [ ] Done
 
 ### Answer
 
@@ -462,6 +466,7 @@ Use ROC-AUC when:
 ---
 
 ## Question 5: How can you ensure your anomaly detection model is not overfitting?
+- [ ] Done
 
 ### Answer
 
@@ -585,6 +590,7 @@ early_stopping = tf.keras.callbacks.EarlyStopping(
 ---
 
 ## Question 6: How can anomaly detection models be updated over time as new data comes in?
+- [ ] Done
 
 ### Answer
 
@@ -736,6 +742,7 @@ def adaptive_update(detector, X_new, old_scores, significance=0.05):
 ---
 
 ## Question 7: How is DBSCAN clustering used for anomaly detection?
+- [ ] Done
 
 ### Answer
 
@@ -875,6 +882,7 @@ def hdbscan_anomaly_detection(X, min_cluster_size=15, min_samples=5):
 ---
 
 ## Question 8: Present a framework for detecting anomalies in social media trend data
+- [ ] Done
 
 ### Answer
 
@@ -1082,6 +1090,7 @@ class RealTimeSocialMonitor:
 ---
 
 ## Question 9: How can transfer learning be applied to anomaly detection in different domains?
+- [ ] Done
 
 ### Answer
 

@@ -1,6 +1,7 @@
 # Unsupervised Learning - Scenario-Based Questions
 
 ## Question 1: Propose an unsupervised learning strategy to segment customers for targeted marketing.
+- [ ] Done
 
 ### Strategy Pipeline
 
@@ -55,6 +56,7 @@ labels = kmeans.fit_predict(X_scaled)
 ---
 
 ## Question 2: How would you use clustering to inform feature creation in a supervised learning task?
+- [ ] Done
 
 ### The Approach
 Use cluster labels as a new feature for supervised model.
@@ -101,6 +103,7 @@ distances = kmeans.transform(X_scaled)  # (n_samples, k)
 ---
 
 ## Question 3: Design an approach to group similar documents using unsupervised learning.
+- [ ] Done
 
 ### Pipeline
 
@@ -132,6 +135,7 @@ tokens = lemmatize(tokens)             # "running" → "run"
 ---
 
 ## Question 4: Discuss a framework for detecting communities in social networks via unsupervised learning.
+- [ ] Done
 
 ### Framework
 
@@ -181,6 +185,7 @@ print(f"Communities: {n_communities}, Modularity: {modularity:.3f}")
 ---
 
 ## Question 5: Explain how unsupervised learning could assist in identifying patterns in genomic data.
+- [ ] Done
 
 ### Answer
 

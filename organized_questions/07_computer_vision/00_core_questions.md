@@ -3,6 +3,7 @@
 ## Fundamentals
 
 ### Question 1
+- [ ] Done
 **What is computer vision and how does it relate to human vision?**
 
 **Answer:**
@@ -34,6 +35,7 @@ Computer vision is a field of AI that enables machines to interpret and understa
 ---
 
 ### Question 2
+- [ ] Done
 **Describe the key components of a computer vision system.**
 
 **Answer:**
@@ -77,6 +79,7 @@ Camera → Preprocessing → Feature Extraction → Model Inference → Post-pro
 ---
 
 ### Question 3
+- [ ] Done
 **What is the difference between image processing and computer vision?**
 
 **Answer:**
@@ -117,6 +120,7 @@ Image processing transforms images into other images (input: image → output: i
 ## Image Analysis & Processing
 
 ### Question 4
+- [ ] Done
 **How does edge detection work in image analysis?**
 
 **Answer:**
@@ -172,6 +176,7 @@ canny_edges = cv2.Canny(img, threshold1=50, threshold2=150)
 ---
 
 ### Question 5
+- [ ] Done
 **What are the common image preprocessing steps in a computer vision pipeline?**
 
 **Answer:**
@@ -235,6 +240,7 @@ img_denoised = cv2.GaussianBlur(img, (5, 5), 0)
 ---
 
 ### Question 6
+- [ ] Done
 **How does image resizing affect model performance?**
 
 **Answer:**
@@ -298,6 +304,7 @@ resized_letterbox = letterbox(img, 224)
 ---
 
 ### Question 7
+- [ ] Done
 **What are some techniques to reduce noise in an image?**
 
 **Answer:**
@@ -352,6 +359,7 @@ nlm = cv2.fastNlMeansDenoisingColored(img, h=10, templateWindowSize=7)
 ---
 
 ### Question 8
+- [ ] Done
 **Explain how image augmentation can improve the performance of a vision model.**
 
 **Answer:**
@@ -406,6 +414,7 @@ augmented_image = augmented['image']
 ---
 
 ### Question 9
+- [ ] Done
 **Discuss the concept of color spaces and their importance in image processing.**
 
 **Answer:**
@@ -463,6 +472,7 @@ mask = cv2.inRange(img_hsv, lower_red, upper_red)
 ## Segmentation
 
 ### Question 10
+- [ ] Done
 **Explain the concept of image segmentation in computer vision.**
 
 **Answer:**
@@ -519,6 +529,7 @@ with torch.no_grad():
 ---
 
 ### Question 11
+- [ ] Done
 **What is the difference between semantic and instance segmentation?**
 
 **Answer:**
@@ -567,6 +578,7 @@ Instance:     [Background=0, Car_1=1, Car_2=2]  (separate IDs)
 ---
 
 ### Question 12
+- [ ] Done
 **Explain the Fully Convolutional Network (FCN) and its role in segmentation.**
 
 **Answer:**
@@ -637,6 +649,7 @@ class SimpleFCN(nn.Module):
 ## Feature Extraction & Detection
 
 ### Question 13
+- [ ] Done
 **What are feature descriptors, and why are they important in computer vision?**
 
 **Answer:**
@@ -696,6 +709,7 @@ matches = sorted(matches, key=lambda x: x.distance)
 ---
 
 ### Question 14
+- [ ] Done
 **Explain the Scale-Invariant Feature Transform (SIFT) algorithm.**
 
 **Answer:**
@@ -752,6 +766,7 @@ print(f"Descriptor shape: {descriptors.shape}")
 ---
 
 ### Question 15
+- [ ] Done
 **Describe how the Histogram of Oriented Gradients (HOG) descriptor works.**
 
 **Answer:**
@@ -810,6 +825,7 @@ print(f"HOG feature vector length: {len(features)}")
 ---
 
 ### Question 16
+- [ ] Done
 **Compare different image feature extraction methods.**
 
 **Answer:**
@@ -870,6 +886,7 @@ with torch.no_grad():
 ---
 
 ### Question 17
+- [ ] Done
 **What are Haar Cascades, and how are they used for object detection?**
 
 **Answer:**
@@ -935,6 +952,7 @@ for (x, y, w, h) in faces:
 ---
 
 ### Question 18
+- [ ] Done
 **What's the significance of depth perception in computer vision applications?**
 
 **Answer:**
@@ -998,6 +1016,7 @@ with torch.no_grad():
 ---
 
 ### Question 19
+- [ ] Done
 **Explain the challenges of object recognition in varied lighting and orientations.**
 
 **Answer:**
@@ -1065,6 +1084,7 @@ transform = A.Compose([
 ## Neural Networks & Deep Learning
 
 ### Question 20
+- [ ] Done
 **Discuss the role of convolutional neural networks (CNNs) in computer vision.**
 
 **Answer:**
@@ -1135,6 +1155,7 @@ class SimpleCNN(nn.Module):
 ---
 
 ### Question 21
+- [ ] Done
 **How do CNNs differ from traditional neural networks in architecture?**
 
 **Answer:**
@@ -1185,6 +1206,7 @@ CNN:        [Input: 224×224×3] → [Conv: 64 3×3 filters] → [Pool] → [Con
 ---
 
 ### Question 22
+- [ ] Done
 **Explain the purpose of pooling layers in a CNN.**
 
 **Answer:**
@@ -1245,6 +1267,7 @@ out_global = global_avg_pool(x)    # [1, 64, 1, 1]
 ---
 
 ### Question 23
+- [ ] Done
 **What is transfer learning, and when would you apply it in computer vision?**
 
 **Answer:**
@@ -1313,6 +1336,7 @@ optimizer = torch.optim.Adam([
 ---
 
 ### Question 24
+- [ ] Done
 **Discuss using pre-trained models in computer vision.**
 
 **Answer:**
@@ -1384,6 +1408,7 @@ features = feature_extractor(input_tensor)  # [B, 2048]
 ## Object Detection & Classification
 
 ### Question 25
+- [ ] Done
 **What's the difference between object detection and image classification?**
 
 **Answer:**
@@ -1443,6 +1468,7 @@ detector.eval()
 ---
 
 ### Question 26
+- [ ] Done
 **What algorithms can you use for real-time object detection?**
 
 **Answer:**
@@ -1506,6 +1532,7 @@ for r in results:
 ---
 
 ### Question 27
+- [ ] Done
 **Explain the YOLO approach to object detection.**
 
 **Answer:**
@@ -1572,6 +1599,7 @@ for r in results:
 ---
 
 ### Question 28
+- [ ] Done
 **Discuss the R-CNN family (R-CNN, Fast R-CNN, Faster R-CNN).**
 
 **Answer:**
@@ -1637,6 +1665,7 @@ predictions = model(images)
 ---
 
 ### Question 29
+- [ ] Done
 **Compare one-stage vs. two-stage detectors for object detection.**
 
 **Answer:**
@@ -1691,6 +1720,7 @@ Image → Backbone → RPN (proposals) → ROI Align → Head → Detections
 ---
 
 ### Question 30
+- [ ] Done
 **How do image recognition models deal with occlusion?**
 
 **Answer:**
@@ -1751,6 +1781,7 @@ augmented = transform(image=image)
 ## Advanced Techniques
 
 ### Question 31
+- [ ] Done
 **What is pose estimation, and what are its applications?**
 
 **Answer:**
@@ -1823,6 +1854,7 @@ if results.pose_landmarks:
 ---
 
 ### Question 32
+- [ ] Done
 **How does optical flow contribute to understanding motion in videos?**
 
 **Answer:**
@@ -1893,6 +1925,7 @@ magnitude, angle = cv2.cartToPolar(flow[..., 0], flow[..., 1])
 ---
 
 ### Question 33
+- [ ] Done
 **Explain how CNNs can be used for human activity recognition in video data.**
 
 **Answer:**
@@ -1976,6 +2009,7 @@ class ActivityRecognizer(nn.Module):
 ---
 
 ### Question 34
+- [ ] Done
 **What are Generative Adversarial Networks (GANs) and their role in computer vision?**
 
 **Answer:**
@@ -2057,6 +2091,7 @@ class Discriminator(nn.Module):
 ---
 
 ### Question 35
+- [ ] Done
 **Discuss few-shot learning and its challenges in computer vision.**
 
 **Answer:**
@@ -2126,6 +2161,7 @@ def prototypical_loss(embeddings, labels, n_way, k_shot, n_query):
 ---
 
 ### Question 36
+- [ ] Done
 **Explain zero-shot learning in image recognition.**
 
 **Answer:**
@@ -2201,6 +2237,7 @@ with torch.no_grad():
 ---
 
 ### Question 37
+- [ ] Done
 **How can reinforcement learning be applied to problems in computer vision?**
 
 **Answer:**
@@ -2280,6 +2317,7 @@ class VisualPolicy(nn.Module):
 ---
 
 ### Question 38
+- [ ] Done
 **What are Siamese networks and where are they applicable?**
 
 **Answer:**
@@ -2359,6 +2397,7 @@ def contrastive_loss(emb1, emb2, label, margin=1.0):
 ## Model Optimization & Evaluation
 
 ### Question 39
+- [ ] Done
 **How do you handle overfitting in a computer vision model?**
 
 **Answer:**
@@ -2445,6 +2484,7 @@ for epoch in range(epochs):
 ---
 
 ### Question 40
+- [ ] Done
 **What are some common metrics to evaluate a computer vision system's performance?**
 
 **Answer:**
@@ -2517,6 +2557,7 @@ def compute_dice(pred_mask, gt_mask):
 ---
 
 ### Question 41
+- [ ] Done
 **Discuss the importance of cross-validation for a vision model.**
 
 **Answer:**
@@ -2595,6 +2636,7 @@ print(f"Mean: {np.mean(fold_results):.4f} ± {np.std(fold_results):.4f}")
 ---
 
 ### Question 42
+- [ ] Done
 **Explain how Intersection over Union (IoU) works for object detection models.**
 
 **Answer:**
@@ -2679,6 +2721,7 @@ print(f"IoU: {compute_iou(pred_box, gt_box):.3f}")
 ## Real-World Applications
 
 ### Question 43
+- [ ] Done
 **How would you design a vision system for automatic license plate recognition?**
 
 **Answer:**
@@ -2764,6 +2807,7 @@ class LicensePlateRecognizer:
 ---
 
 ### Question 44
+- [ ] Done
 **Outline the computer vision technologies involved in autonomous vehicle navigation.**
 
 **Answer:**
@@ -2853,6 +2897,7 @@ class BEVPerception(nn.Module):
 ---
 
 ### Question 45
+- [ ] Done
 **Propose an approach for medical image analysis using computer vision.**
 
 **Answer:**
@@ -2944,6 +2989,7 @@ class MedicalImageClassifier:
 ---
 
 ### Question 46
+- [ ] Done
 **Discuss the use of computer vision in retail for product recognition and tracking.**
 
 **Answer:**
@@ -3039,6 +3085,7 @@ class ProductRecognitionSystem:
 ---
 
 ### Question 47
+- [ ] Done
 **How might AR applications benefit from advances in computer vision?**
 
 **Answer:**
@@ -3149,6 +3196,7 @@ class SimpleARSystem:
 # Image Classification - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you handle class imbalance in image classification datasets using techniques beyond simple oversampling?**
 
 **Answer:**
@@ -3230,6 +3278,7 @@ def mixup_data(x, y, alpha=0.2):
 ---
 
 ## Question 2
+- [ ] Done
 **What are the trade-offs between using pre-trained models versus training from scratch for domain-specific image classification?**
 
 **Answer:**
@@ -3299,6 +3348,7 @@ When ImageNet pre-training doesn't match your domain:
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement and evaluate data augmentation strategies that preserve class-relevant features?**
 
 **Answer:**
@@ -3378,6 +3428,7 @@ def evaluate_augmentation(model, train_loader, val_loader, augmented_loader):
 ---
 
 ## Question 4
+- [ ] Done
 **In multi-label image classification, how do you handle label correlation and dependency structures?**
 
 **Answer:**
@@ -3469,6 +3520,7 @@ class AsymmetricLoss(nn.Module):
 ---
 
 ## Question 5
+- [ ] Done
 **What techniques do you use to improve model interpretability in medical image classification applications?**
 
 **Answer:**
@@ -3559,6 +3611,7 @@ def mc_dropout_predict(model, image, n_samples=50):
 ---
 
 ## Question 6
+- [ ] Done
 **How do you design curriculum learning strategies for progressively training image classifiers?**
 
 **Answer:**
@@ -3645,6 +3698,7 @@ def train_with_curriculum(model, dataset, epochs=100):
 ---
 
 ## Question 7
+- [ ] Done
 **What are the considerations for deploying image classification models on edge devices with memory constraints?**
 
 **Answer:**
@@ -3707,6 +3761,7 @@ Deployment-Ready Model
 ---
 
 ## Question 8
+- [ ] Done
 **How do you handle fine-grained image classification where inter-class differences are minimal?**
 
 **Answer:**
@@ -3771,6 +3826,7 @@ class PartAttentionNet(nn.Module):
 ---
 
 ## Question 9
+- [ ] Done
 **What approaches work best for few-shot image classification in novel domains?**
 
 **Answer:**
@@ -3851,6 +3907,7 @@ prediction = similarity.argmax()
 ---
 
 ## Question 10
+- [ ] Done
 **How do you implement active learning strategies to reduce annotation costs in image classification?**
 
 **Answer:**
@@ -3922,6 +3979,7 @@ class ActiveLearningPipeline:
 ---
 
 ## Question 11
+- [ ] Done
 **What are the best practices for handling noisy labels in large-scale image classification datasets?**
 
 **Answer:**
@@ -4011,6 +4069,7 @@ class CoTeaching:
 ---
 
 ## Question 12
+- [ ] Done
 **How do you design ensemble methods that balance accuracy and computational efficiency?**
 
 **Answer:**
@@ -4077,6 +4136,7 @@ class SnapshotEnsemble:
 ---
 
 ## Question 13
+- [ ] Done
 **What techniques help with domain adaptation when deploying image classifiers to new environments?**
 
 **Answer:**
@@ -4146,6 +4206,7 @@ def mmd_loss(source_features, target_features, kernel='rbf'):
 ---
 
 ## Question 14
+- [ ] Done
 **How do you handle hierarchical classification where categories have parent-child relationships?**
 
 **Answer:**
@@ -4215,6 +4276,7 @@ def hierarchical_loss(outputs, targets, hierarchy_matrix, alpha=0.5):
 ---
 
 ## Question 15
+- [ ] Done
 **What are effective strategies for handling images with multiple objects during classification?**
 
 **Answer:**
@@ -4291,6 +4353,7 @@ class MultiObjectAttention(nn.Module):
 ---
 
 ## Question 16
+- [ ] Done
 **How do you implement and evaluate self-supervised pre-training for image classification?**
 
 **Answer:**
@@ -4376,6 +4439,7 @@ class DINO:
 ---
 
 ## Question 17
+- [ ] Done
 **What approaches work best for classifying images with significant viewpoint variations?**
 
 **Answer:**
@@ -4433,6 +4497,7 @@ class MultiViewClassifier(torch.nn.Module):
 ---
 
 ## Question 18
+- [ ] Done
 **How do you handle temporal consistency in video-based image classification?**
 
 **Answer:**
@@ -4492,6 +4557,7 @@ class TemporalSmoothing:
 ---
 
 ## Question 19
+- [ ] Done
 **What techniques are most effective for handling classification under varying illumination conditions?**
 
 **Answer:**
@@ -4551,6 +4617,7 @@ illumination_aug = A.Compose([
 ---
 
 ## Question 20
+- [ ] Done
 **How do you implement cost-sensitive learning when misclassification costs vary across classes?**
 
 **Answer:**
@@ -4610,6 +4677,7 @@ def cost_sensitive_prediction(probs, cost_matrix):
 ---
 
 ## Question 21
+- [ ] Done
 **What are the best practices for handling high-resolution images in classification pipelines?**
 
 **Answer:**
@@ -4676,6 +4744,7 @@ def tile_process(model, image, tile_size=512, overlap=64):
 ---
 
 ## Question 22
+- [ ] Done
 **How do you design multi-scale feature extraction for objects of varying sizes?**
 
 **Answer:**
@@ -4733,6 +4802,7 @@ class MultiScalePool(nn.Module):
 ---
 
 ## Question 23
+- [ ] Done
 **What techniques help with classifying images under different lighting conditions?**
 
 **Answer:**
@@ -4770,6 +4840,7 @@ def shadow_removal(image):
 ---
 
 ## Question 24
+- [ ] Done
 **How do you implement knowledge distillation to compress large classification models?**
 
 **Answer:**
@@ -4836,6 +4907,7 @@ def distill(teacher, student, train_loader, epochs=100):
 ---
 
 ## Question 25
+- [ ] Done
 **What approaches work best for zero-shot image classification using semantic embeddings?**
 
 **Answer:**
@@ -4911,6 +4983,7 @@ def ensemble_zero_shot(image, class_names, model, preprocess):
 ---
 
 ## Question 26
+- [ ] Done
 **How do you handle classification of images with artistic or stylistic variations?**
 
 **Answer:**
@@ -4955,6 +5028,7 @@ class StyleDomainNet(nn.Module):
 ---
 
 ## Question 27
+- [ ] Done
 **What are effective methods for handling classification in the presence of adversarial attacks?**
 
 **Answer:**
@@ -5022,6 +5096,7 @@ def adversarial_training_step(model, images, labels, optimizer, epsilon=0.03):
 ---
 
 ## Question 28
+- [ ] Done
 **How do you implement progressive learning for continuously expanding class sets?**
 
 **Answer:**
@@ -5088,6 +5163,7 @@ class EWC(nn.Module):
 ---
 
 ## Question 29
+- [ ] Done
 **What techniques help with cross-modal classification using both visual and textual features?**
 
 **Answer:**
@@ -5145,6 +5221,7 @@ class MultiModalClassifier(nn.Module):
 ---
 
 ## Question 30
+- [ ] Done
 **How do you design evaluation protocols that account for real-world deployment scenarios?**
 
 **Answer:**
@@ -5199,6 +5276,7 @@ def comprehensive_evaluation(model, test_sets):
 ---
 
 ## Question 31
+- [ ] Done
 **What approaches work best for classifying images with cultural or geographical variations?**
 
 **Answer:**
@@ -5239,6 +5317,7 @@ class GeoBalancedSampler:
 ---
 
 ## Question 32
+- [ ] Done
 **How do you handle classification of synthetic or generated images?**
 
 **Answer:**
@@ -5296,6 +5375,7 @@ def mixed_training(model, real_loader, synthetic_loader, optimizer):
 ---
 
 ## Question 33
+- [ ] Done
 **What techniques are effective for classifying images with varying aspect ratios and compositions?**
 
 **Answer:**
@@ -5351,6 +5431,7 @@ def multi_crop_predict(model, image, crops=10):
 ---
 
 ## Question 34
+- [ ] Done
 **How do you implement uncertainty quantification in image classification predictions?**
 
 **Answer:**
@@ -5420,6 +5501,7 @@ def ensemble_uncertainty(models, x):
 ---
 
 ## Question 35
+- [ ] Done
 **What are the best practices for handling privacy-preserving image classification?**
 
 **Answer:**
@@ -5494,6 +5576,7 @@ class FederatedClassifier:
 ---
 
 ## Question 36
+- [ ] Done
 **How do you design architectures that handle both common and rare class instances effectively?**
 
 **Answer:**
@@ -5562,6 +5645,7 @@ class TauNormClassifier(nn.Module):
 ---
 
 ## Question 37
+- [ ] Done
 **What approaches work best for real-time image classification in streaming applications?**
 
 **Answer:**
@@ -5639,6 +5723,7 @@ def benchmark_model(model, input_size=(1, 3, 224, 224), n_runs=100):
 ---
 
 ## Question 38
+- [ ] Done
 **How do you handle classification of images with metadata or contextual information?**
 
 **Answer:**
@@ -5705,6 +5790,7 @@ def encode_metadata(exif_data):
 ---
 
 ## Question 39
+- [ ] Done
 **What techniques help with robust classification under dataset shift?**
 
 **Answer:**
@@ -5766,6 +5852,7 @@ class CORAL:
 ---
 
 ## Question 40
+- [ ] Done
 **How do you implement fairness-aware training to reduce classification bias?**
 
 **Answer:**
@@ -5824,6 +5911,7 @@ def compute_fairness_metrics(predictions, labels, groups):
 ---
 
 ## Question 41
+- [ ] Done
 **What are effective strategies for handling classification of compressed or low-quality images?**
 
 **Answer:**
@@ -5865,6 +5953,7 @@ class QualityAwareClassifier(torch.nn.Module):
 ---
 
 ## Question 42
+- [ ] Done
 **How do you design multi-task learning frameworks that share classification knowledge?**
 
 **Answer:**
@@ -5926,6 +6015,7 @@ class UncertaintyWeighting(nn.Module):
 ---
 
 ## Question 43
+- [ ] Done
 **What approaches work best for classifying images in specialized domains like satellite imagery?**
 
 **Answer:**
@@ -5990,6 +6080,7 @@ def classify_satellite_image(model, image, tile_size=256, overlap=32):
 ---
 
 ## Question 44
+- [ ] Done
 **How do you handle classification with evolving class definitions over time?**
 
 **Answer:**
@@ -6041,6 +6132,7 @@ class FlexibleClassifier(nn.Module):
 ---
 
 ## Question 45
+- [ ] Done
 **What techniques are most effective for explaining classification decisions to end users?**
 
 **Answer:**
@@ -6108,6 +6200,7 @@ def generate_counterfactual(model, image, target_class, steps=100, lr=0.01):
 ---
 
 ## Question 46
+- [ ] Done
 **How do you implement online learning for classification models that adapt to new data?**
 
 **Answer:**
@@ -6172,6 +6265,7 @@ class OnlineLearningClassifier:
 ---
 
 ## Question 47
+- [ ] Done
 **What are the considerations for classification in federated learning scenarios?**
 
 **Answer:**
@@ -6241,6 +6335,7 @@ class FederatedAveraging:
 ---
 
 ## Question 48
+- [ ] Done
 **How do you design robust evaluation metrics for imbalanced classification problems?**
 
 **Answer:**
@@ -6298,6 +6393,7 @@ def comprehensive_imbalanced_metrics(y_true, y_pred, y_probs):
 ---
 
 ## Question 49
+- [ ] Done
 **What approaches work best for classifying images with multiple annotation sources?**
 
 **Answer:**
@@ -6361,6 +6457,7 @@ class MultiAnnotatorLearning:
 ---
 
 ## Question 50
+- [ ] Done
 **How do you handle classification optimization when training data and deployment data differ significantly?**
 
 **Answer:**
@@ -6434,300 +6531,350 @@ class ProductionOptimizer:
 # Object Detection (YOLO, R-CNN) - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How does YOLOv10's architecture differ from previous versions, and what specific improvements does it offer?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the key innovations in YOLOv10's end-to-end object detection that eliminate NMS post-processing?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement and tune the anchor-free detection mechanism in modern YOLO versions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies work best for training YOLO models on custom datasets with limited annotations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you optimize YOLO inference speed for real-time applications while maintaining accuracy?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What are the trade-offs between single-stage (YOLO, SSD) and two-stage (Faster R-CNN) detectors?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle multi-scale object detection in YOLO using Feature Pyramid Networks (FPN)?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What techniques help improve YOLO's performance on small object detection?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement data augmentation strategies specific to object detection tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What are the best practices for handling class imbalance in object detection datasets?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you design loss functions that balance localization and classification in YOLO?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What approaches work best for detecting objects with extreme aspect ratios using YOLO?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement and evaluate object tracking using YOLO-based detection?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques help with detecting partially occluded objects in YOLO models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle domain adaptation when deploying YOLO models to new environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What are the considerations for training YOLO on datasets with dense object arrangements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement attention mechanisms to improve YOLO's feature extraction?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What strategies work best for reducing false positives in YOLO detection results?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you design ensemble methods combining different detection architectures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help with detecting objects under varying lighting conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement active learning for efficient annotation of detection datasets?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What approaches work best for fine-tuning pre-trained YOLO models on domain-specific data?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle detection of objects with similar appearances but different classes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What are the best practices for optimizing YOLO models for edge deployment?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement hard negative mining to improve YOLO training efficiency?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques help with detecting objects in cluttered or complex backgrounds?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you design evaluation metrics that accurately reflect detection performance?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What approaches work best for detecting objects across different scales in the same image?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you handle temporal consistency in video object detection using YOLO?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What techniques help with detecting objects with deformable shapes using YOLO?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you implement knowledge distillation for compressing large detection models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What strategies work best for detecting objects in adverse weather conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you handle detection of objects with inter-class confusion using YOLO?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What approaches work best for few-shot object detection in novel categories?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you implement uncertainty quantification in YOLO detection predictions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What techniques help with detecting objects in high-resolution images efficiently?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you design architectures that handle both common and rare object classes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What approaches work best for detecting objects with significant pose variations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle detection in scenarios with heavy occlusion or crowding?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What techniques help with detecting objects across different camera viewpoints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement online learning for detection models that adapt to new classes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What strategies work best for detecting objects in specialized domains like medical imaging?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle detection with limited computational resources on mobile devices?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What approaches work best for detecting objects with temporal appearance changes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you design robust training procedures for noisy or weakly supervised detection data?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What techniques help with detecting objects in images with varying quality and resolution?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you implement fairness-aware detection to reduce bias across different groups?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches work best for detecting objects in synthetic or artificially generated images?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 49
+- [ ] Done
 **How do you handle detection optimization when balancing precision and recall requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques help with explaining detection decisions and improving model interpretability?**
 **Answer:** _To be filled_
 
@@ -6741,300 +6888,350 @@ class ProductionOptimizer:
 # Instance Segmentation (Mask R-CNN) - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How does Mask R-CNN's architecture balance object detection and pixel-level segmentation accuracy?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the key differences between ROIPool and ROIAlign, and why is ROIAlign crucial for segmentation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement and optimize the mask head in Mask R-CNN for different object types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies work best for training Mask R-CNN on datasets with incomplete mask annotations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you handle class imbalance in instance segmentation when some classes are rare?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What techniques help improve Mask R-CNN's performance on small objects or fine details?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you implement data augmentation that preserves both bounding boxes and mask accuracy?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What are the trade-offs between segmentation accuracy and inference speed in Mask R-CNN?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you design loss functions that effectively balance detection and segmentation objectives?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What approaches work best for handling overlapping instances in dense object arrangements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you implement multi-scale training and testing for Mask R-CNN?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What techniques help with segmenting objects that have complex or irregular shapes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you handle domain adaptation when applying Mask R-CNN to new visual domains?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What strategies work best for fine-tuning pre-trained Mask R-CNN models on custom datasets?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you implement active learning strategies for efficient mask annotation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What approaches help with segmenting transparent or reflective objects using Mask R-CNN?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you optimize Mask R-CNN for real-time applications without significant accuracy loss?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What techniques help with handling mask annotation noise and inconsistencies?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you design evaluation metrics that properly assess instance segmentation quality?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What approaches work best for segmenting objects with significant pose or viewpoint changes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement knowledge distillation for compressing Mask R-CNN models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What techniques help with segmenting objects in cluttered or complex backgrounds?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle temporal consistency in video instance segmentation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What strategies work best for segmenting objects with deformable or articulated parts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement uncertainty quantification in instance segmentation predictions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What approaches help with segmenting objects under varying lighting conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you design architectures that handle both common and rare instance classes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What techniques work best for segmenting objects with inter-class visual similarity?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you handle segmentation of objects with partial occlusion or truncation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What approaches work best for few-shot instance segmentation in novel categories?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you implement panoptic segmentation by combining instance and semantic segmentation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What techniques help with segmenting objects across different scales in the same image?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you handle segmentation in scenarios with heavy object crowding?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for segmenting objects in specialized domains like medical imaging?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you optimize mask quality while maintaining computational efficiency?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with segmenting objects that undergo significant deformation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement online learning for segmentation models adapting to new classes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for segmenting objects in adverse weather or lighting conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle segmentation with limited GPU memory or computational resources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What approaches work best for segmenting objects with fuzzy or ambiguous boundaries?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you design robust training procedures for noisy segmentation datasets?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What techniques help with explaining segmentation decisions to domain experts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you implement fairness-aware segmentation to reduce bias across different groups?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What approaches work best for segmenting objects in synthetic or artificially generated scenes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you handle segmentation quality assessment in the absence of ground truth masks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What techniques help with segmenting objects that have significant appearance variations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you implement efficient inference pipelines for large-scale segmentation applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches work best for segmenting objects with hierarchical part-whole relationships?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 49
+- [ ] Done
 **How do you handle segmentation optimization when balancing mask quality and detection accuracy?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques help with integrating instance segmentation into larger computer vision pipelines?**
 **Answer:** _To be filled_
 
@@ -7048,288 +7245,336 @@ class ProductionOptimizer:
 # Semantic Segmentation (U-Net, DeepLab) - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How does U-Net's encoder-decoder architecture with skip connections improve segmentation accuracy?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the key innovations in DeepLabv3+ that enhance boundary delineation in segmentation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement and optimize atrous convolutions for multi-scale feature extraction?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies work best for handling class imbalance in semantic segmentation datasets?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you design loss functions that emphasize boundary accuracy in segmentation tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What techniques help improve segmentation performance on small or thin objects?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you implement data augmentation strategies that preserve spatial relationships?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What approaches work best for handling multi-class segmentation with hierarchical categories?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you optimize U-Net architectures for medical image segmentation applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What techniques help with segmenting objects under varying lighting or contrast conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you implement domain adaptation for segmentation models across different imaging modalities?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What strategies work best for handling noisy or inconsistent segmentation annotations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you design evaluation metrics that properly assess segmentation quality?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What approaches help with segmenting scenes with significant depth variations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you implement active learning for efficient segmentation annotation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What techniques work best for real-time semantic segmentation applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you handle segmentation of objects with fuzzy or ambiguous boundaries?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What strategies help with segmenting rare classes in highly imbalanced datasets?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you implement uncertainty quantification in segmentation predictions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What approaches work best for handling segmentation across different image resolutions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you design architectures that efficiently process high-resolution images?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What techniques help with segmenting objects that undergo significant deformation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle temporal consistency in video semantic segmentation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What strategies work best for segmenting objects in specialized domains like satellite imagery?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement knowledge distillation for compressing segmentation models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What approaches help with segmenting objects with significant appearance variations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle segmentation in scenarios with partial occlusion or overlapping objects?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What techniques work best for few-shot segmentation in novel semantic categories?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement online learning for segmentation models adapting to new environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What strategies help with segmenting objects across different camera viewpoints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you design robust training procedures for weakly supervised segmentation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What approaches work best for segmenting objects in adverse weather conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you handle segmentation with limited computational resources or memory?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for segmenting objects with complex internal structures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle segmentation quality assessment without perfect ground truth?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with segmenting objects that have contextual dependencies?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement efficient inference for large-scale segmentation applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for segmenting objects with significant scale variations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you design architectures that handle both coarse and fine-grained segmentation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with segmenting objects in synthetic or artificially generated images?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you handle segmentation optimization when balancing accuracy and efficiency?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for segmenting objects with temporal appearance changes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you implement multi-task learning that combines segmentation with other vision tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with segmenting objects across different imaging sensors or modalities?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you handle segmentation in federated learning scenarios with distributed data?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for segmenting objects with inter-annotator disagreement?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you design evaluation protocols that reflect real-world deployment scenarios?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with integrating semantic segmentation into robotics or autonomous systems?**
 **Answer:** _To be filled_
 
@@ -7343,300 +7588,350 @@ class ProductionOptimizer:
 # Image Super-Resolution - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you choose between single-image and multi-frame super-resolution approaches for different applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the trade-offs between PSNR optimization and perceptual quality in super-resolution models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement and evaluate generative adversarial networks for photo-realistic super-resolution?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What techniques help with preserving fine details and textures during upscaling processes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you handle super-resolution for images with different degradation types (blur, noise, compression)?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What strategies work best for real-time super-resolution in video streaming applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you implement attention mechanisms to focus on important image regions during upscaling?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What approaches help with handling diverse content types (text, faces, natural scenes) in super-resolution?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you design loss functions that balance fidelity and perceptual quality?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What techniques work best for super-resolution of images with repetitive patterns or textures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you implement domain-specific super-resolution for specialized applications like medical imaging?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What strategies help with handling super-resolution across different upscaling factors?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you evaluate super-resolution quality when ground truth high-resolution images aren't available?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What approaches work best for super-resolution of images with motion blur or camera shake?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you implement efficient architectures for mobile or edge device deployment?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What techniques help with preserving semantic content during aggressive upscaling?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you handle super-resolution for images with mixed resolution regions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What strategies work best for batch processing large collections of images for super-resolution?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you implement uncertainty quantification to assess super-resolution confidence?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What approaches help with handling super-resolution of compressed or artifact-laden images?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you design training procedures that generalize well to unseen degradation types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What techniques work best for super-resolution of images with complex lighting conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle super-resolution optimization for specific downstream tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What strategies help with preserving important visual features during upscaling?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement progressive super-resolution for extremely high upscaling factors?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What approaches work best for super-resolution of images with geometric distortions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle super-resolution in scenarios with limited computational resources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What techniques help with maintaining temporal consistency in video super-resolution?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you design evaluation metrics that align with human perceptual preferences?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What strategies work best for super-resolution of images from different camera sensors?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you implement knowledge distillation for compressing super-resolution models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What approaches help with handling super-resolution of synthetic or artificially generated images?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you handle super-resolution quality control and automatic failure detection?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What techniques work best for super-resolution of images with significant noise levels?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you implement online learning for super-resolution models adapting to new content types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies help with super-resolution of images captured under extreme conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you design architectures that handle both natural and artistic image content?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches work best for super-resolution with privacy-preserving requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you handle super-resolution optimization when training and deployment hardware differ?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques help with explaining super-resolution decisions to end users?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you implement fairness-aware super-resolution to avoid bias across different image types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies work best for super-resolution of historical or archival images?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you handle super-resolution in federated learning scenarios with distributed data?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches help with combining super-resolution with other image enhancement tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you implement efficient batch processing pipelines for large-scale super-resolution?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques work best for super-resolution of images with cultural or artistic significance?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you handle super-resolution quality assessment in production environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies help with adapting super-resolution models to emerging image formats?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you design robust training procedures for diverse and noisy training datasets?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches work best for integrating super-resolution into broader image processing workflows?**
 **Answer:** _To be filled_
 
@@ -7650,300 +7945,350 @@ class ProductionOptimizer:
 # Optical Character Recognition (OCR) - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do modern transformer-based OCR models like TrOCR improve upon traditional CNN-RNN approaches?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the key challenges in implementing OCR for handwritten text versus printed text?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you handle OCR for documents with complex layouts, tables, and mixed content types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What techniques work best for OCR in multilingual documents with different scripts and writing directions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you implement preprocessing steps to improve OCR accuracy on low-quality or degraded images?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What strategies help with OCR performance on documents with varying fonts, sizes, and styles?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you design OCR systems that handle both structured forms and unstructured documents?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What approaches work best for real-time OCR in mobile applications with computational constraints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement post-processing techniques to correct OCR errors using language models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What techniques help with OCR accuracy for documents captured under poor lighting conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle OCR for documents with watermarks, stamps, or overlapping text?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What strategies work best for OCR on historical documents with faded or damaged text?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement OCR systems that maintain document formatting and layout information?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What approaches help with OCR accuracy for specialized domains like legal or medical documents?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you design evaluation metrics that properly assess OCR quality for different applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What techniques work best for OCR on documents with mixed languages within the same line?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you handle OCR confidence scoring and uncertainty quantification?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What strategies help with OCR performance on documents with complex mathematical notation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you implement active learning for improving OCR models with minimal annotation effort?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What approaches work best for OCR on documents with non-standard or artistic fonts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you handle OCR for documents with varying text orientations and skew angles?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What techniques help with OCR accuracy on documents with background patterns or textures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you implement knowledge distillation for compressing large OCR models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What strategies work best for OCR on documents captured with different camera angles?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you handle OCR quality control and automatic error detection in production systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What approaches help with OCR for documents with security features like microtext?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you implement OCR systems that preserve document authenticity and prevent tampering?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What techniques work best for OCR on documents with varying resolution and image quality?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you handle OCR for documents with mixed content (text, images, graphics)?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What strategies help with OCR performance on documents with fade, stains, or physical damage?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you implement domain adaptation for OCR models across different document types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What approaches work best for OCR on documents requiring high accuracy for compliance purposes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you handle OCR in scenarios with privacy constraints and sensitive information?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What techniques help with OCR accuracy for documents with unconventional layouts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you implement online learning for OCR models adapting to new document formats?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for OCR on documents with time-sensitive processing requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle OCR optimization when balancing accuracy and processing speed?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with OCR for documents in specialized industries like banking or insurance?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement efficient batch processing pipelines for large-scale OCR applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for OCR on documents with multi-column layouts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle OCR quality assessment when ground truth transcriptions aren't available?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with OCR for documents captured using different imaging technologies?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement fairness-aware OCR to avoid bias across different languages or scripts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for OCR integration with document management systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle OCR for documents with legal or regulatory requirements for accuracy?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with explaining OCR decisions and building user trust?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement robust error handling for OCR systems in production environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for OCR on documents with varying paper types and textures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle OCR adaptation to emerging document formats and standards?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with combining OCR with other document analysis tasks for comprehensive processing?**
 **Answer:** _To be filled_
 
@@ -7957,300 +8302,350 @@ class ProductionOptimizer:
 # 3D Reconstruction (NeRF, Gaussian Splatting) - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How does 3D Gaussian Splatting achieve real-time rendering compared to NeRF's neural network approach?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the key advantages of Gaussian Splatting's rasterization method over NeRF's volumetric rendering?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement and optimize the view-dependent color representation using spherical harmonics?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What techniques help with handling dynamic scenes and moving objects in NeRF reconstructions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you design training procedures for NeRF that generalize well to novel viewpoints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What strategies work best for handling sparse or unevenly distributed camera viewpoints in 3D reconstruction?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you implement multi-resolution training for NeRF to capture both coarse and fine details?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What approaches help with reducing training time while maintaining reconstruction quality?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you handle 3D reconstruction for scenes with varying lighting conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What techniques work best for reconstructing scenes with reflective or transparent materials?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you implement uncertainty quantification in neural radiance field predictions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What strategies help with handling large-scale scenes that exceed memory limitations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you design loss functions that balance photometric consistency and geometric accuracy?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What approaches work best for reconstructing scenes with limited texture or repetitive patterns?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle 3D reconstruction quality assessment when ground truth geometry isn't available?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What techniques help with preserving fine details during neural scene representation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement efficient rendering pipelines for real-time 3D scene visualization?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What strategies work best for handling occlusion and visibility in complex 3D scenes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle 3D reconstruction for scenes captured under different weather conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What approaches help with combining multiple reconstruction techniques for improved results?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement progressive training strategies for complex 3D scenes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What techniques work best for reconstructing scenes with significant depth variations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle 3D reconstruction optimization for specific downstream applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What strategies help with preserving semantic information during neural scene representation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement knowledge distillation for compressing 3D reconstruction models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What approaches work best for reconstructing scenes with moving objects or people?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle 3D reconstruction in scenarios with limited computational resources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What techniques help with explaining reconstruction quality and confidence to end users?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement domain adaptation for 3D reconstruction across different environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What strategies work best for reconstructing historical or cultural heritage scenes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle 3D reconstruction with privacy constraints for sensitive locations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What approaches help with maintaining temporal consistency in dynamic scene reconstruction?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement efficient data collection strategies for optimal 3D reconstruction?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What techniques work best for reconstructing scenes with extreme lighting conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle 3D reconstruction quality control in production environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies help with combining 3D reconstruction with other computer vision tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you implement online learning for reconstruction models adapting to new scenes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches work best for reconstructing scenes captured with different camera systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you handle 3D reconstruction for scenes requiring high geometric accuracy?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques help with preserving important visual features during scene compression?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you implement fairness-aware reconstruction to avoid bias across different scene types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies work best for reconstructing scenes for virtual or augmented reality applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you handle 3D reconstruction optimization when balancing quality and rendering speed?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches help with reconstructing scenes with complex material properties?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you implement multi-view consistency constraints in neural reconstruction?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques work best for reconstructing scenes with indoor and outdoor mixed environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you handle 3D reconstruction in federated learning scenarios with distributed capture?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies help with reconstructing scenes captured across different time periods?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you design evaluation protocols that reflect real-world reconstruction requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches work best for integrating 3D reconstruction into robotics or autonomous navigation systems?**
 **Answer:** _To be filled_
 
@@ -8264,300 +8659,350 @@ class ProductionOptimizer:
 # Video Tracking - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you implement multi-object tracking that maintains identity consistency across long sequences?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the trade-offs between detection-based and correlation-based tracking approaches?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you handle tracking objects through occlusions and temporary disappearances?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What techniques work best for tracking objects with significant appearance changes over time?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you implement real-time tracking systems with computational efficiency constraints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What strategies help with tracking objects in crowded scenes with frequent interactions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you design tracking systems that handle camera motion and viewpoint changes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What approaches work best for tracking objects across different scales and resolutions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement uncertainty quantification in tracking predictions and associations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What techniques help with handling tracking failures and automatic recovery mechanisms?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle multi-camera tracking with non-overlapping fields of view?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What strategies work best for tracking objects with deformable shapes or articulated motion?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement online learning for tracking models adapting to new object appearances?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What approaches help with tracking objects in scenarios with similar-looking distractors?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you design evaluation metrics that properly assess tracking performance?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What techniques work best for tracking objects with intermittent visibility?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you handle tracking optimization when balancing accuracy and computational speed?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What strategies help with tracking objects across different lighting and weather conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you implement knowledge distillation for compressing tracking models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What approaches work best for tracking objects with non-rigid motion patterns?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you handle tracking quality assessment and confidence scoring?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What techniques help with explaining tracking decisions and predicted trajectories?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you implement active learning for improving tracking models with minimal annotation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What strategies work best for tracking objects in specialized domains like sports or surveillance?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you handle tracking in scenarios with limited computational resources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What approaches help with maintaining tracking consistency across video cuts or scene changes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you implement fairness-aware tracking to avoid bias across different object types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What techniques work best for tracking objects with varying motion dynamics?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you handle tracking for objects that split, merge, or change in number?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What strategies help with tracking objects across different camera perspectives?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you implement efficient data association algorithms for multi-object scenarios?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What approaches work best for tracking objects with partial visibility or truncation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you handle tracking in videos with varying frame rates or temporal resolution?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What techniques help with tracking objects that undergo significant pose changes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you implement robust initialization procedures for tracking in challenging scenarios?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for tracking objects in adverse weather or environmental conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle tracking optimization for specific downstream applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with combining tracking with other video analysis tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement online adaptation for tracking models in changing environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for tracking objects with complex interaction patterns?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle tracking quality control in production video processing systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with tracking objects across different video formats and codecs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement efficient batch processing for large-scale video tracking applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for tracking objects with temporal appearance patterns?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle tracking in federated learning scenarios with distributed video data?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with preserving privacy while maintaining tracking accuracy?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement robust error handling for tracking systems in real-world deployments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for tracking objects in synthetic or artificially generated videos?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle tracking adaptation to emerging video technologies and formats?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with integrating tracking into broader video understanding pipelines?**
 **Answer:** _To be filled_
 
@@ -8571,300 +9016,350 @@ class ProductionOptimizer:
 # Style Transfer - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you balance content preservation and style adoption in neural style transfer models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the key differences between optimization-based and feed-forward style transfer approaches?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement real-time style transfer for video processing applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What techniques help with handling multiple styles simultaneously in a single model?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you design loss functions that capture both perceptual and artistic quality?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What strategies work best for style transfer with limited computational resources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle style transfer for images with different content types (portraits, landscapes, objects)?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What approaches help with preserving important semantic content during style transformation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement user control mechanisms for adjusting style transfer intensity?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What techniques work best for handling style transfer across different image resolutions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you design evaluation metrics that assess both technical and artistic quality?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What strategies help with style transfer for specialized domains like medical or satellite imagery?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you handle style transfer quality control and automatic failure detection?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What approaches work best for adapting style transfer to new artistic styles with minimal examples?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you implement knowledge distillation for compressing style transfer models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What techniques help with maintaining temporal consistency in video style transfer?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you handle style transfer for images with complex compositions or multiple objects?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What strategies work best for style transfer that preserves facial features and identity?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you implement uncertainty quantification in style transfer predictions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What approaches help with explaining style transfer decisions to users?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you handle style transfer optimization when balancing quality and processing speed?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What techniques work best for style transfer with privacy-preserving requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you implement online learning for style transfer models adapting to new styles?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What strategies help with style transfer for images captured under different conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you handle style transfer in scenarios with copyright or intellectual property concerns?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What approaches work best for combining multiple artistic techniques in single transformations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you implement efficient batch processing pipelines for large-scale style transfer?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What techniques help with style transfer that maintains image metadata and EXIF information?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you handle style transfer quality assessment when ground truth isn't available?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What strategies work best for style transfer in interactive or real-time applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you implement fairness-aware style transfer to avoid bias across different image types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What approaches help with style transfer for images with cultural or historical significance?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you handle style transfer adaptation to emerging artistic movements or techniques?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What techniques work best for style transfer with specific color palette constraints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you implement robust error handling for style transfer in production environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies help with combining style transfer with other image enhancement tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle style transfer for images with varying lighting and exposure conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches work best for style transfer that preserves important visual details?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement domain adaptation for style transfer across different image domains?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques help with style transfer quality consistency across different input types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle style transfer in federated learning scenarios with distributed style data?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies work best for style transfer with memory-efficient architectures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement progressive style transfer for extremely detailed transformations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches help with integrating style transfer into broader creative workflows?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle style transfer optimization for specific artistic or commercial requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques work best for style transfer that adapts to user preferences over time?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement robust training procedures for diverse and challenging style datasets?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies help with style transfer for emerging image formats and technologies?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle style transfer quality benchmarking across different model architectures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches work best for combining traditional and neural approaches in style transfer systems?**
 **Answer:** _To be filled_
 
@@ -8878,300 +9373,350 @@ class ProductionOptimizer:
 # Facial Recognition - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you implement face recognition systems that work reliably across different ethnicities and demographics?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What are the key privacy considerations when deploying facial recognition in public spaces?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you handle face recognition for individuals wearing masks, glasses, or other accessories?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What techniques help with face recognition under varying lighting conditions and poses?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you design face recognition systems that are robust to aging and appearance changes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What strategies work best for liveness detection to prevent spoofing attacks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you implement face recognition that maintains accuracy across different camera qualities?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What approaches help with handling face recognition in crowded or cluttered environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you design evaluation protocols that assess fairness across different demographic groups?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What techniques work best for face recognition with limited enrollment samples per person?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle face recognition optimization for real-time applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What strategies help with face recognition across different scales and resolutions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement uncertainty quantification in face recognition predictions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What approaches work best for face recognition in challenging environmental conditions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle face recognition quality control and confidence scoring?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What techniques help with explaining face recognition decisions for transparency?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement active learning for improving face recognition with minimal annotation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What strategies work best for face recognition in specialized applications like access control?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle face recognition with privacy-preserving techniques like federated learning?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What approaches help with face recognition across different facial expressions and emotions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement knowledge distillation for compressing face recognition models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What techniques work best for face recognition with temporal consistency in video streams?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle face recognition for individuals with facial hair or makeup changes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What strategies help with face recognition across different camera angles and viewpoints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement robust face detection as a preprocessing step for recognition?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What approaches work best for face recognition in low-light or infrared imaging?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle face recognition quality assessment and performance monitoring?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What techniques help with face recognition that adapts to new individuals over time?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement fairness-aware training to reduce recognition bias?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What strategies work best for face recognition with computational efficiency constraints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle face recognition in scenarios with multiple faces per image?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What approaches help with face recognition across different cultural or stylistic contexts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement secure storage and processing of facial recognition data?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What techniques work best for face recognition with occlusion or partial visibility?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle face recognition adaptation to emerging imaging technologies?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies help with combining face recognition with other biometric modalities?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you implement robust error handling for face recognition in production systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches work best for face recognition with regulatory compliance requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you handle face recognition optimization for specific deployment scenarios?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques help with face recognition that preserves user privacy and anonymity?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you implement online learning for face recognition systems in dynamic environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies work best for face recognition in forensic or investigative applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you handle face recognition quality benchmarking across different algorithms?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches help with integrating face recognition into broader security systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you implement robust training procedures for diverse facial recognition datasets?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques work best for face recognition with emerging privacy regulations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you handle face recognition adaptation to new demographic groups or populations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies help with face recognition in challenging deployment environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you design evaluation protocols that reflect real-world recognition scenarios?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches work best for combining traditional and deep learning methods in face recognition?**
 **Answer:** _To be filled_
 

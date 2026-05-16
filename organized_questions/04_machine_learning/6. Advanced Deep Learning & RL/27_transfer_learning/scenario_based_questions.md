@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: Discuss the concept of self-taught learning within transfer learning
+- [ ] Done
 
 ### Definition
 Self-taught learning is a form of transfer learning where the source data is unlabeled and may come from a different distribution than the target data. The model learns useful representations from abundant unlabeled data and transfers them to a supervised target task.
@@ -115,6 +116,7 @@ class ContrastiveSelfTaught(nn.Module):
 ---
 
 ## Question 2: Discuss the use of adversarial training in the process of domain adaptation
+- [ ] Done
 
 ### Core Concept
 Adversarial domain adaptation uses a discriminator to align feature distributions between source and target domains. The feature extractor learns to produce domain-invariant representations.
@@ -238,6 +240,7 @@ Equilibrium: Features are good for task AND indistinguishable between domains
 ---
 
 ## Question 3: Discuss how you might use transfer learning in a medical imaging domain, transferring knowledge from X-ray to MRI images
+- [ ] Done
 
 ### Challenge Analysis
 
@@ -360,6 +363,7 @@ mri_transforms = transforms.Compose([
 ---
 
 ## Question 4: Propose a transfer learning setup for cross-language text classification
+- [ ] Done
 
 ### Problem Setup
 ```
@@ -473,6 +477,7 @@ fr_embeddings = KeyedVectors.load('wiki.fr.align.vec')
 ---
 
 ## Question 5: How would you use transfer learning to improve voice recognition for children's speech?
+- [ ] Done
 
 ### Challenge Analysis
 
@@ -614,6 +619,7 @@ class SpeakerAdaptationLayer(nn.Module):
 ---
 
 ## Question 6: Discuss the current research on understanding why transfer learning works, including theoretical frameworks
+- [ ] Done
 
 ### Theoretical Perspectives
 

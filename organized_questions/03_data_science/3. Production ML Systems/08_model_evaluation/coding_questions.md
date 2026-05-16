@@ -1,6 +1,7 @@
 # Model Evaluation Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement a Python function that calculates the F1-score given precision and recall values.**
 
@@ -27,6 +28,7 @@ F1 is the harmonic mean, which penalizes extreme values.
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a Python script to compute the Confusion Matrix for a two-class problem.**
 
@@ -53,6 +55,7 @@ Know the layout: [[TN, FP], [FN, TP]].
 ---
 
 ## Question 3
+- [ ] Done
 
 **Develop a Python function to perform k-fold cross-validation on a dataset.**
 
@@ -79,6 +82,7 @@ Use stratified K-fold for classification.
 ---
 
 ## Question 4
+- [ ] Done
 
 **Simulate overfitting in a machine learning model, and show how to detect it with a validation curve.**
 
@@ -112,6 +116,7 @@ Large gap between curves indicates overfitting.
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write code to draw an ROC curve and calculate AUC for a given set of predictions and true labels.**
 
@@ -145,6 +150,7 @@ Use predict_proba, not predict, for ROC curves.
 ---
 
 ## Question 6
+- [ ] Done
 
 **Code a Python function that uses StratifiedKFold cross-validation on an imbalanced dataset.**
 
@@ -169,6 +175,7 @@ Always use stratified for imbalanced classification.
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement a Python program to plot learning curves for a given estimator.**
 
@@ -201,6 +208,7 @@ Flat validation curve suggests more data won't help.
 ---
 
 ## Question 8
+- [ ] Done
 
 **Simulate and evaluate model performance with Monte Carlo cross-validation using Python.**
 
@@ -225,6 +233,7 @@ Monte Carlo CV is good for variance estimation.
 ---
 
 ## Question 9
+- [ ] Done
 
 **Create a Python function to calculate specificity and sensitivity from a given confusion matrix.**
 
@@ -253,6 +262,7 @@ Sensitivity = Recall; Specificity = 1 - FPR.
 ---
 
 ## Question 10
+- [ ] Done
 
 **Provide a Python script to compare two models using t-tests and report statistical significance.**
 

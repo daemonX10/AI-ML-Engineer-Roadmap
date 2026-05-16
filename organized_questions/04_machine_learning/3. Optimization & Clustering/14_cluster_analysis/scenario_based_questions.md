@@ -1,6 +1,7 @@
 # Cluster Analysis Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss feature selection techniques appropriate for cluster analysis.**
 
@@ -59,6 +60,7 @@ X_reduced = PCA(n_components=10).fit_transform(X)
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you apply cluster analysis for customer segmentation in a retail business?**
 
@@ -121,6 +123,7 @@ print(profile)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss how cluster analysis can be leveraged for image segmentation.**
 
@@ -185,6 +188,7 @@ Relative scaling between color and position determines whether clustering emphas
 ---
 
 ## Question 4
+- [ ] Done
 
 **Propose a clustering strategy for identifying similar regions in geographical data.**
 
@@ -249,6 +253,7 @@ features = np.hstack([spatial * 2, attributes])
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss a potential framework for analyzing social network connectivity using clustering.**
 
@@ -317,6 +322,7 @@ for comm_id in set(partition.values()):
 ---
 
 ## Question 6
+- [ ] Done
 
 **How would you approach clustering time-series data, such as stock market prices or weather patterns?**
 
@@ -391,6 +397,7 @@ labels = KMeans(n_clusters=5).fit_predict(X_scaled)
 ---
 
 ## Question 7
+- [ ] Done
 
 **Describe how you would use clustering for organizing a large set of documents into topics.**
 
@@ -451,6 +458,7 @@ Use Cosine similarity (inherent in normalized TF-IDF) rather than Euclidean for 
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain how you would employ cluster analysis in a recommendation system.**
 

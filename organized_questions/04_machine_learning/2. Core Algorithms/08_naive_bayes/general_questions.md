@@ -1,6 +1,7 @@
 # Naive Bayes Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **Why is the Naive Bayes classifier a good choice for text classification tasks?**
 
@@ -26,6 +27,7 @@ Naive Bayes excels at text classification because it handles high-dimensional sp
 ---
 
 ## Question 2
+- [ ] Done
 
 **Why do we often use log probabilities instead of probabilities in Naive Bayes computation?**
 
@@ -57,6 +59,7 @@ log_prob = 100 * np.log(0.01)  # = -460.5, perfectly representable
 ---
 
 ## Question 3
+- [ ] Done
 
 **What role does Laplace smoothing (additive smoothing) play in Naive Bayes?**
 
@@ -80,6 +83,7 @@ Where:
 ---
 
 ## Question 4
+- [ ] Done
 
 **Can Naive Bayes be used for regression tasks? Why or why not?**
 
@@ -103,6 +107,7 @@ If you need regression, use Linear Regression, Random Forest Regressor, or other
 ---
 
 ## Question 5
+- [ ] Done
 
 **In what kind of situations might the 'naivety' assumption of Naive Bayes lead to poor performance?**
 
@@ -127,6 +132,7 @@ The independence assumption fails badly when features are highly correlated - th
 ---
 
 ## Question 6
+- [ ] Done
 
 **What preprocessing steps would you take for text data before applying Naive Bayes?**
 
@@ -170,6 +176,7 @@ X = vectorizer.fit_transform(texts)
 ---
 
 ## Question 7
+- [ ] Done
 
 **What metrics would you use to evaluate the performance of a Naive Bayes classification model?**
 
@@ -204,6 +211,7 @@ print(f"Log-Loss: {log_loss(y_test, y_proba):.4f}")
 ---
 
 ## Question 8
+- [ ] Done
 
 **Compare and contrast Naive Bayes with logistic regression.**
 
@@ -230,6 +238,7 @@ Both are linear classifiers but differ fundamentally: NB is generative (models P
 ---
 
 ## Question 9
+- [ ] Done
 
 **How can you use the Naive Bayes classifier in a semi-supervised learning scenario?**
 
@@ -272,6 +281,7 @@ def semi_supervised_nb(X_labeled, y_labeled, X_unlabeled, confidence_threshold=0
 ---
 
 ## Question 10
+- [ ] Done
 
 **How would a Naive Bayes classifier identify fake news articles?**
 
@@ -302,6 +312,7 @@ fake_news_detector.fit(articles, labels)  # 1=fake, 0=real
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explore the challenges and solutions for Naive Bayes classification in the context of multi-label classification tasks.**
 
@@ -337,6 +348,7 @@ chain.fit(X_train, Y_train)
 ---
 
 ## Question 12
+- [ ] Done
 
 **How can active learning algorithms benefit from the Naive Bayes classifier in data-scarce scenarios?**
 

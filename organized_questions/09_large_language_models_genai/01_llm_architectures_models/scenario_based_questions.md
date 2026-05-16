@@ -1,6 +1,7 @@
 # LLM & ChatGPT Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the significance of pre-training and fine-tuning in the context of LLMs.**
 
@@ -9,6 +10,7 @@
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss the application of LLMs in conversation AI and chatbots.**
 
@@ -17,6 +19,7 @@
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the technique of 'masking' in transformer models like BERT.**
 
@@ -25,6 +28,7 @@
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss the role of learning rate schedules in training LLMs.**
 
@@ -33,6 +37,7 @@
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss techniques for reducing the memory footprint of LLMs during training.**
 
@@ -41,6 +46,7 @@
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss the process of vocabulary creation and management in LLMs.**
 
@@ -49,6 +55,7 @@
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss strategies for efficient deployment of LLMs in production environments.**
 
@@ -57,6 +64,7 @@
 ---
 
 ## Question 8
+- [ ] Done
 
 **Discuss the role of multi-GPU and distributed training in LLMs.**
 
@@ -65,6 +73,7 @@
 ---
 
 ## Question 9
+- [ ] Done
 
 **How would you set up a LLM to create a news article summarizer?**
 
@@ -73,6 +82,7 @@
 ---
 
 ## Question 10
+- [ ] Done
 
 **Discuss techniques to adapt a LLM for a legal document review application.**
 
@@ -81,6 +91,7 @@
 ---
 
 ## Question 11
+- [ ] Done
 
 **Propose a framework to use LLMs in creating personalized content recommendations.**
 
@@ -89,6 +100,7 @@
 ---
 
 ## Question 12
+- [ ] Done
 
 **How would you conduct A/B testing for a new version of an LLM-based application?**
 
@@ -97,6 +109,7 @@
 ---
 
 ## Question 13
+- [ ] Done
 
 **Discuss generative adversarial networks (GANs) in the context of text generation with LLMs.**
 
@@ -105,6 +118,7 @@
 ---
 
 ## Question 14
+- [ ] Done
 
 **Discuss the concept of catastrophic forgetting in LLMs and potential solutions.**
 
@@ -113,6 +127,7 @@
 ---
 
 ## Question 15
+- [ ] Done
 
 **Discuss the implications of attention flow in multi-head attention mechanisms.**
 
@@ -121,6 +136,7 @@
 ---
 
 ## Question 16
+- [ ] Done
 
 **Discuss the cost and resource implications of training models like GPT-3.**
 
@@ -129,6 +145,7 @@
 ---
 
 ## Question 17
+- [ ] Done
 
 **Discuss the challenges of deploying ChatGPT in a production environment.**
 
@@ -137,6 +154,7 @@
 ---
 
 ## Question 18
+- [ ] Done
 
 **Discuss the scalability challenges for models like GPT-3.**
 
@@ -145,6 +163,7 @@
 ---
 
 ## Question 19
+- [ ] Done
 
 **How would you handle performance bottlenecks when using ChatGPT?**
 
@@ -153,6 +172,7 @@
 ---
 
 ## Question 20
+- [ ] Done
 
 **Discuss how quantization and pruning may be used with GPT models.**
 
@@ -161,6 +181,7 @@
 ---
 
 ## Question 21
+- [ ] Done
 
 **How would you analyze the performance of ChatGPT on a given text task?**
 
@@ -169,6 +190,7 @@
 ---
 
 ## Question 22
+- [ ] Done
 
 **Discuss the role of context in maintaining coherent conversations with ChatGPT.**
 
@@ -177,6 +199,7 @@
 ---
 
 ## Question 23
+- [ ] Done
 
 **Discuss recent research advancements in transformer models.**
 
@@ -185,6 +208,7 @@
 ---
 
 ## Question 24
+- [ ] Done
 
 **Discuss zero-shot and few-shot learning capabilities of GPT models.**
 
@@ -193,6 +217,7 @@
 ---
 
 ## Question 25
+- [ ] Done
 
 **How would you debug issues related to the language generation quality of ChatGPT?**
 
@@ -201,6 +226,7 @@
 ---
 
 ## Question 26
+- [ ] Done
 
 **What are some common failure modes of ChatGPT in real-world applications and how would you address them?**
 

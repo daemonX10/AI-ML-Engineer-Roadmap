@@ -1,6 +1,7 @@
 # Random Forest Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **What is bagging, and how is it implemented in a Random Forest?**
 
@@ -108,6 +109,7 @@ print(f"Accuracy: {accuracy_score(y_test, y_pred):.4f}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **What are some common implementation challenges with Random Forest?**
 
@@ -217,6 +219,7 @@ perm_imp = permutation_importance(rf, X_test, y_test, n_repeats=10)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Write a Python code to train a Random Forest Classifier using scikit-learn on a given dataset.**
 
@@ -318,6 +321,7 @@ Classification Report:
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a function that computes the OOB error for a Random Forest model.**
 
@@ -440,6 +444,7 @@ print(f"Sklearn OOB Error: {oob_error_sklearn:.4f}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write Python code that selects the most important features using a trained Random Forest model.**
 
@@ -588,6 +593,7 @@ evaluate_feature_selection(X_train, X_test, y_train, y_test, selected_perm, feat
 ---
 
 ## Question 6
+- [ ] Done
 
 **Implement from scratch a simplified version of the Random Forest algorithm in Python.**
 
@@ -844,6 +850,7 @@ print(f"Sklearn RF OOB Score: {rf_sklearn.oob_score_:.4f}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Write a function to visualize an individual decision tree from a Random Forest in Python.**
 

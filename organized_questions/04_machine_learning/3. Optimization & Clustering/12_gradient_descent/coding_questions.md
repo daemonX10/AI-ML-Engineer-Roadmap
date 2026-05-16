@@ -1,6 +1,7 @@
 # Gradient Descent Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you implement early stopping in a gradient descent algorithm?**
 
@@ -68,6 +69,7 @@ def train_with_early_stopping(X_train, y_train, X_val, y_val,
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a Python implementation of basic gradient descent to find the minimum of a quadratic function.**
 
@@ -135,6 +137,7 @@ plt.show()
 ---
 
 ## Question 3
+- [ ] Done
 
 **Implement batch gradient descent for linear regression from scratch using Python.**
 
@@ -198,6 +201,7 @@ print(f"True: intercept=4, slope=3")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a stochastic gradient descent algorithm in Python for optimizing a logistic regression model.**
 
@@ -273,6 +277,7 @@ print(f"Final loss: {losses[-1]:.4f}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Simulate annealing of the learning rate in gradient descent and plot the convergence over time.**
 
@@ -342,6 +347,7 @@ plt.show()
 ---
 
 ## Question 6
+- [ ] Done
 
 **Design a Python function to compare the convergence speed of gradient descent with and without momentum.**
 
@@ -414,6 +420,7 @@ print(f"Final loss with momentum: {losses_with_mom[-1]:.6f}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement gradient descent with early stopping using Python.**
 
@@ -429,6 +436,7 @@ Early stopping key points:
 ---
 
 ## Question 8
+- [ ] Done
 
 **Code a mini-batch gradient descent optimizer and test it on a small dataset.**
 
@@ -484,6 +492,7 @@ print(f"Final loss: {losses[-1]:.4f}")
 ---
 
 ## Question 9
+- [ ] Done
 
 **Write a Python function to check the gradients computed by a gradient descent algorithm.**
 
@@ -552,6 +561,7 @@ print(f"Gradient check: {'PASSED' if error < 1e-5 else 'FAILED'}")
 ---
 
 ## Question 10
+- [ ] Done
 
 **Experiment with different weight initializations and observe their impact on gradient descent optimization.**
 
@@ -614,6 +624,7 @@ plt.show()
 ---
 
 ## Question 11
+- [ ] Done
 
 **Implement and visualize the optimization path of the Adam optimizer vs. vanilla gradient descent.**
 

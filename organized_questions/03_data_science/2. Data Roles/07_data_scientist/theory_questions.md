@@ -124,6 +124,7 @@
 ---
 
 ## Question 1
+- [ ] Done
 
 **What is Machine Learning and how does it differ from traditional programming?**
 
@@ -163,6 +164,7 @@ Always mention that ML excels when rules are complex, unknown, or constantly cha
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the difference between Supervised Learning and Unsupervised Learning.**
 
@@ -224,6 +226,7 @@ Mention that real-world projects often combine both: use unsupervised for explor
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is the difference between Classification and Regression problems?**
 
@@ -294,6 +297,7 @@ Always clarify the business objective. "Predict house price" (regression) vs "Is
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe the concept of Overfitting and Underfitting in ML models.**
 
@@ -393,6 +397,7 @@ Always mention learning curves as a diagnostic tool. Explain that you'd plot tra
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is the Bias-Variance Tradeoff in ML?**
 
@@ -496,6 +501,7 @@ Explain that the goal is NOT zero bias or zero variance, but minimizing total er
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain the concept of Cross-Validation and its importance in ML.**
 
@@ -614,6 +620,7 @@ Always mention stratified K-fold for classification and time series split for te
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is Regularization and how does it help prevent overfitting?**
 
@@ -756,6 +763,7 @@ Explain the geometric intuition for why L1 produces sparsity. Mention that in pr
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe the difference between Parametric and Non-Parametric models.**
 
@@ -871,6 +879,7 @@ The key distinction is whether model complexity is fixed or grows with data. Men
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is the curse of dimensionality and how does it impact ML models?**
 
@@ -1015,6 +1024,7 @@ Explain the distance concentration phenomenon with a concrete example. Mention t
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain the concept of Feature Engineering and its significance in ML.**
 
@@ -1212,6 +1222,7 @@ Always emphasize that feature engineering requires domain expertise. Give concre
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is Data Preprocessing and why is it important in ML?**
 
@@ -1409,6 +1420,7 @@ Emphasize using pipelines to prevent data leakage. Know which algorithms require
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain the difference between Feature Scaling and Normalization.**
 
@@ -1559,6 +1571,7 @@ Know the formulas and be able to explain when you'd choose each. Mention that st
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is the purpose of One-Hot Encoding and when is it used?**
 
@@ -1713,6 +1726,7 @@ Mention the dummy variable trap and high cardinality problem proactively. Know a
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe the concept of Handling Missing Values in datasets.**
 
@@ -1921,6 +1935,7 @@ First explain the missing data mechanisms (MCAR/MAR/MNAR). Show you understand t
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is Feature Selection and its techniques?**
 
@@ -2139,6 +2154,7 @@ Start with fast filter methods for initial exploration, then use embedded method
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the difference between Filter, Wrapper, and Embedded methods for Feature Selection.**
 
@@ -2345,6 +2361,7 @@ Explain the tradeoff between computational cost and accuracy. Mention that in pr
 ---
 
 ## Question 17
+- [ ] Done
 
 **What is Principal Component Analysis (PCA) and its role in dimensionality reduction?**
 
@@ -2538,6 +2555,7 @@ Explain the intuition: PCA finds directions of maximum variance and projects dat
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe the concept of Outlier Detection and its methods.**
 
@@ -2738,6 +2756,7 @@ First ask "Are these outliers or interesting data points?" Explain that in fraud
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is the Imputer class in scikit-learn and how is it used?**
 
@@ -2938,6 +2957,7 @@ Always emphasize using pipelines to prevent data leakage. Know the difference be
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain the concept of Handling Imbalanced Datasets in ML.**
 
@@ -3192,6 +3212,7 @@ Start by explaining why accuracy fails for imbalanced data. Know multiple strate
 ---
 
 ## Question 21
+- [ ] Done
 
 **What is Linear Regression and its assumptions?**
 
@@ -3359,6 +3380,7 @@ Be ready to explain assumptions and how to check them. Know that violating assum
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain the concept of Logistic Regression and its applications.**
 
@@ -3509,6 +3531,7 @@ Emphasize that despite the name, it's for classification. Know how to interpret 
 ---
 
 ## Question 23
+- [ ] Done
 
 **What is Decision Tree and how does it work?**
 
@@ -3675,6 +3698,7 @@ Explain the greedy nature of the algorithm (makes locally optimal choices). Know
 ---
 
 ## Question 24
+- [ ] Done
 
 **Describe the concept of Random Forest and its advantages over Decision Trees.**
 
@@ -3858,6 +3882,7 @@ Explain both sources of randomness (bootstrap + feature subsampling). Mention OO
 ---
 
 ## Question 25
+- [ ] Done
 
 **What is Support Vector Machine (SVM) and its kernel functions?**
 
@@ -4048,6 +4073,7 @@ Explain the margin maximization concept and why support vectors are important (o
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain the concept of Naive Bayes algorithm and its types.**
 
@@ -4068,6 +4094,7 @@ Works surprisingly well despite naive assumption.
 ---
 
 ## Question 27
+- [ ] Done
 
 **What is K-Nearest Neighbors (KNN) algorithm and its distance metrics?**
 
@@ -4092,6 +4119,7 @@ Simple baseline, but slow for large datasets.
 ---
 
 ## Question 28
+- [ ] Done
 
 **What is XGBoost and its key features?**
 
@@ -4115,6 +4143,7 @@ XGBoost often wins ML competitions.
 ---
 
 ## Question 29
+- [ ] Done
 
 **Explain the concept of Stacking and its benefits in Ensemble Learning.**
 
@@ -4139,6 +4168,7 @@ Use diverse base models for best results.
 ---
 
 ## Question 30
+- [ ] Done
 
 **What is K-Means Clustering and its objective function?**
 
@@ -4160,6 +4190,7 @@ Use elbow method to choose k.
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain the difference between Hierarchical and Partitional Clustering.**
 
@@ -4180,6 +4211,7 @@ Hierarchical for unknown k, partitional for large data.
 ---
 
 ## Question 32
+- [ ] Done
 
 **What is Density-Based Spatial Clustering of Applications with Noise (DBSCAN) and its parameters?**
 
@@ -4200,6 +4232,7 @@ DBSCAN is great for spatial data with outliers.
 ---
 
 ## Question 33
+- [ ] Done
 
 **Describe the concept of Gaussian Mixture Models (GMM) and its applications.**
 
@@ -4222,6 +4255,7 @@ GMM gives probability of cluster membership.
 ---
 
 ## Question 34
+- [ ] Done
 
 **What is Principal Component Analysis (PCA) and its role in unsupervised learning?**
 
@@ -4244,6 +4278,7 @@ Choose components explaining 95% variance.
 ---
 
 ## Question 35
+- [ ] Done
 
 **Explain the concept of t-Distributed Stochastic Neighbor Embedding (t-SNE) and its use cases.**
 
@@ -4268,6 +4303,7 @@ Use for visualization only, not preprocessing.
 ---
 
 ## Question 36
+- [ ] Done
 
 **What is Association Rule Mining and its popular algorithms?**
 
@@ -4290,6 +4326,7 @@ Market basket analysis is the classic application.
 ---
 
 ## Question 37
+- [ ] Done
 
 **Describe the concept of Anomaly Detection and its techniques.**
 
@@ -4310,6 +4347,7 @@ Define "normal" carefully based on domain.
 ---
 
 ## Question 38
+- [ ] Done
 
 **What is Self-Organizing Maps (SOM) and its applications?**
 
@@ -4329,6 +4367,7 @@ SOM preserves topological relationships.
 ---
 
 ## Question 39
+- [ ] Done
 
 **Explain the concept of Latent Dirichlet Allocation (LDA) in topic modeling.**
 
@@ -4350,6 +4389,7 @@ LDA is unsupervised; NMF is an alternative.
 ---
 
 ## Question 40
+- [ ] Done
 
 **What is the purpose of Model Evaluation and Validation in ML?**
 
@@ -4370,6 +4410,7 @@ Never evaluate on training data alone.
 ---
 
 ## Question 41
+- [ ] Done
 
 **Explain the difference between Train, Validation, and Test sets.**
 
@@ -4392,6 +4433,7 @@ Never touch test set until final evaluation.
 ---
 
 ## Question 42
+- [ ] Done
 
 **What is Confusion Matrix and its components?**
 
@@ -4539,6 +4581,7 @@ Be able to quickly derive all metrics from the confusion matrix. Know the differ
 ---
 
 ## Question 43
+- [ ] Done
 
 **Describe the concept of Precision, Recall, and F1-Score.**
 
@@ -4734,6 +4777,7 @@ Always ask about the business context: "What's more costly — false positives o
 ---
 
 ## Question 44
+- [ ] Done
 
 **What is Receiver Operating Characteristic (ROC) Curve and its interpretation?**
 
@@ -4907,6 +4951,7 @@ Explain that ROC is threshold-independent — it shows performance across ALL po
 ---
 
 ## Question 45
+- [ ] Done
 
 **Explain the concept of Area Under the Curve (AUC) and its significance.**
 
@@ -5091,6 +5136,7 @@ Explain AUC as "probability of correct ranking" for intuitive understanding. Kno
 ---
 
 ## Question 46
+- [ ] Done
 
 **What is Mean Squared Error (MSE) and its use in regression problems?**
 
@@ -5113,6 +5159,7 @@ Use RMSE for interpretation, MSE for optimization.
 ---
 
 ## Question 47
+- [ ] Done
 
 **Describe the concept of R-squared (Coefficient of Determination) and its interpretation.**
 
@@ -5135,6 +5182,7 @@ R² can be misleading; always check residuals.
 ---
 
 ## Question 48
+- [ ] Done
 
 **What is K-Fold Cross-Validation and its advantages?**
 
@@ -5157,6 +5205,7 @@ K=5 or K=10 are common choices.
 ---
 
 ## Question 49
+- [ ] Done
 
 **Explain the concept of Stratified K-Fold Cross-Validation and its use cases.**
 
@@ -5176,6 +5225,7 @@ Always use stratified for classification.
 ---
 
 ## Question 50
+- [ ] Done
 
 **What is a Neural Network and its components?**
 
@@ -5344,6 +5394,7 @@ Know the basic math: weighted sum → activation function. Explain why non-linea
 ---
 
 ## Question 51
+- [ ] Done
 
 **Explain the difference between Feedforward and Recurrent Neural Networks.**
 
@@ -5364,6 +5415,7 @@ RNNs process sequences; FFNs process fixed inputs.
 ---
 
 ## Question 52
+- [ ] Done
 
 **What is Backpropagation and how does it work?**
 
@@ -5525,6 +5577,7 @@ Explain the chain rule as the key insight. Know that backprop is just an efficie
 ---
 
 ## Question 53
+- [ ] Done
 
 **Describe the concept of Activation Functions and their types.**
 
@@ -5723,6 +5776,7 @@ Know why non-linearity is essential (without it, deep networks collapse to linea
 ---
 
 ## Question 54
+- [ ] Done
 
 **What is Deep Learning and its applications?**
 
@@ -5744,6 +5798,7 @@ Deep learning excels with large unstructured data.
 ---
 
 ## Question 55
+- [ ] Done
 
 **Explain the concept of Convolutional Neural Networks (CNN) and their architecture.**
 
@@ -5763,6 +5818,7 @@ CNNs learn hierarchical features automatically.
 ---
 
 ## Question 56
+- [ ] Done
 
 **What is Recurrent Neural Networks (RNN) and their variants (LSTM, GRU)?**
 
@@ -5785,6 +5841,7 @@ LSTM/GRU solve long-range dependency problem.
 ---
 
 ## Question 57
+- [ ] Done
 
 **Describe the concept of Autoencoders and their use cases.**
 
@@ -5806,6 +5863,7 @@ Autoencoders learn compressed representations.
 ---
 
 ## Question 58
+- [ ] Done
 
 **What is Transfer Learning and its benefits in deep learning?**
 
@@ -5829,6 +5887,7 @@ Start with feature extraction, then fine-tune.
 ---
 
 ## Question 59
+- [ ] Done
 
 **Explain the concept of Generative Adversarial Networks (GAN) and their applications.**
 
@@ -5851,6 +5910,7 @@ GANs are hard to train; know mode collapse.
 ---
 
 ## Question 60
+- [ ] Done
 
 **What is Natural Language Processing (NLP) and its applications?**
 
@@ -5873,6 +5933,7 @@ Transformers have revolutionized NLP.
 ---
 
 ## Question 61
+- [ ] Done
 
 **Explain the difference between Tokenization and Stemming.**
 
@@ -5892,6 +5953,7 @@ Subword tokenization (BPE) is modern standard.
 ---
 
 ## Question 62
+- [ ] Done
 
 **What is Word Embedding and its popular techniques (Word2Vec, GloVe)?**
 
@@ -5911,6 +5973,7 @@ Contextual embeddings (BERT) are now preferred.
 ---
 
 ## Question 63
+- [ ] Done
 
 **Describe the concept of Named Entity Recognition (NER) and its approaches.**
 
@@ -5934,6 +5997,7 @@ Know BIO tagging scheme.
 ---
 
 ## Question 64
+- [ ] Done
 
 **What is Sentiment Analysis and its methods?**
 
@@ -5956,6 +6020,7 @@ Handle sarcasm and negation challenges.
 ---
 
 ## Question 65
+- [ ] Done
 
 **Explain the concept of Topic Modeling and its algorithms (LDA, NMF).**
 
@@ -5977,6 +6042,7 @@ LDA is generative; NMF is deterministic.
 ---
 
 ## Question 66
+- [ ] Done
 
 **What is Text Classification and its techniques?**
 
@@ -5997,6 +6063,7 @@ BERT fine-tuning is state-of-the-art.
 ---
 
 ## Question 67
+- [ ] Done
 
 **Describe the concept of Language Translation and its challenges.**
 
@@ -6017,6 +6084,7 @@ Know encoder-decoder architecture.
 ---
 
 ## Question 68
+- [ ] Done
 
 **What is Text Summarization and its types (Extractive, Abstractive)?**
 
@@ -6037,6 +6105,7 @@ Abstractive is harder but more natural.
 ---
 
 ## Question 69
+- [ ] Done
 
 **Explain the concept of Chatbots and their architecture.**
 
@@ -6058,6 +6127,7 @@ Modern chatbots use LLMs (GPT, Claude).
 ---
 
 ## Question 70
+- [ ] Done
 
 **What is a Recommender System and its types?**
 
@@ -6074,6 +6144,7 @@ Most production systems are hybrid.
 ---
 
 ## Question 71
+- [ ] Done
 
 **Explain the difference between Content-Based and Collaborative Filtering.**
 
@@ -6093,6 +6164,7 @@ Collaborative discovers new interests.
 ---
 
 ## Question 72
+- [ ] Done
 
 **What is Matrix Factorization and its role in Recommender Systems?**
 
@@ -6111,6 +6183,7 @@ Latent factors capture abstract preferences.
 ---
 
 ## Question 73
+- [ ] Done
 
 **Describe the concept of Cold Start Problem and its solutions.**
 
@@ -6132,6 +6205,7 @@ Know solutions for both user and item cold start.
 ---
 
 ## Question 74
+- [ ] Done
 
 **What is Evaluation Metrics for Recommender Systems (Precision, Recall, NDCG)?**
 
@@ -6149,6 +6223,7 @@ NDCG accounts for position; use for ranking.
 ---
 
 ## Question 75
+- [ ] Done
 
 **Explain the concept of Hybrid Recommender Systems and their advantages.**
 
@@ -6169,6 +6244,7 @@ Netflix uses hybrid approach.
 ---
 
 ## Question 76
+- [ ] Done
 
 **What is the Alternating Least Squares (ALS) algorithm and its use in Recommender Systems?**
 
@@ -6190,6 +6266,7 @@ ALS is common for large-scale systems (Spark).
 ---
 
 ## Question 77
+- [ ] Done
 
 **Describe the concept of Implicit Feedback and its challenges.**
 
@@ -6212,6 +6289,7 @@ Most real-world data is implicit.
 ---
 
 ## Question 78
+- [ ] Done
 
 **What is the Singular Value Decomposition (SVD) and its application in Recommender Systems?**
 
@@ -6231,6 +6309,7 @@ SVD won Netflix Prize (with modifications).
 ---
 
 ## Question 79
+- [ ] Done
 
 **Explain the concept of Diversity and Serendipity in Recommender Systems.**
 
@@ -6249,6 +6328,7 @@ Balance accuracy with exploration.
 ---
 
 ## Question 80
+- [ ] Done
 
 **What is Reinforcement Learning and its components?**
 
@@ -6268,6 +6348,7 @@ RL learns by trial and error.
 ---
 
 ## Question 81
+- [ ] Done
 
 **Explain the difference between Exploitation and Exploration in Reinforcement Learning.**
 
@@ -6289,6 +6370,7 @@ Too much exploration = slow learning; too much exploitation = local optima.
 ---
 
 ## Question 82
+- [ ] Done
 
 **What is Markov Decision Process (MDP) and its elements?**
 
@@ -6310,6 +6392,7 @@ MDP is the mathematical framework for RL.
 ---
 
 ## Question 83
+- [ ] Done
 
 **Describe the concept of Q-Learning and its algorithm.**
 
@@ -6330,6 +6413,7 @@ Q-learning learns optimal policy.
 ---
 
 ## Question 84
+- [ ] Done
 
 **What is Deep Q-Networks (DQN) and its improvements?**
 
@@ -6350,6 +6434,7 @@ DQN made RL work for Atari games.
 ---
 
 ## Question 85
+- [ ] Done
 
 **Explain the concept of Policy Gradient Methods and their advantages.**
 
@@ -6372,6 +6457,7 @@ Policy gradients for continuous control.
 ---
 
 ## Question 86
+- [ ] Done
 
 **What is Actor-Critic Methods and their variants?**
 
@@ -6393,6 +6479,7 @@ Actor-Critic combines policy and value learning.
 ---
 
 ## Question 87
+- [ ] Done
 
 **Describe the concept of Monte Carlo Tree Search (MCTS) and its applications.**
 
@@ -6415,6 +6502,7 @@ AlphaGo used MCTS + deep learning.
 ---
 
 ## Question 88
+- [ ] Done
 
 **What is the Bellman Equation and its role in Reinforcement Learning?**
 
@@ -6433,6 +6521,7 @@ Bellman equation enables dynamic programming.
 ---
 
 ## Question 89
+- [ ] Done
 
 **Explain the concept of Inverse Reinforcement Learning and its use cases.**
 
@@ -6452,6 +6541,7 @@ IRL when reward function is unknown.
 ---
 
 ## Question 90
+- [ ] Done
 
 **What is Optimization in ML and its types?**
 
@@ -6470,6 +6560,7 @@ Deep learning is non-convex optimization.
 ---
 
 ## Question 91
+- [ ] Done
 
 **Explain the difference between Gradient Descent and Stochastic Gradient Descent.**
 
@@ -6492,6 +6583,7 @@ Mini-batch is the standard in practice.
 ---
 
 ## Question 92
+- [ ] Done
 
 **What is Learning Rate and its impact on model training?**
 
@@ -6511,6 +6603,7 @@ Learning rate is the most important hyperparameter.
 ---
 
 ## Question 93
+- [ ] Done
 
 **Describe the concept of Momentum and its benefits in optimization.**
 
@@ -6532,6 +6625,7 @@ Momentum is standard in deep learning.
 ---
 
 ## Question 94
+- [ ] Done
 
 **What is Hyperparameter Tuning and its techniques?**
 
@@ -6553,6 +6647,7 @@ Random search often better than grid search.
 ---
 
 ## Question 95
+- [ ] Done
 
 **Explain the concept of Grid Search and its limitations.**
 
@@ -6572,6 +6667,7 @@ Use grid search for few, known important params.
 ---
 
 ## Question 96
+- [ ] Done
 
 **What is Random Search and its advantages over Grid Search?**
 
@@ -6591,6 +6687,7 @@ Bergstra & Bengio proved random > grid.
 ---
 
 ## Question 97
+- [ ] Done
 
 **Describe the concept of Bayesian Optimization and its applications.**
 
@@ -6611,6 +6708,7 @@ Use for deep learning hyperparameter tuning.
 ---
 
 ## Question 98
+- [ ] Done
 
 **What is Early Stopping and its role in preventing overfitting?**
 
@@ -6630,6 +6728,7 @@ Early stopping is implicit regularization.
 ---
 
 ## Question 99
+- [ ] Done
 
 **Explain the concept of Learning Rate Scheduling and its types.**
 

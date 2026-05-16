@@ -1,6 +1,7 @@
 # Logistic Regression Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How is logistic regression used for classification tasks?**
 
@@ -46,6 +47,7 @@ Emphasize that logistic regression predicts probabilities, not just class labels
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you interpret the coefficients of a logistic regression model?**
 
@@ -103,6 +105,7 @@ Always clarify whether interpreting raw coefficients (log-odds scale) or odds ra
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you handle categorical variables in logistic regression?**
 
@@ -158,6 +161,7 @@ Always specify which category is the reference when interpreting coefficients. T
 ---
 
 ## Question 4
+- [ ] Done
 
 **Can logistic regression be used for more than two classes? If so, how?**
 
@@ -214,6 +218,7 @@ Multinomial is preferred when classes are mutually exclusive and you need probab
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you evaluate a logistic regression model's performance?**
 
@@ -276,6 +281,7 @@ Always mention cross-validation for robust evaluation. Single train-test split c
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you deal with imbalanced classes in logistic regression?**
 
@@ -335,6 +341,7 @@ Start with `class_weight='balanced'` as it's the simplest approach. For severe i
 ---
 
 ## Question 7
+- [ ] Done
 
 **How can you extend logistic regression to handle ordinal outcomes?**
 
@@ -387,6 +394,7 @@ Ordinal regression preserves the ordering information that multinomial regressio
 ---
 
 ## Question 8
+- [ ] Done
 
 **What role do quasi-likelihood methods play in logistic regression?**
 
@@ -444,6 +452,7 @@ Quasi-likelihood methods are useful when you're confident about the mean structu
 ---
 
 ## Question 9
+- [ ] Done
 
 **How can you use logistic regression for variable selection?**
 
@@ -508,6 +517,7 @@ L1 regularization is preferred for automated variable selection. It naturally ha
 ---
 
 ## Question 10
+- [ ] Done
 
 **Present an approach to predict the likelihood of a patient having a particular disease using logistic regression.**
 

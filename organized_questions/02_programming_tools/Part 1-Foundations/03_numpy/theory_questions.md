@@ -1,6 +1,7 @@
 # NumPy Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is NumPy , and why is it important in Machine Learning ?**
 
@@ -28,6 +29,7 @@ NumPy (Numerical Python) is the foundational library for numerical computing in 
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain how NumPy arrays are different from Python lists**
 
@@ -60,6 +62,7 @@ print(f"Array size: {np_array.nbytes} bytes")          # ~8000 bytes
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are the main attributes of a NumPy ndarray?**
 
@@ -93,6 +96,7 @@ print(f"nbytes: {arr.nbytes}")    # 32 bytes
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain the concept of broadcasting in NumPy.**
 
@@ -134,6 +138,7 @@ b: (3,)    ✓    b: (3,)    ✓    b: (4,)    ✗
 ---
 
 ## Question 5
+- [ ] Done
 
 **What are the data types supported by NumPy arrays ?**
 
@@ -166,6 +171,7 @@ Use `float32` instead of `float64` to save memory and speed up GPU training.
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is the difference between a deep copy and a shallow copy in NumPy ?**
 
@@ -204,6 +210,7 @@ print(copy.base)       # None = copy
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are universal functions ( ufuncs ) in NumPy ?**
 
@@ -236,6 +243,7 @@ print(np.maximum(a, b))  # Element-wise max
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is the use of the axis parameter in NumPy functions?**
 
@@ -273,6 +281,7 @@ X_normalized = X - X.mean(axis=0)
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain the use of slicing and indexing with NumPy arrays.**
 
@@ -328,6 +337,7 @@ Always mention the **view vs. copy** distinction — slicing creates a view (sha
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is the purpose of the NumPy histogram function?**
 
@@ -380,6 +390,7 @@ Emphasize that `np.histogram()` is a **computation-only** function — it return
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is the difference between `np.var()` and `np.std()`?**
 
@@ -428,6 +439,7 @@ Always mention `ddof` — the default `ddof=0` gives population statistics, but 
 ---
 
 ## Question 12
+- [ ] Done
 
 **What is the concept of vectorization in NumPy?**
 
@@ -480,6 +492,7 @@ Emphasize that vectorization is the **#1 performance principle** in NumPy. If yo
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain the term “ stride ” in the context of NumPy arrays**
 
@@ -527,6 +540,7 @@ Strides explain why operations like **transpose** and **slicing** are O(1) — t
 ---
 
 ## Question 14
+- [ ] Done
 
 **How does NumPy handle data types to optimize memory use?**
 
@@ -585,6 +599,7 @@ In ML, always prefer `float32` over `float64` — GPUs are optimized for 32-bit,
 ---
 
 ## Question 15
+- [ ] Done
 
 **What are NumPy strides , and how do they affect array manipulation ?**
 
@@ -635,6 +650,7 @@ Strides explain **why NumPy is fast**: operations like transpose, slicing, and r
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the concept and use of masked arrays in NumPy.**
 
@@ -693,6 +709,7 @@ Masked arrays are the NumPy-native way to handle missing data (before Pandas `Na
 ---
 
 ## Question 17
+- [ ] Done
 
 **What are the functions available for padding arrays in NumPy?**
 
@@ -754,6 +771,7 @@ Padding is critical in **convolutional neural networks** (CNNs) to preserve spat
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe how you can use NumPy for simulating Monte Carlo experiments.**
 
@@ -815,6 +833,7 @@ Monte Carlo is widely asked in finance and ML interviews. Emphasize that NumPy e
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain how to resolve the MemoryError when working with very large arrays in NumPy.**
 
@@ -879,6 +898,7 @@ The most practical answers are **dtype reduction** (immediate 50% savings), **me
 ---
 
 ## Question 20
+- [ ] Done
 
 **What are NumPy “polynomial” objects and how are they used?**
 
@@ -939,6 +959,7 @@ Polynomial fitting (`polyfit`) is a form of **regression** — fitting a degree-
 ---
 
 ## Question 21
+- [ ] Done
 
 **How does the internal C-API contribute to NumPy’s performance ?**
 
@@ -1005,6 +1026,7 @@ The C-API is what makes NumPy the **foundation of Python's scientific stack**. K
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain the concept of a stride trick in NumPy.**
 
@@ -1063,6 +1085,7 @@ print(patches.shape)  # (3, 3, 2, 2) — 3x3 grid of 2x2 patches
 ---
 
 ## Question 23
+- [ ] Done
 
 **What is the role of the NumPy nditer object?**
 
@@ -1133,6 +1156,7 @@ for x in np.nditer(arr, flags=['external_loop'], order='C'):
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain how NumPy integrates with other Python libraries like Pandas and Matplotlib.**
 
@@ -1200,6 +1224,7 @@ The key concept is **zero-copy interoperability** — NumPy's array protocol and
 ---
 
 ## Question 25
+- [ ] Done
 
 **Describe how NumPy can be used with JAX for accelerated machine learning computation.**
 
@@ -1281,6 +1306,7 @@ JAX's key selling point is that it is **NumPy with superpowers**: same API but w
 ---
 
 ## Question 26
+- [ ] Done
 
 **Why is NumPy more efficient for numerical computations than pure Python ?**
 
@@ -1354,6 +1380,7 @@ print(f"Python: {python_size} bytes, NumPy: {numpy_size} bytes")  # ~3.5x differ
 ---
 
 ## Question 27
+- [ ] Done
 
 **Discuss the performance benefits of using NumPy’s in-place operations**
 
@@ -1421,6 +1448,7 @@ b += 10     # this also modifies a!
 ---
 
 ## Question 28
+- [ ] Done
 
 **Discuss the use of NumPy for operations on polynomials**
 

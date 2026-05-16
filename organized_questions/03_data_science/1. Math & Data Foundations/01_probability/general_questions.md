@@ -1,6 +1,7 @@
 # Probability Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **Define the terms 'sample space' and 'event' in probability.**
 
@@ -32,6 +33,7 @@ Always define complete sample space first when solving probability problems — 
 ---
 
 ## Question 2
+- [ ] Done
 
 **What does it mean for two events to be independent?**
 
@@ -73,6 +75,7 @@ $$P(A \cap B) = P(A) \times P(B)$$
 ---
 
 ## Question 3
+- [ ] Done
 
 **Define expectation, variance, and covariance.**
 
@@ -120,6 +123,7 @@ $$\rho = \frac{Cov(X,Y)}{\sigma_X \sigma_Y} \in [-1, 1]$$
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do probabilistic models cope with uncertainty in predictions?**
 
@@ -167,6 +171,7 @@ prediction = {'mean': 85, 'std': 12}
 ---
 
 ## Question 5
+- [ ] Done
 
 **How is probability used in Bayesian inference for machine learning?**
 
@@ -207,6 +212,7 @@ Probability encodes: prior beliefs, data generation, updated beliefs, and parame
 ---
 
 ## Question 6
+- [ ] Done
 
 **How can assuming independence in probabilistic models lead to inaccuracies?**
 
@@ -248,6 +254,7 @@ Despite violated assumptions, Naive Bayes often still picks the right class — 
 ---
 
 ## Question 7
+- [ ] Done
 
 **What strategies would you use to handle missing data in probabilistic models?**
 
@@ -292,6 +299,7 @@ Avoid listwise deletion unless minimal missing data — wastes information and c
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do you determine the significance of an observed effect using probability?**
 
@@ -338,6 +346,7 @@ Always mention effect size alongside p-value — tiny effects can be "significan
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do Hidden Markov Models (HMMs) use probability in sequential data modeling?**
 
@@ -380,6 +389,7 @@ HMMs are entirely probabilistic: two stochastic processes (hidden state evolutio
 ---
 
 ## Question 10
+- [ ] Done
 
 **How has the advent of Quantum Computing influenced probabilistic algorithms?**
 
@@ -419,6 +429,7 @@ Quantum computing doesn't just speed up classical algorithms — it operates on 
 ---
 
 ## Question 11
+- [ ] Done
 
 **What role does probability play in reinforcement learning and decision making?**
 
@@ -462,6 +473,7 @@ Probability handles: uncertain environment (transitions), uncertain behavior (po
 ---
 
 ## Question 12
+- [ ] Done
 
 **How do GANs (Generative Adversarial Networks) utilize probability theory?**
 

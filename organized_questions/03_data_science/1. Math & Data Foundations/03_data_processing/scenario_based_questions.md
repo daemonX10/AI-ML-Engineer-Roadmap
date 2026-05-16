@@ -1,6 +1,7 @@
 # Data Processing Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss various dimensionality reduction techniques besides PCA and LDA.**
 
@@ -34,6 +35,7 @@ Beyond PCA and LDA, several dimensionality reduction techniques address differen
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you handle a categorical feature with a large number of levels?**
 
@@ -78,6 +80,7 @@ df['city_encoded'] = df['city'].map(encoded)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the advantages of using a data preprocessing pipeline.**
 
@@ -129,6 +132,7 @@ predictions = pipeline.predict(new_data)  # All preprocessing included
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss the approaches to handle outliers in your data.**
 
@@ -191,6 +195,7 @@ def handle_outliers(df, column, method='iqr', action='cap'):
 ---
 
 ## Question 5
+- [ ] Done
 
 **You are given a dataset with several categorical features; describe your approach to preprocessing it for a machine learning model.**
 
@@ -249,6 +254,7 @@ preprocessor = ColumnTransformer([
 ---
 
 ## Question 6
+- [ ] Done
 
 **How would you approach preprocessing a dataset that you know little about?**
 
@@ -305,6 +311,7 @@ df.groupby(categorical_col)[target].mean()
 ---
 
 ## Question 7
+- [ ] Done
 
 **How would you process and clean a large dataset that doesn't fit in memory?**
 
@@ -376,6 +383,7 @@ df = pd.read_csv('file.csv', usecols=['col1', 'col2', 'target'])
 ---
 
 ## Question 8
+- [ ] Done
 
 **How would you handle varying scales of features in a clustering problem?**
 
@@ -427,6 +435,7 @@ centers_original_scale = scaler.inverse_transform(kmeans.cluster_centers_)
 ---
 
 ## Question 9
+- [ ] Done
 
 **Describe the steps you would take to preprocess a dataset for a recommender system.**
 
@@ -496,6 +505,7 @@ ratings['normalized'] = ratings['rating'] - user_means
 ---
 
 ## Question 10
+- [ ] Done
 
 **How would you sanitize and validate user input data in a production environment?**
 
@@ -582,6 +592,7 @@ def process_input(raw_data):
 ---
 
 ## Question 11
+- [ ] Done
 
 **Discuss the process of cleaning and preprocessing real-time streaming data.**
 
@@ -657,6 +668,7 @@ class StreamingFeatures:
 ---
 
 ## Question 12
+- [ ] Done
 
 **Discuss the concept of embeddings in collaborative filtering.**
 
@@ -711,6 +723,7 @@ class CollaborativeFiltering(nn.Module):
 ---
 
 ## Question 13
+- [ ] Done
 
 **Discuss research trends aimed at handling very large and high-dimensional datasets.**
 
@@ -750,6 +763,7 @@ class CollaborativeFiltering(nn.Module):
 ---
 
 ## Question 14
+- [ ] Done
 
 **Discuss the importance of transparency in data preprocessing.**
 

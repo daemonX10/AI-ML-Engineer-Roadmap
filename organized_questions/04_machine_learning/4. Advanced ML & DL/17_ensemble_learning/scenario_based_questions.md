@@ -1,6 +1,7 @@
 # Ensemble Learning Interview Questions - Scenario-Based Questions
 
 ## Question 1: Describe a scenario where a Random Forest model would be preferred over a simple decision tree and vice versa
+- [ ] Done
 
 ### Random Forest Preferred
 
@@ -44,6 +45,7 @@ Use Random Forest to identify important features, then build interpretable decis
 ---
 
 ## Question 2: How would you configure an ensemble model for real-time prediction in a production environment?
+- [ ] Done
 
 ### Definition
 Real-time ensemble deployment requires optimizing for latency, throughput, and reliability. Key strategies include model compression, parallel inference, caching, and proper infrastructure design.
@@ -144,6 +146,7 @@ async def predict(features: list):
 ---
 
 ## Question 3: Discuss how ensemble learning can be used to improve recommendation systems
+- [ ] Done
 
 ### Definition
 Recommendation system ensembles combine collaborative filtering, content-based, and deep learning approaches to leverage their complementary strengths and provide more robust, diverse recommendations.
@@ -230,6 +233,7 @@ def switching_recommend(user_id):
 ---
 
 ## Question 4: If model interpretability is crucial, how would you ensure ensemble models are understandable?
+- [ ] Done
 
 ### Definition
 Interpretable ensembles require post-hoc explanation methods (SHAP, LIME), simpler ensemble designs, or distillation into interpretable models. The choice depends on whether global understanding or individual prediction explanations are needed.
@@ -326,6 +330,7 @@ for rule in rules.rules_:
 ---
 
 ## Question 5: What ensemble methods would you suggest for a time-series forecasting problem and why?
+- [ ] Done
 
 ### Definition
 Time-series ensembles must respect temporal ordering. Standard bagging/boosting can work if features are properly engineered. Specialized methods include combining statistical models with ML, or temporal cross-validation approaches.
@@ -399,6 +404,7 @@ for train_idx, val_idx in tscv.split(X):
 ---
 
 ## Question 6: How would you deploy an ensemble learning model for detecting fraudulent transactions in a banking system?
+- [ ] Done
 
 ### Definition
 Fraud detection ensembles require real-time scoring, handling extreme class imbalance, continuous model updates, and robust monitoring. The system must balance precision (avoiding false positives) with recall (catching fraud).
@@ -504,6 +510,7 @@ if metrics['precision'] < threshold:
 ---
 
 ## Question 7: Describe a proper ensemble strategy for a self-driving car perception system
+- [ ] Done
 
 ### System Requirements
 - **Real-time**: <100ms latency
@@ -563,6 +570,7 @@ if metrics['precision'] < threshold:
 ---
 
 ## Question 8: How can ensemble models be applied in natural language processing tasks?
+- [ ] Done
 
 ### Definition
 NLP ensembles combine multiple text representation methods (TF-IDF, embeddings) or multiple model architectures (transformers, RNNs, traditional ML) to improve robustness and accuracy on text tasks.
@@ -645,6 +653,7 @@ final_pred = (bert_pred + roberta_pred + xlnet_pred) / 3
 ---
 
 ## Question 9: Propose an ensemble learning strategy for a large-scale image classification problem
+- [ ] Done
 
 ### Definition
 Large-scale image classification ensembles typically combine multiple CNN architectures (transfer learning), use test-time augmentation, and may include vision transformers. The strategy balances accuracy gains against computational costs.
@@ -744,6 +753,7 @@ def predict_with_tta(model, image, n_augments=5):
 ---
 
 ## Question 10: What considerations would you take into account when building an ensemble model for health-related data?
+- [ ] Done
 
 ### Definition
 Healthcare ensembles require special attention to interpretability, fairness, reliability, regulatory compliance, and handling of sensitive data characteristics like class imbalance and missing values.

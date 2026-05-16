@@ -1,6 +1,7 @@
 # Ml Design Patterns Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What are Machine Learning Design Patterns?**
 
@@ -22,6 +23,7 @@ Design patterns make ML systems more maintainable and scalable.
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you explain the concept of the 'Baseline' design pattern?**
 
@@ -45,6 +47,7 @@ Always have a baseline to measure improvements against.
 ---
 
 ## Question 3
+- [ ] Done
 
 **Describe the 'Feature Store' design pattern and its advantages.**
 
@@ -65,6 +68,7 @@ Feature stores enable feature sharing across teams.
 ---
 
 ## Question 4
+- [ ] Done
 
 **How does the 'Pipelines' design pattern help in structuring ML workflows?**
 
@@ -88,6 +92,7 @@ Pipelines are essential for production ML.
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain the 'Model Ensemble' design pattern and when you would use it.**
 
@@ -108,6 +113,7 @@ Ensembles often win competitions but add complexity.
 ---
 
 ## Question 6
+- [ ] Done
 
 **Describe the 'Checkpoint' design pattern in the context of machine learning training.**
 
@@ -127,6 +133,7 @@ Always checkpoint long-running training jobs.
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is the 'Batch Serving' design pattern and where is it applied?**
 
@@ -146,6 +153,7 @@ Batch serving is simpler and cheaper than real-time.
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain the 'Transformation' design pattern and its significance in data preprocessing.**
 
@@ -166,6 +174,7 @@ Training-serving skew is a major source of bugs.
 ---
 
 ## Question 9
+- [ ] Done
 
 **How does the 'Regularization' design pattern help in preventing overfitting?**
 
@@ -183,6 +192,7 @@ Regularization adds inductive bias toward simpler models.
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is the 'Workload Isolation' design pattern and why is it important?**
 
@@ -202,6 +212,7 @@ Never train on your production serving cluster.
 ---
 
 ## Question 11
+- [ ] Done
 
 **Describe the 'Shadow Model' design pattern and when it should be used.**
 
@@ -221,6 +232,7 @@ Shadow testing reduces deployment risk.
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain the 'Data Versioning' design pattern and its role in model reproducibility.**
 
@@ -243,6 +255,7 @@ Version data and code together for reproducibility.
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is the 'Adaptation' design pattern and how does it use historical data?**
 
@@ -262,6 +275,7 @@ Adaptation is more data-efficient than training from scratch.
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe the 'Continuous Training' design pattern and its use cases.**
 
@@ -284,6 +298,7 @@ Balance freshness vs stability in retraining frequency.
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain what 'Treatment Effect' design patterns are and their practical significance.**
 
@@ -308,6 +323,7 @@ Correlation â‰  causation; treatment effects need causal methods.
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is the 'Prediction Cache' design pattern and how does it improve performance?**
 
@@ -446,6 +462,7 @@ Prediction: 25005.0
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain the 'Embeddings' design pattern and how it applies to handling categorical data.**
 
@@ -597,6 +614,7 @@ Encoded categories: [0 1 0 2 1]
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe the 'Join' design pattern and when it is relevant in feature management.**
 
@@ -803,6 +821,7 @@ Feature matrix shape: (3, 4)
 ---
 
 ## Question 19
+- [ ] Done
 
 **How does the 'Auto Feature Engineering' design pattern leverage algorithms to generate features?**
 
@@ -1031,6 +1050,7 @@ Features: ['debt_to_income_ratio', 'credit_score', 'debt', 'income', 'age']...
 ---
 
 ## Question 20
+- [ ] Done
 
 **Describe a scenario where the 'Model-as-a-Service' design pattern would be suitable.**
 
@@ -1086,6 +1106,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 21
+- [ ] Done
 
 **Describe the 'Real-time serving' design pattern and its use in latency-sensitive applications.**
 
@@ -1164,6 +1185,7 @@ Discuss latency percentiles (p50, p95, p99) not just averages.
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain the 'Distributed Machine Learning' design pattern and its challenges.**
 
@@ -1241,6 +1263,7 @@ def train(rank, world_size):
 ---
 
 ## Question 23
+- [ ] Done
 
 **What is 'Model Monitoring' and what patterns does it involve?**
 
@@ -1325,6 +1348,7 @@ print(f"Alerts: {alerts}")
 ---
 
 ## Question 24
+- [ ] Done
 
 **Describe the 'Data Skew' and 'Concept Drift' patterns. How are they monitored and mitigated?**
 
@@ -1401,6 +1425,7 @@ if psi > 0.25:
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain the 'Logging' design pattern in the ML lifecycle.**
 
@@ -1487,6 +1512,7 @@ Mention log storage (S3, BigQuery), streaming (Kafka), and analysis tools (ELK s
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain how 'Meta-Learning' could be considered a design pattern within ML.**
 
@@ -1570,6 +1596,7 @@ class MetaLearner:
 ---
 
 ## Question 27
+- [ ] Done
 
 **Describe ways in which 'Automated Machine Learning (AutoML)' aligns with design pattern principles.**
 
@@ -1658,6 +1685,7 @@ automl.fit(X, y)
 ---
 
 ## Question 28
+- [ ] Done
 
 **Explain the challenge of integrating the 'Hybrid Model' pattern with different types of data sources.**
 
@@ -1747,6 +1775,7 @@ print(f"Predictions: {predictions}")
 ---
 
 ## Question 29
+- [ ] Done
 
 **Describe how you would perform feature normalization in a distributed environment, considering the 'Consistency' pattern.**
 
@@ -1853,6 +1882,7 @@ print(f"Serving normalized: {serving_normalizer.transform(np.array([[6, 5, 4]]))
 ---
 
 ## Question 30
+- [ ] Done
 
 **What is the Ã¢â‚¬ËœFeature ProjectionÃ¢â‚¬â„¢ design pattern and how is it implemented?**
 
@@ -2028,6 +2058,7 @@ print("\nVisualization saved to feature_projection.png")
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain how the Ã¢â‚¬ËœPeriodic TrainingÃ¢â‚¬â„¢ design pattern is implemented in an actual system.**
 
@@ -2272,6 +2303,7 @@ print(f"\nTest predictions: {predictions}")
 
 ---
 ## Question 32
+- [ ] Done
 
 **Discuss the purpose of the 'Replay' design pattern in machine learning.**
 
@@ -2359,6 +2391,7 @@ print(f"Replay results: {results}")
 ---
 
 ## Question 33
+- [ ] Done
 
 **Discuss the 'Microservice' design pattern in deploying ML models.**
 
@@ -2461,6 +2494,7 @@ services:
 ---
 
 ## Question 34
+- [ ] Done
 
 **Can you discuss the 'Warm Start' pattern in machine learning model training?**
 
@@ -2558,6 +2592,7 @@ def warm_start_pytorch(model, checkpoint_path):
 ---
 
 ## Question 35
+- [ ] Done
 
 **Discuss the 'Rebalancing' design pattern and its importance in training datasets.**
 
@@ -2652,6 +2687,7 @@ print(f"\nAfter Undersampling: {np.bincount(y_under)}")
 ---
 
 ## Question 36
+- [ ] Done
 
 **Discuss any recent research that effectively uses the 'Repeatable Process' design pattern.**
 
@@ -2807,6 +2843,7 @@ print(f"Environment: {experiment.environment}")
 ---
 
 ## Question 37
+- [ ] Done
 
 **Discuss the potential impact of AI Ethics and Fairness considerations on ML design patterns.**
 

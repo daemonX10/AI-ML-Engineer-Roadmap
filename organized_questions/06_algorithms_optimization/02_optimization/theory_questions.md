@@ -1,6 +1,7 @@
 # Optimization Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is optimization in the context of machine learning?**
 
@@ -28,6 +29,7 @@ Optimization in ML is the process of **finding model parameters that minimize (o
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you explain the difference between a loss function and an objective function?**
 
@@ -50,6 +52,7 @@ $$\underbrace{J(\theta)}_{\text{Objective}} = \underbrace{\frac{1}{n}\sum_{i=1}^
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is the role of gradients in optimization?**
 
@@ -75,6 +78,7 @@ $$\nabla J(\theta) = \left[\frac{\partial J}{\partial \theta_1}, \frac{\partial 
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is a hyperparameter, and how does it relate to the optimization process?**
 
@@ -109,6 +113,7 @@ A **hyperparameter** is a configuration setting external to the model that contr
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain the concept of a learning rate.**
 
@@ -143,6 +148,7 @@ Too Low:     \\\\\\\    (very slow descent)
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is Gradient Descent, and how does it work?**
 
@@ -176,6 +182,7 @@ $$\theta_{t+1} = \theta_t - \alpha \frac{\partial J}{\partial \theta}\bigg|_{\th
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain Stochastic Gradient Descent (SGD) and its benefits over standard Gradient Descent.**
 
@@ -213,6 +220,7 @@ Mini-batch SGD (32-256 samples) is most common - balances noise and efficiency.
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe the Momentum method in optimization.**
 
@@ -246,6 +254,7 @@ Where:
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is the role of second-order methods in optimization, and how do they differ from first-order methods?**
 
@@ -285,6 +294,7 @@ $$\theta_{new} = \theta - H^{-1} \nabla J(\theta)$$
 ---
 
 ## Question 10
+- [ ] Done
 
 **How does the AdaGrad algorithm work, and what problem does it address?**
 
@@ -317,6 +327,7 @@ $$\theta = \theta - \frac{\alpha}{\sqrt{G_t + \epsilon}} g_t$$
 ---
 
 ## Question 11
+- [ ] Done
 
 **Can you explain the concept of RMSprop?**
 
@@ -354,6 +365,7 @@ Where $\beta$ = 0.9 typically
 ---
 
 ## Question 12
+- [ ] Done
 
 **What is regularization and why is it used in optimization?**
 
@@ -394,6 +406,7 @@ Where:
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain L1 and L2 regularization and their impacts on model complexity.**
 
@@ -435,6 +448,7 @@ Where:
 ---
 
 ## Question 14
+- [ ] Done
 
 **What is early stopping in machine learning?**
 
@@ -492,6 +506,7 @@ for epoch in range(max_epochs):
 ---
 
 ## Question 15
+- [ ] Done
 
 **How does dropout serve as a regularization technique in neural networks?**
 
@@ -531,6 +546,7 @@ Dropout **randomly sets a fraction of neurons to zero during training**, prevent
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is the vanishing gradient problem, and how can it be mitigated?**
 
@@ -568,6 +584,7 @@ If each $\frac{\partial a_i}{\partial a_{i-1}} < 1$ (e.g., sigmoid derivative ma
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain the exploding gradient problem and potential solutions.**
 
@@ -617,6 +634,7 @@ for name, param in model.named_parameters():
 ---
 
 ## Question 18
+- [ ] Done
 
 **How does imbalanced data affect optimization, and what strategies can be used to address this?**
 
@@ -656,6 +674,7 @@ Where $w_1 = \frac{N}{N_1}$ (inverse frequency)
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is overfitting, and how can optimization techniques help prevent it?**
 
@@ -700,6 +719,7 @@ Val:   ____\___/^^^^ <- stop here
 ---
 
 ## Question 20
+- [ ] Done
 
 **How does batch size impact the optimization process in SGD?**
 
@@ -741,6 +761,7 @@ Small batch noise acts as implicit regularization, helping the model find flatte
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain how optimization algorithms can be parallelized.**
 
@@ -787,6 +808,7 @@ Optimization parallelization involves **distributing computation across multiple
 ---
 
 ## Question 22
+- [ ] Done
 
 **How does the choice of optimization algorithm affect the interpretability of a model?**
 
@@ -827,6 +849,7 @@ The optimization algorithm can affect interpretability through **which solution 
 ---
 
 ## Question 23
+- [ ] Done
 
 **Describe the steps you would take to handle the vanishing gradients problem in recurrent neural networks (RNNs).**
 
@@ -878,6 +901,7 @@ torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain Natural Gradient Descent and its relevance in optimization.**
 
@@ -919,6 +943,7 @@ In a probability space, moving from P to Q should be measured by how different t
 ---
 
 ## Question 25
+- [ ] Done
 
 **What is Simulated Annealing, and how is it applied to optimization in machine learning?**
 
@@ -963,6 +988,7 @@ Where $\Delta E$ = cost(new) - cost(current)
 ---
 
 ## Question 26
+- [ ] Done
 
 **How does the concept of stochastic optimization relate to Reinforcement Learning?**
 
@@ -1000,6 +1026,7 @@ This is a stochastic gradient estimate - we sample trajectories and estimate the
 ---
 
 ## Question 27
+- [ ] Done
 
 **What are the latest developments in optimization algorithms for large-scale machine learning systems?**
 

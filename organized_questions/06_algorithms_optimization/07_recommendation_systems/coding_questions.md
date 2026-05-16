@@ -1,6 +1,7 @@
 # Recommendation Systems Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you implement a recommendation system using the k-NN algorithm?**
 
@@ -74,6 +75,7 @@ print(f"Recommendations for User 0: {recs}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement a simple content-based recommendation algorithm in Python.**
 
@@ -142,6 +144,7 @@ print(f"Recommendations: {recs}")
 ---
 
 ## Question 3
+- [ ] Done
 
 **Write a collaborative filtering recommendation engine using Python's Surprise library.**
 
@@ -205,6 +208,7 @@ print(f"Recommendations for User 1: {recs}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Demonstrate matrix factorization using the NMF (Non-negative Matrix Factorization) algorithm on a sample dataset.**
 
@@ -272,6 +276,7 @@ print(f"\nPredicted ratings:\n{np.round(predicted, 1)}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Code a recommender that uses cosine similarity to recommend similar items.**
 
@@ -335,6 +340,7 @@ for name, score in similar:
 ---
 
 ## Question 6
+- [ ] Done
 
 **Build a user-based collaborative filtering system in Python from scratch.**
 
@@ -415,6 +421,7 @@ print(f"Recommendations for User 0: {recs}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Use TensorFlow/Keras to develop a deep learning-based recommendation model.**
 
@@ -490,6 +497,7 @@ print(f"Top items for User 5: {top_items}")
 ---
 
 ## Question 8
+- [ ] Done
 
 **Create a Python script that recommends items to users based on item-item similarity.**
 
@@ -568,6 +576,7 @@ print(f"\nRecommendations for User 0: {recs}")
 ---
 
 ## Question 9
+- [ ] Done
 
 **Implement a recommendation engine that leverages user ratings and item metadata for suggestions.**
 
@@ -650,6 +659,7 @@ print(f"Hybrid recommendations for User 0: {recs}")
 ---
 
 ## Question 10
+- [ ] Done
 
 **Write an algorithm to suggest items using the Pearson Correlation Coefficient in a user-item ratings matrix.**
 

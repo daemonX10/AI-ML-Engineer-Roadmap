@@ -1,6 +1,7 @@
 # Nlp Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What do you understand by the terms ‘corpus’, ‘tokenization’, and ‘stopwords’ in NLP?**
 
@@ -71,6 +72,7 @@ for doc in corpus:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Distinguish between morphology and syntax in the context of NLP.**
 
@@ -147,6 +149,7 @@ for chunk in doc.noun_chunks:
 ---
 
 ## Question 3
+- [ ] Done
 
 **How are Hidden Markov Models (HMMs) applied in NLP tasks?**
 
@@ -251,6 +254,7 @@ print(f"  Sequence probability: {prob:.6f}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do Long Short-Term Memory (LSTM) networks work, and when would you use them?**
 
@@ -343,6 +347,7 @@ print(f"Output shape: {logits.shape}")  # (4, 2)
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do word2vec and GloVe differ as word embedding techniques?**
 
@@ -438,6 +443,7 @@ print("GloVe:   Global co-occurrence stats, count-based, matrix factorization")
 ---
 
 ## Question 6
+- [ ] Done
 
 **What challenges does one face when using vector space models for semantic analysis?**
 
@@ -522,6 +528,7 @@ print(f"Variance explained: {svd.explained_variance_ratio_.sum():.2%}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you use spaCy for text processing tasks?**
 
@@ -621,6 +628,7 @@ for i, sent in enumerate(doc.sents):
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do you handle multilingual text processing in modern NLP libraries?**
 
@@ -726,6 +734,7 @@ print(f"EN-EN (diff meaning): {sims[0][2]:.4f}")
 ---
 
 ## Question 9
+- [ ] Done
 
 **How can topic modeling be used in analyzing large collections of documents?**
 
@@ -832,6 +841,7 @@ print(f"\nPerplexity: {perplexity:.2f} (lower is better)")
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do you handle noisy text data from sources like social media for NLP tasks?**
 
@@ -944,6 +954,7 @@ for text in noisy_texts:
 ---
 
 ## Question 11
+- [ ] Done
 
 **How do you address the issue of data scarcity when working with less-resourced languages?**
 
@@ -1056,6 +1067,7 @@ print("4. Now we have 2 Swahili training examples from 1 original")
 ---
 
 ## Question 12
+- [ ] Done
 
 **What measures can be taken to reduce bias in NLP models?**
 
@@ -1172,6 +1184,7 @@ for word in neutral_words:
 ---
 
 ## Question 13
+- [ ] Done
 
 **Outline your approach to develop a recommendation system based on textual content analysis.**
 

@@ -1,6 +1,7 @@
 # Pca Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How is PCA used for dimensionality reduction?**
 
@@ -28,6 +29,7 @@ PCA reduces dimensions by transforming correlated features into a smaller set of
 ---
 
 ## Question 2
+- [ ] Done
 
 **Why is PCA considered an unsupervised technique?**
 

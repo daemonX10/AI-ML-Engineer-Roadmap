@@ -2,6 +2,7 @@
 
 
 ## Question 1
+- [ ] Done
 
 **How would you handle a scenario where your model has low bias but high variance?**
 
@@ -84,6 +85,7 @@ Effect: Variance ↓↓↓, Bias ≈ unchanged
 
 
 ## Question 2
+- [ ] Done
 
 **Propose a modeling strategy when facing high bias in a time-series prediction problem.**
 
@@ -171,6 +173,7 @@ Is residual pattern random (white noise)?
 
 
 ## Question 3
+- [ ] Done
 
 **Discuss a case where simplifying the model features helped reduce bias.**
 
@@ -253,6 +256,7 @@ Net effect: Better overall model!
 
 
 ## Question 4
+- [ ] Done
 
 **Describe a situation from your experience where model validation revealed bias-variance issues.**
 
@@ -310,6 +314,7 @@ Tuned Model Performance:
 
 
 ## Question 5
+- [ ] Done
 
 **Imagine you need to build a model for predicting housing prices; how would you manage the bias-variance trade-off?**
 

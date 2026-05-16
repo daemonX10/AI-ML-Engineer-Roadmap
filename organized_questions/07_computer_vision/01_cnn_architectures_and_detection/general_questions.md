@@ -1,6 +1,7 @@
 # Computer Vision Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What's the significance of depth perception in computer vision applications?**
 
@@ -587,6 +588,7 @@ Modern depth perception techniques include stereo vision, structured light, time
 ---
 
 ## Question 2
+- [ ] Done
 
 **Compare and contrast different image feature extraction methods.**
 
@@ -1637,6 +1639,7 @@ The choice of feature extraction method depends on the specific application requ
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is the role of data augmentation in computer vision?**
 
@@ -2880,6 +2883,7 @@ Data augmentation has become an indispensable tool in modern computer vision, en
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do CNNs differ from traditional neural networks in terms of architecture?**
 
@@ -3857,6 +3861,7 @@ The architectural innovations in CNNs represent a fundamental shift from generic
 ---
 
 ## Question 5
+- [ ] Done
 
 **What’s the difference betweenobject detectionandimage classification?**
 
@@ -4007,6 +4012,7 @@ Classification backbones are often reused as feature extractors in detection!
 ---
 
 ## Question 6
+- [ ] Done
 
 **What algorithms can you use forreal-time object detection?**
 
@@ -4770,6 +4776,7 @@ class RealTimePerformanceOptimization:
 ---
 
 ## Question 7
+- [ ] Done
 
 **How doimage recognitionmodels deal withocclusion?**
 
@@ -5505,6 +5512,7 @@ Modern image recognition models handle occlusion through a combination of data a
 ---
 
 ## Question 8
+- [ ] Done
 
 **Compare the use ofone-stagevs.two-stage detectorsfor object detection.**
 
@@ -6553,6 +6561,7 @@ The choice ultimately depends on the specific balance of speed, accuracy, and de
 ---
 
 ## Question 9
+- [ ] Done
 
 **How candepth informationbe utilized insemantic segmentation?**
 
@@ -7723,6 +7732,7 @@ class PerformanceEvaluation:
 ---
 
 ## Question 10
+- [ ] Done
 
 **How canreinforcement learningbe applied to problems incomputer vision?**
 
@@ -8788,6 +8798,7 @@ class RLApplicationBenchmarks:
 ---
 
 ## Question 11
+- [ ] Done
 
 **How do you handleoverfittingin acomputer vision model?**
 
@@ -9966,6 +9977,7 @@ def example_training():
 ---
 
 ## Question 12
+- [ ] Done
 
 **Outline the computer vision technologies involved in autonomous vehicle navigation.**
 
@@ -10736,6 +10748,7 @@ class PathPlanningSystem:
 ---
 
 ## Question 13
+- [ ] Done
 
 **How might augmented reality (AR) applications benefit from advances in computer vision?**
 

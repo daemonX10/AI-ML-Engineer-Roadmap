@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: Discuss the improvements of Double DQN over the standard DQN
+- [ ] Done
 
 ### The Problem with Standard DQN
 Standard DQN uses the same network to both select and evaluate actions in the target:
@@ -66,6 +67,7 @@ def double_dqn_target(next_states, rewards, dones, gamma, q_net, target_net):
 ---
 
 ## Question 2: Discuss the use of hierarchical reinforcement learning for complex tasks
+- [ ] Done
 
 ### Why Hierarchical RL?
 Complex tasks require:
@@ -149,6 +151,7 @@ class HierarchicalAgent:
 ---
 
 ## Question 3: How would you use reinforcement learning to optimize traffic signal control in a simulated city environment?
+- [ ] Done
 
 ### Problem Formulation
 
@@ -249,6 +252,7 @@ def create_traffic_env():
 ---
 
 ## Question 4: Discuss the application of reinforcement learning in personalization and recommendation systems
+- [ ] Done
 
 ### Problem Setup
 
@@ -358,6 +362,7 @@ def evaluate_new_policy(logged_data, new_policy):
 ---
 
 ## Question 5: How would you approach the problem of tuning hyperparameters of a reinforcement learning model?
+- [ ] Done
 
 ### Key Hyperparameters in RL
 
@@ -454,6 +459,7 @@ def robust_evaluation(agent, env, n_episodes=100):
 ---
 
 ## Question 6: Propose a reinforcement learning framework for an energy management system in smart grids
+- [ ] Done
 
 ### Problem Formulation
 
@@ -584,6 +590,7 @@ def safety_filter(self, action, state):
 ---
 
 ## Question 7: Discuss how to set up a reinforcement learning environment for teaching an AI to play chess
+- [ ] Done
 
 ### Environment Design
 
@@ -713,6 +720,7 @@ def self_play_game(network):
 ---
 
 ## Question 8: Discuss the challenges of safe reinforcement learning when deploying models in sensitive areas
+- [ ] Done
 
 ### Healthcare Challenges
 
@@ -814,6 +822,7 @@ def get_action_with_oversight(state, policy, human):
 ---
 
 ## Question 9: Discuss the importance of fairness and bias considerations in reinforcement learning
+- [ ] Done
 
 ### Sources of Bias in RL
 
@@ -916,6 +925,7 @@ def evaluate_fairness(policy, test_data, groups):
 ---
 
 ## Question 10: Discuss a recent research paper on reinforcement learning that caught your attention and its implications
+- [ ] Done
 
 ### Example: Decision Transformer (Chen et al., 2021)
 

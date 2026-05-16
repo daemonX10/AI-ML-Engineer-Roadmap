@@ -3,6 +3,7 @@
 ## CNN Architecture Fundamentals
 
 ### Question 1
+- [ ] Done
 **Explain the vanishing gradient problem in deep CNNs and how ResNet skip connections solve it.**
 
 **Answer:**
@@ -53,6 +54,7 @@ The +1 ensures gradient is at least 1, never vanishes!
 ---
 
 ### Question 2
+- [ ] Done
 **Compare the architectural differences between ResNet-18, ResNet-50, and ResNet-101. When would you choose each?**
 
 **Answer:**
@@ -107,6 +109,7 @@ x → Conv1×1 → BN → ReLU → Conv3×3 → BN → ReLU → Conv1×1 → BN 
 ---
 
 ### Question 3
+- [ ] Done
 **Explain bottleneck design in deeper ResNets and why it's more efficient than standard residual blocks.**
 
 **Answer:**
@@ -173,6 +176,7 @@ Ratio: $\frac{18C^2}{\frac{17C^2}{16}} \approx 17$
 ---
 
 ### Question 4
+- [ ] Done
 **What is VGG's 3×3 convolution design philosophy and how does stacking small filters achieve larger receptive fields?**
 
 **Answer:**
@@ -233,6 +237,7 @@ FC → FC → Softmax
 ---
 
 ### Question 5
+- [ ] Done
 **Explain EfficientNet's compound scaling law (width, depth, resolution) and why balanced scaling outperforms single-dimension scaling.**
 
 **Answer:**
@@ -288,6 +293,7 @@ Subject to: $\alpha \cdot \beta^2 \cdot \gamma^2 \approx 2$
 ---
 
 ### Question 6
+- [ ] Done
 **Describe Mobile Inverted Bottleneck Convolution (MBConv) and its role in efficient architectures.**
 
 **Answer:**
@@ -362,6 +368,7 @@ class MBConv(nn.Module):
 ---
 
 ### Question 7
+- [ ] Done
 **Explain depthwise separable convolutions in MobileNet and calculate the computational savings vs. standard convolutions.**
 
 **Answer:**
@@ -438,6 +445,7 @@ separable = DepthwiseSeparableConv(64, 128, 3)   # 8,768 params (8.4× less)
 ---
 
 ### Question 8
+- [ ] Done
 **Compare MobileNet-v1, v2, and v3 architectural improvements. What are inverted residuals and linear bottlenecks?**
 
 **Answer:**
@@ -518,6 +526,7 @@ class InvertedResidual(nn.Module):
 ---
 
 ### Question 9
+- [ ] Done
 **Explain Squeeze-and-Excitation (SE) blocks and how channel attention improves model performance.**
 
 **Answer:**
@@ -595,6 +604,7 @@ class SEBlock(nn.Module):
 ---
 
 ### Question 10
+- [ ] Done
 **What is the dense connectivity pattern in DenseNet? Compare feature reuse in DenseNet vs. ResNet.**
 
 **Answer:**
@@ -684,6 +694,7 @@ class DenseBlock(nn.Module):
 ---
 
 ### Question 11
+- [ ] Done
 **Explain the Inception module with multiple kernel sizes and how 1×1 convolutions reduce dimensionality.**
 
 **Answer:**
@@ -774,6 +785,7 @@ class InceptionModule(nn.Module):
 ---
 
 ### Question 12
+- [ ] Done
 **Describe factorized convolutions (e.g., 7×7 into 1×7 and 7×1) and their computational benefits in InceptionNet.**
 
 **Answer:**
@@ -853,6 +865,7 @@ class FactorizedConv(nn.Module):
 ---
 
 ### Question 13
+- [ ] Done
 **Explain ResNeXt's cardinality concept and how grouped convolutions improve accuracy over wider/deeper networks.**
 
 **Answer:**
@@ -936,6 +949,7 @@ class ResNeXtBlock(nn.Module):
 ---
 
 ### Question 14
+- [ ] Done
 **Compare computational FLOPs, memory usage, and accuracy across ResNet, EfficientNet, and MobileNet for edge deployment.**
 
 **Answer:**
@@ -1022,6 +1036,7 @@ def benchmark(model, input_size=(1, 3, 224, 224), iterations=100):
 ---
 
 ### Question 15
+- [ ] Done
 **Explain knowledge distillation for compressing large CNN models to mobile-friendly versions.**
 
 **Answer:**
@@ -1116,6 +1131,7 @@ for images, labels in dataloader:
 ## Image Classification
 
 ### Question 16
+- [ ] Done
 **How do you handle class imbalance in image classification beyond simple oversampling (focal loss, class weights, augmentation)?**
 
 **Answer:**
@@ -1197,6 +1213,7 @@ sampler = WeightedRandomSampler(sample_weights, num_samples=len(labels))
 ---
 
 ### Question 17
+- [ ] Done
 **Explain fine-grained image classification techniques when inter-class differences are minimal.**
 
 **Answer:**
@@ -1296,6 +1313,7 @@ class BilinearPooling(nn.Module):
 ---
 
 ### Question 18
+- [ ] Done
 **How do you implement cost-sensitive learning when misclassification costs vary across classes?**
 
 **Answer:**
@@ -1384,6 +1402,7 @@ criterion = nn.CrossEntropyLoss(weight=class_weights)
 ---
 
 ### Question 19
+- [ ] Done
 **What techniques improve model interpretability in medical image classification (Grad-CAM, attention, saliency maps)?**
 
 **Answer:**
@@ -1480,6 +1499,7 @@ def compute_saliency(model, input_image, target_class):
 ---
 
 ### Question 20
+- [ ] Done
 **Explain self-supervised pre-training strategies (contrastive learning, MAE) for image classification with limited labels.**
 
 **Answer:**
@@ -1576,6 +1596,7 @@ def random_masking(x, mask_ratio=0.75):
 ---
 
 ### Question 21
+- [ ] Done
 **How do you design ensemble methods balancing accuracy and computational efficiency for classification?**
 
 **Answer:**
@@ -1661,6 +1682,7 @@ class MCDropoutPredictor:
 ---
 
 ### Question 22
+- [ ] Done
 **What are best practices for handling noisy labels in large-scale image classification datasets?**
 
 **Answer:**
@@ -1757,6 +1779,7 @@ def find_label_issues(model, dataset):
 ---
 
 ### Question 23
+- [ ] Done
 **Explain curriculum learning strategies for progressively training image classifiers on hard examples.**
 
 **Answer:**
@@ -1851,6 +1874,7 @@ class SelfPacedLoss(nn.Module):
 ---
 
 ### Question 24
+- [ ] Done
 **How do you handle adversarial attacks in classification models (adversarial training, certified defenses)?**
 
 **Answer:**
@@ -1950,6 +1974,7 @@ def adversarial_training_step(model, images, labels, optimizer, epsilon=0.03):
 ## Object Detection (YOLO, R-CNN Family)
 
 ### Question 25
+- [ ] Done
 **What are the trade-offs between single-stage (YOLO, SSD) and two-stage (Faster R-CNN) detectors?**
 
 **Answer:**
@@ -2014,6 +2039,7 @@ Input → Backbone → RPN → RoI Proposals → RoI Align → Head → Boxes
 ---
 
 ### Question 26
+- [ ] Done
 **Explain the YOLO architecture evolution from v1 to v10. What are the key innovations in recent versions?**
 
 **Answer:**
@@ -2096,6 +2122,7 @@ boxes = results[0].boxes.xyxy  # [N, 4]
 ---
 
 ### Question 27
+- [ ] Done
 **How does anchor-free detection work in modern YOLO versions compared to anchor-based approaches?**
 
 **Answer:**
@@ -2185,6 +2212,7 @@ def decode_boxes(reg, stride, grid):
 ---
 
 ### Question 28
+- [ ] Done
 **Discuss the R-CNN family evolution (R-CNN → Fast R-CNN → Faster R-CNN). What bottlenecks did each version solve?**
 
 **Answer:**
@@ -2280,6 +2308,7 @@ class RPN(nn.Module):
 ---
 
 ### Question 29
+- [ ] Done
 **How do Feature Pyramid Networks (FPN) enable multi-scale object detection? Explain the top-down pathway.**
 
 **Answer:**
@@ -2382,6 +2411,7 @@ class FPN(nn.Module):
 ---
 
 ### Question 30
+- [ ] Done
 **What techniques improve YOLO's performance on small object detection?**
 
 **Answer:**
@@ -2470,6 +2500,7 @@ head:
 ---
 
 ### Question 31
+- [ ] Done
 **Explain IoU, GIoU, DIoU, and CIoU losses. How do they improve bounding box regression?**
 
 **Answer:**
@@ -2569,6 +2600,7 @@ def ciou_loss(pred, target):
 ---
 
 ### Question 32
+- [ ] Done
 **How do you handle class imbalance in object detection (focal loss, OHEM, class-balanced sampling)?**
 
 **Answer:**
@@ -2665,6 +2697,7 @@ sampler = WeightedRandomSampler(sample_weights, len(dataset))
 ---
 
 ### Question 33
+- [ ] Done
 **Explain Non-Maximum Suppression (NMS) and its variants (Soft-NMS, DIoU-NMS). How does YOLOv10 eliminate NMS?**
 
 **Answer:**
@@ -2761,6 +2794,7 @@ def diou_nms(boxes, scores, iou_threshold=0.5):
 ---
 
 ### Question 34
+- [ ] Done
 **What data augmentation strategies are specific to object detection (mosaic, mixup, copy-paste)?**
 
 **Answer:**
@@ -2863,6 +2897,7 @@ def copy_paste(source_img, source_boxes, target_img, target_boxes, paste_prob=0.
 ---
 
 ### Question 35
+- [ ] Done
 **How do you detect objects with extreme aspect ratios or significant pose variations?**
 
 **Answer:**
@@ -2950,6 +2985,7 @@ class DeformableConv(nn.Module):
 ---
 
 ### Question 36
+- [ ] Done
 **Explain hard negative mining and its importance in training detection models.**
 
 **Answer:**
@@ -3046,6 +3082,7 @@ for batch in dataloader:
 ---
 
 ### Question 37
+- [ ] Done
 **How do you handle detection of partially occluded or heavily crowded objects?**
 
 **Answer:**
@@ -3144,6 +3181,7 @@ nms_threshold = 0.3  # Instead of typical 0.5
 ---
 
 ### Question 38
+- [ ] Done
 **What approaches work for few-shot object detection in novel categories?**
 
 **Answer:**
@@ -3259,6 +3297,7 @@ def few_shot_finetune(detector, novel_data, epochs=10, lr=1e-4):
 ---
 
 ### Question 39
+- [ ] Done
 **Explain domain adaptation techniques when deploying detection models to new environments.**
 
 **Answer:**
@@ -3374,6 +3413,7 @@ def self_training_step(teacher, student, target_loader, conf_threshold=0.8):
 ---
 
 ### Question 40
+- [ ] Done
 **How do you optimize YOLO for real-time edge deployment (quantization, pruning, TensorRT)?**
 
 **Answer:**
@@ -3501,6 +3541,7 @@ def prune_model(model, amount=0.3):
 ## Model Optimization & Deployment
 
 ### Question 41
+- [ ] Done
 **Compare quantization effects on different CNN architectures. Which are most quantization-friendly?**
 
 **Answer:**
@@ -3631,6 +3672,7 @@ def quantization_aware_training(model, train_loader, epochs=5):
 ---
 
 ### Question 42
+- [ ] Done
 **Explain pruning strategies for CNNs (structured vs. unstructured, magnitude-based, lottery ticket hypothesis).**
 
 **Answer:**
@@ -3790,6 +3832,7 @@ def prune_and_finetune(model, train_loader, val_loader, target_sparsity=0.5):
 ---
 
 ### Question 43
+- [ ] Done
 **What are the hardware acceleration considerations for GPU vs. TPU vs. NPU deployment?**
 
 **Answer:**
@@ -3934,6 +3977,7 @@ class NPUOptimizedModel(nn.Module):
 ---
 
 ### Question 44
+- [ ] Done
 **How do you implement batch normalization for inference vs. training? Explain folding BN into conv layers.**
 
 **Answer:**
@@ -4096,6 +4140,7 @@ print(f"Max diff: {(original_output - folded_output).abs().max()}")
 ---
 
 ### Question 45
+- [ ] Done
 **Explain progressive resizing training strategy and its benefits for efficiency and accuracy.**
 
 **Answer:**
@@ -4259,6 +4304,7 @@ def train_with_mixup(model, dataset, epochs, mixup_alpha):
 ## Evaluation & Metrics
 
 ### Question 46
+- [ ] Done
 **Explain mAP calculation for object detection. What's the difference between COCO mAP and Pascal VOC mAP?**
 
 **Answer:**
@@ -4420,6 +4466,7 @@ evaluator.summarize()
 ---
 
 ### Question 47
+- [ ] Done
 **How do you handle detection evaluation when objects can have multiple valid annotations?**
 
 **Answer:**
@@ -4590,6 +4637,7 @@ evaluator.summarize()
 ---
 
 ### Question 48
+- [ ] Done
 **What metrics beyond mAP are important for real-world detection systems (latency, false positive rate)?**
 
 **Answer:**
@@ -4766,6 +4814,7 @@ def measure_latency(model, input_tensor, warmup=10, iterations=100):
 ## Advanced Topics
 
 ### Question 49
+- [ ] Done
 **Explain DETR (Detection Transformer) and how it differs from CNN-based detectors.**
 
 **Answer:**
@@ -4939,6 +4988,7 @@ class HungarianMatcher(nn.Module):
 ---
 
 ### Question 50
+- [ ] Done
 **How do you implement object tracking using detection-based approaches (DeepSORT, ByteTrack)?**
 
 **Answer:**
@@ -5163,6 +5213,7 @@ class DeepSORTTracker(ByteTracker):
 ---
 
 ### Question 51
+- [ ] Done
 **Explain attention mechanisms in object detection (CBAM, ECA, self-attention in detection heads).**
 
 **Answer:**
@@ -5358,6 +5409,7 @@ class AttentionFPN(nn.Module):
 ---
 
 ### Question 52
+- [ ] Done
 **How do you design architectures that handle both common and rare object classes effectively?**
 
 **Answer:**
@@ -5550,6 +5602,7 @@ def train_decoupled(model, train_loader, class_balanced_loader, epochs):
 ---
 
 ### Question 53
+- [ ] Done
 **What techniques help with detecting objects in adverse weather conditions (fog, rain, low-light)?**
 
 **Answer:**
@@ -5792,6 +5845,7 @@ def train_weather_robust(model, loaders, epochs):
 ---
 
 ### Question 54
+- [ ] Done
 **Explain uncertainty quantification in detection predictions and when it's important.**
 
 **Answer:**
@@ -6026,6 +6080,7 @@ def uncertainty_aware_detection(model, image, uncertainty_threshold=0.5):
 ---
 
 ### Question 55
+- [ ] Done
 **How do you implement active learning for efficient annotation of detection datasets?**
 
 **Answer:**
@@ -6278,6 +6333,7 @@ class DetectionALPipeline:
 # ResNet, VGG, EfficientNet, MobileNet - Theory Questions
 
 ## Question 1
+- [ ] Done
 **Describe how ResNet skip connections solve this.**
 
 **Answer:**
@@ -6316,6 +6372,7 @@ The +1 term ensures the gradient never vanishes completely — it always has at 
 ---
 
 ## Question 2
+- [ ] Done
 **Compare ResNet-18, ResNet-50, ResNet-101 architectures.**
 
 **Answer:**
@@ -6350,6 +6407,7 @@ ResNet variants differ in depth, block type, and parameter count, offering trade
 ---
 
 ## Question 3
+- [ ] Done
 **Explain identity mapping in ResNet blocks.**
 
 **Answer:**
@@ -6387,6 +6445,7 @@ x → BN → ReLU → Conv → BN → ReLU → Conv → (+x) → output
 ---
 
 ## Question 4
+- [ ] Done
 **Describe bottleneck design in deeper ResNets.**
 
 **Answer:**
@@ -6433,6 +6492,7 @@ Output (256 channels)
 ---
 
 ## Question 5
+- [ ] Done
 **Explain pre-activation vs. post-activation ResNets.**
 
 **Answer:**
@@ -6475,6 +6535,7 @@ x → BN → ReLU → Conv → BN → ReLU → Conv → (+x) → output
 ---
 
 ## Question 6
+- [ ] Done
 **Compare VGG-16 and VGG-19 differences.**
 
 **Answer:**
@@ -6515,6 +6576,7 @@ VGG-16 and VGG-19 are deep CNN architectures from the Visual Geometry Group (Oxf
 ---
 
 ## Question 7
+- [ ] Done
 **Explain VGG's 3x3 convolution design choice.**
 
 **Answer:**
@@ -6548,6 +6610,7 @@ VGG's key insight is that stacking multiple 3×3 convolutions achieves the same 
 ---
 
 ## Question 8
+- [ ] Done
 **Describe computational cost of VGG vs. ResNet.**
 
 **Answer:**
@@ -6584,6 +6647,7 @@ VGG is significantly more expensive than ResNet despite achieving lower accuracy
 ---
 
 ## Question 9
+- [ ] Done
 **Explain EfficientNet's compound scaling law.**
 
 **Answer:**
@@ -6621,6 +6685,7 @@ Where $\phi$ is the compound coefficient controlling total resources, and $\alph
 ---
 
 ## Question 10
+- [ ] Done
 **Describe EfficientNet-B0 to B7 progression.**
 
 **Answer:**
@@ -6660,6 +6725,7 @@ EfficientNet-B0 through B7 represent a family of models scaled from a single NAS
 ---
 
 ## Question 11
+- [ ] Done
 **Compare EfficientNet vs. ResNet accuracy/efficiency.**
 
 **Answer:**
@@ -6701,6 +6767,7 @@ EfficientNet significantly outperforms ResNet in accuracy-per-FLOP, achieving th
 ---
 
 ## Question 12
+- [ ] Done
 **Explain Neural Architecture Search (NAS) in EfficientNet.**
 
 **Answer:**
@@ -6745,6 +6812,7 @@ Neural Architecture Search (NAS) is an automated machine learning approach that 
 ---
 
 ## Question 13
+- [ ] Done
 **Describe MobileNet's depthwise separable convolutions.**
 
 **Answer:**
@@ -6782,6 +6850,7 @@ For 3×3 conv with 256 output channels: savings = $\frac{1}{256} + \frac{1}{9} \
 ---
 
 ## Question 14
+- [ ] Done
 **Compare MobileNet-v1, v2, v3 improvements.**
 
 **Answer:**
@@ -6824,6 +6893,7 @@ Input (thin) → 1×1 Expand → DW 3×3 → 1×1 Project (thin) + skip
 ---
 
 ## Question 15
+- [ ] Done
 **Explain width multiplier in MobileNets.**
 
 **Answer:**
@@ -6867,6 +6937,7 @@ $$\text{Total FLOPs} \approx \alpha^2 \cdot \rho^2 \cdot \text{Base FLOPs}$$
 ---
 
 ## Question 16
+- [ ] Done
 **Describe Squeeze-and-Excitation (SE) blocks.**
 
 **Answer:**
@@ -6911,6 +6982,7 @@ $$\tilde{x}_c = s_c \cdot x_c \quad \text{(Scale)}$$
 ---
 
 ## Question 17
+- [ ] Done
 **Explain hard-swish activation in MobileNet-v3.**
 
 **Answer:**
@@ -6954,6 +7026,7 @@ $$\text{h-swish}(x) = x \cdot \frac{\text{ReLU6}(x + 3)}{6}$$
 ---
 
 ## Question 18
+- [ ] Done
 **Compare computational FLOPs across these architectures.**
 
 **Answer:**
@@ -6992,6 +7065,7 @@ FLOPs (Floating Point Operations) provide a hardware-independent measure of comp
 ---
 
 ## Question 19
+- [ ] Done
 **Explain transfer learning effectiveness on each model.**
 
 **Answer:**
@@ -7034,6 +7108,7 @@ Transfer learning effectiveness varies across architectures based on feature qua
 ---
 
 ## Question 20
+- [ ] Done
 **Describe batch normalization placement strategies.**
 
 **Answer:**
@@ -7089,6 +7164,7 @@ Conv → ReLU → BN
 ---
 
 ## Question 21
+- [ ] Done
 **Explain ResNeXt's cardinality concept.**
 
 **Answer:**
@@ -7139,6 +7215,7 @@ Input → 1×1 Conv (128) → 3×3 Grouped Conv (groups=32) → 1×1 Conv (256) 
 ---
 
 ## Question 22
+- [ ] Done
 **Compare Wide ResNet vs. standard ResNet.**
 
 **Answer:**
@@ -7181,6 +7258,7 @@ WRN-28-10:
 ---
 
 ## Question 23
+- [ ] Done
 **Describe pyramid pooling in ResNet variations.**
 
 **Answer:**
@@ -7231,6 +7309,7 @@ ResNet Feature Map (H×W×C)
 ---
 
 ## Question 24
+- [ ] Done
 **Explain EfficientNet's mobile deployment challenges.**
 
 **Answer:**
@@ -7284,6 +7363,7 @@ Despite EfficientNet's theoretical efficiency, deploying it on mobile devices pr
 ---
 
 ## Question 25
+- [ ] Done
 **Compare memory usage patterns across architectures.**
 
 **Answer:**
@@ -7327,6 +7407,7 @@ Memory usage in CNNs comes from model parameters, activations (feature maps), an
 ---
 
 ## Question 26
+- [ ] Done
 **Describe quantization effects on each model type.**
 
 **Answer:**
@@ -7373,6 +7454,7 @@ Quantization reduces model precision from FP32 to INT8/INT4, decreasing model si
 ---
 
 ## Question 27
+- [ ] Done
 **Compare ImageNet performance vs. model size.**
 
 **Answer:**
@@ -7415,6 +7497,7 @@ Understanding the Pareto frontier of accuracy vs. model size helps choose the ri
 ---
 
 ## Question 28
+- [ ] Done
 **Describe attention mechanisms in EfficientNet variants.**
 
 **Answer:**
@@ -7462,6 +7545,7 @@ Recalibrated Features (H×W×C_expanded)
 ---
 
 ## Question 29
+- [ ] Done
 **Explain channel shuffle in efficient architectures.**
 
 **Answer:**
@@ -7515,6 +7599,7 @@ Input → 1×1 Group Conv → Channel Shuffle → 3×3 DW Conv → 1×1 Group Co
 ---
 
 ## Question 30
+- [ ] Done
 **Compare gradient flow in skip vs. non-skip networks.**
 
 **Answer:**
@@ -7561,6 +7646,7 @@ $$\frac{\partial L}{\partial x_l} = \frac{\partial L}{\partial x_L} \left(1 + \f
 ---
 
 ## Question 31
+- [ ] Done
 **Describe feature reuse in DenseNet vs. ResNet.**
 
 **Answer:**
@@ -7610,6 +7696,7 @@ x₂ = [x₀, F₁(x₀), F₂(x₀, x₁)]
 ---
 
 ## Question 32
+- [ ] Done
 **Compare training time across these architectures.**
 
 **Answer:**
@@ -7654,6 +7741,7 @@ Training time depends on model complexity, convergence behavior, and hardware ut
 ---
 
 ## Question 33
+- [ ] Done
 **Describe pruning strategies for each model type.**
 
 **Answer:**
@@ -7706,6 +7794,7 @@ Pruning removes redundant weights or structures from neural networks to reduce s
 ---
 
 ## Question 34
+- [ ] Done
 **Explain ensemble methods combining these architectures.**
 
 **Answer:**
@@ -7755,6 +7844,7 @@ ensemble_pred = torch.stack(outputs).mean(dim=0)
 ---
 
 ## Question 35
+- [ ] Done
 **Compare edge deployment considerations.**
 
 **Answer:**
@@ -7803,6 +7893,7 @@ Edge deployment requires careful architecture selection based on hardware constr
 ---
 
 ## Question 36
+- [ ] Done
 **Describe architecture search spaces used.**
 
 **Answer:**
@@ -7854,6 +7945,7 @@ Architecture search spaces define the set of possible network designs that NAS a
 ---
 
 ## Question 37
+- [ ] Done
 **Explain multi-scale feature extraction differences.**
 
 **Answer:**
@@ -7905,6 +7997,7 @@ Input → [1×1 Conv] → Concat
 ---
 
 ## Question 38
+- [ ] Done
 **Compare robustness to adversarial attacks.**
 
 **Answer:**
@@ -7952,6 +8045,7 @@ Different architectures exhibit varying vulnerability to adversarial perturbatio
 ---
 
 ## Question 39
+- [ ] Done
 **Describe initialization strategies for deep networks.**
 
 **Answer:**
@@ -8004,6 +8098,7 @@ Proper weight initialization is critical for stable training of deep networks. D
 ---
 
 ## Question 40
+- [ ] Done
 **Explain learning rate scheduling for each architecture.**
 
 **Answer:**
@@ -8049,6 +8144,7 @@ Learning rate scheduling significantly impacts training convergence and final ac
 ---
 
 ## Question 41
+- [ ] Done
 **Compare fine-tuning strategies across models.**
 
 **Answer:**
@@ -8107,6 +8203,7 @@ optimizer = SGD([
 ---
 
 ## Question 42
+- [ ] Done
 **Describe hardware acceleration (GPU/TPU) efficiency.**
 
 **Answer:**
@@ -8158,6 +8255,7 @@ Different architectures have varying efficiency on different hardware due to ope
 ---
 
 ## Question 43
+- [ ] Done
 **Explain model compression trade-offs.**
 
 **Answer:**
@@ -8206,6 +8304,7 @@ Model compression reduces size and computation for deployment, with each techniq
 ---
 
 ## Question 44
+- [ ] Done
 **Compare interpretability across architectures.**
 
 **Answer:**
@@ -8257,6 +8356,7 @@ Interpretability — understanding what a model learned and why it makes specifi
 ---
 
 ## Question 45
+- [ ] Done
 **Describe future trends in efficient CNN design.**
 
 **Answer:**
@@ -8306,6 +8406,7 @@ CNN architecture design is evolving toward greater efficiency, automation, and a
 ---
 
 ## Question 46
+- [ ] Done
 **Explain when to choose each architecture type.**
 
 **Answer:**
@@ -8360,6 +8461,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 # DenseNet / InceptionNet - Theory Questions
 
 ## Question 47
+- [ ] Done
 **Explain dense connectivity pattern.**
 
 **Answer:** _To be filled_
@@ -8367,6 +8469,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 48
+- [ ] Done
 **Discuss growth rate hyperparameter in DenseNet.**
 
 **Answer:** _To be filled_
@@ -8374,6 +8477,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 49
+- [ ] Done
 **Explain composite function (BN–ReLU–Conv).**
 
 **Answer:** _To be filled_
@@ -8381,6 +8485,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 50
+- [ ] Done
 **Describe transition layers and compression factor.**
 
 **Answer:** _To be filled_
@@ -8388,6 +8493,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 51
+- [ ] Done
 **Compare DenseNet parameter efficiency vs. ResNet.**
 
 **Answer:** _To be filled_
@@ -8395,6 +8501,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 52
+- [ ] Done
 **Explain feature reuse benefits.**
 
 **Answer:** _To be filled_
@@ -8402,6 +8509,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 53
+- [ ] Done
 **Discuss vanishing gradient mitigation in DenseNet.**
 
 **Answer:** _To be filled_
@@ -8409,6 +8517,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 54
+- [ ] Done
 **Explain memory footprint issue and checkpointing.**
 
 **Answer:** _To be filled_
@@ -8416,6 +8525,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 55
+- [ ] Done
 **Describe DenseNet for semantic segmentation (Tiramisu).**
 
 **Answer:** _To be filled_
@@ -8423,6 +8533,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 56
+- [ ] Done
 **Discuss DenseNet for medical imaging.**
 
 **Answer:** _To be filled_
@@ -8430,6 +8541,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 57
+- [ ] Done
 **Discuss dimensionality reduction using 1×1 conv.**
 
 **Answer:** _To be filled_
@@ -8437,6 +8549,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 58
+- [ ] Done
 **Explain factorised 7×7 conv into 1×7 and 7×1.**
 
 **Answer:** _To be filled_
@@ -8444,6 +8557,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 59
+- [ ] Done
 **Describe Inception-v3 vs. v4 differences.**
 
 **Answer:** _To be filled_
@@ -8451,6 +8565,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 60
+- [ ] Done
 **Explain auxiliary classifier heads.**
 
 **Answer:** _To be filled_
@@ -8458,6 +8573,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 61
+- [ ] Done
 **Discuss grid-size reduction in Inception.**
 
 **Answer:** _To be filled_
@@ -8465,6 +8581,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 62
+- [ ] Done
 **Compare DenseNet vs. Inception computational trade-offs.**
 
 **Answer:** _To be filled_
@@ -8472,6 +8589,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 63
+- [ ] Done
 **Explain squeeze-and-excitation Inception.**
 
 **Answer:** _To be filled_
@@ -8479,6 +8597,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 64
+- [ ] Done
 **Describe NAS-Net inception search.**
 
 **Answer:** _To be filled_
@@ -8486,6 +8605,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 65
+- [ ] Done
 **Explain Inception-ResNet hybrid.**
 
 **Answer:** _To be filled_
@@ -8493,6 +8613,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 66
+- [ ] Done
 **Discuss label smoothing in Inception-v3 training.**
 
 **Answer:** _To be filled_
@@ -8500,6 +8621,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 67
+- [ ] Done
 **Explain mixup augmentation and DenseNet synergy.**
 
 **Answer:** _To be filled_
@@ -8507,6 +8629,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 68
+- [ ] Done
 **Describe class activation mapping with DenseNet.**
 
 **Answer:** _To be filled_
@@ -8514,6 +8637,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 69
+- [ ] Done
 **Discuss ensemble of heterogeneous Inception modules.**
 
 **Answer:** _To be filled_
@@ -8521,6 +8645,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 70
+- [ ] Done
 **Explain adaptation to 3-D inputs in medical CT.**
 
 **Answer:** _To be filled_
@@ -8528,6 +8653,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 71
+- [ ] Done
 **Discuss dilated Inception for dense prediction.**
 
 **Answer:** _To be filled_
@@ -8535,6 +8661,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 72
+- [ ] Done
 **Explain Densely connected RNN variant.**
 
 **Answer:** _To be filled_
@@ -8542,6 +8669,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 73
+- [ ] Done
 **Describe DenseNet for graph node classification.**
 
 **Answer:** _To be filled_
@@ -8549,6 +8677,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 74
+- [ ] Done
 **Explain hierarchical feature fusion in DenseNet.**
 
 **Answer:** _To be filled_
@@ -8556,6 +8685,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 75
+- [ ] Done
 **Discuss growth rate scaling for memory trade-off.**
 
 **Answer:** _To be filled_
@@ -8563,6 +8693,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 76
+- [ ] Done
 **Explain DenseNet for optical flow estimation.**
 
 **Answer:** _To be filled_
@@ -8570,6 +8701,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 77
+- [ ] Done
 **Describe Inception in audio spectrogram classification.**
 
 **Answer:** _To be filled_
@@ -8577,6 +8709,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 78
+- [ ] Done
 **Discuss learned group convolutions in Inception.**
 
 **Answer:** _To be filled_
@@ -8584,6 +8717,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 79
+- [ ] Done
 **Explain feature calibration gates in DenseNet.**
 
 **Answer:** _To be filled_
@@ -8591,6 +8725,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 80
+- [ ] Done
 **Compare performance on CIFAR vs. ImageNet.**
 
 **Answer:** _To be filled_
@@ -8598,6 +8733,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 81
+- [ ] Done
 **Explain training tricks to stabilise very deep DenseNets.**
 
 **Answer:** _To be filled_
@@ -8605,6 +8741,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 82
+- [ ] Done
 **Describe adversarial robustness differences.**
 
 **Answer:** _To be filled_
@@ -8612,6 +8749,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 83
+- [ ] Done
 **Explain pruning strategies for Dense connectivity.**
 
 **Answer:** _To be filled_
@@ -8619,6 +8757,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 84
+- [ ] Done
 **Discuss compute vs. accuracy Pareto frontier.**
 
 **Answer:** _To be filled_
@@ -8626,6 +8765,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 85
+- [ ] Done
 **Explain ArcFace with DenseNet backbone.**
 
 **Answer:** _To be filled_
@@ -8633,6 +8773,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 86
+- [ ] Done
 **Discuss domain adaptation using Inception features.**
 
 **Answer:** _To be filled_
@@ -8640,6 +8781,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 87
+- [ ] Done
 **Explain inverted-InceptionMobile variant.**
 
 **Answer:** _To be filled_
@@ -8647,6 +8789,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 88
+- [ ] Done
 **Describe zero-shot transfer to remote sensing.**
 
 **Answer:** _To be filled_
@@ -8654,6 +8797,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 89
+- [ ] Done
 **Discuss federated averaging with DenseNet participants.**
 
 **Answer:** _To be filled_
@@ -8661,6 +8805,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 90
+- [ ] Done
 **Explain memory-efficient DenseNet incremental inference.**
 
 **Answer:** _To be filled_
@@ -8668,6 +8813,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 91
+- [ ] Done
 **Describe self-supervised training on Inception features.**
 
 **Answer:** _To be filled_
@@ -8675,6 +8821,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 92
+- [ ] Done
 **Explain grad-CAM++ on Inception mixed layers.**
 
 **Answer:** _To be filled_
@@ -8682,6 +8829,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 93
+- [ ] Done
 **Discuss DensePose estimation using DenseNet feature reuse.**
 
 **Answer:** _To be filled_
@@ -8689,6 +8837,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 94
+- [ ] Done
 **Predict future uses of dense connectivity patterns.**
 
 **Answer:** _To be filled_
@@ -8700,6 +8849,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 # --- OpenCV Questions (from source .txt) ---
 
 ## Question 95
+- [ ] Done
 
 **How do you optimize OpenCV performance for real-time computer vision applications with high frame rates?**
 
@@ -8708,6 +8858,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 96
+- [ ] Done
 
 **What are the best practices for integrating OpenCV with deep learning frameworks like PyTorch and TensorFlow?**
 
@@ -8716,6 +8867,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 97
+- [ ] Done
 
 **How do you implement efficient image preprocessing pipelines using OpenCV for ML model inputs?**
 
@@ -8724,6 +8876,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 98
+- [ ] Done
 
 **When should you use OpenCV's built-in algorithms versus implementing custom computer vision solutions?**
 
@@ -8732,6 +8885,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 99
+- [ ] Done
 
 **How do you handle OpenCV memory management and optimization for large image processing workloads?**
 
@@ -8740,6 +8894,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 100
+- [ ] Done
 
 **What techniques help you implement OpenCV-based video processing for streaming applications?**
 
@@ -8748,6 +8903,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 101
+- [ ] Done
 
 **How do you use OpenCV for camera calibration and 3D computer vision applications?**
 
@@ -8756,6 +8912,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 102
+- [ ] Done
 
 **When would you choose OpenCV over other computer vision libraries like PIL or scikitimage?**
 
@@ -8764,6 +8921,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 103
+- [ ] Done
 
 **How do you implement OpenCV integration with GPU acceleration using CUDA or OpenCL?**
 
@@ -8772,6 +8930,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 104
+- [ ] Done
 
 **What strategies help you optimize OpenCV algorithms for mobile and embedded deployments?**
 
@@ -8780,6 +8939,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 105
+- [ ] Done
 
 **How do you handle OpenCV version compatibility and migration across different project requirements?**
 
@@ -8788,6 +8948,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 106
+- [ ] Done
 
 **When should you use OpenCV's machine learning module versus external ML frameworks?**
 
@@ -8796,6 +8957,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 107
+- [ ] Done
 
 **How do you implement OpenCV-based object detection and tracking systems for production use?**
 
@@ -8804,6 +8966,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 108
+- [ ] Done
 
 **What techniques help you optimize OpenCV image I/O operations for high-throughput applications?**
 
@@ -8812,6 +8975,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 109
+- [ ] Done
 
 **How do you use OpenCV for image augmentation and data preprocessing in ML pipelines?**
 
@@ -8820,6 +8984,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 110
+- [ ] Done
 
 **When would you implement custom OpenCV filters and kernels versus using built-in functions?**
 
@@ -8828,6 +8993,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 111
+- [ ] Done
 
 **How do you handle OpenCV integration with cloud storage and distributed processing systems?**
 
@@ -8836,6 +9002,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 112
+- [ ] Done
 
 **What are the best practices for OpenCV error handling and debugging in production environments?**
 
@@ -8844,6 +9011,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 113
+- [ ] Done
 
 **How do you implement OpenCV-based feature extraction and descriptor matching workflows?**
 
@@ -8852,6 +9020,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 114
+- [ ] Done
 
 **When should you use OpenCV's Python bindings versus C++ implementation for performance-critical applications?**
 
@@ -8860,6 +9029,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 115
+- [ ] Done
 
 **How do you optimize OpenCV for batch image processing and parallel execution?**
 
@@ -8868,6 +9038,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 116
+- [ ] Done
 
 **What strategies help you manage OpenCV dependencies and build configurations across platforms?**
 
@@ -8876,6 +9047,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 117
+- [ ] Done
 
 **How do you implement OpenCV integration with video streaming protocols and real-time communication?**
 
@@ -8884,6 +9056,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 118
+- [ ] Done
 
 **When would you use OpenCV's image stitching and panorama creation capabilities in applications?**
 
@@ -8892,6 +9065,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 119
+- [ ] Done
 
 **How do you handle OpenCV-based image quality assessment and enhancement workflows?**
 
@@ -8900,6 +9074,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 120
+- [ ] Done
 
 **What techniques help you implement OpenCV integration with AR/VR and mixed reality applications?**
 
@@ -8908,6 +9083,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 121
+- [ ] Done
 
 **How do you use OpenCV for medical image processing and analysis applications?**
 
@@ -8916,6 +9092,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 122
+- [ ] Done
 
 **When should you combine OpenCV with other computer vision tools like MediaPipe or Detectron2?**
 
@@ -8924,6 +9101,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 123
+- [ ] Done
 
 **How do you implement OpenCV-based optical character recognition (OCR) and text detection systems?**
 
@@ -8932,6 +9110,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 124
+- [ ] Done
 
 **What are the considerations for OpenCV deployment in containerized and orchestrated environments?**
 
@@ -8940,6 +9119,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 125
+- [ ] Done
 
 **How do you handle OpenCV integration with hardware-specific optimizations like Intel MKL or ARM NEON?**
 
@@ -8948,6 +9128,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 126
+- [ ] Done
 
 **When would you use OpenCV's contribution modules versus core functionality for specialized tasks?**
 
@@ -8956,6 +9137,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 127
+- [ ] Done
 
 **How do you implement OpenCV-based image registration and alignment workflows?**
 
@@ -8964,6 +9146,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 128
+- [ ] Done
 
 **What strategies help you optimize OpenCV for low-latency computer vision applications?**
 
@@ -8972,6 +9155,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 129
+- [ ] Done
 
 **How do you handle OpenCV integration with machine learning model serving frameworks?**
 
@@ -8980,6 +9164,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 130
+- [ ] Done
 
 **When should you use OpenCV's drawing and annotation functions for visualization and debugging?**
 
@@ -8988,6 +9173,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 131
+- [ ] Done
 
 **How do you implement OpenCV-based color space conversions and image format handling?**
 
@@ -8996,6 +9182,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 132
+- [ ] Done
 
 **What techniques help you manage OpenCV performance profiling and bottleneck identification?**
 
@@ -9004,6 +9191,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 133
+- [ ] Done
 
 **How do you use OpenCV for geometric transformations and perspective correction in applications?**
 
@@ -9012,6 +9200,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 134
+- [ ] Done
 
 **When would you implement OpenCV custom data structures versus using standard containers?**
 
@@ -9020,6 +9209,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 135
+- [ ] Done
 
 **How do you handle OpenCV integration with web applications and browser-based computer vision?**
 
@@ -9028,6 +9218,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 136
+- [ ] Done
 
 **What are the best practices for OpenCV testing and validation in continuous integration pipelines?**
 
@@ -9036,6 +9227,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 137
+- [ ] Done
 
 **How do you implement OpenCV-based motion detection and analysis for surveillance applications?**
 
@@ -9044,6 +9236,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 138
+- [ ] Done
 
 **When should you use OpenCV's histogram analysis and statistical functions for image analysis?**
 
@@ -9052,6 +9245,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 139
+- [ ] Done
 
 **How do you handle OpenCV optimization for specific use cases like autonomous vehicles or robotics?**
 
@@ -9060,6 +9254,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 140
+- [ ] Done
 
 **What strategies help you manage OpenCV licensing and intellectual property considerations?**
 
@@ -9068,6 +9263,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 141
+- [ ] Done
 
 **How do you implement OpenCV integration with data annotation tools and ground truth generation?**
 
@@ -9076,6 +9272,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 142
+- [ ] Done
 
 **When would you use OpenCV's machine learning algorithms for clustering and classification tasks?**
 
@@ -9084,6 +9281,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 143
+- [ ] Done
 
 **How do you use OpenCV for stereo vision and depth estimation applications?**
 
@@ -9092,6 +9290,7 @@ Architecture selection depends on deployment constraints, dataset characteristic
 ---
 
 ## Question 144
+- [ ] Done
 
 **What techniques help you integrate OpenCV workflows with automated testing and quality assurance systems?**
 

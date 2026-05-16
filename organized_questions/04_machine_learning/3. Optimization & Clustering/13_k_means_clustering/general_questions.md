@@ -1,6 +1,7 @@
 # K Means Clustering Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you decide on the number of clusters (k) in a K-Means algorithm?**
 
@@ -34,6 +35,7 @@ optimal_k = range(2, 11)[np.argmax(scores)]
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can K-Means clustering be used for categorical data? If so, how?**
 
@@ -72,6 +74,7 @@ clusters = km.fit_predict(categorical_data)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Compare K-Means clustering with hierarchical clustering.**
 
@@ -108,6 +111,7 @@ K-Means requires K upfront, is fast O(nKdi), produces flat clusters, assumes sph
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you handle outliers in the K-Means algorithm?**
 
@@ -153,6 +157,7 @@ outliers = X[db.labels_ == -1]
 ---
 
 ## Question 5
+- [ ] Done
 
 **Why is K-Means Clustering considered a greedy algorithm?**
 
@@ -190,6 +195,7 @@ kmeans = KMeans(
 ---
 
 ## Question 6
+- [ ] Done
 
 **Can you use K-Means for high-dimensional data?**
 
@@ -233,6 +239,7 @@ pipeline.fit(X_high_dim)
 ---
 
 ## Question 7
+- [ ] Done
 
 **How can the K-Means algorithm be optimized for very large datasets?**
 
@@ -284,6 +291,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 8
+- [ ] Done
 
 **How can you determine if K-Means clustering has properly converged?**
 
@@ -326,6 +334,7 @@ if kmeans.n_iter_ == 300:
 ---
 
 ## Question 9
+- [ ] Done
 
 **What considerations should be made when choosing initial centroid locations?**
 
@@ -367,6 +376,7 @@ kmeans = KMeans(
 ---
 
 ## Question 10
+- [ ] Done
 
 **How can the results of K-Means clustering be validated?**
 
@@ -409,6 +419,7 @@ print(df.groupby('cluster').mean())  # Understand each cluster
 ---
 
 ## Question 11
+- [ ] Done
 
 **In what ways can K-Means clustering influence business decision-making?**
 
@@ -448,6 +459,7 @@ Cluster 3: Churning → Win-back offers
 ---
 
 ## Question 12
+- [ ] Done
 
 **What preprocessing steps would you perform before applying K-Means Clustering?**
 

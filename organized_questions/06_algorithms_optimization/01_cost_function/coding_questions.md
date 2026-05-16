@@ -1,6 +1,7 @@
 # Cost Function Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement a Python function that calculates the Mean Squared Error between predicted and actual values.**
 
@@ -54,6 +55,7 @@ print(f"Sklearn MSE: {mean_squared_error(y_true, y_pred)}")  # Same: 0.375
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a Python code snippet to compute the Cross-Entropy loss given predicted probabilities and actual labels.**
 
@@ -130,6 +132,7 @@ print(f"CCE: {categorical_cross_entropy(y_true_multi, y_pred_multi):.4f}")
 ---
 
 ## Question 3
+- [ ] Done
 
 **Implement a gradient descent algorithm in Python to minimize a simple quadratic cost function.**
 
@@ -205,6 +208,7 @@ def gradient_descent_nd(cost_fn, grad_fn, start, lr=0.01, iterations=100):
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a Python simulation that compares the convergence speed of batch and stochastic gradient descent.**
 
@@ -309,6 +313,7 @@ print(f"  Mini-batch:    {losses_mini[-1]:.6f}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Build a Python class that implements an adaptive learning rate algorithm, like Adam or AdaGrad, from scratch.**
 
@@ -422,6 +427,7 @@ demo_adam()
 ---
 
 ## Question 6
+- [ ] Done
 
 **Write a Python function that minimizes a cost function using simulated annealing.**
 
@@ -510,6 +516,7 @@ print(f"Global optimum is at [0, 0] with cost = 0")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement a basic version of the RMSprop optimization algorithm in Python.**
 

@@ -1,6 +1,7 @@
 # Cluster Analysis Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What preprocessing steps would you suggest before performing cluster analysis?**
 
@@ -42,6 +43,7 @@ X_preprocessed = pipeline.fit_transform(X)
 ---
 
 ## Question 2
+- [ ] Done
 
 **How might you address missing values in a dataset before clustering?**
 
@@ -89,6 +91,7 @@ Start with median imputation, use k-NN for important applications.
 ---
 
 ## Question 3
+- [ ] Done
 
 **How can the elbow method help in selecting the optimal number of clusters?**
 

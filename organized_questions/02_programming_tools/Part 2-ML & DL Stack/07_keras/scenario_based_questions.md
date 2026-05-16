@@ -1,6 +1,7 @@
 # Keras Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Your model trains fine but predictions are poor in production. What could be wrong?**
 
@@ -72,6 +73,7 @@ X_prod_normalized = prod_pipeline.transform(X_production)
 ---
 
 ## Question 2
+- [ ] Done
 
 **Your model is too large for mobile deployment. How do you reduce its size?**
 
@@ -170,6 +172,7 @@ class Distiller(keras.Model):
 ---
 
 ## Question 3
+- [ ] Done
 
 **You need to train on data that doesn't fit in memory. What's your approach?**
 
@@ -261,6 +264,7 @@ def read_tfrecord(filename):
 ---
 
 ## Question 4
+- [ ] Done
 
 **Your model accuracy plateaus early in training. How do you diagnose and fix this?**
 
@@ -362,6 +366,7 @@ optimizer = keras.optimizers.Adam(learning_rate=0.001, clipnorm=1.0)
 ---
 
 ## Question 5
+- [ ] Done
 
 **You need to explain your Keras model's predictions to stakeholders. How do you do it?**
 
@@ -474,6 +479,7 @@ def visualize_attention(model, text, tokenizer):
 ---
 
 ## Question 6
+- [ ] Done
 
 **Your model works well on validation but poorly on real-world data. What's happening?**
 
@@ -563,6 +569,7 @@ def cross_validate_model(create_model_fn, X, y, n_folds=5):
 ---
 
 ## Question 7
+- [ ] Done
 
 **You need to serve a Keras model with low latency. What optimizations do you apply?**
 
@@ -652,6 +659,7 @@ def benchmark_inference(model, data, n_runs=100):
 ---
 
 ## Question 8
+- [ ] Done
 
 **You're asked to implement A/B testing for two model versions. How do you approach this?**
 
@@ -756,6 +764,7 @@ results = ab_test.analyze_results()
 ---
 
 ## Question 9
+- [ ] Done
 
 **Your training is unstable with loss spikes. How do you stabilize it?**
 
@@ -858,6 +867,7 @@ def create_stable_model():
 ---
 
 ## Question 10
+- [ ] Done
 
 **You need to implement continual learning where the model learns from new data without forgetting old patterns. How?**
 
@@ -1008,6 +1018,7 @@ learner.learn_task(X_task2, y_task2)
 ```
 
 ## Question 11
+- [ ] Done
 
 **How would you architect a Keras model to handle a large-scale image recognition problem ?**
 
@@ -1078,6 +1089,7 @@ model.fit(train_ds, epochs=20, callbacks=[
 ---
 
 ## Question 12
+- [ ] Done
 
 **How would you use Keras to build models for sequence-to-sequence tasks , such as machine translation ?**
 
@@ -1138,6 +1150,7 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy')
 
 ---
 ## Question 13
+- [ ] Done
 
 **Discuss a strategy for implementing a real-time object detection system using Keras.**
 
@@ -1227,6 +1240,7 @@ model = tf.keras.Sequential([
 > **Interview Tip:** For real-time detection, YOLO family models dominate. For edge deployment, convert to TFLite with quantization. The key trade-off is always speed vs. accuracy—choose based on latency requirements.
 
 ## Question 14
+- [ ] Done
 
 **Describe how you would use Keras to develop a recommendation system.**
 
@@ -1354,6 +1368,7 @@ print(f"Top 10 recommended items for user {user_id}: {top_10_items}")
 ---
 
 ## Question 15
+- [ ] Done
 
 **Present a framework for anomaly detection using autoencoders in Keras.**
 

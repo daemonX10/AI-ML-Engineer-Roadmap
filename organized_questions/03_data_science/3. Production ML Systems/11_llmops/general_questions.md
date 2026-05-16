@@ -1,6 +1,7 @@
 ﻿# Llmops Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **Define the term “Lifecycle” within the context ofMLOps.**
 
@@ -9,6 +10,7 @@
 ---
 
 ## Question 2
+- [ ] Done
 
 **What role doesdata versioningplay inMLOps?**
 
@@ -17,6 +19,7 @@
 ---
 
 ## Question 3
+- [ ] Done
 
 **How docontainerization technologieslikeDockercontribute toMLOps practices?**
 
@@ -25,6 +28,7 @@
 ---
 
 ## Question 4
+- [ ] Done
 
 **How canMLOpshelp mitigaterisksin deployingmachine learning models?**
 
@@ -33,6 +37,7 @@
 ---
 
 ## Question 5
+- [ ] Done
 
 **What methodologies can be used to measure thesuccessof anMLOps initiative?**
 
@@ -41,6 +46,7 @@
 ---
 
 ## Question 6
+- [ ] Done
 
 **What approaches are available for rolling outmachine learning modelsintoproduction?**
 
@@ -49,6 +55,7 @@
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you ensurelow latencyinreal-time model predictions?**
 
@@ -57,6 +64,7 @@
 ---
 
 ## Question 8
+- [ ] Done
 
 **Discuss the importance ofmonitoringandlogginginMLOps.**
 
@@ -65,6 +73,7 @@
 ---
 
 ## Question 9
+- [ ] Done
 
 **How can the principles ofchaos engineeringbe applied within anMLOps context?**
 
@@ -73,6 +82,7 @@
 ---
 
 ## Question 10
+- [ ] Done
 
 **What do you think the future ofMLOpswill look like, and which emerging technologies will play a role?**
 
@@ -81,6 +91,7 @@
 ---
 
 ## Question 11
+- [ ] Done
 
 **Discussfeature storesand their importance inMLOps workflows.**
 
@@ -89,6 +100,7 @@
 ---
 
 ## Question 12
+- [ ] Done
 
 **Discuss strategies forteam collaborationandrole delineationwithin anMLOps framework.**
 
@@ -97,6 +109,7 @@
 ---
 
 ## Question 13
+- [ ] Done
 
 **Discuss the concept ofA/B testingformachine learning modelsin anMLOpssetting.**
 
@@ -105,6 +118,7 @@
 ---
 
 ## Question 14
+- [ ] Done
 
 **Discuss the incorporation ofexplainable AI (XAI)inMLOps workflows.**
 
@@ -113,6 +127,7 @@
 ---
 
 ## Question 15
+- [ ] Done
 
 **Discuss the role ofedge deploymentinMLOpsand the associated challenges.**
 

@@ -1,0 +1,51 @@
+# GrindLLM50 — 45 LLM & NLP Interview Questions
+
+> Comprehensive Jupyter notebooks covering LLM architecture, training, inference optimization, NLP fundamentals, and deployment.
+
+| # | Notebook | Topic | Difficulty |
+|---|----------|-------|------------|
+| 01 | [Q01_Mixture_of_Experts](Q01_Mixture_of_Experts.ipynb) | LLM | Hard |
+| 02 | [Q02_Quadratic_Complexity](Q02_Quadratic_Complexity.ipynb) | LLM | Medium |
+| 03 | [Q03_Finetuning_Overfitting](Q03_Finetuning_Overfitting.ipynb) | LLM | Medium |
+| 04 | [Q04_VRAM_KV_Cache](Q04_VRAM_KV_Cache.ipynb) | LLM | Hard |
+| 05 | [Q05_Inference_Optimization](Q05_Inference_Optimization.ipynb) | LLM | Hard |
+| 06 | [Q06_Extend_Context_Window](Q06_Extend_Context_Window.ipynb) | LLM | Hard |
+| 07 | [Q07_Beam_Search](Q07_Beam_Search.ipynb) | LLM | Medium |
+| 08 | [Q08_Self_Attention_Numpy](Q08_Self_Attention_Numpy.ipynb) | Coding | Hard |
+| 09 | [Q09_RLHF](Q09_RLHF.ipynb) | LLM | Hard |
+| 10 | [Q10_Multimodal_VLM](Q10_Multimodal_VLM.ipynb) | LLM | Hard |
+| 11 | [Q11_ONNX_Deployment](Q11_ONNX_Deployment.ipynb) | LLM | Medium |
+| 12 | [Q12_Diffusion_Denoising_Steps](Q12_Diffusion_Denoising_Steps.ipynb) | LLM | Hard |
+| 13 | [Q13_VLM_Adapters](Q13_VLM_Adapters.ipynb) | LLM | Hard |
+| 14 | [Q14_PagedAttention](Q14_PagedAttention.ipynb) | LLM | Medium |
+| 15 | [Q15_Cross_Encoders](Q15_Cross_Encoders.ipynb) | LLM | Medium |
+| 16 | [Q16_Sampling_Parameters](Q16_Sampling_Parameters.ipynb) | LLM | Hard |
+| 17 | [Q17_LLM_Innovations](Q17_LLM_Innovations.ipynb) | LLM | Easy |
+| 18 | [Q18_VRAM_Finetune](Q18_VRAM_Finetune.ipynb) | LLM | Hard |
+| 19 | [Q19_RAG_vs_Finetuning](Q19_RAG_vs_Finetuning.ipynb) | LLM | Hard |
+| 20 | [Q20_Foundation_Model_Finetuning](Q20_Foundation_Model_Finetuning.ipynb) | LLM | Medium |
+| 21 | [Q21_Named_Entity_Recognition](Q21_Named_Entity_Recognition.ipynb) | NLP | Medium |
+| 22 | [Q22_Positional_Encodings](Q22_Positional_Encodings.ipynb) | LLM | Medium |
+| 23 | [Q23_Prompt_Injection](Q23_Prompt_Injection.ipynb) | LLM | Hard |
+| 24 | [Q24_Additive_vs_Multiplicative_Attention](Q24_Additive_vs_Multiplicative_Attention.ipynb) | LLM | Medium |
+| 25 | [Q25_Masked_Attention](Q25_Masked_Attention.ipynb) | LLM | Medium |
+| 26 | [Q26_MultiHead_Attention](Q26_MultiHead_Attention.ipynb) | LLM | Medium |
+| 27 | [Q27_LLM_Pretraining](Q27_LLM_Pretraining.ipynb) | LLM | Medium |
+| 28 | [Q28_BERT_Training](Q28_BERT_Training.ipynb) | LLM | Medium |
+| 29 | [Q29_Shrink_Transformers](Q29_Shrink_Transformers.ipynb) | LLM | Medium |
+| 30 | [Q30_Bi_vs_Cross_Encoders](Q30_Bi_vs_Cross_Encoders.ipynb) | LLM | Medium |
+| 31 | [Q31_Trigonometric_Positional_Encoding](Q31_Trigonometric_Positional_Encoding.ipynb) | LLM | Hard |
+| 32 | [Q32_Train_LLM_Store_Context](Q32_Train_LLM_Store_Context.ipynb) | LLM | Medium |
+| 33 | [Q33_Bias_Mitigation_HITL](Q33_Bias_Mitigation_HITL.ipynb) | LLM | Medium |
+| 34 | [Q34_Encoder_vs_Decoder](Q34_Encoder_vs_Decoder.ipynb) | LLM | Medium |
+| 35 | [Q35_Autoregressive_Transformer](Q35_Autoregressive_Transformer.ipynb) | LLM | Hard |
+| 36 | [Q36_Contextual_Embeddings](Q36_Contextual_Embeddings.ipynb) | LLM | Medium |
+| 37 | [Q37_Stable_Diffusion_Architecture](Q37_Stable_Diffusion_Architecture.ipynb) | LLM | Medium |
+| 38 | [Q38_QKV_Projections](Q38_QKV_Projections.ipynb) | LLM | Hard |
+| 39 | [Q39_BPE_Tokenization](Q39_BPE_Tokenization.ipynb) | LLM | Medium |
+| 40 | [Q40_Transformers_vs_LSTMs](Q40_Transformers_vs_LSTMs.ipynb) | LLM | Medium |
+| 41 | [Q41_BERT_Parameters_DistilBERT](Q41_BERT_Parameters_DistilBERT.ipynb) | LLM | Medium |
+| 42 | [Q42_Attention_Mechanisms_When](Q42_Attention_Mechanisms_When.ipynb) | NLP | Hard |
+| 43 | [Q43_LLM_Evaluation](Q43_LLM_Evaluation.ipynb) | LLM | Medium |
+| 44 | [Q44_GPT_vs_BERT_vs_T5](Q44_GPT_vs_BERT_vs_T5.ipynb) | NLP | Medium |
+| 45 | [Q45_Reduce_Hallucinations](Q45_Reduce_Hallucinations.ipynb) | LLM | Hard |

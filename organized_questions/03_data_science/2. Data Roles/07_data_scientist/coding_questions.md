@@ -1,6 +1,7 @@
 # Data Scientist Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Describe the concept of Gradient Boosting and its popular implementations.**
 

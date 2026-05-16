@@ -1,6 +1,7 @@
 # Unsupervised Learning - Theory Questions
 
 ## Question 1: Describe the K-means clustering algorithm and how it operates.
+- [ ] Done
 
 ### Definition
 K-means partitions data into K non-overlapping clusters by minimizing within-cluster sum of squares (WCSS).
@@ -28,6 +29,7 @@ K-means partitions data into K non-overlapping clusters by minimizing within-clu
 ---
 
 ## Question 2: What is the role of the silhouette coefficient in clustering analysis?
+- [ ] Done
 
 ### Definition
 Silhouette coefficient measures how well-separated clusters are and how similar each point is to its own cluster vs others.
@@ -55,6 +57,7 @@ Run clustering for K = 2, 3, 4... Choose K with highest average silhouette score
 ---
 
 ## Question 3: Explain the DBSCAN algorithm. What advantages does it offer over K-means?
+- [ ] Done
 
 ### Definition
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) groups points based on density, not distance to centroids.
@@ -83,6 +86,7 @@ Sensitive to eps and min_samples parameter choices.
 ---
 
 ## Question 4: How does the hierarchical clustering algorithm work, and when would you use it?
+- [ ] Done
 
 ### Definition
 Hierarchical clustering builds a tree of clusters (dendrogram) showing nested groupings at different similarity levels.
@@ -111,6 +115,7 @@ Hierarchical clustering builds a tree of clusters (dendrogram) showing nested gr
 ---
 
 ## Question 5: What is the difference between Agglomerative and Divisive hierarchical clustering?
+- [ ] Done
 
 ### Comparison
 
@@ -129,6 +134,7 @@ Hierarchical clustering builds a tree of clusters (dendrogram) showing nested gr
 ---
 
 ## Question 6: Explain the working of Principal Component Analysis (PCA).
+- [ ] Done
 
 ### Definition
 PCA transforms correlated features into uncorrelated **principal components** that capture maximum variance.
@@ -154,6 +160,7 @@ PCA transforms correlated features into uncorrelated **principal components** th
 ---
 
 ## Question 7: Describe t-Distributed Stochastic Neighbor Embedding (t-SNE) and its use cases.
+- [ ] Done
 
 ### Definition
 t-SNE is a non-linear dimensionality reduction technique for **visualization** that preserves local neighborhood structure.
@@ -181,6 +188,7 @@ t-SNE is a non-linear dimensionality reduction technique for **visualization** t
 ---
 
 ## Question 8: How does Linear Discriminant Analysis (LDA) differ from PCA, and when would you use each?
+- [ ] Done
 
 ### Core Difference
 
@@ -205,6 +213,7 @@ t-SNE is a non-linear dimensionality reduction technique for **visualization** t
 ---
 
 ## Question 9: What is the curse of dimensionality and how does it affect machine learning models?
+- [ ] Done
 
 ### Definition
 Problems that arise when working with high-dimensional data due to exponentially increasing volume.
@@ -226,6 +235,7 @@ Problems that arise when working with high-dimensional data due to exponentially
 ---
 
 ## Question 10: Explain what an autoencoder is and how it can be used for dimensionality reduction.
+- [ ] Done
 
 ### Definition
 An autoencoder is a neural network that learns to compress (encode) input into a latent representation, then reconstruct (decode) it.
@@ -260,6 +270,7 @@ Input → Encoder → Bottleneck (Latent Space) → Decoder → Reconstructed Ou
 ---
 
 ## Question 11: What is association rule mining and how is it relevant to unsupervised learning?
+- [ ] Done
 
 ### Definition
 Association rule mining discovers relationships of the form "If A, then B" in transaction data.
@@ -285,6 +296,7 @@ Association rule mining discovers relationships of the form "If A, then B" in tr
 ---
 
 ## Question 12: Explain the Apriori algorithm for association rule learning.
+- [ ] Done
 
 ### Core Principle
 "If an itemset is frequent, all its subsets are frequent."
@@ -309,6 +321,7 @@ Requires multiple database scans (one per level k) → slow for large datasets.
 ---
 
 ## Question 13: Discuss the concepts of support, confidence, and lift in association rule learning.
+- [ ] Done
 
 ### For Rule: {A} → {B}
 
@@ -338,6 +351,7 @@ High confidence {X} → {Bread} might just mean bread is very popular (appears i
 ---
 
 ## Question 14: Can you describe the FP-Growth algorithm and how it improves over the Apriori algorithm?
+- [ ] Done
 
 ### Improvement Over Apriori
 - **Apriori**: Multiple database scans, expensive candidate generation
@@ -365,6 +379,7 @@ High confidence {X} → {Bread} might just mean bread is very popular (appears i
 ---
 
 ## Question 15: How can association rule learning be applied in a market-basket analysis?
+- [ ] Done
 
 ### The Process
 
@@ -389,6 +404,7 @@ High confidence {X} → {Bread} might just mean bread is very popular (appears i
 ---
 
 ## Question 16: Discuss the Expectation-Maximization (EM) algorithm and its application in clustering.
+- [ ] Done
 
 ### Definition
 EM is an iterative algorithm for finding maximum likelihood estimates when there are latent (hidden) variables.
@@ -425,6 +441,7 @@ Until convergence
 ---
 
 ## Question 17: What are Gaussian Mixture Models (GMMs) and how do they relate to clustering?
+- [ ] Done
 
 ### Definition
 GMM assumes data is generated from a mixture of K Gaussian distributions with unknown parameters.
@@ -452,6 +469,7 @@ Unlike K-means (hard assignment), GMM provides **probability** of belonging to e
 ---
 
 ## Question 18: How can you determine the optimal number of clusters for a dataset?
+- [ ] Done
 
 ### Three Main Methods
 
@@ -476,6 +494,7 @@ Combine methods: Use Elbow for range, Silhouette to pick best K. Also consider d
 ---
 
 ## Question 19: Explain the concept of cluster validity indices.
+- [ ] Done
 
 ### Definition
 Metrics to evaluate clustering quality, used to:
@@ -501,6 +520,7 @@ Metrics to evaluate clustering quality, used to:
 ---
 
 ## Question 20: What challenges do you face when clustering high-dimensional data?
+- [ ] Done
 
 ### The Curse of Dimensionality
 
@@ -528,6 +548,7 @@ Metrics to evaluate clustering quality, used to:
 ---
 
 ## Question 21: What are Generative Adversarial Networks (GANs) and how do they work?
+- [ ] Done
 
 ### Definition
 GANs are generative models with two competing neural networks learning to generate realistic synthetic data.
@@ -555,6 +576,7 @@ Learns data distribution without labels to generate new samples.
 ---
 
 ## Question 22: Explain the concept of a Variational Autoencoder (VAE).
+- [ ] Done
 
 ### Difference from Standard Autoencoder
 - **Autoencoder**: Maps input to single point in latent space
@@ -580,6 +602,7 @@ Forces continuous, well-structured latent space essential for generation.
 ---
 
 ## Question 23: How do unsupervised learning techniques contribute to the field of natural language processing (NLP)?
+- [ ] Done
 
 ### Key Contributions
 
@@ -608,6 +631,7 @@ This is the **foundation of modern NLP** - unsupervised pre-training revolutioni
 ---
 
 ## Question 24: Describe the role of unsupervised pre-training in deep learning.
+- [ ] Done
 
 ### Definition
 Train model on large unlabeled data first, then fine-tune on smaller labeled data.
@@ -641,6 +665,7 @@ This is now the **default approach** in modern deep learning for NLP and vision.
 ---
 
 ## Question 25: Discuss the use of self-organizing maps in unsupervised learning.
+- [ ] Done
 
 ### Definition
 Self-Organizing Map (SOM) is a neural network that projects high-dimensional data onto a 2D grid while preserving topological relationships.
@@ -674,6 +699,7 @@ Self-Organizing Map (SOM) is a neural network that projects high-dimensional dat
 ---
 
 ## Question 26: What are some of the latest advancements in clustering algorithms?
+- [ ] Done
 
 ### Answer
 
@@ -717,6 +743,7 @@ Input Data → Encoder Network → Latent Space → Clustering Loss + Reconstruc
 ---
 
 ## Question 27: How has unsupervised learning been used in the field of reinforcement learning?
+- [ ] Done
 
 ### Two Major Applications
 
@@ -742,6 +769,7 @@ Makes RL more scalable and sample-efficient for complex environments.
 ---
 
 ## Question 28: Discuss the challenges of interpretability in unsupervised learning models.
+- [ ] Done
 
 ### Core Challenge
 No ground truth → No way to verify if discovered patterns are "correct"
@@ -794,6 +822,7 @@ Interpretability requires **human-in-the-loop** analysis. Quantitative metrics a
 ---
 
 ## Question 29: How can you use unsupervised learning for cross-lingual or multilingual text analysis?
+- [ ] Done
 
 ### Core Approach: Multilingual Embeddings
 Create shared vector space where words/sentences from different languages with similar meanings are close together.
@@ -824,6 +853,7 @@ Create shared vector space where words/sentences from different languages with s
 ---
 
 ## Question 30: What is the role of unsupervised learning in Big Data analytics?
+- [ ] Done
 
 ### Answer
 

@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: How would you deal with class imbalance in a dataset for supervised anomaly detection?
+- [ ] Done
 
 ### Answer
 
@@ -162,6 +163,7 @@ def create_cost_sensitive_model(input_dim, pos_weight=10):
 ---
 
 ## Question 2: How would you approach anomaly detection in a network security context?
+- [ ] Done
 
 ### Answer
 
@@ -421,6 +423,7 @@ class RealTimeNetworkMonitor:
 ---
 
 ## Question 3: Propose a method for detecting fraud in credit card transactions
+- [ ] Done
 
 ### Answer
 
@@ -676,6 +679,7 @@ class RulesEngine:
 ---
 
 ## Question 4: Discuss how you would set up an anomaly detection system for monitoring industrial equipment
+- [ ] Done
 
 ### Answer
 
@@ -956,6 +960,7 @@ class VibrationAnalyzer:
 ---
 
 ## Question 5: Describe your approach to identifying bot behavior in web traffic data
+- [ ] Done
 
 ### Answer
 
@@ -1239,6 +1244,7 @@ class RealTimeBotScorer:
 ---
 
 ## Question 6: How would you detect anomalies in a multi-tenant cloud system's resource utilization?
+- [ ] Done
 
 ### Answer
 
@@ -1582,6 +1588,7 @@ class CloudAnomalyMonitor:
 ---
 
 ## Question 7: Discuss recent advances in deep learning for anomaly detection
+- [ ] Done
 
 ### Answer
 

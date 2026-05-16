@@ -1,6 +1,7 @@
 # Rnn Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the importance of activation functions in RNNs.**
 
@@ -61,6 +62,7 @@ Key point: tanh for hidden state computation (zero-centered, bounded), sigmoid f
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you preprocess text data for training an RNN?**
 
@@ -178,6 +180,7 @@ Always mention handling of OOV (out-of-vocabulary) words and the importance of s
 ---
 
 ## Question 3
+- [ ] Done
 
 **How would you use RNNs for a time-series forecasting task?**
 
@@ -310,6 +313,7 @@ Always emphasize chronological splitting (no data leakage from future) and the i
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss the implications of recent advancements in transformer architecture on the future uses of RNNs.**
 
@@ -398,6 +402,7 @@ Acknowledge Transformers' dominance while highlighting RNNs' advantages in strea
 ---
 
 ## Question 5
+- [ ] Done
 
 **How would you incorporate external memory mechanisms into RNNs?**
 

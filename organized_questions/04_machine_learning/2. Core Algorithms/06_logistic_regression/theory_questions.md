@@ -1,6 +1,7 @@
 # Logistic Regression Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is logistic regression and how does it differ from linear regression?**
 
@@ -41,6 +42,7 @@ Logistic Regression: $P(y=1) = \sigma(z) = \frac{1}{1 + e^{-z}}$ where $z = \bet
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you explain the concept of the logit function in logistic regression?**
 
@@ -72,6 +74,7 @@ $$\text{logit}(p) = \log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 x_1 + \be
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is the sigmoid function and why is it important in logistic regression?**
 
@@ -119,6 +122,7 @@ probabilities = sigmoid(z_values)
 ---
 
 ## Question 4
+- [ ] Done
 
 **What are the assumptions made by logistic regression models?**
 
@@ -158,6 +162,7 @@ Clearly distinguish "linearity of logit" from "linear relationship with outcome"
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does logistic regression perform feature selection?**
 
@@ -204,6 +209,7 @@ Mention that `solver='liblinear'` or `solver='saga'` is required for L1 penalty 
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain the concept of odds and odds ratio in the context of logistic regression.**
 
@@ -252,6 +258,7 @@ Always state "holding all other variables constant" when interpreting OR.
 ---
 
 ## Question 7
+- [ ] Done
 
 **Describe the maximum likelihood estimation as it applies to logistic regression.**
 
@@ -300,6 +307,7 @@ $$\log L(\beta) = \sum_{i=1}^{n} [y_i \log(p_i) + (1-y_i) \log(1-p_i)]$$
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain regularization in logistic regression. What are L1 and L2 penalties?**
 
@@ -354,6 +362,7 @@ C in sklearn is inverse of α: smaller C = stronger regularization.
 ---
 
 ## Question 9
+- [ ] Done
 
 **What are pseudo R-squared measures in logistic regression, and are they reliable?**
 
@@ -403,6 +412,7 @@ State that pseudo R² is useful for model comparison but classification metrics 
 ---
 
 ## Question 10
+- [ ] Done
 
 **Can you explain the concept of the link function in generalized linear models?**
 
@@ -446,6 +456,7 @@ $$g(\mu) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ...$$
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is a confusion matrix, and how do you interpret it?**
 
@@ -495,6 +506,7 @@ Discuss trade-off: In fraud detection, FN (missed fraud) is more costly than FP 
 ---
 
 ## Question 12
+- [ ] Done
 
 **What are some common classification metrics used to assess logistic regression?**
 
@@ -547,6 +559,7 @@ $$\text{Log Loss} = -\frac{1}{n}\sum[y\log(p) + (1-y)\log(1-p)]$$
 ---
 
 ## Question 13
+- [ ] Done
 
 **Describe methods for selecting a threshold for the logistic regression decision boundary.**
 
@@ -599,6 +612,7 @@ Always tie threshold selection to business context and cost of errors.
 ---
 
 ## Question 14
+- [ ] Done
 
 **What is the Hosmer-Lemeshow test, and how is it used?**
 
@@ -646,6 +660,7 @@ Distinguish between discrimination (can model rank?) and calibration (are probab
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain how feature engineering can impact logistic regression.**
 
@@ -701,6 +716,7 @@ Logistic regression is "linear in parameters" but can model non-linear patterns 
 ---
 
 ## Question 16
+- [ ] Done
 
 **How does one interpret logistic regression with a non-linear transformation of the dependent variable?**
 
@@ -742,6 +758,7 @@ Clarify the question first. This demonstrates understanding of fundamental diffe
 ---
 
 ## Question 17
+- [ ] Done
 
 **What are some best practices for data preprocessing before applying logistic regression?**
 
@@ -803,6 +820,7 @@ Always scale features before applying regularization - unscaled features get unf
 ---
 
 ## Question 18
+- [ ] Done
 
 **How does one ensure that a logistic regression model is scalable?**
 
@@ -853,6 +871,7 @@ Mention that SGD enables online learning where model updates continuously as new
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe how you would use logistic regression to build a recommender system for e-commerce.**
 
@@ -906,6 +925,7 @@ model.fit(X_train, y_train)
 ---
 
 ## Question 20
+- [ ] Done
 
 **What is the mathematical foundation of logistic regression and the maximum likelihood estimation?**
 
@@ -952,6 +972,7 @@ $$\ell(\beta) = \sum_{i=1}^{n} [y_i \log(p_i) + (1-y_i)\log(1-p_i)]$$
 ---
 
 ## Question 21
+- [ ] Done
 
 **How do you handle multiclass classification using logistic regression?**
 
@@ -1007,6 +1028,7 @@ Multinomial is preferred for mutually exclusive classes and produces better-cali
 ---
 
 ## Question 22
+- [ ] Done
 
 **What are one-vs-rest and one-vs-one strategies in multiclass logistic regression?**
 
@@ -1057,6 +1079,7 @@ OvR and OvO are meta-strategies that decompose multiclass problems into multiple
 ---
 
 ## Question 23
+- [ ] Done
 
 **How do you implement multinomial logistic regression and when is it preferred?**
 
@@ -1113,6 +1136,7 @@ Softmax is the "generalization of sigmoid to K classes" - sigmoid is softmax wit
 ---
 
 ## Question 24
+- [ ] Done
 
 **What is ordinal logistic regression and how does it handle ordered categories?**
 
@@ -1167,6 +1191,7 @@ Use ordinal regression when categories have clear ordering and you want to lever
 ---
 
 ## Question 25
+- [ ] Done
 
 **How do you handle class imbalance in logistic regression models?**
 
@@ -1226,6 +1251,7 @@ Always state metrics first - using accuracy on imbalanced data is a red flag in 
 ---
 
 ## Question 26
+- [ ] Done
 
 **What are the different optimization algorithms used for logistic regression?**
 
@@ -1282,6 +1308,7 @@ Know that lbfgs is default and liblinear/saga are needed for L1 penalty.
 ---
 
 ## Question 27
+- [ ] Done
 
 **How does gradient descent work specifically for logistic regression?**
 
@@ -1342,6 +1369,7 @@ def gradient_descent_logistic(X, y, lr=0.01, epochs=1000):
 ---
 
 ## Question 28
+- [ ] Done
 
 **What is the Newton-Raphson method and its application in logistic regression?**
 
@@ -1397,6 +1425,7 @@ Where W is diagonal matrix with $W_{ii} = p_i(1-p_i)$
 ---
 
 ## Question 29
+- [ ] Done
 
 **How do you implement regularization in logistic regression (L1, L2, Elastic Net)?**
 
@@ -1458,6 +1487,7 @@ Remember C is inverse of λ - smaller C means stronger regularization (counterin
 ---
 
 ## Question 30
+- [ ] Done
 
 **What is the effect of regularization on feature selection in logistic regression?**
 
@@ -1520,6 +1550,7 @@ L1 is preferred when you need interpretable models with fewer features; L2 when 
 ---
 
 ## Question 31
+- [ ] Done
 
 **How do you evaluate the performance of logistic regression models?**
 
@@ -1585,6 +1616,7 @@ logloss = log_loss(y_test, y_prob)
 ---
 
 ## Question 32
+- [ ] Done
 
 **What are precision, recall, F1-score, and ROC-AUC in logistic regression evaluation?**
 
@@ -1644,6 +1676,7 @@ auc = roc_auc_score(y_test, y_prob)
 ---
 
 ## Question 33
+- [ ] Done
 
 **How do you interpret and use confusion matrices for logistic regression?**
 
@@ -1701,6 +1734,7 @@ Always relate confusion matrix to business context - which error type is more co
 ---
 
 ## Question 34
+- [ ] Done
 
 **What is the ROC curve and how do you use it to evaluate model performance?**
 
@@ -1759,6 +1793,7 @@ RocCurveDisplay(fpr=fpr, tpr=tpr, roc_auc=auc).plot()
 ---
 
 ## Question 35
+- [ ] Done
 
 **How do you choose the optimal threshold for classification in logistic regression?**
 
@@ -1825,6 +1860,7 @@ Always connect threshold choice to business problem and error costs.
 ---
 
 ## Question 36
+- [ ] Done
 
 **What is the precision-recall curve and when is it preferred over ROC?**
 
@@ -1884,6 +1920,7 @@ PrecisionRecallDisplay(precision=precision, recall=recall).plot()
 ---
 
 ## Question 37
+- [ ] Done
 
 **How do you handle categorical features and dummy variables in logistic regression?**
 
@@ -1951,6 +1988,7 @@ Always mention dropping one category and explain the dummy variable trap.
 ---
 
 ## Question 38
+- [ ] Done
 
 **What are interaction terms and how do you implement them in logistic regression?**
 
@@ -2014,6 +2052,7 @@ Interactions allow linear models to capture non-additive relationships between f
 ---
 
 ## Question 39
+- [ ] Done
 
 **How do you detect and handle multicollinearity in logistic regression?**
 
@@ -2081,6 +2120,7 @@ VIF > 5-10 is concerning. Ridge regression is robust to multicollinearity.
 ---
 
 ## Question 40
+- [ ] Done
 
 **What are the assumptions of logistic regression and how do you validate them?**
 
@@ -2145,6 +2185,7 @@ for i in range(X.shape[1]):
 ---
 
 ## Question 41
+- [ ] Done
 
 **How do you handle outliers and influential observations in logistic regression?**
 
@@ -2206,6 +2247,7 @@ Distinguish between outliers (unusual X values) and influential points (observat
 ---
 
 ## Question 42
+- [ ] Done
 
 **What is model diagnostics and residual analysis for logistic regression?**
 
@@ -2267,6 +2309,7 @@ from statsmodels.graphics.regressionplots import plot_partregress_grid
 ---
 
 ## Question 43
+- [ ] Done
 
 **How do you perform feature selection in logistic regression models?**
 
@@ -2339,6 +2382,7 @@ selected = X.columns[model.coef_[0] != 0]
 ---
 
 ## Question 44
+- [ ] Done
 
 **What are forward selection, backward elimination in logistic regression?**
 
@@ -2417,6 +2461,7 @@ def backward_elimination(X, y, threshold=0.05):
 ---
 
 ## Question 45
+- [ ] Done
 
 **How do you handle missing values in logistic regression datasets?**
 
@@ -2497,6 +2542,7 @@ preprocessor = ColumnTransformer([
 ---
 
 ## Question 46
+- [ ] Done
 
 **What is cross-validation and its application in logistic regression?**
 
@@ -2570,6 +2616,7 @@ Always use stratified K-fold for classification to maintain class proportions.
 ---
 
 ## Question 47
+- [ ] Done
 
 **How do you implement stratified sampling for logistic regression?**
 
@@ -2638,6 +2685,7 @@ Sklearn's `cross_val_score` uses stratified K-fold by default for classifiers, b
 ---
 
 ## Question 48
+- [ ] Done
 
 **What are confidence intervals and their interpretation in logistic regression?**
 
@@ -2696,6 +2744,7 @@ ci_upper = np.exp(conf_int[1])
 ---
 
 ## Question 49
+- [ ] Done
 
 **How do you perform hypothesis testing for logistic regression coefficients?**
 
@@ -2756,6 +2805,7 @@ Wald test is quick (from single model fit), but LRT is more reliable for small s
 ---
 
 ## Question 50
+- [ ] Done
 
 **What is the Wald test and likelihood ratio test in logistic regression?**
 
@@ -2823,6 +2873,7 @@ print(full_model.summary())  # Includes Wald z-scores and p-values
 ---
 
 ## Question 51
+- [ ] Done
 
 **How do you handle non-linear relationships in logistic regression?**
 
@@ -2892,6 +2943,7 @@ The model remains "linear in parameters" even with transformed features - the no
 ---
 
 ## Question 52
+- [ ] Done
 
 **What are polynomial features and spline transformations in logistic regression?**
 
@@ -2969,6 +3021,7 @@ Splines are preferred over high-degree polynomials due to better boundary behavi
 ---
 
 ## Question 53
+- [ ] Done
 
 **How do you implement logistic regression for time-series and sequential data?**
 
@@ -3035,6 +3088,7 @@ df['is_weekend'] = df['day_of_week'].isin([5, 6]).astype(int)
 ---
 
 ## Question 54
+- [ ] Done
 
 **What is the difference between discriminative and generative models in classification?**
 
@@ -3091,6 +3145,7 @@ $$P(Y|X) = \frac{P(X|Y)P(Y)}{P(X)}$$
 ---
 
 ## Question 55
+- [ ] Done
 
 **How does logistic regression compare to other classification algorithms?**
 
@@ -3150,6 +3205,7 @@ Start with logistic regression as baseline - if it works well, you may not need 
 ---
 
 ## Question 56
+- [ ] Done
 
 **What are the computational complexity considerations for logistic regression?**
 
@@ -3211,6 +3267,7 @@ Newton's method converges in fewer iterations but each iteration is O(p³) due t
 ---
 
 ## Question 57
+- [ ] Done
 
 **How do you implement distributed and parallel logistic regression?**
 
@@ -3286,6 +3343,7 @@ model.fit(X_dask, y_dask)
 ---
 
 ## Question 58
+- [ ] Done
 
 **What is online learning and incremental logistic regression?**
 
@@ -3354,6 +3412,7 @@ Online learning enables models to learn continuously without storing all histori
 ---
 
 ## Question 59
+- [ ] Done
 
 **How do you handle streaming data with logistic regression models?**
 
@@ -3436,6 +3495,7 @@ for x, y in stream:
 ---
 
 ## Question 60
+- [ ] Done
 
 **What are ensemble methods and their application with logistic regression?**
 
@@ -3515,6 +3575,7 @@ Logistic regression excels as a meta-learner in stacking because it efficiently 
 ---
 
 ## Question 61
+- [ ] Done
 
 **How do you implement bagging and boosting with logistic regression?**
 
@@ -3587,6 +3648,7 @@ LR is a stable, low-variance learner, so bagging has limited benefit. Boosting i
 ---
 
 ## Question 62
+- [ ] Done
 
 **What is calibration in logistic regression and why is it important?**
 
@@ -3654,6 +3716,7 @@ Logistic regression optimizes log loss, which encourages calibration, making it 
 ---
 
 ## Question 63
+- [ ] Done
 
 **How do you implement Platt scaling and isotonic regression for calibration?**
 
@@ -3729,6 +3792,7 @@ For logistic regression, calibration is usually unnecessary. Use these methods f
 ---
 
 ## Question 64
+- [ ] Done
 
 **What are the interpretability aspects of logistic regression models?**
 
@@ -3806,6 +3870,7 @@ Always mention that coefficients should be interpreted "holding all other variab
 ---
 
 ## Question 65
+- [ ] Done
 
 **How do you explain feature importance and coefficients in logistic regression?**
 
@@ -3877,6 +3942,7 @@ ax.set_title('Feature Importance in Logistic Regression')
 ---
 
 ## Question 66
+- [ ] Done
 
 **What is SHAP and LIME for explaining logistic regression predictions?**
 
@@ -3957,6 +4023,7 @@ For logistic regression without interactions, SHAP values are proportional to co
 ---
 
 ## Question 67
+- [ ] Done
 
 **How do you handle high-dimensional data in logistic regression?**
 
@@ -4029,6 +4096,7 @@ When p >> n, strong regularization is essential - otherwise the problem is under
 ---
 
 ## Question 68
+- [ ] Done
 
 **What are sparse logistic regression and coordinate descent optimization?**
 
@@ -4087,6 +4155,7 @@ Coordinate descent is the algorithm of choice for L1-regularized logistic regres
 ---
 
 ## Question 69
+- [ ] Done
 
 **How do you implement logistic regression for text classification and NLP?**
 
@@ -4151,6 +4220,7 @@ Logistic regression remains competitive for text classification because TF-IDF f
 ---
 
 ## Question 70
+- [ ] Done
 
 **What are the considerations for logistic regression in recommender systems?**
 
@@ -4211,6 +4281,7 @@ In production recommender systems, logistic regression is often the first model 
 ---
 
 ## Question 71
+- [ ] Done
 
 **How do you handle fraud detection using logistic regression?**
 
@@ -4276,6 +4347,7 @@ In fraud detection, interpretability is crucial for analysts and regulatory comp
 ---
 
 ## Question 72
+- [ ] Done
 
 **What are the challenges of logistic regression in medical diagnosis applications?**
 
@@ -4340,6 +4412,7 @@ In medical applications, calibration is critical - a predicted 70% disease proba
 ---
 
 ## Question 73
+- [ ] Done
 
 **How do you implement logistic regression for A/B testing and conversion optimization?**
 
@@ -4406,6 +4479,7 @@ Using logistic regression instead of simple chi-squared tests in A/B testing all
 ---
 
 ## Question 74
+- [ ] Done
 
 **What is survival analysis and its relationship to logistic regression?**
 
@@ -4455,6 +4529,7 @@ Discrete-time survival models use logistic regression - each person contributes 
 ---
 
 ## Question 75
+- [ ] Done
 
 **How do you handle censored data and time-to-event modeling?**
 
@@ -4519,6 +4594,7 @@ Ignoring censoring leads to biased estimates. If you must use logistic regressio
 ---
 
 ## Question 76
+- [ ] Done
 
 **What are mixed-effects logistic regression models?**
 
@@ -4581,6 +4657,7 @@ Mixed-effects models account for correlation within clusters. Ignoring clusterin
 ---
 
 ## Question 77
+- [ ] Done
 
 **How do you implement hierarchical and nested data structures in logistic regression?**
 
@@ -4649,6 +4726,7 @@ ICC measures clustering strength. If ICC > 0.05, ignoring hierarchy will give in
 ---
 
 ## Question 78
+- [ ] Done
 
 **What is Bayesian logistic regression and its advantages?**
 
@@ -4720,6 +4798,7 @@ Bayesian logistic regression is especially valuable when you need prediction int
 ---
 
 ## Question 79
+- [ ] Done
 
 **How do you handle uncertainty quantification in logistic regression?**
 
@@ -4789,6 +4868,7 @@ Point predictions without uncertainty can be misleading. Always provide confiden
 ---
 
 ## Question 80
+- [ ] Done
 
 **What are the considerations for logistic regression model deployment?**
 
@@ -4862,6 +4942,7 @@ Logistic regression is one of the easiest models to deploy due to its simplicity
 ---
 
 ## Question 81
+- [ ] Done
 
 **How do you monitor and maintain logistic regression models in production?**
 
@@ -4936,6 +5017,7 @@ Monitor both model metrics (AUC, F1) and data metrics (feature drift). Data issu
 ---
 
 ## Question 82
+- [ ] Done
 
 **What is model drift detection and retraining strategies for logistic regression?**
 
@@ -5015,6 +5097,7 @@ Sliding window retraining works well for gradual concept drift. For sudden drift
 ---
 
 ## Question 83
+- [ ] Done
 
 **How do you handle real-time scoring and low-latency predictions?**
 
@@ -5089,6 +5172,7 @@ For logistic regression, the model inference is rarely the bottleneck. Focus opt
 ---
 
 ## Question 84
+- [ ] Done
 
 **What are the privacy and security considerations in logistic regression?**
 
@@ -5147,6 +5231,7 @@ In healthcare and finance, model coefficients themselves can leak sensitive popu
 ---
 
 ## Question 85
+- [ ] Done
 
 **How do you implement differential privacy in logistic regression models?**
 
@@ -5217,6 +5302,7 @@ Differential privacy is required by regulations like GDPR for certain applicatio
 ---
 
 ## Question 86
+- [ ] Done
 
 **What is federated learning and its application to logistic regression?**
 
@@ -5304,6 +5390,7 @@ Federated learning enables training on sensitive distributed data. Logistic regr
 ---
 
 ## Question 87
+- [ ] Done
 
 **How do you handle fairness and bias in logistic regression models?**
 
@@ -5391,6 +5478,7 @@ There's no single "fair" solution - different fairness metrics can conflict. The
 ---
 
 ## Question 88
+- [ ] Done
 
 **What are adversarial attacks and robustness in logistic regression?**
 
@@ -5484,6 +5572,7 @@ Linear models are more interpretable and their attack vectors are well-understoo
 ---
 
 ## Question 89
+- [ ] Done
 
 **How do you implement transfer learning with logistic regression?**
 
@@ -5563,6 +5652,7 @@ Transfer learning for logistic regression is simpler than for neural networks - 
 ---
 
 ## Question 90
+- [ ] Done
 
 **What is domain adaptation for logistic regression across different datasets?**
 
@@ -5640,6 +5730,7 @@ Importance weighting is the simplest domain adaptation for logistic regression. 
 ---
 
 ## Question 91
+- [ ] Done
 
 **How do you implement multi-task learning with shared logistic regression components?**
 
@@ -5726,6 +5817,7 @@ Multi-task learning helps when tasks are related but have limited individual dat
 ---
 
 ## Question 92
+- [ ] Done
 
 **What are the emerging trends in deep logistic regression and neural approaches?**
 
@@ -5805,6 +5897,7 @@ Deep logistic regression maintains the calibrated probability output while learn
 ---
 
 ## Question 93
+- [ ] Done
 
 **How do you combine logistic regression with deep learning architectures?**
 
@@ -5888,6 +5981,7 @@ The key benefit of combining is getting neural network's feature learning with l
 ---
 
 ## Question 94
+- [ ] Done
 
 **What is the role of logistic regression in modern machine learning pipelines?**
 
@@ -5965,6 +6059,7 @@ Always benchmark against logistic regression. If complex models only marginally 
 ---
 
 ## Question 95
+- [ ] Done
 
 **How do you implement automated feature engineering for logistic regression?**
 
@@ -6052,6 +6147,7 @@ AutoFE for logistic regression typically involves generating polynomial/interact
 ---
 
 ## Question 96
+- [ ] Done
 
 **What are the considerations for logistic regression in edge computing and IoT?**
 
@@ -6133,6 +6229,7 @@ Logistic regression is often the best choice for edge/IoT due to its minimal com
 ---
 
 ## Question 97
+- [ ] Done
 
 **How do you handle concept drift and non-stationary data in logistic regression?**
 
@@ -6233,6 +6330,7 @@ Sliding window retraining is simple and effective for gradual drift. For sudden 
 ---
 
 ## Question 98
+- [ ] Done
 
 **What are the research directions and future developments in logistic regression?**
 
@@ -6310,6 +6408,7 @@ Logistic regression remains relevant because of interpretability requirements in
 ---
 
 ## Question 99
+- [ ] Done
 
 **How do you implement logistic regression for multi-modal and heterogeneous data?**
 
@@ -6404,6 +6503,7 @@ For multi-modal data with logistic regression, the key is feature extraction fro
 ---
 
 ## Question 100
+- [ ] Done
 
 **What are the best practices for end-to-end logistic regression project implementation?**
 
@@ -6532,6 +6632,7 @@ An end-to-end project demonstrates not just modeling skills but engineering prac
 ---
 
 ## Question 101
+- [ ] Done
 
 **Discuss the probability interpretations of logistic regression outputs.**
 
@@ -6588,6 +6689,7 @@ Unlike many classifiers, logistic regression outputs true probabilities, not jus
 ---
 
 ## Question 102
+- [ ] Done
 
 **Discuss the consequences of multicollinearity in logistic regression.**
 
@@ -6646,6 +6748,7 @@ If goal is prediction, multicollinearity isn't a problem. If goal is coefficient
 ---
 
 ## Question 103
+- [ ] Done
 
 **How would you assess the goodness-of-fit of a logistic regression model?**
 
@@ -6727,6 +6830,7 @@ No single metric tells the whole story. Use AIC/BIC for model comparison, pseudo
 ---
 
 ## Question 104
+- [ ] Done
 
 **Discuss the ROC curve and the AUC metric in the context of logistic regression.**
 
@@ -6816,6 +6920,7 @@ AUC is threshold-invariant but can be misleading with severe class imbalance. Fo
 ---
 
 ## Question 105
+- [ ] Done
 
 **How would you approach diagnosing and addressing overfitting in a logistic regression model?**
 
@@ -6896,6 +7001,7 @@ Logistic regression is a low-variance model and rarely overfits severely. If you
 ---
 
 ## Question 106
+- [ ] Done
 
 **Discuss the use of polynomial and interaction terms in logistic regression.**
 
@@ -6975,6 +7081,7 @@ Always pair polynomial features with strong regularization (low C). Use `interac
 ---
 
 ## Question 107
+- [ ] Done
 
 **Discuss the implications of missing data on logistic regression models.**
 

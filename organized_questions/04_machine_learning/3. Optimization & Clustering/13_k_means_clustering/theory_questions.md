@@ -1,6 +1,7 @@
 # K Means Clustering Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is K-Means Clustering, and why is it used?**
 
@@ -39,6 +40,7 @@ Think of K-Means as finding K "representative points" (centroids) such that ever
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you explain the difference between supervised and unsupervised learning with examples of where K-Means Clustering fits in?**
 
@@ -72,6 +74,7 @@ Supervised learning uses labeled data to learn a mapping from inputs to outputs 
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are centroids in the context of K-Means?**
 
@@ -104,6 +107,7 @@ Centroids partition the space into Voronoi cells — each cell contains all poin
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe the algorithmic steps of the K-Means clustering method.**
 
@@ -152,6 +156,7 @@ Update: $\mu_j = \frac{1}{|C_j|} \sum_{i \in C_j} x^{(i)}$
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is the role of distance metrics in K-Means, and which distances can be used?**
 
@@ -186,6 +191,7 @@ Standard K-Means uses Euclidean distance. For Cosine distance, use Spherical K-M
 ---
 
 ## Question 6
+- [ ] Done
 
 **What are some methods for initializing the centroids in K-Means Clustering?**
 
@@ -227,6 +233,7 @@ Always mention K-Means++ when asked about initialization. Also mention `n_init` 
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain the term 'cluster inertia' or 'within-cluster sum-of-squares'.**
 
@@ -269,6 +276,7 @@ print(kmeans.inertia_)  # Access inertia
 ---
 
 ## Question 8
+- [ ] Done
 
 **What are some limitations of K-Means Clustering?**
 
@@ -304,6 +312,7 @@ When asked limitations, always pair with alternatives: "K-Means fails on non-sph
 ---
 
 ## Question 9
+- [ ] Done
 
 **How does K-Means Clustering react to non-spherical cluster shapes?**
 
@@ -344,6 +353,7 @@ Classic interview question: "What happens if you run K-Means on two interlocking
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain the significance of the Elbow Method in K-Means Clustering.**
 
@@ -399,6 +409,7 @@ Elbow Method gives a starting point, not definitive answer. Always mention using
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is the curse of dimensionality, and how does it affect K-Means Clustering?**
 
@@ -441,6 +452,7 @@ All points become equidistant from each other!
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe the silhouette coefficient and how it is used with K-Means Clustering.**
 
@@ -488,6 +500,7 @@ score = silhouette_score(X, labels)  # Higher is better
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain mini-batch K-Means. How does it differ from the standard K-Means?**
 
@@ -535,6 +548,7 @@ mbk.fit(X)
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe the latest research findings on K-Means clustering and its variants for big data applications.**
 
@@ -575,6 +589,7 @@ Recent research focuses on scalability, initialization, and handling non-Euclide
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is the computational complexity of K-Means clustering algorithm?**
 
@@ -614,6 +629,7 @@ K-Means has time complexity of **O(n × K × d × i)** where n=number of points,
 ---
 
 ## Question 16
+- [ ] Done
 
 **How does the choice of K value affect clustering performance and what methods exist for selecting optimal K?**
 
@@ -656,6 +672,7 @@ Use multiple methods + domain knowledge. If Elbow suggests 4, Silhouette suggest
 ---
 
 ## Question 17
+- [ ] Done
 
 **What is the elbow method and how is it used to determine the optimal number of clusters?**
 
@@ -700,6 +717,7 @@ plt.show()
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain the silhouette score and its role in evaluating clustering quality.**
 
@@ -738,6 +756,7 @@ optimal_k = range(2, 11)[scores.index(max(scores))]
 ---
 
 ## Question 19
+- [ ] Done
 
 **What are the limitations of K-Means clustering and when might it fail?**
 
@@ -770,6 +789,7 @@ K-Means fails when: (1) K is unknown/chosen poorly, (2) clusters are non-spheric
 ---
 
 ## Question 20
+- [ ] Done
 
 **How does K-Means handle categorical data and what preprocessing is required?**
 
@@ -819,6 +839,7 @@ clusters = kp.fit_predict(mixed_data, categorical=[1,2])  # indices of categoric
 ---
 
 ## Question 21
+- [ ] Done
 
 **What is K-Means++ initialization and how does it improve upon random initialization?**
 
@@ -858,6 +879,7 @@ kmeans = KMeans(n_clusters=3, init='random')     # old random
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain the concept of inertia in K-Means clustering and its significance.**
 
@@ -893,6 +915,7 @@ Don't compare inertia across different K values directly. K=10 will always have 
 ---
 
 ## Question 23
+- [ ] Done
 
 **How do you handle outliers in K-Means clustering?**
 
@@ -941,6 +964,7 @@ outliers = X[distances > threshold]
 ---
 
 ## Question 24
+- [ ] Done
 
 **What is the difference between hard and soft clustering approaches?**
 
@@ -976,6 +1000,7 @@ Hard clustering says "you belong HERE." Soft clustering says "you're 70% this, 2
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain Fuzzy C-Means clustering and how it relates to K-Means.**
 
@@ -1013,6 +1038,7 @@ cntr, u, _, _, _, _, _ = fuzz.cluster.cmeans(
 ---
 
 ## Question 26
+- [ ] Done
 
 **What is mini-batch K-Means and when is it preferred over standard K-Means?**
 
@@ -1059,6 +1085,7 @@ mbkm.fit(X_large)
 ---
 
 ## Question 27
+- [ ] Done
 
 **How do you evaluate and compare different clustering algorithms?**
 
@@ -1107,6 +1134,7 @@ print(f"ARI: {adjusted_rand_score(true_labels, labels)}")
 ---
 
 ## Question 28
+- [ ] Done
 
 **What is the curse of dimensionality and how does it affect K-Means clustering?**
 
@@ -1146,6 +1174,7 @@ $$\frac{\text{max distance} - \text{min distance}}{\text{min distance}} \rightar
 ---
 
 ## Question 29
+- [ ] Done
 
 **Explain the concept of cluster validity indices and their applications.**
 
@@ -1186,6 +1215,7 @@ db = davies_bouldin_score(X, labels)  # Lower better
 ---
 
 ## Question 30
+- [ ] Done
 
 **How does K-Means clustering work with different distance metrics (Manhattan, Cosine, etc.)?**
 
@@ -1232,6 +1262,7 @@ kmedoids.fit(X)
 ---
 
 ## Question 31
+- [ ] Done
 
 **What is hierarchical clustering and how does it compare to K-Means?**
 
@@ -1267,6 +1298,7 @@ Hierarchical clustering builds a tree (dendrogram) of clusters by either merging
 ---
 
 ## Question 32
+- [ ] Done
 
 **Explain DBSCAN clustering and its advantages over K-Means for certain datasets.**
 
@@ -1306,6 +1338,7 @@ labels = dbscan.fit_predict(X)
 ---
 
 ## Question 33
+- [ ] Done
 
 **What is expectation-maximization (EM) clustering and its relationship to K-Means?**
 
@@ -1350,6 +1383,7 @@ probs = gmm.predict_proba(X)  # Soft assignments
 ---
 
 ## Question 34
+- [ ] Done
 
 **How do you handle high-dimensional data in K-Means clustering?**
 
@@ -1398,6 +1432,7 @@ kmeans.fit(X_norm)
 ---
 
 ## Question 35
+- [ ] Done
 
 **What is feature scaling and why is it important for K-Means clustering?**
 
@@ -1443,6 +1478,7 @@ ALWAYS scale before K-Means (unless all features already same scale).
 ---
 
 ## Question 36
+- [ ] Done
 
 **Explain the concept of cluster stability and how to assess it.**
 
@@ -1493,6 +1529,7 @@ Choose K with highest stability across methods.
 ---
 
 ## Question 37
+- [ ] Done
 
 **How do you implement K-Means clustering from scratch?**
 
@@ -1546,6 +1583,7 @@ labels, centroids = kmeans(X, k=3)
 ---
 
 ## Question 38
+- [ ] Done
 
 **What are the convergence criteria for K-Means algorithm?**
 
@@ -1594,6 +1632,7 @@ print(f"Inertia: {kmeans.inertia_}")
 ---
 
 ## Question 39
+- [ ] Done
 
 **How do you handle missing values in datasets before applying K-Means?**
 
@@ -1635,6 +1674,7 @@ pipeline.fit(X_with_missing)
 ---
 
 ## Question 40
+- [ ] Done
 
 **What is the role of random seed in K-Means clustering and reproducibility?**
 
@@ -1681,6 +1721,7 @@ km4 = KMeans(n_clusters=3).fit(X)
 ---
 
 ## Question 41
+- [ ] Done
 
 **Explain parallel and distributed implementations of K-Means clustering.**
 
@@ -1735,6 +1776,7 @@ kmeans.fit(X_gpu)
 ---
 
 ## Question 42
+- [ ] Done
 
 **How do you visualize clustering results and interpret cluster characteristics?**
 
@@ -1793,6 +1835,7 @@ print(cluster_profile)
 ---
 
 ## Question 43
+- [ ] Done
 
 **What is streaming K-Means and how does it handle continuous data?**
 
@@ -1840,6 +1883,7 @@ predictions = model.predictOn(test_stream)
 ---
 
 ## Question 44
+- [ ] Done
 
 **Explain the concept of cluster purification and quality assessment.**
 
@@ -1884,6 +1928,7 @@ purity = purity_score(true_labels, cluster_labels)
 ---
 
 ## Question 45
+- [ ] Done
 
 **What are the applications of K-Means in image segmentation and computer vision?**
 
@@ -1935,6 +1980,7 @@ segmented = segmented.reshape(img.shape).astype(np.uint8)
 ---
 
 ## Question 46
+- [ ] Done
 
 **How is K-Means used in data compression and vector quantization?**
 
@@ -1983,6 +2029,7 @@ reconstructed = codebook[indices]
 ---
 
 ## Question 47
+- [ ] Done
 
 **Explain the use of K-Means in customer segmentation for marketing analytics.**
 
@@ -2002,6 +2049,7 @@ K-Means segments customers by behavioral/demographic features into actionable gr
 ---
 
 ## Question 48
+- [ ] Done
 
 **What are the applications of K-Means in anomaly detection systems?**
 
@@ -2016,6 +2064,7 @@ K-Means detects anomalies as points far from all cluster centroids. Approach: cl
 ---
 
 ## Question 49
+- [ ] Done
 
 **How do you use K-Means for preprocessing in supervised learning tasks?**
 
@@ -2033,6 +2082,7 @@ X_enhanced = np.hstack([X_train, distances])
 ---
 
 ## Question 50
+- [ ] Done
 
 **Explain the role of K-Means in feature learning and representation.**
 
@@ -2045,6 +2095,7 @@ K-Means learns a "codebook" of representative patterns. Each data point is encod
 ---
 
 ## Question 51
+- [ ] Done
 
 **What are the applications of K-Means in natural language processing?**
 
@@ -2061,6 +2112,7 @@ NLP applications:
 ---
 
 ## Question 52
+- [ ] Done
 
 **How is K-Means used in recommender systems and collaborative filtering?**
 
@@ -2076,6 +2128,7 @@ K-Means enables cluster-based collaborative filtering:
 ---
 
 ## Question 53
+- [ ] Done
 
 **Explain the use of K-Means in bioinformatics and genomics analysis.**
 
@@ -2091,6 +2144,7 @@ Bioinformatics applications:
 ---
 
 ## Question 54
+- [ ] Done
 
 **What are the applications of K-Means in financial modeling and risk assessment?**
 
@@ -2107,6 +2161,7 @@ Finance applications:
 ---
 
 ## Question 55
+- [ ] Done
 
 **Describe the K-Means objective function.**
 
@@ -2123,6 +2178,7 @@ K-Means alternates between optimizing assignments (r) and centroids (μ).
 ---
 
 ## Question 56
+- [ ] Done
 
 **Explain Lloyd's algorithm steps.**
 
@@ -2139,6 +2195,7 @@ This is the algorithm we call "K-Means." All variants build on this foundation.
 ---
 
 ## Question 57
+- [ ] Done
 
 **Discuss initialization strategies (random, k-means++, etc.).**
 
@@ -2156,6 +2213,7 @@ This is the algorithm we call "K-Means." All variants build on this foundation.
 ---
 
 ## Question 58
+- [ ] Done
 
 **Why can poor initialization hurt convergence?**
 
@@ -2171,6 +2229,7 @@ K-Means is greedy — it finds LOCAL minimum, not global. Poor initialization (c
 ---
 
 ## Question 59
+- [ ] Done
 
 **Explain inertia (within-cluster sum of squares).**
 
@@ -2187,6 +2246,7 @@ $$\text{Inertia} = \sum_{i=1}^{n} ||x_i - \mu_{c_i}||^2$$
 ---
 
 ## Question 60
+- [ ] Done
 
 **Discuss time complexity of one K-Means iteration.**
 
@@ -2202,6 +2262,7 @@ Assignment dominates (compute all n×K distances). Update is O(n×d). Total with
 ---
 
 ## Question 61
+- [ ] Done
 
 **Explain how to choose K using the elbow method.**
 
@@ -2217,6 +2278,7 @@ Assignment dominates (compute all n×K distances). Update is O(n×d). Total with
 ---
 
 ## Question 62
+- [ ] Done
 
 **Describe silhouette score for cluster validity.**
 
@@ -2232,6 +2294,7 @@ $$s(i) = \frac{b(i) - a(i)}{\max(a(i), b(i))}$$
 ---
 
 ## Question 63
+- [ ] Done
 
 **Explain limitations of K-Means with non-spherical clusters.**
 
@@ -2244,6 +2307,7 @@ K-Means uses Euclidean distance which is isotropic (direction-agnostic). It natu
 ---
 
 ## Question 64
+- [ ] Done
 
 **Discuss scaling sensitivity of K-Means.**
 
@@ -2256,6 +2320,7 @@ K-Means uses Euclidean distance. Features with larger scales dominate distance c
 ---
 
 ## Question 65
+- [ ] Done
 
 **Explain how to accelerate K-Means with KD-trees.**
 
@@ -2268,6 +2333,7 @@ KD-trees speed up nearest centroid search from O(K) to O(log K). Build a tree on
 ---
 
 ## Question 66
+- [ ] Done
 
 **Describe mini-batch K-Means and its trade-offs.**
 
@@ -2286,6 +2352,7 @@ Use for n > 100K or memory constraints.
 ---
 
 ## Question 67
+- [ ] Done
 
 **Explain empty cluster problem and remedies.**
 
@@ -2301,6 +2368,7 @@ K-Means++ initialization reduces empty cluster likelihood.
 ---
 
 ## Question 68
+- [ ] Done
 
 **Discuss cluster labeling instability across runs.**
 
@@ -2314,6 +2382,7 @@ Cluster labels (0, 1, 2...) are arbitrary — Cluster 0 in run 1 might be Cluste
 ---
 
 ## Question 69
+- [ ] Done
 
 **Explain relation of K-Means to Gaussian Mixture Models.**
 
@@ -2328,6 +2397,7 @@ GMM is more flexible (elliptical clusters, soft assignments) but slower. K-Means
 ---
 
 ## Question 70
+- [ ] Done
 
 **Describe Hartigan-Wong vs Lloyd algorithms.**
 
@@ -2345,6 +2415,7 @@ Scikit-learn uses Lloyd. R's kmeans uses Hartigan-Wong.
 ---
 
 ## Question 71
+- [ ] Done
 
 **Explain K-Means on categorical data (K-Modes).**
 
@@ -2376,6 +2447,7 @@ print(km.cluster_centroids_)  # Mode of each cluster
 ---
 
 ## Question 72
+- [ ] Done
 
 **Discuss convergence criteria and tolerance.**
 
@@ -2414,6 +2486,7 @@ kmeans = KMeans(
 ---
 
 ## Question 73
+- [ ] Done
 
 **Explain standardized vs raw feature space impact.**
 
@@ -2451,6 +2524,7 @@ kmeans.fit(X_scaled)
 ---
 
 ## Question 74
+- [ ] Done
 
 **Describe handling outliers in K-Means.**
 
@@ -2489,6 +2563,7 @@ outliers = distances > threshold
 ---
 
 ## Question 75
+- [ ] Done
 
 **Compare K-Means++ vs random initialization.**
 
@@ -2525,6 +2600,7 @@ kmeans_rand = KMeans(n_clusters=3, init='random')
 ---
 
 ## Question 76
+- [ ] Done
 
 **Discuss using PCA before K-Means.**
 
@@ -2566,6 +2642,7 @@ kmeans.fit(X_pca)
 ---
 
 ## Question 77
+- [ ] Done
 
 **Explain vector quantization analogy.**
 
@@ -2604,6 +2681,7 @@ compressed = kmeans.cluster_centers_[kmeans.labels_]
 ---
 
 ## Question 78
+- [ ] Done
 
 **Describe soft K-Means (fuzzy c-means).**
 
@@ -2641,6 +2719,7 @@ cntr, u, _, _, _, _, _ = fuzz.cluster.cmeans(
 ---
 
 ## Question 79
+- [ ] Done
 
 **Explain using Davies–Bouldin index for K selection.**
 
@@ -2679,6 +2758,7 @@ best_k = range(2, 11)[np.argmin(db_scores)]
 ---
 
 ## Question 80
+- [ ] Done
 
 **Discuss MapReduce implementation of K-Means.**
 
@@ -2724,6 +2804,7 @@ model = kmeans.fit(df)
 ---
 
 ## Question 81
+- [ ] Done
 
 **Explain streaming K-Means algorithm.**
 
@@ -2766,6 +2847,7 @@ for chunk in data_stream:
 ---
 
 ## Question 82
+- [ ] Done
 
 **Describe relationship with EM algorithm for mixture models.**
 
@@ -2809,6 +2891,7 @@ labels = kmeans.fit_predict(X)  # Returns labels
 ---
 
 ## Question 83
+- [ ] Done
 
 **Explain global vs local minima in K-Means objective.**
 
@@ -2852,6 +2935,7 @@ kmeans = KMeans(
 ---
 
 ## Question 84
+- [ ] Done
 
 **Discuss spectral clustering vs K-Means.**
 
@@ -2893,6 +2977,7 @@ spectral = SpectralClustering(n_clusters=2).fit_predict(X)
 ---
 
 ## Question 85
+- [ ] Done
 
 **Explain parallelization strategies for K-Means on GPU.**
 
@@ -2938,6 +3023,7 @@ def kmeans_gpu(X, K, max_iter=100):
 ---
 
 ## Question 86
+- [ ] Done
 
 **Describe distributed K-Means in Spark MLlib.**
 
@@ -2987,6 +3073,7 @@ centers = model.clusterCenters()
 ---
 
 ## Question 87
+- [ ] Done
 
 **Explain how to cluster high-dimensional sparse text vectors.**
 
@@ -3034,6 +3121,7 @@ kmeans.fit(X)  # Can use sparse TF-IDF directly
 ---
 
 ## Question 88
+- [ ] Done
 
 **Discuss batch size impact in mini-batch K-Means.**
 
@@ -3075,6 +3163,7 @@ for bs in batch_sizes:
 ---
 
 ## Question 89
+- [ ] Done
 
 **Explain initialization seeding impact on runtime.**
 
@@ -3116,6 +3205,7 @@ print(f"Random: {km_rand.n_iter_} iters, {time.time()-start:.3f}s")
 ---
 
 ## Question 90
+- [ ] Done
 
 **Describe algorithm to merge clusters post K-Means.**
 
@@ -3156,6 +3246,7 @@ final_labels = meta_labels[labels]
 ---
 
 ## Question 91
+- [ ] Done
 
 **Explain cluster silhouette visualization.**
 
@@ -3201,6 +3292,7 @@ def plot_silhouette(X, labels, n_clusters):
 ---
 
 ## Question 92
+- [ ] Done
 
 **Discuss reproducibility with random state seeds.**
 
@@ -3243,6 +3335,7 @@ kmeans_random = KMeans(n_clusters=3, random_state=None)
 ---
 
 ## Question 93
+- [ ] Done
 
 **Explain using K-Means in anomaly detection contexts.**
 
@@ -3285,6 +3378,7 @@ anomalies = X_test[distances > threshold]
 ---
 
 ## Question 94
+- [ ] Done
 
 **Describe evaluation of cluster stability with bootstrapping.**
 
@@ -3333,6 +3427,7 @@ print(f"Stability: {stability:.3f} ± {std:.3f}")
 ---
 
 ## Question 95
+- [ ] Done
 
 **Explain bisecting K-Means hierarchical extension.**
 
@@ -3376,6 +3471,7 @@ print(f"Centroids: {bkmeans.cluster_centers_}")
 ---
 
 ## Question 96
+- [ ] Done
 
 **Discuss effect of correlated features on distance metric.**
 
@@ -3424,6 +3520,7 @@ corr_matrix = pd.DataFrame(X).corr()
 ---
 
 ## Question 97
+- [ ] Done
 
 **Explain distance metrics other than Euclidean in K-Means.**
 
@@ -3470,6 +3567,7 @@ kmedoids.fit(X)
 ---
 
 ## Question 98
+- [ ] Done
 
 **Discuss the concept and importance of feature scaling in K-Means Clustering.**
 
@@ -3516,6 +3614,7 @@ X_scaled = scaler.fit_transform(X)
 ---
 
 ## Question 99
+- [ ] Done
 
 **How would you explain the differences between hard and soft clustering?**
 
@@ -3559,6 +3658,7 @@ X_scaled = scaler.fit_transform(X)
 ---
 
 ## Question 100
+- [ ] Done
 
 **Discuss the concept of K-Means++ and why it improves the original K-Means?**
 
@@ -3610,6 +3710,7 @@ kmeans = KMeans(n_clusters=3, init='random')     # Old way
 ---
 
 ## Question 101
+- [ ] Done
 
 **How would you improve the computational efficiency of K-Means Clustering?**
 
@@ -3671,6 +3772,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 102
+- [ ] Done
 
 **Discuss the significance of Lloyd's Algorithm in the context of K-Means Clustering enhancements.**
 

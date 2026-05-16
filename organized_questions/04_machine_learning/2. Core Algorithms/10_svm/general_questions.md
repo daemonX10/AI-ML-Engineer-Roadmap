@@ -1,6 +1,7 @@
 # Svm Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What kind of kernels can be used in SVM and give examples of each?**
 
@@ -44,6 +45,7 @@ svm_sig = SVC(kernel='sigmoid', coef0=0)
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you choose the value of the regularization parameter C in SVM?**
 
@@ -84,6 +86,7 @@ best_C = grid.best_params_['C']
 ---
 
 ## Question 3
+- [ ] Done
 
 **Can you derive the optimization problem for the soft margin SVM?**
 
@@ -128,6 +131,7 @@ The constraint $\alpha_i \leq C$ (from soft margin) bounds the influence of any 
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you handle categorical variables when training an SVM?**
 
@@ -174,6 +178,7 @@ Always mention that you need to scale features after encoding since SVM is dista
 ---
 
 ## Question 5
+- [ ] Done
 
 **What methods can be used to tune SVM hyperparameters?**
 
@@ -231,6 +236,7 @@ random_search = RandomizedSearchCV(SVC(), param_dist, n_iter=50, cv=5)
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you deal with an imbalanced dataset when using SVM?**
 
@@ -292,6 +298,7 @@ predictions = (scores > threshold).astype(int)
 ---
 
 ## Question 7
+- [ ] Done
 
 **What metrics are commonly used to evaluate the performance of an SVM model?**
 
@@ -340,6 +347,7 @@ auc = roc_auc_score(y_test, scores)
 ---
 
 ## Question 8
+- [ ] Done
 
 **How can you speed up SVM training on large datasets?**
 
@@ -397,6 +405,7 @@ svm.fit(X_transformed, y)
 ---
 
 ## Question 9
+- [ ] Done
 
 **What steps would you take to diagnose and solve underfitting or overfitting in an SVM model?**
 
@@ -458,6 +467,7 @@ param_grid = {'C': [10, 100, 1000], 'gamma': [1, 10, 100]}
 ---
 
 ## Question 10
+- [ ] Done
 
 **What considerations should be taken into account for deploying an SVM model in production?**
 
@@ -521,6 +531,7 @@ predictions = loaded_pipeline.predict(new_data)
 ---
 
 ## Question 11
+- [ ] Done
 
 **In what scenarios would you use a polynomial kernel?**
 
@@ -573,6 +584,7 @@ svm_poly3 = SVC(kernel='poly', degree=3, coef0=0, gamma='scale')
 ---
 
 ## Question 12
+- [ ] Done
 
 **How can SVM be used for sentiment analysis on social media data?**
 
@@ -637,6 +649,7 @@ predictions = sentiment_pipeline.predict(new_tweets)
 ---
 
 ## Question 13
+- [ ] Done
 
 **How can deep learning techniques be integrated with SVMs?**
 
@@ -691,6 +704,7 @@ svm.fit(embeddings_train, labels_train)
 ---
 
 ## Question 14
+- [ ] Done
 
 **How can domain adaptation be achieved using SVM models for transfer learning?**
 
@@ -753,6 +767,7 @@ svm.fit(X_combined, y_combined)
 ---
 
 ## Question 15
+- [ ] Done
 
 **How is the research on quantum machine learning potentially impacting SVM algorithms?**
 
@@ -792,6 +807,7 @@ Mention awareness of quantum ML research but acknowledge it's still largely theo
 ---
 
 ## Question 16
+- [ ] Done
 
 **How can SVM be combined with other machine learning models to form an ensemble?**
 

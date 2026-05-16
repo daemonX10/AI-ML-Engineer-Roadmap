@@ -1,6 +1,7 @@
 # Python ML Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Give an example of how to implement a gradient descent algorithm in Python.**
 
@@ -100,6 +101,7 @@ Expected: bias ≈ 4, slope ≈ 3
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement K-Means clustering from scratch in Python.**
 
@@ -210,6 +212,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 3
+- [ ] Done
 
 **Implement train-test split function from scratch.**
 
@@ -296,6 +299,7 @@ print(f"Test set size: {len(X_test)}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Implement standardization (Z-score normalization) from scratch.**
 
@@ -392,6 +396,7 @@ print(f"Std of scaled: {X_scaled.std(axis=0)}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Implement a simple decision tree classifier (for binary classification).**
 
@@ -569,6 +574,7 @@ print(f"Accuracy: {accuracy:.2f}")
 ---
 
 ## Question 6
+- [x] Done
 
 **Implement One-Hot Encoding from scratch.**
 
@@ -668,6 +674,7 @@ Encoded:
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement accuracy, precision, recall, and F1-score from scratch.**
 
@@ -803,6 +810,7 @@ print(f"F1 Score:  {f1_score(y_true, y_pred):.2f}")
 ---
 
 ## Question 8
+- [ ] Done
 
 **Write a Python function that normalizes an array of data to the range [0, 1].**
 
@@ -861,6 +869,7 @@ def normalize_2d(data):
 ---
 
 ## Question 9
+- [ ] Done
 
 **Construct a Python class structure for a simple perceptron model.**
 
@@ -945,6 +954,7 @@ print(f"Accuracy: {model.score(X_test, y_test):.2f}")
 ---
 
 ## Question 10
+- [ ] Done
 
 **Create a Python script that performs linear regression on a dataset using NumPy.**
 
@@ -1030,6 +1040,7 @@ print(f"Grad Desc  -> w={model2.weights[0]:.3f}, b={model2.bias:.3f}, R2={model2
 ---
 
 ## Question 11
+- [ ] Done
 
 **Write a function that optimizes a given cost function using gradient descent.**
 
@@ -1109,6 +1120,7 @@ print(f"Minimum at x = {x_opt}")
 ---
 
 ## Question 12
+- [ ] Done
 
 **Use Pandas to read a CSV file , clean the data, and prepare it for analysis**
 
@@ -1193,6 +1205,7 @@ print(f"Features: {list(X.columns)}")
 ---
 
 ## Question 13
+- [ ] Done
 
 **Develop a Python script that automates the process of hyperparameter tuning using grid search.**
 
@@ -1271,6 +1284,7 @@ print(f"Best Parameters: {random_search.best_params_}")
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain the concept of a neural network , and how you would implement one in Python**
 
@@ -1359,6 +1373,7 @@ print(nn.forward(X).round(2))
 ---
 
 ## Question 15
+- [ ] Done
 
 **Discuss reinforcement learning and its implementation challenges.**
 
@@ -1424,6 +1439,7 @@ class QLearningAgent:
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is transfer learning , and how can you implement it using Python libraries ?**
 
@@ -1515,6 +1531,7 @@ optimizer = torch.optim.Adam(model.fc.parameters(), lr=0.001)
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you implement a recommendation system using Python?**
 
@@ -1594,6 +1611,7 @@ print(recommend('Action Movie 1'))  # ['Action Movie 2']
 ---
 
 ## Question 18
+- [ ] Done
 
 **How would you develop a spam detection system using Python?**
 
@@ -1668,6 +1686,7 @@ Raw Text → Preprocessing → TF-IDF Vectorization → Classifier → Spam/Ham
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe the steps to design a Python system that predicts house prices based on multiple features.**
 
@@ -1748,6 +1767,7 @@ print(f"Test R2:   {r2_score(y_test, y_pred):.4f}")
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain how you would create a sentiment analysis model with Python.**
 
@@ -1844,6 +1864,7 @@ trainer.train()
 ---
 
 ## Question 21
+- [ ] Done
 
 **How would you build and deploy a machine-learning model for predicting customer churn?**
 
@@ -1937,6 +1958,7 @@ def predict_churn(features: dict):
 ---
 
 ## Question 22
+- [ ] Done
 
 **Discuss the development of a system to classify images using Python.**
 
@@ -2022,6 +2044,7 @@ print(f"Predicted: {class_names[np.argmax(prediction)]}")
 ---
 
 ## Question 23
+- [ ] Done
 
 **Propose a method for detecting fraudulent transactions with Python-based machine learning.**
 
@@ -2108,6 +2131,7 @@ print(classification_report(y_test, y_pred))
 ---
 
 ## Question 24
+- [ ] Done
 
 **Create a Python generator that yields batches of data from a large dataset.**
 
@@ -2192,6 +2216,7 @@ def infinite_batch_generator(X, y, batch_size=32):
 ---
 
 ## Question 25
+- [ ] Done
 
 **Implement a convolutional neural network using PyTorch or TensorFlow in Python.**
 
@@ -2293,6 +2318,7 @@ for epoch in range(10):
 ---
 
 ## Question 26
+- [ ] Done
 
 **Develop a Python function that uses genetic algorithms to optimize a simple problem.**
 
@@ -2404,6 +2430,7 @@ ga.evolve(generations=100)
 ---
 
 ## Question 27
+- [ ] Done
 
 **Code a Python simulation that compares different optimization techniques on a fixed dataset.**
 
@@ -2507,6 +2534,7 @@ plt.legend(); plt.grid(True); plt.show()
 ---
 
 ## Question 28
+- [ ] Done
 
 **Write a Python script that visualizes decision boundaries for a classification model.**
 
@@ -2583,6 +2611,7 @@ plt.show()
 ---
 
 ## Question 29
+- [ ] Done
 
 **Create a Python implementation of the A* search algorithm for pathfinding on a grid.**
 
@@ -2702,6 +2731,7 @@ else:
 ---
 
 ## Question 30
+- [ ] Done
 
 **Implement a simple reinforcement learning agent that learns to play a basic game.**
 
@@ -2818,6 +2848,7 @@ for _ in range(20):
 ---
 
 ## Question 31
+- [ ] Done
 
 **Use a Python library to perform time-series forecasting on stock market data.**
 
@@ -2915,6 +2946,7 @@ lstm_model.fit(X_train_seq, y_train_seq, epochs=50, batch_size=32, verbose=0)
 ---
 
 ## Question 32
+- [ ] Done
 
 **What is federated learning , and how can Python be used to implement it?**
 
@@ -3025,6 +3057,7 @@ model = train_federated(n_clients=5, n_rounds=10)
 > **Interview Tip:** Federated learning is critical for **healthcare** (patient data stays in hospitals), **mobile keyboards** (Google Gboard), and **financial institutions** (data regulation compliance). Mention challenges: communication overhead, non-IID data, and Byzantine fault tolerance.
 
 ## Question 33
+- [ ] Done
 
 **Implement the k-means clustering algorithm using only standard Python libraries**
 
@@ -3102,6 +3135,7 @@ print(f"Labels: {labels}")
 ---
 
 ## Question 34
+- [ ] Done
 
 **Implement a decision tree from scratch in Python**
 
@@ -3206,6 +3240,7 @@ print(predict_one(tree, [3, 4]))  # Predicts class
 ---
 
 ## Question 35
+- [ ] Done
 
 **Write a Python function to split a dataset into training and testing sets**
 

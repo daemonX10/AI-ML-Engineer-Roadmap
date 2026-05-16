@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: What is anomaly detection?
+- [ ] Done
 
 ### Answer
 
@@ -38,6 +39,7 @@ Anomaly Detection Approaches
 ---
 
 ## Question 2: What are the main types of anomalies in data?
+- [ ] Done
 
 ### Answer
 
@@ -73,6 +75,7 @@ $$x_t \text{ is anomalous if } |x_t - \mu_{\text{context}}| > k \cdot \sigma_{\t
 ---
 
 ## Question 3: How does anomaly detection differ from noise removal?
+- [ ] Done
 
 ### Answer
 
@@ -111,6 +114,7 @@ $$P(x|\text{normal}) < \tau$$
 ---
 
 ## Question 4: Explain the concepts of outliers and their impact on dataset
+- [ ] Done
 
 ### Answer
 
@@ -156,6 +160,7 @@ Single outlier can dramatically change $\hat{\beta}$ due to squared error penalt
 ---
 
 ## Question 5: What is the difference between supervised and unsupervised anomaly detection?
+- [ ] Done
 
 ### Answer
 
@@ -203,6 +208,7 @@ Test: Classify new point   Test: Score by density/distance
 ---
 
 ## Question 6: What are some real-world applications of anomaly detection?
+- [ ] Done
 
 ### Answer
 
@@ -250,6 +256,7 @@ Test: Classify new point   Test: Score by density/distance
 ---
 
 ## Question 7: What is the role of statistics in anomaly detection?
+- [ ] Done
 
 ### Answer
 
@@ -296,6 +303,7 @@ $$P(x|\mu,\sigma) < \epsilon \quad \text{or equivalently} \quad |x - \mu| > k\si
 ---
 
 ## Question 8: How do you handle high-dimensional data in anomaly detection?
+- [ ] Done
 
 ### Answer
 
@@ -398,6 +406,7 @@ def high_dim_anomaly_detection(X, method='pca', target_dim=10):
 ---
 
 ## Question 9: What are some common statistical methods for anomaly detection?
+- [ ] Done
 
 ### Answer
 
@@ -452,6 +461,7 @@ def iqr_anomalies(data, k=1.5):
 ---
 
 ## Question 10: Explain the working principle of k-NN in anomaly detection
+- [ ] Done
 
 ### Answer
 
@@ -515,6 +525,7 @@ def knn_anomaly_scores(X, k=5):
 ---
 
 ## Question 11: Describe how cluster analysis can be used for detecting anomalies
+- [ ] Done
 
 ### Answer
 
@@ -584,6 +595,7 @@ def dbscan_anomaly_detection(X, eps=0.5, min_samples=5):
 ---
 
 ## Question 12: Explain how the Isolation Forest algorithm works
+- [ ] Done
 
 ### Answer
 
@@ -661,6 +673,7 @@ def isolation_forest_detection(X, contamination=0.1):
 ---
 
 ## Question 13: Explain the concept of a Z-Score and how it is used in anomaly detection
+- [ ] Done
 
 ### Answer
 
@@ -738,6 +751,7 @@ Where MAD = Median Absolute Deviation
 ---
 
 ## Question 14: Describe the autoencoder approach for anomaly detection in neural networks
+- [ ] Done
 
 ### Answer
 
@@ -829,6 +843,7 @@ def detect_anomalies(autoencoder, X_train, X_test, threshold_percentile=95):
 ---
 
 ## Question 15: How does Principal Component Analysis (PCA) help in identifying anomalies?
+- [ ] Done
 
 ### Answer
 
@@ -913,6 +928,7 @@ def pca_anomaly_detection(X, n_components=2, threshold_percentile=95):
 ---
 
 ## Question 16: What are the benefits and drawbacks of using Gaussian Mixture Models for anomaly detection?
+- [ ] Done
 
 ### Answer
 

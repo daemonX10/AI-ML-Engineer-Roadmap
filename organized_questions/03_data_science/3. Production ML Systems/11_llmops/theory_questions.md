@@ -1,6 +1,7 @@
 # Llmops Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What isMLOpsand how does it differ from traditional software development operations?**
 
@@ -9,6 +10,7 @@
 ---
 
 ## Question 2
+- [ ] Done
 
 **Describe the typical stages of themachine learning lifecycle.**
 
@@ -17,6 +19,7 @@
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are the key components of a robustMLOps infrastructure?**
 
@@ -25,6 +28,7 @@
 ---
 
 ## Question 4
+- [ ] Done
 
 **How doesMLOpsfacilitatereproducibilityin machine learning projects?**
 
@@ -33,6 +37,7 @@
 ---
 
 ## Question 5
+- [ ] Done
 
 **ExplainContinuous Integration (CI)andContinuous Deployment (CD)within anMLOpscontext.**
 
@@ -41,6 +46,7 @@
 ---
 
 ## Question 6
+- [ ] Done
 
 **Describe the function ofmodel registriesinMLOps.**
 
@@ -49,6 +55,7 @@
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are the challenges associated withmodel deploymentand how doesMLOpsaddress them?**
 
@@ -57,6 +64,7 @@
 ---
 
 ## Question 8
+- [ ] Done
 
 **How doesMLOpssupportmodel scalabilityanddistribution?**
 
@@ -65,6 +73,7 @@
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain the concept of adata pipelineand its role inMLOps.**
 
@@ -73,6 +82,7 @@
 ---
 
 ## Question 10
+- [ ] Done
 
 **What are the key considerations for ensuringdata qualityandpreprocessinginMLOps?**
 
@@ -81,6 +91,7 @@
 ---
 
 ## Question 11
+- [ ] Done
 
 **Describe how you would develop anMLOps strategythat aligns withbusiness objectives.**
 
@@ -89,6 +100,7 @@
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain howMLOpscan enforcegovernance, security, andcompliance standards.**
 
@@ -97,6 +109,7 @@
 ---
 
 ## Question 13
+- [ ] Done
 
 **How doesMLOpscontribute to fasterexperimentationanditerationinmachine learning projects?**
 
@@ -105,6 +118,7 @@
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe approaches forcost managementandresource allocationinMLOps.**
 
@@ -113,6 +127,7 @@
 ---
 
 ## Question 15
+- [ ] Done
 
 **How doesMLOpsensure theethical and responsible useofmachine learning models?**
 
@@ -121,6 +136,7 @@
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the role ofshadow mode deploymentinMLOps.**
 
@@ -129,6 +145,7 @@
 ---
 
 ## Question 17
+- [ ] Done
 
 **What are the steps involved in maintaining and updatingmachine learning modelsonce they are inproduction?**
 
@@ -137,6 +154,7 @@
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe howmodel performanceismonitored post-deployment.**
 
@@ -145,6 +163,7 @@
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is the impact offederated learningonMLOps practices?**
 
@@ -153,6 +172,7 @@
 ---
 
 ## Question 20
+- [ ] Done
 
 **How doesQuantum MLaffectMLOpsand what unique challenges does it introduce?**
 
@@ -163,6 +183,7 @@
 ---
 
 ## Question 21
+- [ ] Done
 
 **Whattoolsandplatformsare commonly used for implementingMLOps?**
 
@@ -175,6 +196,7 @@
 # --- VectorStore Integration Questions (from source .txt) ---
 
 ## Question 1
+- [ ] Done
 
 **How do you design vector store integration strategies for RAG systems that balance retrieval quality and performance?**
 
@@ -183,6 +205,7 @@
 ---
 
 ## Question 2
+- [ ] Done
 
 **What are the best practices for choosing vector databases (Pinecone, Weaviate, Chroma) based on scale and latency requirements?**
 
@@ -191,6 +214,7 @@
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you implement efficient vector embedding pipelines that integrate with vector stores for real-time applications?**
 
@@ -199,6 +223,7 @@
 ---
 
 ## Question 4
+- [ ] Done
 
 **When should you use hybrid search (vector + keyword) versus pure vector search in your integration architecture?**
 
@@ -207,6 +232,7 @@
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you handle vector store data ingestion and indexing strategies for large-scale document collections?**
 
@@ -215,6 +241,7 @@
 ---
 
 ## Question 6
+- [ ] Done
 
 **What techniques help you optimize vector store query performance for high-concurrency applications?**
 
@@ -223,6 +250,7 @@
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you implement vector store integration with LLM applications for contextual information retrieval?**
 
@@ -231,6 +259,7 @@
 ---
 
 ## Question 8
+- [ ] Done
 
 **When would you use multiple vector stores versus a single centralized store for different data types?**
 
@@ -239,6 +268,7 @@
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you handle vector store synchronization and consistency across distributed application architectures?**
 
@@ -247,6 +277,7 @@
 ---
 
 ## Question 10
+- [ ] Done
 
 **What strategies help you manage vector store costs and resource utilization in cloud deployments?**
 
@@ -255,6 +286,7 @@
 ---
 
 ## Question 11
+- [ ] Done
 
 **How do you implement vector store backup, versioning, and disaster recovery procedures?**
 
@@ -263,6 +295,7 @@
 ---
 
 ## Question 12
+- [ ] Done
 
 **When should you use approximate versus exact nearest neighbor search in your vector store integration?**
 
@@ -271,6 +304,7 @@
 ---
 
 ## Question 13
+- [ ] Done
 
 **How do you handle vector store integration with streaming data and real-time embedding updates?**
 
@@ -279,6 +313,7 @@
 ---
 
 ## Question 14
+- [ ] Done
 
 **What techniques help you optimize vector dimensionality and compression for storage efficiency?**
 
@@ -287,6 +322,7 @@
 ---
 
 ## Question 15
+- [ ] Done
 
 **How do you implement vector store access control and security measures for multi-tenant applications?**
 
@@ -295,6 +331,7 @@
 ---
 
 ## Question 16
+- [ ] Done
 
 **When would you use federated vector search across multiple stores versus centralized indexing?**
 
@@ -303,6 +340,7 @@
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you handle vector store integration with feature stores and ML pipeline orchestration?**
 
@@ -311,6 +349,7 @@
 ---
 
 ## Question 18
+- [ ] Done
 
 **What are the best practices for vector store schema design and metadata management?**
 
@@ -319,6 +358,7 @@
 ---
 
 ## Question 19
+- [ ] Done
 
 **How do you implement vector store monitoring and alerting for production applications?**
 
@@ -327,6 +367,7 @@
 ---
 
 ## Question 20
+- [ ] Done
 
 **When should you use vector store caching strategies to improve query response times?**
 
@@ -335,6 +376,7 @@
 ---
 
 ## Question 21
+- [ ] Done
 
 **How do you handle vector store integration with different embedding models and dimension changes?**
 
@@ -343,6 +385,7 @@
 ---
 
 ## Question 22
+- [ ] Done
 
 **What strategies help you manage vector store performance under varying load conditions?**
 
@@ -351,6 +394,7 @@
 ---
 
 ## Question 23
+- [ ] Done
 
 **How do you implement vector store integration with content management and document processing systems?**
 
@@ -359,6 +403,7 @@
 ---
 
 ## Question 24
+- [ ] Done
 
 **When would you use vector store partitioning and sharding for horizontal scaling?**
 
@@ -367,6 +412,7 @@
 ---
 
 ## Question 25
+- [ ] Done
 
 **How do you handle vector store integration with recommendation systems and personalization engines?**
 
@@ -375,6 +421,7 @@
 ---
 
 ## Question 26
+- [ ] Done
 
 **What techniques help you optimize vector store batch operations and bulk data loading?**
 
@@ -383,6 +430,7 @@
 ---
 
 ## Question 27
+- [ ] Done
 
 **How do you implement vector store integration with graph databases for enriched context retrieval?**
 
@@ -391,6 +439,7 @@
 ---
 
 ## Question 28
+- [ ] Done
 
 **When should you use vector store preprocessing and filtering versus query-time processing?**
 
@@ -399,6 +448,7 @@
 ---
 
 ## Question 29
+- [ ] Done
 
 **How do you handle vector store integration with ML model serving and inference pipelines?**
 
@@ -407,6 +457,7 @@
 ---
 
 ## Question 30
+- [ ] Done
 
 **What are the considerations for vector store compliance and data governance in regulated industries?**
 
@@ -415,6 +466,7 @@
 ---
 
 ## Question 31
+- [ ] Done
 
 **How do you implement vector store integration with search and discovery applications?**
 
@@ -423,6 +475,7 @@
 ---
 
 ## Question 32
+- [ ] Done
 
 **When would you use vector store custom distance metrics versus standard similarity measures?**
 
@@ -431,6 +484,7 @@
 ---
 
 ## Question 33
+- [ ] Done
 
 **How do you handle vector store integration with time-series data and temporal embeddings?**
 
@@ -439,6 +493,7 @@
 ---
 
 ## Question 34
+- [ ] Done
 
 **What strategies help you manage vector store migration and data portability across providers?**
 
@@ -447,6 +502,7 @@
 ---
 
 ## Question 35
+- [ ] Done
 
 **How do you implement vector store integration with collaborative filtering and social recommendation systems?**
 
@@ -455,6 +511,7 @@
 ---
 
 ## Question 36
+- [ ] Done
 
 **When should you use vector store ensemble methods for improved retrieval accuracy?**
 
@@ -463,6 +520,7 @@
 ---
 
 ## Question 37
+- [ ] Done
 
 **How do you handle vector store integration with multi-modal data (text, images, audio)?**
 
@@ -471,6 +529,7 @@
 ---
 
 ## Question 38
+- [ ] Done
 
 **What techniques help you optimize vector store for specific use cases like semantic search or anomaly detection?**
 
@@ -479,6 +538,7 @@
 ---
 
 ## Question 39
+- [ ] Done
 
 **How do you implement vector store integration with knowledge graphs and structured data?**
 
@@ -487,6 +547,7 @@
 ---
 
 ## Question 40
+- [ ] Done
 
 **When would you use vector store custom indexing strategies versus default configurations?**
 
@@ -495,6 +556,7 @@
 ---
 
 ## Question 41
+- [ ] Done
 
 **How do you handle vector store integration with A/B testing and experimentation frameworks?**
 
@@ -503,6 +565,7 @@
 ---
 
 ## Question 42
+- [ ] Done
 
 **What are the best practices for vector store API design and client library integration?**
 
@@ -511,6 +574,7 @@
 ---
 
 ## Question 43
+- [ ] Done
 
 **How do you implement vector store integration with business intelligence and analytics platforms?**
 
@@ -519,6 +583,7 @@
 ---
 
 ## Question 44
+- [ ] Done
 
 **When should you use vector store replication and redundancy for high availability?**
 
@@ -527,6 +592,7 @@
 ---
 
 ## Question 45
+- [ ] Done
 
 **How do you handle vector store integration with privacy-preserving machine learning techniques?**
 
@@ -535,6 +601,7 @@
 ---
 
 ## Question 46
+- [ ] Done
 
 **What strategies help you manage vector store complexity in microservices architectures?**
 
@@ -543,6 +610,7 @@
 ---
 
 ## Question 47
+- [ ] Done
 
 **How do you implement vector store integration with automated ML and hyperparameter optimization?**
 
@@ -551,6 +619,7 @@
 ---
 
 ## Question 48
+- [ ] Done
 
 **When would you use vector store custom protocols versus standard REST/gRPC interfaces?**
 
@@ -559,6 +628,7 @@
 ---
 
 ## Question 49
+- [ ] Done
 
 **How do you handle vector store integration with edge computing and distributed inference?**
 
@@ -567,6 +637,7 @@
 ---
 
 ## Question 50
+- [ ] Done
 
 **What techniques help you integrate vector store analytics with ML model performance monitoring and business metrics? ⚒️ Libraries / Visualization Tools**
 

@@ -1,6 +1,7 @@
 # Cnn Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Describe howdropoutis implemented in aCNNand what effects it has.**
 
@@ -195,6 +196,7 @@ print("More effective than standard dropout for convolutional layers")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement aconvolution layerfrom scratch usingNumpy.**
 
@@ -292,6 +294,7 @@ print("Output dimensions: (5-3)/1 + 1 = 3×3")
 ---
 
 ## Question 3
+- [ ] Done
 
 **Write aPython functionto applymax poolingto a given input matrix.**
 
@@ -362,6 +365,7 @@ print("        [9, 6]")
 ---
 
 ## Question 4
+- [ ] Done
 
 **UseTensorFlow/Kerasto build and train aCNNto classify images from theCIFAR-10 dataset.**
 
@@ -433,6 +437,7 @@ model.summary()
 ---
 
 ## Question 5
+- [ ] Done
 
 **Visualize the filters of the firstconvolutional layerof a trainedCNNusingMatplotlib.**
 
@@ -494,6 +499,7 @@ print("Filters show edge detectors, color blobs, textures")
 ---
 
 ## Question 6
+- [ ] Done
 
 **Create a script tofine-tunea pre-trainedCNNon a new dataset withTensorFlow/Keras.**
 

@@ -1,6 +1,7 @@
 # Data Engineer Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is data modeling and why is it important?**
 
@@ -30,6 +31,7 @@ Good data modeling prevents costly changes later. "Measure twice, cut once."
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the difference between conceptual, logical, and physical data models.**
 
@@ -67,6 +69,7 @@ Start conceptual (business), then logical (design), then physical (implementatio
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are the key steps in the data modeling process?**
 
@@ -111,6 +114,7 @@ Emphasize iterative nature and stakeholder collaboration throughout.
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe the different types of relationships in a relational database.**
 
@@ -152,6 +156,7 @@ Many-to-many always needs a junction table in relational databases.
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is normalization and why is it used in database design?**
 
@@ -193,6 +198,7 @@ Know the first 3 normal forms. Also understand when denormalization is appropria
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain the difference between OLTP and OLAP systems.**
 
@@ -228,6 +234,7 @@ Know the first 3 normal forms. Also understand when denormalization is appropria
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is a star schema and when would you use it?**
 
@@ -271,6 +278,7 @@ Star schema prioritizes query performance over normalization. It's the standard 
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe the concept of slowly changing dimensions (SCDs) in data warehousing.**
 
@@ -308,6 +316,7 @@ Type 2 is most common for analytics. Know how to implement with start/end dates 
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is a fact table and how does it differ from a dimension table?**
 
@@ -342,6 +351,7 @@ Facts answer "how much/many" (metrics), dimensions answer "who/what/where/when" 
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain the purpose of surrogate keys in data modeling.**
 
@@ -381,6 +391,7 @@ Always use surrogate keys in data warehouses. Keep natural keys as attributes fo
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is a data warehouse and its key characteristics?**
 
@@ -419,6 +430,7 @@ Understand the difference between Kimball (dimensional) and Inmon (normalized) a
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain the ETL (Extract, Transform, Load) process and its stages.**
 
@@ -467,6 +479,7 @@ ELT is increasingly popular with cloud warehouses due to their scalable compute.
 ---
 
 ## Question 13
+- [ ] Done
 
 **What are the common challenges faced during ETL processes?**
 
@@ -512,6 +525,7 @@ Always mention data quality as the #1 challenge. Know specific examples and solu
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe the difference between full load and incremental load in ETL.**
 
@@ -555,6 +569,7 @@ Incremental loads are preferred for production. Know how to track "what changed"
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is data staging and why is it important in ETL?**
 
@@ -596,6 +611,7 @@ Staging enables restart/recovery without hitting sources again. Critical for pro
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the concept of data lineage and its significance in data warehousing.**
 
@@ -639,6 +655,7 @@ Data lineage is critical for compliance and debugging. Modern data catalogs prov
 ---
 
 ## Question 17
+- [ ] Done
 
 **What are the benefits of using a data warehouse?**
 
@@ -679,6 +696,7 @@ Frame benefits in terms of business value, not just technical features.
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe the role of data quality in ETL processes.**
 
@@ -728,6 +746,7 @@ GROUP BY key HAVING COUNT(*) = 1
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is a slowly changing dimension (SCD) and how is it handled in ETL?**
 
@@ -775,6 +794,7 @@ Be able to write the SQL for Type 2 SCD. It's a common interview question.
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain the difference between a data warehouse and a data mart.**
 
@@ -810,6 +830,7 @@ Data marts are often the first step toward a data warehouse, or specialized view
 ---
 
 ## Question 21
+- [ ] Done
 
 **What is Hadoop and its core components?**
 
@@ -849,6 +870,7 @@ Hadoop is less popular now due to Spark and cloud services, but understanding it
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain the difference between Hadoop and Spark.**
 
@@ -889,6 +911,7 @@ Know that Spark is generally preferred, but understand the trade-offs (memory co
 ---
 
 ## Question 23
+- [ ] Done
 
 **What is MapReduce and how does it work?**
 
@@ -939,6 +962,7 @@ Be able to explain word count example. Understand shuffle is the expensive opera
 ---
 
 ## Question 24
+- [ ] Done
 
 **Describe the role of HDFS in Hadoop.**
 
@@ -979,6 +1003,7 @@ HDFS is designed for "write once, read many" workloads. Understand the block rep
 ---
 
 ## Question 25
+- [ ] Done
 
 **What is Hive and how is it used in big data processing?**
 
@@ -1023,6 +1048,7 @@ Hive translates SQL to MapReduce/Spark jobs. Great for SQL users on Hadoop.
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain the concept of data partitioning in Hadoop.**
 
@@ -1066,6 +1092,7 @@ Partition by columns used in WHERE clauses. Date is the most common partition ke
 ---
 
 ## Question 27
+- [ ] Done
 
 **What is Kafka and its use cases in data engineering?**
 
@@ -1109,6 +1136,7 @@ Kafka is the backbone of modern data platforms. Know producers, consumers, topic
 ---
 
 ## Question 28
+- [ ] Done
 
 **Describe the difference between batch processing and stream processing.**
 
@@ -1148,6 +1176,7 @@ Modern trend is toward unified batch+stream (Spark, Flink). Understand trade-off
 ---
 
 ## Question 29
+- [ ] Done
 
 **What is Cassandra and its key features?**
 
@@ -1188,6 +1217,7 @@ Know that Cassandra sacrifices consistency for availability. Good for writes, li
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain the concept of data replication in Hadoop.**
 
@@ -1234,6 +1264,7 @@ Understand rack awareness for replica placement. It protects against rack-level 
 ---
 
 ## Question 31
+- [ ] Done
 
 **What is data processing and its stages?**
 
@@ -1279,6 +1310,7 @@ Frame data processing as a pipeline with clear stages and checkpoints.
 ---
 
 ## Question 32
+- [ ] Done
 
 **Explain the difference between batch processing and real-time processing.**
 
@@ -1325,6 +1357,7 @@ Real-time adds complexity and cost. Use batch unless latency requirements demand
 ---
 
 ## Question 33
+- [ ] Done
 
 **What are the common data transformation techniques?**
 
@@ -1370,6 +1403,7 @@ Know SQL transformations well. Most data engineering is SQL-based transformation
 ---
 
 ## Question 34
+- [ ] Done
 
 **Describe the role of data cleansing in data processing.**
 
@@ -1422,6 +1456,7 @@ Data quality is everyone's responsibility but data engineers are the first line 
 ---
 
 ## Question 35
+- [ ] Done
 
 **What is data enrichment and why is it important?**
 
@@ -1469,6 +1504,7 @@ Enrichment adds value but consider data freshness and source reliability.
 ---
 
 ## Question 36
+- [ ] Done
 
 **Explain the concept of data aggregation and its use cases.**
 
@@ -1524,6 +1560,7 @@ Pre-aggregation in data warehouses speeds up reporting queries significantly.
 ---
 
 ## Question 37
+- [ ] Done
 
 **What is data deduplication and how is it achieved?**
 
@@ -1576,6 +1613,7 @@ Know the ROW_NUMBER() pattern for deduplication. Very common in data engineering
 ---
 
 ## Question 38
+- [ ] Done
 
 **Describe the difference between data filtering and data sorting.**
 
@@ -1630,6 +1668,7 @@ Filter early, sort late. Reduces the amount of data to process.
 ---
 
 ## Question 39
+- [ ] Done
 
 **What is data normalization and its techniques?**
 
@@ -1673,6 +1712,7 @@ Know first 3 normal forms. Understand when denormalization is appropriate (analy
 ---
 
 ## Question 40
+- [ ] Done
 
 **Explain the purpose of data validation in data processing.**
 
@@ -1724,6 +1764,7 @@ Validation should be at multiple stages. Fail fast and provide clear error messa
 ---
 
 ## Question 41
+- [ ] Done
 
 **What is data integration and its challenges?**
 
@@ -1768,6 +1809,7 @@ Integration is often the hardest part of data engineering. Emphasize data govern
 ---
 
 ## Question 42
+- [ ] Done
 
 **Explain the difference between ETL and ELT approaches.**
 
@@ -1788,6 +1830,7 @@ ELT is the modern standard with cloud warehouses. Know both approaches.
 ---
 
 ## Question 43
+- [ ] Done
 
 **What are the common data integration patterns?**
 
@@ -1806,6 +1849,7 @@ Modern trend is toward data mesh (decentralized) with data contracts.
 ---
 
 ## Question 44
+- [ ] Done
 
 **Describe the role of data pipelines in data engineering.**
 
@@ -1825,6 +1869,7 @@ Emphasize reliability and observability in pipeline design.
 ---
 
 ## Question 45
+- [ ] Done
 
 **What is a data lake and how does it differ from a data warehouse?**
 
@@ -1845,6 +1890,7 @@ Know medallion architecture (bronze/silver/gold).
 ---
 
 ## Question 46
+- [ ] Done
 
 **Explain the concept of data ingestion and its methods.**
 
@@ -1861,6 +1907,7 @@ Know pull vs push ingestion and backpressure in streaming.
 ---
 
 ## Question 47
+- [ ] Done
 
 **What is change data capture (CDC) and its use cases?**
 
@@ -1880,6 +1927,7 @@ Debezium is the popular open-source solution.
 ---
 
 ## Question 48
+- [ ] Done
 
 **Describe the difference between batch and streaming data integration.**
 
@@ -1899,6 +1947,7 @@ Start with batch unless latency requirements demand streaming.
 ---
 
 ## Question 49
+- [ ] Done
 
 **What is data replication and its techniques?**
 
@@ -1915,6 +1964,7 @@ Understand CAP theorem trade-offs.
 ---
 
 ## Question 50
+- [ ] Done
 
 **Explain the purpose of data orchestration in data pipelines.**
 
@@ -1933,6 +1983,7 @@ Airflow is industry standard. Know DAGs and operators.
 ---
 
 ## Question 51
+- [ ] Done
 
 **What is a database management system (DBMS) and its types?**
 
@@ -1951,6 +2002,7 @@ Choose based on use case: RDBMS for transactions, NoSQL for scale.
 ---
 
 ## Question 52
+- [ ] Done
 
 **Explain the difference between SQL and NoSQL databases.**
 
@@ -1971,6 +2023,7 @@ It's not either/or. Many systems use both.
 ---
 
 ## Question 53
+- [ ] Done
 
 **What is data partitioning and its strategies?**
 
@@ -1987,6 +2040,7 @@ Date is the most common partition key.
 ---
 
 ## Question 54
+- [ ] Done
 
 **Describe the concept of data indexing and its benefits.**
 
@@ -2007,6 +2061,7 @@ Index columns in WHERE clauses and foreign keys.
 ---
 
 ## Question 55
+- [ ] Done
 
 **What is data sharding and when is it used?**
 
@@ -2026,6 +2081,7 @@ Sharding adds complexity. Delay until truly needed.
 ---
 
 ## Question 56
+- [ ] Done
 
 **Explain the difference between vertical and horizontal scaling in databases.**
 
@@ -2045,6 +2101,7 @@ Start vertical, go horizontal when needed.
 ---
 
 ## Question 57
+- [ ] Done
 
 **What is data replication and its types?**
 
@@ -2061,6 +2118,7 @@ Know CAP theorem trade-offs.
 ---
 
 ## Question 58
+- [ ] Done
 
 **Describe the role of caching in data retrieval.**
 
@@ -2082,6 +2140,7 @@ Cache invalidation is hard. Know the strategies.
 ---
 
 ## Question 59
+- [ ] Done
 
 **What is a data lake and its architecture?**
 
@@ -2103,6 +2162,7 @@ Know medallion architecture.
 ---
 
 ## Question 60
+- [ ] Done
 
 **Explain the concept of data archiving and its importance.**
 
@@ -2122,6 +2182,7 @@ Know retention policies and compliance requirements.
 ---
 
 ## Question 61
+- [ ] Done
 
 **What is data governance and its key components?**
 
@@ -2140,6 +2201,7 @@ Governance is about policies, not just tools.
 ---
 
 ## Question 62
+- [ ] Done
 
 **Explain the difference between data governance and data management.**
 
@@ -2159,6 +2221,7 @@ Governance sets rules, management executes them.
 ---
 
 ## Question 63
+- [ ] Done
 
 **What are the common data governance frameworks?**
 
@@ -2176,6 +2239,7 @@ Know DAMA-DMBOK as the most referenced framework.
 ---
 
 ## Question 64
+- [ ] Done
 
 **Describe the role of data lineage in data governance.**
 
@@ -2193,6 +2257,7 @@ Lineage is critical for compliance (GDPR, SOX).
 ---
 
 ## Question 65
+- [ ] Done
 
 **What is data quality and its dimensions?**
 
@@ -2209,6 +2274,7 @@ Know all six dimensions and how to measure each.
 ---
 
 ## Question 66
+- [ ] Done
 
 **Explain the concept of data stewardship and its responsibilities.**
 
@@ -2226,6 +2292,7 @@ Data stewards are business-side, not IT.
 ---
 
 ## Question 67
+- [ ] Done
 
 **What is data security and its best practices?**
 
@@ -2243,6 +2310,7 @@ Defense in depth—multiple layers of security.
 ---
 
 ## Question 68
+- [ ] Done
 
 **Describe the difference between authentication and authorization in data security.**
 
@@ -2262,6 +2330,7 @@ Know the difference clearly—common interview question.
 ---
 
 ## Question 69
+- [ ] Done
 
 **What is data encryption and its types?**
 
@@ -2282,6 +2351,7 @@ Use TLS for transit, AES for storage.
 ---
 
 ## Question 70
+- [ ] Done
 
 **Explain the purpose of data auditing and its techniques.**
 
@@ -2303,6 +2373,7 @@ Audit logs should be immutable and tamper-proof.
 ---
 
 ## Question 71
+- [ ] Done
 
 **What is data monitoring and its importance?**
 
@@ -2320,6 +2391,7 @@ Monitor data quality, not just pipeline health.
 ---
 
 ## Question 72
+- [ ] Done
 
 **Explain the difference between real-time and batch monitoring.**
 
@@ -2339,6 +2411,7 @@ Use real-time for critical alerts, batch for trends.
 ---
 
 ## Question 73
+- [ ] Done
 
 **What are the common data monitoring tools and techniques?**
 
@@ -2356,6 +2429,7 @@ Data observability is a growing field. Know the tools.
 ---
 
 ## Question 74
+- [ ] Done
 
 **Describe the role of data profiling in data monitoring.**
 
@@ -2377,6 +2451,7 @@ Profile data before building pipelines.
 ---
 
 ## Question 75
+- [ ] Done
 
 **What is data optimization and its strategies?**
 
@@ -2395,6 +2470,7 @@ Start with partitioning and indexing—biggest wins.
 ---
 
 ## Question 76
+- [ ] Done
 
 **Explain the concept of data partitioning and its benefits in optimization.**
 
@@ -2411,6 +2487,7 @@ Partition by frequently filtered columns.
 ---
 
 ## Question 77
+- [ ] Done
 
 **What is query optimization and its techniques?**
 
@@ -2429,6 +2506,7 @@ Always analyze query plans for slow queries.
 ---
 
 ## Question 78
+- [ ] Done
 
 **Describe the difference between data compression and data deduplication.**
 
@@ -2448,6 +2526,7 @@ Use both for optimal storage efficiency.
 ---
 
 ## Question 79
+- [ ] Done
 
 **What is data caching and its use cases in optimization?**
 
@@ -2465,6 +2544,7 @@ Cache invalidation is the hard part.
 ---
 
 ## Question 80
+- [ ] Done
 
 **Explain the purpose of data archiving in data optimization.**
 
@@ -2481,6 +2561,7 @@ Archive based on access patterns and retention policies.
 ---
 
 ## Question 81
+- [ ] Done
 
 **What is Apache Spark and its key features?**
 
@@ -2498,6 +2579,7 @@ Know RDDs, DataFrames, and Spark SQL.
 ---
 
 ## Question 82
+- [ ] Done
 
 **Explain the difference between Spark RDDs and DataFrames.**
 
@@ -2518,6 +2600,7 @@ Use DataFrames by default—better performance.
 ---
 
 ## Question 83
+- [ ] Done
 
 **What is Apache Airflow and its use cases?**
 
@@ -2539,6 +2622,7 @@ Airflow is the industry standard orchestrator.
 ---
 
 ## Question 84
+- [ ] Done
 
 **Describe the role of Apache Kafka in data streaming.**
 
@@ -2560,6 +2644,7 @@ Kafka is the backbone of modern data architectures.
 ---
 
 ## Question 85
+- [ ] Done
 
 **What is Talend and its key components?**
 
@@ -2577,6 +2662,7 @@ Talend is visual ETL—good for non-programmers.
 ---
 
 ## Question 86
+- [ ] Done
 
 **Explain the concept of data pipelines in Apache NiFi.**
 
@@ -2594,6 +2680,7 @@ NiFi excels at data routing and transformation.
 ---
 
 ## Question 87
+- [ ] Done
 
 **What is Informatica PowerCenter and its features?**
 
@@ -2611,6 +2698,7 @@ Informatica is enterprise-grade, expensive.
 ---
 
 ## Question 88
+- [ ] Done
 
 **Describe the difference between Hadoop and Apache Flink.**
 
@@ -2631,6 +2719,7 @@ Flink is better for streaming; Spark handles both.
 ---
 
 ## Question 89
+- [ ] Done
 
 **What is dbt (Data Build Tool) and its benefits?**
 
@@ -2649,6 +2738,7 @@ dbt is the standard for transformation in modern stacks.
 ---
 
 ## Question 90
+- [ ] Done
 
 **Explain the purpose of Presto in data querying.**
 
@@ -2665,6 +2755,7 @@ Presto/Trino is for ad-hoc queries across sources.
 ---
 
 ## Question 91
+- [ ] Done
 
 **What is cloud data engineering and its advantages?**
 
@@ -2683,6 +2774,7 @@ Cloud is the default for new projects.
 ---
 
 ## Question 92
+- [ ] Done
 
 **Explain the difference between AWS, Azure, and Google Cloud Platform for data engineering.**
 
@@ -2703,6 +2795,7 @@ BigQuery is serverless; Redshift/Synapse need sizing.
 ---
 
 ## Question 93
+- [ ] Done
 
 **What is Amazon S3 and its use cases in data storage?**
 
@@ -2720,6 +2813,7 @@ S3 is the foundation of AWS data architecture.
 ---
 
 ## Question 94
+- [ ] Done
 
 **Describe the role of Azure Data Factory in data integration.**
 
@@ -2737,6 +2831,7 @@ ADF is Azure's answer to AWS Glue.
 ---
 
 ## Question 95
+- [ ] Done
 
 **What is Google BigQuery and its key features?**
 
@@ -2754,6 +2849,7 @@ BigQuery is pay-per-query, great for analytics.
 ---
 
 ## Question 96
+- [ ] Done
 
 **Explain the concept of serverless data processing in AWS Lambda.**
 
@@ -2776,6 +2872,7 @@ Lambda is for light processing, not heavy ETL.
 ---
 
 ## Question 97
+- [ ] Done
 
 **What is Azure Databricks and its benefits?**
 
@@ -2793,6 +2890,7 @@ Databricks is premium Spark with collaboration features.
 ---
 
 ## Question 98
+- [ ] Done
 
 **Describe the difference between Amazon Redshift and Google BigQuery.**
 
@@ -2813,6 +2911,7 @@ BigQuery for variable workloads, Redshift for steady.
 ---
 
 ## Question 99
+- [ ] Done
 
 **What is AWS Glue and its use cases in data integration?**
 
@@ -2830,6 +2929,7 @@ Glue is serverless ETL + data catalog.
 ---
 
 ## Question 100
+- [ ] Done
 
 **Explain the purpose of Google Cloud Dataflow in data processing.**
 

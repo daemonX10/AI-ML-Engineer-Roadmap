@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: What is reinforcement learning, and how does it differ from supervised and unsupervised learning?
+- [ ] Done
 
 ### Definition
 Reinforcement Learning (RL) is a paradigm where an agent learns to make decisions by interacting with an environment, receiving rewards or penalties for actions, and optimizing behavior to maximize cumulative reward over time.
@@ -38,6 +39,7 @@ Where γ is discount factor (0 to 1).
 ---
 
 ## Question 2: Explain the concept of the Markov Decision Process (MDP) in reinforcement learning
+- [ ] Done
 
 ### Definition
 MDP is the mathematical framework for modeling decision-making where outcomes are partly random and partly under the control of a decision maker. It formalizes the environment in RL with the Markov property (future depends only on current state, not history).
@@ -72,6 +74,7 @@ Agent in state s → Takes action a → Environment transitions to s' → Agent 
 ---
 
 ## Question 3: What is the role of a policy in reinforcement learning?
+- [ ] Done
 
 ### Definition
 A policy defines the agent's behavior - it's a mapping from states to actions (or probability distributions over actions) that specifies what action to take in each state.
@@ -106,6 +109,7 @@ $$\pi^* = \arg\max_\pi \mathbb{E}_\pi\left[\sum_{t=0}^{\infty} \gamma^t r_t\righ
 ---
 
 ## Question 4: What are value functions and how do they relate to reinforcement learning policies?
+- [ ] Done
 
 ### Definition
 Value functions estimate "how good" it is for an agent to be in a state (or take an action in a state) under a given policy. They quantify expected cumulative reward from that point forward.
@@ -143,6 +147,7 @@ $$\pi^*(s) = \arg\max_a Q^*(s,a)$$
 ---
 
 ## Question 5: Describe the difference between on-policy and off-policy learning
+- [ ] Done
 
 ### Definition
 **On-policy** methods learn about the policy currently being used to make decisions. **Off-policy** methods learn about a different (target) policy than the one generating experience (behavior policy).
@@ -187,6 +192,7 @@ $$\rho = \frac{\pi(a|s)}{b(a|s)}$$
 ---
 
 ## Question 6: What is the exploration vs. exploitation trade-off in reinforcement learning?
+- [ ] Done
 
 ### Definition
 The exploration-exploitation dilemma is the fundamental tension between trying new actions to discover potentially better rewards (exploration) and using current knowledge to maximize immediate reward (exploitation).
@@ -236,6 +242,7 @@ $$a = \arg\max_a \left[Q(a) + c\sqrt{\frac{\ln t}{N(a)}}\right]$$
 ---
 
 ## Question 7: What are the Bellman equations, and how are they used in reinforcement learning?
+- [ ] Done
 
 ### Definition
 Bellman equations express the relationship between the value of a state (or state-action pair) and the values of successor states. They form the foundation for computing and learning value functions in RL.
@@ -282,6 +289,7 @@ The term [r + γV(s') - V(s)] is the TD error.
 ---
 
 ## Question 8: Explain the difference between model-based and model-free reinforcement learning
+- [ ] Done
 
 ### Definition
 **Model-based RL** learns or uses a model of the environment (transition and reward functions) to plan actions. **Model-free RL** learns policies or value functions directly from experience without learning environment dynamics.
@@ -338,6 +346,7 @@ Simulated experience → Use model to generate more updates
 ---
 
 ## Question 9: What are the advantages and disadvantages of model-based reinforcement learning?
+- [ ] Done
 
 ### Advantages
 
@@ -380,6 +389,7 @@ Solution: Short planning horizons, model uncertainty
 ---
 
 ## Question 10: How does Q-learning work, and why is it considered a model-free method?
+- [ ] Done
 
 ### Definition
 Q-learning is an off-policy, model-free RL algorithm that learns the optimal action-value function Q* directly from experience, without requiring a model of the environment's dynamics.
@@ -440,6 +450,7 @@ def q_learning_update(Q, s, a, r, s_next, alpha=0.1, gamma=0.99):
 ---
 
 ## Question 11: Describe the Monte Carlo method in the context of reinforcement learning
+- [ ] Done
 
 ### Definition
 Monte Carlo (MC) methods learn value functions by averaging complete episode returns. They estimate V(s) or Q(s,a) by sampling full trajectories and computing actual returns, rather than bootstrapping from estimates.
@@ -495,6 +506,7 @@ For each episode:
 ---
 
 ## Question 12: What is Deep Q-Network (DQN), and how does it combine reinforcement learning with deep neural networks?
+- [ ] Done
 
 ### Definition
 DQN is an algorithm that combines Q-learning with deep neural networks to handle high-dimensional state spaces. It uses a neural network to approximate the Q-function and includes techniques like experience replay and target networks for stable training.
@@ -552,6 +564,7 @@ For each episode:
 ---
 
 ## Question 13: Describe the concept of experience replay in DQN and why it's important
+- [ ] Done
 
 ### Definition
 Experience replay stores agent's experiences (s, a, r, s', done) in a replay buffer and samples random mini-batches for training, breaking temporal correlations and enabling efficient data reuse.
@@ -603,6 +616,7 @@ Where δ_i is TD error - larger errors = more to learn.
 ---
 
 ## Question 14: What are the main elements of the Proximal Policy Optimization (PPO) algorithm?
+- [ ] Done
 
 ### Definition
 PPO is a policy gradient algorithm that improves training stability by limiting policy updates through a clipped objective function, preventing destructively large policy changes.
@@ -663,6 +677,7 @@ For each iteration:
 ---
 
 ## Question 15: Explain how Actor-Critic methods work in reinforcement learning
+- [ ] Done
 
 ### Definition
 Actor-Critic methods combine policy-based (Actor) and value-based (Critic) approaches. The Actor learns the policy, while the Critic evaluates actions by learning the value function, providing feedback to improve the Actor.
@@ -715,6 +730,7 @@ Using TD error as advantage estimate.
 ---
 
 ## Question 16: How does the Asynchronous Advantage Actor-Critic (A3C) algorithm work?
+- [ ] Done
 
 ### Definition
 A3C uses multiple parallel actor-learners running on different CPU threads, each interacting with its own copy of the environment. They asynchronously update a shared global network, providing diverse experience and stable training without replay buffer.
@@ -778,6 +794,7 @@ $$H(\pi) = -\sum_a \pi(a|s) \log \pi(a|s)$$
 ---
 
 ## Question 17: What is reward shaping, and how can it affect the performance of a reinforcement learning agent?
+- [ ] Done
 
 ### Definition
 Reward shaping adds supplementary rewards to guide agent learning, making sparse reward problems tractable. It provides intermediate feedback beyond the environment's natural reward signal.
@@ -827,6 +844,7 @@ Where Φ(s) is potential function. Provably preserves optimal policy.
 ---
 
 ## Question 18: Explain the concept of policy gradients and how they are used to learn policies
+- [ ] Done
 
 ### Definition
 Policy gradient methods directly optimize the policy parameters by computing gradients of expected return with respect to policy parameters, then updating in the direction that increases expected reward.
@@ -872,6 +890,7 @@ For each episode:
 ---
 
 ## Question 19: What are some common challenges with reward functions in reinforcement learning?
+- [ ] Done
 
 ### Common Challenges
 
@@ -925,6 +944,7 @@ Challenges:
 ---
 
 ## Question 20: Describe Trust Region Policy Optimization (TRPO) and how it differs from other policy gradient methods
+- [ ] Done
 
 ### Definition
 TRPO is a policy gradient algorithm that constrains policy updates to a "trust region" using KL divergence, ensuring monotonic improvement and stable training without destructively large updates.
@@ -976,6 +996,7 @@ Computing F⁻¹g directly is expensive. Use conjugate gradient to approximate.
 ---
 
 ## Question 21: How does one scale reinforcement learning to handle high-dimensional state spaces?
+- [ ] Done
 
 ### Challenges with High Dimensions
 - Curse of dimensionality
@@ -1035,6 +1056,7 @@ Reduces effective horizon and complexity.
 ---
 
 ## Question 22: Describe some strategies for transferring knowledge in reinforcement learning across different tasks
+- [ ] Done
 
 ### Transfer Learning in RL
 
@@ -1097,6 +1119,7 @@ Task 2 → New columns (with access to Task 1 features)
 ---
 
 ## Question 23: What are the potential issues with overfitting in reinforcement learning and how can they be mitigated?
+- [ ] Done
 
 ### Overfitting in RL
 
@@ -1161,6 +1184,7 @@ policy = nn.Sequential(
 ---
 
 ## Question 24: In what way does the REINFORCE algorithm update policies, and how does it handle variance in updates?
+- [ ] Done
 
 ### REINFORCE Update
 REINFORCE uses Monte Carlo returns to estimate policy gradients:
@@ -1225,6 +1249,7 @@ loss = -(log_probs * advantages).mean()
 ---
 
 ## Question 25: Explain the concept of inverse reinforcement learning
+- [ ] Done
 
 ### Definition
 Inverse Reinforcement Learning (IRL) recovers the reward function from observed expert behavior. Instead of learning policy from reward, it learns reward from policy (demonstrations).
@@ -1282,6 +1307,7 @@ Expert demos → Discriminator ← Policy trajectories
 ---
 
 ## Question 26: What is partial observability in reinforcement learning, and how can it be addressed?
+- [ ] Done
 
 ### Definition
 Partial observability occurs when the agent cannot fully observe the true state of the environment, receiving only incomplete or noisy observations. This is modeled as a Partially Observable MDP (POMDP).
@@ -1345,6 +1371,7 @@ class RecurrentPolicy(nn.Module):
 ---
 
 ## Question 27: Describe ways in which reinforcement learning can be used in healthcare
+- [ ] Done
 
 ### Applications
 
@@ -1403,6 +1430,7 @@ Reward: Time in target glucose range
 ---
 
 ## Question 28: Given a specific game, describe how you would design an agent to learn optimal strategies using reinforcement learning
+- [ ] Done
 
 ### Scenario: Design RL agent for Pac-Man
 
@@ -1476,6 +1504,7 @@ class PacmanDQN(nn.Module):
 ---
 
 ## Question 29: What are the latest advancements in multi-agent reinforcement learning?
+- [ ] Done
 
 ### Key Advancements
 
@@ -1531,6 +1560,7 @@ Train agent to cooperate with unseen partners:
 ---
 
 ## Question 30: How does curriculum learning work in the context of reinforcement learning?
+- [ ] Done
 
 ### Definition
 Curriculum learning trains agents on progressively harder tasks, starting with simple versions and gradually increasing difficulty. This guides exploration and accelerates learning.
@@ -1597,6 +1627,7 @@ curriculum_stages = [
 ---
 
 ## Question 31: Explain the concept of meta-reinforcement learning
+- [ ] Done
 
 ### Definition
 Meta-RL learns how to learn, training agents to quickly adapt to new tasks with minimal experience. The agent learns a learning algorithm or adaptation strategy that generalizes across tasks.
@@ -1658,6 +1689,7 @@ class RL2Agent(nn.Module):
 ---
 
 ## Question 32: What is the significance of interpretability in reinforcement learning, and how can it be achieved?
+- [ ] Done
 
 ### Why Interpretability Matters
 
@@ -1718,6 +1750,7 @@ Complex neural network policy → Distill → Decision tree
 ---
 
 ## Question 33: Describe any emerging trends in reinforcement learning within financial technology
+- [ ] Done
 
 ### Applications in FinTech
 
@@ -1780,6 +1813,7 @@ Or use Sharpe ratio, CVaR constraints.
 ---
 
 ## Question 34: What are some common pitfalls when scaling reinforcement learning applications?
+- [ ] Done
 
 ### Common Pitfalls
 
@@ -1851,6 +1885,7 @@ Actual: Robot exploits physics bug
 ---
 
 ## Question 35: How does one monitor and manage the ongoing performance of a deployed reinforcement learning system?
+- [ ] Done
 
 ### Monitoring Framework
 
@@ -1932,6 +1967,7 @@ log = {
 ---
 
 ## Question 36: Explain any new technique presented in a recent conference like NeurIPS or ICML that pertains to reinforcement learning
+- [ ] Done
 
 ### Decision Transformer (NeurIPS 2021)
 Frames RL as sequence modeling problem using Transformers.
@@ -1984,6 +2020,7 @@ loss = cross_entropy(predicted_action, actual_action)
 ---
 
 ## Question 37: Describe an end-to-end pipeline you would set up for training, validating, and deploying a reinforcement learning model in a commercial project
+- [ ] Done
 
 ### Pipeline Overview
 ```
@@ -2097,6 +2134,7 @@ class ProductionMonitor:
 # SARSA - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What does the acronym SARSA stand for?**
 
 **Answer:** _To be filled_
@@ -2104,6 +2142,7 @@ class ProductionMonitor:
 ---
 
 ## Question 2
+- [ ] Done
 **Explain the "on-policy" nature of SARSA.**
 
 **Answer:** _To be filled_
@@ -2111,6 +2150,7 @@ class ProductionMonitor:
 ---
 
 ## Question 3
+- [ ] Done
 **How is the SARSA update rule formulated mathematically?**
 
 **Answer:** _To be filled_
@@ -2118,6 +2158,7 @@ class ProductionMonitor:
 ---
 
 ## Question 4
+- [ ] Done
 **Compare SARSA and Q-Learning: what are the key differences?**
 
 **Answer:** _To be filled_
@@ -2125,6 +2166,7 @@ class ProductionMonitor:
 ---
 
 ## Question 5
+- [ ] Done
 **Describe the process of learning a policy using SARSA on a gridworld.**
 
 **Answer:** _To be filled_
@@ -2132,6 +2174,7 @@ class ProductionMonitor:
 ---
 
 ## Question 6
+- [ ] Done
 **When would SARSA be preferred over Q-Learning?**
 
 **Answer:** _To be filled_
@@ -2139,6 +2182,7 @@ class ProductionMonitor:
 ---
 
 ## Question 7
+- [ ] Done
 **What are the main steps in the SARSA algorithm?**
 
 **Answer:** _To be filled_
@@ -2146,6 +2190,7 @@ class ProductionMonitor:
 ---
 
 ## Question 8
+- [ ] Done
 **How do you select the next action in SARSA?**
 
 **Answer:** _To be filled_
@@ -2153,6 +2198,7 @@ class ProductionMonitor:
 ---
 
 ## Question 9
+- [ ] Done
 **What role does the learning rate (α) play in SARSA?**
 
 **Answer:** _To be filled_
@@ -2160,6 +2206,7 @@ class ProductionMonitor:
 ---
 
 ## Question 10
+- [ ] Done
 **What is the impact of a high discount factor (γ) in SARSA?**
 
 **Answer:** _To be filled_
@@ -2167,6 +2214,7 @@ class ProductionMonitor:
 ---
 
 ## Question 11
+- [ ] Done
 **How does SARSA handle the exploration-exploitation tradeoff?**
 
 **Answer:** _To be filled_
@@ -2174,6 +2222,7 @@ class ProductionMonitor:
 ---
 
 ## Question 12
+- [ ] Done
 **In which scenarios can SARSA perform worse than Q-Learning?**
 
 **Answer:** _To be filled_
@@ -2181,6 +2230,7 @@ class ProductionMonitor:
 ---
 
 ## Question 13
+- [ ] Done
 **How does on-policy learning affect convergence in SARSA?**
 
 **Answer:** _To be filled_
@@ -2188,6 +2238,7 @@ class ProductionMonitor:
 ---
 
 ## Question 14
+- [ ] Done
 **Explain the term "temporal difference" in SARSA.**
 
 **Answer:** _To be filled_
@@ -2195,6 +2246,7 @@ class ProductionMonitor:
 ---
 
 ## Question 15
+- [ ] Done
 **What is Eligibility Traces in the context of SARSA(λ)?**
 
 **Answer:** _To be filled_
@@ -2202,6 +2254,7 @@ class ProductionMonitor:
 ---
 
 ## Question 16
+- [ ] Done
 **How are rewards propagated in episodes using SARSA?**
 
 **Answer:** _To be filled_
@@ -2209,6 +2262,7 @@ class ProductionMonitor:
 ---
 
 ## Question 17
+- [ ] Done
 **How can SARSA be extended for continuous state and action spaces?**
 
 **Answer:** _To be filled_
@@ -2216,6 +2270,7 @@ class ProductionMonitor:
 ---
 
 ## Question 18
+- [ ] Done
 **What is the role of ε-greedy policy in SARSA?**
 
 **Answer:** _To be filled_
@@ -2223,6 +2278,7 @@ class ProductionMonitor:
 ---
 
 ## Question 19
+- [ ] Done
 **Provide an example of a real-world task suitable for SARSA.**
 
 **Answer:** _To be filled_
@@ -2230,6 +2286,7 @@ class ProductionMonitor:
 ---
 
 ## Question 20
+- [ ] Done
 **How does SARSA handle stochastic environments?**
 
 **Answer:** _To be filled_
@@ -2237,6 +2294,7 @@ class ProductionMonitor:
 ---
 
 ## Question 21
+- [ ] Done
 **What is SARSA(λ) and why is λ introduced?**
 
 **Answer:** _To be filled_
@@ -2244,6 +2302,7 @@ class ProductionMonitor:
 ---
 
 ## Question 22
+- [ ] Done
 **How do you initialize Q-values in SARSA?**
 
 **Answer:** _To be filled_
@@ -2251,6 +2310,7 @@ class ProductionMonitor:
 ---
 
 ## Question 23
+- [ ] Done
 **What is the effect of the initial Q-values on learning speed?**
 
 **Answer:** _To be filled_
@@ -2258,6 +2318,7 @@ class ProductionMonitor:
 ---
 
 ## Question 24
+- [ ] Done
 **How does Expected SARSA differ from regular SARSA?**
 
 **Answer:** _To be filled_
@@ -2265,6 +2326,7 @@ class ProductionMonitor:
 ---
 
 ## Question 25
+- [ ] Done
 **What are the benefits of Expected SARSA over SARSA?**
 
 **Answer:** _To be filled_
@@ -2272,6 +2334,7 @@ class ProductionMonitor:
 ---
 
 ## Question 26
+- [ ] Done
 **What is the computational complexity of SARSA per iteration?**
 
 **Answer:** _To be filled_
@@ -2279,6 +2342,7 @@ class ProductionMonitor:
 ---
 
 ## Question 27
+- [ ] Done
 **How would you implement SARSA for the Taxi-v3 environment?**
 
 **Answer:** _To be filled_
@@ -2286,6 +2350,7 @@ class ProductionMonitor:
 ---
 
 ## Question 28
+- [ ] Done
 **Explain why SARSA is considered an on-policy algorithm.**
 
 **Answer:** _To be filled_
@@ -2293,6 +2358,7 @@ class ProductionMonitor:
 ---
 
 ## Question 29
+- [ ] Done
 **How does batch updating work in SARSA?**
 
 **Answer:** _To be filled_
@@ -2300,6 +2366,7 @@ class ProductionMonitor:
 ---
 
 ## Question 30
+- [ ] Done
 **What is the policy improvement step in SARSA?**
 
 **Answer:** _To be filled_
@@ -2307,6 +2374,7 @@ class ProductionMonitor:
 ---
 
 ## Question 31
+- [ ] Done
 **Describe a scenario of policy evaluation in SARSA.**
 
 **Answer:** _To be filled_
@@ -2314,6 +2382,7 @@ class ProductionMonitor:
 ---
 
 ## Question 32
+- [ ] Done
 **How would you visualize the learning progress in SARSA?**
 
 **Answer:** _To be filled_
@@ -2321,6 +2390,7 @@ class ProductionMonitor:
 ---
 
 ## Question 33
+- [ ] Done
 **What challenges do you face in hyperparameter tuning for SARSA?**
 
 **Answer:** _To be filled_
@@ -2328,6 +2398,7 @@ class ProductionMonitor:
 ---
 
 ## Question 34
+- [ ] Done
 **How can function approximation be integrated with SARSA?**
 
 **Answer:** _To be filled_
@@ -2335,6 +2406,7 @@ class ProductionMonitor:
 ---
 
 ## Question 35
+- [ ] Done
 **What are the limitations of tabular SARSA?**
 
 **Answer:** _To be filled_
@@ -2342,6 +2414,7 @@ class ProductionMonitor:
 ---
 
 ## Question 36
+- [ ] Done
 **What makes SARSA robust to policy changes?**
 
 **Answer:** _To be filled_
@@ -2349,6 +2422,7 @@ class ProductionMonitor:
 ---
 
 ## Question 37
+- [ ] Done
 **How do terminal states affect updates in SARSA?**
 
 **Answer:** _To be filled_
@@ -2356,6 +2430,7 @@ class ProductionMonitor:
 ---
 
 ## Question 38
+- [ ] Done
 **Give an example of using decaying epsilon for exploration in SARSA.**
 
 **Answer:** _To be filled_
@@ -2363,6 +2438,7 @@ class ProductionMonitor:
 ---
 
 ## Question 39
+- [ ] Done
 **What are the theoretical convergence guarantees for SARSA?**
 
 **Answer:** _To be filled_
@@ -2370,6 +2446,7 @@ class ProductionMonitor:
 ---
 
 ## Question 40
+- [ ] Done
 **How does stochasticity in the environment dynamics affect SARSA learning?**
 
 **Answer:** _To be filled_
@@ -2377,6 +2454,7 @@ class ProductionMonitor:
 ---
 
 ## Question 41
+- [ ] Done
 **What is the practical impact of action stochasticity on SARSA's updates?**
 
 **Answer:** _To be filled_
@@ -2384,6 +2462,7 @@ class ProductionMonitor:
 ---
 
 ## Question 42
+- [ ] Done
 **Explain reward shaping with respect to SARSA.**
 
 **Answer:** _To be filled_
@@ -2391,6 +2470,7 @@ class ProductionMonitor:
 ---
 
 ## Question 43
+- [ ] Done
 **How do you modify SARSA for partially observable environments?**
 
 **Answer:** _To be filled_
@@ -2398,6 +2478,7 @@ class ProductionMonitor:
 ---
 
 ## Question 44
+- [ ] Done
 **What is the difference between Monte Carlo and SARSA methods?**
 
 **Answer:** _To be filled_
@@ -2405,6 +2486,7 @@ class ProductionMonitor:
 ---
 
 ## Question 45
+- [ ] Done
 **How can SARSA be used in multi-agent settings?**
 
 **Answer:** _To be filled_
@@ -2412,6 +2494,7 @@ class ProductionMonitor:
 ---
 
 ## Question 46
+- [ ] Done
 **Illustrate SARSA's performance in sparse reward environments.**
 
 **Answer:** _To be filled_
@@ -2419,6 +2502,7 @@ class ProductionMonitor:
 ---
 
 ## Question 47
+- [ ] Done
 **What role does delayed reward play in SARSA's learning curve?**
 
 **Answer:** _To be filled_
@@ -2426,6 +2510,7 @@ class ProductionMonitor:
 ---
 
 ## Question 48
+- [ ] Done
 **How do you adapt SARSA for continuous reward spaces?**
 
 **Answer:** _To be filled_
@@ -2433,6 +2518,7 @@ class ProductionMonitor:
 ---
 
 ## Question 49
+- [ ] Done
 **Describe applications where SARSA may underperform.**
 
 **Answer:** _To be filled_
@@ -2440,6 +2526,7 @@ class ProductionMonitor:
 ---
 
 ## Question 50
+- [ ] Done
 **What recent advancements or variants exist for the SARSA algorithm?**
 
 **Answer:** _To be filled_
@@ -2454,6 +2541,7 @@ class ProductionMonitor:
 # Deep Q-Network (DQN) - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What is a Deep Q-Network (DQN)?**
 
 **Answer:** _To be filled_
@@ -2461,6 +2549,7 @@ class ProductionMonitor:
 ---
 
 ## Question 2
+- [ ] Done
 **How does DQN differ from traditional Q-learning?**
 
 **Answer:** _To be filled_
@@ -2468,6 +2557,7 @@ class ProductionMonitor:
 ---
 
 ## Question 3
+- [ ] Done
 **Describe the architecture of a typical DQN.**
 
 **Answer:** _To be filled_
@@ -2475,6 +2565,7 @@ class ProductionMonitor:
 ---
 
 ## Question 4
+- [ ] Done
 **What role does the replay buffer play in DQN?**
 
 **Answer:** _To be filled_
@@ -2482,6 +2573,7 @@ class ProductionMonitor:
 ---
 
 ## Question 5
+- [ ] Done
 **Why is a target network used in DQN?**
 
 **Answer:** _To be filled_
@@ -2489,6 +2581,7 @@ class ProductionMonitor:
 ---
 
 ## Question 6
+- [ ] Done
 **Describe the concept of "experience replay" in DQN.**
 
 **Answer:** _To be filled_
@@ -2496,6 +2589,7 @@ class ProductionMonitor:
 ---
 
 ## Question 7
+- [ ] Done
 **How are Q-values represented in a DQN?**
 
 **Answer:** _To be filled_
@@ -2503,6 +2597,7 @@ class ProductionMonitor:
 ---
 
 ## Question 8
+- [ ] Done
 **What types of problems are well suited for DQN?**
 
 **Answer:** _To be filled_
@@ -2510,6 +2605,7 @@ class ProductionMonitor:
 ---
 
 ## Question 9
+- [ ] Done
 **Explain how the Bellman equation is applied in DQN.**
 
 **Answer:** _To be filled_
@@ -2517,6 +2613,7 @@ class ProductionMonitor:
 ---
 
 ## Question 10
+- [ ] Done
 **What are some common challenges when training DQNs?**
 
 **Answer:** _To be filled_
@@ -2524,6 +2621,7 @@ class ProductionMonitor:
 ---
 
 ## Question 11
+- [ ] Done
 **How is stability achieved in DQN training?**
 
 **Answer:** _To be filled_
@@ -2531,6 +2629,7 @@ class ProductionMonitor:
 ---
 
 ## Question 12
+- [ ] Done
 **Why are mini-batches used in DQN updates?**
 
 **Answer:** _To be filled_
@@ -2538,6 +2637,7 @@ class ProductionMonitor:
 ---
 
 ## Question 13
+- [ ] Done
 **How does the target network improve convergence?**
 
 **Answer:** _To be filled_
@@ -2545,6 +2645,7 @@ class ProductionMonitor:
 ---
 
 ## Question 14
+- [ ] Done
 **Explain the concept of reward clipping in DQN.**
 
 **Answer:** _To be filled_
@@ -2552,6 +2653,7 @@ class ProductionMonitor:
 ---
 
 ## Question 15
+- [ ] Done
 **How does DQN handle high-dimensional inputs like images?**
 
 **Answer:** _To be filled_
@@ -2559,6 +2661,7 @@ class ProductionMonitor:
 ---
 
 ## Question 16
+- [ ] Done
 **What is Double DQN and why is it needed?**
 
 **Answer:** _To be filled_
@@ -2566,6 +2669,7 @@ class ProductionMonitor:
 ---
 
 ## Question 17
+- [ ] Done
 **What are dueling architectures in DQN?**
 
 **Answer:** _To be filled_
@@ -2573,6 +2677,7 @@ class ProductionMonitor:
 ---
 
 ## Question 18
+- [ ] Done
 **Explain prioritized experience replay.**
 
 **Answer:** _To be filled_
@@ -2580,6 +2685,7 @@ class ProductionMonitor:
 ---
 
 ## Question 19
+- [ ] Done
 **How is the loss function defined in DQN?**
 
 **Answer:** _To be filled_
@@ -2587,6 +2693,7 @@ class ProductionMonitor:
 ---
 
 ## Question 20
+- [ ] Done
 **What metrics can be used to evaluate a DQN?**
 
 **Answer:** _To be filled_
@@ -2594,6 +2701,7 @@ class ProductionMonitor:
 ---
 
 ## Question 21
+- [ ] Done
 **What are common pitfalls in hyperparameter tuning for DQN?**
 
 **Answer:** _To be filled_
@@ -2601,6 +2709,7 @@ class ProductionMonitor:
 ---
 
 ## Question 22
+- [ ] Done
 **How do you prevent overestimation of Q-values in DQN?**
 
 **Answer:** _To be filled_
@@ -2608,6 +2717,7 @@ class ProductionMonitor:
 ---
 
 ## Question 23
+- [ ] Done
 **What is the role of the discount factor in DQN?**
 
 **Answer:** _To be filled_
@@ -2615,6 +2725,7 @@ class ProductionMonitor:
 ---
 
 ## Question 24
+- [ ] Done
 **How is exploration implemented in DQN agents?**
 
 **Answer:** _To be filled_
@@ -2622,6 +2733,7 @@ class ProductionMonitor:
 ---
 
 ## Question 25
+- [ ] Done
 **How can DQN be extended to continuous action spaces?**
 
 **Answer:** _To be filled_
@@ -2629,6 +2741,7 @@ class ProductionMonitor:
 ---
 
 ## Question 26
+- [ ] Done
 **What are common activation functions used in DQN networks?**
 
 **Answer:** _To be filled_
@@ -2636,6 +2749,7 @@ class ProductionMonitor:
 ---
 
 ## Question 27
+- [ ] Done
 **How does DQN perform in non-stationary environments?**
 
 **Answer:** _To be filled_
@@ -2643,6 +2757,7 @@ class ProductionMonitor:
 ---
 
 ## Question 28
+- [ ] Done
 **When should you update the target network in DQN?**
 
 **Answer:** _To be filled_
@@ -2650,6 +2765,7 @@ class ProductionMonitor:
 ---
 
 ## Question 29
+- [ ] Done
 **What are the main differences between DQN and Policy Gradient methods?**
 
 **Answer:** _To be filled_
@@ -2657,6 +2773,7 @@ class ProductionMonitor:
 ---
 
 ## Question 30
+- [ ] Done
 **How does DQN manage memory constraints with large replay buffers?**
 
 **Answer:** _To be filled_
@@ -2664,6 +2781,7 @@ class ProductionMonitor:
 ---
 
 ## Question 31
+- [ ] Done
 **What is the effect of batch size in DQN training?**
 
 **Answer:** _To be filled_
@@ -2671,6 +2789,7 @@ class ProductionMonitor:
 ---
 
 ## Question 32
+- [ ] Done
 **How do you monitor and debug a DQN agent's performance?**
 
 **Answer:** _To be filled_
@@ -2678,6 +2797,7 @@ class ProductionMonitor:
 ---
 
 ## Question 33
+- [ ] Done
 **What is "catastrophic forgetting" and how does it manifest in DQN?**
 
 **Answer:** _To be filled_
@@ -2685,6 +2805,7 @@ class ProductionMonitor:
 ---
 
 ## Question 34
+- [ ] Done
 **What are possible improvements for vanilla DQN?**
 
 **Answer:** _To be filled_
@@ -2692,6 +2813,7 @@ class ProductionMonitor:
 ---
 
 ## Question 35
+- [ ] Done
 **How would you visualize the learned Q-function in DQN?**
 
 **Answer:** _To be filled_
@@ -2699,6 +2821,7 @@ class ProductionMonitor:
 ---
 
 ## Question 36
+- [ ] Done
 **What are real-world applications of DQN?**
 
 **Answer:** _To be filled_
@@ -2706,6 +2829,7 @@ class ProductionMonitor:
 ---
 
 ## Question 37
+- [ ] Done
 **How robust is DQN to different reward structures?**
 
 **Answer:** _To be filled_
@@ -2713,6 +2837,7 @@ class ProductionMonitor:
 ---
 
 ## Question 38
+- [ ] Done
 **What's the impact of reward delay on DQN?**
 
 **Answer:** _To be filled_
@@ -2720,6 +2845,7 @@ class ProductionMonitor:
 ---
 
 ## Question 39
+- [ ] Done
 **How can transfer learning be applied to DQN?**
 
 **Answer:** _To be filled_
@@ -2727,6 +2853,7 @@ class ProductionMonitor:
 ---
 
 ## Question 40
+- [ ] Done
 **What regularization techniques are effective for DQN?**
 
 **Answer:** _To be filled_
@@ -2734,6 +2861,7 @@ class ProductionMonitor:
 ---
 
 ## Question 41
+- [ ] Done
 **How does DQN scale to multi-agent systems?**
 
 **Answer:** _To be filled_
@@ -2741,6 +2869,7 @@ class ProductionMonitor:
 ---
 
 ## Question 42
+- [ ] Done
 **What is the impact of exploration vs. exploitation in DQN?**
 
 **Answer:** _To be filled_
@@ -2748,6 +2877,7 @@ class ProductionMonitor:
 ---
 
 ## Question 43
+- [ ] Done
 **How do you choose when to end training for a DQN agent?**
 
 **Answer:** _To be filled_
@@ -2755,6 +2885,7 @@ class ProductionMonitor:
 ---
 
 ## Question 44
+- [ ] Done
 **What metrics diagnose overfitting in DQN?**
 
 **Answer:** _To be filled_
@@ -2762,6 +2893,7 @@ class ProductionMonitor:
 ---
 
 ## Question 45
+- [ ] Done
 **How do you use DQN for policy distillation?**
 
 **Answer:** _To be filled_
@@ -2769,6 +2901,7 @@ class ProductionMonitor:
 ---
 
 ## Question 46
+- [ ] Done
 **What are the limitations of DQN for real-time control tasks?**
 
 **Answer:** _To be filled_
@@ -2776,6 +2909,7 @@ class ProductionMonitor:
 ---
 
 ## Question 47
+- [ ] Done
 **In what scenarios would DQN fail?**
 
 **Answer:** _To be filled_
@@ -2783,6 +2917,7 @@ class ProductionMonitor:
 ---
 
 ## Question 48
+- [ ] Done
 **How can DQN be combined with other RL algorithms?**
 
 **Answer:** _To be filled_
@@ -2790,6 +2925,7 @@ class ProductionMonitor:
 ---
 
 ## Question 49
+- [ ] Done
 **How does network size affect DQN performance?**
 
 **Answer:** _To be filled_
@@ -2797,6 +2933,7 @@ class ProductionMonitor:
 ---
 
 ## Question 50
+- [ ] Done
 **What are the main research trends in improving DQN?**
 
 **Answer:** _To be filled_
@@ -2811,6 +2948,7 @@ class ProductionMonitor:
 # Policy Gradient Methods - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What are Policy Gradient methods in RL?**
 
 **Answer:** _To be filled_
@@ -2818,6 +2956,7 @@ class ProductionMonitor:
 ---
 
 ## Question 2
+- [ ] Done
 **How do Policy Gradient methods differ from value-based methods?**
 
 **Answer:** _To be filled_
@@ -2825,6 +2964,7 @@ class ProductionMonitor:
 ---
 
 ## Question 3
+- [ ] Done
 **Explain the general objective function optimized in Policy Gradient.**
 
 **Answer:** _To be filled_
@@ -2832,6 +2972,7 @@ class ProductionMonitor:
 ---
 
 ## Question 4
+- [ ] Done
 **Why are Policy Gradient methods suitable for continuous action spaces?**
 
 **Answer:** _To be filled_
@@ -2839,6 +2980,7 @@ class ProductionMonitor:
 ---
 
 ## Question 5
+- [ ] Done
 **Describe the steps of the REINFORCE algorithm.**
 
 **Answer:** _To be filled_
@@ -2846,6 +2988,7 @@ class ProductionMonitor:
 ---
 
 ## Question 6
+- [ ] Done
 **What is the variance problem with Policy Gradient methods?**
 
 **Answer:** _To be filled_
@@ -2853,6 +2996,7 @@ class ProductionMonitor:
 ---
 
 ## Question 7
+- [ ] Done
 **How is the likelihood ratio trick used?**
 
 **Answer:** _To be filled_
@@ -2860,6 +3004,7 @@ class ProductionMonitor:
 ---
 
 ## Question 8
+- [ ] Done
 **What does "stochastic policy" mean in Policy Gradients?**
 
 **Answer:** _To be filled_
@@ -2867,6 +3012,7 @@ class ProductionMonitor:
 ---
 
 ## Question 9
+- [ ] Done
 **How does baseline function help reduce variance?**
 
 **Answer:** _To be filled_
@@ -2874,6 +3020,7 @@ class ProductionMonitor:
 ---
 
 ## Question 10
+- [ ] Done
 **What's the difference between actor-only and actor-critic architectures?**
 
 **Answer:** _To be filled_
@@ -2881,6 +3028,7 @@ class ProductionMonitor:
 ---
 
 ## Question 11
+- [ ] Done
 **What is entropy regularization and why is it used?**
 
 **Answer:** _To be filled_
@@ -2888,6 +3036,7 @@ class ProductionMonitor:
 ---
 
 ## Question 12
+- [ ] Done
 **Explain episodic vs. step-wise policy gradient methods.**
 
 **Answer:** _To be filled_
@@ -2895,6 +3044,7 @@ class ProductionMonitor:
 ---
 
 ## Question 13
+- [ ] Done
 **How do Policy Gradient methods handle large state spaces?**
 
 **Answer:** _To be filled_
@@ -2902,6 +3052,7 @@ class ProductionMonitor:
 ---
 
 ## Question 14
+- [ ] Done
 **What is reward-to-go and how is it used?**
 
 **Answer:** _To be filled_
@@ -2909,6 +3060,7 @@ class ProductionMonitor:
 ---
 
 ## Question 15
+- [ ] Done
 **How do you use advantage estimates in Policy Gradients?**
 
 **Answer:** _To be filled_
@@ -2916,6 +3068,7 @@ class ProductionMonitor:
 ---
 
 ## Question 16
+- [ ] Done
 **Why is reward normalization important?**
 
 **Answer:** _To be filled_
@@ -2923,6 +3076,7 @@ class ProductionMonitor:
 ---
 
 ## Question 17
+- [ ] Done
 **How do discount factors affect Policy Gradient performance?**
 
 **Answer:** _To be filled_
@@ -2930,6 +3084,7 @@ class ProductionMonitor:
 ---
 
 ## Question 18
+- [ ] Done
 **What is the gradient estimator in the classic Policy Gradient method?**
 
 **Answer:** _To be filled_
@@ -2937,6 +3092,7 @@ class ProductionMonitor:
 ---
 
 ## Question 19
+- [ ] Done
 **Describe the use of trust regions in TRPO.**
 
 **Answer:** _To be filled_
@@ -2944,6 +3100,7 @@ class ProductionMonitor:
 ---
 
 ## Question 20
+- [ ] Done
 **How does PPO improve stability over vanilla Policy Gradients?**
 
 **Answer:** _To be filled_
@@ -2951,6 +3108,7 @@ class ProductionMonitor:
 ---
 
 ## Question 21
+- [ ] Done
 **What is exploration noise in Policy Gradients?**
 
 **Answer:** _To be filled_
@@ -2958,6 +3116,7 @@ class ProductionMonitor:
 ---
 
 ## Question 22
+- [ ] Done
 **How do you implement constraint policies in Policy Gradient methods?**
 
 **Answer:** _To be filled_
@@ -2965,6 +3124,7 @@ class ProductionMonitor:
 ---
 
 ## Question 23
+- [ ] Done
 **How does off-policy policy gradient differ from on-policy?**
 
 **Answer:** _To be filled_
@@ -2972,6 +3132,7 @@ class ProductionMonitor:
 ---
 
 ## Question 24
+- [ ] Done
 **What does "credit assignment" mean in policy gradients?**
 
 **Answer:** _To be filled_
@@ -2979,6 +3140,7 @@ class ProductionMonitor:
 ---
 
 ## Question 25
+- [ ] Done
 **How is policy improvement measured in practice?**
 
 **Answer:** _To be filled_
@@ -2986,6 +3148,7 @@ class ProductionMonitor:
 ---
 
 ## Question 26
+- [ ] Done
 **What optimization techniques work well for Policy Gradients?**
 
 **Answer:** _To be filled_
@@ -2993,6 +3156,7 @@ class ProductionMonitor:
 ---
 
 ## Question 27
+- [ ] Done
 **What does it mean to "clip" objective functions in PPO?**
 
 **Answer:** _To be filled_
@@ -3000,6 +3164,7 @@ class ProductionMonitor:
 ---
 
 ## Question 28
+- [ ] Done
 **How is advantage estimated in PPO?**
 
 **Answer:** _To be filled_
@@ -3007,6 +3172,7 @@ class ProductionMonitor:
 ---
 
 ## Question 29
+- [ ] Done
 **Describe sample efficiency in Policy Gradient methods.**
 
 **Answer:** _To be filled_
@@ -3014,6 +3180,7 @@ class ProductionMonitor:
 ---
 
 ## Question 30
+- [ ] Done
 **What is GAE (Generalized Advantage Estimator)?**
 
 **Answer:** _To be filled_
@@ -3021,6 +3188,7 @@ class ProductionMonitor:
 ---
 
 ## Question 31
+- [ ] Done
 **How does batch size affect Policy Gradient performance?**
 
 **Answer:** _To be filled_
@@ -3028,6 +3196,7 @@ class ProductionMonitor:
 ---
 
 ## Question 32
+- [ ] Done
 **When do Policy Gradient methods diverge?**
 
 **Answer:** _To be filled_
@@ -3035,6 +3204,7 @@ class ProductionMonitor:
 ---
 
 ## Question 33
+- [ ] Done
 **What are deterministic Policy Gradient methods?**
 
 **Answer:** _To be filled_
@@ -3042,6 +3212,7 @@ class ProductionMonitor:
 ---
 
 ## Question 34
+- [ ] Done
 **Can deterministic Policy Gradients be used with discrete actions?**
 
 **Answer:** _To be filled_
@@ -3049,6 +3220,7 @@ class ProductionMonitor:
 ---
 
 ## Question 35
+- [ ] Done
 **How do Policy Gradient methods apply to multi-agent settings?**
 
 **Answer:** _To be filled_
@@ -3056,6 +3228,7 @@ class ProductionMonitor:
 ---
 
 ## Question 36
+- [ ] Done
 **When would you not use Policy Gradients?**
 
 **Answer:** _To be filled_
@@ -3063,6 +3236,7 @@ class ProductionMonitor:
 ---
 
 ## Question 37
+- [ ] Done
 **How do Policy Gradient methods scale to large environments?**
 
 **Answer:** _To be filled_
@@ -3070,6 +3244,7 @@ class ProductionMonitor:
 ---
 
 ## Question 38
+- [ ] Done
 **What is reward shaping in Policy Gradient approaches?**
 
 **Answer:** _To be filled_
@@ -3077,6 +3252,7 @@ class ProductionMonitor:
 ---
 
 ## Question 39
+- [ ] Done
 **Describe a scenario where Policy Gradients outperform value-based methods.**
 
 **Answer:** _To be filled_
@@ -3084,6 +3260,7 @@ class ProductionMonitor:
 ---
 
 ## Question 40
+- [ ] Done
 **How is the policy parameterized in deep Policy Gradient methods?**
 
 **Answer:** _To be filled_
@@ -3091,6 +3268,7 @@ class ProductionMonitor:
 ---
 
 ## Question 41
+- [ ] Done
 **What is the relationship between actor-critic and Policy Gradients?**
 
 **Answer:** _To be filled_
@@ -3098,6 +3276,7 @@ class ProductionMonitor:
 ---
 
 ## Question 42
+- [ ] Done
 **What are common pitfalls in hyperparameter selection for Policy Gradients?**
 
 **Answer:** _To be filled_
@@ -3105,6 +3284,7 @@ class ProductionMonitor:
 ---
 
 ## Question 43
+- [ ] Done
 **How do you debug a Policy Gradient agent?**
 
 **Answer:** _To be filled_
@@ -3112,6 +3292,7 @@ class ProductionMonitor:
 ---
 
 ## Question 44
+- [ ] Done
 **What are popular libraries implementing Policy Gradient methods?**
 
 **Answer:** _To be filled_
@@ -3119,6 +3300,7 @@ class ProductionMonitor:
 ---
 
 ## Question 45
+- [ ] Done
 **How do you evaluate a trained Policy Gradient agent?**
 
 **Answer:** _To be filled_
@@ -3126,6 +3308,7 @@ class ProductionMonitor:
 ---
 
 ## Question 46
+- [ ] Done
 **What are the main limitations of Policy Gradient methods?**
 
 **Answer:** _To be filled_
@@ -3133,6 +3316,7 @@ class ProductionMonitor:
 ---
 
 ## Question 47
+- [ ] Done
 **How would you extend Policy Gradient methods to partial observability?**
 
 **Answer:** _To be filled_
@@ -3140,6 +3324,7 @@ class ProductionMonitor:
 ---
 
 ## Question 48
+- [ ] Done
 **Discuss recent advancements in Policy Gradient research.**
 
 **Answer:** _To be filled_
@@ -3147,6 +3332,7 @@ class ProductionMonitor:
 ---
 
 ## Question 49
+- [ ] Done
 **How is robustness analyzed in Policy Gradient methods?**
 
 **Answer:** _To be filled_
@@ -3154,6 +3340,7 @@ class ProductionMonitor:
 ---
 
 ## Question 50
+- [ ] Done
 **What are practical ways to visualize policy evolution over training?**
 
 **Answer:** _To be filled_
@@ -3168,6 +3355,7 @@ class ProductionMonitor:
 # Actor-Critic / A3C / PPO / TRPO - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What is an Actor-Critic architecture?**
 
 **Answer:** _To be filled_
@@ -3175,6 +3363,7 @@ class ProductionMonitor:
 ---
 
 ## Question 2
+- [ ] Done
 **How does the actor-critic framework differ from pure policy gradients?**
 
 **Answer:** _To be filled_
@@ -3182,6 +3371,7 @@ class ProductionMonitor:
 ---
 
 ## Question 3
+- [ ] Done
 **What is the main advantage of A3C over traditional RL algorithms?**
 
 **Answer:** _To be filled_
@@ -3189,6 +3379,7 @@ class ProductionMonitor:
 ---
 
 ## Question 4
+- [ ] Done
 **How do multiple agents in A3C speed up learning?**
 
 **Answer:** _To be filled_
@@ -3196,6 +3387,7 @@ class ProductionMonitor:
 ---
 
 ## Question 5
+- [ ] Done
 **What is asynchronous updating in A3C?**
 
 **Answer:** _To be filled_
@@ -3203,6 +3395,7 @@ class ProductionMonitor:
 ---
 
 ## Question 6
+- [ ] Done
 **What does PPO stand for? How does it work?**
 
 **Answer:** _To be filled_
@@ -3210,6 +3403,7 @@ class ProductionMonitor:
 ---
 
 ## Question 7
+- [ ] Done
 **What problem does PPO solve in policy gradient methods?**
 
 **Answer:** _To be filled_
@@ -3217,6 +3411,7 @@ class ProductionMonitor:
 ---
 
 ## Question 8
+- [ ] Done
 **How does TRPO enforce trust regions?**
 
 **Answer:** _To be filled_
@@ -3224,6 +3419,7 @@ class ProductionMonitor:
 ---
 
 ## Question 9
+- [ ] Done
 **What are surrogate objective functions?**
 
 **Answer:** _To be filled_
@@ -3231,6 +3427,7 @@ class ProductionMonitor:
 ---
 
 ## Question 10
+- [ ] Done
 **What is the advantage function, and how is it estimated?**
 
 **Answer:** _To be filled_
@@ -3238,6 +3435,7 @@ class ProductionMonitor:
 ---
 
 ## Question 11
+- [ ] Done
 **What is the purpose of the critic in actor-critic methods?**
 
 **Answer:** _To be filled_
@@ -3245,6 +3443,7 @@ class ProductionMonitor:
 ---
 
 ## Question 12
+- [ ] Done
 **How can the bias-variance tradeoff be managed in actor-critic models?**
 
 **Answer:** _To be filled_
@@ -3252,6 +3451,7 @@ class ProductionMonitor:
 ---
 
 ## Question 13
+- [ ] Done
 **Compare PPO and TRPO: when would you use each?**
 
 **Answer:** _To be filled_
@@ -3259,6 +3459,7 @@ class ProductionMonitor:
 ---
 
 ## Question 14
+- [ ] Done
 **What role does entropy bonus play in actor-critic methods?**
 
 **Answer:** _To be filled_
@@ -3266,6 +3467,7 @@ class ProductionMonitor:
 ---
 
 ## Question 15
+- [ ] Done
 **How is experience replay handled in actor-critic approaches?**
 
 **Answer:** _To be filled_
@@ -3273,6 +3475,7 @@ class ProductionMonitor:
 ---
 
 ## Question 16
+- [ ] Done
 **How do actor-critic methods ensure stability?**
 
 **Answer:** _To be filled_
@@ -3280,6 +3483,7 @@ class ProductionMonitor:
 ---
 
 ## Question 17
+- [ ] Done
 **Describe synchronous vs. asynchronous actor-critic training.**
 
 **Answer:** _To be filled_
@@ -3287,6 +3491,7 @@ class ProductionMonitor:
 ---
 
 ## Question 18
+- [ ] Done
 **What is GAE(λ) and how is it used?**
 
 **Answer:** _To be filled_
@@ -3294,6 +3499,7 @@ class ProductionMonitor:
 ---
 
 ## Question 19
+- [ ] Done
 **What are the limitations of on-policy actor-critic methods?**
 
 **Answer:** _To be filled_
@@ -3301,6 +3507,7 @@ class ProductionMonitor:
 ---
 
 ## Question 20
+- [ ] Done
 **How is off-policy learning used in actor-critic variants?**
 
 **Answer:** _To be filled_
@@ -3308,6 +3515,7 @@ class ProductionMonitor:
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement clipping in PPO?**
 
 **Answer:** _To be filled_
@@ -3315,6 +3523,7 @@ class ProductionMonitor:
 ---
 
 ## Question 22
+- [ ] Done
 **What is the main benefit of parallel environments in RL?**
 
 **Answer:** _To be filled_
@@ -3322,6 +3531,7 @@ class ProductionMonitor:
 ---
 
 ## Question 23
+- [ ] Done
 **How are recurrent neural networks used in A3C?**
 
 **Answer:** _To be filled_
@@ -3329,6 +3539,7 @@ class ProductionMonitor:
 ---
 
 ## Question 24
+- [ ] Done
 **Why is PPO considered less sensitive to changes in hyperparameters?**
 
 **Answer:** _To be filled_
@@ -3336,6 +3547,7 @@ class ProductionMonitor:
 ---
 
 ## Question 25
+- [ ] Done
 **Describe a typical use case for PPO.**
 
 **Answer:** _To be filled_
@@ -3343,6 +3555,7 @@ class ProductionMonitor:
 ---
 
 ## Question 26
+- [ ] Done
 **How are policy updates constrained in TRPO?**
 
 **Answer:** _To be filled_
@@ -3350,6 +3563,7 @@ class ProductionMonitor:
 ---
 
 ## Question 27
+- [ ] Done
 **What are the main challenges in scaling actor-critic methods?**
 
 **Answer:** _To be filled_
@@ -3357,6 +3571,7 @@ class ProductionMonitor:
 ---
 
 ## Question 28
+- [ ] Done
 **How do you handle exploration in actor-critic models?**
 
 **Answer:** _To be filled_
@@ -3364,6 +3579,7 @@ class ProductionMonitor:
 ---
 
 ## Question 29
+- [ ] Done
 **What is shared parameterization in actor-critic networks?**
 
 **Answer:** _To be filled_
@@ -3371,6 +3587,7 @@ class ProductionMonitor:
 ---
 
 ## Question 30
+- [ ] Done
 **Describe sample efficiency in actor-critic approaches.**
 
 **Answer:** _To be filled_
@@ -3378,6 +3595,7 @@ class ProductionMonitor:
 ---
 
 ## Question 31
+- [ ] Done
 **What is the role of the advantage estimator in PPO?**
 
 **Answer:** _To be filled_
@@ -3385,6 +3603,7 @@ class ProductionMonitor:
 ---
 
 ## Question 32
+- [ ] Done
 **How do you prevent reward hacking in actor-critic RL?**
 
 **Answer:** _To be filled_
@@ -3392,6 +3611,7 @@ class ProductionMonitor:
 ---
 
 ## Question 33
+- [ ] Done
 **Describe how actor-critic methods are used in robotics.**
 
 **Answer:** _To be filled_
@@ -3399,6 +3619,7 @@ class ProductionMonitor:
 ---
 
 ## Question 34
+- [ ] Done
 **What is the computational cost of TRPO per update?**
 
 **Answer:** _To be filled_
@@ -3406,6 +3627,7 @@ class ProductionMonitor:
 ---
 
 ## Question 35
+- [ ] Done
 **How is the KL divergence used in PPO and TRPO?**
 
 **Answer:** _To be filled_
@@ -3413,6 +3635,7 @@ class ProductionMonitor:
 ---
 
 ## Question 36
+- [ ] Done
 **What are common pitfalls when implementing A3C from scratch?**
 
 **Answer:** _To be filled_
@@ -3420,6 +3643,7 @@ class ProductionMonitor:
 ---
 
 ## Question 37
+- [ ] Done
 **Explain transfer learning in the context of actor-critic RL.**
 
 **Answer:** _To be filled_
@@ -3427,6 +3651,7 @@ class ProductionMonitor:
 ---
 
 ## Question 38
+- [ ] Done
 **How is TRPO's constraint implemented mathematically?**
 
 **Answer:** _To be filled_
@@ -3434,6 +3659,7 @@ class ProductionMonitor:
 ---
 
 ## Question 39
+- [ ] Done
 **What are the main differences between A3C and DDPG?**
 
 **Answer:** _To be filled_
@@ -3441,6 +3667,7 @@ class ProductionMonitor:
 ---
 
 ## Question 40
+- [ ] Done
 **How are distributed systems applied in actor-critic training?**
 
 **Answer:** _To be filled_
@@ -3448,6 +3675,7 @@ class ProductionMonitor:
 ---
 
 ## Question 41
+- [ ] Done
 **What is stochasticity in policy outputs and why does it matter?**
 
 **Answer:** _To be filled_
@@ -3455,6 +3683,7 @@ class ProductionMonitor:
 ---
 
 ## Question 42
+- [ ] Done
 **How does actor-critic handle delayed rewards?**
 
 **Answer:** _To be filled_
@@ -3462,6 +3691,7 @@ class ProductionMonitor:
 ---
 
 ## Question 43
+- [ ] Done
 **In what ways can credit assignment be improved in actor-critic?**
 
 **Answer:** _To be filled_
@@ -3469,6 +3699,7 @@ class ProductionMonitor:
 ---
 
 ## Question 44
+- [ ] Done
 **How do you monitor convergence in actor-critic agents?**
 
 **Answer:** _To be filled_
@@ -3476,6 +3707,7 @@ class ProductionMonitor:
 ---
 
 ## Question 45
+- [ ] Done
 **Why might actor-critic methods be unstable?**
 
 **Answer:** _To be filled_
@@ -3483,6 +3715,7 @@ class ProductionMonitor:
 ---
 
 ## Question 46
+- [ ] Done
 **How can you regularize actor-critic models?**
 
 **Answer:** _To be filled_
@@ -3490,6 +3723,7 @@ class ProductionMonitor:
 ---
 
 ## Question 47
+- [ ] Done
 **How do you ensure reproducibility in actor-critic experiments?**
 
 **Answer:** _To be filled_
@@ -3497,6 +3731,7 @@ class ProductionMonitor:
 ---
 
 ## Question 48
+- [ ] Done
 **What are recent trends in actor-critic research?**
 
 **Answer:** _To be filled_
@@ -3504,6 +3739,7 @@ class ProductionMonitor:
 ---
 
 ## Question 49
+- [ ] Done
 **What are real-world applications of PPO and TRPO?**
 
 **Answer:** _To be filled_
@@ -3511,6 +3747,7 @@ class ProductionMonitor:
 ---
 
 ## Question 50
+- [ ] Done
 **How can actor-critic architectures be applied to multi-task RL?**
 
 **Answer:** _To be filled_
@@ -3525,6 +3762,7 @@ class ProductionMonitor:
 # Multi-Agent RL - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What is Multi-Agent Reinforcement Learning (MARL)?**
 
 **Answer:** _To be filled_
@@ -3532,6 +3770,7 @@ class ProductionMonitor:
 ---
 
 ## Question 2
+- [ ] Done
 **How does MARL differ from single-agent RL?**
 
 **Answer:** _To be filled_
@@ -3539,6 +3778,7 @@ class ProductionMonitor:
 ---
 
 ## Question 3
+- [ ] Done
 **What are the primary challenges in MARL?**
 
 **Answer:** _To be filled_
@@ -3546,6 +3786,7 @@ class ProductionMonitor:
 ---
 
 ## Question 4
+- [ ] Done
 **How do agents communicate in MARL?**
 
 **Answer:** _To be filled_
@@ -3553,6 +3794,7 @@ class ProductionMonitor:
 ---
 
 ## Question 5
+- [ ] Done
 **What is non-stationarity in MARL environments?**
 
 **Answer:** _To be filled_
@@ -3560,6 +3802,7 @@ class ProductionMonitor:
 ---
 
 ## Question 6
+- [ ] Done
 **How is cooperation handled in multi-agent settings?**
 
 **Answer:** _To be filled_
@@ -3567,6 +3810,7 @@ class ProductionMonitor:
 ---
 
 ## Question 7
+- [ ] Done
 **Describe the credit assignment problem in MARL.**
 
 **Answer:** _To be filled_
@@ -3574,6 +3818,7 @@ class ProductionMonitor:
 ---
 
 ## Question 8
+- [ ] Done
 **What are Markov Games (Stochastic Games) in MARL?**
 
 **Answer:** _To be filled_
@@ -3581,6 +3826,7 @@ class ProductionMonitor:
 ---
 
 ## Question 9
+- [ ] Done
 **Give examples of real-world MARL applications.**
 
 **Answer:** _To be filled_
@@ -3588,6 +3834,7 @@ class ProductionMonitor:
 ---
 
 ## Question 10
+- [ ] Done
 **When is competition preferred over cooperation in MARL?**
 
 **Answer:** _To be filled_
@@ -3595,6 +3842,7 @@ class ProductionMonitor:
 ---
 
 ## Question 11
+- [ ] Done
 **What are decentralized policies in MARL?**
 
 **Answer:** _To be filled_
@@ -3602,6 +3850,7 @@ class ProductionMonitor:
 ---
 
 ## Question 12
+- [ ] Done
 **How do centralized critics improve learning in MARL?**
 
 **Answer:** _To be filled_
@@ -3609,6 +3858,7 @@ class ProductionMonitor:
 ---
 
 ## Question 13
+- [ ] Done
 **What methods exist for credit assignment in MARL?**
 
 **Answer:** _To be filled_
@@ -3616,6 +3866,7 @@ class ProductionMonitor:
 ---
 
 ## Question 14
+- [ ] Done
 **How does reward sharing affect MARL performance?**
 
 **Answer:** _To be filled_
@@ -3623,6 +3874,7 @@ class ProductionMonitor:
 ---
 
 ## Question 15
+- [ ] Done
 **What is the role of partial observability in MARL?**
 
 **Answer:** _To be filled_
@@ -3630,6 +3882,7 @@ class ProductionMonitor:
 ---
 
 ## Question 16
+- [ ] Done
 **How can communication protocols be learned among agents?**
 
 **Answer:** _To be filled_
@@ -3637,6 +3890,7 @@ class ProductionMonitor:
 ---
 
 ## Question 17
+- [ ] Done
 **What is independent Q-learning in the context of MARL?**
 
 **Answer:** _To be filled_
@@ -3644,6 +3898,7 @@ class ProductionMonitor:
 ---
 
 ## Question 18
+- [ ] Done
 **How does scalability affect MARL design?**
 
 **Answer:** _To be filled_
@@ -3651,6 +3906,7 @@ class ProductionMonitor:
 ---
 
 ## Question 19
+- [ ] Done
 **Explain the role of agent identity and role assignment.**
 
 **Answer:** _To be filled_
@@ -3658,6 +3914,7 @@ class ProductionMonitor:
 ---
 
 ## Question 20
+- [ ] Done
 **How do you evaluate MARL agents?**
 
 **Answer:** _To be filled_
@@ -3665,6 +3922,7 @@ class ProductionMonitor:
 ---
 
 ## Question 21
+- [ ] Done
 **What challenges exist for exploration in MARL?**
 
 **Answer:** _To be filled_
@@ -3672,6 +3930,7 @@ class ProductionMonitor:
 ---
 
 ## Question 22
+- [ ] Done
 **How does reward shaping work in multi-agent scenarios?**
 
 **Answer:** _To be filled_
@@ -3679,6 +3938,7 @@ class ProductionMonitor:
 ---
 
 ## Question 23
+- [ ] Done
 **What are typical failures in MARL systems?**
 
 **Answer:** _To be filled_
@@ -3686,6 +3946,7 @@ class ProductionMonitor:
 ---
 
 ## Question 24
+- [ ] Done
 **How are policies coordinated among agents?**
 
 **Answer:** _To be filled_
@@ -3693,6 +3954,7 @@ class ProductionMonitor:
 ---
 
 ## Question 25
+- [ ] Done
 **What is the role of competition and adversarial learning?**
 
 **Answer:** _To be filled_
@@ -3700,6 +3962,7 @@ class ProductionMonitor:
 ---
 
 ## Question 26
+- [ ] Done
 **What approaches exist for cooperative MARL?**
 
 **Answer:** _To be filled_
@@ -3707,6 +3970,7 @@ class ProductionMonitor:
 ---
 
 ## Question 27
+- [ ] Done
 **How do you prevent collusion among agents?**
 
 **Answer:** _To be filled_
@@ -3714,6 +3978,7 @@ class ProductionMonitor:
 ---
 
 ## Question 28
+- [ ] Done
 **What is transfer learning in MARL?**
 
 **Answer:** _To be filled_
@@ -3721,6 +3986,7 @@ class ProductionMonitor:
 ---
 
 ## Question 29
+- [ ] Done
 **How do agents learn to negotiate in MARL?**
 
 **Answer:** _To be filled_
@@ -3728,6 +3994,7 @@ class ProductionMonitor:
 ---
 
 ## Question 30
+- [ ] Done
 **Describe policy gradients applied in multi-agent contexts.**
 
 **Answer:** _To be filled_
@@ -3735,6 +4002,7 @@ class ProductionMonitor:
 ---
 
 ## Question 31
+- [ ] Done
 **How is robustness ensured in MARL?**
 
 **Answer:** _To be filled_
@@ -3742,6 +4010,7 @@ class ProductionMonitor:
 ---
 
 ## Question 32
+- [ ] Done
 **When might centralized training with decentralized execution be needed?**
 
 **Answer:** _To be filled_
@@ -3749,6 +4018,7 @@ class ProductionMonitor:
 ---
 
 ## Question 33
+- [ ] Done
 **What are emergent behaviors in MARL?**
 
 **Answer:** _To be filled_
@@ -3756,6 +4026,7 @@ class ProductionMonitor:
 ---
 
 ## Question 34
+- [ ] Done
 **Give an example of hierarchical learning in MARL.**
 
 **Answer:** _To be filled_
@@ -3763,6 +4034,7 @@ class ProductionMonitor:
 ---
 
 ## Question 35
+- [ ] Done
 **How do you implement curriculum learning in MARL?**
 
 **Answer:** _To be filled_
@@ -3770,6 +4042,7 @@ class ProductionMonitor:
 ---
 
 ## Question 36
+- [ ] Done
 **How is communication overhead managed in MARL?**
 
 **Answer:** _To be filled_
@@ -3777,6 +4050,7 @@ class ProductionMonitor:
 ---
 
 ## Question 37
+- [ ] Done
 **How do policies adapt to changing agent populations?**
 
 **Answer:** _To be filled_
@@ -3784,6 +4058,7 @@ class ProductionMonitor:
 ---
 
 ## Question 38
+- [ ] Done
 **What role does game theory play in MARL?**
 
 **Answer:** _To be filled_
@@ -3791,6 +4066,7 @@ class ProductionMonitor:
 ---
 
 ## Question 39
+- [ ] Done
 **How can exploration-exploitation tradeoff be balanced in MARL?**
 
 **Answer:** _To be filled_
@@ -3798,6 +4074,7 @@ class ProductionMonitor:
 ---
 
 ## Question 40
+- [ ] Done
 **What are benchmarks for MARL?**
 
 **Answer:** _To be filled_
@@ -3805,6 +4082,7 @@ class ProductionMonitor:
 ---
 
 ## Question 41
+- [ ] Done
 **What is the biggest challenge in scaling MARL systems?**
 
 **Answer:** _To be filled_
@@ -3812,6 +4090,7 @@ class ProductionMonitor:
 ---
 
 ## Question 42
+- [ ] Done
 **How are rewards split in cooperative tasks?**
 
 **Answer:** _To be filled_
@@ -3819,6 +4098,7 @@ class ProductionMonitor:
 ---
 
 ## Question 43
+- [ ] Done
 **How is stability measured in MARL?**
 
 **Answer:** _To be filled_
@@ -3826,6 +4106,7 @@ class ProductionMonitor:
 ---
 
 ## Question 44
+- [ ] Done
 **What are meta-learning approaches in MARL?**
 
 **Answer:** _To be filled_
@@ -3833,6 +4114,7 @@ class ProductionMonitor:
 ---
 
 ## Question 45
+- [ ] Done
 **How do you visualize interactions among agents?**
 
 **Answer:** _To be filled_
@@ -3840,6 +4122,7 @@ class ProductionMonitor:
 ---
 
 ## Question 46
+- [ ] Done
 **What optimization techniques are used in MARL training?**
 
 **Answer:** _To be filled_
@@ -3847,6 +4130,7 @@ class ProductionMonitor:
 ---
 
 ## Question 47
+- [ ] Done
 **How is experience replay managed for multiple agents?**
 
 **Answer:** _To be filled_
@@ -3854,6 +4138,7 @@ class ProductionMonitor:
 ---
 
 ## Question 48
+- [ ] Done
 **When do MARL systems fail to generalize?**
 
 **Answer:** _To be filled_
@@ -3861,6 +4146,7 @@ class ProductionMonitor:
 ---
 
 ## Question 49
+- [ ] Done
 **What recent advancements exist in MARL research?**
 
 **Answer:** _To be filled_
@@ -3868,6 +4154,7 @@ class ProductionMonitor:
 ---
 
 ## Question 50
+- [ ] Done
 **How can explainability be incorporated in MARL systems?**
 
 **Answer:** _To be filled_
@@ -3882,6 +4169,7 @@ class ProductionMonitor:
 # Reward Shaping - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What is reward shaping in RL?**
 
 **Answer:** _To be filled_
@@ -3889,6 +4177,7 @@ class ProductionMonitor:
 ---
 
 ## Question 2
+- [ ] Done
 **Why is reward shaping used?**
 
 **Answer:** _To be filled_
@@ -3896,6 +4185,7 @@ class ProductionMonitor:
 ---
 
 ## Question 3
+- [ ] Done
 **How does reward shaping accelerate learning?**
 
 **Answer:** _To be filled_
@@ -3903,6 +4193,7 @@ class ProductionMonitor:
 ---
 
 ## Question 4
+- [ ] Done
 **Give examples of potential-based reward shaping.**
 
 **Answer:** _To be filled_
@@ -3910,6 +4201,7 @@ class ProductionMonitor:
 ---
 
 ## Question 5
+- [ ] Done
 **What are the risks of incorrect reward shaping?**
 
 **Answer:** _To be filled_
@@ -3917,6 +4209,7 @@ class ProductionMonitor:
 ---
 
 ## Question 6
+- [ ] Done
 **How can reward shaping cause reward hacking?**
 
 **Answer:** _To be filled_
@@ -3924,6 +4217,7 @@ class ProductionMonitor:
 ---
 
 ## Question 7
+- [ ] Done
 **What are the criteria for a "safe" reward shaping function?**
 
 **Answer:** _To be filled_
@@ -3931,6 +4225,7 @@ class ProductionMonitor:
 ---
 
 ## Question 8
+- [ ] Done
 **Explain the concept of "potential" in potential-based reward shaping.**
 
 **Answer:** _To be filled_
@@ -3938,6 +4233,7 @@ class ProductionMonitor:
 ---
 
 ## Question 9
+- [ ] Done
 **How does reward shaping affect policy convergence?**
 
 **Answer:** _To be filled_
@@ -3945,6 +4241,7 @@ class ProductionMonitor:
 ---
 
 ## Question 10
+- [ ] Done
 **What is the Bellman equation with reward shaping?**
 
 **Answer:** _To be filled_
@@ -3952,6 +4249,7 @@ class ProductionMonitor:
 ---
 
 ## Question 11
+- [ ] Done
 **How do you evaluate the effectiveness of reward shaping?**
 
 **Answer:** _To be filled_
@@ -3959,6 +4257,7 @@ class ProductionMonitor:
 ---
 
 ## Question 12
+- [ ] Done
 **What challenges arise in multi-objective reward shaping?**
 
 **Answer:** _To be filled_
@@ -3966,6 +4265,7 @@ class ProductionMonitor:
 ---
 
 ## Question 13
+- [ ] Done
 **How do you design reward functions for complex tasks?**
 
 **Answer:** _To be filled_
@@ -3973,6 +4273,7 @@ class ProductionMonitor:
 ---
 
 ## Question 14
+- [ ] Done
 **How is domain knowledge incorporated into reward shaping?**
 
 **Answer:** _To be filled_
@@ -3980,6 +4281,7 @@ class ProductionMonitor:
 ---
 
 ## Question 15
+- [ ] Done
 **What is sparse vs. dense reward shaping?**
 
 **Answer:** _To be filled_
@@ -3987,6 +4289,7 @@ class ProductionMonitor:
 ---
 
 ## Question 16
+- [ ] Done
 **How does reward shaping affect exploration?**
 
 **Answer:** _To be filled_
@@ -3994,6 +4297,7 @@ class ProductionMonitor:
 ---
 
 ## Question 17
+- [ ] Done
 **What is the impact of reward shaping on credit assignment?**
 
 **Answer:** _To be filled_
@@ -4001,6 +4305,7 @@ class ProductionMonitor:
 ---
 
 ## Question 18
+- [ ] Done
 **Can reward shaping change the optimal policy? Why or why not?**
 
 **Answer:** _To be filled_
@@ -4008,6 +4313,7 @@ class ProductionMonitor:
 ---
 
 ## Question 19
+- [ ] Done
 **How is reward decomposition related to reward shaping?**
 
 **Answer:** _To be filled_
@@ -4015,6 +4321,7 @@ class ProductionMonitor:
 ---
 
 ## Question 20
+- [ ] Done
 **What are intrinsic vs. extrinsic rewards?**
 
 **Answer:** _To be filled_
@@ -4022,6 +4329,7 @@ class ProductionMonitor:
 ---
 
 ## Question 21
+- [ ] Done
 **How do you balance multiple reward shaping signals?**
 
 **Answer:** _To be filled_
@@ -4029,6 +4337,7 @@ class ProductionMonitor:
 ---
 
 ## Question 22
+- [ ] Done
 **How is reward shaping handled in multi-agent settings?**
 
 **Answer:** _To be filled_
@@ -4036,6 +4345,7 @@ class ProductionMonitor:
 ---
 
 ## Question 23
+- [ ] Done
 **What is the effect of noisy rewards on reward shaping?**
 
 **Answer:** _To be filled_
@@ -4043,6 +4353,7 @@ class ProductionMonitor:
 ---
 
 ## Question 24
+- [ ] Done
 **How is reward shaping validated empirically?**
 
 **Answer:** _To be filled_
@@ -4050,6 +4361,7 @@ class ProductionMonitor:
 ---
 
 ## Question 25
+- [ ] Done
 **Describe applications where reward shaping is essential.**
 
 **Answer:** _To be filled_
@@ -4057,6 +4369,7 @@ class ProductionMonitor:
 ---
 
 ## Question 26
+- [ ] Done
 **What is the impact of delayed reward on reward shaping?**
 
 **Answer:** _To be filled_
@@ -4064,6 +4377,7 @@ class ProductionMonitor:
 ---
 
 ## Question 27
+- [ ] Done
 **How do you prevent negative side effects of reward shaping?**
 
 **Answer:** _To be filled_
@@ -4071,6 +4385,7 @@ class ProductionMonitor:
 ---
 
 ## Question 28
+- [ ] Done
 **How can reward shaping be used for transfer learning?**
 
 **Answer:** _To be filled_
@@ -4078,6 +4393,7 @@ class ProductionMonitor:
 ---
 
 ## Question 29
+- [ ] Done
 **How do you combine reward shaping with policy gradients?**
 
 **Answer:** _To be filled_
@@ -4085,6 +4401,7 @@ class ProductionMonitor:
 ---
 
 ## Question 30
+- [ ] Done
 **What is the role of auxiliary tasks in reward shaping?**
 
 **Answer:** _To be filled_
@@ -4092,6 +4409,7 @@ class ProductionMonitor:
 ---
 
 ## Question 31
+- [ ] Done
 **How do you manage conflicting objectives in reward shaping?**
 
 **Answer:** _To be filled_
@@ -4099,6 +4417,7 @@ class ProductionMonitor:
 ---
 
 ## Question 32
+- [ ] Done
 **When does reward shaping fail to help?**
 
 **Answer:** _To be filled_
@@ -4106,6 +4425,7 @@ class ProductionMonitor:
 ---
 
 ## Question 33
+- [ ] Done
 **How is interpretability ensured in reward shaping?**
 
 **Answer:** _To be filled_
@@ -4113,6 +4433,7 @@ class ProductionMonitor:
 ---
 
 ## Question 34
+- [ ] Done
 **What are examples of unintended consequences in reward shaping?**
 
 **Answer:** _To be filled_
@@ -4120,6 +4441,7 @@ class ProductionMonitor:
 ---
 
 ## Question 35
+- [ ] Done
 **What is curriculum learning and how does it relate to reward shaping?**
 
 **Answer:** _To be filled_
@@ -4127,6 +4449,7 @@ class ProductionMonitor:
 ---
 
 ## Question 36
+- [ ] Done
 **What role does reward scaling play?**
 
 **Answer:** _To be filled_
@@ -4134,6 +4457,7 @@ class ProductionMonitor:
 ---
 
 ## Question 37
+- [ ] Done
 **How do you debug a poorly shaped reward function?**
 
 **Answer:** _To be filled_
@@ -4141,6 +4465,7 @@ class ProductionMonitor:
 ---
 
 ## Question 38
+- [ ] Done
 **How does reward shaping affect robustness?**
 
 **Answer:** _To be filled_
@@ -4148,6 +4473,7 @@ class ProductionMonitor:
 ---
 
 ## Question 39
+- [ ] Done
 **What tools exist to visualize reward shaping effects?**
 
 **Answer:** _To be filled_
@@ -4155,6 +4481,7 @@ class ProductionMonitor:
 ---
 
 ## Question 40
+- [ ] Done
 **How is reward shaping applied in robotics?**
 
 **Answer:** _To be filled_
@@ -4162,6 +4489,7 @@ class ProductionMonitor:
 ---
 
 ## Question 41
+- [ ] Done
 **What are the theoretical guarantees of reward shaping?**
 
 **Answer:** _To be filled_
@@ -4169,6 +4497,7 @@ class ProductionMonitor:
 ---
 
 ## Question 42
+- [ ] Done
 **How do you empirically test if reward shaping improves performance?**
 
 **Answer:** _To be filled_
@@ -4176,6 +4505,7 @@ class ProductionMonitor:
 ---
 
 ## Question 43
+- [ ] Done
 **How do you choose hyperparameters for shaped rewards?**
 
 **Answer:** _To be filled_
@@ -4183,6 +4513,7 @@ class ProductionMonitor:
 ---
 
 ## Question 44
+- [ ] Done
 **What is the interaction of reward shaping with exploration?**
 
 **Answer:** _To be filled_
@@ -4190,6 +4521,7 @@ class ProductionMonitor:
 ---
 
 ## Question 45
+- [ ] Done
 **When might you not use reward shaping?**
 
 **Answer:** _To be filled_
@@ -4197,6 +4529,7 @@ class ProductionMonitor:
 ---
 
 ## Question 46
+- [ ] Done
 **How do humans inform reward function design?**
 
 **Answer:** _To be filled_
@@ -4204,6 +4537,7 @@ class ProductionMonitor:
 ---
 
 ## Question 47
+- [ ] Done
 **What is the link between reward shaping and behavioral cloning?**
 
 **Answer:** _To be filled_
@@ -4211,6 +4545,7 @@ class ProductionMonitor:
 ---
 
 ## Question 48
+- [ ] Done
 **How do you adapt reward shaping for dynamic environments?**
 
 **Answer:** _To be filled_
@@ -4218,6 +4553,7 @@ class ProductionMonitor:
 ---
 
 ## Question 49
+- [ ] Done
 **How is fairness integrated with reward shaping in social applications?**
 
 **Answer:** _To be filled_
@@ -4225,6 +4561,7 @@ class ProductionMonitor:
 ---
 
 ## Question 50
+- [ ] Done
 **Give examples of recent trends and innovations in reward shaping.**
 
 **Answer:** _To be filled_
@@ -4239,6 +4576,7 @@ class ProductionMonitor:
 # Exploration-Exploitation Tradeoff - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What is the exploration-exploitation tradeoff?**
 
 **Answer:** _To be filled_
@@ -4246,6 +4584,7 @@ class ProductionMonitor:
 ---
 
 ## Question 2
+- [ ] Done
 **Why is it fundamental in reinforcement learning?**
 
 **Answer:** _To be filled_
@@ -4253,6 +4592,7 @@ class ProductionMonitor:
 ---
 
 ## Question 3
+- [ ] Done
 **Give examples of exploration strategies in RL.**
 
 **Answer:** _To be filled_
@@ -4260,6 +4600,7 @@ class ProductionMonitor:
 ---
 
 ## Question 4
+- [ ] Done
 **What is ε-greedy exploration?**
 
 **Answer:** _To be filled_
@@ -4267,6 +4608,7 @@ class ProductionMonitor:
 ---
 
 ## Question 5
+- [ ] Done
 **How does softmax exploration differ from ε-greedy?**
 
 **Answer:** _To be filled_
@@ -4274,6 +4616,7 @@ class ProductionMonitor:
 ---
 
 ## Question 6
+- [ ] Done
 **What are annealing schedules for exploration parameters?**
 
 **Answer:** _To be filled_
@@ -4281,6 +4624,7 @@ class ProductionMonitor:
 ---
 
 ## Question 7
+- [ ] Done
 **What is optimism in the face of uncertainty?**
 
 **Answer:** _To be filled_
@@ -4288,6 +4632,7 @@ class ProductionMonitor:
 ---
 
 ## Question 8
+- [ ] Done
 **Explain Upper Confidence Bound (UCB) exploration.**
 
 **Answer:** _To be filled_
@@ -4295,6 +4640,7 @@ class ProductionMonitor:
 ---
 
 ## Question 9
+- [ ] Done
 **How does Thompson Sampling handle the tradeoff?**
 
 **Answer:** _To be filled_
@@ -4302,6 +4648,7 @@ class ProductionMonitor:
 ---
 
 ## Question 10
+- [ ] Done
 **Why is balancing short-term and long-term rewards challenging?**
 
 **Answer:** _To be filled_
@@ -4309,6 +4656,7 @@ class ProductionMonitor:
 ---
 
 ## Question 11
+- [ ] Done
 **What is the regret in RL, and how is it measured?**
 
 **Answer:** _To be filled_
@@ -4316,6 +4664,7 @@ class ProductionMonitor:
 ---
 
 ## Question 12
+- [ ] Done
 **How do deep RL algorithms deal with the tradeoff?**
 
 **Answer:** _To be filled_
@@ -4323,6 +4672,7 @@ class ProductionMonitor:
 ---
 
 ## Question 13
+- [ ] Done
 **What is the effect of over-exploration?**
 
 **Answer:** _To be filled_
@@ -4330,6 +4680,7 @@ class ProductionMonitor:
 ---
 
 ## Question 14
+- [ ] Done
 **How can under-exploration hinder learning?**
 
 **Answer:** _To be filled_
@@ -4337,6 +4688,7 @@ class ProductionMonitor:
 ---
 
 ## Question 15
+- [ ] Done
 **What is intrinsic motivation and how is it used for exploration?**
 
 **Answer:** _To be filled_
@@ -4344,6 +4696,7 @@ class ProductionMonitor:
 ---
 
 ## Question 16
+- [ ] Done
 **How does count-based exploration work?**
 
 **Answer:** _To be filled_
@@ -4351,6 +4704,7 @@ class ProductionMonitor:
 ---
 
 ## Question 17
+- [ ] Done
 **How do curiosity-driven approaches affect RL training?**
 
 **Answer:** _To be filled_
@@ -4358,6 +4712,7 @@ class ProductionMonitor:
 ---
 
 ## Question 18
+- [ ] Done
 **What are the risks of exploration in real-world systems?**
 
 **Answer:** _To be filled_
@@ -4365,6 +4720,7 @@ class ProductionMonitor:
 ---
 
 ## Question 19
+- [ ] Done
 **How does the multi-armed bandit problem illustrate this tradeoff?**
 
 **Answer:** _To be filled_
@@ -4372,6 +4728,7 @@ class ProductionMonitor:
 ---
 
 ## Question 20
+- [ ] Done
 **How is the tradeoff quantified mathematically?**
 
 **Answer:** _To be filled_
@@ -4379,6 +4736,7 @@ class ProductionMonitor:
 ---
 
 ## Question 21
+- [ ] Done
 **Why is exploration more challenging in sparse reward environments?**
 
 **Answer:** _To be filled_
@@ -4386,6 +4744,7 @@ class ProductionMonitor:
 ---
 
 ## Question 22
+- [ ] Done
 **What is the impact of exploration on convergence time?**
 
 **Answer:** _To be filled_
@@ -4393,6 +4752,7 @@ class ProductionMonitor:
 ---
 
 ## Question 23
+- [ ] Done
 **How do you visualize exploration in state space?**
 
 **Answer:** _To be filled_
@@ -4400,6 +4760,7 @@ class ProductionMonitor:
 ---
 
 ## Question 24
+- [ ] Done
 **What are hybrid strategies for exploration?**
 
 **Answer:** _To be filled_
@@ -4407,6 +4768,7 @@ class ProductionMonitor:
 ---
 
 ## Question 25
+- [ ] Done
 **How does Bayesian RL address exploration-exploitation?**
 
 **Answer:** _To be filled_
@@ -4414,6 +4776,7 @@ class ProductionMonitor:
 ---
 
 ## Question 26
+- [ ] Done
 **What is parameter noise and how is it used?**
 
 **Answer:** _To be filled_
@@ -4421,6 +4784,7 @@ class ProductionMonitor:
 ---
 
 ## Question 27
+- [ ] Done
 **What is bootstrapped DQN, and how does it affect exploration?**
 
 **Answer:** _To be filled_
@@ -4428,6 +4792,7 @@ class ProductionMonitor:
 ---
 
 ## Question 28
+- [ ] Done
 **How do meta-learning approaches inform exploration-exploitation?**
 
 **Answer:** _To be filled_
@@ -4435,6 +4800,7 @@ class ProductionMonitor:
 ---
 
 ## Question 29
+- [ ] Done
 **What is exploration bonus in RL?**
 
 **Answer:** _To be filled_
@@ -4442,6 +4808,7 @@ class ProductionMonitor:
 ---
 
 ## Question 30
+- [ ] Done
 **How do biological systems solve the exploration-exploitation tradeoff?**
 
 **Answer:** _To be filled_
@@ -4449,6 +4816,7 @@ class ProductionMonitor:
 ---
 
 ## Question 31
+- [ ] Done
 **What practical problems are caused by misbalancing exploration and exploitation?**
 
 **Answer:** _To be filled_
@@ -4456,6 +4824,7 @@ class ProductionMonitor:
 ---
 
 ## Question 32
+- [ ] Done
 **How is hierarchical reinforcement learning related to exploration?**
 
 **Answer:** _To be filled_
@@ -4463,6 +4832,7 @@ class ProductionMonitor:
 ---
 
 ## Question 33
+- [ ] Done
 **What role does exploration play in transfer learning?**
 
 **Answer:** _To be filled_
@@ -4470,6 +4840,7 @@ class ProductionMonitor:
 ---
 
 ## Question 34
+- [ ] Done
 **How do ensembles help in exploration strategies?**
 
 **Answer:** _To be filled_
@@ -4477,6 +4848,7 @@ class ProductionMonitor:
 ---
 
 ## Question 35
+- [ ] Done
 **When is pure exploitation preferred?**
 
 **Answer:** _To be filled_
@@ -4484,6 +4856,7 @@ class ProductionMonitor:
 ---
 
 ## Question 36
+- [ ] Done
 **What is the impact of reward shaping on exploration?**
 
 **Answer:** _To be filled_
@@ -4491,6 +4864,7 @@ class ProductionMonitor:
 ---
 
 ## Question 37
+- [ ] Done
 **How do you empirically measure exploration?**
 
 **Answer:** _To be filled_
@@ -4498,6 +4872,7 @@ class ProductionMonitor:
 ---
 
 ## Question 38
+- [ ] Done
 **What tools exist for monitoring exploration vs. exploitation?**
 
 **Answer:** _To be filled_
@@ -4505,6 +4880,7 @@ class ProductionMonitor:
 ---
 
 ## Question 39
+- [ ] Done
 **How do dynamic environments affect the tradeoff?**
 
 **Answer:** _To be filled_
@@ -4512,6 +4888,7 @@ class ProductionMonitor:
 ---
 
 ## Question 40
+- [ ] Done
 **What is "deep exploration" and how is it achieved?**
 
 **Answer:** _To be filled_
@@ -4519,6 +4896,7 @@ class ProductionMonitor:
 ---
 
 ## Question 41
+- [ ] Done
 **How do you set exploration schedules for curriculum learning?**
 
 **Answer:** _To be filled_
@@ -4526,6 +4904,7 @@ class ProductionMonitor:
 ---
 
 ## Question 42
+- [ ] Done
 **What are theoretical bounds for exploration algorithms?**
 
 **Answer:** _To be filled_
@@ -4533,6 +4912,7 @@ class ProductionMonitor:
 ---
 
 ## Question 43
+- [ ] Done
 **What is the exploration-exploitation dilemma in MARL?**
 
 **Answer:** _To be filled_
@@ -4540,6 +4920,7 @@ class ProductionMonitor:
 ---
 
 ## Question 44
+- [ ] Done
 **How do you tune exploration parameters in practice?**
 
 **Answer:** _To be filled_
@@ -4547,6 +4928,7 @@ class ProductionMonitor:
 ---
 
 ## Question 45
+- [ ] Done
 **Why does exploration sometimes lead to catastrophic forgetting?**
 
 **Answer:** _To be filled_
@@ -4554,6 +4936,7 @@ class ProductionMonitor:
 ---
 
 ## Question 46
+- [ ] Done
 **What is the connection between generalization and exploration?**
 
 **Answer:** _To be filled_
@@ -4561,6 +4944,7 @@ class ProductionMonitor:
 ---
 
 ## Question 47
+- [ ] Done
 **How is exploration managed in partially observable environments?**
 
 **Answer:** _To be filled_
@@ -4568,6 +4952,7 @@ class ProductionMonitor:
 ---
 
 ## Question 48
+- [ ] Done
 **What is the computational cost of different exploration techniques?**
 
 **Answer:** _To be filled_
@@ -4575,6 +4960,7 @@ class ProductionMonitor:
 ---
 
 ## Question 49
+- [ ] Done
 **What are possible future directions in exploration-exploitation research?**
 
 **Answer:** _To be filled_
@@ -4582,6 +4968,7 @@ class ProductionMonitor:
 ---
 
 ## Question 50
+- [ ] Done
 **How does the exploration-exploitation tradeoff influence agent behavior long-term?**
 
 **Answer:** _To be filled_

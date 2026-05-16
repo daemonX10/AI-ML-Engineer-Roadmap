@@ -1,6 +1,7 @@
 # Ml Design Patterns Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you set up a 'Champion/Challenger' model deployment architecture?**
 
@@ -144,6 +145,7 @@ print(f"\nShadow comparison: {shadow}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Propose a system design using 'Static Model' and 'Dynamic Model' patterns to handle different needs.**
 
@@ -301,6 +303,7 @@ print("Recommendations:", recommendations)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss how you'd use the 'Servant' design pattern to ensure your models are easily reusable.**
 
@@ -466,6 +469,7 @@ rec_model.predict({'user_id': 456, 'limit': 5})
 ---
 
 ## Question 4
+- [ ] Done
 
 **How would you leverage 'Transfer Learning' in a case where labeled data is scarce?**
 
@@ -617,6 +621,7 @@ Trainable params: 8,399,875 / 25,557,032 (32.9%)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Design an 'End-to-End Machine Learning Project' workflow using relevant design patterns.**
 

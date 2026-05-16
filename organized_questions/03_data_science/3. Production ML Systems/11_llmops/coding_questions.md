@@ -1,6 +1,7 @@
 # Llmops Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Write aPython scriptfor automatingdata validation checksbeforemodel training.**
 
@@ -9,6 +10,7 @@
 ---
 
 ## Question 2
+- [ ] Done
 
 **Build a simpleFlask appto serve amachine learning model’s predictionsvia aREST API.**
 
@@ -17,6 +19,7 @@
 ---
 
 ## Question 3
+- [ ] Done
 
 **Create aDockerfilefor containerizing aPython machine learning application.**
 
@@ -25,6 +28,7 @@
 ---
 
 ## Question 4
+- [ ] Done
 
 **Implement aGitHub Actions CI/CD pipelinefor amachine learning project.**
 
@@ -33,6 +37,7 @@
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write aPython functionthat outputsmodel performance metricsand logs them to a file.**
 
@@ -41,6 +46,7 @@
 ---
 
 ## Question 6
+- [ ] Done
 
 **Develop a script for performing automatedretrainingof amodelwith new data.**
 
@@ -49,6 +55,7 @@
 ---
 
 ## Question 7
+- [ ] Done
 
 **UseTensorFlow Extended (TFX)to create a basic end-to-end workflow for amachine learning project.**
 
@@ -57,6 +64,7 @@
 ---
 
 ## Question 8
+- [ ] Done
 
 **Implement a simple system forfeature flaggingto dynamically enable/disablemodel featuresinproduction.**
 

@@ -1,6 +1,7 @@
 # K Nearest Neighbors Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is K-Nearest Neighbors (K-NN) in the context of machine learning?**
 
@@ -38,6 +39,7 @@ $$\hat{y} = \frac{1}{K}\sum_{i=1}^{K} y_{n_i} \quad \text{(Regression)}$$
 ---
 
 ## Question 2
+- [ ] Done
 
 **How does the K-NN algorithm work for classification problems?**
 
@@ -91,6 +93,7 @@ def knn_classify(X_train, y_train, x_new, k=3):
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain how K-NN can be used for regression.**
 
@@ -135,6 +138,7 @@ Predicting house price: Find 3 most similar houses → prices are $300K, $320K, 
 ---
 
 ## Question 4
+- [ ] Done
 
 **How does the choice of distance metric affect the K-NN algorithm's performance?**
 
@@ -165,6 +169,7 @@ The distance metric defines what "closeness" means in feature space—wrong choi
 ---
 
 ## Question 5
+- [ ] Done
 
 **What are the effects of feature scaling on the K-NN algorithm?**
 
@@ -207,6 +212,7 @@ Never skip scaling for K-NN — it's a mandatory preprocessing step, not optiona
 ---
 
 ## Question 6
+- [ ] Done
 
 **How does K-NN handle multi-class problems?**
 
@@ -246,6 +252,7 @@ Weighted K-NN (`weights='distance'`) naturally handles ties better since exact w
 ---
 
 ## Question 7
+- [ ] Done
 
 **Can K-NN be used for feature selection? If yes, explain how.**
 
@@ -290,6 +297,7 @@ selected_features = sfs.get_support()
 ---
 
 ## Question 8
+- [ ] Done
 
 **What are the differences between weighted K-NN and standard K-NN?**
 
@@ -337,6 +345,7 @@ knn_weighted = KNeighborsClassifier(n_neighbors=5, weights='distance')
 ---
 
 ## Question 9
+- [ ] Done
 
 **How does the curse of dimensionality affect K-NN, and how can it be mitigated?**
 
@@ -381,6 +390,7 @@ Never apply K-NN directly to high-dimensional data — always reduce dimensions 
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is the role of data normalization in K-NN, and how is it performed?**
 
@@ -427,6 +437,7 @@ Standardization is preferred over Min-Max because it's less sensitive to outlier
 ---
 
 ## Question 11
+- [ ] Done
 
 **Describe the process of cross-validation in the context of tuning K-NN's hyperparameters.**
 
@@ -479,6 +490,7 @@ Always use odd K values for binary classification to avoid ties.
 ---
 
 ## Question 12
+- [ ] Done
 
 **What is a kd-tree, and how can it be used to optimize K-NN?**
 
@@ -520,6 +532,7 @@ Performance degrades in high dimensions (d > 20) — use ball tree or approximat
 ---
 
 ## Question 13
+- [ ] Done
 
 **Compare K-NN to decision trees. What are the key differences in their algorithms?**
 
@@ -554,6 +567,7 @@ Decision trees don't need feature scaling because they split features one at a t
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain how K-NN can be adapted for time-series prediction.**
 
@@ -608,6 +622,7 @@ next_value = knn.predict([X[-1]])  # Predict next
 ---
 
 ## Question 15
+- [ ] Done
 
 **Describe a scenario where you would use K-NN for image classification.**
 
@@ -664,6 +679,7 @@ prediction = knn.predict(new_features)
 ---
 
 ## Question 16
+- [ ] Done
 
 **In a retail context, explain how K-NN could be used for customer segmentation.**
 
@@ -715,6 +731,7 @@ Clarifying supervised vs unsupervised distinction shows strong fundamentals.
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain how the K-NN algorithm can be parallelized. What are the challenges and benefits?**
 
@@ -762,6 +779,7 @@ The prediction phase is parallelizable; the "training" (storing data) is trivial
 ---
 
 ## Question 18
+- [ ] Done
 
 **What are the trends and future advancements in the field of K-NN and its applications?**
 
@@ -814,6 +832,7 @@ distances, indices = index.search(query_features, k)
 ---
 
 ## Question 19
+- [ ] Done
 
 **What are the mathematical foundations and theoretical aspects of K-NN algorithm?**
 
@@ -856,6 +875,7 @@ These guarantees assume meaningful distances—fails in high dimensions (curse o
 ---
 
 ## Question 20
+- [ ] Done
 
 **How do you choose the optimal value of K in K-NN algorithm?**
 
@@ -914,6 +934,7 @@ print(f"Best K: {grid.best_params_['n_neighbors']}")
 ---
 
 ## Question 21
+- [ ] Done
 
 **What are the different distance metrics used in K-NN and their applications?**
 
@@ -955,6 +976,7 @@ Treat metric as hyperparameter — tune via cross-validation alongside K.
 ---
 
 ## Question 22
+- [ ] Done
 
 **How does the curse of dimensionality affect K-NN performance?**
 
@@ -999,6 +1021,7 @@ K-NN typically fails when $d > 20$. Always apply dimensionality reduction for hi
 ---
 
 ## Question 23
+- [ ] Done
 
 **What are the computational complexity considerations for K-NN algorithm?**
 
@@ -1053,6 +1076,7 @@ knn = KNeighborsClassifier(
 ---
 
 ## Question 24
+- [ ] Done
 
 **How do you implement efficient nearest neighbor search algorithms?**
 
@@ -1120,6 +1144,7 @@ distances, indices = nn.kneighbors(X_query)
 ---
 
 ## Question 25
+- [ ] Done
 
 **What are K-D trees and how do they optimize K-NN search?**
 
@@ -1177,6 +1202,7 @@ distances, indices = tree.query(X_test, k=5)
 ---
 
 ## Question 26
+- [ ] Done
 
 **How do ball trees improve K-NN performance for high-dimensional data?**
 
@@ -1229,6 +1255,7 @@ knn = KNeighborsClassifier(algorithm='ball_tree', metric='manhattan')
 ---
 
 ## Question 27
+- [ ] Done
 
 **What is locality-sensitive hashing (LSH) and its role in approximate K-NN?**
 
@@ -1293,6 +1320,7 @@ D, I = index.search(query, k=5)
 ---
 
 ## Question 28
+- [ ] Done
 
 **How do you handle missing values in K-NN algorithms?**
 
@@ -1345,6 +1373,7 @@ Always impute BEFORE scaling, and fit imputer only on training data.
 ---
 
 ## Question 29
+- [ ] Done
 
 **What are weighted K-NN algorithms and when should you use them?**
 
@@ -1393,6 +1422,7 @@ Default to `weights='distance'` — it's almost always equal or better than unif
 ---
 
 ## Question 30
+- [ ] Done
 
 **How do you implement K-NN for categorical and mixed data types?**
 
@@ -1453,6 +1483,7 @@ One-hot encoding + scaling is the most practical and widely used approach.
 ---
 
 ## Question 31
+- [ ] Done
 
 **What is the role of feature selection and dimensionality reduction in K-NN?**
 
@@ -1505,6 +1536,7 @@ For K-NN, dimensionality reduction is not optimization—it's essential for corr
 ---
 
 ## Question 32
+- [ ] Done
 
 **How do you handle imbalanced datasets with K-NN algorithm?**
 
@@ -1555,6 +1587,7 @@ scores = cross_val_score(knn, X_train, y_train, cv=cv, scoring='f1')
 ---
 
 ## Question 33
+- [ ] Done
 
 **What are ensemble methods for K-NN and their advantages?**
 
@@ -1609,6 +1642,7 @@ Random subspace method is especially effective for K-NN in high dimensions.
 ---
 
 ## Question 34
+- [ ] Done
 
 **How do you implement cross-validation for K-NN model selection?**
 
@@ -1670,6 +1704,7 @@ test_score = best_model.score(X_test, y_test)
 ---
 
 ## Question 35
+- [ ] Done
 
 **What is adaptive K-NN and how does it improve performance?**
 
@@ -1721,6 +1756,7 @@ knn.fit(X_train_transformed, y_train)
 ---
 
 ## Question 36
+- [ ] Done
 
 **How do you handle noise and outliers in K-NN algorithms?**
 
@@ -1776,6 +1812,7 @@ knn.fit(X_train[outlier_mask], y_train[outlier_mask])
 ---
 
 ## Question 37
+- [ ] Done
 
 **What are the memory optimization techniques for large-scale K-NN?**
 
@@ -1829,6 +1866,7 @@ X_train_compressed = X_train.astype(np.float16)  # 50% memory
 ---
 
 ## Question 38
+- [ ] Done
 
 **How do you implement distributed and parallel K-NN algorithms?**
 
@@ -1887,6 +1925,7 @@ global_neighbors = local_neighbors.takeOrdered(k, key=lambda x: x[0])
 ---
 
 ## Question 39
+- [ ] Done
 
 **What is the role of K-NN in collaborative filtering and recommendation systems?**
 
@@ -1944,6 +1983,7 @@ predicted_rating = np.dot(weights, neighbor_ratings) / weights.sum()
 ---
 
 ## Question 40
+- [ ] Done
 
 **How do you use K-NN for anomaly detection and outlier identification?**
 
@@ -1999,6 +2039,7 @@ outlier_labels = lof.fit_predict(X)  # -1 = outlier, 1 = inlier
 ---
 
 ## Question 41
+- [ ] Done
 
 **What is local outlier factor (LOF) and its relationship to K-NN?**
 
@@ -2044,6 +2085,7 @@ print(f"Outliers: {sum(outlier_labels == -1)}")
 ---
 
 ## Question 42
+- [ ] Done
 
 **How do you implement K-NN for time-series classification and forecasting?**
 
@@ -2105,6 +2147,7 @@ forecasts = knn.predict(X_test)
 ---
 
 ## Question 43
+- [ ] Done
 
 **What are the challenges of K-NN for streaming and online learning?**
 
@@ -2153,6 +2196,7 @@ class StreamingKNN:
 ---
 
 ## Question 44
+- [ ] Done
 
 **How do you handle concept drift in K-NN models?**
 
@@ -2210,6 +2254,7 @@ def time_weighted_knn(X_train, y_train, timestamps, X_query, k=5, decay=0.1):
 ---
 
 ## Question 45
+- [ ] Done
 
 **What is the role of K-NN in semi-supervised learning?**
 
@@ -2263,6 +2308,7 @@ def self_training_knn(X_labeled, y_labeled, X_unlabeled, k=5, confidence=0.8):
 ---
 
 ## Question 46
+- [ ] Done
 
 **How do you implement label propagation with K-NN?**
 
@@ -2317,6 +2363,7 @@ label_spread.fit(X_train, y_train)
 ---
 
 ## Question 47
+- [ ] Done
 
 **What are metric learning techniques for improving K-NN performance?**
 
@@ -2377,6 +2424,7 @@ knn.fit(X_train_transformed, y_train)
 ---
 
 ## Question 48
+- [ ] Done
 
 **How do you learn optimal distance functions for K-NN?**
 
@@ -2434,6 +2482,7 @@ def create_siamese_network(input_shape):
 ---
 
 ## Question 49
+- [ ] Done
 
 **What is the Mahalanobis distance and its application in K-NN?**
 
@@ -2493,6 +2542,7 @@ knn.fit(X_train_transformed, y_train)
 ---
 
 ## Question 50
+- [ ] Done
 
 **How do you implement K-NN for multi-label classification problems?**
 
@@ -2552,6 +2602,7 @@ def multi_label_knn(X_train, y_train, X_query, k=5, threshold=0.5):
 ---
 
 ## Question 51
+- [ ] Done
 
 **What are fuzzy K-NN algorithms and their advantages?**
 
@@ -2628,6 +2679,7 @@ class FuzzyKNN:
 ---
 
 ## Question 52
+- [ ] Done
 
 **How do you handle uncertainty quantification in K-NN predictions?**
 
@@ -2707,6 +2759,7 @@ def combined_uncertainty(knn, X_train, X_query):
 ---
 
 ## Question 53
+- [ ] Done
 
 **What is the role of K-NN in instance-based learning and case-based reasoning?**
 
@@ -2771,6 +2824,7 @@ solutions = cbr_help_desk([1, 0, 0], case_base, k=2)
 ---
 
 ## Question 54
+- [ ] Done
 
 **How do you implement K-NN for text classification and NLP tasks?**
 
@@ -2837,6 +2891,7 @@ predictions = knn.predict(test_embeddings)
 ---
 
 ## Question 55
+- [ ] Done
 
 **What are the considerations for K-NN in image recognition and computer vision?**
 
@@ -2903,6 +2958,7 @@ distances, indices = index.search(query_features, k=5)
 ---
 
 ## Question 56
+- [ ] Done
 
 **How do you use K-NN for feature selection and wrapper methods?**
 
@@ -2982,6 +3038,7 @@ X_selected = X[:, selected_mask]
 ---
 
 ## Question 57
+- [ ] Done
 
 **What is the relationship between K-NN and kernel methods?**
 
@@ -3042,6 +3099,7 @@ log_density = kde.score_samples(X_test)
 ---
 
 ## Question 58
+- [ ] Done
 
 **How do you implement K-NN for graph-structured data?**
 
@@ -3116,6 +3174,7 @@ knn.fit(embeddings, labels)
 ---
 
 ## Question 59
+- [ ] Done
 
 **What are the privacy-preserving techniques for K-NN algorithms?**
 
@@ -3182,6 +3241,7 @@ def dp_knn(X_train, y_train, X_query, k=5, epsilon=1.0):
 ---
 
 ## Question 60
+- [ ] Done
 
 **How do you implement secure K-NN computation in federated learning?**
 
@@ -3269,6 +3329,7 @@ predictions = coordinator.predict(X_query)
 ---
 
 ## Question 61
+- [ ] Done
 
 **What are approximate nearest neighbor algorithms and their trade-offs?**
 
@@ -3329,6 +3390,7 @@ distances, indices = index_ivf.search(query, k=5)
 ---
 
 ## Question 62
+- [ ] Done
 
 **How do you evaluate and validate K-NN model performance?**
 
@@ -3396,6 +3458,7 @@ plt.legend(); plt.show()
 ---
 
 ## Question 63
+- [ ] Done
 
 **What are the interpretability aspects of K-NN algorithms?**
 
@@ -3461,6 +3524,7 @@ Neighbor 2: Distance = 0.3012
 ---
 
 ## Question 64
+- [ ] Done
 
 **How do you explain K-NN predictions and decision boundaries?**
 
@@ -3527,6 +3591,7 @@ plot_decision_boundary(X_train, y_train, k=5)
 ---
 
 ## Question 65
+- [ ] Done
 
 **What is the role of K-NN in active learning and query strategies?**
 
@@ -3598,6 +3663,7 @@ def density_weighted_sampling(X_labeled, y_labeled, X_unlabeled, k=5, n_queries=
 ---
 
 ## Question 66
+- [ ] Done
 
 **How do you implement K-NN for hierarchical classification?**
 
@@ -3687,6 +3753,7 @@ full_path = leaf_to_path[prediction[0]]
 ---
 
 ## Question 67
+- [ ] Done
 
 **What are the considerations for K-NN in real-time and edge computing?**
 
@@ -3765,6 +3832,7 @@ labels, distances = index.knn_query(X_query, k=5)
 ---
 
 ## Question 68
+- [ ] Done
 
 **How do you optimize K-NN for mobile and IoT devices?**
 
@@ -3849,6 +3917,7 @@ pca, X_mobile, y_mobile = create_mobile_knn(X_train, y_train, target_size_mb=1)
 ---
 
 ## Question 69
+- [ ] Done
 
 **What is the role of K-NN in ensemble learning and stacking?**
 
@@ -3922,6 +3991,7 @@ meta_learner.fit(X_stacked, y_train)
 ---
 
 ## Question 70
+- [ ] Done
 
 **How do you combine K-NN with other machine learning algorithms?**
 
@@ -4004,6 +4074,7 @@ knn.fit(embeddings_train, y_train)
 ---
 
 ## Question 71
+- [ ] Done
 
 **What are the challenges of K-NN for very large datasets (big data)?**
 
@@ -4085,6 +4156,7 @@ similar = model.approxNearestNeighbors(training_df, query_vector, k=5)
 ---
 
 ## Question 72
+- [ ] Done
 
 **How do you implement K-NN using MapReduce and distributed computing?**
 
@@ -4168,6 +4240,7 @@ result = distributed_knn(X_train_rdd, y_train_rdd, X_query, k=5)
 ---
 
 ## Question 73
+- [ ] Done
 
 **What is the role of K-NN in transfer learning and domain adaptation?**
 
@@ -4242,6 +4315,7 @@ predictions = knn.predict(query_features)
 ---
 
 ## Question 74
+- [ ] Done
 
 **How do you handle K-NN for multi-modal and heterogeneous data?**
 
@@ -4328,6 +4402,7 @@ nn.fit(gower_distances)
 ---
 
 ## Question 75
+- [ ] Done
 
 **What are the fairness and bias considerations in K-NN algorithms?**
 
@@ -4408,6 +4483,7 @@ def fair_predict(knn, X, sensitive_attr, threshold_a=0.5, threshold_b=0.5):
 ---
 
 ## Question 76
+- [ ] Done
 
 **How do you implement K-NN for survival analysis and censored data?**
 
@@ -4499,6 +4575,7 @@ survival_funcs = knn_surv.predict_survival_function(X_test)
 ---
 
 ## Question 77
+- [ ] Done
 
 **What is the relationship between K-NN and prototype-based learning?**
 
@@ -4571,6 +4648,7 @@ def condensed_nn(X, y):
 ---
 
 ## Question 78
+- [ ] Done
 
 **How do you implement learning vector quantization (LVQ) with K-NN?**
 
@@ -4652,6 +4730,7 @@ predictions = lvq.predict(X_test)
 ---
 
 ## Question 79
+- [ ] Done
 
 **What are the advances in neural K-NN and differentiable nearest neighbors?**
 
@@ -4727,6 +4806,7 @@ class NeuralKNN(nn.Module):
 ---
 
 ## Question 80
+- [ ] Done
 
 **How do you integrate K-NN with deep learning architectures?**
 
@@ -4815,6 +4895,7 @@ class RetrievalAugmentedModel(nn.Module):
 ---
 
 ## Question 81
+- [ ] Done
 
 **What are the considerations for K-NN model deployment and productionization?**
 
@@ -4904,6 +4985,7 @@ def predict():
 ---
 
 ## Question 82
+- [ ] Done
 
 **How do you monitor and maintain K-NN models in production environments?**
 
@@ -4985,6 +5067,7 @@ def detect_data_drift(baseline_distances, current_distances, threshold=0.1):
 ---
 
 ## Question 83
+- [ ] Done
 
 **What is model versioning and A/B testing for K-NN algorithms?**
 
@@ -5073,6 +5156,7 @@ class ABTestRouter:
 ---
 
 ## Question 84
+- [ ] Done
 
 **How do you handle K-NN for continual learning and lifelong learning?**
 
@@ -5160,6 +5244,7 @@ class BalancedMemoryKNN:
 ---
 
 ## Question 85
+- [ ] Done
 
 **What are the emerging hardware accelerations for K-NN computations?**
 
@@ -5224,6 +5309,7 @@ print(faiss.get_compile_options())
 ---
 
 ## Question 86
+- [ ] Done
 
 **How do you implement K-NN using GPU and specialized hardware?**
 
@@ -5320,6 +5406,7 @@ def pytorch_knn(X_train, X_query, k=5, device='cuda'):
 ---
 
 ## Question 87
+- [ ] Done
 
 **What is the role of K-NN in AutoML and automated algorithm selection?**
 
@@ -5407,6 +5494,7 @@ print(f"Best params: {search.best_params_}")
 ---
 
 ## Question 88
+- [ ] Done
 
 **How do you handle K-NN for multi-objective optimization problems?**
 
@@ -5495,6 +5583,7 @@ def weighted_knn_prediction(knn_models, X, weights):
 ---
 
 ## Question 89
+- [ ] Done
 
 **What are the research frontiers and open challenges in K-NN algorithms?**
 
@@ -5551,6 +5640,7 @@ Automatically determine optimal K per query based on local data density.
 ---
 
 ## Question 90
+- [ ] Done
 
 **How do you implement K-NN for reinforcement learning and policy learning?**
 
@@ -5670,6 +5760,7 @@ def knn_planning(current_state, experience_buffer, k=5, horizon=10):
 ---
 
 ## Question 91
+- [ ] Done
 
 **What are the theoretical guarantees and convergence properties of K-NN?**
 
@@ -5734,6 +5825,7 @@ For d=10: $k^* \approx n^{0.29}$, so for n=10,000: $k^* \approx 20$
 ---
 
 ## Question 92
+- [ ] Done
 
 **How do you analyze the sample complexity and generalization bounds for K-NN?**
 
@@ -5796,6 +5888,7 @@ print(f"LOO Error: {loo_error:.4f}")
 ---
 
 ## Question 93
+- [ ] Done
 
 **What is the relationship between K-NN and Bayesian non-parametric methods?**
 
@@ -5861,6 +5954,7 @@ proba = knn.predict_proba(X_test)  # No uncertainty on uncertainty
 ---
 
 ## Question 94
+- [ ] Done
 
 **How do you implement K-NN for causal inference and treatment effect estimation?**
 
@@ -5957,6 +6051,7 @@ def estimate_ite(X, treatment, outcome, X_new, k=5):
 ---
 
 ## Question 95
+- [ ] Done
 
 **What are the considerations for K-NN in federated and decentralized learning?**
 
@@ -6043,6 +6138,7 @@ def secure_aggregate_predictions(node_predictions, k):
 ---
 
 ## Question 96
+- [ ] Done
 
 **How do you handle K-NN for adversarial robustness and security?**
 
@@ -6135,6 +6231,7 @@ def sanitize_training_data(X, y, contamination=0.1):
 ---
 
 ## Question 97
+- [ ] Done
 
 **What is the integration of K-NN with probabilistic and generative models?**
 
@@ -6233,6 +6330,7 @@ def bayesian_knn_predict(X_train, y_train, x_query, k=5, prior_alpha=1.0):
 ---
 
 ## Question 98
+- [ ] Done
 
 **How do you implement K-NN for few-shot and zero-shot learning scenarios?**
 
@@ -6343,6 +6441,7 @@ def text_zero_shot(image_embeddings, class_descriptions):
 ---
 
 ## Question 99
+- [ ] Done
 
 **What are the ethical considerations and responsible AI practices for K-NN?**
 
@@ -6444,6 +6543,7 @@ def responsible_explain(knn, X_train, x_query, k=5, anonymize=True):
 ---
 
 ## Question 100
+- [ ] Done
 
 **What are the best practices for K-NN algorithm selection and implementation?**
 
@@ -6568,6 +6668,7 @@ def production_knn_large_scale(X_train, y_train, k=5):
 ---
 
 ## Question 101
+- [ ] Done
 
 **Discuss the impact of imbalanced datasets on the K-NN algorithm.**
 
@@ -6618,6 +6719,7 @@ X_balanced, y_balanced = smote.fit_resample(X_train, y_train)
 ---
 
 ## Question 102
+- [ ] Done
 
 **How would you explain the concept of locality-sensitive hashing and its relation to K-NN?**
 
@@ -6672,6 +6774,7 @@ LSH makes K-NN practical for massive datasets by sacrificing perfect accuracy fo
 ---
 
 ## Question 103
+- [ ] Done
 
 **Discuss how missing values in the dataset affect K-NN and how you would handle them.**
 
@@ -6739,6 +6842,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 104
+- [ ] Done
 
 **Discuss how bootstrap aggregating (bagging) can improve the performance of K-NN.**
 
@@ -6806,6 +6910,7 @@ bagged_knn = BaggingClassifier(
 ---
 
 ## Question 105
+- [ ] Done
 
 **Discuss the role of approximate nearest neighbor search in scaling K-NN for big data.**
 

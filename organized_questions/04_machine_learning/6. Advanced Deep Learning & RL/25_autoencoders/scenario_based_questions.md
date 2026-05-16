@@ -1,6 +1,7 @@
 # Autoencoders Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the role of regularization in training autoencoders.**
 
@@ -45,6 +46,7 @@ Choose regularization based on goal:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss the importance of weight initialization and optimization algorithms in training autoencoders.**
 
@@ -89,6 +91,7 @@ Choose regularization based on goal:
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the use of autoencoders in image reconstruction.**
 
@@ -134,6 +137,7 @@ $$\mathcal{L} = \lambda_1 L_{pixel} + \lambda_2 L_{perceptual} + \lambda_3 L_{ad
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss the concept of transfer learning in the context of autoencoders.**
 
@@ -179,6 +183,7 @@ Transfer: Use encoder for medical image classification (1000 labeled images)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss recent advances in autoencoder architectures and their implications.**
 
@@ -221,6 +226,7 @@ Combining autoencoders with other paradigms (diffusion, contrastive, transformer
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss the intersection of autoencoders and Bayesian methods in machine learning.**
 
@@ -267,6 +273,7 @@ $$\log p(x) \geq \mathbb{E}_{q(z|x)}[\log p(x|z)] - D_{KL}(q(z|x)||p(z))$$
 ---
 
 ## Question 7
+- [ ] Done
 
 **How would you design an autoencoder for a system that compresses and decompresses audio files?**
 
@@ -315,6 +322,7 @@ $$\mathcal{L} = \mathcal{L}_{time} + \lambda_{spec} \mathcal{L}_{spectrogram} + 
 ---
 
 ## Question 8
+- [ ] Done
 
 **Propose an approach for using autoencoders to detect credit card fraud.**
 
@@ -368,6 +376,7 @@ Input (features) → Dense(64) → Dense(32) → Latent(16) → Dense(32) → De
 ---
 
 ## Question 9
+- [ ] Done
 
 **How would you use an autoencoder for a facial recognition system with a large dataset of images?**
 

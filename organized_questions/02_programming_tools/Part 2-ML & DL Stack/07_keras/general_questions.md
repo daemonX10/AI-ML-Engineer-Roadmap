@@ -1,6 +1,7 @@
 # Keras Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you prevent overfitting in a Keras model ?**
 
@@ -49,6 +50,7 @@ model.fit(X_train, y_train, validation_split=0.2,
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you save and load a Keras model?**
 
@@ -101,6 +103,7 @@ checkpoint = keras.callbacks.ModelCheckpoint(
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is transfer learning and how do you implement it in Keras?**
 
@@ -164,6 +167,7 @@ model.compile(
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you handle imbalanced datasets in Keras?**
 
@@ -228,6 +232,7 @@ model.compile(optimizer='adam', loss=FocalLoss())
 ---
 
 ## Question 5
+- [ ] Done
 
 **What are the different types of layers available in Keras?**
 
@@ -289,6 +294,7 @@ cnn_model = keras.Sequential([
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you implement data augmentation in Keras?**
 
@@ -350,6 +356,7 @@ train_generator = datagen.flow_from_directory(
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you create a custom layer in Keras?**
 
@@ -416,6 +423,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy')
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is batch normalization and why is it used?**
 
@@ -476,6 +484,7 @@ cnn_model = keras.Sequential([
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you implement early stopping in Keras?**
 
@@ -536,6 +545,7 @@ print(f"Stopped at epoch: {len(history.history['loss'])}")
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do you use pre-trained word embeddings in Keras?**
 
@@ -600,6 +610,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy')
 ---
 
 ## Question 11
+- [ ] Done
 
 **How do you configure a neural network in Keras?**
 
@@ -662,6 +673,7 @@ print(model.count_params())       # Total trainable parameters
 ---
 
 ## Question 12
+- [ ] Done
 
 **How can you add regularization to a model in Keras?**
 
@@ -716,6 +728,7 @@ layers.Dense(64, kernel_constraint=tf.keras.constraints.MaxNorm(3))
 ---
 
 ## Question 13
+- [ ] Done
 
 **How do callbacks work in Keras and when would you use them?**
 
@@ -780,6 +793,7 @@ class CustomCallback(callbacks.Callback):
 ---
 
 ## Question 14
+- [ ] Done
 
 **What methods does Keras provide for evaluating a model’s performance ?**
 
@@ -850,6 +864,7 @@ scores = cross_val_score(wrapper, X, y, cv=5)
 ---
 
 ## Question 15
+- [ ] Done
 
 **How do you handle image data in Keras?**
 
@@ -931,6 +946,7 @@ model = tf.keras.Sequential([base, layers.GlobalAveragePooling2D(), layers.Dense
 ---
 
 ## Question 16
+- [ ] Done
 
 **What Keras functionality allows you to convert text to sequences or one-hot encoded vectors?**
 
@@ -988,6 +1004,7 @@ model = tf.keras.Sequential([
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you troubleshoot a model that is not learning in Keras?**
 
@@ -1042,6 +1059,7 @@ for layer in model.layers:
 ---
 
 ## Question 18
+- [ ] Done
 
 **How do you interpret NaN values in loss during training and what steps would you take to address this?**
 
@@ -1096,6 +1114,7 @@ tf.debugging.enable_check_numerics()  # Raises error on NaN/Inf
 ---
 
 ## Question 19
+- [ ] Done
 
 **How do you deal with overfitting after early epochs in a Keras model?**
 
@@ -1163,6 +1182,7 @@ loss = tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.1)
 ---
 
 ## Question 20
+- [ ] Done
 
 **What factors do you consider when deploying a Keras model to production?**
 
@@ -1220,6 +1240,7 @@ full_model.save('full_pipeline_model')
 ---
 
 ## Question 21
+- [ ] Done
 
 **How can you monitor and maintain Keras models in a production environment?**
 
@@ -1291,6 +1312,7 @@ def health_check(model):
 ---
 
 ## Question 22
+- [ ] Done
 
 **How is Keras being used in the context of Graph Neural Networks?**
 

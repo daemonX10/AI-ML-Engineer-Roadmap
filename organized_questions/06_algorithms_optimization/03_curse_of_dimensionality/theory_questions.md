@@ -1,6 +1,7 @@
 # Curse Of Dimensionality Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is meant by the "Curse of Dimensionality" in the context of Machine Learning?**
 
@@ -41,6 +42,7 @@ But volume needed to cover same density: grows as $n \propto k^d$ where k = poin
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain how the Curse of Dimensionality affects distance measurements in high-dimensional spaces.**
 
@@ -90,6 +92,7 @@ $$\lim_{d \to \infty} \frac{D_{max} - D_{min}}{D_{min}} \to 0$$
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are some common problems encountered in high-dimensional data analysis?**
 
@@ -136,6 +139,7 @@ $$\lim_{d \to \infty} \frac{D_{max} - D_{min}}{D_{min}} \to 0$$
 ---
 
 ## Question 4
+- [ ] Done
 
 **How does the Curse of Dimensionality impact the training of machine learning models?**
 
@@ -191,6 +195,7 @@ Fixed dataset becomes sparser as features increase.
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does the curse of dimensionality affect the performance of K-nearest neighbors (KNN) algorithm?**
 
@@ -238,6 +243,7 @@ $$\text{As } d \to \infty: \frac{d_{nearest}}{d_{farthest}} \to 1$$
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain how dimensionality reduction techniques help to overcome the Curse of Dimensionality.**
 
@@ -294,6 +300,7 @@ Actual info: ~10-50D (pose, lighting, identity)
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is Principal Component Analysis (PCA) and how does it address high dimensionality?**
 
@@ -344,6 +351,7 @@ Where $W_k$ = matrix of top k eigenvectors
 ---
 
 ## Question 8
+- [ ] Done
 
 **Briefly describe the idea behind t-Distributed Stochastic Neighbor Embedding (t-SNE) and its application to high-dimensional data.**
 
@@ -403,6 +411,7 @@ Low-D: Arrange so same similarities preserved
 ---
 
 ## Question 9
+- [ ] Done
 
 **How does regularization help in dealing with the Curse of Dimensionality?**
 
@@ -459,6 +468,7 @@ With L1 regularization: Uses only 50 relevant features → generalizes
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is manifold learning, and how does it relate to high-dimensional data analysis?**
 
@@ -515,6 +525,7 @@ A manifold is a smooth, curved surface that can be locally approximated as flat 
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is the "peaking phenomenon" in high-dimensional spaces?**
 
@@ -572,6 +583,7 @@ More features only help if:
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain the concept of intrinsic dimensionality.**
 
@@ -626,6 +638,7 @@ A curved line in 3D space:
 ---
 
 ## Question 13
+- [ ] Done
 
 **How does the Curse of Dimensionality affect model interpretability?**
 
@@ -679,6 +692,7 @@ High-dimensional models trade interpretability for flexibility. Use simpler mode
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe the impact of the Curse of Dimensionality on clustering algorithms like K-means.**
 
@@ -736,6 +750,7 @@ If dimensions > 50, reduce first, then cluster.
 ---
 
 ## Question 15
+- [ ] Done
 
 **What are some challenges in visualizing high-dimensional data?**
 
@@ -789,6 +804,7 @@ Always caveat visualization: "This 2D projection shows X, but high-D structure m
 ---
 
 ## Question 16
+- [ ] Done
 
 **How does L1 regularization help in reducing dimensionality?**
 
@@ -846,6 +862,7 @@ L2 gradient decreases as weight shrinks:
 ---
 
 ## Question 17
+- [ ] Done
 
 **What are some limitations of linear dimensionality reduction techniques like PCA?**
 
@@ -908,6 +925,7 @@ Variance ≠ useful for classification. Use LDA if labels available.
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain how autoencoders can be used for dimensionality reduction.**
 
@@ -969,6 +987,7 @@ Minimize difference between input and reconstruction.
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe the role of feature hashing in dealing with high-dimensional data.**
 
@@ -1030,6 +1049,7 @@ h = FeatureHasher(n_features=2**18)  # 256K dimensions
 ---
 
 ## Question 20
+- [ ] Done
 
 **What are the latest advancements in dimensionality reduction techniques?**
 
@@ -1089,6 +1109,7 @@ Modern approach: Use pre-trained model embeddings rather than hand-crafted reduc
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain the concept of “concentration of measure” and how it relates to the Curse of Dimensionality.**
 
@@ -1164,6 +1185,7 @@ Concentration of measure is the *mathematical foundation* behind the curse of di
 ---
 
 ## Question 22
+- [ ] Done
 
 **What are the potential benefits and challenges of using quantum computing to address the Curse of Dimensionality in Machine Learning?**
 

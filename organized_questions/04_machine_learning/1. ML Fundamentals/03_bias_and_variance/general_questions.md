@@ -2,6 +2,7 @@
 
 
 ## Question 1
+- [ ] Done
 
 **What do you understand by the terms bias and variance in machine learning?**
 
@@ -44,6 +45,7 @@ Consistent but wrong        On average correct,         Accurate and
 
 
 ## Question 2
+- [ ] Done
 
 **How do bias and variance contribute to the overall error in a predictive model?**
 
@@ -93,6 +95,7 @@ Trade-off: Reducing one often increases the other
 
 
 ## Question 3
+- [ ] Done
 
 **Can you explain the difference between a high-bias model and a high-variance model?**
 
@@ -130,6 +133,7 @@ Trade-off: Reducing one often increases the other
 
 
 ## Question 4
+- [ ] Done
 
 **What is the bias-variance trade-off?**
 
@@ -176,6 +180,7 @@ Total Error
 
 
 ## Question 5
+- [ ] Done
 
 **Why is it impossible to simultaneously minimize both bias and variance?**
 
@@ -231,6 +236,7 @@ Total Error
 
 
 ## Question 6
+- [ ] Done
 
 **How does model complexity relate to bias and variance?**
 
@@ -272,6 +278,7 @@ High Regularization  →    Moderate      →    No Regularization
 
 
 ## Question 7
+- [ ] Done
 
 **What could be the potential causes of high variance in a model?**
 
@@ -328,6 +335,7 @@ High Regularization  →    Moderate      →    No Regularization
 
 
 ## Question 8
+- [ ] Done
 
 **What might be the reasons behind a model's high bias?**
 
@@ -385,6 +393,7 @@ High Regularization  →    Moderate      →    No Regularization
 
 
 ## Question 9
+- [ ] Done
 
 **How would you diagnose bias and variance issues using learning curves?**
 
@@ -467,6 +476,7 @@ Key Signs:
 
 
 ## Question 10
+- [ ] Done
 
 **What is the expected test error, and how does it relate to bias and variance?**
 

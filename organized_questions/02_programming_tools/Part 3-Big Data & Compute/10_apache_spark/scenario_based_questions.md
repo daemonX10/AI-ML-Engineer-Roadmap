@@ -1,6 +1,7 @@
 # Apache Spark Interview Questions - Scenario Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the role of accumulators and broadcast variables in Spark.**
 
@@ -60,6 +61,7 @@ df.withColumn("name", get_country(col("code"))).show()
 ---
 
 ## Question 2
+- [ ] Done
 
 **Your Spark job is running out of memory. How do you diagnose and fix it?**
 
@@ -117,6 +119,7 @@ df.unpersist()  # Free memory
 ---
 
 ## Question 3
+- [ ] Done
 
 **You need to process 100TB of data daily. How would you design the Spark job?**
 
@@ -166,6 +169,7 @@ def process_daily_data(date):
 ---
 
 ## Question 4
+- [ ] Done
 
 **How would you handle late-arriving data in Spark Streaming?**
 
@@ -217,6 +221,7 @@ query = windowed.writeStream \
 ---
 
 ## Question 5
+- [ ] Done
 
 **Your Spark job has some very slow tasks. How do you identify and fix?**
 
@@ -262,6 +267,7 @@ spark.conf.set("spark.speculation.multiplier", "1.5")
 ---
 
 ## Question 6
+- [ ] Done
 
 **How would you migrate a Hadoop MapReduce job to Spark?**
 
@@ -310,6 +316,7 @@ result.write.parquet("hdfs:///output/")
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you handle schema evolution in Spark with Parquet files?**
 
@@ -364,6 +371,7 @@ df1.unionByName(df2, allowMissingColumns=True)
 - Version your schemas
 
 ## Question 8
+- [ ] Done
 
 **How would you build a recommender system in Spark?**
 
@@ -372,6 +380,7 @@ df1.unionByName(df2, allowMissingColumns=True)
 ---
 
 ## Question 9
+- [ ] Done
 
 **Discuss a strategy to perform real-time sentiment analysis using Spark Streaming**
 
@@ -380,6 +389,7 @@ df1.unionByName(df2, allowMissingColumns=True)
 ---
 
 ## Question 10
+- [ ] Done
 
 **Propose an ETL pipeline design using Spark to process large datasets**
 
@@ -388,6 +398,7 @@ df1.unionByName(df2, allowMissingColumns=True)
 ---
 
 ## Question 11
+- [ ] Done
 
 **How would you use Spark to detect fraudulent behavior in financial transactions?**
 
@@ -396,6 +407,7 @@ df1.unionByName(df2, allowMissingColumns=True)
 ---
 
 ## Question 12
+- [ ] Done
 
 **Illustrate how you would use Spark to optimize marketing strategies based on customer behavior data**
 

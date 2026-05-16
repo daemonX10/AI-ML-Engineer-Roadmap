@@ -1,6 +1,7 @@
 # Hadoop Interview Questions - Scenario Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Your Hadoop cluster is running slow. How do you diagnose and fix performance issues?**
 
@@ -105,6 +106,7 @@ class SaltedWordCount(MRJob):
 ---
 
 ## Question 2
+- [ ] Done
 
 **You need to migrate data from an RDBMS to Hadoop. How would you approach this?**
 
@@ -200,6 +202,7 @@ migration.full_import('customers', split_column='customer_id')
 ---
 
 ## Question 3
+- [ ] Done
 
 **Your NameNode has failed. How do you recover?**
 
@@ -287,6 +290,7 @@ def trigger_ha_failover(active_nn, standby_nn):
 ---
 
 ## Question 4
+- [ ] Done
 
 **You need to process real-time data in Hadoop. How would you architect this?**
 
@@ -383,6 +387,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 5
+- [ ] Done
 
 **Your MapReduce job is failing with OutOfMemoryError. How do you fix it?**
 
@@ -497,6 +502,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 6
+- [ ] Done
 
 **How would you handle schema evolution in a Hadoop data lake?**
 
@@ -573,6 +579,7 @@ schema_mgr.migrate_schema('/data/v1', '/data/v2', transformations)
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you secure a Hadoop cluster?**
 
@@ -664,6 +671,7 @@ client = secure_client.get_client()
 - Regular security assessments
 
 ## Question 8
+- [ ] Done
 
 **How would you recover a Hadoop cluster from a Namenode failure ?**
 
@@ -672,6 +680,7 @@ client = secure_client.get_client()
 ---
 
 ## Question 9
+- [ ] Done
 
 **What considerations should be made for Hadoop cluster backup and disaster recovery ?**
 
@@ -680,6 +689,7 @@ client = secure_client.get_client()
 ---
 
 ## Question 10
+- [ ] Done
 
 **How would you monitor the health of a Hadoop cluster , and what tools would you use?**
 
@@ -688,6 +698,7 @@ client = secure_client.get_client()
 ---
 
 ## Question 11
+- [ ] Done
 
 **Discuss a strategy for Hadoop cluster capacity planning and scaling**
 
@@ -696,6 +707,7 @@ client = secure_client.get_client()
 ---
 
 ## Question 12
+- [ ] Done
 
 **A company wants to process clickstream data in real-time . How would you integrate Hadoop and Spark to meet this requirement?**
 
@@ -704,6 +716,7 @@ client = secure_client.get_client()
 ---
 
 ## Question 13
+- [ ] Done
 
 **Propose a data pipeline using Hadoop components to manage and analyze sensor data from IoT devices**
 

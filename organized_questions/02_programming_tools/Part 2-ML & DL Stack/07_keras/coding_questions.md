@@ -1,6 +1,7 @@
 # Keras Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement a CNN for image classification.**
 
@@ -60,6 +61,7 @@ print(f"Test accuracy: {test_acc:.4f}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement an LSTM for sequence classification.**
 
@@ -124,6 +126,7 @@ bi_lstm_model = keras.Sequential([
 ---
 
 ## Question 3
+- [ ] Done
 
 **Implement a model with multiple inputs using Functional API.**
 
@@ -179,6 +182,7 @@ model.summary()
 ---
 
 ## Question 4
+- [ ] Done
 
 **Implement a custom training loop in Keras.**
 
@@ -264,6 +268,7 @@ for epoch in range(epochs):
 ---
 
 ## Question 5
+- [ ] Done
 
 **Implement an Autoencoder.**
 
@@ -319,6 +324,7 @@ reconstructed = autoencoder.predict(X_test[:10])
 ---
 
 ## Question 6
+- [ ] Done
 
 **Implement learning rate scheduling.**
 
@@ -387,6 +393,7 @@ model.compile(optimizer=optimizer, loss='mse')
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement a Siamese network for similarity learning.**
 
@@ -450,6 +457,7 @@ def contrastive_loss(y_true, y_pred, margin=1.0):
 ---
 
 ## Question 8
+- [ ] Done
 
 **Implement model ensembling in Keras.**
 
@@ -516,6 +524,7 @@ def create_ensemble_model(models, input_shape):
 ---
 
 ## Question 9
+- [ ] Done
 
 **Implement attention mechanism for sequence models.**
 
@@ -582,6 +591,7 @@ attention_model.compile(optimizer='adam', loss='binary_crossentropy')
 ---
 
 ## Question 10
+- [ ] Done
 
 **Implement a GAN (Generative Adversarial Network).**
 
@@ -672,6 +682,7 @@ def train_gan(epochs, batch_size=128):
 ---
 
 ## Question 11
+- [ ] Done
 
 **Create a simple Keras model using the Sequential API for binary classification.**
 
@@ -744,6 +755,7 @@ plt.show()
 ---
 
 ## Question 12
+- [ ] Done
 
 **Write a script to load and preprocess image data for a CNN in Keras.**
 
@@ -826,6 +838,7 @@ for images, labels in train_ds.take(1):
 ---
 
 ## Question 13
+- [ ] Done
 
 **Code a Multi-Layer Perceptron (MLP) in Keras for a regression task.**
 
@@ -903,6 +916,7 @@ for pred, actual in zip(predictions.flatten(), y_test[:5]):
 ---
 
 ## Question 14
+- [ ] Done
 
 **Develop a custom callback in Keras that logs the predictions of a model at the end of each epoch.**
 
@@ -987,6 +1001,7 @@ class DistributionLogger(callbacks.Callback):
 ---
 
 ## Question 15
+- [ ] Done
 
 **Implement a Keras data generator to handle large datasets that cannot fit into memory.**
 
@@ -1080,6 +1095,7 @@ ds = tf.data.TFRecordDataset('data.tfrecord').map(parse_tfrecord).batch(32)
 ---
 
 ## Question 16
+- [ ] Done
 
 **Write a Python function using Keras to calculate and display a confusion matrix for a classification model.**
 
@@ -1154,6 +1170,7 @@ cm = plot_confusion_matrix(model, X_test, y_test, class_names)
 ---
 
 ## Question 17
+- [ ] Done
 
 **Create a script that fine-tunes a pre-trained convolutional neural network on a new dataset in Keras.**
 
@@ -1240,6 +1257,7 @@ train_ds = train_ds.map(lambda x, y: (preprocess(x), y))
 ---
 
 ## Question 18
+- [ ] Done
 
 **Implement custom training logic in Keras by overriding the training step function**
 
@@ -1304,6 +1322,7 @@ model.fit(X_train, y_train, batch_size=64, epochs=5, validation_split=0.1)
 ---
 
 ## Question 19
+- [ ] Done
 
 **Use the Keras functional API to create a model with shared layers and multiple inputs/outputs**
 
@@ -1359,6 +1378,7 @@ model.summary()
 ---
 
 ## Question 20
+- [ ] Done
 
 **Code an LSTM network in Keras to perform sentiment analysis on text data**
 

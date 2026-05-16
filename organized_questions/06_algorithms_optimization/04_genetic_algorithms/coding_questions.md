@@ -1,6 +1,7 @@
 # Genetic Algorithms Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain how ‘coevolution’ is implemented in GAs.**
 
@@ -53,6 +54,7 @@ for generation in range(max_gens):
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement a basic genetic algorithm in Python to solve the problem of maximizing the function f(x) = x^2.**
 
@@ -110,6 +112,7 @@ print(f"Final: x = {best:.2f}, f(x) = {fitness(best):.2f}")
 ---
 
 ## Question 3
+- [ ] Done
 
 **Write a genetic algorithm to evolve a simple string of characters toward a target string.**
 
@@ -172,6 +175,7 @@ while True:
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a mutation function for a GA that operates on real-valued vectors.**
 
@@ -227,6 +231,7 @@ print(f"Uniform:  {uniform_mutation(individual)}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Code a crossover function that combines two parent solutions to produce offspring for a bit-string representation.**
 
@@ -275,6 +280,7 @@ print(f"Uniform: {uniform_crossover(parent1, parent2)}")
 ---
 
 ## Question 6
+- [ ] Done
 
 **Develop a selection mechanism in Python to select fittest individuals based on the roulette wheel method.**
 
@@ -333,6 +339,7 @@ print("Selected:", selected)
 ---
 
 ## Question 7
+- [ ] Done
 
 **Write a Python function that implements a rank-based selection method for a GA.**
 
@@ -394,6 +401,7 @@ print("Selected:", selected)
 ---
 
 ## Question 8
+- [ ] Done
 
 **Implement a GA in Python to solve the problem of finding the minimal-cost path in a graph.**
 
@@ -487,6 +495,7 @@ print(f"\nBest path: {population[0]}, Cost: {path_cost(population[0])}")
 ---
 
 ## Question 9
+- [ ] Done
 
 **Create a simple GA in Python for optimizing the weights of a small neural network.**
 
@@ -578,6 +587,7 @@ print("Expected:         ", y.flatten())
 ---
 
 ## Question 10
+- [ ] Done
 
 **Share an example where a GA has been successfully implemented in an industrial setting.**
 

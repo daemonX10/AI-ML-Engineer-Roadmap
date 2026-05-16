@@ -1,6 +1,7 @@
 # Gradient Descent Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What challenges arise when using gradient descent on non-convex functions?**
 
@@ -24,6 +25,7 @@ Non-convex functions have multiple local minima, saddle points, and plateaus. GD
 ---
 
 ## Question 2
+- [ ] Done
 
 **How can gradient clipping help in training deep learning models?**
 
@@ -45,6 +47,7 @@ Gradient clipping caps the magnitude of gradients before the parameter update to
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you choose an appropriate learning rate?**
 
@@ -64,6 +67,7 @@ Start with defaults (0.001 for Adam, 0.01-0.1 for SGD), use learning rate finder
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you avoid overfitting when using gradient descent for training models?**
 
@@ -76,6 +80,7 @@ Use: (1) Early stopping - stop when val_loss increases, (2) L1/L2 Regularization
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do learning rate schedules improve gradient descent optimization?**
 
@@ -86,6 +91,7 @@ LR schedules start high for fast initial progress, then decrease for fine-tuning
 ---
 
 ## Question 6
+- [ ] Done
 
 **What metrics or visualizations can be used to monitor gradient descent progress?**
 

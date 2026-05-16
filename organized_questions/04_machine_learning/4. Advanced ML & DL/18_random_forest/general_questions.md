@@ -1,6 +1,7 @@
 # Random Forest Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What is a Random Forest, and how does it work?**
 
@@ -35,6 +36,7 @@ Imagine asking 100 experts, each with slightly different knowledge (trained on d
 ---
 
 ## Question 2
+- [ ] Done
 
 **How does a Random Forest differ from a single decision tree?**
 
@@ -67,6 +69,7 @@ If trees are decorrelated (low ρ), variance decreases significantly.
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are the main advantages of using a Random Forest?**
 
@@ -113,6 +116,7 @@ Random Forest offers multiple advantages including high accuracy, resistance to 
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is bagging, and how is it implemented in a Random Forest?**
 
@@ -220,6 +224,7 @@ print(f"Accuracy: {accuracy_score(y_test, y_pred):.4f}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does Random Forest achieve feature randomness?**
 
@@ -262,6 +267,7 @@ Find best split: $\arg\min_{j \in S, t} \text{ImpurityReduction}(j, t)$
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is out-of-bag (OOB) error in Random Forest?**
 
@@ -305,6 +311,7 @@ print(f"OOB Error: {1 - rf.oob_score_:.4f}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Are Random Forests biased towards attributes with more levels? Explain your answer.**
 
@@ -344,6 +351,7 @@ Yes, Random Forests (like single decision trees) can be biased toward features w
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do you handle missing values in a Random Forest model?**
 
@@ -401,6 +409,7 @@ from sklearn.ensemble import HistGradientBoostingClassifier
 ---
 
 ## Question 9
+- [ ] Done
 
 **What are the key hyperparameters of a Random Forest, and how do they affect the model?**
 
@@ -438,6 +447,7 @@ min_samples_leaf: 1-5 for classification, 5-10 for regression
 ---
 
 ## Question 10
+- [ ] Done
 
 **Can Random Forest be used for both classification and regression tasks?**
 
@@ -491,6 +501,7 @@ Both support multi-output (multiple targets simultaneously).
 ---
 
 ## Question 11
+- [ ] Done
 
 **What is the concept of ensemble learning, and how does Random Forest fit into it?**
 
@@ -531,6 +542,7 @@ $$\hat{f}_{bag}(x) = \frac{1}{B}\sum_{b=1}^{B} \hat{f}^{*b}(x)$$
 ---
 
 ## Question 12
+- [ ] Done
 
 **Compare Random Forest with Gradient Boosting Machine (GBM).**
 
@@ -578,6 +590,7 @@ $$\hat{f}_m(x) = \hat{f}_{m-1}(x) + \gamma_m T_m(x) \quad \text{(additive)}$$
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is the difference between Random Forest and Extra Trees classifiers?**
 
@@ -625,6 +638,7 @@ et = ExtraTreesClassifier(n_estimators=100)
 ---
 
 ## Question 14
+- [ ] Done
 
 **How does Random Forest prevent overfitting in comparison to decision trees?**
 
@@ -671,6 +685,7 @@ Where ρ = correlation between trees. Lower ρ (from randomness) = lower varianc
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain the differences between Random Forest and AdaBoost.**
 

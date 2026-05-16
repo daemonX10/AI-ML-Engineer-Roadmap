@@ -1,6 +1,7 @@
 # SQL ML Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What are the different types of JOIN operations in SQL?**
 
@@ -45,6 +46,7 @@ WHERE o.order_id IS NULL;
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the difference between WHERE and HAVING clauses.**
 
@@ -83,6 +85,7 @@ HAVING COUNT(*) > 5;           -- Filter groups after
 ---
 
 ## Question 3
+- [ ] Done
 
 **Describe a subquery and its typical use case.**
 
@@ -117,6 +120,7 @@ Correlated subqueries run per row - consider rewriting as JOINs for better perfo
 ---
 
 ## Question 4
+- [ ] Done
 
 **What are SQL Window Functions and how can they be used for Machine Learning feature engineering ?**
 
@@ -170,6 +174,7 @@ FROM transactions;
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain how to discretize a continuous variable in SQL.**
 
@@ -207,6 +212,7 @@ FROM user_stats;
 ---
 
 ## Question 6
+- [ ] Done
 
 **Describe SQL techniques to perform data sampling.**
 
@@ -238,6 +244,7 @@ For ML, stratified sampling is critical for imbalanced datasets.
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain how to perform binning of categorical variables in SQL for use in a Machine Learning model.**
 
@@ -302,6 +309,7 @@ Always explain *why* you bin — mention the trade-off between information loss 
 ---
 
 ## Question 8
+- [ ] Done
 
 **How does SQL play a role in ML model deployment?**
 
@@ -368,6 +376,7 @@ Mention that modern databases (SQL Server, BigQuery, Redshift) support in-databa
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is the significance of in-database analytics for Machine Learning?**
 
@@ -426,6 +435,7 @@ Emphasize that in-database analytics is ideal for organizations with strict data
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain recursive SQL queries and how they can be used to prepare data for hierarchical Machine Learning algorithms.**
 
@@ -519,6 +529,7 @@ Always mention the termination condition — recursive CTEs need a base case and
 ---
 
 ## Question 11
+- [ ] Done
 
 **Describe how graph-based features can be generated from SQL data.**
 
@@ -595,6 +606,7 @@ Graph features are expensive to compute in SQL for large datasets. Mention that 
 ---
 
 ## Question 12
+- [ ] Done
 
 **What are SQL Common Table Expressions (CTEs) and how can they be used for feature generation?**
 
@@ -667,6 +679,7 @@ CTEs shine in interviews because they show you can decompose complex problems in
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain the role of partitioning in large-scale SQL databases.**
 
@@ -738,6 +751,7 @@ Always mention **partition pruning** — the query optimizer skips irrelevant pa
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe how you could use SQL to report the performance metrics of a Machine Learning model.**
 
@@ -808,6 +822,7 @@ Highlight that SQL-based metric reporting enables **automated monitoring** — y
 ---
 
 ## Question 15
+- [ ] Done
 
 **Describe how you would version control the datasets used for building Machine Learning models in SQL.**
 
@@ -885,6 +900,7 @@ Mention that temporal tables (SQL:2011 standard) are the most elegant solution s
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is Data Lineage , and how can you track it using SQL?**
 
@@ -986,6 +1002,7 @@ Emphasize that data lineage is not just a compliance requirement — it is essen
 ---
 
 ## Question 17
+- [ ] Done
 
 **Can you explain the use of indexes in databases and how they relate to Machine Learning?**
 
@@ -1050,6 +1067,7 @@ GROUP BY user_id;
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain the importance of data normalization in SQL and how it affects Machine Learning models.**
 
@@ -1117,6 +1135,7 @@ JOIN customers c ON o.customer_id = c.customer_id;
 ---
 
 ## Question 19
+- [ ] Done
 
 **How would you optimize a SQL query that seems to be running slowly?**
 
@@ -1171,6 +1190,7 @@ SELECT * FROM large_table WHERE id BETWEEN 100001 AND 200000;
 ---
 
 ## Question 20
+- [ ] Done
 
 **How do you handle missing values in a SQL dataset?**
 
@@ -1234,6 +1254,7 @@ FROM patients;
 ---
 
 ## Question 21
+- [ ] Done
 
 **How would you merge multiple result sets in SQL without duplicates?**
 
@@ -1300,6 +1321,7 @@ JOIN features USING (transaction_id);
 ---
 
 ## Question 22
+- [ ] Done
 
 **How would you handle very large datasets in SQL for Machine Learning purposes?**
 
@@ -1380,6 +1402,7 @@ REFRESH MATERIALIZED VIEW CONCURRENTLY user_features;
 ---
 
 ## Question 23
+- [ ] Done
 
 **Discuss how you would design a system to regularly feed a Machine Learning model with SQL data**
 
@@ -1461,6 +1484,7 @@ extract_features >> train_model
 ---
 
 ## Question 24
+- [ ] Done
 
 **How would you extract and prepare a confusion matrix for a classification problem using SQL?**
 
@@ -1539,6 +1563,7 @@ ORDER BY actual_label, predicted_label;
 ---
 
 ## Question 25
+- [ ] Done
 
 **How would you log and track predictions made by a Machine Learning model within a SQL environment?**
 
@@ -1625,6 +1650,7 @@ GROUP BY model_version;
 ---
 
 ## Question 26
+- [ ] Done
 
 **Discuss how to manage the entire lifecycle of a Machine Learning model using SQL tools**
 

@@ -1,6 +1,7 @@
 # Gradient Descent Interview Questions - Scenario Based Questions
 
 ## Question 1
+- [ ] Done
 
 **What could cause gradient descent to converge very slowly, and how would you counteract it?**
 
@@ -49,6 +50,7 @@
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss the importance of convergence criteria in gradient descent.**
 
@@ -95,6 +97,7 @@ for epoch in epochs:
 ---
 
 ## Question 3
+- [ ] Done
 
 **How would you adapt gradient descent to handle a large amount of data that does not fit into memory?**
 
@@ -150,6 +153,7 @@ for i, batch in enumerate(batches):
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss how you might use feature engineering to improve the performance of gradient descent in a model.**
 
@@ -199,6 +203,7 @@ X_poly = poly.fit_transform(X)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Present a strategy to choose the right optimizer for a given ML problem.**
 
@@ -215,6 +220,7 @@ Start with AdamW as robust default. For CNN SOTA, use SGD + momentum. For Transf
 ---
 
 ## Question 6
+- [ ] Done
 
 **Describe a scenario where gradient descent might fail to find the optimal solution and what alternatives could mitigate this.**
 
@@ -233,6 +239,7 @@ Gradient descent fails on: (1) Non-convex functions - gets stuck in poor local m
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain how you would use gradient descent to optimize hyperparameters in a machine learning model.**
 

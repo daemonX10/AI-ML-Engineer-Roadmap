@@ -1,6 +1,7 @@
 # Linear Regression Interview Questions - Scenario-Based Questions
 
 ## Question 1: Discuss how linear regression can be used for sales forecasting
+- [ ] Done
 
 ### Answer
 
@@ -47,6 +48,7 @@ $$Sales = \beta_0 + \beta_1 \cdot trend + \beta_2 \cdot price + \beta_3 \cdot pr
 ---
 
 ## Question 2: How would you approach building a linear regression model to predict customer churn?
+- [ ] Done
 
 ### Answer
 
@@ -87,6 +89,7 @@ If asked about "linear regression for churn," politely clarify that logistic reg
 ---
 
 ## Question 3: Propose a framework for using regression to evaluate promotional impact on sales
+- [ ] Done
 
 ### Answer
 
@@ -134,6 +137,7 @@ $$\log(Sales) = \beta_0 + \beta_1\log(TV_{adstock}) + \beta_2\log(Radio_{adstock
 ---
 
 ## Question 4: Discuss the role of linear regression in AI for personalized medicine
+- [ ] Done
 
 ### Answer
 
@@ -180,6 +184,7 @@ $$Response = \beta_0 + \beta_1 \cdot Dose + \beta_2 \cdot Age + \beta_3 \cdot We
 ---
 
 ## Question 5: How would you explain linear regression to a non-technical stakeholder?
+- [ ] Done
 
 ### Answer
 
@@ -226,6 +231,7 @@ Draw a scatter plot with a line through it. Show:
 ---
 
 ## Question 6: How would you use A/B testing to validate a linear regression model in production?
+- [ ] Done
 
 ### Answer
 
@@ -284,6 +290,7 @@ A/B testing validates that the regression model's recommendations actually impro
 - Monitor for drift over time
 
 ## Question 7: Describe a situation where linear regression could be applied in the finance sector.
+- [ ] Done
 
 ### Answer
 
@@ -335,6 +342,7 @@ print(f"Alpha: {model.intercept_:.4f}")
 ---
 
 ## Question 8: Explain how you might use regression analysis to assess the effect of marketing campaigns.
+- [ ] Done
 
 ### Answer
 
@@ -378,6 +386,7 @@ for name, coef in zip(features, model.coef_):
 ---
 
 ## Question 9: Describe how linear regression models could be used in predicting real estate prices.
+- [ ] Done
 
 ### Answer
 
@@ -420,6 +429,7 @@ coefficients = pd.DataFrame({
 ---
 
 ## Question 10: Describe how you might use linear regression to optimize inventory levels in a supply chain context.
+- [ ] Done
 
 ### Answer
 

@@ -1,6 +1,7 @@
 # Autoencoders Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do autoencoders perform dimensionality reduction?**
 
@@ -38,6 +39,7 @@ Linear autoencoder = PCA. Nonlinear autoencoder can capture complex manifolds th
 ---
 
 ## Question 2
+- [ ] Done
 
 **How can autoencoders be used for unsupervised learning?**
 
@@ -73,6 +75,7 @@ The reconstruction objective requires no labels - just minimize $||x - \hat{x}||
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do recurrent autoencoders differ from feedforward autoencoders, and when might they be useful?**
 
@@ -109,6 +112,7 @@ Sequence [x₁, x₂, ..., xₜ] → LSTM Encoder → Hidden state (z) → LSTM 
 ---
 
 ## Question 4
+- [ ] Done
 
 **What loss functions are typically used when training autoencoders?**
 
@@ -142,6 +146,7 @@ $$\mathcal{L} = \mathcal{L}_{recon} + D_{KL}(q(z|x)||p(z))$$
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you prevent overfitting in an autoencoder?**
 
@@ -179,6 +184,7 @@ Combine multiple methods: bottleneck + dropout + early stopping.
 ---
 
 ## Question 6
+- [ ] Done
 
 **What factors influence the capacity and size of the latent space in an autoencoder?**
 
@@ -216,6 +222,7 @@ Combine multiple methods: bottleneck + dropout + early stopping.
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you determine the number of layers and neurons in an autoencoder?**
 
@@ -257,6 +264,7 @@ Input(784) → 512 → 256 → 64(latent) → 256 → 512 → Output(784)
 ---
 
 ## Question 8
+- [ ] Done
 
 **How can autoencoders be applied for feature learning?**
 
@@ -299,6 +307,7 @@ classifier.fit(features, y)
 ---
 
 ## Question 9
+- [ ] Done
 
 **How are autoencoders utilized in recommendation systems?**
 
@@ -340,6 +349,7 @@ Only compute loss on known ratings.
 ---
 
 ## Question 10
+- [ ] Done
 
 **In what ways can autoencoders contribute to anomaly detection?**
 
@@ -382,6 +392,7 @@ Train autoencoder on normal data only. Anomalies have high reconstruction error.
 ---
 
 ## Question 11
+- [ ] Done
 
 **How can generative adversarial networks (GANs) and autoencoders be used together?**
 
@@ -424,6 +435,7 @@ $$\mathcal{L} = \mathcal{L}_{recon} + \lambda_1 \mathcal{L}_{adv} + \lambda_2 \m
 ---
 
 ## Question 12
+- [ ] Done
 
 **How do autoencoders contribute to the understanding and visualization of high-dimensional data?**
 
@@ -466,6 +478,7 @@ Data → AE → Latent (e.g., 64-dim) → t-SNE → 2D plot
 ---
 
 ## Question 13
+- [ ] Done
 
 **Provide an example of how autoencoders could be used for genomic data compression and feature extraction.**
 

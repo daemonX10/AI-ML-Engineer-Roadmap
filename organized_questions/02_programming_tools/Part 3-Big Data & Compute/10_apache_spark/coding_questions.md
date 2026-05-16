@@ -1,6 +1,7 @@
 # Apache Spark Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Write a Scala/Python Spark code snippet that reads a CSV file and calculates the average of a column**
 
@@ -40,6 +41,7 @@ df.groupBy("category").agg(avg("price").alias("avg_price")).show()
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write Spark code to perform word count.**
 
@@ -84,6 +86,7 @@ word_counts_df.show(10)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Write Spark code to join two DataFrames.**
 
@@ -127,6 +130,7 @@ broadcast_result = orders.join(broadcast(customers), "customer_id")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Write Spark code for window functions.**
 
@@ -168,6 +172,7 @@ result.show()
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write Spark code to handle null values.**
 
@@ -214,6 +219,7 @@ df_filled.show()
 ---
 
 ## Question 6
+- [ ] Done
 
 **Write Spark code for reading and writing different file formats.**
 
@@ -252,6 +258,7 @@ df.write.partitionBy("id").parquet("output/partitioned")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Write Spark code for data aggregation and grouping.**
 
@@ -296,6 +303,7 @@ sales.rollup("category", "product").agg(
 ---
 
 ## Question 8
+- [ ] Done
 
 **Write Spark Streaming code to process real-time data.**
 
@@ -349,6 +357,7 @@ query = windowed.writeStream \
 ---
 
 ## Question 9
+- [ ] Done
 
 **Write Spark code for data validation.**
 
@@ -398,6 +407,7 @@ flagged.show()
 ---
 
 ## Question 10
+- [ ] Done
 
 **Write Spark ML code for a simple machine learning pipeline.**
 
@@ -452,6 +462,7 @@ print(f"AUC: {auc:.4f}")
 ```
 
 ## Question 11
+- [ ] Done
 
 **Implement a Spark streaming application that counts words in text data received from a socket**
 
@@ -460,6 +471,7 @@ print(f"AUC: {auc:.4f}")
 ---
 
 ## Question 12
+- [ ] Done
 
 **Code a Spark SQL query that finds the top 3 most occurring words in a DataFrame**
 
@@ -468,6 +480,7 @@ print(f"AUC: {auc:.4f}")
 ---
 
 ## Question 13
+- [ ] Done
 
 **Create a Spark job that joins two datasets on a key and summarizes data**
 
@@ -476,6 +489,7 @@ print(f"AUC: {auc:.4f}")
 ---
 
 ## Question 14
+- [ ] Done
 
 **Write a Python function using PySpark to filter out records with null values in a specific column**
 
@@ -484,6 +498,7 @@ print(f"AUC: {auc:.4f}")
 ---
 
 ## Question 15
+- [ ] Done
 
 **Implement a logistic regression model in Spark MLlib**
 
@@ -492,6 +507,7 @@ print(f"AUC: {auc:.4f}")
 ---
 
 ## Question 16
+- [ ] Done
 
 **Create a Spark Streaming application to aggregate event data by time windows**
 
@@ -500,6 +516,7 @@ print(f"AUC: {auc:.4f}")
 ---
 
 ## Question 17
+- [ ] Done
 
 **Write Spark code to calculate the PageRank of a simple website link graph**
 

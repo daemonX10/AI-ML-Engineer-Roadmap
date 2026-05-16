@@ -1,6 +1,7 @@
 # K Means Clustering Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss how you would use K-Means Clustering for image compression.**
 
@@ -61,6 +62,7 @@ compressed, palette = compress_image(img, n_colors=32)
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you apply K-Means clustering for anomaly detection?**
 
@@ -128,6 +130,7 @@ print(f"Detected {anomalies.sum()} anomalies")
 ---
 
 ## Question 3
+- [ ] Done
 
 **How would you leverage K-Means clustering in designing a content delivery network?**
 
@@ -194,6 +197,7 @@ Servers placed to minimize total weighted user-to-server distance → optimal la
 ---
 
 ## Question 4
+- [ ] Done
 
 **How can K-Means be applied to segment customers in a retail business?**
 
@@ -238,6 +242,7 @@ rfm['segment'] = kmeans.fit_predict(rfm_scaled)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Outline a strategy to cluster documents based on their textual content using K-Means.**
 
@@ -285,6 +290,7 @@ for i, centroid in enumerate(kmeans.cluster_centers_):
 ---
 
 ## Question 6
+- [ ] Done
 
 **Provide an example of using K-Means clustering for market trend analysis.**
 
@@ -332,6 +338,7 @@ stock_features['cluster'] = kmeans.fit_predict(X_scaled)
 ---
 
 ## Question 7
+- [ ] Done
 
 **Describe a scenario where K-Means clustering was effectively applied to solve a real-world problem.**
 
@@ -371,6 +378,7 @@ An e-commerce company wants to personalize marketing campaigns. Using K-Means on
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain how you can apply K-Means Clustering to the problem of load balancing in distributed computing.**
 
@@ -413,6 +421,7 @@ K-Means can optimize load balancing by clustering tasks/requests based on resour
 ---
 
 ## Question 9
+- [ ] Done
 
 **Describe a project where K-Means contributed to improving recommendation systems.**
 

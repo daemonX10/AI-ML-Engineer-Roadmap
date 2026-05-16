@@ -1,6 +1,7 @@
 # Python ML Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the difference between a list , a tuple , and a set in Python**
 
@@ -69,6 +70,7 @@ unique_classes = set(y_labels)
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss the usage of *args and **kwargs in function definitions.**
 
@@ -134,6 +136,7 @@ def train_model(model_class, X, y, *preprocessing_steps, **hyperparams):
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the benefits of using Jupyter Notebooks for machine learning projects.**
 
@@ -173,6 +176,7 @@ def train_model(model_class, X, y, *preprocessing_steps, **hyperparams):
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss the use of pipelines in Scikit-learn for streamlining preprocessing steps.**
 
@@ -234,6 +238,7 @@ Always mention that pipelines prevent data leakage - preprocessing is fit only o
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss how ensemble methods work and give an example where they might be useful.**
 
@@ -278,6 +283,7 @@ print(f"Ensemble Accuracy: {ensemble.score(X_test, y_test):.3f}")
 ---
 
 ## Question 6
+- [ ] Done
 
 **How would you assess a model’s performance ? Mention at least three metrics**
 
@@ -316,6 +322,7 @@ Always ask: "What is the business cost of different types of errors?" This deter
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss the differences between supervised and unsupervised learning evaluation.**
 
@@ -382,6 +389,7 @@ for k in range(2, 11):
 ---
 
 ## Question 8
+- [ ] Done
 
 **How would you approach feature selection in a large dataset?**
 
@@ -458,6 +466,7 @@ Start → Remove zero-variance → Remove high correlation (>0.95)
 ---
 
 ## Question 9
+- [ ] Done
 
 **Discuss strategies for dealing with imbalanced datasets.**
 
@@ -533,6 +542,7 @@ Imbalance ratio > 1:100 → Anomaly detection approach
 ---
 
 ## Question 10
+- [ ] Done
 
 **Discuss the importance of model persistence and demonstrate how to save and load models in Python.**
 
@@ -630,6 +640,7 @@ joblib.dump(pipeline, 'full_pipeline.joblib')  # saves everything
 ---
 
 ## Question 11
+- [ ] Done
 
 **Discuss the impact of the GIL (Global Interpreter Lock) on Python concurrency in machine learning applications.**
 
@@ -695,6 +706,7 @@ GPU operations         → GIL irrelevant     → CUDA handles parallelism
 ---
 
 ## Question 12
+- [ ] Done
 
 **Discuss the role of the collections module in managing data structures for machine learning.**
 
@@ -767,6 +779,7 @@ best = max(results, key=lambda x: x.f1)
 ---
 
 ## Question 13
+- [ ] Done
 
 **Discuss various options for deploying a machine learning model in Python.**
 
@@ -855,6 +868,7 @@ with open('model.tflite', 'wb') as f:
 ---
 
 ## Question 14
+- [ ] Done
 
 **Discuss strategies for effective logging and monitoring in machine-learning applications.**
 
@@ -963,6 +977,7 @@ def detect_drift(reference_data, production_data, threshold=0.05):
 ---
 
 ## Question 15
+- [ ] Done
 
 **Discuss the implications of quantum computing on machine learning, with a Python perspective.**
 
@@ -1040,6 +1055,7 @@ Now (NISQ era)     → Small experiments, hybrid quantum-classical
 ---
 
 ## Question 16
+- [ ] Done
 
 **Discuss the integration of big data technologies with Python in machine learning projects.**
 
@@ -1123,6 +1139,7 @@ Distributed training  → Ray or Horovod
 > **Interview Tip:** The key shift is from **single-machine** (Pandas) to **distributed** (PySpark/Dask). Mention that Spark MLlib provides distributed versions of common algorithms, and that **feature stores** (Feast, Tecton) bridge big data pipelines with ML models.
 
 ## Question 17
+- [ ] Done
 
 **Describe steps to take when a model performs well on the training data but poorly on new data**
 
@@ -1188,6 +1205,7 @@ X_selected = selector.fit_transform(X_train, y_train)
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain the use of regularization in linear models and provide a Python example**
 
@@ -1254,6 +1272,7 @@ print(f"Best Ridge alpha: {ridge_cv.alpha_}")
 ---
 
 ## Question 19
+- [ ] Done
 
 **What are the advantages of using Stochastic Gradient Descent over standard Gradient Descent ?**
 
@@ -1314,6 +1333,7 @@ for i in range(0, len(X), 1000):  # process in chunks
 ---
 
 ## Question 20
+- [ ] Done
 
 **Describe a situation where a machine learning model might fail, and how you would investigate the issue using Python**
 
@@ -1393,6 +1413,7 @@ def analyze_errors(X_test, y_true, y_pred):
 ---
 
 ## Question 21
+- [ ] Done
 
 **What are Python’s profiling tools and how do they assist in optimizing machine learning code ?**
 
@@ -1453,6 +1474,7 @@ print(timeit.timeit("sum(a)", setup=setup, number=1000))  # Much slower
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain how unit tests and integration tests ensure the correctness of your machine learning code**
 

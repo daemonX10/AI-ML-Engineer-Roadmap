@@ -1,6 +1,7 @@
 # Genetic Algorithms Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the concept of 'dominance' and 'epistasis' in genetic algorithms.**
 
@@ -55,6 +56,7 @@ With epistasis: Fitness = f(gene1, gene2)  # Interaction
 ---
 
 ## Question 2
+- [ ] Done
 
 **How would you apply GAs to solve a traveling salesman problem (TSP)?**
 
@@ -106,6 +108,7 @@ Swap middle → Child with valid permutation
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the use of GAs in evolving neural network architectures.**
 
@@ -161,6 +164,7 @@ def fitness(architecture):
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss how to choose an appropriate selection method for a specific GA application.**
 
@@ -213,6 +217,7 @@ selected = tournament_select(population, k)
 ---
 
 ## Question 5
+- [ ] Done
 
 **How would you design a GA for optimizing hyperparameters of an SVM classifier?**
 
@@ -269,6 +274,7 @@ child['C'] = parent1['C'] if random() > 0.5 else parent2['C']
 ---
 
 ## Question 6
+- [ ] Done
 
 **Propose a GA approach to create a timetable for a university course schedule.**
 
@@ -324,6 +330,7 @@ def fitness(schedule):
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss a scenario where a GA could be used to optimize the layout of a wind farm.**
 
@@ -379,6 +386,7 @@ def fitness(positions):
 ---
 
 ## Question 8
+- [ ] Done
 
 **How would you use a genetic algorithm to handle the problem of vehicle routing with time windows?**
 
@@ -433,6 +441,7 @@ def fitness(routes):
 ---
 
 ## Question 9
+- [ ] Done
 
 **Discuss the role of ‘speciation’ in genetic algorithms and its potential benefits.**
 
@@ -483,6 +492,7 @@ shared_fitness = raw_fitness / species_size
 ---
 
 ## Question 10
+- [ ] Done
 
 **Discuss the considerations in balancing exploration and exploitation in GAs.**
 

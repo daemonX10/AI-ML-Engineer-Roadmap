@@ -1,6 +1,7 @@
 # Computer Vision Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Write a Python program to perform edge detection using the Canny filter.**
 
@@ -1190,6 +1191,7 @@ This implementation provides a comprehensive, production-ready solution for edge
 ---
 
 ## Question 3
+- [ ] Done
 
 **Create a function to automaticallycrop imagescentering on the main object.**
 
@@ -1949,6 +1951,7 @@ This implementation provides a comprehensive, production-ready solution for auto
 ---
 
 ## Question 4
+- [ ] Done
 
 **Write code to segment an image intosuperpixelsusingSLIC (Simple Linear Iterative Clustering).**
 
@@ -2775,6 +2778,7 @@ This implementation provides a comprehensive solution for superpixel segmentatio
 ---
 
 ## Question 5
+- [ ] Done
 
 **Implement basicfacial landmark detectionusingDliborOpenCV.**
 

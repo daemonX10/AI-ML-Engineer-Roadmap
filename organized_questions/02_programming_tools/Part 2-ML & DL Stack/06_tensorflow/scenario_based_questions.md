@@ -1,6 +1,7 @@
 # TensorFlow Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss how TensorFlow can be used for reinforcement learning.**
 
@@ -92,6 +93,7 @@ class DQNAgent:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Your model trains slowly on large datasets. How do you optimize the data pipeline?**
 
@@ -177,6 +179,7 @@ def create_tfrecord(images, labels, filename):
 ---
 
 ## Question 3
+- [ ] Done
 
 **You need to deploy a TensorFlow model to production. What's your approach?**
 
@@ -242,6 +245,7 @@ tf.saved_model.save(
 ---
 
 ## Question 4
+- [ ] Done
 
 **Your model has memory issues when training on large images. How do you solve this?**
 
@@ -330,6 +334,7 @@ def data_generator(file_paths, batch_size):
 ---
 
 ## Question 5
+- [ ] Done
 
 **You need to handle a multi-GPU training setup. What's your approach?**
 
@@ -404,6 +409,7 @@ def distributed_train_step(dist_inputs):
 ---
 
 ## Question 6
+- [ ] Done
 
 **Your model's accuracy is good but inference is too slow. How do you optimize?**
 
@@ -498,6 +504,7 @@ print(f"Batched: {time.time() - start:.2f}s")
 ---
 
 ## Question 7
+- [ ] Done
 
 **You need to debug a model that's not learning. What's your systematic approach?**
 
@@ -606,6 +613,7 @@ class DebugCallback(tf.keras.callbacks.Callback):
 ---
 
 ## Question 8
+- [ ] Done
 
 **You're building a model for a streaming data application. How do you handle continuous learning?**
 
@@ -708,6 +716,7 @@ for batch_num in range(100):
 ---
 
 ## Question 9
+- [ ] Done
 
 **Your model performs well on test data but poorly in production. What could be wrong?**
 
@@ -818,6 +827,7 @@ X_prod_normalized = prod_preprocessor.transform(X_production)
 ---
 
 ## Question 10
+- [ ] Done
 
 **You need to build a TensorFlow model that can handle variable-length sequences. How do you approach this?**
 
@@ -945,6 +955,7 @@ y = tf.constant([0, 1, 0])
 ```
 
 ## Question 11
+- [ ] Done
 
 **How would you apply TensorFlow to predict stock market trends ?**
 
@@ -1010,6 +1021,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 
 ---
 ## Question 12
+- [ ] Done
 
 **Explain what steps you would take to develop a chatbot using TensorFlow.**
 
@@ -1137,6 +1149,7 @@ def generate_response(input_text, max_len=MAX_LEN):
 ---
 
 ## Question 13
+- [ ] Done
 
 **Describe how you would use TensorFlow in an autonomous vehicle perception system.**
 

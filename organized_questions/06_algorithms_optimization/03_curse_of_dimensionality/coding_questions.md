@@ -1,6 +1,7 @@
 # Curse Of Dimensionality Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement PCA in Python from scratch and apply it to a high-dimensional dataset.**
 
@@ -54,6 +55,7 @@ print(f"Explained variance: {var_ratio}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a Python function that selects the top k features based on mutual information with the target variable.**
 
@@ -100,6 +102,7 @@ print(f"MI scores: {scores.round(3)}")
 ---
 
 ## Question 3
+- [ ] Done
 
 **Code a Python script that performs recursive feature elimination to reduce the dimensionality of the dataset.**
 
@@ -149,6 +152,7 @@ print(f"Selected indices: {selected_idx}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a visualization of the nearest neighbors of a point in a high-dimensional space after applying t-SNE.**
 
@@ -196,6 +200,7 @@ plt.show()
 ---
 
 ## Question 5
+- [ ] Done
 
 **Demonstrate the use of L1 regularization in a logistic regression model on a high-dimensional dataset using scikit-learn.**
 

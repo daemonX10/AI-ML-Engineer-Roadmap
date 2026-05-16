@@ -1,6 +1,7 @@
 # Classification Algorithms Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement a logistic regression model from scratch using Python.**
 
@@ -82,6 +83,7 @@ print(f"Accuracy: {accuracy:.3f}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a function that calculates the Gini impurity for a given dataset in a Decision Tree.**
 
@@ -175,6 +177,7 @@ print(f"Information gain: {information_gain_gini(y_parent, y_left, y_right):.3f}
 ---
 
 ## Question 3
+- [ ] Done
 
 **Code a Support Vector Machine using scikit-learn to classify data from a toy dataset.**
 
@@ -270,6 +273,7 @@ def plot_decision_boundary(model, X, y, title):
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a k-NN classifier in Python and test its performance on a sample dataset.**
 
@@ -373,6 +377,7 @@ print(classification_report(y_test, y_pred, target_names=iris.target_names))
 ---
 
 ## Question 5
+- [ ] Done
 
 **Use a Boosting algorithm to improve the accuracy of a weak classifier on a dataset.**
 
@@ -468,6 +473,7 @@ print(f"\nImprovement: {weak_clf.score(X_test, y_test):.3f} → {xgb_clf.score(X
 ---
 
 ## Question 6
+- [ ] Done
 
 **Implement a function for feature scaling and normalization in preparation for classification.**
 
@@ -575,6 +581,7 @@ X_test_scaled = scaler_std.transform(X_test)  # Use fit from training!
 ---
 
 ## Question 7
+- [ ] Done
 
 **Develop a Python script that visualizes the decision boundary of a given classification model.**
 

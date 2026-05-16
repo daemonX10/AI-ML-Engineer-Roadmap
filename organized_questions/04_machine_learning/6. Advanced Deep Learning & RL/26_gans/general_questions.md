@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: How do GANs handle the generation of new, unseen data?
+- [ ] Done
 
 ### Definition
 GANs generate new data by learning the underlying probability distribution of training data. The Generator maps random noise vectors from a simple prior distribution to the complex data distribution, creating novel samples that resemble training data but are not copies.
@@ -42,6 +43,7 @@ new_faces = generator(z)  # Novel, unseen faces
 ---
 
 ## Question 2: What loss functions are commonly used in GANs and why?
+- [ ] Done
 
 ### Definition
 GAN loss functions measure how well the Generator fools the Discriminator and how well the Discriminator distinguishes real from fake. Different losses address training stability and convergence issues.
@@ -88,6 +90,7 @@ g_loss = -torch.mean(D(G(z)))
 ---
 
 ## Question 3: How is the training process different for the Generator and Discriminator?
+- [ ] Done
 
 ### Definition
 Generator and Discriminator have opposing objectives and are trained in alternating steps. Discriminator is trained to maximize classification accuracy while Generator is trained to minimize it.
@@ -148,6 +151,7 @@ optimizer_G.step()
 ---
 
 ## Question 4: How can we evaluate the performance and quality of GANs?
+- [ ] Done
 
 ### Definition
 GAN evaluation is challenging because there's no single metric that captures all aspects of generation quality. Multiple metrics assess different properties like realism, diversity, and distribution matching.
@@ -202,6 +206,7 @@ print(f"FID: {fid}")
 ---
 
 ## Question 5: In what ways do GANs contribute to semi-supervised learning?
+- [ ] Done
 
 ### Definition
 GANs enhance semi-supervised learning by using the Discriminator not just for real/fake classification but also for actual class prediction. The GAN framework provides additional training signal from unlabeled data.
@@ -256,6 +261,7 @@ Where:
 ---
 
 ## Question 6: How do generative models like GANs handle feature matching?
+- [ ] Done
 
 ### Definition
 Feature matching is a technique where the Generator is trained to match the statistics of intermediate Discriminator features rather than just fooling the final output. This provides more stable gradients and reduces mode collapse.
@@ -301,6 +307,7 @@ def feature_matching_loss(real_images, fake_images, discriminator):
 ---
 
 ## Question 7: What techniques can be applied to stabilize the training of GANs?
+- [ ] Done
 
 ### Definition
 GAN training stabilization techniques address common issues like mode collapse, vanishing gradients, and oscillation through architectural choices, regularization, and training procedures.
@@ -356,6 +363,7 @@ def gradient_penalty(D, real, fake):
 ---
 
 ## Question 8: How are GANs used for data augmentation?
+- [ ] Done
 
 ### Definition
 GANs generate synthetic training samples to augment limited datasets, increasing effective training set size and diversity, which improves model generalization and performance.
@@ -424,6 +432,7 @@ def balance_classes(cgan, minority_class, num_needed):
 ---
 
 ## Question 9: How can GANs be used for unsupervised representation learning?
+- [ ] Done
 
 ### Definition
 GANs learn meaningful representations without labels by training the Discriminator to distinguish real from fake. The learned features capture semantic information useful for downstream tasks.
@@ -492,6 +501,7 @@ classifier.fit(features, labels)
 ---
 
 ## Question 10: What metrics are suitable for assessing the diversity of generated samples in GANs?
+- [ ] Done
 
 ### Definition
 Diversity metrics measure whether GANs generate varied samples covering different modes of the data distribution, detecting mode collapse where generators produce limited variations.
@@ -553,6 +563,7 @@ print(f"Average LPIPS diversity: {compute_diversity(generator)}")
 ---
 
 ## Question 11: Present a use case for GANs in financial modeling for generating synthetic time-series data
+- [ ] Done
 
 ### Scenario
 A financial institution needs realistic synthetic stock price data to test trading algorithms, perform stress testing, and train ML models without using sensitive real market data.
@@ -619,6 +630,7 @@ class TimeSeriesGAN:
 ---
 
 ## Question 12: How can GANs be defended against adversarial attacks, or used for adversarial training?
+- [ ] Done
 
 ### Definition
 GANs relate to adversarial robustness in two ways: (1) GANs themselves can be attacked, and (2) GANs can generate adversarial examples to train more robust models.
@@ -699,6 +711,7 @@ def adversarial_training_step(classifier, adv_generator, x, y):
 ---
 
 ## Question 13: What role do GANs play in the field of reinforcement learning?
+- [ ] Done
 
 ### Definition
 GANs enhance reinforcement learning by generating synthetic environments, augmenting experience data, learning reward functions from demonstrations, and improving sample efficiency.

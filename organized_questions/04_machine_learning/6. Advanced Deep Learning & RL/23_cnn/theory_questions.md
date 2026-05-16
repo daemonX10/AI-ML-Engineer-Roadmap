@@ -1,6 +1,7 @@
 # Cnn Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is a Convolutional Neural Network (CNN)?**
 
@@ -131,6 +132,7 @@ print(f"Predicted class: {np.argmax(prediction)}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you explain the structure of a typical CNN architecture?**
 
@@ -309,6 +311,7 @@ CNN Architecture summary with:
 ---
 
 ## Question 3
+- [ ] Done
 
 **How does convolution work in the context of a CNN?**
 
@@ -514,6 +517,7 @@ Where: $N$ = input size, $F$ = filter size, $P$ = padding, $S$ = stride, $C$ = c
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is the purpose of pooling in a CNN, and what are the different types?**
 
@@ -761,6 +765,7 @@ Average Pooling: 3x3 (takes mean from each 2x2 region)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Can you describe what is meant by 'depth' in a convolutional layer?**
 
@@ -996,6 +1001,7 @@ Pattern: Spatial dimensions ↓, Depth ↑
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is the difference between a fully connected layer and a convolutional layer?**
 
@@ -1216,6 +1222,7 @@ Output
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is feature mapping in CNNs?**
 
@@ -1442,6 +1449,7 @@ Bright areas = feature present at that location
 ---
 
 ## Question 8
+- [ ] Done
 
 **How does parameter sharing work in convolutional layers?**
 
@@ -1710,6 +1718,7 @@ For input $H \times W \times C_{in}$ and $N$ filters of size $k \times k$:
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain the concept of receptive fields in the context of CNNs.**
 
@@ -2001,6 +2010,7 @@ $$RF_n = k_1 + \sum_{i=2}^{n}(k_i - 1) \times \prod_{j=1}^{i-1} s_j$$
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is local response normalization, and why might it be used in a CNN?**
 
@@ -2292,6 +2302,7 @@ Neighboring channels compete, strong activations normalized
 ---
 
 ## Question 11
+- [ ] Done
 
 **Can you explain what a stride is and how it affects the output size of the convolution layer?**
 
@@ -2606,6 +2617,7 @@ $$\text{Output} = \left\lfloor \frac{\text{Input} - \text{Kernel} + 2 \times \te
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe the backpropagation process in a CNN.**
 
@@ -2730,6 +2742,7 @@ Gradients computed and ready for weight updates
 ---
 
 ## Question 13
+- [ ] Done
 
 **What are the advantages of using deep CNNs compared to shallow ones?**
 
@@ -2802,6 +2815,7 @@ print(f"Deep params: {deep.count_params():,}")
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain the vanishing gradient problem and how it impacts CNNs.**
 
@@ -2882,6 +2896,7 @@ for name, model in [("Sigmoid", model_sigmoid), ("ReLU", model_relu)]:
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is transfer learning and fine-tuning in the context of CNNs?**
 
@@ -2983,6 +2998,7 @@ model.compile(
 ---
 
 ## Question 16
+- [ ] Done
 
 **What are some common strategies for initializing weights in CNNs?**
 
@@ -3092,6 +3108,7 @@ print("Initialization strategies applied to models")
 ---
 
 ## Question 17
+- [ ] Done
 
 **What are some popular CNN architectures and how have they evolved over time?**
 
@@ -3202,6 +3219,7 @@ print(f"EfficientNetB0 params: {efficient.count_params():,}")
 ---
 
 ## Question 18
+- [ ] Done
 
 **Explain how the Inception module works in GoogLeNet.**
 
@@ -3316,6 +3334,7 @@ print(f"Model with Inception modules: {model.count_params():,} parameters")
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is the concept behind Capsule Networks, and how do they differ from typical CNNs?**
 
@@ -3408,6 +3427,7 @@ print("Capsule: Vector activations, preserves spatial relationships")
 ---
 
 ## Question 20
+- [ ] Done
 
 **Describe the U-Net architecture and its applications.**
 
@@ -3526,6 +3546,7 @@ model.summary()
 ---
 
 ## Question 21
+- [ ] Done
 
 **How does the attention mechanism improve the performance of CNNs?**
 
@@ -3655,6 +3676,7 @@ print("Model with attention mechanisms")
 ---
 
 ## Question 22
+- [ ] Done
 
 **What are the computational challenges associated with training very deep CNNs?**
 
@@ -3823,6 +3845,7 @@ for challenge, solution in solutions:
 ---
 
 ## Question 23
+- [ ] Done
 
 **What are some alternative convolutional layer designs that have shown promise in recent research?**
 
@@ -3977,6 +4000,7 @@ print(f"Reduction: {model_standard.count_params()/model_depthwise.count_params()
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain the impact of adversarial examples on CNNs and methods to overcome them.**
 
@@ -4167,6 +4191,7 @@ print("5. Certified Defenses: Provable robustness")
 ---
 
 ## Question 25
+- [ ] Done
 
 **What is the role of CNNs in reinforcement learning scenarios?**
 

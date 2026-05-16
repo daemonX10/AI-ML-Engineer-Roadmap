@@ -806,6 +806,7 @@ X_poly = polynomial_features(X.ravel(), degree=3)
 > **Interview Tip:** Use the **modern `np.polynomial`** API (lowest-degree-first coefficients, better numerical stability). `np.polyfit` is still commonly used for polynomial regression. High-degree polynomials overfit — use regularization.
 
 ## Question 1
+- [ ] Done
 
 **How would you use NumPy to process image data for a convolutional neural network ?**
 
@@ -878,6 +879,7 @@ def preprocess_batch(images, size=224):
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss the role of NumPy in managing data for training a machine learning model**
 
@@ -955,6 +957,7 @@ NumPy arrays
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the potential issues when importing large datasets into NumPy arrays**
 

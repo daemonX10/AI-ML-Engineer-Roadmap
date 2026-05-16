@@ -1,6 +1,7 @@
 # Decision Tree Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is a Decision Tree in the context of Machine Learning?**
 
@@ -33,6 +34,7 @@ Think of it as a flowchart of yes/no questions. Like diagnosing a disease: "Is f
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you explain how a Decision Tree is constructed?**
 
@@ -67,6 +69,7 @@ Imagine sorting balls into buckets. At each step, you ask the question that best
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is the difference between classification and regression Decision Trees?**
 
@@ -102,6 +105,7 @@ $$MSE(t) = \frac{1}{N_t} \sum_{i \in t} (y_i - \bar{y}_t)^2$$
 ---
 
 ## Question 4
+- [ ] Done
 
 **Name and describe the common algorithms used to build a Decision Tree.**
 
@@ -136,6 +140,7 @@ The four main Decision Tree algorithms are ID3, C4.5, CART, and CHAID. Each diff
 ---
 
 ## Question 5
+- [ ] Done
 
 **What are the main advantages of using Decision Trees?**
 
@@ -166,6 +171,7 @@ Decision trees mimic human decision-making process. A doctor's diagnostic flowch
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain the concept of "impurity" in a Decision Tree and how it's used.**
 
@@ -205,6 +211,7 @@ Think of impurity as "confusion" at a node. A bag with only red balls has zero c
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are entropy and information gain in Decision Tree context?**
 
@@ -245,6 +252,7 @@ $$IG = 0.94 - (\frac{10}{14} \times 0.72 + \frac{4}{14} \times 0.81) = 0.25$$
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is tree pruning and why is it important?**
 
@@ -291,6 +299,7 @@ Like editing a story - first write everything, then remove unnecessary details t
 ---
 
 ## Question 9
+- [ ] Done
 
 **How does a Decision Tree avoid overfitting?**
 
@@ -334,6 +343,7 @@ Always mention both pre-pruning and post-pruning. State that the best approach i
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is the significance of the depth of a Decision Tree?**
 
@@ -379,6 +389,7 @@ Like writing rules: too few rules miss important cases, too many rules become ov
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain how missing values are handled by Decision Trees.**
 
@@ -424,6 +435,7 @@ Modern implementations (XGBoost, LightGBM) learn the best direction for missing 
 ---
 
 ## Question 12
+- [ ] Done
 
 **Explain in detail the ID3 algorithm for Decision Tree construction.**
 
@@ -476,6 +488,7 @@ For weather prediction with attributes {Outlook, Temperature, Humidity, Wind}:
 ---
 
 ## Question 13
+- [ ] Done
 
 **Describe the C4.5 algorithm and how it differs from ID3.**
 
@@ -518,6 +531,7 @@ SplitInfo penalizes attributes with many values, correcting ID3's bias.
 ---
 
 ## Question 14
+- [ ] Done
 
 **How does the CART (Classification and Regression Trees) algorithm work?**
 
@@ -574,6 +588,7 @@ Scikit-learn's DecisionTreeClassifier/Regressor implements CART algorithm.
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain how the concept of the minimum description length (MDL) principle is applied in Decision Trees.**
 
@@ -618,6 +633,7 @@ Like Occam's Razor formalized mathematically - prefer simpler explanations unles
 ---
 
 ## Question 16
+- [ ] Done
 
 **Describe the process of k-fold cross-validation in the context of Decision Trees.**
 
@@ -663,6 +679,7 @@ Fold 5: [Train] [Train] [Train] [Train] [Val]
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain how bagging and random forests improve the performance of Decision Trees.**
 
@@ -710,6 +727,7 @@ Lower correlation $\rho$ → lower ensemble variance
 ---
 
 ## Question 18
+- [ ] Done
 
 **What are the steps involved in preparing data for Decision Tree modeling?**
 
@@ -765,6 +783,7 @@ Emphasize that Decision Trees need less preprocessing than linear models or neur
 ---
 
 ## Question 19
+- [ ] Done
 
 **Describe the process for selecting the best attributes at each node in a Decision Tree.**
 
@@ -822,6 +841,7 @@ $O(n \cdot m \cdot \log n)$ per node where n=samples, m=features
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain how Decision Trees can handle imbalanced datasets.**
 
@@ -871,6 +891,7 @@ Effect: Minority class errors penalized more heavily
 ---
 
 ## Question 21
+- [ ] Done
 
 **What are the strategies to deal with missing data in Decision Tree training?**
 
@@ -915,6 +936,7 @@ XGBoost/LightGBM: Learns optimal direction
 ---
 
 ## Question 22
+- [ ] Done
 
 **How do you interpret and explain the results of a Decision Tree?**
 
@@ -962,6 +984,7 @@ IF Age <= 30 THEN Reject (confidence=90%)
 ---
 
 ## Question 23
+- [ ] Done
 
 **How does a Random Forest work, and how is it an extension of Decision Trees?**
 
@@ -1010,6 +1033,7 @@ Algorithm RandomForest(D, n_trees, max_features):
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain the Gradient Boosting Decision Tree (GBDT) model and its advantages.**
 
@@ -1068,6 +1092,7 @@ XGBoost, LightGBM, CatBoost (optimized, regularized GBDT)
 ---
 
 ## Question 25
+- [ ] Done
 
 **Describe the role of Decision Trees in ensemble methods such as Extra Trees and XGBoost.**
 
@@ -1112,6 +1137,7 @@ Where $T$ = number of leaves, $w$ = leaf weights
 ---
 
 ## Question 26
+- [ ] Done
 
 **Describe a scenario where a simple Decision Tree might outperform a Random Forest or Gradient Boosting model.**
 
@@ -1152,6 +1178,7 @@ A hospital needs to triage patients. A simple tree with 4 rules can be printed o
 ---
 
 ## Question 27
+- [ ] Done
 
 **Explain how you would use Decision Trees for feature selection in a large dataset.**
 
@@ -1203,6 +1230,7 @@ Where $p(t)$ = proportion of samples reaching node $t$
 ---
 
 ## Question 28
+- [ ] Done
 
 **How does feature engineering affect the accuracy and interpretability of Decision Trees?**
 
@@ -1245,6 +1273,7 @@ Trees on engineered features: Accuracy 88%, partially interpretable
 ---
 
 ## Question 29
+- [ ] Done
 
 **What are the computational complexities of training Decision Trees, and how can they be optimized?**
 
@@ -1295,6 +1324,7 @@ Training complexity is $O(n \cdot m \cdot d \cdot \log n)$ where n=samples, m=fe
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain any new approaches to tree pruning or overfitting prevention that have emerged in recent years.**
 
@@ -1343,6 +1373,7 @@ Modern libraries (XGBoost, LightGBM, CatBoost) combine many techniques by defaul
 ---
 
 ## Question 31
+- [ ] Done
 
 **What are the mathematical foundations of decision tree splitting criteria?**
 
@@ -1385,6 +1416,7 @@ This is not globally optimal but computationally tractable.
 ---
 
 ## Question 32
+- [ ] Done
 
 **How do you calculate and interpret information gain in decision trees?**
 
@@ -1425,6 +1457,7 @@ $$IG(Outlook) = 0.940 - 0.693 = 0.247$$
 ---
 
 ## Question 33
+- [ ] Done
 
 **What is the difference between information gain and gain ratio?**
 
@@ -1468,6 +1501,7 @@ Gain Ratio can be unstable when SplitInfo is very small. C4.5 only considers att
 ---
 
 ## Question 34
+- [ ] Done
 
 **How does the Gini impurity measure work in decision tree construction?**
 
@@ -1508,6 +1542,7 @@ $$GiniGain = 0.42 - (0.6 × 0.153 + 0.4 × 0.469) = 0.42 - 0.28 = 0.14$$
 ---
 
 ## Question 35
+- [ ] Done
 
 **What is entropy and how is it used in decision tree algorithms?**
 
@@ -1552,6 +1587,7 @@ Convention: $0 \cdot \log_2(0) = 0$
 ---
 
 ## Question 36
+- [ ] Done
 
 **How do you handle continuous numerical features in decision trees?**
 
@@ -1597,6 +1633,7 @@ After splitting on continuous feature, the SAME feature can be used again at dee
 ---
 
 ## Question 37
+- [ ] Done
 
 **What are the different strategies for handling missing values in decision trees?**
 
@@ -1643,6 +1680,7 @@ For XGBoost/LightGBM, let them handle missing values. For sklearn, impute using 
 ---
 
 ## Question 38
+- [ ] Done
 
 **How do you implement multi-class classification with decision trees?**
 
@@ -1693,6 +1731,7 @@ tree.predict_proba(X)  # Returns [P(A), P(B), P(C)] for each sample
 ---
 
 ## Question 39
+- [ ] Done
 
 **What is the difference between pre-pruning and post-pruning in decision trees?**
 
@@ -1744,6 +1783,7 @@ path = tree.cost_complexity_pruning_path(X_train, y_train)
 ---
 
 ## Question 40
+- [ ] Done
 
 **How do you determine the optimal tree depth and stopping criteria?**
 
@@ -1795,6 +1835,7 @@ path = tree.cost_complexity_pruning_path(X_train, y_train)
 ---
 
 ## Question 41
+- [ ] Done
 
 **What is cost-complexity pruning and how does it work?**
 
@@ -1851,6 +1892,7 @@ optimal_alpha = ccp_alphas[np.argmax(scores)]
 ---
 
 ## Question 42
+- [ ] Done
 
 **How do you handle imbalanced datasets with decision trees?**
 
@@ -1910,6 +1952,7 @@ predictions = (probs > 0.3).astype(int)
 ---
 
 ## Question 43
+- [ ] Done
 
 **What are the computational complexity considerations for decision tree algorithms?**
 
@@ -1960,6 +2003,7 @@ For very large datasets, data doesn't fit in memory → use out-of-core or distr
 ---
 
 ## Question 44
+- [ ] Done
 
 **How do you implement parallel and distributed decision tree construction?**
 
@@ -2019,6 +2063,7 @@ For each node:
 ---
 
 ## Question 45
+- [ ] Done
 
 **What is the role of randomness in decision tree ensembles?**
 
@@ -2073,6 +2118,7 @@ RandomForestClassifier(
 ---
 
 ## Question 46
+- [ ] Done
 
 **How do you visualize and interpret decision trees effectively?**
 
@@ -2137,6 +2183,7 @@ plt.barh(features, importance)
 ---
 
 ## Question 47
+- [ ] Done
 
 **What are the feature importance measures in decision trees?**
 
@@ -2193,6 +2240,7 @@ result = permutation_importance(tree, X_test, y_test, n_repeats=10)
 ---
 
 ## Question 48
+- [ ] Done
 
 **How do you perform feature selection using decision trees?**
 
@@ -2260,6 +2308,7 @@ sfs.fit(X, y)
 ---
 
 ## Question 49
+- [ ] Done
 
 **What is the relationship between decision trees and rule-based systems?**
 
@@ -2322,6 +2371,7 @@ Trees guarantee mutually exclusive, exhaustive coverage. Rule sets may have conf
 ---
 
 ## Question 50
+- [ ] Done
 
 **How do you convert decision trees to if-then rules?**
 
@@ -2392,6 +2442,7 @@ Rule 3: IF Age > 30.5 AND Income > 50000 THEN Approve
 ---
 
 ## Question 51
+- [ ] Done
 
 **What are oblique decision trees and how do they differ from axis-parallel trees?**
 
@@ -2447,6 +2498,7 @@ In practice, ensembles of axis-parallel trees (Random Forest) often match obliqu
 ---
 
 ## Question 52
+- [ ] Done
 
 **How do you handle categorical features with high cardinality in decision trees?**
 
@@ -2502,6 +2554,7 @@ hasher = FeatureHasher(n_features=100, input_type='string')
 ---
 
 ## Question 53
+- [ ] Done
 
 **What is the minimum cost-complexity pruning algorithm?**
 
@@ -2562,6 +2615,7 @@ for alpha in ccp_alphas:
 ---
 
 ## Question 54
+- [ ] Done
 
 **How do you implement decision trees for regression problems?**
 
@@ -2620,6 +2674,7 @@ reg.fit(X, y)
 ---
 
 ## Question 55
+- [ ] Done
 
 **What are the differences between CART, ID3, and C4.5 algorithms?**
 
@@ -2664,6 +2719,7 @@ Computationally simpler (no log)
 ---
 
 ## Question 56
+- [ ] Done
 
 **How do you handle ordinal categorical variables in decision trees?**
 
@@ -2715,6 +2771,7 @@ Possible splits:
 ---
 
 ## Question 57
+- [ ] Done
 
 **What is surrogate splitting and when is it useful?**
 
@@ -2765,6 +2822,7 @@ If Income is missing, use Education to decide direction.
 ---
 
 ## Question 58
+- [ ] Done
 
 **How do you implement incremental decision tree learning?**
 
@@ -2816,6 +2874,7 @@ For each arriving sample (x, y):
 ---
 
 ## Question 59
+- [ ] Done
 
 **What are the memory optimization techniques for large decision trees?**
 
@@ -2878,6 +2937,7 @@ GradientBoostingClassifier(subsample=0.8)
 ---
 
 ## Question 60
+- [ ] Done
 
 **How do you handle concept drift in decision tree models?**
 
@@ -2938,6 +2998,7 @@ Monitor model performance continuously. Implement drift detection + automatic re
 ---
 
 ## Question 61
+- [ ] Done
 
 **What are model trees and how do they combine linear models with decision trees?**
 
@@ -2986,6 +3047,7 @@ model = lgb.LGBMRegressor(linear_tree=True)
 ---
 
 ## Question 62
+- [ ] Done
 
 **How do you implement decision trees for multi-output prediction?**
 
@@ -3041,6 +3103,7 @@ reg.fit(X, y_reg)
 ---
 
 ## Question 63
+- [ ] Done
 
 **What is the role of decision trees in ensemble methods?**
 
@@ -3091,6 +3154,7 @@ Decision trees serve as base learners in ensembles because they are: (1) high va
 ---
 
 ## Question 64
+- [ ] Done
 
 **How do you optimize hyperparameters for decision tree models?**
 
@@ -3155,6 +3219,7 @@ from skopt import BayesSearchCV
 ---
 
 ## Question 65
+- [ ] Done
 
 **What are the interpretability advantages of decision trees over other algorithms?**
 
@@ -3205,6 +3270,7 @@ When interpretability is critical:
 ---
 
 ## Question 66
+- [ ] Done
 
 **How do you handle time-series data with decision trees?**
 
@@ -3260,6 +3326,7 @@ tscv = TimeSeriesSplit(n_splits=5)
 ---
 
 ## Question 67
+- [ ] Done
 
 **What are the privacy-preserving techniques for decision tree learning?**
 
@@ -3313,6 +3380,7 @@ noisy_count = true_count + np.random.laplace(0, 1/epsilon)
 ---
 
 ## Question 68
+- [ ] Done
 
 **How do you implement federated learning with decision trees?**
 
@@ -3381,6 +3449,7 @@ best_split = find_best_split(global_histogram)
 ---
 
 ## Question 69
+- [ ] Done
 
 **What is the relationship between decision trees and expert systems?**
 
@@ -3437,6 +3506,7 @@ May discover: fever > 99.5 is sufficient threshold
 ---
 
 ## Question 70
+- [ ] Done
 
 **How do you handle multi-modal data with decision trees?**
 
@@ -3493,6 +3563,7 @@ Use pre-trained models (ResNet, BERT) for feature extraction - trees work well o
 ---
 
 ## Question 71
+- [ ] Done
 
 **What are extremely randomized trees and their advantages?**
 
@@ -3550,6 +3621,7 @@ Often similar accuracy to Random Forest, sometimes better on certain datasets du
 ---
 
 ## Question 72
+- [ ] Done
 
 **How do you implement decision trees for anomaly detection?**
 
@@ -3607,6 +3679,7 @@ scores = iso.decision_function(X_test)
 ---
 
 ## Question 73
+- [ ] Done
 
 **What is the role of decision trees in feature engineering and selection?**
 
@@ -3662,6 +3735,7 @@ Run a quick Random Forest first on any dataset. Feature importance tells you whe
 ---
 
 ## Question 74
+- [ ] Done
 
 **How do you handle streaming data with online decision tree algorithms?**
 
@@ -3722,6 +3796,7 @@ for x, y in data_stream:
 ---
 
 ## Question 75
+- [ ] Done
 
 **What are the considerations for decision tree deployment in production?**
 
@@ -3782,6 +3857,7 @@ if daily_accuracy < threshold:
 ---
 
 ## Question 76
+- [ ] Done
 
 **How do you monitor and maintain decision tree models in production?**
 
@@ -3839,6 +3915,7 @@ daily_metrics = {
 ---
 
 ## Question 77
+- [ ] Done
 
 **What is transfer learning and its application to decision trees?**
 
@@ -3891,6 +3968,7 @@ tree.fit(features, labels)
 ---
 
 ## Question 78
+- [ ] Done
 
 **How do you handle fairness and bias in decision tree models?**
 
@@ -3949,6 +4027,7 @@ threshold_group_1 = 0.6
 ---
 
 ## Question 79
+- [ ] Done
 
 **What are gradient boosted decision trees and their advantages?**
 
@@ -4003,6 +4082,7 @@ Where:
 ---
 
 ## Question 80
+- [ ] Done
 
 **How do you implement decision trees for recommendation systems?**
 
@@ -4066,6 +4146,7 @@ lgb.LGBMRanker(objective='lambdarank')
 ---
 
 ## Question 81
+- [ ] Done
 
 **What are soft decision trees and probabilistic splitting?**
 
@@ -4123,6 +4204,7 @@ probs = torch.sigmoid((x - threshold) / temp)
 ---
 
 ## Question 82
+- [ ] Done
 
 **How do you handle uncertainty quantification in decision tree predictions?**
 
@@ -4180,6 +4262,7 @@ manual_review = X[uncertain_mask]
 ---
 
 ## Question 83
+- [ ] Done
 
 **What is the relationship between decision trees and neural networks?**
 
@@ -4233,6 +4316,7 @@ tree.fit(X, neural_preds)  # Tree approximates neural net
 ---
 
 ## Question 84
+- [ ] Done
 
 **How do you implement differentiable decision trees for end-to-end learning?**
 
@@ -4293,6 +4377,7 @@ class SoftDecisionTree(nn.Module):
 ---
 
 ## Question 85
+- [ ] Done
 
 **What are the advances in hardware acceleration for decision tree inference?**
 
@@ -4350,6 +4435,7 @@ predictor = treelite_runtime.Predictor('./model.so')
 ---
 
 ## Question 86
+- [ ] Done
 
 **How do you handle adversarial attacks on decision tree models?**
 
@@ -4406,6 +4492,7 @@ Trees are generally more robust - attacks require larger perturbations to cross 
 ---
 
 ## Question 87
+- [ ] Done
 
 **What is the role of decision trees in automated machine learning (AutoML)?**
 
@@ -4464,6 +4551,7 @@ X_selected = selector.fit_transform(X, y)
 ---
 
 ## Question 88
+- [ ] Done
 
 **How do you implement decision trees for edge computing and IoT devices?**
 
@@ -4530,6 +4618,7 @@ float predict(float* features) {
 ---
 
 ## Question 89
+- [ ] Done
 
 **What are the emerging research directions in decision tree algorithms?**
 
@@ -4586,6 +4675,7 @@ Trees remain dominant for tabular data; research focuses on combining tree stren
 ---
 
 ## Question 90
+- [ ] Done
 
 **How do you combine decision trees with deep learning architectures?**
 
@@ -4649,6 +4739,7 @@ xgb.fit(X, y)
 ---
 
 ## Question 91
+- [ ] Done
 
 **What are the scalability challenges and solutions for very large decision trees?**
 
@@ -4712,6 +4803,7 @@ model.fit(X_gpu, y_gpu)
 ---
 
 ## Question 92
+- [ ] Done
 
 **How do you implement decision trees for natural language processing tasks?**
 
@@ -4773,6 +4865,7 @@ X = np.concatenate([text_features, meta_features], axis=1)
 ---
 
 ## Question 93
+- [ ] Done
 
 **What is the role of decision trees in causal inference and counterfactual reasoning?**
 
@@ -4835,6 +4928,7 @@ Change: Income > 50K → Different path
 ---
 
 ## Question 94
+- [ ] Done
 
 **How do you handle decision trees in multi-task and transfer learning scenarios?**
 
@@ -4898,6 +4992,7 @@ Trees don't transfer as naturally as neural networks (no weight sharing concept)
 ---
 
 ## Question 95
+- [ ] Done
 
 **What are the considerations for decision tree compression and model efficiency?**
 
@@ -4960,6 +5055,7 @@ Production often accepts 1-2% accuracy loss for 10x size reduction.
 ---
 
 ## Question 96
+- [ ] Done
 
 **How do you implement decision trees for hierarchical classification problems?**
 
@@ -5020,6 +5116,7 @@ level_3_clf.predict(x)  # → Dog/Cat/...
 ---
 
 ## Question 97
+- [ ] Done
 
 **What is the integration of decision trees with reinforcement learning?**
 
@@ -5077,6 +5174,7 @@ transition_model.fit(state_actions, next_states)
 ---
 
 ## Question 98
+- [ ] Done
 
 **How do you handle decision trees in continual learning environments?**
 
@@ -5141,6 +5239,7 @@ class ContinualForest:
 ---
 
 ## Question 99
+- [ ] Done
 
 **What are the ethical considerations in decision tree model development?**
 
@@ -5197,6 +5296,7 @@ GDPR, ECOA, Fair Housing Act may require explainability - trees are advantageous
 ---
 
 ## Question 100
+- [ ] Done
 
 **What are the best practices for decision tree model lifecycle management?**
 
@@ -5263,6 +5363,7 @@ MLflow, DVC, Weights & Biases, Kubeflow, SageMaker
 ---
 
 ## Question 101
+- [ ] Done
 
 **Discuss how Decision Trees handle both categorical and numerical data.**
 
@@ -5329,6 +5430,7 @@ X_encoded = encoder.fit_transform(X_categorical)
 ---
 
 ## Question 102
+- [ ] Done
 
 **Discuss the role of recursive binary splitting in constructing Decision Trees.**
 
@@ -5402,6 +5504,7 @@ $$\Delta I = I(parent) - \frac{n_L}{n}I(left) - \frac{n_R}{n}I(right)$$
 ---
 
 ## Question 103
+- [ ] Done
 
 **Discuss how you would visualize a trained Decision Tree model.**
 
@@ -5505,6 +5608,7 @@ viz.save("tree_viz.svg")
 ---
 
 ## Question 104
+- [ ] Done
 
 **Discuss the performance trade-offs between a deep tree and a shallow tree.**
 
@@ -5601,6 +5705,7 @@ plt.legend()
 ---
 
 ## Question 105
+- [ ] Done
 
 **Discuss the differences between a single Decision Tree and an ensemble of trees.**
 
@@ -5684,6 +5789,7 @@ gb_score = cross_val_score(gb, X, y, cv=5).mean()
 ---
 
 ## Question 106
+- [ ] Done
 
 **Discuss recent research developments in Decision Tree algorithms.**
 

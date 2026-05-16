@@ -1,6 +1,7 @@
 # K Means Clustering Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement a basic K-Means Clustering algorithm from scratch using Python.**
 
@@ -61,6 +62,7 @@ print(f"Centroids shape: {centroids.shape}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a function in Python that determines the best value of k (number of clusters) using the Elbow Method.**
 
@@ -115,6 +117,7 @@ for k, inertia in zip(k_values, inertias):
 ---
 
 ## Question 3
+- [ ] Done
 
 **Given a dataset, apply feature scaling and run K-Means Clustering using scikit-learn.**
 
@@ -176,6 +179,7 @@ print(f"New point cluster: {new_label[0]}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a Python script to visualize the results of K-Means Clustering on a 2D dataset.**
 
@@ -236,6 +240,7 @@ print(f"Centroid locations:\n{centroids}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Script a program to compare the performance of different initialization methods for centroids.**
 
@@ -308,6 +313,7 @@ results = compare_init_methods(X, n_clusters=5)
 ---
 
 ## Question 6
+- [ ] Done
 
 **Write code to compute the silhouette coefficient for evaluating the clustering quality.**
 
@@ -374,6 +380,7 @@ print(f"Max silhouette: {sample_scores.max():.4f}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement a mini-batch K-Means clustering using Python.**
 
@@ -446,6 +453,7 @@ results = compare_kmeans_minibatch(X, n_clusters=10, batch_size=1000)
 ---
 
 ## Question 8
+- [ ] Done
 
 **Write a Python function to identify the centroid of a new data point in an existing K-Means model.**
 
@@ -517,6 +525,7 @@ for point in new_points:
 ---
 
 ## Question 9
+- [ ] Done
 
 **Using Pandas and Python, clean and prepare a real-world dataset for K-Means Clustering.**
 
@@ -598,6 +607,7 @@ print(df_clean.groupby('cluster')[numeric_cols].mean())
 ---
 
 ## Question 10
+- [ ] Done
 
 **Create a multi-dimensional K-Means clustering example and visualize it using PCA for dimensionality reduction.**
 

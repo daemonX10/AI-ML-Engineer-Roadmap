@@ -1,6 +1,7 @@
 # Naive Bayes Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you deal with missing values when implementing a Naive Bayes classifier?**
 
@@ -117,6 +118,7 @@ predictions = pipeline.predict(X_test)
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement a Gaussian Naive Bayes classifier from scratch in Python.**
 
@@ -283,6 +285,7 @@ Probabilities:
 ---
 
 ## Question 3
+- [ ] Done
 
 **Write a Python function using scikit-learn to perform text classification with Multinomial Naive Bayes.**
 
@@ -385,6 +388,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a Python script to perform feature selection specifically suited for Naive Bayes.**
 
@@ -541,6 +545,7 @@ Best k: 500 with accuracy: 0.9520
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write code to apply Laplace smoothing to a dataset with categorical features.**
 
@@ -747,6 +752,7 @@ Class 1:
 ---
 
 ## Question 6
+- [ ] Done
 
 **Develop a function in Python to handle missing data for a dataset before applying Naive Bayes.**
 

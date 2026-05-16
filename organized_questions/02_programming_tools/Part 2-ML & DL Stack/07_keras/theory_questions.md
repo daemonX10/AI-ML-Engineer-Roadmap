@@ -1,6 +1,7 @@
 # Keras Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is Keras and how does it relate to TensorFlow?**
 
@@ -47,6 +48,7 @@ model.summary()
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you explain the concept of a deep learning framework?**
 
@@ -90,6 +92,7 @@ print(f"dy/dx at x=3: {grad.numpy()}")  # Output: 6.0
 ---
 
 ## Question 3
+- [ ] Done
 
 **What are the core components of a Keras model?**
 
@@ -137,6 +140,7 @@ model.compile(optimizer=optimizer, loss=loss, metrics=metrics)
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain the difference between Sequential and Functional APIs in Keras.**
 
@@ -193,6 +197,7 @@ model = keras.Model(inputs=[input_a, input_b], outputs=output)
 ---
 
 ## Question 5
+- [ ] Done
 
 **What are activation functions and why are they important?**
 
@@ -242,6 +247,7 @@ model = keras.Sequential([
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is the purpose of the compile() method in Keras?**
 
@@ -296,6 +302,7 @@ model.compile(
 ---
 
 ## Question 7
+- [ ] Done
 
 **How does backpropagation work in Keras?**
 
@@ -349,6 +356,7 @@ def train_step(x, y):
 ---
 
 ## Question 8
+- [ ] Done
 
 **What is the difference between training and inference in Keras?**
 
@@ -394,6 +402,7 @@ inference_output = model(X_test, training=False)  # Dropout inactive
 ---
 
 ## Question 9
+- [ ] Done
 
 **What are regularization techniques available in Keras?**
 
@@ -447,6 +456,7 @@ model.fit(X_train, y_train, validation_split=0.2,
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is the role of callbacks in Keras?**
 
@@ -518,6 +528,7 @@ class CustomCallback(keras.callbacks.Callback):
 ---
 
 ## Question 11
+- [ ] Done
 
 **Can you explain the difference between validation and test sets in the context of a Keras model?**
 
@@ -583,6 +594,7 @@ print(f"Test accuracy: {test_accuracy:.4f}")
 ---
 
 ## Question 12
+- [ ] Done
 
 **What is the importance of data preprocessing in training Keras models?**
 
@@ -653,6 +665,7 @@ preprocessing_model.layers[0].adapt(X_train)
 ---
 
 ## Question 13
+- [ ] Done
 
 **Can you describe the concept of hyperparameter tuning and its importance in Keras models?**
 
@@ -745,6 +758,7 @@ print(f"Best learning rate: {best_hp.get('lr')}")
 ---
 
 ## Question 14
+- [ ] Done
 
 **How does learning rate affect the training of a Keras model?**
 
@@ -834,6 +848,7 @@ lr_schedule = keras.optimizers.schedules.CosineDecay(
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain how you would fine-tune a pre-trained model in Keras.**
 
@@ -916,6 +931,7 @@ model.fit(train_dataset, validation_data=val_dataset, epochs=10)
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is the use of a grid search in hyperparameter optimization and can it be used with Keras?**
 
@@ -1006,6 +1022,7 @@ best_model = grid_result.best_estimator_.model_
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain how you would use data augmentation in Keras.**
 
@@ -1099,6 +1116,7 @@ train_ds = train_ds.map(augment).batch(32).prefetch(tf.data.AUTOTUNE)
 ---
 
 ## Question 18
+- [ ] Done
 
 **How does Keras handle sequence data for tasks like text generation or translation?**
 
@@ -1190,6 +1208,7 @@ seq2seq_model.compile(optimizer='adam', loss='sparse_categorical_crossentropy')
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain the use of attention mechanisms in Keras models.**
 
@@ -1289,6 +1308,7 @@ class BahdanauAttention(keras.layers.Layer):
 ---
 
 ## Question 20
+- [ ] Done
 
 **What are the challenges associated with training very deep networks in Keras and how can you overcome them?**
 
@@ -1386,6 +1406,7 @@ model.compile(optimizer=optimizer,
 ---
 
 ## Question 21
+- [ ] Done
 
 **What are some common issues you might face when working with Keras and how do you resolve them?**
 
@@ -1472,6 +1493,7 @@ callbacks = [
 ---
 
 ## Question 22
+- [ ] Done
 
 **Describe the process of serving a Keras model using TensorFlow Serving.**
 
@@ -1586,6 +1608,7 @@ model_v2.save('saved_models/my_model/2')
 ---
 
 ## Question 23
+- [ ] Done
 
 **How does reinforcement learning work in Keras?**
 
@@ -1712,6 +1735,7 @@ class DQNAgent:
 ---
 
 ## Question 24
+- [ ] Done
 
 **Describe how you would install and set up Keras in a Python environment**
 
@@ -1748,6 +1772,7 @@ print(keras.__version__)
 ---
 
 ## Question 25
+- [ ] Done
 
 **What are some advantages of using Keras over other deep learning frameworks ?**
 
@@ -1783,6 +1808,7 @@ model.evaluate(X_test, y_test)
 ---
 
 ## Question 26
+- [ ] Done
 
 **How do you save and load models in Keras ?**
 
@@ -1824,6 +1850,7 @@ with open('model.tflite', 'wb') as f:
 ---
 
 ## Question 27
+- [ ] Done
 
 **What is the purpose of the Dense layer in Keras ?**
 
@@ -1872,6 +1899,7 @@ layers.Dense(128, activation='relu',
 ---
 
 ## Question 28
+- [ ] Done
 
 **How would you implement a Convolutional Neural Network in Keras ?**
 
@@ -1921,6 +1949,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 ---
 
 ## Question 29
+- [ ] Done
 
 **Can you describe how Recurrent Neural Networks are different and how to implement one in Keras ?**
 
@@ -1966,6 +1995,7 @@ model = models.Sequential([
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain the purpose of dropout layers and how to use them in Keras**
 
@@ -2019,6 +2049,7 @@ layers.LSTM(64, dropout=0.2, recurrent_dropout=0.2)
 ---
 
 ## Question 31
+- [ ] Done
 
 **How do you use Batch Normalization in a Keras model ?**
 
@@ -2067,6 +2098,7 @@ cnn = models.Sequential([
 ---
 
 ## Question 32
+- [ ] Done
 
 **Discuss how you would construct a residual network (ResNet) in Keras**
 
@@ -2126,6 +2158,7 @@ base = tf.keras.applications.ResNet50(weights='imagenet', include_top=False)
 ---
 
 ## Question 33
+- [ ] Done
 
 **Explain the role of optimizers in Keras**
 
@@ -2171,6 +2204,7 @@ model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy
 ---
 
 ## Question 34
+- [ ] Done
 
 **What is the purpose of a loss function in Keras and how do you select one?**
 
@@ -2215,6 +2249,7 @@ model.compile(loss=losses.CategoricalCrossentropy(label_smoothing=0.1))
 ---
 
 ## Question 35
+- [ ] Done
 
 **Discuss the process of compiling a model in Keras**
 
@@ -2264,6 +2299,7 @@ model.compile(
 ---
 
 ## Question 36
+- [ ] Done
 
 **Discuss different strategies for finding the optimal batch size and number of epochs in Keras**
 
@@ -2314,6 +2350,7 @@ callbacks = [
 ---
 
 ## Question 37
+- [ ] Done
 
 **Discuss the process of feature scaling and why it’s important for neural networks in Keras**
 
@@ -2364,6 +2401,7 @@ X_train = X_train.astype('float32') / 255.0  # Scale pixels to [0, 1]
 ---
 
 ## Question 38
+- [ ] Done
 
 **How to incorporate transfer learning into Keras ?**
 
@@ -2420,6 +2458,7 @@ model.fit(train_ds, epochs=10)
 ---
 
 ## Question 39
+- [ ] Done
 
 **How would you convert a Keras model to TensorFlow’s SavedModel format for deployment?**
 
@@ -2468,6 +2507,7 @@ tflite_model = converter.convert()
 ---
 
 ## Question 40
+- [ ] Done
 
 **Discuss the use of Keras in mobile and edge devices**
 
@@ -2524,6 +2564,7 @@ output = interpreter.get_tensor(output_index)
 ---
 
 ## Question 41
+- [ ] Done
 
 **What are Generative Adversarial Networks (GANs) and how would you implement them using Keras ?**
 
@@ -2593,6 +2634,7 @@ def train_step(real_images, batch_size, latent_dim):
 ---
 
 ## Question 42
+- [ ] Done
 
 **Discuss recent advancements in Keras , such as custom training loops**
 
@@ -2642,6 +2684,7 @@ for epoch in range(epochs):
 
 ---
 ## Question 43
+- [ ] Done
 
 **What is a custom layer in Keras and how would you implement one?**
 
@@ -2718,6 +2761,7 @@ model = tf.keras.Sequential([
 ---
 
 ## Question 44
+- [ ] Done
 
 **What is early stopping in Keras and how do you implement it?**
 
@@ -2799,6 +2843,7 @@ class CustomEarlyStopping(callbacks.Callback):
 ---
 
 ## Question 45
+- [ ] Done
 
 **How do you implement a multi-output model in Keras?**
 
@@ -2881,6 +2926,7 @@ model.summary()
 ---
 
 ## Question 46
+- [ ] Done
 
 **Discuss the implementation of stateful LSTM networks in Keras.**
 
@@ -2950,6 +2996,7 @@ stateful = layers.LSTM(64, stateful=True,
 ---
 
 ## Question 47
+- [ ] Done
 
 **Explain how you can use Keras to implement a neural style transfer model.**
 
@@ -3044,6 +3091,7 @@ def style_transfer(content_image, style_image, epochs=1000, lr=0.02):
 ---
 
 ## Question 48
+- [ ] Done
 
 **Discuss strategies to identify the cause of a performance bottleneck in a Keras model**
 

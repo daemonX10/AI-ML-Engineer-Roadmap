@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: Implement Linear Regression from Scratch
+- [ ] Done
 
 **Definition:**  
 Linear regression finds the best-fit line y = wx + b by minimizing Mean Squared Error. We use Gradient Descent to iteratively update weights and bias in the direction that reduces error.
@@ -70,6 +71,7 @@ print(f"Prediction for X=6: {model.predict([[6]])[0]:.4f}")  # Should be ~12
 ---
 
 ## Question 2: Logistic Regression Classifier with Scikit-learn
+- [ ] Done
 
 **Definition:**  
 Logistic Regression predicts probability of binary outcome using sigmoid function. Scikit-learn provides optimized implementation with regularization options.
@@ -128,6 +130,7 @@ print(f"Intercept: {model.intercept_[0]:.4f}")
 ---
 
 ## Question 3: Decision Tree Classification and Visualization
+- [ ] Done
 
 **Definition:**  
 Decision trees learn if-else rules from data. Visualization shows the learned decision rules at each node, making them highly interpretable.
@@ -197,6 +200,7 @@ for name, importance in zip(feature_names, tree.feature_importances_):
 ---
 
 ## Question 4: Feedforward Neural Network with Keras
+- [ ] Done
 
 **Definition:**  
 A feedforward (dense) neural network passes data through layers of neurons with activation functions. Keras provides high-level API for building and training.
@@ -274,6 +278,7 @@ for i in range(5):
 ---
 
 ## Question 5: Compute F1 Score from Confusion Matrix
+- [ ] Done
 
 **Definition:**  
 F1 Score = 2 * (Precision * Recall) / (Precision + Recall). Given a confusion matrix, extract TP, FP, FN for each class and compute metrics.

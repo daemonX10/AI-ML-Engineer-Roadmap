@@ -1,6 +1,7 @@
 # Mlops Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Create aDockerfilefor a simple machine learning model service.**
 
@@ -9,6 +10,7 @@
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write aPython scriptthat automates thetrainingandvalidationof a machine learning model.**
 
@@ -17,6 +19,7 @@
 ---
 
 ## Question 3
+- [ ] Done
 
 **Set up a basicCI pipelineusingGitHub Actionsfor a machine learning project.**
 
@@ -25,6 +28,7 @@
 ---
 
 ## Question 4
+- [ ] Done
 
 **Implement code to monitormodel performance metricsin production.**
 
@@ -33,6 +37,7 @@
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write a script to performautomated hyperparameter tuningfor a machine learning model.**
 
@@ -41,6 +46,7 @@
 ---
 
 ## Question 6
+- [ ] Done
 
 **Create aPython functionthat checks thedata schema conformityof input data for predictions.**
 

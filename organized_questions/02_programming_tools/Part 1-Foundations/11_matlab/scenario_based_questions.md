@@ -1,6 +1,7 @@
 # MATLAB Interview Questions - Scenario Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss MATLAB ’s support for different data types**
 
@@ -62,6 +63,7 @@ duration = days(5) + hours(3);
 ---
 
 ## Question 2
+- [ ] Done
 
 **Your MATLAB code is running slowly. How do you optimize it?**
 
@@ -145,6 +147,7 @@ end
 ---
 
 ## Question 3
+- [ ] Done
 
 **You need to process large datasets that don't fit in memory. What approaches can you use?**
 
@@ -221,6 +224,7 @@ end
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you deploy a MATLAB machine learning model to production?**
 
@@ -293,6 +297,7 @@ exportONNXNetwork(net, 'model.onnx');
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you handle imbalanced datasets in MATLAB for classification?**
 
@@ -400,6 +405,7 @@ fprintf('F1 Score: %.4f\n', f1);
 ---
 
 ## Question 6
+- [ ] Done
 
 **How would you reshape a matrix in MATLAB without changing its data?**
 
@@ -458,6 +464,7 @@ a'                            % Conjugate transpose
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss the uses of the ‘ find ’ function in MATLAB**
 
@@ -515,6 +522,7 @@ nan_idx = find(isnan(data_nan));     % [2, 4]
 ---
 
 ## Question 8
+- [ ] Done
 
 **Discuss how categorical data is managed and manipulated in MATLAB.**
 
@@ -584,6 +592,7 @@ back = categorical(str);       % String to categorical
 ---
 
 ## Question 9
+- [ ] Done
 
 **Discuss MATLAB’s exception handling capabilities**
 
@@ -658,6 +667,7 @@ end
 ---
 
 ## Question 10
+- [ ] Done
 
 **Discuss reading and writing binary data in MATLAB.**
 
@@ -723,6 +733,7 @@ h5disp('data.h5');                      % Show structure
 ---
 
 ## Question 11
+- [ ] Done
 
 **Discuss the steps involved in training a classification model in MATLAB.**
 
@@ -800,6 +811,7 @@ bar(imp); xlabel('Feature'); ylabel('Importance');
 ---
 
 ## Question 12
+- [ ] Done
 
 **Discuss the concept of Just-In-Time compilation in MATLAB.**
 
@@ -864,6 +876,7 @@ profile viewer                 % See execution times per line
 ---
 
 ## Question 13
+- [ ] Done
 
 **Discuss interfacing MATLAB with SQL databases.**
 
@@ -940,6 +953,7 @@ close(conn);
 ---
 
 ## Question 14
+- [ ] Done
 
 **How would you import a pre-trained deep learning model into MATLAB?**
 
@@ -1008,6 +1022,7 @@ lgraph = connectLayers(lgraph, 'pool5', 'new_fc');
 ---
 
 ## Question 15
+- [ ] Done
 
 **Discuss the process of fine-tuning a convolutional neural network in MATLAB.**
 
@@ -1096,6 +1111,7 @@ confusionchart(valImds.Labels, y_pred);
 ---
 
 ## Question 16
+- [ ] Done
 
 **How would you use MATLAB to preprocess a large dataset before applying machine learning algorithms?**
 
@@ -1170,6 +1186,7 @@ y_train = y(training(cv));
 ---
 
 ## Question 17
+- [ ] Done
 
 **Propose a method to use MATLAB for real-time data analysis and visualization.**
 
@@ -1248,6 +1265,7 @@ plot(data);
 ---
 
 ## Question 18
+- [ ] Done
 
 **Discuss recent advancements in MATLAB for machine learning and deep learning.**
 

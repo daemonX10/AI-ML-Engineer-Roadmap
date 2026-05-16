@@ -1,6 +1,7 @@
 # Nlp Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Define 'sentiment analysis' and discuss its applications.**
 
@@ -75,6 +76,7 @@ print(extract_aspects(review, aspects))
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss the role ofSupport Vector Machines (SVM)intext classification.**
 
@@ -159,6 +161,7 @@ print(f"Best C: {grid_search.best_params_['C']}")
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss the concept ofsemantic similarityand its computational approaches in NLP.**
 
@@ -242,6 +245,7 @@ print(f"car-bicycle: {wordnet_similarity('car', 'bicycle'):.3f}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss the use ofConditional Random Fields (CRF)in sequence modeling for NLP.**
 
@@ -342,6 +346,7 @@ print(list(zip(test_sent, prediction)))
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss strategies for dealing withslangandabbreviationsin text processing.**
 
@@ -431,6 +436,7 @@ for t in texts:
 ---
 
 ## Question 6
+- [ ] Done
 
 **How would you build a chatbot using NLP principles?**
 
@@ -529,6 +535,7 @@ for inp in test_inputs:
 ---
 
 ## Question 7
+- [ ] Done
 
 **Propose an NLP solution for detectingfake news articles.**
 
@@ -623,6 +630,7 @@ def verify_claim(claim, evidence):
 ---
 
 ## Question 8
+- [ ] Done
 
 **How would you design a voice-activated assistant like Siri or Alexa with NLP technology?**
 

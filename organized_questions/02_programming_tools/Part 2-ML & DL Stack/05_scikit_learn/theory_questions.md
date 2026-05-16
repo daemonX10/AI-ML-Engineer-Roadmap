@@ -1,6 +1,7 @@
 # Scikit-Learn Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is Scikit-Learn , and why is it popular in the field of Machine Learning ?**
 
@@ -31,6 +32,7 @@ score = model.score(X_test, y_test)  # Evaluate
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the design principles behind Scikit-Learn’s API**
 
@@ -66,6 +68,7 @@ print(model2.feature_importances_)  # Feature importances
 ---
 
 ## Question 3
+- [ ] Done
 
 **Describe the role of transformers and estimators in Scikit-Learn.**
 
@@ -101,6 +104,7 @@ predictions = model.predict(X_test)  # Predict
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is the typical workflow for building a predictive model using Scikit-Learn ?**
 
@@ -157,6 +161,7 @@ grid.fit(X_train, y_train)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain the concept of a Pipeline in Scikit-Learn.**
 
@@ -213,6 +218,7 @@ pipe.predict(X_test)        # Scaler transforms X_test
 ---
 
 ## Question 6
+- [ ] Done
 
 **What are some of the main categories of algorithms included in Scikit-Learn ?**
 
@@ -231,6 +237,7 @@ pipe.predict(X_test)        # Scaler transforms X_test
 ---
 
 ## Question 7
+- [ ] Done
 
 **What strategies does Scikit-Learn provide for imbalanced datasets?**
 
@@ -263,6 +270,7 @@ pipe = Pipeline([
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe the use of ColumnTransformer in Scikit-Learn.**
 
@@ -309,6 +317,7 @@ pipeline.fit(X_train, y_train)
 ---
 
 ## Question 9
+- [ ] Done
 
 **How does cross-validation work in Scikit-Learn?**
 
@@ -347,6 +356,7 @@ results = cross_validate(model, X, y, cv=5,
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain GridSearchCV vs RandomizedSearchCV.**
 
@@ -386,6 +396,7 @@ print(grid_search.best_params_)
 ---
 
 ## Question 11
+- [ ] Done
 
 **What evaluation metrics does Scikit-Learn provide?**
 
@@ -431,6 +442,7 @@ print(f"F1: {f1_score(y_test, y_pred):.4f}")
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe how a decision tree is constructed in Scikit-Learn.**
 
@@ -508,6 +520,7 @@ for name, imp in zip(load_iris().feature_names, tree.feature_importances_):
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain the differences between RandomForestClassifier and GradientBoostingClassifier in Scikit-Learn.**
 
@@ -586,6 +599,7 @@ print("Top GB features:", gb.feature_importances_[:5])
 ---
 
 ## Question 14
+- [ ] Done
 
 **How does Scikit-Learn’s SVM handle non-linear data?**
 
@@ -662,6 +676,7 @@ for kernel in ['linear', 'rbf', 'poly']:
 ---
 
 ## Question 15
+- [ ] Done
 
 **What is a support vector machine, and how can it be used for both classification and regression tasks?**
 
@@ -734,6 +749,7 @@ svc_ovr = LinearSVC(multi_class='ovr')
 ---
 
 ## Question 16
+- [ ] Done
 
 **Describe the process of deploying a Scikit-Learn model into a production environment.**
 
@@ -826,6 +842,7 @@ CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain how you would update a Scikit-Learn model with new data over time.**
 
@@ -915,6 +932,7 @@ def retrain_model(X_all, y_all, model_dir='models/'):
 ---
 
 ## Question 18
+- [ ] Done
 
 **What are some of the limitations of Scikit-Learn when dealing with very large datasets?**
 
@@ -993,6 +1011,7 @@ X_hashed = vectorizer.transform(text_data)
 ---
 
 ## Question 19
+- [ ] Done
 
 **How can you scale features in a dataset using Scikit-Learn ?**
 
@@ -1040,6 +1059,7 @@ X_scaled = scaler.fit_transform(X_train)
 ---
 
 ## Question 20
+- [ ] Done
 
 **What are the strategies provided by Scikit-Learn to handle imbalanced datasets ?**
 
@@ -1084,6 +1104,7 @@ print(classification_report(y_test, y_pred))
 ---
 
 ## Question 21
+- [ ] Done
 
 **How do you split a dataset into training and testing sets using Scikit-Learn ?**
 
@@ -1117,6 +1138,7 @@ X_train, X_val, y_train, y_val = train_test_split(X_temp, y_temp, test_size=0.25
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain how Imputer works in Scikit-Learn for dealing with missing data**
 
@@ -1168,6 +1190,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 23
+- [ ] Done
 
 **How do you normalize or standardize data with Scikit-Learn ?**
 
@@ -1208,6 +1231,7 @@ X_normed = normalizer.fit_transform(X_train)
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain the process of training a supervised machine learning model using Scikit-Learn**
 
@@ -1263,6 +1287,7 @@ print(f"CV Accuracy: {scores.mean():.4f} ± {scores.std():.4f}")
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain the GridSearchCV function and its purpose**
 
@@ -1326,6 +1351,7 @@ results_df = pd.DataFrame(grid_search.cv_results_)
 ---
 
 ## Question 26
+- [ ] Done
 
 **What is the difference between .fit() , .predict() , and .transform() methods?**
 
@@ -1366,6 +1392,7 @@ X_train_scaled = scaler.fit_transform(X_train)  # Fit and transform in one call
 ---
 
 ## Question 27
+- [ ] Done
 
 **How would you explain the concept of overfitting , and how can it be identified using Scikit-Learn tools?**
 
@@ -1430,6 +1457,7 @@ train_scores, val_scores = validation_curve(
 ---
 
 ## Question 28
+- [ ] Done
 
 **How do you use Scikit-Learn to build ensemble models ?**
 
@@ -1483,6 +1511,7 @@ print(f"Voting accuracy: {voting.score(X_test, y_test):.4f}")
 ---
 
 ## Question 29
+- [ ] Done
 
 **Describe the k-means clustering process as implemented in Scikit-Learn**
 
@@ -1535,6 +1564,7 @@ for k in range(2, 11):
 ---
 
 ## Question 30
+- [ ] Done
 
 **How can you implement custom transformers in Scikit-Learn ?**
 
@@ -1590,6 +1620,7 @@ pipeline.fit(X_train, y_train)
 ---
 
 ## Question 31
+- [ ] Done
 
 **Discuss the integration of Scikit-Learn with other popular machine learning libraries like TensorFlow and PyTorch**
 
@@ -1643,6 +1674,7 @@ grid = GridSearchCV(keras_clf, param_grid, cv=3)
 
 ---
 ## Question 32
+- [ ] Done
 
 **How does Scikit-Learn implement logistic regression differently from linear regression?**
 

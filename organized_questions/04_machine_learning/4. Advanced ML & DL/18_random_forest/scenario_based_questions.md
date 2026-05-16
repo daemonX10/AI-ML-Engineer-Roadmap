@@ -1,6 +1,7 @@
 # Random Forest Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you use Random Forest for a real-time recommendation system?**
 
@@ -97,6 +98,7 @@ def get_recommendations(user, candidate_items, top_n=10):
 ---
 
 ## Question 2
+- [ ] Done
 
 **Describe a scenario where Random Forest could be applied to detect credit card fraud.**
 
@@ -164,6 +166,7 @@ proba = rf.predict_proba(X_test)[:, 1]
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain how Random Forest might be used for customer segmentation.**
 
@@ -232,6 +235,7 @@ importance = rf.feature_importances_
 ---
 
 ## Question 4
+- [ ] Done
 
 **How would you apply Random Forest for predictive maintenance in manufacturing?**
 
@@ -336,6 +340,7 @@ importance_df = pd.DataFrame({
 ---
 
 ## Question 5
+- [ ] Done
 
 **Discuss the use of Random Forest in natural language processing (NLP) applications.**
 

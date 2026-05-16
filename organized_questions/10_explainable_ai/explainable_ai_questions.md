@@ -1808,6 +1808,7 @@ Investigator Decision → Label Correction → Model Retraining
 # SHAP - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What does SHAP stand for in explainable AI?**
 
 **Answer:** _To be filled_
@@ -1815,6 +1816,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 2
+- [ ] Done
 **What is the main purpose of SHAP values?**
 
 **Answer:** _To be filled_
@@ -1822,6 +1824,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 3
+- [ ] Done
 **How are SHAP values calculated?**
 
 **Answer:** _To be filled_
@@ -1829,6 +1832,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 4
+- [ ] Done
 **What is the connection between SHAP and game theory?**
 
 **Answer:** _To be filled_
@@ -1836,6 +1840,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 5
+- [ ] Done
 **How can SHAP explain black-box models?**
 
 **Answer:** _To be filled_
@@ -1843,6 +1848,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 6
+- [ ] Done
 **Which types of machine learning models can be explained with SHAP?**
 
 **Answer:** _To be filled_
@@ -1850,6 +1856,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 7
+- [ ] Done
 **What is local vs. global interpretation in SHAP?**
 
 **Answer:** _To be filled_
@@ -1857,6 +1864,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 8
+- [ ] Done
 **How can SHAP be used to debug a machine learning model?**
 
 **Answer:** _To be filled_
@@ -1864,6 +1872,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 9
+- [ ] Done
 **What are the limitations of SHAP explanations?**
 
 **Answer:** _To be filled_
@@ -1871,6 +1880,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 10
+- [ ] Done
 **What does the "additivity" property mean in SHAP?**
 
 **Answer:** _To be filled_
@@ -1878,6 +1888,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 11
+- [ ] Done
 **How are SHAP values used to detect bias?**
 
 **Answer:** _To be filled_
@@ -1885,6 +1896,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 12
+- [ ] Done
 **How is feature importance assessed through SHAP?**
 
 **Answer:** _To be filled_
@@ -1892,6 +1904,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 13
+- [ ] Done
 **What are Kernel SHAP and Tree SHAP?**
 
 **Answer:** _To be filled_
@@ -1899,6 +1912,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 14
+- [ ] Done
 **When is Tree SHAP preferred over Kernel SHAP?**
 
 **Answer:** _To be filled_
@@ -1906,6 +1920,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 15
+- [ ] Done
 **How can SHAP values be visualized?**
 
 **Answer:** _To be filled_
@@ -1913,6 +1928,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 16
+- [ ] Done
 **How do SHAP values handle categorical features?**
 
 **Answer:** _To be filled_
@@ -1920,6 +1936,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 17
+- [ ] Done
 **What are common use cases of SHAP in industry?**
 
 **Answer:** _To be filled_
@@ -1927,6 +1944,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 18
+- [ ] Done
 **How do you integrate SHAP into existing ML pipelines?**
 
 **Answer:** _To be filled_
@@ -1934,6 +1952,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 19
+- [ ] Done
 **How can SHAP be applied to deep learning models?**
 
 **Answer:** _To be filled_
@@ -1941,6 +1960,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 20
+- [ ] Done
 **What tools and libraries implement SHAP?**
 
 **Answer:** _To be filled_
@@ -1948,6 +1968,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 21
+- [ ] Done
 **Compare SHAP with LIME—what are the key differences?**
 
 **Answer:** _To be filled_
@@ -1955,6 +1976,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 22
+- [ ] Done
 **How does SHAP deal with feature correlation?**
 
 **Answer:** _To be filled_
@@ -1962,6 +1984,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 23
+- [ ] Done
 **What are the computational limitations of SHAP?**
 
 **Answer:** _To be filled_
@@ -1969,6 +1992,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 24
+- [ ] Done
 **How does SHAP provide actionable insights?**
 
 **Answer:** _To be filled_
@@ -1976,6 +2000,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 25
+- [ ] Done
 **How can SHAP be used in model audits?**
 
 **Answer:** _To be filled_
@@ -1983,6 +2008,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 26
+- [ ] Done
 **What is the effect of missing data on SHAP explanations?**
 
 **Answer:** _To be filled_
@@ -1990,6 +2016,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 27
+- [ ] Done
 **When might SHAP explanations be misleading?**
 
 **Answer:** _To be filled_
@@ -1997,6 +2024,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 28
+- [ ] Done
 **What does the base value in SHAP signify?**
 
 **Answer:** _To be filled_
@@ -2004,6 +2032,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 29
+- [ ] Done
 **How are SHAP values aggregated for global interpretation?**
 
 **Answer:** _To be filled_
@@ -2011,6 +2040,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 30
+- [ ] Done
 **What is the mathematical formulation of SHAP values?**
 
 **Answer:** _To be filled_
@@ -2018,6 +2048,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 31
+- [ ] Done
 **How do you interpret a SHAP summary plot?**
 
 **Answer:** _To be filled_
@@ -2025,6 +2056,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 32
+- [ ] Done
 **How are SHAP values used in regulatory compliance?**
 
 **Answer:** _To be filled_
@@ -2032,6 +2064,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 33
+- [ ] Done
 **What are best practices for presenting SHAP results?**
 
 **Answer:** _To be filled_
@@ -2039,6 +2072,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 34
+- [ ] Done
 **How to speed up SHAP computation in large datasets?**
 
 **Answer:** _To be filled_
@@ -2046,6 +2080,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 35
+- [ ] Done
 **What are the most common pitfalls in using SHAP for XAI?**
 
 **Answer:** _To be filled_
@@ -2053,6 +2088,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 36
+- [ ] Done
 **How do you explain model fairness with SHAP?**
 
 **Answer:** _To be filled_
@@ -2060,6 +2096,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 37
+- [ ] Done
 **What is the effect of feature engineering on SHAP explanations?**
 
 **Answer:** _To be filled_
@@ -2067,6 +2104,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 38
+- [ ] Done
 **How do you handle high-cardinality features with SHAP?**
 
 **Answer:** _To be filled_
@@ -2074,6 +2112,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 39
+- [ ] Done
 **What are "interventional SHAP values"?**
 
 **Answer:** _To be filled_
@@ -2081,6 +2120,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 40
+- [ ] Done
 **Discuss research trends in improving SHAP scalability.**
 
 **Answer:** _To be filled_
@@ -2088,6 +2128,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 41
+- [ ] Done
 **What are counterfactual explanations with respect to SHAP?**
 
 **Answer:** _To be filled_
@@ -2095,6 +2136,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 42
+- [ ] Done
 **How do SHAP values change for ensemble models?**
 
 **Answer:** _To be filled_
@@ -2102,6 +2144,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 43
+- [ ] Done
 **How can SHAP support root-cause analysis in predictions?**
 
 **Answer:** _To be filled_
@@ -2109,6 +2152,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 44
+- [ ] Done
 **Describe use cases of SHAP in healthcare or finance.**
 
 **Answer:** _To be filled_
@@ -2116,6 +2160,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 45
+- [ ] Done
 **What do negative SHAP values indicate?**
 
 **Answer:** _To be filled_
@@ -2123,6 +2168,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 46
+- [ ] Done
 **How are SHAP values affected by collinearity?**
 
 **Answer:** _To be filled_
@@ -2130,6 +2176,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 47
+- [ ] Done
 **How does SHAP help with global surrogate modeling?**
 
 **Answer:** _To be filled_
@@ -2137,6 +2184,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 48
+- [ ] Done
 **Where can SHAP explanations fail?**
 
 **Answer:** _To be filled_
@@ -2144,6 +2192,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 49
+- [ ] Done
 **What is the research future for SHAP methods?**
 
 **Answer:** _To be filled_
@@ -2151,6 +2200,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 50
+- [ ] Done
 **What ethical considerations exist with applying SHAP in production AI systems?**
 
 **Answer:** _To be filled_
@@ -2165,6 +2215,7 @@ Investigator Decision → Label Correction → Model Retraining
 # LIME - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What does LIME stand for?**
 
 **Answer:** _To be filled_
@@ -2172,6 +2223,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 2
+- [ ] Done
 **What is the purpose of LIME in explainable AI?**
 
 **Answer:** _To be filled_
@@ -2179,6 +2231,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 3
+- [ ] Done
 **How does LIME generate explanations for predictions?**
 
 **Answer:** _To be filled_
@@ -2186,6 +2239,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 4
+- [ ] Done
 **What is a local surrogate model in LIME?**
 
 **Answer:** _To be filled_
@@ -2193,6 +2247,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 5
+- [ ] Done
 **What assumptions does LIME make about model behavior?**
 
 **Answer:** _To be filled_
@@ -2200,6 +2255,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 6
+- [ ] Done
 **How does LIME handle categorical data?**
 
 **Answer:** _To be filled_
@@ -2207,6 +2263,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 7
+- [ ] Done
 **How can LIME be used with image classifiers?**
 
 **Answer:** _To be filled_
@@ -2214,6 +2271,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 8
+- [ ] Done
 **What is the main limitation of LIME?**
 
 **Answer:** _To be filled_
@@ -2221,6 +2279,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 9
+- [ ] Done
 **How is the sampling performed in LIME?**
 
 **Answer:** _To be filled_
@@ -2228,6 +2287,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 10
+- [ ] Done
 **Describe how LIME explanations can be visualized.**
 
 **Answer:** _To be filled_
@@ -2235,6 +2295,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 11
+- [ ] Done
 **What model types can LIME explain?**
 
 **Answer:** _To be filled_
@@ -2242,6 +2303,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 12
+- [ ] Done
 **How can LIME be used to debug a model?**
 
 **Answer:** _To be filled_
@@ -2249,6 +2311,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 13
+- [ ] Done
 **What does it mean that LIME is model-agnostic?**
 
 **Answer:** _To be filled_
@@ -2256,6 +2319,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 14
+- [ ] Done
 **How does LIME handle multidimensional explanations?**
 
 **Answer:** _To be filled_
@@ -2263,6 +2327,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 15
+- [ ] Done
 **How scalable is LIME for large tabular datasets?**
 
 **Answer:** _To be filled_
@@ -2270,6 +2335,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 16
+- [ ] Done
 **How are perturbed samples generated in LIME?**
 
 **Answer:** _To be filled_
@@ -2277,6 +2343,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 17
+- [ ] Done
 **What is the role of the proximity function in LIME?**
 
 **Answer:** _To be filled_
@@ -2284,6 +2351,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 18
+- [ ] Done
 **How can LIME be used for text data?**
 
 **Answer:** _To be filled_
@@ -2291,6 +2359,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 19
+- [ ] Done
 **What is the impact of feature correlations in LIME explanations?**
 
 **Answer:** _To be filled_
@@ -2298,6 +2367,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 20
+- [ ] Done
 **How do you interpret the weights of features in LIME?**
 
 **Answer:** _To be filled_
@@ -2305,6 +2375,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 21
+- [ ] Done
 **What information does a LIME explanation provide to the end user?**
 
 **Answer:** _To be filled_
@@ -2312,6 +2383,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 22
+- [ ] Done
 **What are competing approaches to LIME?**
 
 **Answer:** _To be filled_
@@ -2319,6 +2391,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 23
+- [ ] Done
 **Can LIME explanations be trusted in adversarial settings?**
 
 **Answer:** _To be filled_
@@ -2326,6 +2399,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 24
+- [ ] Done
 **How do you use LIME to explain black-box models?**
 
 **Answer:** _To be filled_
@@ -2333,6 +2407,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 25
+- [ ] Done
 **What is the impact of LIME on regulatory compliance?**
 
 **Answer:** _To be filled_
@@ -2340,6 +2415,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 26
+- [ ] Done
 **How could LIME's explanations be audited?**
 
 **Answer:** _To be filled_
@@ -2347,6 +2423,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 27
+- [ ] Done
 **What automated tools exist for LIME?**
 
 **Answer:** _To be filled_
@@ -2354,6 +2431,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 28
+- [ ] Done
 **What insights can be gained by comparing SHAP and LIME?**
 
 **Answer:** _To be filled_
@@ -2361,6 +2439,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 29
+- [ ] Done
 **How does LIME handle missing data?**
 
 **Answer:** _To be filled_
@@ -2368,6 +2447,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 30
+- [ ] Done
 **When would you not want to use LIME?**
 
 **Answer:** _To be filled_
@@ -2375,6 +2455,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 31
+- [ ] Done
 **What improvements have been proposed for LIME?**
 
 **Answer:** _To be filled_
@@ -2382,6 +2463,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 32
+- [ ] Done
 **How do you evaluate the quality of LIME explanations?**
 
 **Answer:** _To be filled_
@@ -2389,6 +2471,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 33
+- [ ] Done
 **What pitfalls are common when interpreting LIME's output?**
 
 **Answer:** _To be filled_
@@ -2396,6 +2479,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 34
+- [ ] Done
 **What is the local fidelity metric in LIME?**
 
 **Answer:** _To be filled_
@@ -2403,6 +2487,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 35
+- [ ] Done
 **How do random seeds affect LIME?**
 
 **Answer:** _To be filled_
@@ -2410,6 +2495,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 36
+- [ ] Done
 **Can LIME be used with ensemble models?**
 
 **Answer:** _To be filled_
@@ -2417,6 +2503,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 37
+- [ ] Done
 **What preprocessing is required for LIME analysis?**
 
 **Answer:** _To be filled_
@@ -2424,6 +2511,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 38
+- [ ] Done
 **What is the computational cost of LIME?**
 
 **Answer:** _To be filled_
@@ -2431,6 +2519,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 39
+- [ ] Done
 **How do you visualize LIME explanations for structured data?**
 
 **Answer:** _To be filled_
@@ -2438,6 +2527,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 40
+- [ ] Done
 **What is the effect of hyperparameters on LIME explanations?**
 
 **Answer:** _To be filled_
@@ -2445,6 +2535,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 41
+- [ ] Done
 **How do you present LIME results to non-technical stakeholders?**
 
 **Answer:** _To be filled_
@@ -2452,6 +2543,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 42
+- [ ] Done
 **When is LIME superior to SHAP, and vice versa?**
 
 **Answer:** _To be filled_
@@ -2459,6 +2551,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 43
+- [ ] Done
 **What dangers exist if LIME is misused?**
 
 **Answer:** _To be filled_
@@ -2466,6 +2559,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 44
+- [ ] Done
 **How does LIME support fairness and bias identification?**
 
 **Answer:** _To be filled_
@@ -2473,6 +2567,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 45
+- [ ] Done
 **What future research directions exist for LIME?**
 
 **Answer:** _To be filled_
@@ -2480,6 +2575,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 46
+- [ ] Done
 **Can LIME explain time series models?**
 
 **Answer:** _To be filled_
@@ -2487,6 +2583,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 47
+- [ ] Done
 **How does LIME handle high-dimensional spaces?**
 
 **Answer:** _To be filled_
@@ -2494,6 +2591,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 48
+- [ ] Done
 **How is the surrogate model type chosen in LIME?**
 
 **Answer:** _To be filled_
@@ -2501,6 +2599,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 49
+- [ ] Done
 **How can LIME be extended for multi-class problems?**
 
 **Answer:** _To be filled_
@@ -2508,6 +2607,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 50
+- [ ] Done
 **How does LIME relate to counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -2522,6 +2622,7 @@ Investigator Decision → Label Correction → Model Retraining
 # Grad-CAM - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What does Grad-CAM stand for?**
 
 **Answer:** _To be filled_
@@ -2529,6 +2630,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 2
+- [ ] Done
 **What problem does Grad-CAM solve in explainability?**
 
 **Answer:** _To be filled_
@@ -2536,6 +2638,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 3
+- [ ] Done
 **How does Grad-CAM generate visual explanations?**
 
 **Answer:** _To be filled_
@@ -2543,6 +2646,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 4
+- [ ] Done
 **What kind of models is Grad-CAM applied to?**
 
 **Answer:** _To be filled_
@@ -2550,6 +2654,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 5
+- [ ] Done
 **How are saliency maps computed in Grad-CAM?**
 
 **Answer:** _To be filled_
@@ -2557,6 +2662,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 6
+- [ ] Done
 **What is the mathematical basis for Grad-CAM?**
 
 **Answer:** _To be filled_
@@ -2564,6 +2670,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 7
+- [ ] Done
 **How does Grad-CAM differ from vanilla saliency methods?**
 
 **Answer:** _To be filled_
@@ -2571,6 +2678,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 8
+- [ ] Done
 **What are the limitations of Grad-CAM visualizations?**
 
 **Answer:** _To be filled_
@@ -2578,6 +2686,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 9
+- [ ] Done
 **How is Grad-CAM used in adversarial settings?**
 
 **Answer:** _To be filled_
@@ -2585,6 +2694,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 10
+- [ ] Done
 **What is the effect of input perturbations on Grad-CAM maps?**
 
 **Answer:** _To be filled_
@@ -2592,6 +2702,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 11
+- [ ] Done
 **How can Grad-CAM be used in medical imaging?**
 
 **Answer:** _To be filled_
@@ -2599,6 +2710,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 12
+- [ ] Done
 **Explain Grad-CAM and its improvements.**
 
 **Answer:** _To be filled_
@@ -2606,6 +2718,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 13
+- [ ] Done
 **What is the impact of network depth on Grad-CAM results?**
 
 **Answer:** _To be filled_
@@ -2613,6 +2726,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 14
+- [ ] Done
 **How does Grad-CAM relate to attention mechanisms?**
 
 **Answer:** _To be filled_
@@ -2620,6 +2734,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 15
+- [ ] Done
 **What are the best practices for interpreting Grad-CAM outputs?**
 
 **Answer:** _To be filled_
@@ -2627,6 +2742,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 16
+- [ ] Done
 **How sensitive is Grad-CAM to layer selection?**
 
 **Answer:** _To be filled_
@@ -2634,6 +2750,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 17
+- [ ] Done
 **Can Grad-CAM be used on non-image data?**
 
 **Answer:** _To be filled_
@@ -2641,6 +2758,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 18
+- [ ] Done
 **How is Grad-CAM integrated into ML workflows?**
 
 **Answer:** _To be filled_
@@ -2648,6 +2766,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 19
+- [ ] Done
 **How does Grad-CAM support model debugging?**
 
 **Answer:** _To be filled_
@@ -2655,6 +2774,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 20
+- [ ] Done
 **What tools exist for generating Grad-CAM visualizations?**
 
 **Answer:** _To be filled_
@@ -2662,6 +2782,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 21
+- [ ] Done
 **What does "guided" mean in guided Grad-CAM?**
 
 **Answer:** _To be filled_
@@ -2669,6 +2790,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 22
+- [ ] Done
 **How can Grad-CAM be applied to sequential data?**
 
 **Answer:** _To be filled_
@@ -2676,6 +2798,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 23
+- [ ] Done
 **What role does the activation function play in Grad-CAM?**
 
 **Answer:** _To be filled_
@@ -2683,6 +2806,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 24
+- [ ] Done
 **How is Grad-CAM computationally optimized?**
 
 **Answer:** _To be filled_
@@ -2690,6 +2814,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 25
+- [ ] Done
 **How does Grad-CAM help expose model shortcut learning?**
 
 **Answer:** _To be filled_
@@ -2697,6 +2822,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 26
+- [ ] Done
 **What problems are not solved by Grad-CAM?**
 
 **Answer:** _To be filled_
@@ -2704,6 +2830,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 27
+- [ ] Done
 **How robust is Grad-CAM to noise in input data?**
 
 **Answer:** _To be filled_
@@ -2711,6 +2838,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 28
+- [ ] Done
 **What domain applications benefit most from Grad-CAM?**
 
 **Answer:** _To be filled_
@@ -2718,6 +2846,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 29
+- [ ] Done
 **What are appealing aspects of Grad-CAM for end users?**
 
 **Answer:** _To be filled_
@@ -2725,6 +2854,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 30
+- [ ] Done
 **What are limitations in regulatory/compliance settings of Grad-CAM?**
 
 **Answer:** _To be filled_
@@ -2732,6 +2862,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 31
+- [ ] Done
 **How does Grad-CAM handle multiple outputs?**
 
 **Answer:** _To be filled_
@@ -2739,6 +2870,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 32
+- [ ] Done
 **What recent research trends improve upon Grad-CAM?**
 
 **Answer:** _To be filled_
@@ -2746,6 +2878,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 33
+- [ ] Done
 **How does Grad-CAM address feature interdependence?**
 
 **Answer:** _To be filled_
@@ -2753,6 +2886,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 34
+- [ ] Done
 **What theoretical guarantees exist for Grad-CAM?**
 
 **Answer:** _To be filled_
@@ -2760,6 +2894,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 35
+- [ ] Done
 **How do you validate Grad-CAM explanations?**
 
 **Answer:** _To be filled_
@@ -2767,6 +2902,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 36
+- [ ] Done
 **In what ways can Grad-CAM be misleading?**
 
 **Answer:** _To be filled_
@@ -2774,6 +2910,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 37
+- [ ] Done
 **How can Grad-CAM be used for transfer learning analysis?**
 
 **Answer:** _To be filled_
@@ -2781,6 +2918,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 38
+- [ ] Done
 **How do you visualize model uncertainty with Grad-CAM?**
 
 **Answer:** _To be filled_
@@ -2788,6 +2926,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 39
+- [ ] Done
 **How does Grad-CAM interact with input preprocessing?**
 
 **Answer:** _To be filled_
@@ -2795,6 +2934,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 40
+- [ ] Done
 **What are common visual artifacts in Grad-CAM results?**
 
 **Answer:** _To be filled_
@@ -2802,6 +2942,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 41
+- [ ] Done
 **When would you not trust a Grad-CAM visualization?**
 
 **Answer:** _To be filled_
@@ -2809,6 +2950,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 42
+- [ ] Done
 **What research advances improve the interpretability of Grad-CAM?**
 
 **Answer:** _To be filled_
@@ -2816,6 +2958,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 43
+- [ ] Done
 **What alternatives to Grad-CAM exist for CNN explainability?**
 
 **Answer:** _To be filled_
@@ -2823,6 +2966,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 44
+- [ ] Done
 **How is Grad-CAM adapted for video data?**
 
 **Answer:** _To be filled_
@@ -2830,6 +2974,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 45
+- [ ] Done
 **What is the impact of minibatch size on Grad-CAM?**
 
 **Answer:** _To be filled_
@@ -2837,6 +2982,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 46
+- [ ] Done
 **How are false positives identified in Grad-CAM heatmaps?**
 
 **Answer:** _To be filled_
@@ -2844,6 +2990,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 47
+- [ ] Done
 **What optimizations allow real-time Grad-CAM visualization?**
 
 **Answer:** _To be filled_
@@ -2851,6 +2998,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 48
+- [ ] Done
 **How can Grad-CAM be used for bias detection?**
 
 **Answer:** _To be filled_
@@ -2858,6 +3006,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 49
+- [ ] Done
 **What is the practical impact of Grad-CAM in safety-critical domains?**
 
 **Answer:** _To be filled_
@@ -2865,6 +3014,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 50
+- [ ] Done
 **What new directions exist in research on visual explanation methods?**
 
 **Answer:** _To be filled_
@@ -2879,6 +3029,7 @@ Investigator Decision → Label Correction → Model Retraining
 # Feature Importance - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What is feature importance in machine learning?**
 
 **Answer:** _To be filled_
@@ -2886,6 +3037,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 2
+- [ ] Done
 **How do tree-based models calculate feature importance?**
 
 **Answer:** _To be filled_
@@ -2893,6 +3045,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 3
+- [ ] Done
 **What is the difference between Gini and permutation-based feature importance?**
 
 **Answer:** _To be filled_
@@ -2900,6 +3053,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 4
+- [ ] Done
 **How is feature importance calculated in random forests?**
 
 **Answer:** _To be filled_
@@ -2907,6 +3061,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 5
+- [ ] Done
 **What are the limitations of default feature importance scores?**
 
 **Answer:** _To be filled_
@@ -2914,6 +3069,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 6
+- [ ] Done
 **How do you interpret feature importance rankings?**
 
 **Answer:** _To be filled_
@@ -2921,6 +3077,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 7
+- [ ] Done
 **What is the relationship between feature importance and correlation?**
 
 **Answer:** _To be filled_
@@ -2928,6 +3085,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 8
+- [ ] Done
 **How does feature scaling affect importance scores?**
 
 **Answer:** _To be filled_
@@ -2935,6 +3093,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 9
+- [ ] Done
 **What is MDI (Mean Decrease in Impurity) feature importance?**
 
 **Answer:** _To be filled_
@@ -2942,6 +3101,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 10
+- [ ] Done
 **How do you validate feature importance results?**
 
 **Answer:** _To be filled_
@@ -2949,6 +3109,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 11
+- [ ] Done
 **What problems arise with correlated features in importance ranking?**
 
 **Answer:** _To be filled_
@@ -2956,6 +3117,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 12
+- [ ] Done
 **How is feature importance calculated in linear models?**
 
 **Answer:** _To be filled_
@@ -2963,6 +3125,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 13
+- [ ] Done
 **What is the bias in tree-based feature importance?**
 
 **Answer:** _To be filled_
@@ -2970,6 +3133,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 14
+- [ ] Done
 **How do ensemble methods aggregate feature importance?**
 
 **Answer:** _To be filled_
@@ -2977,6 +3141,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 15
+- [ ] Done
 **What is the role of feature importance in feature selection?**
 
 **Answer:** _To be filled_
@@ -2984,6 +3149,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 16
+- [ ] Done
 **How do you visualize feature importance effectively?**
 
 **Answer:** _To be filled_
@@ -2991,6 +3157,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 17
+- [ ] Done
 **What is conditional feature importance?**
 
 **Answer:** _To be filled_
@@ -2998,6 +3165,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 18
+- [ ] Done
 **How does sample size affect feature importance stability?**
 
 **Answer:** _To be filled_
@@ -3005,6 +3173,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 19
+- [ ] Done
 **What are global vs. local feature importance measures?**
 
 **Answer:** _To be filled_
@@ -3012,6 +3181,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 20
+- [ ] Done
 **How do you handle categorical features in importance ranking?**
 
 **Answer:** _To be filled_
@@ -3019,6 +3189,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 21
+- [ ] Done
 **What is the difference between univariate and multivariate feature importance?**
 
 **Answer:** _To be filled_
@@ -3026,6 +3197,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 22
+- [ ] Done
 **How do neural networks compute feature importance?**
 
 **Answer:** _To be filled_
@@ -3033,6 +3205,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 23
+- [ ] Done
 **What is the impact of feature engineering on importance scores?**
 
 **Answer:** _To be filled_
@@ -3040,6 +3213,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 24
+- [ ] Done
 **How do you compare feature importance across different models?**
 
 **Answer:** _To be filled_
@@ -3047,6 +3221,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 25
+- [ ] Done
 **What are confidence intervals for feature importance?**
 
 **Answer:** _To be filled_
@@ -3054,6 +3229,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 26
+- [ ] Done
 **How does class imbalance affect feature importance?**
 
 **Answer:** _To be filled_
@@ -3061,6 +3237,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 27
+- [ ] Done
 **What is recursive feature elimination based on importance?**
 
 **Answer:** _To be filled_
@@ -3068,6 +3245,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 28
+- [ ] Done
 **How do you detect spurious feature importance?**
 
 **Answer:** _To be filled_
@@ -3075,6 +3253,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 29
+- [ ] Done
 **What is the relationship between feature importance and causality?**
 
 **Answer:** _To be filled_
@@ -3082,6 +3261,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 30
+- [ ] Done
 **How do you handle missing values when calculating importance?**
 
 **Answer:** _To be filled_
@@ -3089,6 +3269,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 31
+- [ ] Done
 **What is feature importance in gradient boosting models?**
 
 **Answer:** _To be filled_
@@ -3096,6 +3277,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 32
+- [ ] Done
 **How do you aggregate importance scores across CV folds?**
 
 **Answer:** _To be filled_
@@ -3103,6 +3285,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 33
+- [ ] Done
 **What are statistical tests for feature importance significance?**
 
 **Answer:** _To be filled_
@@ -3110,6 +3293,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 34
+- [ ] Done
 **How does regularization affect feature importance interpretation?**
 
 **Answer:** _To be filled_
@@ -3117,6 +3301,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 35
+- [ ] Done
 **What is the curse of dimensionality's impact on importance ranking?**
 
 **Answer:** _To be filled_
@@ -3124,6 +3309,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 36
+- [ ] Done
 **How do you identify redundant features using importance scores?**
 
 **Answer:** _To be filled_
@@ -3131,6 +3317,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 37
+- [ ] Done
 **What is temporal feature importance in time series?**
 
 **Answer:** _To be filled_
@@ -3138,6 +3325,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 38
+- [ ] Done
 **How do you communicate feature importance to stakeholders?**
 
 **Answer:** _To be filled_
@@ -3145,6 +3333,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 39
+- [ ] Done
 **What are domain-specific considerations for feature importance?**
 
 **Answer:** _To be filled_
@@ -3152,6 +3341,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 40
+- [ ] Done
 **How do you handle feature interactions in importance analysis?**
 
 **Answer:** _To be filled_
@@ -3159,6 +3349,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 41
+- [ ] Done
 **What is the computational complexity of different importance methods?**
 
 **Answer:** _To be filled_
@@ -3166,6 +3357,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 42
+- [ ] Done
 **How do you use feature importance for model debugging?**
 
 **Answer:** _To be filled_
@@ -3173,6 +3365,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 43
+- [ ] Done
 **What are the ethical implications of feature importance ranking?**
 
 **Answer:** _To be filled_
@@ -3180,6 +3373,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 44
+- [ ] Done
 **How does data leakage affect feature importance scores?**
 
 **Answer:** _To be filled_
@@ -3187,6 +3381,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 45
+- [ ] Done
 **What is the role of feature importance in model interpretation?**
 
 **Answer:** _To be filled_
@@ -3194,6 +3389,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 46
+- [ ] Done
 **How do you validate feature importance using domain knowledge?**
 
 **Answer:** _To be filled_
@@ -3201,6 +3397,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 47
+- [ ] Done
 **What are robust methods for calculating feature importance?**
 
 **Answer:** _To be filled_
@@ -3208,6 +3405,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 48
+- [ ] Done
 **How do you handle high-cardinality categorical features?**
 
 **Answer:** _To be filled_
@@ -3215,6 +3413,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 49
+- [ ] Done
 **What is the future of automated feature importance analysis?**
 
 **Answer:** _To be filled_
@@ -3222,6 +3421,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 50
+- [ ] Done
 **How do you combine multiple feature importance methods?**
 
 **Answer:** _To be filled_
@@ -3236,6 +3436,7 @@ Investigator Decision → Label Correction → Model Retraining
 # Permutation Importance - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What is permutation importance in machine learning?**
 
 **Answer:** _To be filled_
@@ -3243,6 +3444,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 2
+- [ ] Done
 **How does permutation importance differ from other feature importance methods?**
 
 **Answer:** _To be filled_
@@ -3250,6 +3452,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 3
+- [ ] Done
 **Describe the algorithm for calculating permutation importance.**
 
 **Answer:** _To be filled_
@@ -3257,6 +3460,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 4
+- [ ] Done
 **What are the advantages of permutation importance over built-in importance?**
 
 **Answer:** _To be filled_
@@ -3264,6 +3468,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 5
+- [ ] Done
 **What metrics can be used with permutation importance?**
 
 **Answer:** _To be filled_
@@ -3271,6 +3476,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 6
+- [ ] Done
 **How do you handle correlated features in permutation importance?**
 
 **Answer:** _To be filled_
@@ -3278,6 +3484,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 7
+- [ ] Done
 **What is the computational cost of permutation importance?**
 
 **Answer:** _To be filled_
@@ -3285,6 +3492,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 8
+- [ ] Done
 **How does sample size affect permutation importance reliability?**
 
 **Answer:** _To be filled_
@@ -3292,6 +3500,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 9
+- [ ] Done
 **What are the limitations of permutation importance?**
 
 **Answer:** _To be filled_
@@ -3299,6 +3508,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 10
+- [ ] Done
 **How do you interpret negative permutation importance scores?**
 
 **Answer:** _To be filled_
@@ -3306,6 +3516,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 11
+- [ ] Done
 **What is the difference between training and validation set permutation importance?**
 
 **Answer:** _To be filled_
@@ -3313,6 +3524,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 12
+- [ ] Done
 **How do you visualize permutation importance results?**
 
 **Answer:** _To be filled_
@@ -3320,6 +3532,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 13
+- [ ] Done
 **What is conditional permutation importance?**
 
 **Answer:** _To be filled_
@@ -3327,6 +3540,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 14
+- [ ] Done
 **How does permutation importance handle categorical features?**
 
 **Answer:** _To be filled_
@@ -3334,6 +3548,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 15
+- [ ] Done
 **What are confidence intervals for permutation importance?**
 
 **Answer:** _To be filled_
@@ -3341,6 +3556,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 16
+- [ ] Done
 **How do you test statistical significance of permutation importance?**
 
 **Answer:** _To be filled_
@@ -3348,6 +3564,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 17
+- [ ] Done
 **What is the relationship between permutation importance and model performance?**
 
 **Answer:** _To be filled_
@@ -3355,6 +3572,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 18
+- [ ] Done
 **How does feature scaling affect permutation importance?**
 
 **Answer:** _To be filled_
@@ -3362,6 +3580,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 19
+- [ ] Done
 **What is grouped permutation importance?**
 
 **Answer:** _To be filled_
@@ -3369,6 +3588,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 20
+- [ ] Done
 **How do you handle missing values in permutation importance?**
 
 **Answer:** _To be filled_
@@ -3376,6 +3596,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 21
+- [ ] Done
 **What is the bias in permutation importance with correlated predictors?**
 
 **Answer:** _To be filled_
@@ -3383,6 +3604,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 22
+- [ ] Done
 **How do ensemble models affect permutation importance calculation?**
 
 **Answer:** _To be filled_
@@ -3390,6 +3612,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 23
+- [ ] Done
 **What is the difference between drop-column and permutation importance?**
 
 **Answer:** _To be filled_
@@ -3397,6 +3620,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 24
+- [ ] Done
 **How do you use permutation importance for feature selection?**
 
 **Answer:** _To be filled_
@@ -3404,6 +3628,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 25
+- [ ] Done
 **What are best practices for implementing permutation importance?**
 
 **Answer:** _To be filled_
@@ -3411,6 +3636,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 26
+- [ ] Done
 **How does permutation importance work with time series data?**
 
 **Answer:** _To be filled_
@@ -3418,6 +3644,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 27
+- [ ] Done
 **What is the impact of feature interactions on permutation importance?**
 
 **Answer:** _To be filled_
@@ -3425,6 +3652,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 28
+- [ ] Done
 **How do you aggregate permutation importance across multiple runs?**
 
 **Answer:** _To be filled_
@@ -3432,6 +3660,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 29
+- [ ] Done
 **What is partial dependence vs. permutation importance?**
 
 **Answer:** _To be filled_
@@ -3439,6 +3668,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 30
+- [ ] Done
 **How does class imbalance affect permutation importance?**
 
 **Answer:** _To be filled_
@@ -3446,6 +3676,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 31
+- [ ] Done
 **What is the role of random seed in permutation importance?**
 
 **Answer:** _To be filled_
@@ -3453,6 +3684,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 32
+- [ ] Done
 **How do you compare permutation importance across different models?**
 
 **Answer:** _To be filled_
@@ -3460,6 +3692,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 33
+- [ ] Done
 **What are efficient algorithms for large-scale permutation importance?**
 
 **Answer:** _To be filled_
@@ -3467,6 +3700,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 34
+- [ ] Done
 **How does permutation importance handle feature redundancy?**
 
 **Answer:** _To be filled_
@@ -3474,6 +3708,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 35
+- [ ] Done
 **What is the relationship between permutation importance and causality?**
 
 **Answer:** _To be filled_
@@ -3481,6 +3716,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 36
+- [ ] Done
 **How do you validate permutation importance results?**
 
 **Answer:** _To be filled_
@@ -3488,6 +3724,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 37
+- [ ] Done
 **What are domain-specific considerations for permutation importance?**
 
 **Answer:** _To be filled_
@@ -3495,6 +3732,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 38
+- [ ] Done
 **How does regularization affect permutation importance interpretation?**
 
 **Answer:** _To be filled_
@@ -3502,6 +3740,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 39
+- [ ] Done
 **What is stratified permutation importance?**
 
 **Answer:** _To be filled_
@@ -3509,6 +3748,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 40
+- [ ] Done
 **How do you handle high-dimensional data in permutation importance?**
 
 **Answer:** _To be filled_
@@ -3516,6 +3756,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 41
+- [ ] Done
 **What are the ethical considerations of permutation importance?**
 
 **Answer:** _To be filled_
@@ -3523,6 +3764,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 42
+- [ ] Done
 **How does permutation importance work with neural networks?**
 
 **Answer:** _To be filled_
@@ -3530,6 +3772,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 43
+- [ ] Done
 **What is block permutation importance?**
 
 **Answer:** _To be filled_
@@ -3537,6 +3780,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 44
+- [ ] Done
 **How do you communicate permutation importance to non-technical stakeholders?**
 
 **Answer:** _To be filled_
@@ -3544,6 +3788,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 45
+- [ ] Done
 **What are robust alternatives to standard permutation importance?**
 
 **Answer:** _To be filled_
@@ -3551,6 +3796,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 46
+- [ ] Done
 **How does permutation importance handle feature hierarchies?**
 
 **Answer:** _To be filled_
@@ -3558,6 +3804,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 47
+- [ ] Done
 **What is the impact of outliers on permutation importance?**
 
 **Answer:** _To be filled_
@@ -3565,6 +3812,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 48
+- [ ] Done
 **How do you use permutation importance for model debugging?**
 
 **Answer:** _To be filled_
@@ -3572,6 +3820,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 49
+- [ ] Done
 **What are recent advances in permutation importance methods?**
 
 **Answer:** _To be filled_
@@ -3579,6 +3828,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 50
+- [ ] Done
 **How do you combine permutation importance with other explainability methods?**
 
 **Answer:** _To be filled_
@@ -3593,6 +3843,7 @@ Investigator Decision → Label Correction → Model Retraining
 # Integrated Gradients - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What are Integrated Gradients in explainable AI?**
 
 **Answer:** _To be filled_
@@ -3600,6 +3851,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 2
+- [ ] Done
 **How do Integrated Gradients differ from standard gradients?**
 
 **Answer:** _To be filled_
@@ -3607,6 +3859,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 3
+- [ ] Done
 **What is the mathematical formulation of Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3614,6 +3867,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 4
+- [ ] Done
 **What is the baseline in Integrated Gradients and how do you choose it?**
 
 **Answer:** _To be filled_
@@ -3621,6 +3875,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 5
+- [ ] Done
 **What are the axioms that Integrated Gradients satisfy?**
 
 **Answer:** _To be filled_
@@ -3628,6 +3883,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 6
+- [ ] Done
 **How do you implement Integrated Gradients for neural networks?**
 
 **Answer:** _To be filled_
@@ -3635,6 +3891,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 7
+- [ ] Done
 **What is the sensitivity axiom in attribution methods?**
 
 **Answer:** _To be filled_
@@ -3642,6 +3899,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 8
+- [ ] Done
 **What is the implementation invariance property?**
 
 **Answer:** _To be filled_
@@ -3649,6 +3907,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 9
+- [ ] Done
 **How do you choose the number of steps in Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3656,6 +3915,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 10
+- [ ] Done
 **What are the computational requirements of Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3663,6 +3923,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 11
+- [ ] Done
 **How do Integrated Gradients handle saturated neurons?**
 
 **Answer:** _To be filled_
@@ -3670,6 +3931,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 12
+- [ ] Done
 **What is the path integral interpretation of Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3677,6 +3939,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 13
+- [ ] Done
 **How do you visualize Integrated Gradients for image models?**
 
 **Answer:** _To be filled_
@@ -3684,6 +3947,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 14
+- [ ] Done
 **What are the limitations of Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3691,6 +3955,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 15
+- [ ] Done
 **How do you apply Integrated Gradients to text models?**
 
 **Answer:** _To be filled_
@@ -3698,6 +3963,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 16
+- [ ] Done
 **What is the difference between Integrated Gradients and LIME?**
 
 **Answer:** _To be filled_
@@ -3705,6 +3971,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 17
+- [ ] Done
 **How do you handle multiple baselines in Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3712,6 +3979,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 18
+- [ ] Done
 **What is the attribution completeness property?**
 
 **Answer:** _To be filled_
@@ -3719,6 +3987,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 19
+- [ ] Done
 **How do you validate Integrated Gradients attributions?**
 
 **Answer:** _To be filled_
@@ -3726,6 +3995,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 20
+- [ ] Done
 **What is the impact of input preprocessing on Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3733,6 +4003,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 21
+- [ ] Done
 **How do Integrated Gradients work with convolutional networks?**
 
 **Answer:** _To be filled_
@@ -3740,6 +4011,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 22
+- [ ] Done
 **What are efficient approximations for Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3747,6 +4019,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle discrete inputs with Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3754,6 +4027,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 24
+- [ ] Done
 **What is the relationship between Integrated Gradients and Shapley values?**
 
 **Answer:** _To be filled_
@@ -3761,6 +4035,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 25
+- [ ] Done
 **How do you interpret negative attributions in Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3768,6 +4043,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 26
+- [ ] Done
 **What is the role of the integration path in Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3775,6 +4051,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 27
+- [ ] Done
 **How do you apply Integrated Gradients to multi-output models?**
 
 **Answer:** _To be filled_
@@ -3782,6 +4059,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 28
+- [ ] Done
 **What are the best practices for choosing baselines?**
 
 **Answer:** _To be filled_
@@ -3789,6 +4067,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 29
+- [ ] Done
 **How do you handle noisy gradients in Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3796,6 +4075,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 30
+- [ ] Done
 **What is the computational complexity of Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3803,6 +4083,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 31
+- [ ] Done
 **How do Integrated Gradients compare to other gradient-based methods?**
 
 **Answer:** _To be filled_
@@ -3810,6 +4091,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 32
+- [ ] Done
 **What is the smoothness property of Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3817,6 +4099,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 33
+- [ ] Done
 **How do you apply Integrated Gradients to time series models?**
 
 **Answer:** _To be filled_
@@ -3824,6 +4107,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 34
+- [ ] Done
 **What are the failure modes of Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3831,6 +4115,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 35
+- [ ] Done
 **How do you aggregate Integrated Gradients across multiple samples?**
 
 **Answer:** _To be filled_
@@ -3838,6 +4123,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 36
+- [ ] Done
 **What is the impact of model architecture on Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3845,6 +4131,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 37
+- [ ] Done
 **How do you use Integrated Gradients for feature selection?**
 
 **Answer:** _To be filled_
@@ -3852,6 +4139,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 38
+- [ ] Done
 **What are the theoretical guarantees of Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3859,6 +4147,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle batch processing with Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3866,6 +4155,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 40
+- [ ] Done
 **What is the relationship between Integrated Gradients and adversarial examples?**
 
 **Answer:** _To be filled_
@@ -3873,6 +4163,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 41
+- [ ] Done
 **How do you apply Integrated Gradients to attention mechanisms?**
 
 **Answer:** _To be filled_
@@ -3880,6 +4171,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 42
+- [ ] Done
 **What are extensions and variants of Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3887,6 +4179,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 43
+- [ ] Done
 **How do you debug models using Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3894,6 +4187,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 44
+- [ ] Done
 **What is the scalability of Integrated Gradients to large models?**
 
 **Answer:** _To be filled_
@@ -3901,6 +4195,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 45
+- [ ] Done
 **How do you communicate Integrated Gradients results to stakeholders?**
 
 **Answer:** _To be filled_
@@ -3908,6 +4203,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 46
+- [ ] Done
 **What are the ethical considerations of using Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3915,6 +4211,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 47
+- [ ] Done
 **How do you combine Integrated Gradients with other explanation methods?**
 
 **Answer:** _To be filled_
@@ -3922,6 +4219,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 48
+- [ ] Done
 **What is the impact of model training on Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3929,6 +4227,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 49
+- [ ] Done
 **How do you evaluate the quality of Integrated Gradients explanations?**
 
 **Answer:** _To be filled_
@@ -3936,6 +4235,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 50
+- [ ] Done
 **What are future research directions for Integrated Gradients?**
 
 **Answer:** _To be filled_
@@ -3950,6 +4250,7 @@ Investigator Decision → Label Correction → Model Retraining
 # Counterfactual Explanations - Theory Questions
 
 ## Question 1
+- [ ] Done
 **What are counterfactual explanations in explainable AI?**
 
 **Answer:** _To be filled_
@@ -3957,6 +4258,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 2
+- [ ] Done
 **How do counterfactual explanations differ from other explanation methods?**
 
 **Answer:** _To be filled_
@@ -3964,6 +4266,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 3
+- [ ] Done
 **What is the mathematical formulation of counterfactual generation?**
 
 **Answer:** _To be filled_
@@ -3971,6 +4274,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 4
+- [ ] Done
 **What are the key properties of good counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -3978,6 +4282,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 5
+- [ ] Done
 **How do you measure proximity in counterfactual generation?**
 
 **Answer:** _To be filled_
@@ -3985,6 +4290,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 6
+- [ ] Done
 **What is the actionability constraint in counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -3992,6 +4298,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 7
+- [ ] Done
 **How do you generate counterfactuals for tabular data?**
 
 **Answer:** _To be filled_
@@ -3999,6 +4306,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 8
+- [ ] Done
 **What optimization methods are used for counterfactual generation?**
 
 **Answer:** _To be filled_
@@ -4006,6 +4314,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 9
+- [ ] Done
 **How do you handle categorical features in counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4013,6 +4322,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 10
+- [ ] Done
 **What is the diversity requirement in counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4020,6 +4330,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 11
+- [ ] Done
 **How do you ensure realism in generated counterfactuals?**
 
 **Answer:** _To be filled_
@@ -4027,6 +4338,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 12
+- [ ] Done
 **What are the computational challenges in counterfactual generation?**
 
 **Answer:** _To be filled_
@@ -4034,6 +4346,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 13
+- [ ] Done
 **How do you apply counterfactual explanations to image models?**
 
 **Answer:** _To be filled_
@@ -4041,6 +4354,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 14
+- [ ] Done
 **What is the sparsity constraint in counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4048,6 +4362,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 15
+- [ ] Done
 **How do you validate counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4055,6 +4370,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 16
+- [ ] Done
 **What are algorithmic recourse and counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4062,6 +4378,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 17
+- [ ] Done
 **How do you handle feature constraints in counterfactual generation?**
 
 **Answer:** _To be filled_
@@ -4069,6 +4386,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 18
+- [ ] Done
 **What is the difference between counterfactuals and adversarial examples?**
 
 **Answer:** _To be filled_
@@ -4076,6 +4394,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 19
+- [ ] Done
 **How do you generate multiple diverse counterfactuals?**
 
 **Answer:** _To be filled_
@@ -4083,6 +4402,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 20
+- [ ] Done
 **What are the fairness implications of counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4090,6 +4410,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 21
+- [ ] Done
 **How do you apply counterfactual explanations to text models?**
 
 **Answer:** _To be filled_
@@ -4097,6 +4418,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 22
+- [ ] Done
 **What is the causality aspect of counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4104,6 +4426,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle temporal constraints in counterfactual generation?**
 
 **Answer:** _To be filled_
@@ -4111,6 +4434,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 24
+- [ ] Done
 **What are generative models for counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4118,6 +4442,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 25
+- [ ] Done
 **How do you measure the cost of counterfactual changes?**
 
 **Answer:** _To be filled_
@@ -4125,6 +4450,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 26
+- [ ] Done
 **What is the relationship between counterfactuals and feature attribution?**
 
 **Answer:** _To be filled_
@@ -4132,6 +4458,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle immutable features in counterfactual generation?**
 
 **Answer:** _To be filled_
@@ -4139,6 +4466,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 28
+- [ ] Done
 **What are the scalability issues with counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4146,6 +4474,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 29
+- [ ] Done
 **How do you apply counterfactual explanations to ensemble models?**
 
 **Answer:** _To be filled_
@@ -4153,6 +4482,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 30
+- [ ] Done
 **What is the plausibility constraint in counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4160,6 +4490,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle feature interactions in counterfactual generation?**
 
 **Answer:** _To be filled_
@@ -4167,6 +4498,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 32
+- [ ] Done
 **What are the evaluation metrics for counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4174,6 +4506,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 33
+- [ ] Done
 **How do you communicate counterfactual explanations to users?**
 
 **Answer:** _To be filled_
@@ -4181,6 +4514,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 34
+- [ ] Done
 **What is the local vs. global nature of counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4188,6 +4522,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle uncertainty in counterfactual generation?**
 
 **Answer:** _To be filled_
@@ -4195,6 +4530,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 36
+- [ ] Done
 **What are the privacy concerns with counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4202,6 +4538,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 37
+- [ ] Done
 **How do you apply counterfactual explanations to time series models?**
 
 **Answer:** _To be filled_
@@ -4209,6 +4546,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 38
+- [ ] Done
 **What is the interpretability trade-off in counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4216,6 +4554,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle non-linear models in counterfactual generation?**
 
 **Answer:** _To be filled_
@@ -4223,6 +4562,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 40
+- [ ] Done
 **What are the philosophical foundations of counterfactual reasoning?**
 
 **Answer:** _To be filled_
@@ -4230,6 +4570,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 41
+- [ ] Done
 **How do you apply counterfactual explanations to recommendation systems?**
 
 **Answer:** _To be filled_
@@ -4237,6 +4578,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 42
+- [ ] Done
 **What is the stability of counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4244,6 +4586,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle multi-objective optimization in counterfactual generation?**
 
 **Answer:** _To be filled_
@@ -4251,6 +4594,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 44
+- [ ] Done
 **What are the legal and regulatory aspects of counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4258,6 +4602,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 45
+- [ ] Done
 **How do you apply counterfactual explanations to reinforcement learning?**
 
 **Answer:** _To be filled_
@@ -4265,6 +4610,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 46
+- [ ] Done
 **What is the relationship between counterfactuals and what-if analysis?**
 
 **Answer:** _To be filled_
@@ -4272,6 +4618,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle model updates in counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4279,6 +4626,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 48
+- [ ] Done
 **What are the cognitive aspects of counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4286,6 +4634,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 49
+- [ ] Done
 **How do you benchmark counterfactual explanation methods?**
 
 **Answer:** _To be filled_
@@ -4293,6 +4642,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 50
+- [ ] Done
 **What are future research directions in counterfactual explanations?**
 
 **Answer:** _To be filled_
@@ -4307,6 +4657,7 @@ Investigator Decision → Label Correction → Model Retraining
 # Explainable Ai Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What isExplainable AI (XAI), and why is it important?**
 
@@ -4315,6 +4666,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you explain the difference betweeninterpretableandexplainablemodels?**
 
@@ -4323,6 +4675,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 3
+- [ ] Done
 
 **How doesXAIrelate tomodel transparency, and why is it needed insensitive applications?**
 
@@ -4331,6 +4684,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 4
+- [ ] Done
 
 **What are some of the trade-offs betweenmodel accuracyandexplainability?**
 
@@ -4339,6 +4693,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 5
+- [ ] Done
 
 **What aremodel-agnostic methodsinXAI, and can you give an example?**
 
@@ -4347,6 +4702,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 6
+- [ ] Done
 
 **How domodel-specific methodsdiffer frommodel-agnostic methodsforexplainability?**
 
@@ -4355,6 +4711,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are the advantages and disadvantages of usingLIME (Local Interpretable Model-Agnostic Explanations)?**
 
@@ -4363,6 +4720,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 8
+- [ ] Done
 
 **Can you explain whatSHAP (Shapley Additive exPlanations)is and when it is used?**
 
@@ -4371,6 +4729,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 9
+- [ ] Done
 
 **What isfeature importance, and how can it help in explainingmodel predictions?**
 
@@ -4379,6 +4738,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain the concept ofDecision Treesin the context ofinterpretability.**
 
@@ -4387,6 +4747,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 11
+- [ ] Done
 
 **Describe the use ofCounterfactual ExplanationsinXAI.**
 
@@ -4395,6 +4756,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 12
+- [ ] Done
 
 **How canexplainabilitybe integrated into themachine learning model development lifecycle?**
 
@@ -4403,6 +4765,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 13
+- [ ] Done
 
 **How do you maintain the balance betweenexplainabilityanddata privacy?**
 
@@ -4411,6 +4774,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 14
+- [ ] Done
 
 **What are current research trends inXAI, and what future developments do you foresee?**
 
@@ -4419,6 +4783,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 15
+- [ ] Done
 
 **How doescausalityrelate toXAI, and why is it important?**
 
@@ -4427,6 +4792,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 16
+- [ ] Done
 
 **What are the limitations of currentXAI techniques, and how can they be addressed?**
 
@@ -4435,6 +4801,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain the concept ofglobal interpretabilityversuslocal interpretabilityinmachine learning models.**
 
@@ -4450,6 +4817,7 @@ Investigator Decision → Label Correction → Model Retraining
 # Explainable Ai Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **What are some challenges faced when trying to implementexplainabilityin AI?**
 
@@ -4458,6 +4826,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 2
+- [ ] Done
 
 **What are some considerations for implementingXAIinregulated industries?**
 
@@ -4466,6 +4835,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 3
+- [ ] Done
 
 **ImplementLIMEto explain the predictions of a classifier on a simple dataset.**
 
@@ -4474,6 +4844,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 4
+- [ ] Done
 
 **Write a function that computesShapley Valuesfor a single prediction in a small dataset.**
 
@@ -4482,6 +4853,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 5
+- [ ] Done
 
 **Visualizefeature importancesfor aRandomForestmodel trained on a sample dataset.**
 
@@ -4490,6 +4862,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 6
+- [ ] Done
 
 **Build alinear regression modeland interpret itscoefficientsusingPython.**
 
@@ -4498,6 +4871,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 7
+- [ ] Done
 
 **Create aPartial Dependence Plotusing aGradient Boosting Classifierand interpret the results.**
 
@@ -4506,6 +4880,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe how you would implementXAIfor acredit scoring model.**
 
@@ -4521,6 +4896,7 @@ Investigator Decision → Label Correction → Model Retraining
 # Explainable Ai Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How can thecoefficientsof alinear modelbe interpreted?**
 
@@ -4529,6 +4905,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 2
+- [ ] Done
 
 **What role does thePartial Dependence Plot (PDP)play inmodel interpretation?**
 
@@ -4537,6 +4914,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 3
+- [ ] Done
 
 **How can you use theActivation Maximizationtechnique inneural networksforinterpretability?**
 
@@ -4545,6 +4923,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you assess thequality of an explanationprovided by anXAI method?**
 
@@ -4553,6 +4932,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 5
+- [ ] Done
 
 **Imagine you are tasked with developing ahealthcare diagnostic tool. How wouldXAIfactor into your approach?**
 
@@ -4561,6 +4941,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 6
+- [ ] Done
 
 **What could be the potential risks of not usingXAIinautonomous vehicle technology?**
 
@@ -4576,6 +4957,7 @@ Investigator Decision → Label Correction → Model Retraining
 # Explainable Ai Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Discuss the potential impact ofexplainabilityon thetrust and adoptionof AI systems.**
 
@@ -4584,6 +4966,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss the role ofnatural language processingin generating explanations for AI predictions.**
 
@@ -4592,6 +4975,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 3
+- [ ] Done
 
 **How would you explain adeep learning model’s predictionsto anon-technical stakeholder?**
 
@@ -4600,6 +4984,7 @@ Investigator Decision → Label Correction → Model Retraining
 ---
 
 ## Question 4
+- [ ] Done
 
 **How would you approach building anXAI systemfor detectingfraudulent financial transactions?**
 

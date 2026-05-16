@@ -1,6 +1,7 @@
 # Mlops Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How docontainerizationandvirtualization technologiessupportMLOps practices?**
 
@@ -9,6 +10,7 @@
 ---
 
 ## Question 2
+- [ ] Done
 
 **What considerations are important when choosing acomputation resourcefor training machine learning models?**
 
@@ -17,6 +19,7 @@
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you automatemodel testingandvalidationin anMLOps pipeline?**
 
@@ -25,6 +28,7 @@
 ---
 
 ## Question 4
+- [ ] Done
 
 **How dofeature flagsplay into the deployment of new model features?**
 
@@ -33,6 +37,7 @@
 ---
 
 ## Question 5
+- [ ] Done
 
 **How can you ensure thereproducibilityof machine learning experiments?**
 
@@ -41,6 +46,7 @@
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do youdocumentandmanage the lifecycleof machine learning models?**
 
@@ -49,6 +55,7 @@
 ---
 
 ## Question 7
+- [ ] Done
 
 **How doprivacy lawsandregulationsaffectMLOps practices?**
 
@@ -57,6 +64,7 @@
 ---
 
 ## Question 8
+- [ ] Done
 
 **What measures can be put in place to ensure theethical useof machine learning models?**
 
@@ -65,6 +73,7 @@
 ---
 
 ## Question 9
+- [ ] Done
 
 **How would you design a scalable machine learning infrastructure?**
 
@@ -73,6 +82,7 @@
 ---
 
 ## Question 10
+- [ ] Done
 
 **Discuss the importance of data governance and complianceinMLOps.**
 
@@ -81,6 +91,7 @@
 ---
 
 ## Question 11
+- [ ] Done
 
 **What role doesedge computingplay in modernMLOps, and how can one optimize ML models foredge deployment?**
 

@@ -1,6 +1,7 @@
 # Logistic Regression Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **How would you implement class-weighting in logistic regression?**
 
@@ -53,6 +54,7 @@ Use `class_weight='balanced'` for automatic weight calculation. For business-dri
 ---
 
 ## Question 2
+- [ ] Done
 
 **Code a basic logistic regression model from scratch using Numpy.**
 
@@ -144,6 +146,7 @@ Key components to explain: sigmoid function, binary cross-entropy loss, gradient
 ---
 
 ## Question 3
+- [ ] Done
 
 **Implement data standardization for a logistic regression model in Python.**
 
@@ -213,6 +216,7 @@ Always fit scaler on training data only, then transform both train and test. Usi
 ---
 
 ## Question 4
+- [ ] Done
 
 **Write a Python function to calculate the AUC-ROC curve for a logistic regression model.**
 
@@ -317,6 +321,7 @@ AUC-ROC measures ranking ability across all thresholds. An AUC of 0.5 means rand
 ---
 
 ## Question 5
+- [ ] Done
 
 **Given a dataset with categorical features, perform one-hot encoding and fit a logistic regression model using scikit-learn.**
 
@@ -401,6 +406,7 @@ Use `drop='first'` to avoid multicollinearity. The dropped category becomes the 
 ---
 
 ## Question 6
+- [ ] Done
 
 **Create a Python script that tunes the regularization strength (C value) for a logistic regression model using cross-validation.**
 
@@ -490,6 +496,7 @@ C is the inverse of regularization strength (higher C = less regularization). Us
 ---
 
 ## Question 7
+- [ ] Done
 
 **Write a Python function to interpret and output the model coefficients of a logistic regression in terms of odds ratios.**
 
@@ -603,6 +610,7 @@ Odds ratio of 1.5 means "50% increase in odds for one unit increase in the featu
 ---
 
 ## Question 8
+- [ ] Done
 
 **Develop a logistic regression model that handles class imbalance with weighted classes in scikit-learn.**
 
@@ -709,6 +717,7 @@ for name, model in models.items():
 ---
 
 ## Question 9
+- [ ] Done
 
 **Implement a multi-class logistic regression model in TensorFlow/Keras.**
 
@@ -847,6 +856,7 @@ A single Dense layer with softmax activation is mathematically equivalent to mul
 ---
 
 ## Question 10
+- [ ] Done
 
 **Code a Python function to perform stepwise regression using the logistic regression model.**
 
@@ -1023,6 +1033,7 @@ Stepwise selection can overfit and doesn't handle multicollinearity well. Prefer
 ---
 
 ## Question 11
+- [ ] Done
 
 **Implement a logistic regression model with polynomial features using scikit-learn's Pipeline.**
 

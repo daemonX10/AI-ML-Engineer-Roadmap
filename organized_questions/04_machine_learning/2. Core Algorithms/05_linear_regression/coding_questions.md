@@ -1,6 +1,7 @@
 # Linear Regression Interview Questions - Coding Questions
 
 ## Question 1: Implement simple linear regression from scratch in Python
+- [ ] Done
 
 ### Answer
 
@@ -62,6 +63,7 @@ print(f"Slope: {model.slope:.4f}, Intercept: {model.intercept:.4f}")
 ---
 
 ## Question 2: Implement a multiple linear regression model using NumPy
+- [ ] Done
 
 ### Answer
 
@@ -116,6 +118,7 @@ print(f"Slopes: {model.coefficients[1:]}")
 ---
 
 ## Question 3: Write a Python function for gradient descent in linear regression
+- [ ] Done
 
 ### Answer
 
@@ -183,6 +186,7 @@ print(f"Bias: {bias:.4f}")
 ---
 
 ## Question 4: Create a Python script to calculate VIF for each predictor
+- [ ] Done
 
 ### Answer
 
@@ -249,6 +253,7 @@ for _, row in vif_results.iterrows():
 ---
 
 ## Question 5: Code Ridge regression using scikit-learn
+- [ ] Done
 
 ### Answer
 
@@ -310,6 +315,7 @@ print(f"Best alpha: {ridge_cv.alpha_}")
 ---
 
 ## Question 6: Use pandas to load and prepare data for linear regression
+- [ ] Done
 
 ### Answer
 
@@ -384,6 +390,7 @@ print("\nTraining shape:", X_train.shape)
 ---
 
 ## Question 7: Plot residual diagrams and analyze model fit
+- [ ] Done
 
 ### Answer
 
@@ -449,6 +456,7 @@ plot_residuals(y_nonlinear.flatten(), y_pred_bad.flatten(), "Bad Fit - Curved Pa
 ---
 
 ## Question 8: Write a function to compute RMSE, MAE, and R-squared
+- [ ] Done
 
 ### Answer
 
@@ -511,6 +519,7 @@ print(f"R2: {r2_score(y_true, y_pred):.4f}")
 ---
 
 ## Question 9: Perform polynomial regression and plot results
+- [ ] Done
 
 ### Answer
 
@@ -566,6 +575,7 @@ print(f"Coefficients: {poly_model.named_steps['linear'].coef_}")
 ---
 
 ## Question 10: Perform cross-validation on linear regression using scikit-learn
+- [ ] Done
 
 ### Answer
 
@@ -618,6 +628,7 @@ Mean R²: 0.9287 (+/- 0.0234)
 ---
 
 ## Question 11: Implement linear regression to predict Customer Lifetime Value
+- [ ] Done
 
 ### Answer
 
@@ -682,6 +693,7 @@ for name, coef in zip(X.columns, model.coef_):
 ---
 
 ## Question 12: Develop regularized regression for healthcare costs prediction
+- [ ] Done
 
 ### Answer
 
@@ -755,6 +767,7 @@ print(f"Test RMSE: {np.sqrt(mean_squared_error(y_test, y_pred)):.2f}")
 ---
 
 ## Question 13: Perform time-series linear regression on stock data
+- [ ] Done
 
 ### Answer
 
@@ -817,6 +830,7 @@ print(f"Naive RMSE (yesterday's price): {naive_rmse:.4f}")
 ---
 
 ## Question 14: Tune Elastic Net hyperparameters using GridSearch
+- [ ] Done
 
 ### Answer
 
@@ -882,6 +896,7 @@ print(f"Non-zero coefficients: {np.sum(best_model.coef_ != 0)}/{len(best_model.c
 ---
 
 ## Question 15: Analyze polynomial complexity trade-off
+- [ ] Done
 
 ### Answer
 

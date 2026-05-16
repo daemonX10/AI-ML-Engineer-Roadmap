@@ -1,6 +1,7 @@
 # Cluster Analysis Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement the K-means clustering algorithm from scratch in Python.**
 
@@ -55,6 +56,7 @@ labels, centroids = kmeans_scratch(X, k=4)
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a Python script that uses hierarchical clustering to group data and visualizes the resulting dendrogram.**
 
@@ -100,6 +102,7 @@ labels = fcluster(Z, t=4, criterion='maxclust')
 ---
 
 ## Question 3
+- [ ] Done
 
 **Use scikit-learn to perform DBSCAN clustering on a given dataset and plot the clusters.**
 
@@ -159,6 +162,7 @@ print(f"Noise points: {sum(labels == -1)}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Create a Python function to calculate silhouette scores for different numbers of clusters in a dataset.**
 
@@ -215,6 +219,7 @@ optimal_k, scores = find_optimal_k_silhouette(X, max_k=8)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Implement a Gaussian Mixture Model clustering with scikit-learn and visualize the results.**
 
@@ -280,6 +285,7 @@ print(f"Sample probabilities:\n{probs[:3]}")
 ---
 
 ## Question 6
+- [ ] Done
 
 **Develop a Python script to run and compare multiple clustering algorithms on the same dataset.**
 
@@ -345,6 +351,7 @@ plt.show()
 ---
 
 ## Question 7
+- [ ] Done
 
 **Write a Python function to normalize and scale data before clustering.**
 
@@ -410,6 +417,7 @@ print("\nScaled:\n", X_scaled)
 ---
 
 ## Question 8
+- [ ] Done
 
 **Implement a custom distance metric and use it in a clustering algorithm within scikit-learn.**
 

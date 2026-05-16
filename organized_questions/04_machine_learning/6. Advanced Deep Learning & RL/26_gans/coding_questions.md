@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: Implement a simple GAN model in TensorFlow/Keras to generate new samples from a given dataset
+- [ ] Done
 
 ### Pipeline
 1. Define Generator: noise → fake image
@@ -115,6 +116,7 @@ samples = generate_samples(10)
 ---
 
 ## Question 2: Using PyTorch, code a discriminator network that can classify between real and generated images
+- [ ] Done
 
 ### Pipeline
 1. Define conv layers for downsampling
@@ -207,6 +209,7 @@ def train_discriminator_step(real_images, fake_images):
 ---
 
 ## Question 3: Create a Python script using NumPy to visualize the loss of the generator and discriminator during training
+- [ ] Done
 
 ### Pipeline
 1. Store losses during training
@@ -336,6 +339,7 @@ for issue in issues:
 ---
 
 ## Question 4: Code a DCGAN in TensorFlow/Keras and train it on a dataset of images to generate new ones
+- [ ] Done
 
 ### Pipeline
 1. Build Generator with transposed convolutions
@@ -488,6 +492,7 @@ train_dcgan(dataset, epochs=100)
 ---
 
 ## Question 5: Implement a WGAN with gradient penalty in PyTorch and demonstrate its stability compared to standard GANs
+- [ ] Done
 
 ### Pipeline
 1. Build Generator and Critic (not Discriminator)
@@ -654,6 +659,7 @@ generator, g_losses, c_losses = train_wgan_gp(dataloader, epochs=50)
 ---
 
 ## Question 6: Build a Conditional GAN in TensorFlow/Keras to generate images conditioned on class labels
+- [ ] Done
 
 ### Pipeline
 1. Embed class labels
@@ -797,6 +803,7 @@ for digit in range(10):
 ---
 
 ## Question 7: Write a script to monitor and report mode collapse during GAN training
+- [ ] Done
 
 ### Pipeline
 1. Track generated sample diversity metrics
@@ -945,6 +952,7 @@ Status: {'COLLAPSED' if self.diversity_history[-1] < np.mean(self.diversity_hist
 ---
 
 ## Question 8: Develop a CycleGAN in PyTorch for unpaired image-to-image translation
+- [ ] Done
 
 ### Pipeline
 1. Build two Generators (A→B, B→A)
@@ -1169,6 +1177,7 @@ class CycleGAN:
 ---
 
 ## Question 9: Implement a GAN using TensorFlow/Keras capable of generating high-resolution images of human faces (inspired by StyleGAN)
+- [ ] Done
 
 ### Pipeline
 1. Build Mapping Network (z → w)
@@ -1351,6 +1360,7 @@ def train_step(real_images):
 ---
 
 ## Question 10: Code an example of semi-supervised learning with GANs, using a limited number of labeled samples
+- [ ] Done
 
 ### Pipeline
 1. Modify Discriminator: K classes + 1 (fake)

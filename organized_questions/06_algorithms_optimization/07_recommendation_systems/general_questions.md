@@ -1,6 +1,7 @@
 # Recommendation Systems Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do cold start problems impact recommendation systems and how can they be mitigated?**
 
@@ -61,6 +62,7 @@ def recommend(user):
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do matrix factorization techniques work in recommendation engines?**
 
@@ -117,6 +119,7 @@ $$\min_{P,Q} \sum_{(u,i) \in \text{observed}} (r_{ui} - p_u \cdot q_i)^2 + \lamb
 ---
 
 ## Question 3
+- [ ] Done
 
 **What kind of data preprocessing is typically required when building a recommendation system?**
 
@@ -175,6 +178,7 @@ item_encoder = LabelEncoder().fit(df['item_id'])
 ---
 
 ## Question 4
+- [ ] Done
 
 **What strategies can be used to evaluate the performance of a recommendation system?**
 
@@ -227,6 +231,7 @@ item_encoder = LabelEncoder().fit(df['item_id'])
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do recommendation systems handle changing user preferences over time?**
 
@@ -279,6 +284,7 @@ weighted_rating = rating * weight
 ---
 
 ## Question 6
+- [ ] Done
 
 **How can content-based recommendation systems utilize natural language processing (NLP)?**
 
@@ -335,6 +341,7 @@ similarities = cosine_similarity(user_profile, item_vectors)
 ---
 
 ## Question 7
+- [ ] Done
 
 **How are Bayesian networks used in recommendation systems?**
 
@@ -394,6 +401,7 @@ User Demographics → Genre Preference
 ---
 
 ## Question 8
+- [ ] Done
 
 **Outline a strategy to improve movie recommendations on a platform with diverse user demographics.**
 
@@ -448,6 +456,7 @@ def hybrid_recommend(user):
 ---
 
 ## Question 9
+- [ ] Done
 
 **Present an approach for a recommendation system in the educational technology sector.**
 
@@ -512,6 +521,7 @@ def recommend_next(learner):
 ---
 
 ## Question 10
+- [ ] Done
 
 **What roles do multi-armed bandit algorithms play in recommendation systems?**
 
@@ -574,6 +584,7 @@ Examples: LinUCB, Neural Bandits
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explore the use of graph-based recommendation systems and the potential advantages they offer.**
 

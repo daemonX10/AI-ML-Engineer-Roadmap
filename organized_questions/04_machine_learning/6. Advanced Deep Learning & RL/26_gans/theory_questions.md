@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: What are Generative Adversarial Networks (GANs)?
+- [ ] Done
 
 ### Definition
 GANs are a class of generative models consisting of two neural networks (Generator and Discriminator) that compete in a zero-sum game. The Generator creates fake samples to fool the Discriminator, while the Discriminator tries to distinguish real data from fake. Through this adversarial process, the Generator learns to produce realistic data.
@@ -35,6 +36,7 @@ Where:
 ---
 
 ## Question 2: Describe the architecture of a basic GAN
+- [ ] Done
 
 ### Definition
 A basic GAN consists of two feedforward neural networks: a Generator that transforms random noise into synthetic samples, and a Discriminator that classifies inputs as real or fake. Both are trained simultaneously in an adversarial manner.
@@ -73,6 +75,7 @@ Input Image → Conv → Conv → Flatten → Dense → Sigmoid (real/fake proba
 ---
 
 ## Question 3: Explain the roles of the Generator and Discriminator in a GAN
+- [ ] Done
 
 ### Definition
 The **Generator** learns to map random noise to realistic data samples. The **Discriminator** learns to distinguish real data from generated fakes. Their adversarial interplay drives both networks toward improvement.
@@ -108,6 +111,7 @@ Discriminator acts as a "learned loss function" - it provides the training signa
 ---
 
 ## Question 4: What is mode collapse in GANs, and why is it problematic?
+- [ ] Done
 
 ### Definition
 Mode collapse occurs when the Generator learns to produce only a limited variety of outputs, ignoring other modes of the data distribution. Instead of capturing full diversity, it generates similar or identical samples repeatedly.
@@ -148,6 +152,7 @@ Mode collapse occurs when the Generator learns to produce only a limited variety
 ---
 
 ## Question 5: Describe the concept of Nash Equilibrium in the context of GANs
+- [ ] Done
 
 ### Definition
 Nash Equilibrium in GANs is the theoretical optimal state where neither Generator nor Discriminator can improve by changing strategy alone. At equilibrium, G generates perfect samples ($p_g = p_{data}$) and D outputs 0.5 for all inputs (cannot distinguish).
@@ -182,6 +187,7 @@ Mention that while Nash Equilibrium is the theoretical goal, practical GAN train
 ---
 
 ## Question 6: What are some challenges in training GANs?
+- [ ] Done
 
 ### Definition
 GAN training is notoriously difficult due to the adversarial nature of optimization, leading to instability, mode collapse, and convergence issues that require careful architectural and training choices.
@@ -221,6 +227,7 @@ GAN training is notoriously difficult due to the adversarial nature of optimizat
 ---
 
 ## Question 7: Explain the idea behind Conditional GANs (cGANs) and their uses
+- [ ] Done
 
 ### Definition
 Conditional GANs extend standard GANs by conditioning both Generator and Discriminator on additional information (class labels, attributes, or other data), enabling controlled generation of specific types of outputs.
@@ -273,6 +280,7 @@ def discriminator(image, label):
 ---
 
 ## Question 8: What are Deep Convolutional GANs (DCGANs) and how do they differ from basic GANs?
+- [ ] Done
 
 ### Definition
 DCGANs are a class of GANs that use convolutional and transposed convolutional layers instead of fully connected layers, following specific architectural guidelines that significantly improve training stability and image quality.
@@ -324,6 +332,7 @@ Image (64x64x3) → Conv (32x32x64) → LeakyReLU
 ---
 
 ## Question 9: Describe the concept of CycleGAN and its application to image-to-image translation
+- [ ] Done
 
 ### Definition
 CycleGAN enables unpaired image-to-image translation by using two Generator-Discriminator pairs with a cycle consistency loss, allowing transformation between domains without requiring paired training examples.
@@ -366,6 +375,7 @@ Backward: Zebra → F → "Horse" → G → Reconstructed Zebra
 ---
 
 ## Question 10: Explain how GANs can be used for super-resolution imaging (SRGANs)
+- [ ] Done
 
 ### Definition
 SRGAN (Super-Resolution GAN) uses adversarial training to upscale low-resolution images to high-resolution, producing photo-realistic details that traditional methods cannot achieve.
@@ -418,6 +428,7 @@ $$\mathcal{L}_{content} = ||VGG(I^{HR}) - VGG(G(I^{LR}))||_2^2$$
 ---
 
 ## Question 11: What are StyleGANs and how do they manage the generation of high-resolution images?
+- [ ] Done
 
 ### Definition
 StyleGAN introduces a style-based generator architecture that enables fine-grained control over generated image attributes at different scales, producing unprecedented quality high-resolution images.
@@ -467,6 +478,7 @@ $$AdaIN(x, y) = y_s \frac{x - \mu(x)}{\sigma(x)} + y_b$$
 ---
 
 ## Question 12: How does the GAN framework support tasks like text-to-image synthesis?
+- [ ] Done
 
 ### Definition
 Text-to-image GANs condition the Generator on text embeddings to generate images matching textual descriptions. The challenge is bridging the semantic gap between language and visual features.
@@ -519,6 +531,7 @@ Noise z → [Concatenate] → Generator → Image
 ---
 
 ## Question 13: Describe the importance of the latent space in GANs
+- [ ] Done
 
 ### Definition
 The latent space is the low-dimensional space from which the Generator samples random vectors (z) to produce outputs. Its structure determines the diversity, quality, and controllability of generated samples.
@@ -568,6 +581,7 @@ for alpha in [0, 0.25, 0.5, 0.75, 1.0]:
 ---
 
 ## Question 14: What are some common pitfalls when training GANs on small datasets?
+- [ ] Done
 
 ### Definition
 Training GANs on small datasets leads to overfitting, mode collapse, and discriminator memorization, requiring specific techniques like data augmentation and regularization to achieve reasonable results.
@@ -618,6 +632,7 @@ def train_step(real_images, z):
 ---
 
 ## Question 15: Explain any regularization techniques that can be applied to GAN training
+- [ ] Done
 
 ### Definition
 Regularization in GANs constrains network capacity and training dynamics to improve stability, prevent overfitting, and encourage convergence. Techniques target either architecture or training process.
@@ -663,6 +678,7 @@ Used in StyleGAN for stable high-resolution training.
 ---
 
 ## Question 16: Describe a scenario where GANs can be used to generate artificial voices for virtual assistants
+- [ ] Done
 
 ### Scenario
 A company wants to create unique, natural-sounding voices for their virtual assistant without hiring voice actors or licensing existing voices.
@@ -710,6 +726,7 @@ Text → Text Encoder → Acoustic Model (GAN) → Mel Spectrogram → Vocoder �
 ---
 
 ## Question 17: Explain how GANs can play a role in privacy-preserving data release
+- [ ] Done
 
 ### Definition
 GANs can generate synthetic data that preserves statistical properties of sensitive datasets without exposing individual records, enabling data sharing while maintaining privacy.
@@ -759,6 +776,7 @@ Provides mathematical privacy guarantees (ε-differential privacy).
 ---
 
 ## Question 18: How does the concept of transfer learning apply to GANs, especially between different domains or datasets?
+- [ ] Done
 
 ### Definition
 Transfer learning in GANs involves using knowledge from a pre-trained GAN (trained on large dataset) to improve training on a new, potentially smaller target dataset, reducing training time and data requirements.
@@ -814,6 +832,7 @@ for i, layer in enumerate(generator.layers):
 ---
 
 ## Question 19: What are the ongoing challenges researchers face when working with GANs?
+- [ ] Done
 
 ### Definition
 Despite significant progress, GANs still face fundamental challenges in training stability, evaluation, mode coverage, and computational requirements that drive ongoing research.

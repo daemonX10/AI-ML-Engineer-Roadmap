@@ -1,6 +1,7 @@
 # XGBoost Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What is XGBoost and why is it considered an effective machine learning algorithm?**
 
@@ -43,6 +44,7 @@ Where:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Can you explain the differences between gradient boosting machines (GBM) and XGBoost?**
 
@@ -88,6 +90,7 @@ Where $G$ = gradient sum, $H$ = Hessian sum.
 ---
 
 ## Question 3
+- [ ] Done
 
 **How does XGBoost handle missing or null values in the dataset?**
 
@@ -144,6 +147,7 @@ pred = model.predict(X_test)  # Handles missing in prediction too
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is meant by 'regularization' in XGBoost and how does it help in preventing overfitting?**
 
@@ -208,6 +212,7 @@ model = xgb.XGBClassifier(
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does XGBoost differ from Random Forests?**
 
@@ -258,6 +263,7 @@ $$\hat{f}(x) = \sum_{m=1}^{M} \eta \cdot h_m(x) \quad \text{(additive)}$$
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain the concept of gradient boosting. How does it work in the context of XGBoost?**
 
@@ -313,6 +319,7 @@ $$\text{Gain} = \frac{1}{2}\left[\frac{G_L^2}{H_L+\lambda} + \frac{G_R^2}{H_R+\l
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are the loss functions used in XGBoost for regression and classification problems?**
 
@@ -383,6 +390,7 @@ model = xgb.XGBRegressor(objective=custom_loss)
 ---
 
 ## Question 8
+- [ ] Done
 
 **How does XGBoost use tree pruning and why is it important?**
 
@@ -445,6 +453,7 @@ model = xgb.XGBClassifier(
 ---
 
 ## Question 9
+- [ ] Done
 
 **Describe the role of shrinkage (learning rate) in XGBoost.**
 

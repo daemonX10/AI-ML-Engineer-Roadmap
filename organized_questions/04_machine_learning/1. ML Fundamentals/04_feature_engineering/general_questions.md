@@ -1,6 +1,7 @@
 # Feature Engineering Interview Questions - General Questions
 
 ## Question 1: List different types of features commonly used in machine learning.
+- [ ] Done
 
 ### Answer
 
@@ -57,6 +58,7 @@ text_features = [
 ---
 
 ## Question 2: Why is it important to understand domain knowledge while performing feature engineering?
+- [ ] Done
 
 ### Answer
 
@@ -115,6 +117,7 @@ df['monetary'] = df.groupby('customer_id')['amount'].transform('sum')
 ---
 
 ## Question 3: How do you handle categorical variables in a dataset?
+- [ ] Done
 
 ### Answer
 
@@ -176,6 +179,7 @@ encoder = OneHotEncoder(handle_unknown='ignore', sparse=False)
 ---
 
 ## Question 4: How can you use mutual information to select relevant features?
+- [ ] Done
 
 ### Answer
 
@@ -243,6 +247,7 @@ mi_scores_avg = np.mean(mi_scores_list, axis=0)
 ---
 
 ## Question 5: How do you deal with missing values during feature engineering?
+- [ ] Done
 
 ### Answer
 
@@ -323,6 +328,7 @@ preprocessor = ColumnTransformer([
 ---
 
 ## Question 6: How do you detect and treat outliers during feature engineering?
+- [ ] Done
 
 ### Answer
 
@@ -397,6 +403,7 @@ df_scaled = scaler.fit_transform(df[['amount']])
 ---
 
 ## Question 7: How do you evaluate the effectiveness of your engineered features?
+- [ ] Done
 
 ### Answer
 
@@ -464,6 +471,7 @@ print(f"p-value: {p_value:.4f}")
 ---
 
 ## Question 8: How do you handle time-series data in feature engineering?
+- [ ] Done
 
 ### Answer
 
@@ -542,6 +550,7 @@ df['rolling_mean'] = df['value'].rolling(7).mean().shift(1)
 ---
 
 ## Question 9: How can you use domain knowledge to create interaction features?
+- [ ] Done
 
 ### Answer
 
@@ -620,6 +629,7 @@ feature_names = poly.get_feature_names_out(X.columns)
 ---
 
 ## Question 10: Can you use genetic algorithms for feature engineering? If yes, how?
+- [ ] Done
 
 ### Answer
 
@@ -739,6 +749,7 @@ print(f"Selected {len(selected_cols)} features with score {best_score:.4f}")
 ---
 
 ## Question 11: How would you balance the trade-off between overfitting and underfitting while engineering features?
+- [ ] Done
 
 ### Answer
 

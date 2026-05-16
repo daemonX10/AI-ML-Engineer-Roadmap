@@ -3,6 +3,7 @@
 ## Core Questions
 
 ## Question 1
+- [ ] Done
 **What is the encoder-decoder architecture and how does it enable sequence-to-sequence learning?**
 
 **Answer:**
@@ -82,6 +83,7 @@ class Seq2Seq(nn.Module):
 ---
 
 ## Question 2
+- [ ] Done
 **Explain the attention mechanism in seq2seq models. Why was it a breakthrough?**
 
 **Answer:**
@@ -168,6 +170,7 @@ class DecoderWithAttention(nn.Module):
 ---
 
 ## Question 3
+- [ ] Done
 **What is the Transformer architecture? Explain self-attention and multi-head attention.**
 
 **Answer:**
@@ -254,6 +257,7 @@ class MultiHeadAttention(nn.Module):
 ---
 
 ## Question 4
+- [ ] Done
 **What is beam search decoding and how does it compare to greedy and sampling methods?**
 
 **Answer:**
@@ -351,6 +355,7 @@ def sample_decode(model, src, temperature=1.0, top_p=0.9):
 ---
 
 ## Question 5
+- [ ] Done
 **Explain BLEU score and its limitations for evaluating machine translation.**
 
 **Answer:**
@@ -434,6 +439,7 @@ print(f"SacreBLEU: {sacre_score.score:.2f}")
 ---
 
 ## Question 6
+- [ ] Done
 **What is the difference between extractive and abstractive summarization?**
 
 **Answer:**
@@ -517,6 +523,7 @@ print(summary[0]['summary_text'])
 ---
 
 ## Question 7
+- [ ] Done
 **How does reading comprehension QA (SQuAD-style) differ from open-domain QA?**
 
 **Answer:**
@@ -602,6 +609,7 @@ class OpenDomainQA:
 ---
 
 ## Question 8
+- [ ] Done
 **What is retrieval-augmented generation (RAG) and why is it important for QA?**
 
 **Answer:**
@@ -693,6 +701,7 @@ Answer:"""
 ---
 
 ## Question 9
+- [ ] Done
 **Explain the teacher forcing technique in training seq2seq models.**
 
 **Answer:**
@@ -794,6 +803,7 @@ for epoch in range(num_epochs):
 ---
 
 ## Question 10
+- [ ] Done
 **What are the key evaluation metrics for summarization (ROUGE, BERTScore, factual consistency)?**
 
 **Answer:**
@@ -886,6 +896,7 @@ def qa_factual_check(source, summary):
 ## Interview Questions
 
 ## Question 11
+- [ ] Done
 **How do you handle sequence generation for tasks with extreme input/output length disparities?**
 
 **Answer:**
@@ -965,6 +976,7 @@ def generate_with_length_control(text, target_length):
 ---
 
 ## Question 12
+- [ ] Done
 **What techniques prevent repetition and improve diversity in text generation?**
 
 **Answer:**
@@ -1060,6 +1072,7 @@ def generate_with_ngram_block(model, input_ids, max_len, n=3):
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement controllable text generation (style, length, tone)?**
 
 **Answer:**
@@ -1177,6 +1190,7 @@ def guided_decoding(model, tokenizer, prompt, attribute_classifier, target_class
 ---
 
 ## Question 14
+- [ ] Done
 **What are the challenges of machine translation for low-resource language pairs?**
 
 **Answer:**
@@ -1261,6 +1275,7 @@ def back_translate(texts, src_lang, pivot_lang):
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle domain adaptation in neural machine translation?**
 
 **Answer:**
@@ -1359,6 +1374,7 @@ medical_translation = domain_translate(
 ---
 
 ## Question 16
+- [ ] Done
 **What techniques work best for real-time/simultaneous machine translation?**
 
 **Answer:**
@@ -1469,6 +1485,7 @@ class AdaptiveSimultaneousNMT:
 ---
 
 ## Question 17
+- [ ] Done
 **How do you preserve named entities and technical terms during translation?**
 
 **Answer:**
@@ -1581,6 +1598,7 @@ def translate_with_constraints(text, model, tokenizer, forced_terms):
 ---
 
 ## Question 18
+- [ ] Done
 **What is back-translation and how does it help with data augmentation for NMT?**
 
 **Answer:**
@@ -1685,6 +1703,7 @@ def back_translate_with_sampling(texts, model, tokenizer, num_samples=3):
 ---
 
 ## Question 19
+- [ ] Done
 **How do multilingual translation models (mBART, M2M-100) work?**
 
 **Answer:**
@@ -1777,6 +1796,7 @@ nllb_tokenizer = AutoTokenizer.from_pretrained('facebook/nllb-200-distilled-600M
 ---
 
 ## Question 20
+- [ ] Done
 **What approaches handle idiomatic expressions and cultural references in translation?**
 
 **Answer:**
@@ -1887,6 +1907,7 @@ adapted = adapt_cultural_reference(text, "American", "British")
 ---
 
 ## Question 21
+- [ ] Done
 **How do you design QA systems that handle multi-hop reasoning across documents?**
 
 **Answer:**
@@ -2001,6 +2022,7 @@ class GraphMultiHopQA:
 ---
 
 ## Question 22
+- [ ] Done
 **What techniques help QA systems know when they don't know the answer?**
 
 **Answer:**
@@ -2096,6 +2118,7 @@ class EnsembleQA:
 ---
 
 ## Question 23
+- [ ] Done
 **How do you implement conversational QA with context tracking across turns?**
 
 **Answer:**
@@ -2198,6 +2221,7 @@ Assistant:"""
 ---
 
 ## Question 24
+- [ ] Done
 **What is the role of knowledge graphs in question answering systems?**
 
 **Answer:**
@@ -2304,6 +2328,7 @@ Answer:"""
 ---
 
 ## Question 25
+- [ ] Done
 **How do you handle questions requiring numerical reasoning or table understanding?**
 
 **Answer:**
@@ -2408,6 +2433,7 @@ question = "What was the total sales in January?"
 ---
 
 ## Question 26
+- [ ] Done
 **What is dense passage retrieval (DPR) and how does it improve open-domain QA?**
 
 **Answer:**
@@ -2493,6 +2519,7 @@ results = retrieve("What is the capital of France?")
 ---
 
 ## Question 27
+- [ ] Done
 **How do you balance faithfulness vs fluency in abstractive summarization?**
 
 **Answer:**
@@ -2595,6 +2622,7 @@ def generate_faithful(model, tokenizer, source, max_length):
 ---
 
 ## Question 28
+- [ ] Done
 **What is the hallucination problem in summarization and how do you mitigate it?**
 
 **Answer:**
@@ -2706,6 +2734,7 @@ class FactualSummarizer:
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement query-focused summarization for specific information needs?**
 
 **Answer:**
@@ -2816,6 +2845,7 @@ summary = extractor.summarize(document, query)
 ---
 
 ## Question 30
+- [ ] Done
 **What techniques work for multi-document summarization with conflicting information?**
 
 **Answer:**
@@ -2933,6 +2963,7 @@ def summarize_with_conflicts(documents, summarizer, nli_model):
 ---
 
 ## Question 31
+- [ ] Done
 **How do you control summary length while maintaining coherence and coverage?**
 
 **Answer:**
@@ -3043,6 +3074,7 @@ Expanded:"""
 ---
 
 ## Question 32
+- [ ] Done
 **What is copy mechanism in seq2seq models and when is it useful?**
 
 **Answer:**
@@ -3147,6 +3179,7 @@ class PointerGeneratorNetwork(nn.Module):
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement knowledge distillation for compressing large generation models?**
 
 **Answer:**
@@ -3274,6 +3307,7 @@ def distill_train_step(student, teacher, batch, optimizer, kd_loss_fn):
 ---
 
 ## Question 34
+- [ ] Done
 **What is nucleus (top-p) sampling and how does it improve generation quality?**
 
 **Answer:**
@@ -3392,6 +3426,7 @@ output = model.generate(
 ---
 
 ## Question 35
+- [ ] Done
 **How do you evaluate factual consistency in generated text?**
 
 **Answer:**
@@ -3512,6 +3547,7 @@ def evaluate_factual_consistency(source, generated):
 ---
 
 ## Question 36
+- [ ] Done
 **What is curriculum learning and how does it help train seq2seq models?**
 
 **Answer:**
@@ -3631,6 +3667,7 @@ class CompetenceCurriculum:
 ---
 
 ## Question 37
+- [ ] Done
 **How do you handle code generation and code summarization tasks?**
 
 **Answer:**
@@ -3742,6 +3779,7 @@ def codex_generate(prompt):
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques improve translation quality for morphologically rich languages?**
 
 **Answer:**
@@ -3852,6 +3890,7 @@ spm.SentencePieceTrainer.train(
 ---
 
 ## Question 39
+- [ ] Done
 **How do you implement hybrid extractive-abstractive summarization?**
 
 **Answer:**
@@ -3973,6 +4012,7 @@ print(summary)
 ---
 
 ## Question 40
+- [ ] Done
 **What is cross-lingual summarization and what challenges does it present?**
 
 **Answer:**
@@ -4068,6 +4108,7 @@ print(english_summary)
 ---
 
 ## Question 41
+- [ ] Done
 **How do you handle long document summarization that exceeds context limits?**
 
 **Answer:**
@@ -4179,6 +4220,7 @@ class LongformerSummarizer:
 ---
 
 ## Question 42
+- [ ] Done
 **What is the exposure bias problem in seq2seq training and how do you address it?**
 
 **Answer:**
@@ -4280,6 +4322,7 @@ class RLFineTuning:
 ---
 
 ## Question 43
+- [ ] Done
 **How do you implement real-time QA with low latency requirements?**
 
 **Answer:**
@@ -4387,6 +4430,7 @@ model = ORTModelForQuestionAnswering.from_pretrained(
 ---
 
 ## Question 44
+- [ ] Done
 **What role do pre-trained language models (T5, BART, GPT) play in text generation tasks?**
 
 **Answer:**
@@ -4471,6 +4515,7 @@ def gpt_generate(prompt):
 ---
 
 ## Question 45
+- [ ] Done
 **How do you fine-tune large language models for specific generation tasks efficiently (LoRA, adapters)?**
 
 **Answer:**
@@ -4563,6 +4608,7 @@ model = AutoModelForCausalLM.from_pretrained(
 ---
 
 ## Question 46
+- [ ] Done
 **What is RLHF (Reinforcement Learning from Human Feedback) and how does it improve generation?**
 
 **Answer:**
@@ -4664,6 +4710,7 @@ def ppo_step(ppo_trainer, reward_model, prompts):
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle bias and fairness issues in text generation systems?**
 
 **Answer:**
@@ -4782,6 +4829,7 @@ def fair_generation(model, prompt):
 ---
 
 ## Question 48
+- [ ] Done
 **What are the key differences between autoregressive and non-autoregressive generation?**
 
 **Answer:**
@@ -4894,6 +4942,7 @@ class IterativeNAR(nn.Module):
 ---
 
 ## Question 49
+- [ ] Done
 **How do you build production-ready generation systems (caching, batching, optimization)?**
 
 **Answer:**
@@ -5040,6 +5089,7 @@ class SpeculativeDecoder:
 ---
 
 ## Question 50
+- [ ] Done
 **What is prompt engineering for generation tasks and how do in-context learning approaches work?**
 
 **Answer:**
@@ -5189,300 +5239,350 @@ def with_system_prompt(user_query):
 # Summarization/Text Generation - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you balance faithfulness and fluency in abstractive text summarization?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What techniques work best for controlling summary length and level of detail?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you handle summarization for documents with multiple topics or themes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies help with generating summaries that preserve important factual information?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you implement domain-specific summarization for technical or specialized texts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What approaches work best for multi-document summarization with conflicting information?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle summarization quality assessment without gold standard summaries?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What techniques help with explaining summarization decisions and content selection?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement query-focused summarization for specific information needs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What strategies work best for summarization in different languages and cultural contexts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle summarization bias and ensure balanced representation of viewpoints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What approaches help with summarization robustness against input variations?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement knowledge distillation for compressing large summarization models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques work best for real-time summarization with low latency requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle summarization for streaming or continuously updated content?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What strategies help with summarization consistency across different content types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement online learning for summarization models adapting to user preferences?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What approaches work best for summarization in conversational or interactive contexts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle summarization optimization for specific downstream applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help with summarization for content requiring expert domain knowledge?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement fairness-aware summarization to reduce demographic bias?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What strategies work best for hierarchical or structured summarization?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle summarization quality control with subjective content evaluation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What approaches help with summarization for low-resource or minority languages?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement privacy-preserving summarization for sensitive documents?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques work best for summarization with external knowledge integration?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle summarization adaptation to emerging content formats?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What strategies help with summarization requiring factual accuracy verification?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement robust error handling when summarization fails or produces poor output?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What approaches work best for combining summarization with other text processing tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle summarization for content with varying importance levels?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What techniques help with summarization consistency in distributed processing scenarios?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement efficient batch processing for large-scale summarization applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for summarization with regulatory compliance requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle summarization for content requiring high accuracy and reliability?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with summarization customization for different user needs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement monitoring and quality drift detection for summarization systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for summarization of multimedia or multi-modal content?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle summarization optimization when balancing conciseness and completeness?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with summarization for emerging content types and platforms?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement transfer learning for summarization across different domains?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for summarization with minimal computational resources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle summarization integration with information management workflows?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with summarization for content requiring creative or editorial judgment?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement controllable summarization with style and perspective adjustment?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for summarization in high-volume content processing scenarios?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle summarization quality benchmarking across different model types?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with summarization for evolving information landscapes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 49
+- [ ] Done
 **How do you implement efficient memory management for large-scale summarization inference?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques work best for balancing summarization automation with human oversight?**
 **Answer:** _To be filled_
 
@@ -5496,300 +5596,350 @@ def with_system_prompt(user_query):
 # Prompt Engineering - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you design prompts that consistently elicit desired behaviors from different LLM architectures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What techniques work best for chain-of-thought prompting in complex reasoning tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement few-shot prompting strategies with optimal example selection?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies help with prompt optimization for domain-specific applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you handle prompt engineering for multilingual or cross-cultural contexts?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What approaches work best for reducing prompt sensitivity and improving robustness?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you design prompts that minimize harmful or biased outputs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What techniques help with measuring and evaluating prompt effectiveness?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement automated prompt generation and optimization techniques?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What strategies work best for prompt engineering in conversational AI systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle prompt versioning and management in production systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What approaches help with prompt engineering for specific output formats and structures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement meta-prompting strategies for complex multi-step tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques work best for prompt engineering with limited computational resources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle prompt adaptation to different user expertise levels?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What strategies help with prompt consistency across different model versions?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement dynamic prompting that adapts to context and user needs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What approaches work best for prompt engineering in specialized domains?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle prompt optimization for specific quality metrics?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help with prompt engineering for creative and open-ended tasks?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement fairness-aware prompting to reduce demographic bias?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What strategies work best for prompt engineering with safety and alignment constraints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle prompt quality assessment with subjective or creative outputs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What approaches help with prompt engineering for low-resource languages?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement privacy-preserving prompt engineering for sensitive applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques work best for prompt engineering with external tool integration?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle prompt adaptation to emerging model capabilities?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What strategies help with prompt engineering requiring domain expert validation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement robust error handling when prompts produce unexpected outputs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What approaches work best for combining prompt engineering with fine-tuning strategies?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle prompt engineering for tasks with multiple valid approaches?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What techniques help with prompt consistency in distributed AI applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement efficient prompt testing and validation pipelines?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for prompt engineering with regulatory compliance needs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle prompt engineering for applications requiring high reliability?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with prompt customization for different user preferences?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement monitoring and performance tracking for prompt-based systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for prompt engineering with structured data inputs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle prompt optimization when balancing performance and interpretability?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with prompt engineering for emerging AI capabilities?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement transfer learning for prompts across different models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for prompt engineering with resource constraints?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle prompt integration with broader AI system architectures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with prompt engineering for tasks requiring factual accuracy?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement controllable prompting with adjustable parameters?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for prompt engineering in high-volume applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle prompt quality benchmarking across different LLMs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with prompt engineering for evolving use cases?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 49
+- [ ] Done
 **How do you implement efficient prompt caching and optimization?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques work best for balancing prompt complexity with model capabilities?**
 **Answer:** _To be filled_
 
@@ -5803,300 +5953,350 @@ def with_system_prompt(user_query):
 # Retrieval-Augmented Generation (RAG) - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you design RAG systems that effectively balance retrieval relevance and generation quality?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 2
+- [ ] Done
 **What techniques work best for chunking and indexing documents in RAG knowledge bases?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement dense retrieval methods that capture semantic similarity effectively?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies help with handling multi-modal RAG systems combining text, images, and structured data?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 5
+- [ ] Done
 **How do you design RAG architectures that maintain factual accuracy and reduce hallucination?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 6
+- [ ] Done
 **What approaches work best for real-time RAG with low latency retrieval and generation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle RAG system evaluation when ground truth answers aren't available?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 8
+- [ ] Done
 **What techniques help with explaining RAG decisions and source attribution?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement dynamic retrieval strategies that adapt to query complexity?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 10
+- [ ] Done
 **What strategies work best for RAG in specialized domains with technical knowledge bases?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle RAG quality control and confidence scoring for generated answers?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 12
+- [ ] Done
 **What approaches help with RAG robustness against noisy or outdated knowledge sources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement knowledge distillation for compressing large RAG models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques work best for multilingual RAG systems across different languages?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle RAG knowledge base updates and maintaining retrieval consistency?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 16
+- [ ] Done
 **What strategies help with RAG personalization for different user contexts and preferences?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement online learning for RAG systems adapting to new information?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 18
+- [ ] Done
 **What approaches work best for conversational RAG with context tracking?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle RAG optimization for specific enterprise applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help with RAG for questions requiring temporal or current information?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement fairness-aware RAG to reduce bias in retrieved information?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 22
+- [ ] Done
 **What strategies work best for RAG with structured knowledge graphs and databases?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle RAG quality assessment with conflicting information sources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 24
+- [ ] Done
 **What approaches help with RAG for low-resource domains with limited knowledge bases?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement privacy-preserving RAG for sensitive organizational knowledge?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques work best for RAG systems requiring high factual precision?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle RAG adaptation to emerging topics and evolving knowledge?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 28
+- [ ] Done
 **What strategies help with RAG requiring domain expert validation and oversight?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement robust error handling when RAG retrieval fails or returns poor results?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 30
+- [ ] Done
 **What approaches work best for combining RAG with other AI system components?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle RAG for queries requiring multiple information sources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 32
+- [ ] Done
 **What techniques help with RAG consistency in distributed deployment scenarios?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement efficient batch processing for large-scale RAG applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for RAG with regulatory compliance and audit requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle RAG for applications requiring high accuracy and reliability?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with RAG customization for different organizational knowledge structures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement monitoring and performance tracking for RAG systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for RAG handling semi-structured and unstructured data?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle RAG optimization when balancing retrieval quality and generation fluency?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with RAG for emerging enterprise AI applications?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement transfer learning for RAG across different knowledge domains?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for RAG with minimal computational and storage resources?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle RAG integration with existing enterprise search and knowledge systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with RAG for applications requiring creative or analytical outputs?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement controllable RAG with adjustable retrieval scope and generation style?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for RAG in high-concurrency and multi-user environments?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle RAG quality benchmarking across different system architectures?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with RAG for rapidly evolving information landscapes?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 49
+- [ ] Done
 **How do you implement efficient vector database management for RAG knowledge bases?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques work best for balancing RAG system complexity with maintainability?**
 **Answer:** _To be filled_
 

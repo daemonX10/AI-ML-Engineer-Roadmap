@@ -1,6 +1,7 @@
 # Decision Tree Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **Outline some limitations or disadvantages of Decision Trees.**
 
@@ -45,6 +46,7 @@ Always mention that ensembles (Random Forest, GBDT) solve most single-tree limit
 ---
 
 ## Question 2
+- [ ] Done
 
 **Define Gini impurity and its role in Decision Trees.**
 
@@ -82,6 +84,7 @@ Select split with maximum Gini Gain.
 ---
 
 ## Question 3
+- [ ] Done
 
 **Can Decision Trees be used for multi-output tasks?**
 
@@ -133,6 +136,7 @@ print(clf.predict([[4, 5]]))  # Output: [[1, 0]]
 ---
 
 ## Question 4
+- [ ] Done
 
 **What modifications are done by the CHAID (Chi-squared Automatic Interaction Detector) algorithm in building Decision Trees?**
 
@@ -187,6 +191,7 @@ Where O = observed frequency, E = expected frequency.
 ---
 
 ## Question 5
+- [ ] Done
 
 **How is feature importance determined in the context of Decision Trees?**
 
@@ -248,6 +253,7 @@ for name, imp in zip(load_iris().feature_names, clf.feature_importances_):
 ---
 
 ## Question 6
+- [ ] Done
 
 **Elaborate on how boosting techniques can be used with Decision Trees.**
 
@@ -311,6 +317,7 @@ print(f"Accuracy: {gb.score(X_test, y_test):.3f}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you determine the optimal number of splits for a Decision Tree?**
 
@@ -392,6 +399,7 @@ print(grid.best_params_)
 ---
 
 ## Question 8
+- [ ] Done
 
 **What metrics or methods do you use for validating a Decision Tree model?**
 
@@ -457,6 +465,7 @@ skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 ---
 
 ## Question 9
+- [ ] Done
 
 **Compare and contrast the various Decision Tree algorithms (e.g., ID3, C4.5, CART, CHAID).**
 
@@ -510,6 +519,7 @@ skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do pruning strategies differ among various Decision Tree algorithms?**
 
@@ -573,6 +583,7 @@ alphas, impurities = path.ccp_alphas, path.impurities
 ---
 
 ## Question 11
+- [ ] Done
 
 **What approach would you take to handle high-dimensional data when building Decision Trees?**
 

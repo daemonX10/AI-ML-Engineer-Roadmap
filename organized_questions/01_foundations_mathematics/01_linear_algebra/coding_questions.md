@@ -1,6 +1,7 @@
 # Linear Algebra Interview Questions - Coding Questions
 
 ## Question 1
+- [x] Done
 
 **Write code to add, subtract, and multiply two matrices without using external libraries.**
 
@@ -83,6 +84,7 @@ print("A × C:", matrix_multiply(A, C))   # [[9,12,15], [19,26,33]]
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement a function to calculate the transpose of a given matrix.**
 
@@ -142,7 +144,7 @@ print("Transpose:", transpose(A))  # [[1,4], [2,5], [3,6]] - now 3x2
 - Know the `zip(*matrix)` trick for one-liner
 - Remember: (AB)^T = B^T A^T (order reverses!)
 - Symmetric matrix: A = A^T (e.g., covariance matrix)
-
+```python
 # ========================================
 # SPECIAL CASES
 # ========================================
@@ -202,6 +204,7 @@ print("Is B symmetric:", is_symmetric(B))
 ---
 
 ## Question 3
+- [ ] Done
 
 **Code to find the determinant of a matrix using recursion.**
 
@@ -287,6 +290,7 @@ print("3x3 det:", determinant(B))  # -306
 ---
 
 ## Question 4
+- [ ] Done
 
 **Develop a Python function to compute the inverse of a matrix.**
 
@@ -377,6 +381,7 @@ print("A⁻¹:", A_inv)
 ---
 
 ## Question 5
+- [ ] Done
 
 **Write an algorithm to perform eigenvalue and eigenvector decomposition.**
 
@@ -466,6 +471,7 @@ print("Symmetric eigenvalues:", eigenvalues)
 ---
 
 ## Question 6
+- [ ] Done
 
 **Create a Python script to solve a system of linear equations using NumPy.**
 
@@ -532,6 +538,7 @@ print("Overdetermined:", x_over)
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement a function to calculate the L2 norm of a vector.**
 
@@ -601,6 +608,7 @@ print("L∞ norm:", np.linalg.norm(v_np, ord=np.inf))  # max(3,4) = 4
 ---
 
 ## Question 8
+- [ ] Done
 
 **Write a program to verify if a given square matrix is orthogonal.**
 
@@ -680,6 +688,7 @@ print("Identity is orthogonal:", is_orthogonal(I))
 ---
 
 ## Question 9
+- [ ] Done
 
 **How would you implement a linear algebra-based algorithm to classify text documents?**
 

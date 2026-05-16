@@ -1,8 +1,9 @@
 # Time Series Interview Questions - Scenario_Based Questions
 
 ## Question 1
+- [ ] Done
 
-**Discuss the importance oflag selectioninARMA/ARIMAmodels.**
+**Discuss the importance of lag selection in ARMA/ARIMA models.**
 
 **Why Lag Selection Matters:**
 
@@ -38,6 +39,11 @@
 - Check residuals are white noise (no autocorrelation in ACF)
 - If patterns remain → model needs adjustment
 
+**Practical Notes:**
+- Use a small search grid first; high orders often overfit and are hard to interpret.
+- Prefer the simplest model that passes residual checks and backtesting.
+- For seasonal data, consider seasonal lags before adding many non-seasonal lags.
+
 **Python Example:**
 ```python
 from pmdarima import auto_arima
@@ -50,8 +56,9 @@ print(model.summary())
 ---
 
 ## Question 2
+- [ ] Done
 
-**Discuss the use and considerations ofrolling-window analysisintime series.**
+**Discuss the use and considerations of rolling-window analysis in time series.**
 
 **Definition:**
 Rolling-window analysis applies a function (mean, variance, correlation) over a sliding window of fixed size, moving one step at a time.
@@ -70,7 +77,7 @@ Rolling-window analysis applies a function (mean, variance, correlation) over a 
 **1. Window Size Selection**
 - **Too small:** Noisy, captures short-term fluctuations
 - **Too large:** Overly smooth, misses recent changes
-- Rule of thumb: Start with period length (7 for daily→weekly, 12 for monthly→yearly)
+- Rule of thumb: Start with the main seasonal period (7 for daily to weekly, 12 for monthly to yearly)
 
 **2. Edge Effects**
 - First (window_size - 1) values are NaN
@@ -79,6 +86,11 @@ Rolling-window analysis applies a function (mean, variance, correlation) over a 
 **3. Computational Cost**
 - Large windows + long series = expensive
 - Use efficient implementations (pandas rolling)
+
+**Practical Notes:**
+- Use expanding windows for stable processes; sliding windows for concept drift.
+- If you use rolling features, add a gap between train and test to avoid leakage.
+- Document the window size so results are reproducible.
 
 **Python Example:**
 ```python
@@ -108,8 +120,9 @@ plt.show()
 ---
 
 ## Question 3
+- [ ] Done
 
-**Discuss the advantage of usingstate-space modelsand theKalman filterfortime series analysis.**
+**Discuss the advantage of using state-space models and the Kalman filter for time series analysis.**
 
 **Definition:**
 State-space models represent a time series through two equations:
@@ -136,6 +149,11 @@ Optimal algorithm to estimate hidden states from noisy observations.
 - Combining multiple noisy sensors
 - Time-varying regression coefficients
 
+**Practical Notes:**
+- Great when data has gaps or irregular sampling.
+- Helps separate signal from noise and provides smooth estimates.
+- Model design matters; poor state definitions lead to misleading results.
+
 **Python Example:**
 ```python
 from statsmodels.tsa.statespace.sarimax import SARIMAX
@@ -151,8 +169,9 @@ smoothed_states = result.smoothed_state
 ---
 
 ## Question 4
+- [ ] Done
 
-**How would you approach building atime series modelto forecaststock prices?**
+**How would you approach building a time series model to forecast stock prices?**
 
 **Important Reality Check:**
 Stock prices are nearly random walks - predicting exact prices is extremely hard. Focus on:
@@ -199,11 +218,17 @@ for t in range(train_size, len(data)):
 **Honest Expectation:**
 Most models barely beat naive baseline. Focus on risk management over prediction.
 
+**Practical Notes:**
+- Adjust for splits and dividends; raw prices are not comparable.
+- Avoid leakage from using future information (news timestamps matter).
+- Volatility forecasts are often more useful than price point forecasts.
+
 ---
 
 ## Question 5
+- [ ] Done
 
-**Discuss the challenges and strategies of usingtime series analysisinanomaly detectionforsystem monitoring.**
+**Discuss the challenges and strategies of using time series analysis in anomaly detection for system monitoring.**
 
 **Challenges:**
 
@@ -252,11 +277,17 @@ anomalies = model.fit_predict(features)
 - Combine multiple methods
 - Human-in-the-loop for labeling
 
+**Practical Notes:**
+- Calibrate thresholds to control false positives (alert fatigue).
+- Use different thresholds for business hours vs off-hours.
+- Track precision and recall over time as the system changes.
+
 ---
 
 ## Question 6
+- [ ] Done
 
-**How would you usetime series analysisto predictelectricity consumption patterns?**
+**How would you use time series analysis to predict electricity consumption patterns?**
 
 **Key Characteristics of Electricity Data:**
 - Strong daily seasonality (morning/evening peaks)
@@ -307,11 +338,17 @@ forecast = model.predict(future)
 - Energy traders: Price forecasting
 - Consumers: Optimize usage, reduce costs
 
+**Practical Notes:**
+- Use probabilistic forecasts for capacity planning.
+- Model separate seasonalities (daily, weekly, yearly).
+- Missing weather data can hurt more than missing load data.
+
 ---
 
 ## Question 7
+- [ ] Done
 
-**Propose a strategy for forecastingtourist arrivalsusingtime series data.**
+**Propose a strategy for forecasting tourist arrivals using time series data.**
 
 **Characteristics of Tourism Data:**
 - Strong annual seasonality (summer peaks, holiday periods)
@@ -361,11 +398,17 @@ result = model.fit()
 - Airline scheduling
 - Government tourism board budgeting
 
+**Practical Notes:**
+- Include structural breaks (pandemics, policy shifts) explicitly.
+- Use scenario forecasts when key drivers are uncertain.
+- Validate by horizon (short-term vs long-term accuracy can differ).
+
 ---
 
 ## Question 8
+- [ ] Done
 
-**How would you analyze and predict theload on a serverusingtime series?**
+**How would you analyze and predict the load on a server using time series?**
 
 **Characteristics:**
 - High-frequency data (per second/minute)
@@ -412,11 +455,17 @@ if forecast_next_hour > capacity_threshold:
 - Capacity planning for infrastructure purchases
 - SLA compliance monitoring
 
+**Practical Notes:**
+- Use quantile forecasts to provision for peak load, not just average load.
+- Annotate deployments and incidents; they change the baseline.
+- Aggregate to a stable granularity (1-5 minutes) to reduce noise.
+
 ---
 
 ## Question 9
+- [ ] Done
 
-**Discuss your approach to evaluating the impact ofpromotional campaignsonsalesusingtime series analysis.**
+**Discuss your approach to evaluating the impact of promotional campaigns on sales using time series analysis.**
 
 **Challenge:**
 Separate promotion effect from:
@@ -464,11 +513,17 @@ impact.summary()
 - **Long-term effect:** Does it create loyal customers or just deal-seekers?
 - **A/B testing:** If possible, run controlled experiment
 
+**Practical Notes:**
+- Adjust for stockouts; they cap observed sales and bias effects downward.
+- Use multiple control series if possible to reduce confounding.
+- Report both short-term lift and post-promo decay.
+
 ---
 
 ## Question 10
+- [ ] Done
 
-**Discuss the potential ofrecurrent neural networks (RNNs)intime series forecasting.**
+**Discuss the potential of recurrent neural networks (RNNs) in time series forecasting.**
 
 **Why RNNs for Time Series:**
 - Designed for sequential data
@@ -529,5 +584,10 @@ model.fit(X_train, y_train, epochs=50, batch_size=32, validation_split=0.1)
 - Scale data (MinMaxScaler or StandardScaler)
 - Use early stopping to prevent overfitting
 - Consider attention-based models (Transformers) for state-of-the-art
+
+**Practical Notes:**
+- RNNs shine when you have lots of data and complex non-linear patterns.
+- For multi-step forecasts, use sequence-to-sequence outputs to reduce error drift.
+- Compare against strong baselines; deep learning often wins only with scale.
 
 ---

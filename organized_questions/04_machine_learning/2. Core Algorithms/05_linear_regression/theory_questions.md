@@ -1,6 +1,7 @@
 # Linear Regression Interview Questions - Theory Questions
 
 ## Question 1: What is linear regression and how is it used in predictive modeling?
+- [ ] Done
 
 ### Answer
 
@@ -37,6 +38,7 @@ $$y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_nx_n + \epsilon$$
 ---
 
 ## Question 2: Can you explain the difference between simple linear regression and multiple linear regression?
+- [ ] Done
 
 ### Answer
 
@@ -64,6 +66,7 @@ $$y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_nx_n + \epsilon$$
 ---
 
 ## Question 3: What is the role of the intercept term in a linear regression model?
+- [ ] Done
 
 ### Answer
 
@@ -99,6 +102,7 @@ Example: Weight = β₀ + β₁ × Height
 ---
 
 ## Question 4: What are the common metrics to evaluate a linear regression model's performance?
+- [ ] Done
 
 ### Answer
 
@@ -129,6 +133,7 @@ Example: Weight = β₀ + β₁ × Height
 ---
 
 ## Question 5: Explain the concept of homoscedasticity. Why is it important?
+- [ ] Done
 
 ### Answer
 
@@ -165,6 +170,7 @@ Homoscedasticity means "constant variance" - the variance of error terms (residu
 ---
 
 ## Question 6: What is multicollinearity and how can it affect a regression model?
+- [ ] Done
 
 ### Answer
 
@@ -203,6 +209,7 @@ Where $R_i^2$ is the R² from regressing feature i against all other features.
 ---
 
 ## Question 7: Describe the steps involved in preprocessing data for linear regression analysis.
+- [ ] Done
 
 ### Answer
 
@@ -242,6 +249,7 @@ preprocessor = ColumnTransformer([
 ---
 
 ## Question 8: Explain the concept of data splitting into training and test sets.
+- [ ] Done
 
 ### Answer
 
@@ -282,6 +290,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 ---
 
 ## Question 9: What is cross-validation and how is it performed with linear regression?
+- [ ] Done
 
 ### Answer
 
@@ -329,6 +338,7 @@ print(f"Mean R²: {scores.mean():.4f} (+/- {scores.std()*2:.4f})")
 ---
 
 ## Question 10: Can you explain the concept of gradient descent and its importance in linear regression?
+- [ ] Done
 
 ### Answer
 
@@ -369,6 +379,7 @@ Where $\alpha$ is the learning rate (step size).
 ---
 
 ## Question 11: What is ridge regression and how does it differ from standard linear regression?
+- [ ] Done
 
 ### Answer
 
@@ -411,6 +422,7 @@ print(f"Best alpha: {ridge.alpha_}")
 ---
 
 ## Question 12: Explain the concept of Lasso regression and its benefits.
+- [ ] Done
 
 ### Answer
 
@@ -458,6 +470,7 @@ print(f"Non-zero coefficients: {np.sum(lasso.coef_ != 0)}")
 ---
 
 ## Question 13: What is elastic net regression and in what cases would you use it?
+- [ ] Done
 
 ### Answer
 
@@ -503,6 +516,7 @@ print(f"Best alpha: {elastic_net.alpha_}, l1_ratio: {elastic_net.l1_ratio_}")
 ---
 
 ## Question 14: Explain the purpose of residual plots and how to interpret them.
+- [ ] Done
 
 ### Answer
 
@@ -548,6 +562,7 @@ plt.show()
 ---
 
 ## Question 15: What is the adjusted R-squared, and why is it used?
+- [ ] Done
 
 ### Answer
 
@@ -589,6 +604,7 @@ Model B (8 features): R² = 0.86, Adj R² = 0.82
 ---
 
 ## Question 16: What are leverage points and how do they affect a regression model?
+- [ ] Done
 
 ### Answer
 
@@ -626,6 +642,7 @@ A point is influential only if it has BOTH high leverage AND large residual. Use
 ---
 
 ## Question 17: Describe how you would detect and address outliers in your regression analysis.
+- [ ] Done
 
 ### Answer
 
@@ -673,6 +690,7 @@ robust_model.fit(X_train, y_train)
 ---
 
 ## Question 18: Explain the concept of Cook's distance.
+- [ ] Done
 
 ### Answer
 
@@ -720,6 +738,7 @@ influential = np.where(cooks_d > 4/len(y))[0]
 ---
 
 ## Question 19: Describe the variance inflation factor (VIF) and its significance.
+- [ ] Done
 
 ### Answer
 
@@ -763,6 +782,7 @@ print(vif_data.sort_values('VIF', ascending=False))
 ---
 
 ## Question 20: How does polynomial regression extend the linear regression model?
+- [ ] Done
 
 ### Answer
 
@@ -806,6 +826,7 @@ poly_model.fit(X, y)
 ---
 
 ## Question 21: What are generalized linear models (GLMs), and how do they relate to linear regression?
+- [ ] Done
 
 ### Answer
 
@@ -839,6 +860,7 @@ Linear regression is a special case of GLMs with Gaussian distribution and ident
 ---
 
 ## Question 22: Explain how quantile regression differs from ordinary least squares (OLS) regression.
+- [ ] Done
 
 ### Answer
 
@@ -886,6 +908,7 @@ upper_model.fit(X, y)
 ---
 
 ## Question 23: What are mixed models, and where might you use them?
+- [ ] Done
 
 ### Answer
 
@@ -930,6 +953,7 @@ result = model.fit()
 ---
 
 ## Question 24: What are the latest research trends in regularized regression techniques?
+- [ ] Done
 
 ### Answer
 
@@ -969,6 +993,7 @@ Moving from "just prediction" to valid statistical inference in high-dimensional
 ---
 
 ## Question 25: Describe a situation where logistic regression might be preferred over linear regression.
+- [ ] Done
 
 ### Answer
 
@@ -1005,6 +1030,7 @@ from sklearn.linear_model import LogisticRegression
 ---
 
 ## Question 26: Describe a scenario where you'd have to transition from a simple to a multiple linear regression model, and the considerations you'd have to make.
+- [ ] Done
 
 ### Answer
 
@@ -1051,6 +1077,7 @@ print(f"Multiple: {multiple_cv.mean():.3f}")
 ---
 
 ## Question 27: What are the mathematical foundations and assumptions underlying linear regression?
+- [ ] Done
 
 ### Answer
 
@@ -1080,6 +1107,7 @@ Under Gauss-Markov assumptions, OLS estimator is:
 ---
 
 ## Question 28: How do you derive the normal equation for linear regression and when is it preferred over gradient descent?
+- [ ] Done
 
 ### Answer
 
@@ -1112,6 +1140,7 @@ Under Gauss-Markov assumptions, OLS estimator is:
 ---
 
 ## Question 29: What is the difference between ordinary least squares (OLS) and other regression estimation methods?
+- [ ] Done
 
 ### Answer
 
@@ -1148,6 +1177,7 @@ Under Gauss-Markov assumptions, OLS estimator is:
 # --- Missing Questions Restored from Source (Q34-Q30) ---
 
 ## Question 30
+- [ ] Done
 
 **How do you handle categorical variables in linear regression models?**
 
@@ -1186,6 +1216,7 @@ dummies = pd.get_dummies(df['color'], drop_first=True)
 ---
 
 ## Question 31
+- [ ] Done
 
 **What are polynomial regression and its relationship to linear regression?**
 
@@ -1229,6 +1260,7 @@ model = Pipeline([
 ---
 
 ## Question 32
+- [ ] Done
 
 **How do you implement and interpret interaction terms in multiple linear regression?**
 
@@ -1268,6 +1300,7 @@ y = β₀ + β₁x₁ + β₂x₂ + β₃(x₁ × x₂) + ε
 ---
 
 ## Question 33
+- [ ] Done
 
 **What is regularization in linear regression and why is it important?**
 
@@ -1300,6 +1333,7 @@ Regularization adds a **penalty term** to the OLS cost function that constrains 
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain the differences between Ridge, Lasso, and Elastic Net regression.**
 
@@ -1328,6 +1362,7 @@ Regularization adds a **penalty term** to the OLS cost function that constrains 
 ---
 
 ## Question 35
+- [ ] Done
 
 **How do you choose the optimal regularization parameter (lambda) in regularized regression?**
 
@@ -1361,6 +1396,7 @@ print(f"Optimal alpha: {model.alpha_}")
 ---
 
 ## Question 36
+- [ ] Done
 
 **What is cross-validation and how is it used in linear regression model selection?**
 
@@ -1399,6 +1435,7 @@ Cross-validation (CV) estimates how well a model will **generalize to unseen dat
 ---
 
 ## Question 37
+- [ ] Done
 
 **How do you detect and handle outliers in linear regression analysis?**
 
@@ -1435,6 +1472,7 @@ Cross-validation (CV) estimates how well a model will **generalize to unseen dat
 ---
 
 ## Question 38
+- [ ] Done
 
 **What are residual plots and how do you use them to validate regression assumptions?**
 
@@ -1472,6 +1510,7 @@ fig = sm.graphics.plot_regress_exog(model, 'feature_name', fig=fig)
 ---
 
 ## Question 39
+- [ ] Done
 
 **How do you test for heteroscedasticity and what are the remedies?**
 
@@ -1514,6 +1553,7 @@ _, p_value, _, _ = het_breuschpagan(residuals, X)
 ---
 
 ## Question 40
+- [ ] Done
 
 **What is autocorrelation in regression residuals and how do you address it?**
 
@@ -1549,6 +1589,7 @@ _, p_value, _, _ = het_breuschpagan(residuals, X)
 ---
 
 ## Question 41
+- [ ] Done
 
 **How do you perform feature selection in linear regression models?**
 
@@ -1584,6 +1625,7 @@ Feature selection identifies the most relevant predictors, improving model inter
 ---
 
 ## Question 42
+- [ ] Done
 
 **What are forward selection, backward elimination, and stepwise regression?**
 
@@ -1621,6 +1663,7 @@ These are **wrapper-based** feature selection methods that iteratively add or re
 ---
 
 ## Question 43
+- [ ] Done
 
 **How do you handle missing values in linear regression datasets?**
 
@@ -1655,6 +1698,7 @@ X_imputed = imputer.fit_transform(X_train)
 ---
 
 ## Question 44
+- [ ] Done
 
 **What is the bias-variance tradeoff in the context of linear regression?**
 
@@ -1694,6 +1738,7 @@ Total Error = Bias² + Variance + Irreducible Noise
 ---
 
 ## Question 45
+- [ ] Done
 
 **How do you interpret confidence intervals and prediction intervals in regression?**
 
@@ -1724,6 +1769,7 @@ Total Error = Bias² + Variance + Irreducible Noise
 ---
 
 ## Question 46
+- [ ] Done
 
 **What are the differences between parametric and non-parametric regression approaches?**
 
@@ -1759,6 +1805,7 @@ Total Error = Bias² + Variance + Irreducible Noise
 ---
 
 ## Question 47
+- [ ] Done
 
 **How do you implement logistic regression and its relationship to linear regression?**
 
@@ -1792,6 +1839,7 @@ log(P/(1-P)) = β₀ + β₁x₁ + ... + βₙxₙ  (this is linear!)
 ---
 
 ## Question 48
+- [ ] Done
 
 **What are generalized linear models (GLMs) and how do they extend linear regression?**
 
@@ -1826,6 +1874,7 @@ Generalized Linear Models (GLMs) extend linear regression to handle **non-normal
 ---
 
 ## Question 49
+- [ ] Done
 
 **How do you handle non-linear relationships in linear regression models?**
 
@@ -1861,6 +1910,7 @@ Linear regression assumes a straight-line relationship, but many real relationsh
 ---
 
 ## Question 50
+- [ ] Done
 
 **What is robust regression and when should you use it instead of OLS?**
 
@@ -1894,6 +1944,7 @@ Robust regression methods are **resistant to outliers and violations of assumpti
 ---
 
 ## Question 51
+- [ ] Done
 
 **How do you assess model performance using different evaluation metrics in regression?**
 
@@ -1927,6 +1978,7 @@ Robust regression methods are **resistant to outliers and violations of assumpti
 ---
 
 ## Question 52
+- [ ] Done
 
 **What are the computational complexity considerations for large-scale linear regression?**
 
@@ -1958,6 +2010,7 @@ Robust regression methods are **resistant to outliers and violations of assumpti
 ---
 
 ## Question 53
+- [ ] Done
 
 **How do you implement linear regression using gradient descent optimization?**
 
@@ -2003,6 +2056,7 @@ def gradient_descent(X, y, lr=0.01, epochs=1000):
 ---
 
 ## Question 54
+- [ ] Done
 
 **What are the differences between batch, mini-batch, and stochastic gradient descent for regression?**
 
@@ -2039,6 +2093,7 @@ def gradient_descent(X, y, lr=0.01, epochs=1000):
 ---
 
 ## Question 55
+- [ ] Done
 
 **How do you handle high-dimensional data in linear regression (p >> n problem)?**
 
@@ -2072,6 +2127,7 @@ When p (features) >> n (samples), the OLS solution is **undefined** because Xᵀ
 ---
 
 ## Question 56
+- [ ] Done
 
 **What is the role of principal component regression (PCR) in dimensionality reduction?**
 
@@ -2111,6 +2167,7 @@ Principal Component Regression (PCR) combines PCA with linear regression: first 
 ---
 
 ## Question 57
+- [ ] Done
 
 **How do you implement partial least squares (PLS) regression and when is it useful?**
 
@@ -2153,6 +2210,7 @@ pls.fit(X_train, y_train)
 ---
 
 ## Question 58
+- [ ] Done
 
 **What are bayesian approaches to linear regression and their advantages?**
 
@@ -2195,6 +2253,7 @@ y_pred, y_std = model.predict(X_test, return_std=True)
 ---
 
 ## Question 59
+- [ ] Done
 
 **How do you handle time-series data in linear regression models?**
 
@@ -2232,6 +2291,7 @@ Time-series data violates the **independence** assumption of standard linear reg
 ---
 
 ## Question 60
+- [ ] Done
 
 **What is weighted least squares regression and when should you use it?**
 
@@ -2267,6 +2327,7 @@ Weighted Least Squares (WLS) assigns **different weights** to observations, givi
 ---
 
 ## Question 61
+- [ ] Done
 
 **How do you perform hypothesis testing in linear regression (t-tests, F-tests)?**
 
@@ -2298,6 +2359,7 @@ Weighted Least Squares (WLS) assigns **different weights** to observations, givi
 ---
 
 ## Question 62
+- [ ] Done
 
 **What are the assumptions required for valid statistical inference in linear regression?**
 
@@ -2331,6 +2393,7 @@ For valid statistical inference (reliable p-values, confidence intervals, hypoth
 ---
 
 ## Question 63
+- [ ] Done
 
 **How do you handle correlated errors in regression models?**
 
@@ -2363,6 +2426,7 @@ Correlated errors (autocorrelation) occur when the error term at one observation
 ---
 
 ## Question 64
+- [ ] Done
 
 **What is instrumental variable regression and when is it needed?**
 
@@ -2401,6 +2465,7 @@ Instrumental Variable (IV) regression addresses **endogeneity** — when a predi
 ---
 
 ## Question 65
+- [ ] Done
 
 **How do you implement and interpret interaction effects in regression models?**
 
@@ -2441,6 +2506,7 @@ poly = PolynomialFeatures(degree=2, interaction_only=True)
 ---
 
 ## Question 66
+- [ ] Done
 
 **What are mixed-effects models and their applications in regression analysis?**
 
@@ -2478,6 +2544,7 @@ Mixed-effects models (also called multilevel or hierarchical models) include bot
 ---
 
 ## Question 67
+- [ ] Done
 
 **How do you perform model diagnostics and residual analysis in linear regression?**
 
@@ -2518,6 +2585,7 @@ Model diagnostics systematically check whether regression assumptions hold and i
 ---
 
 ## Question 68
+- [ ] Done
 
 **What is the difference between prediction and inference in regression modeling?**
 
@@ -2549,6 +2617,7 @@ Model diagnostics systematically check whether regression assumptions hold and i
 ---
 
 ## Question 69
+- [ ] Done
 
 **How do you handle seasonal patterns and trends in regression analysis?**
 
@@ -2592,6 +2661,7 @@ df['cos_1'] = np.cos(2 * np.pi * df['month'] / 12)
 ---
 
 ## Question 70
+- [ ] Done
 
 **What are spline regression and local regression (LOESS) techniques?**
 
@@ -2632,6 +2702,7 @@ Both are methods for modeling **non-linear relationships** flexibly within a reg
 ---
 
 ## Question 71
+- [ ] Done
 
 **How do you implement regression with constraints and penalty terms?**
 
@@ -2673,6 +2744,7 @@ beta, residual = nnls(X, y)  # All coefficients ≥ 0
 ---
 
 ## Question 72
+- [ ] Done
 
 **What is quantile regression and how does it differ from ordinary regression?**
 
@@ -2710,6 +2782,7 @@ Quantile regression models the **conditional quantile** (e.g., median, 10th perc
 ---
 
 ## Question 73
+- [ ] Done
 
 **How do you handle censored and truncated data in regression models?**
 
@@ -2747,6 +2820,7 @@ Estimated via Maximum Likelihood, not OLS.
 ---
 
 ## Question 74
+- [ ] Done
 
 **What are the considerations for linear regression in big data environments?**
 
@@ -2782,6 +2856,7 @@ Solve: β = (XᵀX_total)⁻¹ · Xᵀy_total
 ---
 
 ## Question 75
+- [ ] Done
 
 **How do you implement distributed and parallel linear regression algorithms?**
 
@@ -2824,6 +2899,7 @@ Final:        β = (XᵀX)⁻¹ · Xᵀy
 ---
 
 ## Question 76
+- [ ] Done
 
 **What is online learning and adaptive linear regression for streaming data?**
 
@@ -2869,6 +2945,7 @@ for X_batch, y_batch in stream:
 ---
 
 ## Question 77
+- [ ] Done
 
 **How do you handle non-linear transformations and feature engineering for regression?**
 
@@ -2908,6 +2985,7 @@ Feature engineering transforms raw features to capture **non-linear patterns** w
 ---
 
 ## Question 78
+- [ ] Done
 
 **What are the ethical considerations and fairness issues in regression modeling?**
 
@@ -2945,6 +3023,7 @@ Feature engineering transforms raw features to capture **non-linear patterns** w
 ---
 
 ## Question 79
+- [ ] Done
 
 **How do you implement regression models for causal inference and treatment effects?**
 
@@ -2982,6 +3061,7 @@ ATE = E[Y(1) - Y(0)]
 ---
 
 ## Question 80
+- [ ] Done
 
 **What is the role of regularization paths and model selection in high-dimensional regression?**
 
@@ -3026,6 +3106,7 @@ alphas, coefs, _ = lasso_path(X, y, alphas=np.logspace(-4, 1, 100))
 ---
 
 ## Question 81
+- [ ] Done
 
 **How do you handle regression with multiple output variables (multivariate regression)?**
 
@@ -3065,6 +3146,7 @@ model.fit(X_train, Y_train)
 ---
 
 ## Question 82
+- [ ] Done
 
 **What are kernel methods and their applications in regression analysis?**
 
@@ -3104,6 +3186,7 @@ Kernel methods enable linear regression to capture **non-linear relationships** 
 ---
 
 ## Question 83
+- [ ] Done
 
 **How do you implement regression trees and their relationship to linear models?**
 
@@ -3143,6 +3226,7 @@ Regression trees partition the feature space into **rectangular regions** and fi
 ---
 
 ## Question 84
+- [ ] Done
 
 **What is ensemble regression and how do you combine multiple linear models?**
 
@@ -3187,6 +3271,7 @@ stack = StackingRegressor(
 ---
 
 ## Question 85
+- [ ] Done
 
 **How do you handle regression in the presence of measurement errors?**
 
@@ -3222,6 +3307,7 @@ Measurement errors in predictors (errors-in-variables) cause **attenuation bias*
 ---
 
 ## Question 86
+- [ ] Done
 
 **What are the considerations for regression model deployment in production systems?**
 
@@ -3259,6 +3345,7 @@ Validation  Same as train    Same transforms     Version tracked  Logged
 ---
 
 ## Question 87
+- [ ] Done
 
 **How do you monitor and maintain linear regression models in production?**
 
@@ -3306,6 +3393,7 @@ Production Data → Feature Extraction → Model Prediction → Monitoring
 ---
 
 ## Question 88
+- [ ] Done
 
 **What is transfer learning and domain adaptation for regression models?**
 
@@ -3347,6 +3435,7 @@ Transfer learning adapts a model trained on one domain (source) to perform well 
 ---
 
 ## Question 89
+- [ ] Done
 
 **How do you handle privacy-preserving regression and federated learning?**
 
@@ -3391,6 +3480,7 @@ Privacy-preserving regression enables model training without exposing individual
 ---
 
 ## Question 90
+- [ ] Done
 
 **What are the interpretability and explainability challenges in complex regression models?**
 
@@ -3426,6 +3516,7 @@ Privacy-preserving regression enables model training without exposing individual
 ---
 
 ## Question 91
+- [ ] Done
 
 **How do you implement regression models for real-time prediction and scoring?**
 
@@ -3471,6 +3562,7 @@ result = session.run(None, {"input": features})
 ---
 
 ## Question 92
+- [ ] Done
 
 **What is the role of feature importance and variable selection in regression interpretation?**
 
@@ -3511,6 +3603,7 @@ Feature importance quantifies **how much each feature contributes** to the model
 ---
 
 ## Question 93
+- [ ] Done
 
 **How do you handle regression with imbalanced or skewed target distributions?**
 
@@ -3552,6 +3645,7 @@ y_pred = np.expm1(model.predict(X_test))  # exp(pred) - 1
 ---
 
 ## Question 94
+- [ ] Done
 
 **What are the emerging trends and research directions in linear regression?**
 
@@ -3585,6 +3679,7 @@ y_pred = np.expm1(model.predict(X_test))  # exp(pred) - 1
 ---
 
 ## Question 95
+- [ ] Done
 
 **How do you implement regression models for anomaly detection and outlier identification?**
 
@@ -3627,6 +3722,7 @@ Linear regression can identify anomalies by analyzing **prediction residuals** �
 ---
 
 ## Question 96
+- [ ] Done
 
 **What are the best practices for end-to-end regression modeling pipelines?**
 
@@ -3676,6 +3772,7 @@ pipeline.fit(X_train, y_train)
 ---
 
 ## Question 97: Can you discuss the use of spline functions in regression?
+- [ ] Done
 
 ### Answer
 
@@ -3711,6 +3808,7 @@ Mention that splines avoid Runge's phenomenon (oscillation at edges) that plague
 ---
 
 ## Question 98: Discuss recent advances in optimization algorithms for linear regression
+- [ ] Done
 
 ### Answer
 
@@ -3765,6 +3863,7 @@ Beyond classical OLS and gradient descent, recent advances focus on scalability,
 # Ridge / Lasso / ElasticNet Regression Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What problem does L2-regularization (Ridge) solve in ordinary least squares?**
 
@@ -3794,6 +3893,7 @@ L2-regularization (Ridge) solves several critical problems with ordinary least s
 ---
 
 ## Question 2
+- [ ] Done
 
 **How does the cost function of Ridge regression differ from that of Lasso?**
 
@@ -3825,6 +3925,7 @@ Lasso: L = SUM(yi - xi'beta)^2 + lambda * SUM(|beta_j|)
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain, mathematically, why Ridge never produces exact zero coefficients.**
 
@@ -3859,6 +3960,7 @@ beta_j = X_j'*(y - X*beta_{-j}) / (X_j'*X_j + lambda)
 ---
 
 ## Question 4
+- [ ] Done
 
 **Why can Lasso be used for feature selection while Ridge usually cannot?**
 
@@ -3896,6 +3998,7 @@ print(f"Selected {len(selected)} of {len(features)} features")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Derive the closed-form solution for Ridge coefficients.**
 
@@ -3942,6 +4045,7 @@ beta_ridge = V * diag(d_j / (d_j^2 + lambda)) * U'y
 ---
 
 ## Question 6
+- [ ] Done
 
 **Describe coordinate-descent optimization for Lasso.**
 
@@ -3985,6 +4089,7 @@ S(z, lambda) = z - lambda    if z > lambda
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is the geometric intuition behind the L1 vs L2 constraint regions?**
 
@@ -4030,6 +4135,7 @@ beta_1^2 + beta_2^2 <= t
 ---
 
 ## Question 8
+- [ ] Done
 
 **How does Elastic Net combine the strengths of Ridge and Lasso?**
 
@@ -4066,6 +4172,7 @@ where rho (l1_ratio) controls the mix: rho=1 -> Lasso, rho=0 -> Ridge.
 ---
 
 ## Question 9
+- [ ] Done
 
 **When would Elastic Net outperform pure Lasso on correlated predictors?**
 
@@ -4101,6 +4208,7 @@ Elastic Net outperforms pure Lasso when predictors are **correlated in groups**,
 ---
 
 ## Question 10
+- [ ] Done
 
 **Define the hyper-parameters α and λ in sklearn's ElasticNet.**
 
@@ -4148,6 +4256,7 @@ print(f"Best alpha: {model.alpha_}, Best l1_ratio: {model.l1_ratio_}")
 ---
 
 ## Question 11
+- [ ] Done
 
 **How do you tune λ in practice? List three methods.**
 
@@ -4181,6 +4290,7 @@ model.fit(X_train, y_train)
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe cross-validation for choosing regularization strength.**
 
@@ -4217,6 +4327,7 @@ model.fit(X_train, y_train)
 ---
 
 ## Question 13
+- [ ] Done
 
 **What is the bias–variance trade-off when increasing λ in Ridge?**
 
@@ -4249,6 +4360,7 @@ model.fit(X_train, y_train)
 ---
 
 ## Question 14
+- [ ] Done
 
 **Show how standardizing predictors affects Ridge/Lasso solutions.**
 
@@ -4290,6 +4402,7 @@ X_test_scaled = scaler.transform(X_test)  # transform test with train stats
 ---
 
 ## Question 15
+- [ ] Done
 
 **Why does Lasso sometimes behave erratically when p ≫ n?**
 
@@ -4327,6 +4440,7 @@ When p >> n (many more features than samples), Lasso can behave erratically beca
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the idea of "grouped" variable selection in Elastic Net.**
 
@@ -4365,6 +4479,7 @@ where lambda_2 is the L2 penalty strength.
 ---
 
 ## Question 17
+- [ ] Done
 
 **Compare Ridge/Lasso to subset selection in terms of computational cost.**
 
@@ -4397,6 +4512,7 @@ where lambda_2 is the L2 penalty strength.
 ---
 
 ## Question 18
+- [ ] Done
 
 **What is the "oracle property" in the context of Lasso?**
 
@@ -4430,6 +4546,7 @@ The **oracle property** means that the estimator performs as well as if an oracl
 ---
 
 ## Question 19
+- [ ] Done
 
 **How does the elastic-net mixing parameter ρ influence sparsity?**
 
@@ -4468,6 +4585,7 @@ where rho (l1_ratio) is the mixing parameter.
 ---
 
 ## Question 20
+- [ ] Done
 
 **In which scenarios can Ridge regression beat OLS even when n > p?**
 
@@ -4508,6 +4626,7 @@ For small lambda: Bias^2 is negligible while Variance reduction is significant -
 ---
 
 ## Question 21
+- [ ] Done
 
 **Discuss multicollinearity and how regularization fixes it.**
 
@@ -4549,6 +4668,7 @@ Var(beta_ridge) = sigma^2 * (X'X + lambda*I)^(-1) * X'X * (X'X + lambda*I)^(-1)
 ---
 
 ## Question 22
+- [ ] Done
 
 **Provide a real example where Lasso harmed model interpretability.**
 
@@ -4581,6 +4701,7 @@ A hospital used Lasso to select features from 200 clinical variables. The model 
 ---
 
 ## Question 23
+- [ ] Done
 
 **What are potential pitfalls when using Lasso for time-series data?**
 
@@ -4614,6 +4735,7 @@ A hospital used Lasso to select features from 200 clinical variables. The model 
 ---
 
 ## Question 24
+- [ ] Done
 
 **Show how Bayesian Ridge relates to L2-regularization.**
 
@@ -4660,6 +4782,7 @@ y_pred, y_std = model.predict(X_test, return_std=True)
 ---
 
 ## Question 25
+- [ ] Done
 
 **How would you extend Lasso to generalized linear models?**
 
@@ -4708,6 +4831,7 @@ from glmnet import LogitNet, ElasticNet
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain warm-starts in coordinate descent for Lasso paths.**
 
@@ -4748,6 +4872,7 @@ Continue decreasing lambda, always starting from previous solution
 ---
 
 ## Question 27
+- [ ] Done
 
 **Compare glmnet (R) and sklearn (Python) implementations of Elastic Net.**
 
@@ -4781,6 +4906,7 @@ Continue decreasing lambda, always starting from previous solution
 ---
 
 ## Question 28
+- [ ] Done
 
 **What is "adaptive Lasso"? Describe its two-stage procedure.**
 
@@ -4830,6 +4956,7 @@ beta_adaptive = lasso.coef_ / weights
 ---
 
 ## Question 29
+- [ ] Done
 
 **Discuss limitations of Lasso with highly correlated true signals.**
 
@@ -4869,6 +4996,7 @@ When the true signals are **highly correlated**, Lasso has several well-document
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain "cross-validation one-standard-error rule" for λ selection.**
 
@@ -4921,6 +5049,7 @@ CV Error
 ---
 
 ## Question 31
+- [ ] Done
 
 **How does Ridge handle categorical variables encoded via one-hot?**
 
@@ -4963,6 +5092,7 @@ Ridge penalty on Temperature: lambda * beta_T^2
 ---
 
 ## Question 32
+- [ ] Done
 
 **Why can Lasso under-select in presence of grouped predictors?**
 
@@ -5002,6 +5132,7 @@ Desired: All three selected (they're all relevant to the pathway signal)
 ---
 
 ## Question 33
+- [ ] Done
 
 **When does Elastic Net degenerate to Ridge or Lasso?**
 
@@ -5037,6 +5168,7 @@ Elastic Net cost function: MSE + alpha * [l1_ratio * ||beta||_1 + (1-l1_ratio)/2
 ---
 
 ## Question 34
+- [ ] Done
 
 **Show how to plot the coefficient path as a function of λ.**
 
@@ -5083,6 +5215,7 @@ plt.show()
 ---
 
 ## Question 35
+- [ ] Done
 
 **Discuss computational complexity of coordinate descent vs LARS.**
 
@@ -5118,6 +5251,7 @@ plt.show()
 ---
 
 ## Question 36
+- [ ] Done
 
 **Explain how to interpret standardized coefficients after Ridge.**
 
@@ -5156,6 +5290,7 @@ intercept_original = y_mean - SUM(beta_std_j * x_mean_j / sd_x_j)
 ---
 
 ## Question 37
+- [ ] Done
 
 **What diagnostics would you inspect after fitting a regularized model?**
 
@@ -5194,6 +5329,7 @@ print(f"OLS R2: {ols.score(X_test, y_test):.4f}")
 ---
 
 ## Question 38
+- [ ] Done
 
 **How do Ridge/Lasso react to heteroscedastic errors?**
 
@@ -5233,6 +5369,7 @@ Heteroscedastic errors (non-constant variance) affect Ridge and Lasso differentl
 ---
 
 ## Question 39
+- [ ] Done
 
 **Describe the effect of strong regularization on model residuals.**
 
@@ -5269,6 +5406,7 @@ lambda = 0 (OLS):  residuals = smallest     (may be overfitting to noise)
 ---
 
 ## Question 40
+- [ ] Done
 
 **Explain why Lasso may pick different features across CV folds.**
 
@@ -5310,6 +5448,7 @@ Fold 3: Selects features {A, B, C, D}    (Both A and B kept with small coefs)
 ---
 
 ## Question 41
+- [ ] Done
 
 **Can you parallelize cross-validation for λ search? How?**
 
@@ -5357,6 +5496,7 @@ results = Parallel(n_jobs=-1)(delayed(evaluate_alpha)(a) for a in alphas)
 ---
 
 ## Question 42
+- [ ] Done
 
 **How do you handle missing values before regularized regression?**
 
@@ -5401,6 +5541,7 @@ pipe.fit(X_train, y_train)  # Imputer fit on train only
 ---
 
 ## Question 43
+- [ ] Done
 
 **Discuss the impact of outliers on Ridge and Lasso.**
 
@@ -5444,6 +5585,7 @@ model = HuberRegressor(epsilon=1.35, alpha=0.01)
 ---
 
 ## Question 44
+- [ ] Done
 
 **Explain "post-Lasso OLS" and its benefits.**
 
@@ -5487,6 +5629,7 @@ y_pred = ols.predict(X_test[:, selected])
 ---
 
 ## Question 45
+- [ ] Done
 
 **Contrast Ridge/Lasso with Principal Component Regression.**
 
@@ -5524,6 +5667,7 @@ y_pred = ols.predict(X_test[:, selected])
 ---
 
 ## Question 46
+- [ ] Done
 
 **What is group Lasso and how is it solved?**
 
@@ -5566,6 +5710,7 @@ where:
 ---
 
 ## Question 47
+- [ ] Done
 
 **Describe the dual formulation of Ridge regression.**
 
@@ -5607,6 +5752,7 @@ If X = U*D*V', then:
 ---
 
 ## Question 48
+- [ ] Done
 
 **Explain early stopping in gradient-descent Ridge fitting.**
 
@@ -5651,6 +5797,7 @@ For t = 1, 2, ..., T_stop:
 ---
 
 ## Question 49
+- [ ] Done
 
 **How would you adapt Elastic Net for multinomial classification?**
 
@@ -5698,6 +5845,7 @@ model.fit(X_train, y_train)
 ---
 
 ## Question 50
+- [ ] Done
 
 **Give an industry case study where Elastic Net improved performance.**
 

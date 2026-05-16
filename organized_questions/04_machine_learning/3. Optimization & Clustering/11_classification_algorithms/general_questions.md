@@ -1,6 +1,7 @@
 # Classification Algorithms Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **Can you differentiate between binary and multiclass classification?**
 
@@ -45,6 +46,7 @@ Binary classification predicts between exactly 2 classes (yes/no, spam/not spam)
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you deal with unbalanced datasets in classification?**
 
@@ -103,6 +105,7 @@ y_pred = (y_prob > 0.3).astype(int)  # Lower threshold for minority
 ---
 
 ## Question 3
+- [ ] Done
 
 **What techniques can be used to prevent overfitting in classification models?**
 
@@ -159,6 +162,7 @@ early_stop = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=
 ---
 
 ## Question 4
+- [ ] Done
 
 **Compare and contrast shallow and deep learning classifiers.**
 
@@ -216,6 +220,7 @@ Shallow learning uses traditional ML with manual feature engineering (SVM, Rando
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do decision tree splitting criteria like Gini impurity and entropy affect the model?**
 
@@ -289,6 +294,7 @@ print(f"Entropy depth: {tree_entropy.get_depth()}")
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do Convolutional Neural Networks (CNNs) differ from regular Neural Networks in classification tasks related to images?**
 
@@ -370,6 +376,7 @@ print(f"CNN params: {cnn.count_params():,}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **How has the field of Natural Language Processing evolved with advancements in classification models?**
 

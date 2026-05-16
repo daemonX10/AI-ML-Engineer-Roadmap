@@ -1,6 +1,7 @@
 # Pca Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Write a Python function to perform PCA from scratch using NumPy.**
 
@@ -60,6 +61,7 @@ print(f"Variance explained: {var_ratio}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Use scikit-learn to apply PCA on a high-dimensional dataset and interpret the results.**
 
@@ -130,6 +132,7 @@ plt.show()
 ---
 
 ## Question 3
+- [ ] Done
 
 **Code a Python script to visualize the eigenfaces from a given set of facial images dataset using PCA.**
 
@@ -194,6 +197,7 @@ print(f"Variance explained by {n_components} components: "
 ---
 
 ## Question 4
+- [ ] Done
 
 **Implement PCA for feature extraction before applying a machine learning model.**
 
@@ -259,6 +263,7 @@ print(f"Accuracy without PCA: {accuracy_score(y_test, y_pred_no_pca):.4f}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **Implement PCA in TensorFlow or PyTorch and compare the results with scikit-learn's implementation.**
 
@@ -333,6 +338,7 @@ for i in range(n_components):
 ---
 
 ## Question 6
+- [ ] Done
 
 **Demonstrate how to choose an optimal number of dimensions with PCA in Python using the "elbow method".**
 
@@ -403,6 +409,7 @@ print(f"Original features: {X.shape[1]}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Write a Python script to automatically remove outliers before performing PCA.**
 
@@ -483,6 +490,7 @@ plt.show()
 ---
 
 ## Question 8
+- [ ] Done
 
 **Create a synthetic dataset and show the effect of PCA on classification accuracy using a machine learning algorithm before and after PCA.**
 

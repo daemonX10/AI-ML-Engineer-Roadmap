@@ -1,6 +1,7 @@
 # XGBoost Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you interpret XGBoost models and understand feature importance?**
 
@@ -90,6 +91,7 @@ shap.summary_plot(shap_interaction, X_test)
 ---
 
 ## Question 2
+- [ ] Done
 
 **What methods can be employed to improve the computational efficiency of XGBoost training?**
 
@@ -194,6 +196,7 @@ model = xgb.XGBClassifier(
 ---
 
 ## Question 3
+- [ ] Done
 
 **How can you use XGBoost for a multi-class classification problem?**
 
@@ -298,6 +301,7 @@ model = xgb.XGBClassifier(
 ---
 
 ## Question 4
+- [ ] Done
 
 **How can you combine XGBoost with other machine learning models in an ensemble?**
 
@@ -403,6 +407,7 @@ xgb_model.fit(X_combined, y_train)
 ---
 
 ## Question 5
+- [ ] Done
 
 **How can XGBoost be integrated within a distributed computing environment for large-scale problems?**
 
@@ -519,6 +524,7 @@ result = train(
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do recent advancements in hardware (such as GPU acceleration) impact the use of XGBoost?**
 

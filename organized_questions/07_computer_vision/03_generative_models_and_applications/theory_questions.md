@@ -3,6 +3,7 @@
 ## GANs Fundamentals
 
 ### Question 1
+- [ ] Done
 **Explain the generator and discriminator adversarial training dynamics. What is mode collapse and how do you prevent it?**
 
 **Answer:**
@@ -203,6 +204,7 @@ def train_gan_stable(G, D, dataloader, epochs=100, device='cuda'):
 ---
 
 ### Question 2
+- [ ] Done
 **Compare GAN loss functions: vanilla GAN, WGAN, WGAN-GP, and hinge loss. When would you use each?**
 
 **Answer:**
@@ -419,6 +421,7 @@ def train_with_different_losses(G, D, dataloader, loss_type='wgan-gp'):
 ---
 
 ### Question 3
+- [ ] Done
 **Explain progressive growing in GANs and how it enables high-resolution image generation.**
 
 **Answer:**
@@ -675,6 +678,7 @@ def train_progressive_gan(G, D, dataloader, epochs_per_stage=10):
 ---
 
 ### Question 4
+- [ ] Done
 **What are FID (Fréchet Inception Distance) and Inception Score? How do you evaluate generative model quality?**
 
 **Answer:**
@@ -976,6 +980,7 @@ class GenerativeModelEvaluator:
 ## StyleGAN Family
 
 ### Question 5
+- [ ] Done
 **Explain StyleGAN's mapping network and how the W latent space differs from Z space.**
 
 **Answer:**
@@ -1208,6 +1213,7 @@ def compare_z_vs_w_interpolation(G, device='cuda'):
 ---
 
 ### Question 6
+- [ ] Done
 **Describe AdaIN (Adaptive Instance Normalization) and how it injects style at each layer.**
 
 **Answer:**
@@ -1445,6 +1451,7 @@ def visualize_style_effect():
 ---
 
 ### Question 7
+- [ ] Done
 **Explain the separation of coarse, middle, and fine styles in StyleGAN layers.**
 
 **Answer:**
@@ -1687,6 +1694,7 @@ def demo_layer_effects():
 ---
 
 ### Question 8
+- [ ] Done
 **What are StyleGAN2's key improvements: weight demodulation, path-length regularization, no progressive growing?**
 
 **Answer:**
@@ -2023,6 +2031,7 @@ def train_stylegan2(G, D, dataloader, device='cuda'):
 ---
 
 ### Question 9
+- [ ] Done
 **Explain StyleGAN3's alias-free design and how it eliminates texture sticking artifacts.**
 
 **Answer:**
@@ -2335,6 +2344,7 @@ def visualize_texture_sticking():
 ---
 
 ### Question 10
+- [ ] Done
 **Describe the truncation trick in StyleGAN. How does ψ parameter trade diversity for quality?**
 
 **Answer:**
@@ -2563,6 +2573,7 @@ This preserves texture variation while controlling structural quality.
 ---
 
 ### Question 11
+- [ ] Done
 **Explain StyleGAN latent spaces: Z, W, W+, and S space. Which is best for image editing?**
 
 **Answer:**
@@ -2839,6 +2850,7 @@ def real_image_editing_pipeline(image, generator, edit_direction, strength):
 ---
 
 ### Question 12
+- [ ] Done
 **How do GAN inversion methods (e4e, pSp, optimization-based) project real images to latent space?**
 
 **Answer:**
@@ -3163,6 +3175,7 @@ def compare_inversion_methods():
 ---
 
 ### Question 13
+- [ ] Done
 **Explain semantic editing in StyleGAN latent space (InterFaceGAN, GANSpace, StyleCLIP).**
 
 **Answer:**
@@ -3511,6 +3524,7 @@ def semantic_editing_example():
 ## CycleGAN & Unpaired Translation
 
 ### Question 14
+- [ ] Done
 **Explain image-to-image translation without paired data. How does cycle-consistency loss work?**
 
 **Answer:**
@@ -3844,6 +3858,7 @@ Without constraints, G could map all inputs to a single output that fools D. Cyc
 ---
 
 ### Question 15
+- [ ] Done
 **What is the identity loss in CycleGAN and when is it necessary?**
 
 **Answer:**
@@ -3983,6 +3998,7 @@ Common values:
 ---
 
 ### Question 16
+- [ ] Done
 **Explain the PatchGAN discriminator and why patch-level discrimination works better than image-level.**
 
 **Answer:**
@@ -4195,6 +4211,7 @@ def visualize_patch_output():
 ---
 
 ### Question 17
+- [ ] Done
 **What are CycleGAN's limitations (geometry changes, semantic consistency) and how does CUT improve on them?**
 
 **Answer:**
@@ -4470,6 +4487,7 @@ def compare_cyclegan_cut():
 ---
 
 ### Question 18
+- [ ] Done
 **Explain multi-domain translation with StarGAN vs. training separate CycleGAN models.**
 
 **Answer:**
@@ -4787,6 +4805,7 @@ def stargan_applications():
 ## Pix2Pix & Paired Translation
 
 ### Question 19
+- [ ] Done
 **Explain conditional GAN architecture in Pix2Pix and the role of L1 reconstruction loss.**
 
 **Answer:**
@@ -5051,6 +5070,7 @@ This ensures the output is **consistent with the input**, not just realistic in 
 ---
 
 ### Question 20
+- [ ] Done
 **Describe the U-Net generator in Pix2Pix and why skip connections help paired translation.**
 
 **Answer:**
@@ -5276,6 +5296,7 @@ def skip_connection_ablation():
 ---
 
 ### Question 21
+- [ ] Done
 **How does Pix2PixHD achieve high-resolution translation with multi-scale discriminators?**
 
 **Answer:**
@@ -5628,6 +5649,7 @@ class Pix2PixHDLoss:
 ---
 
 ### Question 22
+- [ ] Done
 **Compare applications: edges-to-photo, semantic-to-photo, day-to-night. What determines task difficulty?**
 
 **Answer:**
@@ -5886,6 +5908,7 @@ def task_difficulty_ranking():
 ## Style Transfer
 
 ### Question 23
+- [ ] Done
 **Explain neural style transfer: content loss, style loss (Gram matrices), and the optimization process.**
 
 **Answer:**
@@ -6165,6 +6188,7 @@ def style_transfer_simple(content_img, style_img, num_steps=300):
 ---
 
 ### Question 24
+- [ ] Done
 **Compare optimization-based vs. feed-forward style transfer. What are the trade-offs?**
 
 **Answer:**
@@ -6407,6 +6431,7 @@ def compare_methods():
 ---
 
 ### Question 25
+- [ ] Done
 **How do you implement real-time arbitrary style transfer (AdaIN, WCT)?**
 
 **Answer:**
@@ -6710,6 +6735,7 @@ def real_time_style_transfer_demo():
 ---
 
 ### Question 26
+- [ ] Done
 **What techniques maintain temporal consistency in video style transfer?**
 
 **Answer:**
@@ -7022,6 +7048,7 @@ def training_with_temporal_loss(model, video_loader, style_img, epochs=10):
 ---
 
 ### Question 27
+- [ ] Done
 **How do you balance content preservation vs. style adoption? What controls this trade-off?**
 
 **Answer:**
@@ -7299,6 +7326,7 @@ def layer_experiment():
 ## 3D Reconstruction (NeRF, Gaussian Splatting)
 
 ### Question 28
+- [ ] Done
 **Explain NeRF's core idea: representing scenes as neural radiance fields with MLPs.**
 
 **Answer:**
@@ -7592,6 +7620,7 @@ def train_nerf():
 ---
 
 ### Question 29
+- [ ] Done
 **Describe volumetric rendering in NeRF. How are colors and densities integrated along rays?**
 
 **Answer:**
@@ -7850,6 +7879,7 @@ def visualize_rendering():
 ---
 
 ### Question 30
+- [ ] Done
 **What are positional encodings in NeRF and why do they help capture high-frequency details?**
 
 **Answer:**
@@ -8091,6 +8121,7 @@ Deeper MLPs still have spectral bias—they learn low frequencies first and high
 ---
 
 ### Question 31
+- [ ] Done
 **How does 3D Gaussian Splatting achieve real-time rendering compared to NeRF's slow inference?**
 
 **Answer:**
@@ -8364,6 +8395,7 @@ def speed_comparison():
 ---
 
 ### Question 32
+- [ ] Done
 **Explain spherical harmonics for view-dependent color in Gaussian Splatting.**
 
 **Answer:**
@@ -8606,6 +8638,7 @@ def training_with_sh():
 ---
 
 ### Question 33
+- [ ] Done
 **Compare NeRF vs. Gaussian Splatting for quality, speed, and memory requirements.**
 
 **Answer:**
@@ -8824,6 +8857,7 @@ def benchmark_scene(scene_type='indoor'):
 ---
 
 ### Question 34
+- [ ] Done
 **How do you handle dynamic scenes in NeRF (D-NeRF, Nerfies)?**
 
 **Answer:**
@@ -9142,6 +9176,7 @@ def training_considerations():
 ---
 
 ### Question 35
+- [ ] Done
 **What techniques reduce NeRF training time (Instant-NGP, TensoRF, Plenoxels)?**
 
 **Answer:**
@@ -9501,6 +9536,7 @@ def speedup_summary():
 ---
 
 ### Question 36
+- [ ] Done
 **How do you handle sparse or unevenly distributed camera viewpoints in 3D reconstruction?**
 
 **Answer:**
@@ -9843,6 +9879,7 @@ class NeRFMLP(nn.Module):
 ## OCR (Optical Character Recognition)
 
 ### Question 37
+- [ ] Done
 **Compare traditional OCR pipeline (detection + recognition) vs. end-to-end approaches.**
 
 **Answer:**
@@ -10130,6 +10167,7 @@ def compare_approaches():
 ---
 
 ### Question 38
+- [ ] Done
 **How do transformer-based OCR models (TrOCR) improve upon CNN-RNN-CTC approaches?**
 
 **Answer:**
@@ -10402,6 +10440,7 @@ def attention_advantage():
 ---
 
 ### Question 39
+- [ ] Done
 **What are the key challenges in handwritten vs. printed text recognition?**
 
 **Answer:**
@@ -10715,6 +10754,7 @@ def compare_challenges():
 ---
 
 ### Question 40
+- [ ] Done
 **How do you handle OCR for documents with complex layouts, tables, and mixed content?**
 
 **Answer:**
@@ -11081,6 +11121,7 @@ class ROIHead(nn.Module):
 ---
 
 ### Question 41
+- [ ] Done
 **Explain preprocessing steps (binarization, deskewing, denoising) for improving OCR accuracy.**
 
 **Answer:**
@@ -11449,6 +11490,7 @@ def when_to_skip():
 ---
 
 ### Question 42
+- [ ] Done
 **How do you implement OCR post-processing with language models to correct errors?**
 
 **Answer:**
@@ -11850,6 +11892,7 @@ def post_processing_demo():
 ---
 
 ### Question 43
+- [ ] Done
 **What techniques work for multilingual OCR with different scripts and writing directions?**
 
 **Answer:**
@@ -12256,6 +12299,7 @@ def handling_code_switching():
 ## Super-Resolution
 
 ### Question 44
+- [ ] Done
 **Compare PSNR-oriented vs. perceptual quality-oriented super-resolution models.**
 
 **Answer:**
@@ -12524,6 +12568,7 @@ def quality_comparison():
 ---
 
 ### Question 45
+- [ ] Done
 **Explain SRGAN and ESRGAN. How do perceptual and adversarial losses improve visual quality?**
 
 **Answer:**
@@ -12879,6 +12924,7 @@ def esrgan_improvements():
 ---
 
 ### Question 46
+- [ ] Done
 **How do you handle real-world degradation (blur, noise, compression) vs. simple bicubic downsampling?**
 
 **Answer:**
@@ -13249,6 +13295,7 @@ def degradation_comparison():
 ---
 
 ### Question 47
+- [ ] Done
 **What techniques preserve fine details and textures during upscaling?**
 
 **Answer:**
@@ -13639,6 +13686,7 @@ class FrequencySeparation(nn.Module):
 ---
 
 ### Question 48
+- [ ] Done
 **How do you implement efficient super-resolution for real-time video streaming?**
 
 **Answer:**
@@ -14026,6 +14074,7 @@ def benchmark_comparison():
 ## Facial Recognition
 
 ### Question 49
+- [ ] Done
 **Explain face embedding networks (FaceNet, ArcFace, CosFace) and metric learning losses.**
 
 **Answer:**
@@ -14355,6 +14404,7 @@ def loss_comparison():
 ---
 
 ### Question 50
+- [ ] Done
 **How do you handle face recognition across different ethnicities with fairness considerations?**
 
 **Answer:**
@@ -14703,6 +14753,7 @@ def fairness_report():
 ---
 
 ### Question 51
+- [ ] Done
 **What techniques work for face recognition with masks, glasses, or partial occlusion?**
 
 **Answer:**
@@ -15053,6 +15104,7 @@ def masked_face_strategies():
 ---
 
 ### Question 52
+- [ ] Done
 **Explain liveness detection and anti-spoofing techniques for face recognition systems.**
 
 **Answer:**
@@ -15407,6 +15459,7 @@ def anti_spoofing_strategies():
 ---
 
 ### Question 53
+- [ ] Done
 **How do you design face recognition systems robust to aging and appearance changes?**
 
 **Answer:**
@@ -15735,6 +15788,7 @@ def age_invariant_training_strategy():
 ---
 
 ### Question 54
+- [ ] Done
 **What are the privacy considerations when deploying facial recognition in public spaces?**
 
 **Answer:**
@@ -16065,6 +16119,7 @@ def privacy_deployment_checklist():
 ## Video Tracking
 
 ### Question 55
+- [ ] Done
 **Compare detection-based (tracking-by-detection) vs. correlation-based tracking approaches.**
 
 **Answer:**
@@ -16423,6 +16478,7 @@ def compare_tracking_paradigms():
 ---
 
 ### Question 56
+- [ ] Done
 **Explain multi-object tracking (MOT) and the data association problem (Hungarian algorithm, DeepSORT).**
 
 **Answer:**
@@ -16860,6 +16916,7 @@ class DeepSORT(SORT):
 ---
 
 ### Question 57
+- [ ] Done
 **How do you handle tracking through occlusions and temporary object disappearances?**
 
 **Answer:**
@@ -17217,6 +17274,7 @@ Track Reactivation or Deletion
 ---
 
 ### Question 58
+- [ ] Done
 **What techniques maintain identity consistency across long video sequences?**
 
 **Answer:**
@@ -17600,6 +17658,7 @@ class TrackConfidenceScoring:
 ---
 
 ### Question 59
+- [ ] Done
 **Explain re-identification (ReID) features and their role in multi-camera tracking.**
 
 **Answer:**
@@ -17976,6 +18035,7 @@ class CameraTopologyLearning:
 ---
 
 ### Question 60
+- [ ] Done
 **How do you implement real-time tracking with computational efficiency constraints?**
 
 **Answer:**
@@ -18411,6 +18471,7 @@ def optimization_checklist():
 ## Diffusion Models (Bonus)
 
 ### Question 61
+- [ ] Done
 **Explain the forward and reverse diffusion process. How do diffusion models generate images?**
 
 **Answer:**
@@ -18734,6 +18795,7 @@ def diffusion_overview():
 ---
 
 ### Question 62
+- [ ] Done
 **Compare diffusion models vs. GANs for image generation quality, diversity, and training stability.**
 
 **Answer:**
@@ -19085,6 +19147,7 @@ def when_to_use_which():
 ---
 
 ### Question 63
+- [ ] Done
 **How do classifier-free guidance and text conditioning work in Stable Diffusion?**
 
 **Answer:**
@@ -19441,6 +19504,7 @@ class CFGTraining:
 ---
 
 ### Question 64
+- [ ] Done
 **Explain ControlNet and how it adds spatial control to diffusion models.**
 
 **Answer:**
@@ -19807,6 +19871,7 @@ def controlnet_conditions():
 ---
 
 ### Question 65
+- [ ] Done
 **What techniques speed up diffusion model inference (DDIM, DPM-Solver, distillation)?**
 
 **Answer:**
@@ -20227,6 +20292,7 @@ def speedup_summary():
 # StyleGAN / StyleGAN2 / StyleGAN3 Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain generator architecture of original StyleGAN.**
 
@@ -20235,6 +20301,7 @@ def speedup_summary():
 ---
 
 ## Question 2
+- [ ] Done
 
 **Define style mapping network and AdaIN.**
 
@@ -20243,6 +20310,7 @@ def speedup_summary():
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain progressive growing in StyleGAN.**
 
@@ -20251,6 +20319,7 @@ def speedup_summary():
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe path-length regularisation in StyleGAN2.**
 
@@ -20259,6 +20328,7 @@ def speedup_summary():
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain weight demodulation and its purpose.**
 
@@ -20267,6 +20337,7 @@ def speedup_summary():
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss removal of blob-shaped artifacts in StyleGAN2-ADA.**
 
@@ -20275,6 +20346,7 @@ def speedup_summary():
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain Adaptive Discriminator Augmentation (ADA).**
 
@@ -20283,6 +20355,7 @@ def speedup_summary():
 ---
 
 ## Question 8
+- [ ] Done
 
 **Compare StyleGAN vs. ProGAN.**
 
@@ -20291,6 +20364,7 @@ def speedup_summary():
 ---
 
 ## Question 9
+- [ ] Done
 
 **Describe style mixing regularisation.**
 
@@ -20299,6 +20373,7 @@ def speedup_summary():
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain noise injection and stochastic variation.**
 
@@ -20307,6 +20382,7 @@ def speedup_summary():
 ---
 
 ## Question 11
+- [ ] Done
 
 **Discuss truncation trick and ψ parameter.**
 
@@ -20315,6 +20391,7 @@ def speedup_summary():
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe interface-GAN and latent editing.**
 
@@ -20323,6 +20400,7 @@ def speedup_summary():
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain StyleGAN inversion methods (e.g., e4e, pSp).**
 
@@ -20331,6 +20409,7 @@ def speedup_summary():
 ---
 
 ## Question 14
+- [ ] Done
 
 **Compare pixel-wise vs. channel-wise noise.**
 
@@ -20339,6 +20418,7 @@ def speedup_summary():
 ---
 
 ## Question 15
+- [ ] Done
 
 **Discuss StyleGAN3's alias-free design.**
 
@@ -20347,6 +20427,7 @@ def speedup_summary():
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain 2-D fourier features in StyleGAN3.**
 
@@ -20355,6 +20436,7 @@ def speedup_summary():
 ---
 
 ## Question 17
+- [ ] Done
 
 **Describe continuous depth translation invariance.**
 
@@ -20363,6 +20445,7 @@ def speedup_summary():
 ---
 
 ## Question 18
+- [ ] Done
 
 **Discuss out-of-distribution generalisation and datasets.**
 
@@ -20371,6 +20454,7 @@ def speedup_summary():
 ---
 
 ## Question 19
+- [ ] Done
 
 **Compare FID vs. Inception Score for generative quality.**
 
@@ -20379,6 +20463,7 @@ def speedup_summary():
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain projector for identity-preserving face editing.**
 
@@ -20387,6 +20472,7 @@ def speedup_summary():
 ---
 
 ## Question 21
+- [ ] Done
 
 **Discuss attribute manipulations with GANSpace.**
 
@@ -20395,6 +20481,7 @@ def speedup_summary():
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain GAN dissection and unit visualisation.**
 
@@ -20403,6 +20490,7 @@ def speedup_summary():
 ---
 
 ## Question 23
+- [ ] Done
 
 **Describe style generalisation across datasets.**
 
@@ -20411,6 +20499,7 @@ def speedup_summary():
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain fine-tuning StyleGAN for few-shot generation.**
 
@@ -20419,6 +20508,7 @@ def speedup_summary():
 ---
 
 ## Question 25
+- [ ] Done
 
 **Discuss GAN-based data augmentation for downstream tasks.**
 
@@ -20427,6 +20517,7 @@ def speedup_summary():
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain CLIP-guided latent editing.**
 
@@ -20435,6 +20526,7 @@ def speedup_summary():
 ---
 
 ## Question 27
+- [ ] Done
 
 **Describe training StyleGAN on non-aligned data.**
 
@@ -20443,6 +20535,7 @@ def speedup_summary():
 ---
 
 ## Question 28
+- [ ] Done
 
 **Explain hyperspherical latent space and spherical embeddings.**
 
@@ -20451,6 +20544,7 @@ def speedup_summary():
 ---
 
 ## Question 29
+- [ ] Done
 
 **Discuss generative prior for image restoration.**
 
@@ -20459,6 +20553,7 @@ def speedup_summary():
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain StyleGAN for text-to-image via multi-modal alignment.**
 
@@ -20467,6 +20562,7 @@ def speedup_summary():
 ---
 
 ## Question 31
+- [ ] Done
 
 **Describe Co-mod-GAN bridging StyleGAN with segmentation.**
 
@@ -20475,6 +20571,7 @@ def speedup_summary():
 ---
 
 ## Question 32
+- [ ] Done
 
 **Explain 3-D aware StyleGAN (StyleNeRF).**
 
@@ -20483,6 +20580,7 @@ def speedup_summary():
 ---
 
 ## Question 33
+- [ ] Done
 
 **Discuss hyper-style for high-quality editing.**
 
@@ -20491,6 +20589,7 @@ def speedup_summary():
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain adversarial robustness of StyleGAN.**
 
@@ -20499,6 +20598,7 @@ def speedup_summary():
 ---
 
 ## Question 35
+- [ ] Done
 
 **Describe model compression and distillation for mobile GANs.**
 
@@ -20507,6 +20607,7 @@ def speedup_summary():
 ---
 
 ## Question 36
+- [ ] Done
 
 **Discuss fairness and demographic bias in face GANs.**
 
@@ -20515,6 +20616,7 @@ def speedup_summary():
 ---
 
 ## Question 37
+- [ ] Done
 
 **Explain integrating diffusion loss into StyleGAN training.**
 
@@ -20523,6 +20625,7 @@ def speedup_summary():
 ---
 
 ## Question 38
+- [ ] Done
 
 **Describe watermarking generated images.**
 
@@ -20531,6 +20634,7 @@ def speedup_summary():
 ---
 
 ## Question 39
+- [ ] Done
 
 **Explain infinite zoom and out-painting with StyleGAN.**
 
@@ -20539,6 +20643,7 @@ def speedup_summary():
 ---
 
 ## Question 40
+- [ ] Done
 
 **Discuss licensing and ethical concerns of dataset usage.**
 
@@ -20547,6 +20652,7 @@ def speedup_summary():
 ---
 
 ## Question 41
+- [ ] Done
 
 **Explain style mixing latent interpolation.**
 
@@ -20555,6 +20661,7 @@ def speedup_summary():
 ---
 
 ## Question 42
+- [ ] Done
 
 **Describe transferring StyleGAN generator between domains.**
 
@@ -20563,6 +20670,7 @@ def speedup_summary():
 ---
 
 ## Question 43
+- [ ] Done
 
 **Explain segmentation-guided GANs for part mixing.**
 
@@ -20571,6 +20679,7 @@ def speedup_summary():
 ---
 
 ## Question 44
+- [ ] Done
 
 **Discuss real-time inference optimisation.**
 
@@ -20579,6 +20688,7 @@ def speedup_summary():
 ---
 
 ## Question 45
+- [ ] Done
 
 **Explain zero-shot generative domain adaptation.**
 
@@ -20587,6 +20697,7 @@ def speedup_summary():
 ---
 
 ## Question 46
+- [ ] Done
 
 **Discuss adversarial detection of GAN-generated images.**
 
@@ -20595,6 +20706,7 @@ def speedup_summary():
 ---
 
 ## Question 47
+- [ ] Done
 
 **Explain quality tuning via per-layer noise magnitude.**
 
@@ -20603,6 +20715,7 @@ def speedup_summary():
 ---
 
 ## Question 48
+- [ ] Done
 
 **Predict future of StyleGAN-like architectures.**
 
@@ -20618,6 +20731,7 @@ def speedup_summary():
 # CycleGAN Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Describe adversarial loss and cycle-consistency loss.**
 
@@ -20626,6 +20740,7 @@ def speedup_summary():
 ---
 
 ## Question 2
+- [ ] Done
 
 **Discuss identity loss and when needed.**
 
@@ -20634,6 +20749,7 @@ def speedup_summary():
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain role of PatchGAN discriminator.**
 
@@ -20642,6 +20758,7 @@ def speedup_summary():
 ---
 
 ## Question 4
+- [ ] Done
 
 **Describe generator architecture in CycleGAN.**
 
@@ -20650,6 +20767,7 @@ def speedup_summary():
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain training stability challenges in CycleGAN.**
 
@@ -20658,6 +20776,7 @@ def speedup_summary():
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss mode collapse and mitigation.**
 
@@ -20666,6 +20785,7 @@ def speedup_summary():
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain mapping ambiguity problem.**
 
@@ -20674,6 +20794,7 @@ def speedup_summary():
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe data augmentation strategies.**
 
@@ -20682,6 +20803,7 @@ def speedup_summary():
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain CycleGAN for style transfer vs. domain transfer.**
 
@@ -20690,6 +20812,7 @@ def speedup_summary():
 ---
 
 ## Question 10
+- [ ] Done
 
 **Discuss applications in medical imaging.**
 
@@ -20698,6 +20821,7 @@ def speedup_summary():
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain CycleGAN in video translation and temporal consistency.**
 
@@ -20706,6 +20830,7 @@ def speedup_summary():
 ---
 
 ## Question 12
+- [ ] Done
 
 **Discuss evaluation with FID and LPIPS.**
 
@@ -20714,6 +20839,7 @@ def speedup_summary():
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain spectral normalization in CycleGAN.**
 
@@ -20722,6 +20848,7 @@ def speedup_summary():
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe attention-guided CycleGAN.**
 
@@ -20730,6 +20857,7 @@ def speedup_summary():
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain multi-domain CycleGAN (StarGAN).**
 
@@ -20738,6 +20866,7 @@ def speedup_summary():
 ---
 
 ## Question 16
+- [ ] Done
 
 **Discuss geometry-consistent CycleGAN.**
 
@@ -20746,6 +20875,7 @@ def speedup_summary():
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain cut (contrastive unpaired translation) vs. CycleGAN.**
 
@@ -20754,6 +20884,7 @@ def speedup_summary():
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe cyclic perceptual loss.**
 
@@ -20762,6 +20893,7 @@ def speedup_summary():
 ---
 
 ## Question 19
+- [ ] Done
 
 **Discuss memory use with high-res images.**
 
@@ -20770,6 +20902,7 @@ def speedup_summary():
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain one-sided label smoothing in discriminators.**
 
@@ -20778,6 +20911,7 @@ def speedup_summary():
 ---
 
 ## Question 21
+- [ ] Done
 
 **Discuss CubeGAN for 3-D domain translation.**
 
@@ -20786,6 +20920,7 @@ def speedup_summary():
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain partial weight sharing across generators.**
 
@@ -20794,6 +20929,7 @@ def speedup_summary():
 ---
 
 ## Question 23
+- [ ] Done
 
 **Describe training with mixed precision for CycleGAN.**
 
@@ -20802,6 +20938,7 @@ def speedup_summary():
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain patch-based training vs. full-image.**
 
@@ -20810,6 +20947,7 @@ def speedup_summary():
 ---
 
 ## Question 25
+- [ ] Done
 
 **Discuss CycleGAN for style untransferability issues.**
 
@@ -20818,6 +20956,7 @@ def speedup_summary():
 ---
 
 ## Question 26
+- [ ] Done
 
 **Explain domain adaptation using CycleGAN.**
 
@@ -20826,6 +20965,7 @@ def speedup_summary():
 ---
 
 ## Question 27
+- [ ] Done
 
 **Describe unsupervised depth transfer via CycleGAN.**
 
@@ -20834,6 +20974,7 @@ def speedup_summary():
 ---
 
 ## Question 28
+- [ ] Done
 
 **Explain CycleGAN failure cases.**
 
@@ -20842,6 +20983,7 @@ def speedup_summary():
 ---
 
 ## Question 29
+- [ ] Done
 
 **Discuss cyclic consistency with contrastive loss.**
 
@@ -20850,6 +20992,7 @@ def speedup_summary():
 ---
 
 ## Question 30
+- [ ] Done
 
 **Explain multi-cycle synergy (double cycle).**
 
@@ -20858,6 +21001,7 @@ def speedup_summary():
 ---
 
 ## Question 31
+- [ ] Done
 
 **Discuss GAN inversion for CycleGAN editing.**
 
@@ -20866,6 +21010,7 @@ def speedup_summary():
 ---
 
 ## Question 32
+- [ ] Done
 
 **Describe face ageing with CycleGAN variations.**
 
@@ -20874,6 +21019,7 @@ def speedup_summary():
 ---
 
 ## Question 33
+- [ ] Done
 
 **Explain dual learning relationship.**
 
@@ -20882,6 +21028,7 @@ def speedup_summary():
 ---
 
 ## Question 34
+- [ ] Done
 
 **Discuss training time reduction via teacher-student.**
 
@@ -20890,6 +21037,7 @@ def speedup_summary():
 ---
 
 ## Question 35
+- [ ] Done
 
 **Explain zero-shot translation with pre-trained CycleGAN.**
 
@@ -20898,6 +21046,7 @@ def speedup_summary():
 ---
 
 ## Question 36
+- [ ] Done
 
 **Describe patch-swap enhancements.**
 
@@ -20906,6 +21055,7 @@ def speedup_summary():
 ---
 
 ## Question 37
+- [ ] Done
 
 **Explain dynamical cropping for training.**
 
@@ -20914,6 +21064,7 @@ def speedup_summary():
 ---
 
 ## Question 38
+- [ ] Done
 
 **Discuss CycleGAN for audio domain.**
 
@@ -20922,6 +21073,7 @@ def speedup_summary():
 ---
 
 ## Question 39
+- [ ] Done
 
 **Explain progressive growing for CycleGAN.**
 
@@ -20930,6 +21082,7 @@ def speedup_summary():
 ---
 
 ## Question 40
+- [ ] Done
 
 **Describe multi-scale discriminators.**
 
@@ -20938,6 +21091,7 @@ def speedup_summary():
 ---
 
 ## Question 41
+- [ ] Done
 
 **Discuss regularization techniques specific to CycleGAN.**
 
@@ -20946,6 +21100,7 @@ def speedup_summary():
 ---
 
 ## Question 42
+- [ ] Done
 
 **Explain semantic consistency losses.**
 
@@ -20954,6 +21109,7 @@ def speedup_summary():
 ---
 
 ## Question 43
+- [ ] Done
 
 **Describe cross-domain feature alignment.**
 
@@ -20962,6 +21118,7 @@ def speedup_summary():
 ---
 
 ## Question 44
+- [ ] Done
 
 **Discuss conditional CycleGAN variants.**
 
@@ -20970,6 +21127,7 @@ def speedup_summary():
 ---
 
 ## Question 45
+- [ ] Done
 
 **Explain deployment considerations for CycleGAN.**
 
@@ -20978,6 +21136,7 @@ def speedup_summary():
 ---
 
 ## Question 46
+- [ ] Done
 
 **Describe quality assessment metrics for unpaired translation.**
 
@@ -20986,6 +21145,7 @@ def speedup_summary():
 ---
 
 ## Question 47
+- [ ] Done
 
 **Discuss ethical considerations in domain transfer.**
 
@@ -20994,6 +21154,7 @@ def speedup_summary():
 ---
 
 ## Question 48
+- [ ] Done
 
 **Explain recent improvements to CycleGAN architecture.**
 
@@ -21002,6 +21163,7 @@ def speedup_summary():
 ---
 
 ## Question 49
+- [ ] Done
 
 **Predict future directions for unpaired image translation.**
 
@@ -21017,6 +21179,7 @@ def speedup_summary():
 # Pix2Pix Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain conditional GAN and its paired training data.**
 
@@ -21025,6 +21188,7 @@ def speedup_summary():
 ---
 
 ## Question 2
+- [ ] Done
 
 **Describe U-Net generator in Pix2Pix.**
 
@@ -21033,6 +21197,7 @@ def speedup_summary():
 ---
 
 ## Question 3
+- [ ] Done
 
 **Explain PatchGAN discriminator role.**
 
@@ -21041,6 +21206,7 @@ def speedup_summary():
 ---
 
 ## Question 4
+- [ ] Done
 
 **Discuss L1 reconstruction loss vs. adversarial loss balance.**
 
@@ -21049,6 +21215,7 @@ def speedup_summary():
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain importance of paired datasets (e.g., edges-to-photo).**
 
@@ -21057,6 +21224,7 @@ def speedup_summary():
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss limitations when pairs unavailable.**
 
@@ -21065,6 +21233,7 @@ def speedup_summary():
 ---
 
 ## Question 7
+- [ ] Done
 
 **Explain multi-scale discriminator variant.**
 
@@ -21073,6 +21242,7 @@ def speedup_summary():
 ---
 
 ## Question 8
+- [ ] Done
 
 **Describe Pix2PixHD improvements.**
 
@@ -21081,6 +21251,7 @@ def speedup_summary():
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain instance normalization benefits.**
 
@@ -21089,6 +21260,7 @@ def speedup_summary():
 ---
 
 ## Question 10
+- [ ] Done
 
 **Discuss pix2pix for style transfer.**
 
@@ -21097,6 +21269,7 @@ def speedup_summary():
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain semantic label to photo translation.**
 
@@ -21105,6 +21278,7 @@ def speedup_summary():
 ---
 
 ## Question 12
+- [ ] Done
 
 **Discuss photorealism and tiling for high-res.**
 
@@ -21113,6 +21287,7 @@ def speedup_summary():
 ---
 
 ## Question 13
+- [ ] Done
 
 **Explain total variation loss addition.**
 
@@ -21121,6 +21296,7 @@ def speedup_summary():
 ---
 
 ## Question 14
+- [ ] Done
 
 **Describe domain adaptation from synthetic to real.**
 
@@ -21129,6 +21305,7 @@ def speedup_summary():
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain attention mechanism integration.**
 
@@ -21137,6 +21314,7 @@ def speedup_summary():
 ---
 
 ## Question 16
+- [ ] Done
 
 **Discuss paired depth-to-RGB translation.**
 
@@ -21145,6 +21323,7 @@ def speedup_summary():
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain training schedule and progressive growing.**
 
@@ -21153,6 +21332,7 @@ def speedup_summary():
 ---
 
 ## Question 18
+- [ ] Done
 
 **Discuss evaluation metrics for Pix2Pix.**
 
@@ -21161,6 +21341,7 @@ def speedup_summary():
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain pix2pix for medical segmentation masks translation.**
 
@@ -21169,6 +21350,7 @@ def speedup_summary():
 ---
 
 ## Question 20
+- [ ] Done
 
 **Describe interactive editing with pix2pix.**
 
@@ -21177,6 +21359,7 @@ def speedup_summary():
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain zero-shot pix2pix adaptation (pix2pix-Zero).**
 
@@ -21185,6 +21368,7 @@ def speedup_summary():
 ---
 
 ## Question 22
+- [ ] Done
 
 **Discuss use in face frontalization.**
 
@@ -21193,6 +21377,7 @@ def speedup_summary():
 ---
 
 ## Question 23
+- [ ] Done
 
 **Explain energy-based adversarial training modifications.**
 
@@ -21201,6 +21386,7 @@ def speedup_summary():
 ---
 
 ## Question 24
+- [ ] Done
 
 **Describe env-to-map translation in autonomous driving.**
 
@@ -21209,6 +21395,7 @@ def speedup_summary():
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain identity preservation constraints.**
 
@@ -21217,6 +21404,7 @@ def speedup_summary():
 ---
 
 ## Question 26
+- [ ] Done
 
 **Discuss GAN illness and artifact removal.**
 
@@ -21225,6 +21413,7 @@ def speedup_summary():
 ---
 
 ## Question 27
+- [ ] Done
 
 **Explain pix2pix for anime line-art colorization.**
 
@@ -21233,6 +21422,7 @@ def speedup_summary():
 ---
 
 ## Question 28
+- [ ] Done
 
 **Describe differentiable rendering supervisory signals.**
 
@@ -21241,6 +21431,7 @@ def speedup_summary():
 ---
 
 ## Question 29
+- [ ] Done
 
 **Explain cross-domain escape.**
 
@@ -21249,6 +21440,7 @@ def speedup_summary():
 ---
 
 ## Question 30
+- [ ] Done
 
 **Discuss conditional batch norm.**
 
@@ -21257,6 +21449,7 @@ def speedup_summary():
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain interactive scribble-to-image generation.**
 
@@ -21265,6 +21458,7 @@ def speedup_summary():
 ---
 
 ## Question 32
+- [ ] Done
 
 **Describe UNet++ deep supervision variant.**
 
@@ -21273,6 +21467,7 @@ def speedup_summary():
 ---
 
 ## Question 33
+- [ ] Done
 
 **Discuss mixup strategies for conditional GAN.**
 
@@ -21281,6 +21476,7 @@ def speedup_summary():
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain quantisation for mobile deployment.**
 
@@ -21289,6 +21485,7 @@ def speedup_summary():
 ---
 
 ## Question 35
+- [ ] Done
 
 **Describe cross-modal (sketch-to-sound) pix2pix.**
 
@@ -21297,6 +21494,7 @@ def speedup_summary():
 ---
 
 ## Question 36
+- [ ] Done
 
 **Discuss training paired dataset size effects.**
 
@@ -21305,6 +21503,7 @@ def speedup_summary():
 ---
 
 ## Question 37
+- [ ] Done
 
 **Explain curriculum learning in pix2pix.**
 
@@ -21313,6 +21512,7 @@ def speedup_summary():
 ---
 
 ## Question 38
+- [ ] Done
 
 **Describe noise injection for improved diversity.**
 
@@ -21321,6 +21521,7 @@ def speedup_summary():
 ---
 
 ## Question 39
+- [ ] Done
 
 **Explain spectral norm in generator.**
 
@@ -21329,6 +21530,7 @@ def speedup_summary():
 ---
 
 ## Question 40
+- [ ] Done
 
 **Discuss pix2pix in satellite imagery translation.**
 
@@ -21337,6 +21539,7 @@ def speedup_summary():
 ---
 
 ## Question 41
+- [ ] Done
 
 **Explain adversarial perceptual loss.**
 
@@ -21345,6 +21548,7 @@ def speedup_summary():
 ---
 
 ## Question 42
+- [ ] Done
 
 **Describe use in data augmentation for segmentation.**
 
@@ -21353,6 +21557,7 @@ def speedup_summary():
 ---
 
 ## Question 43
+- [ ] Done
 
 **Discuss semi-supervised pix2pix with limited pairs.**
 
@@ -21361,6 +21566,7 @@ def speedup_summary():
 ---
 
 ## Question 44
+- [ ] Done
 
 **Explain mask-guided pix2pix.**
 
@@ -21369,6 +21575,7 @@ def speedup_summary():
 ---
 
 ## Question 45
+- [ ] Done
 
 **Describe safety filtering of generated images.**
 
@@ -21377,6 +21584,7 @@ def speedup_summary():
 ---
 
 ## Question 46
+- [ ] Done
 
 **Discuss dual discriminators for local and global realism.**
 
@@ -21385,6 +21593,7 @@ def speedup_summary():
 ---
 
 ## Question 47
+- [ ] Done
 
 **Explain diffusion-based pix2pix adaptation.**
 
@@ -21393,6 +21602,7 @@ def speedup_summary():
 ---
 
 ## Question 48
+- [ ] Done
 
 **Describe physics-guided pix2pix for scientific images.**
 
@@ -21401,6 +21611,7 @@ def speedup_summary():
 ---
 
 ## Question 49
+- [ ] Done
 
 **Discuss future directions in conditional GANs.**
 
@@ -21409,6 +21620,7 @@ def speedup_summary():
 ---
 
 ## Question 50
+- [ ] Done
 
 **Predict pix2pix's role amid diffusion models.**
 
@@ -21424,6 +21636,7 @@ def speedup_summary():
 # Diffusion Models - Theory Questions
 
 ## Question 1
+- [ ] Done
 **Explain forward diffusion process and noise scheduling.**
 
 **Answer:** _To be filled_
@@ -21431,6 +21644,7 @@ def speedup_summary():
 ---
 
 ## Question 2
+- [ ] Done
 **Describe reverse diffusion and denoising process.**
 
 **Answer:** _To be filled_
@@ -21438,6 +21652,7 @@ def speedup_summary():
 ---
 
 ## Question 3
+- [ ] Done
 **Explain DDPM (Denoising Diffusion Probabilistic Models).**
 
 **Answer:** _To be filled_
@@ -21445,6 +21660,7 @@ def speedup_summary():
 ---
 
 ## Question 4
+- [ ] Done
 **Describe DDIM (Denoising Diffusion Implicit Models) advantages.**
 
 **Answer:** _To be filled_
@@ -21452,6 +21668,7 @@ def speedup_summary():
 ---
 
 ## Question 5
+- [ ] Done
 **Explain U-Net architecture in diffusion models.**
 
 **Answer:** _To be filled_
@@ -21459,6 +21676,7 @@ def speedup_summary():
 ---
 
 ## Question 6
+- [ ] Done
 **Describe classifier guidance vs. classifier-free guidance.**
 
 **Answer:** _To be filled_
@@ -21466,6 +21684,7 @@ def speedup_summary():
 ---
 
 ## Question 7
+- [ ] Done
 **Explain latent diffusion models (Stable Diffusion).**
 
 **Answer:** _To be filled_
@@ -21473,6 +21692,7 @@ def speedup_summary():
 ---
 
 ## Question 8
+- [ ] Done
 **Describe VAE encoder-decoder in latent space.**
 
 **Answer:** _To be filled_
@@ -21480,6 +21700,7 @@ def speedup_summary():
 ---
 
 ## Question 9
+- [ ] Done
 **Explain CLIP text encoding for conditioning.**
 
 **Answer:** _To be filled_
@@ -21487,6 +21708,7 @@ def speedup_summary():
 ---
 
 ## Question 10
+- [ ] Done
 **Describe noise prediction vs. score matching.**
 
 **Answer:** _To be filled_
@@ -21494,6 +21716,7 @@ def speedup_summary():
 ---
 
 ## Question 11
+- [ ] Done
 **Explain timestep embedding and sinusoidal encoding.**
 
 **Answer:** _To be filled_
@@ -21501,6 +21724,7 @@ def speedup_summary():
 ---
 
 ## Question 12
+- [ ] Done
 **Describe attention mechanisms in diffusion U-Net.**
 
 **Answer:** _To be filled_
@@ -21508,6 +21732,7 @@ def speedup_summary():
 ---
 
 ## Question 13
+- [ ] Done
 **Explain sampling strategies (DDPM, DDIM, DPM-Solver).**
 
 **Answer:** _To be filled_
@@ -21515,6 +21740,7 @@ def speedup_summary():
 ---
 
 ## Question 14
+- [ ] Done
 **Compare deterministic vs. stochastic sampling.**
 
 **Answer:** _To be filled_
@@ -21522,6 +21748,7 @@ def speedup_summary():
 ---
 
 ## Question 15
+- [ ] Done
 **Describe inpainting with diffusion models.**
 
 **Answer:** _To be filled_
@@ -21529,6 +21756,7 @@ def speedup_summary():
 ---
 
 ## Question 16
+- [ ] Done
 **Explain outpainting and image extension.**
 
 **Answer:** _To be filled_
@@ -21536,6 +21764,7 @@ def speedup_summary():
 ---
 
 ## Question 17
+- [ ] Done
 **Describe ControlNet for spatial conditioning.**
 
 **Answer:** _To be filled_
@@ -21543,6 +21772,7 @@ def speedup_summary():
 ---
 
 ## Question 18
+- [ ] Done
 **Explain IP-Adapter for image prompting.**
 
 **Answer:** _To be filled_
@@ -21550,6 +21780,7 @@ def speedup_summary():
 ---
 
 ## Question 19
+- [ ] Done
 **Compare different noise schedules (linear, cosine).**
 
 **Answer:** _To be filled_
@@ -21557,6 +21788,7 @@ def speedup_summary():
 ---
 
 ## Question 20
+- [ ] Done
 **Describe multi-scale diffusion architectures.**
 
 **Answer:** _To be filled_
@@ -21564,6 +21796,7 @@ def speedup_summary():
 ---
 
 ## Question 21
+- [ ] Done
 **Explain video diffusion models.**
 
 **Answer:** _To be filled_
@@ -21571,6 +21804,7 @@ def speedup_summary():
 ---
 
 ## Question 22
+- [ ] Done
 **Describe 3D diffusion for shape generation.**
 
 **Answer:** _To be filled_
@@ -21578,6 +21812,7 @@ def speedup_summary():
 ---
 
 ## Question 23
+- [ ] Done
 **Explain audio diffusion models.**
 
 **Answer:** _To be filled_
@@ -21585,6 +21820,7 @@ def speedup_summary():
 ---
 
 ## Question 24
+- [ ] Done
 **Compare continuous vs. discrete timesteps.**
 
 **Answer:** _To be filled_
@@ -21592,6 +21828,7 @@ def speedup_summary():
 ---
 
 ## Question 25
+- [ ] Done
 **Describe training objective and loss functions.**
 
 **Answer:** _To be filled_
@@ -21599,6 +21836,7 @@ def speedup_summary():
 ---
 
 ## Question 26
+- [ ] Done
 **Explain gradient accumulation strategies.**
 
 **Answer:** _To be filled_
@@ -21606,6 +21844,7 @@ def speedup_summary():
 ---
 
 ## Question 27
+- [ ] Done
 **Describe mixed precision training benefits.**
 
 **Answer:** _To be filled_
@@ -21613,6 +21852,7 @@ def speedup_summary():
 ---
 
 ## Question 28
+- [ ] Done
 **Explain EMA (Exponential Moving Average) in training.**
 
 **Answer:** _To be filled_
@@ -21620,6 +21860,7 @@ def speedup_summary():
 ---
 
 ## Question 29
+- [ ] Done
 **Compare memory requirements during training/inference.**
 
 **Answer:** _To be filled_
@@ -21627,6 +21868,7 @@ def speedup_summary():
 ---
 
 ## Question 30
+- [ ] Done
 **Describe progressive distillation techniques.**
 
 **Answer:** _To be filled_
@@ -21634,6 +21876,7 @@ def speedup_summary():
 ---
 
 ## Question 31
+- [ ] Done
 **Explain consistency models for fast sampling.**
 
 **Answer:** _To be filled_
@@ -21641,6 +21884,7 @@ def speedup_summary():
 ---
 
 ## Question 32
+- [ ] Done
 **Describe edit-friendly inversions (DDIM inversion).**
 
 **Answer:** _To be filled_
@@ -21648,6 +21892,7 @@ def speedup_summary():
 ---
 
 ## Question 33
+- [ ] Done
 **Explain self-attention guidance.**
 
 **Answer:** _To be filled_
@@ -21655,6 +21900,7 @@ def speedup_summary():
 ---
 
 ## Question 34
+- [ ] Done
 **Describe cascading diffusion models.**
 
 **Answer:** _To be filled_
@@ -21662,6 +21908,7 @@ def speedup_summary():
 ---
 
 ## Question 35
+- [ ] Done
 **Discuss spectrogram diffusion for audio generation.**
 
 **Answer:** _To be filled_
@@ -21669,6 +21916,7 @@ def speedup_summary():
 ---
 
 ## Question 36
+- [ ] Done
 **Explain safe completions via policy guidance.**
 
 **Answer:** _To be filled_
@@ -21676,6 +21924,7 @@ def speedup_summary():
 ---
 
 ## Question 37
+- [ ] Done
 **Describe hardware acceleration (FP8) for diffusion.**
 
 **Answer:** _To be filled_
@@ -21683,6 +21932,7 @@ def speedup_summary():
 ---
 
 ## Question 38
+- [ ] Done
 **Explain mixture of experts diffusion.**
 
 **Answer:** _To be filled_
@@ -21690,6 +21940,7 @@ def speedup_summary():
 ---
 
 ## Question 39
+- [ ] Done
 **Discuss evaluation metrics (CLIP-FID).**
 
 **Answer:** _To be filled_
@@ -21697,6 +21948,7 @@ def speedup_summary():
 ---
 
 ## Question 40
+- [ ] Done
 **Explain diffusion vs. GANs advantages.**
 
 **Answer:** _To be filled_
@@ -21704,6 +21956,7 @@ def speedup_summary():
 ---
 
 ## Question 41
+- [ ] Done
 **Describe computational cost mitigation.**
 
 **Answer:** _To be filled_
@@ -21711,6 +21964,7 @@ def speedup_summary():
 ---
 
 ## Question 42
+- [ ] Done
 **Discuss legal considerations of dataset copyright.**
 
 **Answer:** _To be filled_
@@ -21718,6 +21972,7 @@ def speedup_summary():
 ---
 
 ## Question 43
+- [ ] Done
 **Explain multi-modal diffusion (image+depth).**
 
 **Answer:** _To be filled_
@@ -21725,6 +21980,7 @@ def speedup_summary():
 ---
 
 ## Question 44
+- [ ] Done
 **Describe timeline of diffusion research.**
 
 **Answer:** _To be filled_
@@ -21732,6 +21988,7 @@ def speedup_summary():
 ---
 
 ## Question 45
+- [ ] Done
 **Explain diffusion for super-resolution.**
 
 **Answer:** _To be filled_
@@ -21739,6 +21996,7 @@ def speedup_summary():
 ---
 
 ## Question 46
+- [ ] Done
 **Discuss slot diffusion for object compositionality.**
 
 **Answer:** _To be filled_
@@ -21746,6 +22004,7 @@ def speedup_summary():
 ---
 
 ## Question 47
+- [ ] Done
 **Explain zero-shot human motion diffusion.**
 
 **Answer:** _To be filled_
@@ -21753,6 +22012,7 @@ def speedup_summary():
 ---
 
 ## Question 48
+- [ ] Done
 **Describe guided diffusion in RL policy sampling.**
 
 **Answer:** _To be filled_
@@ -21760,6 +22020,7 @@ def speedup_summary():
 ---
 
 ## Question 49
+- [ ] Done
 **Predict future of diffusion in content creation.**
 
 **Answer:** _To be filled_
@@ -21774,6 +22035,7 @@ def speedup_summary():
 # Neural Radiance Fields (NeRF) - Theory Questions
 
 ## Question 1
+- [ ] Done
 **Explain volumetric rendering equation used in NeRF.**
 
 **Answer:** _To be filled_
@@ -21781,6 +22043,7 @@ def speedup_summary():
 ---
 
 ## Question 2
+- [ ] Done
 **Describe positional encoding and high-frequency mapping.**
 
 **Answer:** _To be filled_
@@ -21788,6 +22051,7 @@ def speedup_summary():
 ---
 
 ## Question 3
+- [ ] Done
 **Explain hierarchical sampling (coarse and fine networks).**
 
 **Answer:** _To be filled_
@@ -21795,6 +22059,7 @@ def speedup_summary():
 ---
 
 ## Question 4
+- [ ] Done
 **Discuss overfitting to a single scene.**
 
 **Answer:** _To be filled_
@@ -21802,6 +22067,7 @@ def speedup_summary():
 ---
 
 ## Question 5
+- [ ] Done
 **Explain view synthesis from posed images.**
 
 **Answer:** _To be filled_
@@ -21809,6 +22075,7 @@ def speedup_summary():
 ---
 
 ## Question 6
+- [ ] Done
 **Describe inverse rendering scenario.**
 
 **Answer:** _To be filled_
@@ -21816,6 +22083,7 @@ def speedup_summary():
 ---
 
 ## Question 7
+- [ ] Done
 **Explain NeRF-in-the-wild for unknown cameras.**
 
 **Answer:** _To be filled_
@@ -21823,6 +22091,7 @@ def speedup_summary():
 ---
 
 ## Question 8
+- [ ] Done
 **Discuss accelerating NeRF via mip-NeRF.**
 
 **Answer:** _To be filled_
@@ -21830,6 +22099,7 @@ def speedup_summary():
 ---
 
 ## Question 9
+- [ ] Done
 **Explain Instant-NGP's hash grid encoding.**
 
 **Answer:** _To be filled_
@@ -21837,6 +22107,7 @@ def speedup_summary():
 ---
 
 ## Question 10
+- [ ] Done
 **Describe Plenoxels (sparse voxels).**
 
 **Answer:** _To be filled_
@@ -21844,6 +22115,7 @@ def speedup_summary():
 ---
 
 ## Question 11
+- [ ] Done
 **Discuss PlenOctrees for real-time view generation.**
 
 **Answer:** _To be filled_
@@ -21851,6 +22123,7 @@ def speedup_summary():
 ---
 
 ## Question 12
+- [ ] Done
 **Explain dynamic NeRF for time-varying scenes.**
 
 **Answer:** _To be filled_
@@ -21858,6 +22131,7 @@ def speedup_summary():
 ---
 
 ## Question 13
+- [ ] Done
 **Describe implicit vs. explicit representations.**
 
 **Answer:** _To be filled_
@@ -21865,6 +22139,7 @@ def speedup_summary():
 ---
 
 ## Question 14
+- [ ] Done
 **Explain integrating normals estimation.**
 
 **Answer:** _To be filled_
@@ -21872,6 +22147,7 @@ def speedup_summary():
 ---
 
 ## Question 15
+- [ ] Done
 **Discuss NeRF for relighting.**
 
 **Answer:** _To be filled_
@@ -21879,6 +22155,7 @@ def speedup_summary():
 ---
 
 ## Question 16
+- [ ] Done
 **Explain depth supervision integration.**
 
 **Answer:** _To be filled_
@@ -21886,6 +22163,7 @@ def speedup_summary():
 ---
 
 ## Question 17
+- [ ] Done
 **Describe pose estimation with NeRF (iNeRF).**
 
 **Answer:** _To be filled_
@@ -21893,6 +22171,7 @@ def speedup_summary():
 ---
 
 ## Question 18
+- [ ] Done
 **Discuss neural scene graphs.**
 
 **Answer:** _To be filled_
@@ -21900,6 +22179,7 @@ def speedup_summary():
 ---
 
 ## Question 19
+- [ ] Done
 **Explain anti-aliasing in mip-NeRF-360.**
 
 **Answer:** _To be filled_
@@ -21907,6 +22187,7 @@ def speedup_summary():
 ---
 
 ## Question 20
+- [ ] Done
 **Describe oriented NeRF for novel view extrapolation.**
 
 **Answer:** _To be filled_
@@ -21914,6 +22195,7 @@ def speedup_summary():
 ---
 
 ## Question 21
+- [ ] Done
 **Explain semantic NeRF with multi-task loss.**
 
 **Answer:** _To be filled_
@@ -21921,6 +22203,7 @@ def speedup_summary():
 ---
 
 ## Question 22
+- [ ] Done
 **Discuss Radiance Fields for humans (NeRFies).**
 
 **Answer:** _To be filled_
@@ -21928,6 +22211,7 @@ def speedup_summary():
 ---
 
 ## Question 23
+- [ ] Done
 **Explain Gaussian Splatting acceleration idea.**
 
 **Answer:** _To be filled_
@@ -21935,6 +22219,7 @@ def speedup_summary():
 ---
 
 ## Question 24
+- [ ] Done
 **Describe importance sampling strategies.**
 
 **Answer:** _To be filled_
@@ -21942,6 +22227,7 @@ def speedup_summary():
 ---
 
 ## Question 25
+- [ ] Done
 **Explain memory footprint challenges.**
 
 **Answer:** _To be filled_
@@ -21949,6 +22235,7 @@ def speedup_summary():
 ---
 
 ## Question 26
+- [ ] Done
 **Discuss VR/AR application pipelines.**
 
 **Answer:** _To be filled_
@@ -21956,6 +22243,7 @@ def speedup_summary():
 ---
 
 ## Question 27
+- [ ] Done
 **Explain physically-based NeRF to model BRDF.**
 
 **Answer:** _To be filled_
@@ -21963,6 +22251,7 @@ def speedup_summary():
 ---
 
 ## Question 28
+- [ ] Done
 **Describe editing NeRF with local rigging.**
 
 **Answer:** _To be filled_
@@ -21970,6 +22259,7 @@ def speedup_summary():
 ---
 
 ## Question 29
+- [ ] Done
 **Explain multiview supervision number needed.**
 
 **Answer:** _To be filled_
@@ -21977,6 +22267,7 @@ def speedup_summary():
 ---
 
 ## Question 30
+- [ ] Done
 **Discuss combining NeRF and LiDAR.**
 
 **Answer:** _To be filled_
@@ -21984,6 +22275,7 @@ def speedup_summary():
 ---
 
 ## Question 31
+- [ ] Done
 **Explain 3-DGS vs. NeRF differences (see next section).**
 
 **Answer:** _To be filled_
@@ -21991,6 +22283,7 @@ def speedup_summary():
 ---
 
 ## Question 32
+- [ ] Done
 **Describe compression of NeRF models.**
 
 **Answer:** _To be filled_
@@ -21998,6 +22291,7 @@ def speedup_summary():
 ---
 
 ## Question 33
+- [ ] Done
 **Explain CODEC avatars from NeRF.**
 
 **Answer:** _To be filled_
@@ -22005,6 +22299,7 @@ def speedup_summary():
 ---
 
 ## Question 34
+- [ ] Done
 **Discuss generative NeRF (GenerNeRF).**
 
 **Answer:** _To be filled_
@@ -22012,6 +22307,7 @@ def speedup_summary():
 ---
 
 ## Question 35
+- [ ] Done
 **Explain distilling NeRF into mesh.**
 
 **Answer:** _To be filled_
@@ -22019,6 +22315,7 @@ def speedup_summary():
 ---
 
 ## Question 36
+- [ ] Done
 **Describe neural point light field.**
 
 **Answer:** _To be filled_
@@ -22026,6 +22323,7 @@ def speedup_summary():
 ---
 
 ## Question 37
+- [ ] Done
 **Explain path guiding in NeRF rendering.**
 
 **Answer:** _To be filled_
@@ -22033,6 +22331,7 @@ def speedup_summary():
 ---
 
 ## Question 38
+- [ ] Done
 **Discuss training acceleration with forward-facing scenes.**
 
 **Answer:** _To be filled_
@@ -22040,6 +22339,7 @@ def speedup_summary():
 ---
 
 ## Question 39
+- [ ] Done
 **Explain semantic editing brush for NeRF.**
 
 **Answer:** _To be filled_
@@ -22047,6 +22347,7 @@ def speedup_summary():
 ---
 
 ## Question 40
+- [ ] Done
 **Describe uncertainty estimation in NeRF.**
 
 **Answer:** _To be filled_
@@ -22054,6 +22355,7 @@ def speedup_summary():
 ---
 
 ## Question 41
+- [ ] Done
 **Explain gradient scaling of hash encodings.**
 
 **Answer:** _To be filled_
@@ -22061,6 +22363,7 @@ def speedup_summary():
 ---
 
 ## Question 42
+- [ ] Done
 **Discuss NeRF limitations outdoors.**
 
 **Answer:** _To be filled_
@@ -22068,6 +22371,7 @@ def speedup_summary():
 ---
 
 ## Question 43
+- [ ] Done
 **Explain neural reflectance fields.**
 
 **Answer:** _To be filled_
@@ -22075,6 +22379,7 @@ def speedup_summary():
 ---
 
 ## Question 44
+- [ ] Done
 **Describe spectral NeRF for wavelength-dependent scenes.**
 
 **Answer:** _To be filled_
@@ -22082,6 +22387,7 @@ def speedup_summary():
 ---
 
 ## Question 45
+- [ ] Done
 **Discuss privacy considerations of capturing scenes.**
 
 **Answer:** _To be filled_
@@ -22089,6 +22395,7 @@ def speedup_summary():
 ---
 
 ## Question 46
+- [ ] Done
 **Explain differentiable SLAM with NeRF integration.**
 
 **Answer:** _To be filled_
@@ -22096,6 +22403,7 @@ def speedup_summary():
 ---
 
 ## Question 47
+- [ ] Done
 **Describe knowledge distillation to Gaussian Splatting.**
 
 **Answer:** _To be filled_
@@ -22103,6 +22411,7 @@ def speedup_summary():
 ---
 
 ## Question 48
+- [ ] Done
 **Discuss future hardware (RTX, tensor cores).**
 
 **Answer:** _To be filled_
@@ -22110,6 +22419,7 @@ def speedup_summary():
 ---
 
 ## Question 49
+- [ ] Done
 **Explain NeRF for microscopy.**
 
 **Answer:** _To be filled_
@@ -22117,6 +22427,7 @@ def speedup_summary():
 ---
 
 ## Question 50
+- [ ] Done
 **Predict future real-time NeRF breakthroughs.**
 
 **Answer:** _To be filled_
@@ -22131,6 +22442,7 @@ def speedup_summary():
 # 3D Gaussian Splatting - Theory Questions
 
 ## Question 1
+- [ ] Done
 **Explain concept of representing a scene as millions of 3-D Gaussians.**
 
 **Answer:** _To be filled_
@@ -22138,6 +22450,7 @@ def speedup_summary():
 ---
 
 ## Question 2
+- [ ] Done
 **Describe ellipsoidal Gaussian parameters (means, covariances, opacities).**
 
 **Answer:** _To be filled_
@@ -22145,6 +22458,7 @@ def speedup_summary():
 ---
 
 ## Question 3
+- [ ] Done
 **Explain rasterisation vs. volumetric integration for splats.**
 
 **Answer:** _To be filled_
@@ -22152,6 +22466,7 @@ def speedup_summary():
 ---
 
 ## Question 4
+- [ ] Done
 **Discuss differentiable splatting render pipeline.**
 
 **Answer:** _To be filled_
@@ -22159,6 +22474,7 @@ def speedup_summary():
 ---
 
 ## Question 5
+- [ ] Done
 **Explain data capture and camera calibration requirements.**
 
 **Answer:** _To be filled_
@@ -22166,6 +22482,7 @@ def speedup_summary():
 ---
 
 ## Question 6
+- [ ] Done
 **Compare rendering speed of 3-DGS to NeRF.**
 
 **Answer:** _To be filled_
@@ -22173,6 +22490,7 @@ def speedup_summary():
 ---
 
 ## Question 7
+- [ ] Done
 **Describe memory footprint differences.**
 
 **Answer:** _To be filled_
@@ -22180,6 +22498,7 @@ def speedup_summary():
 ---
 
 ## Question 8
+- [ ] Done
 **Explain training objective for opacity and color.**
 
 **Answer:** _To be filled_
@@ -22187,6 +22506,7 @@ def speedup_summary():
 ---
 
 ## Question 9
+- [ ] Done
 **Discuss adaptive density pruning of Gaussians.**
 
 **Answer:** _To be filled_
@@ -22194,6 +22514,7 @@ def speedup_summary():
 ---
 
 ## Question 10
+- [ ] Done
 **Explain hierarchical Gaussians.**
 
 **Answer:** _To be filled_
@@ -22201,6 +22522,7 @@ def speedup_summary():
 ---
 
 ## Question 11
+- [ ] Done
 **Compare visual quality metrics to Instant-NGP.**
 
 **Answer:** _To be filled_
@@ -22208,6 +22530,7 @@ def speedup_summary():
 ---
 
 ## Question 12
+- [ ] Done
 **Explain fine-to-coarse training schedule.**
 
 **Answer:** _To be filled_
@@ -22215,6 +22538,7 @@ def speedup_summary():
 ---
 
 ## Question 13
+- [ ] Done
 **Discuss handling of thin structures.**
 
 **Answer:** _To be filled_
@@ -22222,6 +22546,7 @@ def speedup_summary():
 ---
 
 ## Question 14
+- [ ] Done
 **Explain foveated rendering possibilities.**
 
 **Answer:** _To be filled_
@@ -22229,6 +22554,7 @@ def speedup_summary():
 ---
 
 ## Question 15
+- [ ] Done
 **Compare novel view extrapolation accuracy.**
 
 **Answer:** _To be filled_
@@ -22236,6 +22562,7 @@ def speedup_summary():
 ---
 
 ## Question 16
+- [ ] Done
 **Discuss scalability to city-scale scenes.**
 
 **Answer:** _To be filled_
@@ -22243,6 +22570,7 @@ def speedup_summary():
 ---
 
 ## Question 17
+- [ ] Done
 **Explain interaction (editing) ease vs. NeRF.**
 
 **Answer:** _To be filled_
@@ -22250,6 +22578,7 @@ def speedup_summary():
 ---
 
 ## Question 18
+- [ ] Done
 **Describe progressive streaming of Gaussian data.**
 
 **Answer:** _To be filled_
@@ -22257,6 +22586,7 @@ def speedup_summary():
 ---
 
 ## Question 19
+- [ ] Done
 **Explain integrating dynamic motion in 3-DGS.**
 
 **Answer:** _To be filled_
@@ -22264,6 +22594,7 @@ def speedup_summary():
 ---
 
 ## Question 20
+- [ ] Done
 **Discuss GPU pipeline implementation specifics.**
 
 **Answer:** _To be filled_
@@ -22271,6 +22602,7 @@ def speedup_summary():
 ---
 
 ## Question 21
+- [ ] Done
 **Explain alias-free splatting filter.**
 
 **Answer:** _To be filled_
@@ -22278,6 +22610,7 @@ def speedup_summary():
 ---
 
 ## Question 22
+- [ ] Done
 **Compare radiance vs. surface representation.**
 
 **Answer:** _To be filled_
@@ -22285,6 +22618,7 @@ def speedup_summary():
 ---
 
 ## Question 23
+- [ ] Done
 **Explain BRDF modelling with 3-DGS.**
 
 **Answer:** _To be filled_
@@ -22292,6 +22626,7 @@ def speedup_summary():
 ---
 
 ## Question 24
+- [ ] Done
 **Discuss integration into game engines (Unity/UE).**
 
 **Answer:** _To be filled_
@@ -22299,6 +22634,7 @@ def speedup_summary():
 ---
 
 ## Question 25
+- [ ] Done
 **Explain photogrammetry vs. 3-DGS pipelines.**
 
 **Answer:** _To be filled_
@@ -22306,6 +22642,7 @@ def speedup_summary():
 ---
 
 ## Question 26
+- [ ] Done
 **Describe compression (quantisation of parameters).**
 
 **Answer:** _To be filled_
@@ -22313,6 +22650,7 @@ def speedup_summary():
 ---
 
 ## Question 27
+- [ ] Done
 **Explain silhouette supervision improvements.**
 
 **Answer:** _To be filled_
@@ -22320,6 +22658,7 @@ def speedup_summary():
 ---
 
 ## Question 28
+- [ ] Done
 **Discuss limitations in extreme lighting changes.**
 
 **Answer:** _To be filled_
@@ -22327,6 +22666,7 @@ def speedup_summary():
 ---
 
 ## Question 29
+- [ ] Done
 **Explain combining Gaussians with mesh proxy.**
 
 **Answer:** _To be filled_
@@ -22334,6 +22674,7 @@ def speedup_summary():
 ---
 
 ## Question 30
+- [ ] Done
 **Compare training time to NeRF techniques.**
 
 **Answer:** _To be filled_
@@ -22341,6 +22682,7 @@ def speedup_summary():
 ---
 
 ## Question 31
+- [ ] Done
 **Explain memory bandwidth vs. compute trade-off.**
 
 **Answer:** _To be filled_
@@ -22348,6 +22690,7 @@ def speedup_summary():
 ---
 
 ## Question 32
+- [ ] Done
 **Discuss gradient flow stability in splatting.**
 
 **Answer:** _To be filled_
@@ -22355,6 +22698,7 @@ def speedup_summary():
 ---
 
 ## Question 33
+- [ ] Done
 **Explain usage for real-time telepresence.**
 
 **Answer:** _To be filled_
@@ -22362,6 +22706,7 @@ def speedup_summary():
 ---
 
 ## Question 34
+- [ ] Done
 **Describe model-based vs. model-free editing.**
 
 **Answer:** _To be filled_
@@ -22369,6 +22714,7 @@ def speedup_summary():
 ---
 
 ## Question 35
+- [ ] Done
 **Explain hyper-parameter for Gaussian scale adaptation.**
 
 **Answer:** _To be filled_
@@ -22376,6 +22722,7 @@ def speedup_summary():
 ---
 
 ## Question 36
+- [ ] Done
 **Discuss depth-sensor fused Gaussian models.**
 
 **Answer:** _To be filled_
@@ -22383,6 +22730,7 @@ def speedup_summary():
 ---
 
 ## Question 37
+- [ ] Done
 **Explain zero-shot generalisation across scenes.**
 
 **Answer:** _To be filled_
@@ -22390,6 +22738,7 @@ def speedup_summary():
 ---
 
 ## Question 38
+- [ ] Done
 **Compare transparency handling in Gaussians vs. NeRF.**
 
 **Answer:** _To be filled_
@@ -22397,6 +22746,7 @@ def speedup_summary():
 ---
 
 ## Question 39
+- [ ] Done
 **Explain multi-resolution octree of Gaussians.**
 
 **Answer:** _To be filled_
@@ -22404,6 +22754,7 @@ def speedup_summary():
 ---
 
 ## Question 40
+- [ ] Done
 **Discuss research on neural Gaussian fields.**
 
 **Answer:** _To be filled_
@@ -22411,6 +22762,7 @@ def speedup_summary():
 ---
 
 ## Question 41
+- [ ] Done
 **Explain plug-and-play relighting.**
 
 **Answer:** _To be filled_
@@ -22418,6 +22770,7 @@ def speedup_summary():
 ---
 
 ## Question 42
+- [ ] Done
 **Describe evaluation datasets used in papers.**
 
 **Answer:** _To be filled_
@@ -22425,6 +22778,7 @@ def speedup_summary():
 ---
 
 ## Question 43
+- [ ] Done
 **Explain limitations of current GPU rasterisers.**
 
 **Answer:** _To be filled_
@@ -22432,6 +22786,7 @@ def speedup_summary():
 ---
 
 ## Question 44
+- [ ] Done
 **Discuss alignment of Gaussians using ICP.**
 
 **Answer:** _To be filled_
@@ -22439,6 +22794,7 @@ def speedup_summary():
 ---
 
 ## Question 45
+- [ ] Done
 **Explain anti-aliasing by covariance scaling.**
 
 **Answer:** _To be filled_
@@ -22446,6 +22802,7 @@ def speedup_summary():
 ---
 
 ## Question 46
+- [ ] Done
 **Compare gradient memory of NeRF vs. 3-DGS.**
 
 **Answer:** _To be filled_
@@ -22453,6 +22810,7 @@ def speedup_summary():
 ---
 
 ## Question 47
+- [ ] Done
 **Discuss potential hybrid models combining both.**
 
 **Answer:** _To be filled_
@@ -22460,6 +22818,7 @@ def speedup_summary():
 ---
 
 ## Question 48
+- [ ] Done
 **Explain open-source implementations (e.g., graphics-knt).**
 
 **Answer:** _To be filled_
@@ -22467,6 +22826,7 @@ def speedup_summary():
 ---
 
 ## Question 49
+- [ ] Done
 **Describe future hardware acceleration possibilities.**
 
 **Answer:** _To be filled_
@@ -22474,6 +22834,7 @@ def speedup_summary():
 ---
 
 ## Question 50
+- [ ] Done
 **Summarise key advantages and open challenges relative to NeRF.**
 
 **Answer:** _To be filled_

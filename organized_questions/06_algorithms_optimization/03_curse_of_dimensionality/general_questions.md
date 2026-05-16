@@ -1,6 +1,7 @@
 # Curse Of Dimensionality Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **Can you provide a simple example illustrating the Curse of Dimensionality using the volume of a hypercube?**
 
@@ -43,6 +44,7 @@ Even uniform data in high-D is concentrated in corners, not center.
 ---
 
 ## Question 2
+- [ ] Done
 
 **What role does feature selection play in mitigating the Curse of Dimensionality?**
 
@@ -86,6 +88,7 @@ Feature selection is often better than feature extraction (PCA) when interpretab
 ---
 
 ## Question 3
+- [ ] Done
 
 **Can Random Forests effectively handle high-dimensional data without overfitting?**
 
@@ -135,6 +138,7 @@ Feature selection is often better than feature extraction (PCA) when interpretab
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you choose the number of principal components to use when applying PCA?**
 
@@ -189,6 +193,7 @@ print(f"Components: {pca.n_components_}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **What metrics can be misleading in high-dimensional spaces, and which ones are more reliable?**
 
@@ -232,6 +237,7 @@ $$\cos(\theta) = \frac{x \cdot y}{||x|| \cdot ||y||}$$
 ---
 
 ## Question 6
+- [ ] Done
 
 **How can embedding techniques be leveraged to understand complex high-dimensional data structures within neural networks?**
 

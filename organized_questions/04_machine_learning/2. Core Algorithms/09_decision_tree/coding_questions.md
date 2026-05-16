@@ -1,6 +1,7 @@
 # Decision Tree Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement a basic Decision Tree algorithm from scratch in Python.**
 
@@ -131,6 +132,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a Python function to compute Gini impurity given a dataset.**
 
@@ -242,6 +244,7 @@ Bad split gain: 0.000
 ---
 
 ## Question 3
+- [ ] Done
 
 **Create a Python script to visualize a Decision Tree using graphviz.**
 
@@ -351,6 +354,7 @@ pip install graphviz
 ---
 
 ## Question 4
+- [ ] Done
 
 **Using scikit-learn, train a Decision Tree classifier on a sample dataset and evaluate its performance.**
 
@@ -459,6 +463,7 @@ Classification Report:
 ---
 
 ## Question 5
+- [ ] Done
 
 **Implement a recursive binary splitting algorithm for a regression Decision Tree.**
 
@@ -597,6 +602,7 @@ R²:   0.892
 ---
 
 ## Question 6
+- [ ] Done
 
 **Write a function in Python that prunes a Decision Tree to avoid overfitting.**
 
@@ -731,6 +737,7 @@ Unpruned test accuracy: 0.939
 ---
 
 ## Question 7
+- [ ] Done
 
 **Code a Python function to calculate feature importance from a trained Decision Tree.**
 
@@ -893,6 +900,7 @@ sepal width (cm): 0.0000
 ---
 
 ## Question 8
+- [ ] Done
 
 **Use cross-validation in Python to determine the optimal depth for a Decision Tree.**
 
@@ -1026,6 +1034,7 @@ Final tree leaves: 11
 ---
 
 ## Question 9
+- [ ] Done
 
 **Build a Random Forest model in Python and compare its performance with a single Decision Tree.**
 
@@ -1185,6 +1194,7 @@ RF variance: 0.0142 (mean: 0.9596)
 ---
 
 ## Question 10
+- [ ] Done
 
 **Implement a simple version of the AdaBoost algorithm with Decision Trees in Python.**
 

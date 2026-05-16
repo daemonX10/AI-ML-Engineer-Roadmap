@@ -1,6 +1,7 @@
 # TensorFlow Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you implement a custom layer in TensorFlow?**
 
@@ -65,6 +66,7 @@ model.summary()
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement a custom training loop with GradientTape.**
 
@@ -131,6 +133,7 @@ for epoch in range(epochs):
 ---
 
 ## Question 3
+- [ ] Done
 
 **Implement a CNN for image classification.**
 
@@ -191,6 +194,7 @@ print(f"Test accuracy: {test_acc:.4f}")
 ---
 
 ## Question 4
+- [ ] Done
 
 **Implement an RNN/LSTM for sequence prediction.**
 
@@ -242,6 +246,7 @@ gru_model = tf.keras.Sequential([
 ---
 
 ## Question 5
+- [ ] Done
 
 **Implement a custom loss function.**
 
@@ -308,6 +313,7 @@ model.compile(
 ---
 
 ## Question 6
+- [ ] Done
 
 **Implement a custom metric.**
 
@@ -368,6 +374,7 @@ model.compile(
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement data augmentation for images.**
 
@@ -425,6 +432,7 @@ datagen = tf.keras.preprocessing.image.ImageDataGenerator(
 ---
 
 ## Question 8
+- [ ] Done
 
 **Implement an Autoencoder.**
 
@@ -482,6 +490,7 @@ decoded_imgs = autoencoder.decoder(encoded_imgs)
 ---
 
 ## Question 9
+- [ ] Done
 
 **Implement model with multiple inputs/outputs.**
 
@@ -541,6 +550,7 @@ model.compile(
 ---
 
 ## Question 10
+- [ ] Done
 
 **Implement learning rate scheduling.**
 
@@ -609,6 +619,7 @@ model.compile(
 ---
 
 ## Question 11
+- [ ] Done
 
 **Write a TensorFlow code to create two Tensors and perform element-wise multiplication.**
 
@@ -654,6 +665,7 @@ print(broadcast_result)
 ---
 
 ## Question 12
+- [ ] Done
 
 **Implement logistic regression using TensorFlow.**
 
@@ -725,6 +737,7 @@ print(f"Keras Accuracy: {model.evaluate(X_test, y_test, verbose=0)[1]:.4f}")
 ---
 
 ## Question 13
+- [ ] Done
 
 **Write a TensorFlow script to normalize the features of a dataset.**
 
@@ -796,6 +809,7 @@ dataset = dataset.map(normalize_fn).batch(32)
 ---
 
 ## Question 14
+- [ ] Done
 
 **Write a Python function using TensorFlow to compute the gradient of a given function.**
 
@@ -871,6 +885,7 @@ del tape  # Must delete persistent tape
 ---
 
 ## Question 15
+- [ ] Done
 
 **Develop a code to save and load a trained TensorFlow model.**
 
@@ -936,6 +951,7 @@ tf.saved_model.save(model, 'export/', signatures={'serving_default': serve})
 ---
 
 ## Question 16
+- [ ] Done
 
 **Code a TensorFlow program that uses dataset shuffling , repetition , and batching**
 
@@ -1011,6 +1027,7 @@ parsed_ds = file_ds.interleave(
 ---
 
 ## Question 17
+- [ ] Done
 
 **How would you implement attention mechanisms in TensorFlow?**
 
@@ -1124,6 +1141,7 @@ class TransformerBlock(layers.Layer):
 > **Interview Tip:** Multi-head attention lets the model attend to different representation subspaces simultaneously. Self-attention (Q=K=V from same input) captures intra-sequence relationships; cross-attention (Q from decoder, K/V from encoder) is used in translation tasks.
 
 ## Question 18
+- [ ] Done
 
 **Build a simple convolutional neural network in TensorFlow for image classification**
 
@@ -1174,6 +1192,7 @@ print(f"Test accuracy: {test_acc:.4f}")
 ---
 
 ## Question 19
+- [ ] Done
 
 **Create a recurrent neural network in TensorFlow to process sequential data**
 
@@ -1226,6 +1245,7 @@ print(f"Test MAE: {model.evaluate(X_test, y_test)[1]:.4f}")
 ---
 
 ## Question 20
+- [ ] Done
 
 **Implement a custom training loop in TensorFlow for a basic neural network**
 
@@ -1289,6 +1309,7 @@ print(f"Test Accuracy: {test_acc.result():.4f}")
 ---
 
 ## Question 21
+- [ ] Done
 
 **Write a TensorFlow function for data augmentation on an image dataset**
 

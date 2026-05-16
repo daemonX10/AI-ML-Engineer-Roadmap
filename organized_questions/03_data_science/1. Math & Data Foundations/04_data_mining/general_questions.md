@@ -1,6 +1,7 @@
 # Data Mining Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **Why is data preprocessing an important step in data mining?**
 
@@ -38,6 +39,7 @@ Data scientists spend 60-80% of project time on preprocessing—it's not glamoro
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you handle missing values in a dataset?**
 
@@ -81,6 +83,7 @@ df_imputed = imputer.fit_transform(df)
 ---
 
 ## Question 3
+- [ ] Done
 
 **How can neural networks be applied to data mining tasks?**
 
@@ -125,6 +128,7 @@ Neural networks have revolutionized data mining for unstructured data; for tabul
 ---
 
 ## Question 4
+- [ ] Done
 
 **What considerations should be made when choosing a data mining algorithm?**
 
@@ -169,6 +173,7 @@ No algorithm is universally best—always experiment with multiple approaches an
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you evaluate the performance of a data mining model?**
 
@@ -212,6 +217,7 @@ Model evaluation uses metrics appropriate to the task: Classification (accuracy,
 ---
 
 ## Question 6
+- [ ] Done
 
 **How is data mining applied in fraud detection?**
 
@@ -256,6 +262,7 @@ Fraud detection is a core data mining application in banking, insurance, e-comme
 ---
 
 ## Question 7
+- [ ] Done
 
 **Discuss the ethical considerations in data mining, particularly around privacy.**
 
@@ -306,6 +313,7 @@ Data mining ethics centers on: Privacy (protecting personal information), Consen
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do recommendation systems use data mining to provide personalized suggestions?**
 
@@ -353,6 +361,7 @@ Recommendation systems use data mining techniques to analyze user behavior and p
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explore the challenges associated with multi-modal data mining.**
 
@@ -401,6 +410,7 @@ Real-world applications increasingly require multi-modal understanding (e.g., au
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do you monitor the performance of a data mining system over time?**
 
@@ -450,6 +460,7 @@ Establish baseline metrics, set meaningful thresholds, and create automated retr
 ---
 
 ## Question 11
+- [ ] Done
 
 **Discuss strategies for updating data mining models with new incoming data.**
 

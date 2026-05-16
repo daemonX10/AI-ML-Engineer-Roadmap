@@ -1,6 +1,7 @@
 # Dimensionality Reduction Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement PCA on a given dataset using scikit-learn and plot the explained variance ratio.**
 
@@ -74,6 +75,7 @@ print(f"Components for 95% variance: {pca_95.n_components_}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a Python function that performs feature selection using Recursive Feature Elimination (RFE).**
 
@@ -174,6 +176,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 3
+- [ ] Done
 
 **Code a small example to demonstrate the use of LDA for classification.**
 
@@ -265,6 +268,7 @@ plt.show()
 ---
 
 ## Question 4
+- [ ] Done
 
 **Implement a basic version of an autoencoder for dimensionality reduction using TensorFlow/Keras.**
 
@@ -376,6 +380,7 @@ plt.show()
 ---
 
 ## Question 5
+- [ ] Done
 
 **Modify a given t-SNE implementation to work more efficiently on a large-scale dataset.**
 
@@ -505,6 +510,7 @@ def umap_alternative(X, n_components=2, n_neighbors=15):
 ---
 
 ## Question 6
+- [ ] Done
 
 **Develop a Python script to compare the performance of PCA and LDA on a sample dataset.**
 
@@ -614,6 +620,7 @@ print(f"{'Max Components':<25} {X.shape[1]:>10} {len(np.unique(y))-1:>10}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **Create a Python function that uses Factor Analysis for dimensionality reduction on multivariate data.**
 
@@ -746,6 +753,7 @@ if __name__ == "__main__":
 ---
 
 ## Question 8
+- [ ] Done
 
 **Write a code snippet to perform feature extraction using Non-negative Matrix Factorization (NMF).**
 
@@ -876,6 +884,7 @@ plt.show()
 ---
 
 ## Question 9
+- [ ] Done
 
 **Use the feature importance provided by a trained ensemble model to reduce the dimensionality of a dataset in Python.**
 

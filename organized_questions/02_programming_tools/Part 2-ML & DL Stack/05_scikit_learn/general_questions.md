@@ -1,6 +1,7 @@
 # Scikit-Learn Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you handle missing values in a dataset using Scikit-Learn ?**
 
@@ -46,6 +47,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you perform feature scaling in Scikit-Learn?**
 
@@ -88,6 +90,7 @@ scaler.fit(X)  # Don't fit on all data!
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you encode categorical variables using Scikit-Learn ?**
 
@@ -129,6 +132,7 @@ preprocessor = ColumnTransformer([
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you split data for training and testing?**
 
@@ -161,6 +165,7 @@ print(f"Mean accuracy: {scores.mean():.4f}")
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do you perform feature selection?**
 
@@ -201,6 +206,7 @@ importances = model.feature_importances_
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you save and load a trained model?**
 
@@ -251,6 +257,7 @@ predictions = pipeline.predict(X_new)  # Handles scaling automatically
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you implement custom transformers?**
 
@@ -293,6 +300,7 @@ X_log = log_transformer.fit_transform(X)
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do you handle multiclass classification?**
 
@@ -334,6 +342,7 @@ print(classification_report(y_test, y_pred))
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you implement ensemble methods?**
 
@@ -383,6 +392,7 @@ stacking = StackingClassifier(
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do you perform dimensionality reduction?**
 
@@ -430,6 +440,7 @@ pipeline = Pipeline([
 ---
 
 ## Question 11
+- [ ] Done
 
 **What preprocessing steps would you take before inputting data into a machine learning algorithm?**
 
@@ -497,6 +508,7 @@ y_pred = full_pipeline.predict(X_test)
 ---
 
 ## Question 12
+- [ ] Done
 
 **How do you perform cross-validation using Scikit-Learn?**
 
@@ -556,6 +568,7 @@ y_pred = cross_val_predict(model, X, y, cv=5)  # Out-of-fold predictions
 ---
 
 ## Question 13
+- [ ] Done
 
 **What metrics can be used in Scikit-Learn to assess the performance of a regression model versus a classification model?**
 
@@ -608,6 +621,7 @@ mape = mean_absolute_percentage_error(y_true, y_pred)
 ---
 
 ## Question 14
+- [ ] Done
 
 **How are hyperparameters tuned in Scikit-Learn?**
 
@@ -676,6 +690,7 @@ halving_search.fit(X_train, y_train)
 ---
 
 ## Question 15
+- [ ] Done
 
 **How do you monitor the performance of a Scikit-Learn model in production?**
 
@@ -736,6 +751,7 @@ mlflow.log_metrics({"accuracy": 0.95, "f1": 0.92})
 ---
 
 ## Question 16
+- [ ] Done
 
 **What recent advancements in machine learning are not yet fully supported by Scikit-Learn?**
 
@@ -769,6 +785,7 @@ mlflow.log_metrics({"accuracy": 0.95, "f1": 0.92})
 ---
 
 ## Question 17
+- [ ] Done
 
 **What role do libraries like joblib play in the context of Scikit-Learn?**
 

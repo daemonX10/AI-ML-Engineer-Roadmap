@@ -1,6 +1,7 @@
 # Q Learning Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **Define what an episode is in the context of Q-learning.**
 
@@ -46,6 +47,7 @@ Start State → Action → State → Action → ... → Terminal State
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you determine when the Q-learning algorithm has learned enough to stop training?**
 
@@ -107,6 +109,7 @@ if no_improvement_for(patience_episodes):
 ---
 
 ## Question 3
+- [ ] Done
 
 **How can transfer learning be leveraged in Q-learning to speed up training across similar tasks?**
 
@@ -168,6 +171,7 @@ target_model.train(target_env)
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explore the potential of Meta Reinforcement Learning (Meta-RL) and where Q-learning fits within this framework.**
 
@@ -230,6 +234,7 @@ Meta-RL extends Q-learning from learning a single task to learning how to learn 
 ---
 
 ## Question 5
+- [ ] Done
 
 **How can you optimize the performance of a Q-learning algorithm in terms of computational efficiency?**
 

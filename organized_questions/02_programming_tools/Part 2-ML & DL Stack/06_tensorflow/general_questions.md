@@ -1,6 +1,7 @@
 # TensorFlow Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What types of devices does TensorFlow support for computation?**
 
@@ -43,6 +44,7 @@ for gpu in gpus:
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you build a neural network in TensorFlow ?**
 
@@ -96,6 +98,7 @@ model = tf.keras.Model(inputs=inputs, outputs=outputs)
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is tf.function and why is it important?**
 
@@ -153,6 +156,7 @@ print(f"Speedup: {eager_time/graph_time:.2f}x")
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do you save and load models in TensorFlow?**
 
@@ -201,6 +205,7 @@ checkpoint = tf.keras.callbacks.ModelCheckpoint(
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is TensorBoard and how do you use it?**
 
@@ -259,6 +264,7 @@ tensorboard --logdir logs/fit
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you handle datasets in TensorFlow?**
 
@@ -312,6 +318,7 @@ def augment(image, label):
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are callbacks in TensorFlow/Keras?**
 
@@ -377,6 +384,7 @@ class CustomCallback(tf.keras.callbacks.Callback):
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do you implement transfer learning in TensorFlow?**
 
@@ -436,6 +444,7 @@ model.compile(
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is distributed training in TensorFlow?**
 
@@ -489,6 +498,7 @@ with strategy.scope():
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do you handle overfitting in TensorFlow models?**
 
@@ -556,6 +566,7 @@ data_augmentation = tf.keras.Sequential([
 ---
 
 ## Question 11
+- [ ] Done
 
 **Define a Variable in TensorFlow and its importance.**
 
@@ -604,6 +615,7 @@ variable.assign([4, 5, 6])   # OK
 ---
 
 ## Question 12
+- [ ] Done
 
 **How do you perform batch processing in TensorFlow?**
 
@@ -668,6 +680,7 @@ train_ds = dataset.repeat(10).shuffle(1000).batch(32)
 ---
 
 ## Question 13
+- [ ] Done
 
 **How do you use TensorFlow Transformers for sequence modeling?**
 
@@ -732,6 +745,7 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 ---
 
 ## Question 14
+- [ ] Done
 
 **How do you approach optimizing TensorFlow model performance?**
 
@@ -796,6 +810,7 @@ with strategy.scope():
 ---
 
 ## Question 15
+- [ ] Done
 
 **What techniques are used in TensorFlow for graph optimizations?**
 
@@ -857,6 +872,7 @@ tflite_model = converter.convert()
 ---
 
 ## Question 16
+- [ ] Done
 
 **How do you perform memory optimization in TensorFlow?**
 
@@ -924,6 +940,7 @@ layers.GlobalAveragePooling2D()  # Much less memory than Flatten
 ---
 
 ## Question 17
+- [ ] Done
 
 **How do you handle image data in TensorFlow?**
 
@@ -994,6 +1011,7 @@ model = tf.keras.Sequential([
 ---
 
 ## Question 18
+- [ ] Done
 
 **How is TensorFlow deployed in mobile or edge devices?**
 
@@ -1062,6 +1080,7 @@ output = interpreter.get_tensor(output_details[0]['index'])
 ---
 
 ## Question 19
+- [ ] Done
 
 **Can you give an example of how TensorFlow is used in healthcare?**
 
@@ -1128,6 +1147,7 @@ model.fit(train_ds, epochs=20, class_weight=class_weights)
 ---
 
 ## Question 20
+- [ ] Done
 
 **What steps would you take to investigate and fix a shape mismatch error in TensorFlow?**
 
@@ -1191,6 +1211,7 @@ X = X[..., tf.newaxis]  # (28,28) → (28,28,1)
 ---
 
 ## Question 21
+- [ ] Done
 
 **How is TensorFlow utilized in Natural Language Processing (NLP)?**
 
@@ -1255,6 +1276,7 @@ model = TFAutoModel.from_pretrained('bert-base-uncased')
 ---
 
 ## Question 22
+- [ ] Done
 
 **Present an approach for real-time object detection using TensorFlow.**
 

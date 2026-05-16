@@ -1,6 +1,7 @@
 # Data Analyst Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you handle categorical variables in machine learning?**
 
@@ -64,6 +65,7 @@ df['color_target_enc'] = df.groupby('color')['target'].transform('mean')
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do you evaluate the performance of a regression model?**
 
@@ -128,6 +130,7 @@ print(f"R²: {r2:.3f}")     # ~0.96
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you handle imbalanced datasets in classification problems?**
 

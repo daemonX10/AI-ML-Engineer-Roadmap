@@ -1,6 +1,7 @@
 # Neural Networks Interview Questions - Coding Questions
 
 ## Question 1: Implement a simple perceptron in Python
+- [ ] Done
 
 ### Code
 ```python
@@ -47,6 +48,7 @@ print(perceptron.predict(X))  # [0, 0, 0, 1]
 ---
 
 ## Question 2: Create a MLP using PyTorch
+- [ ] Done
 
 ### Code
 ```python
@@ -88,6 +90,7 @@ for epoch in range(10):
 ---
 
 ## Question 3: Visualize weights of a trained neural network
+- [ ] Done
 
 ### Code
 ```python
@@ -131,6 +134,7 @@ def visualize_fc_weights(model):
 ---
 
 ## Question 4: Implement RNN for text generation
+- [ ] Done
 
 ### Code
 ```python
@@ -175,6 +179,7 @@ def generate(model, seed_text, char2idx, idx2char, length=100):
 ---
 
 ## Question 5: CNN for CIFAR-10 classification
+- [ ] Done
 
 ### Code
 ```python
@@ -237,6 +242,7 @@ for epoch in range(10):
 ---
 
 ## Question 6: Regularization in training loop
+- [ ] Done
 
 ### Code
 ```python
@@ -282,6 +288,7 @@ for batch_x, batch_y in dataloader:
 ---
 
 ## Question 7: Dynamic learning rate adjustment
+- [ ] Done
 
 ### Code
 ```python
@@ -320,6 +327,7 @@ for epoch in range(100):
 ---
 
 ## Question 8: Simple GAN for synthetic data
+- [ ] Done
 
 ### Code
 ```python
@@ -392,6 +400,7 @@ for epoch in range(100):
 ---
 
 ## Question 9: Transfer learning for classification
+- [ ] Done
 
 ### Code
 ```python
@@ -436,6 +445,7 @@ for epoch in range(10):
 ---
 
 ## Question 10: Autoencoder on MNIST with visualization
+- [ ] Done
 
 ### Code
 ```python

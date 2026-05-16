@@ -3,6 +3,7 @@
 ## Core Questions
 
 ## Question 1
+- [ ] Done
 **What is tokenization and why is it the fundamental first step in NLP pipelines?**
 
 **Answer:**
@@ -60,6 +61,7 @@ encoded = tokenizer(text, return_tensors="pt")
 ---
 
 ## Question 2
+- [ ] Done
 **Explain the difference between stemming and lemmatization with examples.**
 
 **Answer:**
@@ -124,6 +126,7 @@ lemmatized_verb = [lemmatizer.lemmatize(w, pos='v') for w in words]
 ---
 
 ## Question 3
+- [ ] Done
 **What are BPE, WordPiece, and SentencePiece? How do subword tokenization algorithms work?**
 
 **Answer:**
@@ -195,6 +198,7 @@ print(output.tokens)
 ---
 
 ## Question 4
+- [ ] Done
 **What is Named Entity Recognition (NER) and what are the common entity types?**
 
 **Answer:**
@@ -257,6 +261,7 @@ for ent in doc.ents:
 ---
 
 ## Question 5
+- [ ] Done
 **Explain the BIO/IOB tagging scheme used in NER and sequence labeling tasks.**
 
 **Answer:**
@@ -353,6 +358,7 @@ print(extract_entities(sentence, bio_tags))
 ---
 
 ## Question 6
+- [ ] Done
 **What is Part-of-Speech (POS) tagging? Why is it important for downstream NLP tasks?**
 
 **Answer:**
@@ -426,6 +432,7 @@ for token in doc:
 ---
 
 ## Question 7
+- [ ] Done
 **How do CRF (Conditional Random Fields) work for sequence labeling tasks like NER and POS tagging?**
 
 **Answer:**
@@ -517,6 +524,7 @@ model = NERModel(vocab_size=1000, tagset_size=9, embed_dim=100, hidden_dim=128)
 ---
 
 ## Question 8
+- [ ] Done
 **What is the difference between rule-based, statistical, and neural approaches to NER?**
 
 **Answer:**
@@ -602,6 +610,7 @@ result = ner("Apple Inc was founded by Steve Jobs")
 ---
 
 ## Question 9
+- [ ] Done
 **How do modern transformers like BERT handle tokenization differently from traditional methods?**
 
 **Answer:**
@@ -691,6 +700,7 @@ tokens_with_offsets = tokenizer(text, return_offsets_mapping=True)
 ---
 
 ## Question 10
+- [ ] Done
 **What is the out-of-vocabulary (OOV) problem and how do subword tokenizers solve it?**
 
 **Answer:**
@@ -781,6 +791,7 @@ print(f"Contains UNK: {unk_id in encoded}")  # False
 ## Interview Questions
 
 ## Question 11
+- [ ] Done
 **How do you choose between word-level, subword, and character-level tokenization for different NLP tasks?**
 
 **Answer:**
@@ -861,6 +872,7 @@ print(f"Char: {len(char_tokens)} tokens")       # ~35
 ---
 
 ## Question 12
+- [ ] Done
 **What are the trade-offs between stemming and lemmatization for information retrieval?**
 
 **Answer:**
@@ -958,6 +970,7 @@ print(f"Lemma index entries: {len(lemma_index)}")
 ---
 
 ## Question 13
+- [ ] Done
 **How do you handle tokenization for languages without clear word boundaries (Chinese, Japanese, Thai)?**
 
 **Answer:**
@@ -1050,6 +1063,7 @@ char_tokens = list(chinese_text)
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques work best for tokenization of social media text with informal language, hashtags, and emojis?**
 
 **Answer:**
@@ -1147,6 +1161,7 @@ print(tokens)
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle NER for nested or overlapping entities?**
 
 **Answer:**
@@ -1261,6 +1276,7 @@ def extract_nested_entities(spans, predictions, tokens, id2label):
 ---
 
 ## Question 16
+- [ ] Done
 **What strategies help with NER in low-resource languages with limited training data?**
 
 **Answer:**
@@ -1355,6 +1371,7 @@ augmented = augment_ner_data(original, entities, entity_dict)
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement domain adaptation for NER models (e.g., from news to biomedical text)?**
 
 **Answer:**
@@ -1466,6 +1483,7 @@ biomedical_model = AutoModel.from_pretrained("dmis-lab/biobert-base-cased-v1.2")
 ---
 
 ## Question 18
+- [ ] Done
 **What approaches work best for NER in noisy text like social media or OCR output?**
 
 **Answer:**
@@ -1581,6 +1599,7 @@ class CharCNN(nn.Module):
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle entity disambiguation and linking NER results to knowledge bases?**
 
 **Answer:**
@@ -1688,6 +1707,7 @@ When entity is not in knowledge base:
 ---
 
 ## Question 20
+- [ ] Done
 **What are the challenges of POS tagging for morphologically rich languages?**
 
 **Answer:**
@@ -1801,6 +1821,7 @@ class MorphAwareTagger(nn.Module):
 ---
 
 ## Question 21
+- [ ] Done
 **How do you handle ambiguous words that can have multiple POS tags depending on context?**
 
 **Answer:**
@@ -1901,6 +1922,7 @@ def get_context_features(tokens, idx):
 ---
 
 ## Question 22
+- [ ] Done
 **What is the role of context window in POS tagging and how do neural models capture it?**
 
 **Answer:**
@@ -2021,6 +2043,7 @@ class TransformerTagger(nn.Module):
 ---
 
 ## Question 23
+- [ ] Done
 **How do you evaluate NER systems? Explain precision, recall, F1, and entity-level vs token-level metrics.**
 
 **Answer:**
@@ -2140,6 +2163,7 @@ print(f"Entity P: {precision:.2f}, R: {recall:.2f}, F1: {f1:.2f}")
 ---
 
 ## Question 24
+- [ ] Done
 **What is few-shot NER and how can you identify new entity types with minimal examples?**
 
 **Answer:**
@@ -2277,6 +2301,7 @@ def few_shot_ner_llm(examples, text, entity_type):
 ---
 
 ## Question 25
+- [ ] Done
 **How do you handle tokenization for domain-specific texts like legal, medical, or code?**
 
 **Answer:**
@@ -2396,6 +2421,7 @@ def train_domain_tokenizer(corpus_file, vocab_size=30000):
 ---
 
 ## Question 26
+- [ ] Done
 **What is the impact of tokenization choices on model vocabulary size and training efficiency?**
 
 **Answer:**
@@ -2514,6 +2540,7 @@ print(f"Char (seq={len(char_tokens)}): {estimate_memory(len(char_tokens), 256):.
 ---
 
 ## Question 27
+- [ ] Done
 **How do multilingual models like mBERT handle tokenization across different scripts and languages?**
 
 **Answer:**
@@ -2622,6 +2649,7 @@ for tok in sample_tokens:
 ---
 
 ## Question 28
+- [ ] Done
 **What techniques help preserve named entities during tokenization (e.g., preventing "New York" from splitting)?**
 
 **Answer:**
@@ -2754,6 +2782,7 @@ print(marked)
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement real-time NER for streaming text applications?**
 
 **Answer:**
@@ -2919,6 +2948,7 @@ for result in ner.process_stream(simulate_stream()):
 ---
 
 ## Question 30
+- [ ] Done
 **What is cross-lingual transfer learning for NER? How does it work?**
 
 **Answer:**
@@ -3053,6 +3083,7 @@ def translate_train_data(source_data, source_lang, target_lang, translator):
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle NER for entities that change over time (new celebrities, companies, products)?**
 
 **Answer:**
@@ -3202,6 +3233,7 @@ ner.update_gazetteers({
 ---
 
 ## Question 32
+- [ ] Done
 **What are gazetteer features in NER and when should you use them?**
 
 **Answer:**
@@ -3348,6 +3380,7 @@ def combine_gazetteer_with_model(text, model_preds, gaz_features):
 ---
 
 ## Question 33
+- [ ] Done
 **How do you balance precision vs recall in NER for different business use cases?**
 
 **Answer:**
@@ -3499,6 +3532,7 @@ Decision: Optimize for HIGH RECALL
 ---
 
 ## Question 34
+- [ ] Done
 **What is the Universal Dependencies project and how does it standardize POS tagging across languages?**
 
 **Answer:**
@@ -3622,6 +3656,7 @@ for sent in de_doc.sentences:
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle POS tagging for code-mixed or transliterated text?**
 
 **Answer:**
@@ -3788,6 +3823,7 @@ def normalize_transliterated(text):
 ---
 
 ## Question 36
+- [ ] Done
 **What role does dependency parsing play after POS tagging?**
 
 **Answer:**
@@ -3920,6 +3956,7 @@ for token in doc:
 ---
 
 ## Question 37
+- [ ] Done
 **How do transformer-based models perform joint NER and relation extraction?**
 
 **Answer:**
@@ -4084,6 +4121,7 @@ def extract_entities_and_relations(text, model, tokenizer):
 ---
 
 ## Question 38
+- [ ] Done
 **What is byte-level BPE and why do models like GPT use it?**
 
 **Answer:**
@@ -4200,6 +4238,7 @@ print(f"GPT-2 vocab size: {tokenizer.vocab_size}")  # 50,257
 ---
 
 ## Question 39
+- [ ] Done
 **How do you debug tokenization issues affecting downstream model performance?**
 
 **Answer:**
@@ -4343,6 +4382,7 @@ def verify_tokenizer_model_match(tokenizer, model):
 ---
 
 ## Question 40
+- [ ] Done
 **What are the memory and latency considerations for different tokenization approaches in production?**
 
 **Answer:**
@@ -4526,6 +4566,7 @@ def compare_fast_slow(tokenizer_name, text):
 ---
 
 ## Question 41
+- [ ] Done
 **How do you handle NER confidence scoring and when to abstain from predictions?**
 
 **Answer:**
@@ -4707,6 +4748,7 @@ class TemperatureScaler:
 ---
 
 ## Question 42
+- [ ] Done
 **What is span-based NER and how does it differ from token classification approaches?**
 
 **Answer:**
@@ -4887,6 +4929,7 @@ def remove_overlaps(entities):
 ---
 
 ## Question 43
+- [ ] Done
 **How do you implement active learning for efficient NER annotation?**
 
 **Answer:**
@@ -5068,6 +5111,7 @@ def diversity_sampling(embeddings, selected_indices, n_samples):
 ---
 
 ## Question 44
+- [ ] Done
 **What preprocessing steps are essential before tokenization (normalization, cleaning)?**
 
 **Answer:**
@@ -5239,6 +5283,7 @@ def preprocess_social_media(text):
 ---
 
 ## Question 45
+- [ ] Done
 **How do you handle special tokens ([CLS], [SEP], [PAD]) in transformer tokenizers?**
 
 **Answer:**
@@ -5386,6 +5431,7 @@ def create_special_token_mask(input_ids, tokenizer):
 ---
 
 ## Question 46
+- [ ] Done
 **What is the difference between greedy and optimal tokenization algorithms?**
 
 **Answer:**
@@ -5551,6 +5597,7 @@ print(f"Optimal: {optimal.tokenize(word)}")
 ---
 
 ## Question 47
+- [ ] Done
 **How do you implement privacy-preserving NER for sensitive documents (PII detection)?**
 
 **Answer:**
@@ -5732,6 +5779,7 @@ print(f"\nRedacted:\n{redacted}")
 ---
 
 ## Question 48
+- [ ] Done
 **What are the best practices for fine-tuning pre-trained models on custom NER datasets?**
 
 **Answer:**
@@ -5934,6 +5982,7 @@ print(f"Test F1: {results['eval_f1']:.4f}")
 ---
 
 ## Question 49
+- [ ] Done
 **How do you handle NER for hierarchical or multi-level entity types?**
 
 **Answer:**
@@ -6122,6 +6171,7 @@ def constrained_decode(predictions, hierarchy):
 ---
 
 ## Question 50
+- [ ] Done
 **What metrics and techniques help evaluate tokenization quality?**
 
 **Answer:**
@@ -6306,6 +6356,7 @@ def evaluate_downstream_impact(tokenizer1, tokenizer2, model, test_data):
 # Tokenization/Lemmatization/Stemming - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you choose between different tokenization strategies (word-level, subword, character-level) for specific NLP tasks?**
 
 **Answer:**
@@ -6368,6 +6419,7 @@ print(f"\nFertility — BPE: {len(bpe_tokens)/num_words:.2f}, "
 ---
 
 ## Question 2
+- [ ] Done
 **What are the trade-offs between stemming and lemmatization for information retrieval applications?**
 
 **Answer:**
@@ -6446,6 +6498,7 @@ print(f"\nStem overlap: {q_stems & d_stems}")
 ---
 
 ## Question 3
+- [ ] Done
 **How do you handle tokenization for multilingual texts with mixed scripts and languages?**
 
 **Answer:**
@@ -6522,6 +6575,7 @@ for lang, sample in [("English", "The weather is nice today"),
 ---
 
 ## Question 4
+- [ ] Done
 **What techniques work best for tokenization of social media text with informal language and emojis?**
 
 **Answer:**
@@ -6596,6 +6650,7 @@ print(f"\nEmoji→text: {text_with_emoji_desc}")
 ---
 
 ## Question 5
+- [ ] Done
 **How do you implement subword tokenization algorithms like BPE, WordPiece, and SentencePiece?**
 
 **Answer:**
@@ -6687,6 +6742,7 @@ for name in ["gpt2", "bert-base-uncased", "t5-small"]:
 ---
 
 ## Question 6
+- [ ] Done
 **What strategies help with handling out-of-vocabulary words during tokenization?**
 
 **Answer:**
@@ -6759,6 +6815,7 @@ print(f"New vocab size: {len(tok)}")
 ---
 
 ## Question 7
+- [ ] Done
 **How do you design tokenization schemes that preserve important linguistic information?**
 
 **Answer:**
@@ -6848,6 +6905,7 @@ for word in ["unhappiness", "unbelievable", "preprocessing"]:
 ---
 
 ## Question 8
+- [ ] Done
 **What approaches work best for tokenization of domain-specific texts like legal or medical documents?**
 
 **Answer:**
@@ -6927,6 +6985,7 @@ print(f"After augmentation: {tok.tokenize('myocardial infarction')}")
 ---
 
 ## Question 9
+- [ ] Done
 **How do you handle tokenization for languages without clear word boundaries?**
 
 **Answer:**
@@ -7018,6 +7077,7 @@ print(f"\nMax-match:    {' / '.join(result)}")
 ---
 
 ## Question 11
+- [ ] Done
 **How do you implement lemmatization for morphologically rich languages?**
 
 **Answer:**
@@ -7091,6 +7151,7 @@ print("Neural pipeline correctly handles it via morphological analysis.")
 ---
 
 ## Question 12
+- [ ] Done
 **What strategies work best for handling tokenization of noisy or corrupted text data?**
 
 **Answer:**
@@ -7188,6 +7249,7 @@ except ImportError:
 ---
 
 ## Question 14
+- [ ] Done
 **What approaches help with tokenization of code-mixed or transliterated text?**
 
 **Answer:**
@@ -7275,6 +7337,7 @@ print(f"\nScript-mixed XLM-R: {ml_tokens_mixed}")
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle tokenization for real-time processing with computational constraints?**
 
 **Answer:**
@@ -7383,6 +7446,7 @@ print(f"\nTruncated tokenization (10K words -> 512 tokens): {trunc_time*1000:.2f
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement adaptive tokenization that adjusts to different text domains?**
 
 **Answer:**
@@ -7459,6 +7523,7 @@ print(f"Domain: {result['domain']}, Tokens: {result['tokens'][:10]}")
 ---
 
 ## Question 18
+- [ ] Done
 **What strategies help with tokenization of historical or archaic text varieties?**
 
 **Answer:**
@@ -7539,6 +7604,7 @@ print(f"Modernized: {result['modernized']}")
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle tokenization quality control and error detection?**
 
 **Answer:**
@@ -7633,6 +7699,7 @@ print(f"Tokens: {report.token_count}, Ratio: {report.token_word_ratio:.2f}, Flag
 ---
 
 ## Question 20
+- [ ] Done
 **What approaches work best for tokenization in federated learning scenarios?**
 
 **Answer:**
@@ -7725,6 +7792,7 @@ print(f"Global vocab size: {len(global_vocab)}, Sample: {global_vocab[:10]}")
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement efficient tokenization pipelines for large-scale text processing?**
 
 **Answer:**
@@ -7804,6 +7872,7 @@ print(f"Tokenized {len(corpus)} docs in {time.time()-start:.2f}s")
 ---
 
 ## Question 22
+- [ ] Done
 **What techniques help with explaining tokenization decisions to end users?**
 
 **Answer:**
@@ -7895,6 +7964,7 @@ explainer.display("Transformers handle antidisestablishmentarianism gracefully."
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle tokenization for texts with special formatting or markup?**
 
 **Answer:**
@@ -7991,6 +8061,7 @@ print(f"Tokens: {result['tokens']}")
 ---
 
 ## Question 24
+- [ ] Done
 **What strategies work best for tokenization of multilingual documents?**
 
 **Answer:**
@@ -8085,6 +8156,7 @@ print(f"Tokens ({result['num_tokens']}): {result['tokens'][:15]}")
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement privacy-preserving tokenization for sensitive text data?**
 
 **Answer:**
@@ -8184,6 +8256,7 @@ print(f"Tokens: {result['tokens']}")
 ---
 
 ## Question 26
+- [ ] Done
 **What approaches help with tokenization of streaming text in real-time applications?**
 
 **Answer:**
@@ -8293,6 +8366,7 @@ for r in streamer.flush():
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle tokenization adaptation to emerging text formats and platforms?**
 
 **Answer:**
@@ -8391,6 +8465,7 @@ print(f"Discord: {result['normalized']} -> {result['tokens']}")
 ---
 
 ## Question 28
+- [ ] Done
 **What techniques work best for tokenization with minimal computational resources?**
 
 **Answer:**
@@ -8499,6 +8574,7 @@ print(f"Tokenizer memory: ~{sys.getsizeof(vocab)} bytes (vocab dict only)")
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement robust error handling for tokenization in production systems?**
 
 **Answer:**
@@ -8630,6 +8706,7 @@ print(rt.tokenize("H\u0336e\u0336l\u0336l\u0336o\u0336"))
 ---
 
 ## Question 30
+- [ ] Done
 **What strategies help with combining tokenization with other text preprocessing tasks?**
 
 **Answer:**
@@ -8762,6 +8839,7 @@ print(f"Filtered: {result.filtered}")
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle tokenization for texts requiring high accuracy for downstream tasks?**
 
 **Answer:**
@@ -8837,6 +8915,7 @@ print(f"Tokens/word ratio: {len(base_tokens)/len(text.split()):.2f}")
 ---
 
 ## Question 32
+- [ ] Done
 **What approaches work best for tokenization of conversational or dialogue text?**
 
 **Answer:**
@@ -8925,6 +9004,7 @@ for orig, norm in zip(turns, normalized_turns):
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement customizable tokenization for different user requirements?**
 
 **Answer:**
@@ -9042,6 +9122,7 @@ print("Domain:", domain.tokenize(text))
 ---
 
 ## Question 34
+- [ ] Done
 **What techniques help with tokenization consistency across different text sources?**
 
 **Answer:**
@@ -9148,6 +9229,7 @@ for src_type, text in sources.items():
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle tokenization optimization for specific NLP model architectures?**
 
 **Answer:**
@@ -9237,6 +9319,7 @@ print(f"\nSequence packing reduces padding waste by ~30-50% in training")
 ---
 
 ## Question 36
+- [ ] Done
 **What strategies work best for tokenization of technical or scientific literature?**
 
 **Answer:**
@@ -9326,6 +9409,7 @@ for term in ["BRCA1", "C₂H₅OH"]:
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement batch processing pipelines for large-scale tokenization?**
 
 **Answer:**
@@ -9430,6 +9514,7 @@ print(f"Memory usage: O(batch_size) = O({1000}) regardless of dataset size")
 ---
 
 ## Question 38
+- [ ] Done
 **What approaches help with tokenization quality assessment without ground truth?**
 
 **Answer:**
@@ -9548,6 +9633,7 @@ assess_tokenizer_quality(gpt2_tok, texts, "GPT-2")
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle tokenization for texts with cultural or linguistic variations?**
 
 **Answer:**
@@ -9667,6 +9753,7 @@ for text in texts:
 ---
 
 ## Question 40
+- [ ] Done
 **What techniques work best for tokenization in resource-constrained environments?**
 
 **Answer:**
@@ -9770,60 +9857,70 @@ for vs in vocab_sizes:
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement fairness-aware tokenization to avoid bias across languages?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 42
+- [ ] Done
 **What strategies help with tokenization of emerging text types and genres?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle tokenization integration with modern transformer-based models?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 44
+- [ ] Done
 **What approaches work best for tokenization with specific encoding requirements?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement monitoring and quality control for tokenization systems?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 46
+- [ ] Done
 **What techniques help with tokenization of texts requiring semantic preservation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle tokenization adaptation to user-specific vocabulary and terminology?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 48
+- [ ] Done
 **What strategies work best for tokenization in multilingual neural machine translation?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 49
+- [ ] Done
 **How do you implement efficient storage and retrieval of tokenization vocabularies?**
 **Answer:** _To be filled_
 
 ---
 
 ## Question 50
+- [ ] Done
 **What approaches help with balancing tokenization granularity and computational efficiency?**
 **Answer:** _To be filled_
 
@@ -9837,6 +9934,7 @@ for vs in vocab_sizes:
 # Named Entity Recognition (NER) - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you handle NER for entities that span multiple tokens or have complex internal structure?**
 **Answer:**
 
@@ -9875,6 +9973,7 @@ for ent in entities:
 ---
 
 ## Question 2
+- [ ] Done
 **What techniques work best for NER in low-resource languages with limited training data?**
 **Answer:**
 
@@ -9919,6 +10018,7 @@ for text in texts:
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement domain adaptation for NER models across different text domains?**
 **Answer:**
 
@@ -9965,6 +10065,7 @@ print(f"Model: {model_name}, Labels: {label_list}")
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies help with handling nested or overlapping entities in NER tasks?**
 **Answer:**
 
@@ -10013,6 +10114,7 @@ for s, e, text in spans:
 ---
 
 ## Question 5
+- [ ] Done
 **How do you design NER models that can identify new entity types with minimal examples?**
 **Answer:**
 
@@ -10064,6 +10166,7 @@ print(prompt)
 ---
 
 ## Question 6
+- [ ] Done
 **What approaches work best for NER in noisy or informal text like social media posts?**
 **Answer:**
 
@@ -10115,6 +10218,7 @@ for t in texts:
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle NER for entities with ambiguous boundaries or unclear definitions?**
 **Answer:**
 
@@ -10156,6 +10260,7 @@ for text in ambiguous_texts:
 ---
 
 ## Question 8
+- [ ] Done
 **What techniques help with NER in multilingual texts with code-switching?**
 **Answer:**
 
@@ -10198,6 +10303,7 @@ for text in code_switched:
 ---
 
 ## Question 10
+- [ ] Done
 **What strategies work best for NER in specialized domains like biomedical or legal texts?**
 **Answer:**
 
@@ -10233,6 +10339,7 @@ for e in entities:
 ---
 
 ## Question 12
+- [ ] Done
 **What approaches help with explaining NER decisions and predicted entity boundaries?**
 **Answer:**
 
@@ -10283,6 +10390,7 @@ explain_ner_prediction("Barack Obama visited Google in Mountain View.")
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement knowledge distillation for compressing large NER models?**
 **Answer:**
 
@@ -10328,6 +10436,7 @@ print("Typical: temperature=2-5, alpha=0.5-0.7")
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques work best for NER with limited computational resources?**
 **Answer:**
 
@@ -10373,6 +10482,7 @@ print(f"Quantized: {os.path.getsize('quantized.pt') / 1e6:.1f} MB")
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle NER for entities that change over time or have temporal significance?**
 **Answer:**
 
@@ -10424,6 +10534,7 @@ print(manager.get_gazetteer())
 ---
 
 ## Question 16
+- [ ] Done
 **What strategies help with NER consistency across different text formats and sources?**
 **Answer:**
 
@@ -10475,6 +10586,7 @@ for text, fmt in sources:
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement online learning for NER models adapting to new entity types?**
 **Answer:**
 
@@ -10526,6 +10638,7 @@ print("Expandable NER: freeze base, add adapter per new entity type")
 ---
 
 ## Question 18
+- [ ] Done
 **What approaches work best for NER in conversational or dialogue systems?**
 **Answer:**
 
@@ -10568,6 +10681,7 @@ def dialogue_ner(turns, ner_model):
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle NER optimization for specific downstream applications?**
 **Answer:**
 
@@ -10615,6 +10729,7 @@ print("Application-specific NER optimization adjusts thresholds and filters")
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help with NER for entities requiring cultural or contextual knowledge?**
 **Answer:**
 
@@ -10660,6 +10775,7 @@ print("Wikidata is an excellent multilingual knowledge base for entity grounding
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement fairness-aware NER to avoid bias across different entity types?**
 **Answer:**
 
@@ -10709,6 +10825,7 @@ print("Acceptable fairness gap: <5% F1 difference across groups")
 ---
 
 ## Question 22
+- [ ] Done
 **What strategies work best for NER in real-time processing scenarios?**
 **Answer:**
 
@@ -10763,6 +10880,7 @@ print(f"100 calls: {(time.time()-start)*1000:.1f}ms (with caching)")
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle NER quality assessment when ground truth annotations vary?**
 **Answer:**
 
@@ -10804,6 +10922,7 @@ print(f"Kappa: {result['kappa']:.3f}, Agreement: {result['agreement']:.3f}")
 ---
 
 ## Question 24
+- [ ] Done
 **What approaches help with NER for entities in multiple languages within the same text?**
 **Answer:**
 
@@ -10845,6 +10964,7 @@ for text in multilingual_texts:
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle NER adaptation to emerging entity categories and definitions?**
 **Answer:**
 
@@ -10884,6 +11004,7 @@ new_labels = extend_ner_schema(labels, 'CRYPTO', [
 ---
 
 ## Question 28
+- [ ] Done
 **What strategies help with NER for entities requiring external knowledge or context?**
 **Answer:**
 
@@ -10933,6 +11054,7 @@ print("Knowledge-enhanced NER disambiguates using external context")
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement robust error handling for NER in production systems?**
 **Answer:**
 
@@ -10998,6 +11120,7 @@ print("Production NER: validate input, chunk long text, handle errors gracefully
 ---
 
 ## Question 30
+- [ ] Done
 **What approaches work best for combining NER with other information extraction tasks?**
 **Answer:**
 
@@ -11043,6 +11166,7 @@ print("Multi-task loss = L_ner + L_re + L_shared")
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle NER for entities with varying granularity levels?**
 **Answer:**
 
@@ -11086,6 +11210,7 @@ print("Hierarchical NER: coarse type first, then fine-grained subtype")
 ---
 
 ## Question 32
+- [ ] Done
 **What techniques help with NER consistency in federated learning scenarios?**
 **Answer:**
 
@@ -11130,6 +11255,7 @@ print("FedAvg is the standard aggregation algorithm")
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement efficient batch processing for large-scale NER applications?**
 **Answer:**
 
@@ -11174,6 +11300,7 @@ print("Key: batch_size parameter in HuggingFace pipeline enables GPU batching")
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for NER with specific accuracy requirements?**
 **Answer:**
 
@@ -11225,6 +11352,7 @@ print("Ensemble voting: majority vote for precision, union for recall")
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle NER for entities that require disambiguation or linking?**
 **Answer:**
 
@@ -11276,6 +11404,7 @@ print(entity_linking('Apple', 'I bought a fresh apple at the market', kb))
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with NER adaptation to user-specific entity definitions?**
 **Answer:**
 
@@ -11329,6 +11458,7 @@ print("Custom NER: base model + user gazetteers + regex patterns")
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement monitoring and quality control for NER systems?**
 **Answer:**
 
@@ -11386,6 +11516,7 @@ print("Monitor: confidence, entity rates, type distribution, latency")
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for NER in texts with complex formatting or structure?**
 **Answer:**
 
@@ -11431,6 +11562,7 @@ print("LayoutLM uses text + 2D position info for document NER")
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle NER optimization when balancing precision and recall?**
 **Answer:**
 
@@ -11476,6 +11608,7 @@ for t in [0.3, 0.5, 0.7, 0.9]:
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with NER for entities in emerging text types and platforms?**
 **Answer:**
 
@@ -11517,6 +11650,7 @@ print(preprocess_for_platform('<@123456> check r/MachineLearning', 'reddit'))
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement cross-lingual transfer learning for multilingual NER?**
 **Answer:**
 
@@ -11560,6 +11694,7 @@ for lang, text in test_texts.items():
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for NER with minimal false positive rates?**
 **Answer:**
 
@@ -11610,6 +11745,7 @@ print(minimize_false_positives(entities))
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle NER integration with knowledge graphs and databases?**
 **Answer:**
 
@@ -11656,6 +11792,7 @@ print("NER + EL + RE = Knowledge Graph population pipeline")
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with NER for entities requiring temporal or spatial context?**
 **Answer:**
 
@@ -11705,6 +11842,7 @@ print(normalize_temporal("I visited 3 weeks ago."))
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement customizable NER systems for different user needs?**
 **Answer:**
 
@@ -11760,6 +11898,7 @@ print(json.dumps(config, indent=2))
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for NER in streaming text processing applications?**
 **Answer:**
 
@@ -11814,6 +11953,7 @@ print("Kafka + Flink/Spark Streaming are common infrastructure choices")
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle NER quality benchmarking across different model architectures?**
 **Answer:**
 
@@ -11858,6 +11998,7 @@ print("Always report: entity-level precision, recall, F1 per type")
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with NER for entities with evolving definitions or categories?**
 **Answer:**
 
@@ -11908,6 +12049,7 @@ print(f"Current labels: {schema.current_labels}")
 ---
 
 ## Question 49
+- [ ] Done
 **How do you implement efficient storage and retrieval of NER results?**
 **Answer:**
 
@@ -11960,6 +12102,7 @@ print(store.query_by_type('PER'))
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques work best for balancing NER accuracy with computational efficiency?**
 **Answer:**
 
@@ -12015,6 +12158,7 @@ select_ner_model(max_latency_ms=10, min_f1=0.85, has_gpu=False)
 # Part-of-Speech (POS) Tagging - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you handle POS tagging for morphologically rich languages with complex inflectional systems?**
 **Answer:**
 
@@ -12067,6 +12211,7 @@ class MorphAwarePOSTagger(nn.Module):
 ---
 
 ## Question 2
+- [ ] Done
 **What techniques work best for POS tagging in low-resource languages with limited annotated data?**
 **Answer:**
 
@@ -12119,6 +12264,7 @@ trainer.train()
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement domain adaptation for POS tagging across different text genres?**
 **Answer:**
 
@@ -12174,6 +12320,7 @@ class DomainAdaptivePOSTagger(nn.Module):
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies help with handling ambiguous words that can have multiple POS tags?**
 **Answer:**
 
@@ -12231,6 +12378,7 @@ for tag, sents in results.items():
 ---
 
 ## Question 5
+- [ ] Done
 **How do you design POS taggers that can handle out-of-vocabulary words effectively?**
 **Answer:**
 
@@ -12290,6 +12438,7 @@ class OOVRobustTagger(nn.Module):
 ---
 
 ## Question 6
+- [ ] Done
 **What approaches work best for POS tagging in noisy or informal text environments?**
 **Answer:**
 
@@ -12343,6 +12492,7 @@ print(f"Normalized: {normalized}")
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle POS tagging for languages with non-standard orthography or spelling?**
 **Answer:**
 
@@ -12408,6 +12558,7 @@ print(normalized)  # ['the', 'color', 'was', 'beautifull']
 ---
 
 ## Question 8
+- [ ] Done
 **What techniques help with POS tagging in multilingual or code-switched texts?**
 **Answer:**
 
@@ -12457,6 +12608,7 @@ result = tag_code_switched("I went to the tienda to buy some leche")
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement active learning strategies for efficient POS tagging annotation?**
 **Answer:**
 
@@ -12514,6 +12666,7 @@ class ActivePOSLearner:
 ---
 
 ## Question 10
+- [ ] Done
 **What strategies work best for POS tagging in specialized domains with domain-specific vocabulary?**
 **Answer:**
 
@@ -12573,6 +12726,7 @@ def domain_aware_tag(text, lexicon):
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle POS tagging quality control and confidence assessment?**
 **Answer:**
 
@@ -12637,6 +12791,7 @@ class ConfidentPOSTagger:
 ---
 
 ## Question 12
+- [ ] Done
 **What approaches help with explaining POS tagging decisions for linguistic analysis?**
 **Answer:**
 
@@ -12699,6 +12854,7 @@ def extract_simple_rules(tagged_corpus, min_confidence=0.95):
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement knowledge distillation for compressing POS tagging models?**
 **Answer:**
 
@@ -12758,6 +12914,7 @@ class DistillationTrainer:
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques work best for POS tagging with limited computational resources?**
 **Answer:**
 
@@ -12823,6 +12980,7 @@ class AveragedPerceptronTagger:
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle POS tagging for historical or archaic text varieties?**
 **Answer:**
 
@@ -12888,6 +13046,7 @@ print(normalized)  # ['the', 'knyght', 'has', 'ridden', 'here']
 ---
 
 ## Question 16
+- [ ] Done
 **What strategies help with POS tagging consistency across different annotation schemes?**
 **Answer:**
 
@@ -12944,6 +13103,7 @@ class TagsetMapper:
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement online learning for POS taggers adapting to new text domains?**
 **Answer:**
 
@@ -13008,6 +13168,7 @@ class OnlinePOSTagger:
 ---
 
 ## Question 18
+- [ ] Done
 **What approaches work best for POS tagging in conversational or dialogue systems?**
 **Answer:**
 
@@ -13071,6 +13232,7 @@ class DialoguePOSPreprocessor:
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle POS tagging optimization for specific downstream NLP tasks?**
 **Answer:**
 
@@ -13131,6 +13293,7 @@ class TaskOptimizedPOSTagger(nn.Module):
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help with POS tagging for languages with flexible word order?**
 **Answer:**
 
@@ -13183,6 +13346,7 @@ class MorphAwareFreeOrderTagger(nn.Module):
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement fairness-aware POS tagging to avoid bias across language varieties?**
 **Answer:**
 
@@ -13248,6 +13412,7 @@ class POS_FairnessAuditor:
 ---
 
 ## Question 22
+- [ ] Done
 **What strategies work best for POS tagging in real-time text processing applications?**
 **Answer:**
 
@@ -13317,6 +13482,7 @@ class RealTimePOSTagger:
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle POS tagging quality assessment with inter-annotator disagreement?**
 **Answer:**
 
@@ -13381,6 +13547,7 @@ def create_soft_labels(annotations_list):
 ---
 
 ## Question 24
+- [ ] Done
 **What approaches help with POS tagging for texts requiring high linguistic accuracy?**
 **Answer:**
 
@@ -13442,6 +13609,7 @@ class HighAccuracyPOSEnsemble:
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement privacy-preserving POS tagging for sensitive text data?**
 **Answer:**
 
@@ -13505,6 +13673,7 @@ class PrivatePOSTagger:
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques work best for POS tagging with fine-grained tagset distinctions?**
 **Answer:**
 
@@ -13568,6 +13737,7 @@ class HierarchicalPOSTagger(nn.Module):
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle POS tagging adaptation to emerging language varieties and dialects?**
 **Answer:**
 
@@ -13640,6 +13810,7 @@ class AdaptivePOSTagger:
 ---
 
 ## Question 28
+- [ ] Done
 **What strategies help with POS tagging for texts with complex syntactic constructions?**
 **Answer:**
 
@@ -13710,6 +13881,7 @@ class SyntaxAwarePOSTagger:
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement robust error handling for POS tagging in production systems?**
 **Answer:**
 
@@ -13787,6 +13959,7 @@ class ProductionPOSTagger:
 ---
 
 ## Question 30
+- [ ] Done
 **What approaches work best for combining POS tagging with other linguistic annotation tasks?**
 **Answer:**
 
@@ -13849,6 +14022,7 @@ class MultiTaskNLPTagger(nn.Module):
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle POS tagging for texts with varying levels of formality?**
 **Answer:**
 
@@ -13909,6 +14083,7 @@ class FormalityAwareTagger:
 ---
 
 ## Question 32
+- [ ] Done
 **What techniques help with POS tagging consistency in federated learning scenarios?**
 **Answer:**
 
@@ -13976,6 +14151,7 @@ class FederatedPOSTrainer:
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement efficient batch processing for large-scale POS tagging?**
 **Answer:**
 
@@ -14047,6 +14223,7 @@ class BatchPOSTagger:
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for POS tagging with specific linguistic theory requirements?**
 **Answer:**
 
@@ -14106,6 +14283,7 @@ class TheorySpecificTagger:
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle POS tagging for texts requiring syntactic parsing downstream?**
 **Answer:**
 
@@ -14171,6 +14349,7 @@ def joint_pos_parse(text):
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with POS tagging adaptation to user-specific annotation needs?**
 **Answer:**
 
@@ -14240,6 +14419,7 @@ class CustomizablePOSTagger:
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement monitoring and quality control for POS tagging systems?**
 **Answer:**
 
@@ -14310,6 +14490,7 @@ class POSTaggingMonitor:
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for POS tagging in texts with special formatting or markup?**
 **Answer:**
 
@@ -14371,6 +14552,7 @@ class MarkupAwarePOSTagger:
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle POS tagging optimization when balancing speed and accuracy?**
 **Answer:**
 
@@ -14439,6 +14621,7 @@ class AdaptivePOSTagger:
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with POS tagging for emerging text types and social media platforms?**
 **Answer:**
 
@@ -14505,6 +14688,7 @@ class SocialMediaPOSTagger:
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement cross-lingual transfer learning for multilingual POS tagging?**
 **Answer:**
 
@@ -14571,6 +14755,7 @@ def cross_lingual_pos_tagger(source_data, target_data=None):
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for POS tagging with minimal error propagation?**
 **Answer:**
 
@@ -14638,6 +14823,7 @@ class PipelineWithSoftPOS:
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle POS tagging integration with modern neural language models?**
 **Answer:**
 
@@ -14705,6 +14891,7 @@ def probe_pos_in_layers(model, tokenizer, text, num_tags):
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with POS tagging for texts requiring morphological analysis?**
 **Answer:**
 
@@ -14765,6 +14952,7 @@ class JointPOSMorphTagger(nn.Module):
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement customizable POS tagging for different linguistic frameworks?**
 **Answer:**
 
@@ -14838,6 +15026,7 @@ class ConfigurablePOSTagger:
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for POS tagging in streaming text processing scenarios?**
 **Answer:**
 
@@ -14908,6 +15097,7 @@ class StreamingPOSTagger:
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle POS tagging quality benchmarking across different languages?**
 **Answer:**
 
@@ -14977,6 +15167,7 @@ class POSBenchmark:
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with POS tagging for texts with evolving grammatical patterns?**
 **Answer:**
 
@@ -15045,6 +15236,7 @@ tagger.add_temporal_rule('adulting', 'VERB', datetime.date(2016, 1, 1))
 ---
 
 ## Question 49
+- [ ] Done
 **How do you implement efficient storage and retrieval of POS tagging results?**
 **Answer:**
 
@@ -15124,6 +15316,7 @@ class POSTagStorage:
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques work best for balancing POS tagging accuracy with processing efficiency?**
 **Answer:**
 
@@ -15196,6 +15389,7 @@ class EfficientPOSTagger:
 # Text Classification - Theory Questions
 
 ## Question 1
+- [ ] Done
 **How do you handle text classification for extremely imbalanced datasets with rare classes?**
 **Answer:**
 
@@ -15256,6 +15450,7 @@ criterion = FocalLoss(alpha=class_weights, gamma=2.0)
 ---
 
 ## Question 2
+- [ ] Done
 **What techniques work best for multi-label text classification with label dependencies?**
 **Answer:**
 
@@ -15314,6 +15509,7 @@ criterion = nn.BCEWithLogitsLoss()
 ---
 
 ## Question 3
+- [ ] Done
 **How do you implement domain adaptation for text classifiers across different text sources?**
 **Answer:**
 
@@ -15369,6 +15565,7 @@ def domain_adapt_classifier(source_data, target_unlabeled, target_labeled=None):
 ---
 
 ## Question 4
+- [ ] Done
 **What strategies help with handling text classification for very long documents?**
 **Answer:**
 
@@ -15434,6 +15631,7 @@ class LongDocClassifier:
 ---
 
 ## Question 5
+- [ ] Done
 **How do you design text classifiers that work effectively with limited labeled data?**
 **Answer:**
 
@@ -15492,6 +15690,7 @@ def zero_shot_classify(text, candidate_labels):
 ---
 
 ## Question 6
+- [ ] Done
 **What approaches work best for text classification in multilingual or cross-lingual settings?**
 **Answer:**
 
@@ -15547,6 +15746,7 @@ def multilingual_classifier(train_data, num_labels=3):
 ---
 
 ## Question 7
+- [ ] Done
 **How do you handle text classification for noisy or poorly formatted text data?**
 **Answer:**
 
@@ -15613,6 +15813,7 @@ class NoisyTextPreprocessor:
 ---
 
 ## Question 8
+- [ ] Done
 **What techniques help with explaining text classification decisions to end users?**
 **Answer:**
 
@@ -15669,6 +15870,7 @@ class ExplainableTextClassifier:
 ---
 
 ## Question 9
+- [ ] Done
 **How do you implement active learning strategies for efficient text classification annotation?**
 **Answer:**
 
@@ -15727,6 +15929,7 @@ class ActiveTextClassifier:
 ---
 
 ## Question 10
+- [ ] Done
 **What strategies work best for text classification in specialized domains like legal or medical?**
 **Answer:**
 
@@ -15779,6 +15982,7 @@ def domain_specific_classifier(domain='medical', train_data=None, num_labels=5):
 ---
 
 ## Question 11
+- [ ] Done
 **How do you handle text classification quality control and confidence scoring?**
 **Answer:**
 
@@ -15843,6 +16047,7 @@ class QualityControlledClassifier:
 ---
 
 ## Question 12
+- [ ] Done
 **What approaches help with text classification robustness against adversarial attacks?**
 **Answer:**
 
@@ -15909,6 +16114,7 @@ class RobustTextClassifier:
 ---
 
 ## Question 13
+- [ ] Done
 **How do you implement knowledge distillation for compressing text classification models?**
 **Answer:**
 
@@ -15965,6 +16171,7 @@ class TextClassDistiller:
 ---
 
 ## Question 14
+- [ ] Done
 **What techniques work best for text classification with computational efficiency constraints?**
 **Answer:**
 
@@ -16024,6 +16231,7 @@ def optimize_bert_onnx(model_path, output_path):
 ---
 
 ## Question 15
+- [ ] Done
 **How do you handle text classification for streaming or real-time text processing?**
 **Answer:**
 
@@ -16087,6 +16295,7 @@ class StreamingTextClassifier:
 ---
 
 ## Question 16
+- [ ] Done
 **What strategies help with text classification consistency across different text formats?**
 **Answer:**
 
@@ -16155,6 +16364,7 @@ class FormatAgnosticClassifier:
 ---
 
 ## Question 17
+- [ ] Done
 **How do you implement online learning for text classifiers adapting to new categories?**
 **Answer:**
 
@@ -16226,6 +16436,7 @@ class ExpandableTextClassifier(nn.Module):
 ---
 
 ## Question 18
+- [ ] Done
 **What approaches work best for text classification in conversational or dialogue contexts?**
 **Answer:**
 
@@ -16282,6 +16493,7 @@ class DialogueClassifier(nn.Module):
 ---
 
 ## Question 19
+- [ ] Done
 **How do you handle text classification optimization for specific downstream applications?**
 **Answer:**
 
@@ -16349,6 +16561,7 @@ class ApplicationOptimizedClassifier:
 ---
 
 ## Question 20
+- [ ] Done
 **What techniques help with text classification for texts requiring cultural context?**
 **Answer:**
 
@@ -16418,6 +16631,7 @@ class CultureAwareClassifier:
 ---
 
 ## Question 21
+- [ ] Done
 **How do you implement fairness-aware text classification to reduce bias across groups?**
 **Answer:**
 
@@ -16484,6 +16698,7 @@ class FairTextClassifier:
 ---
 
 ## Question 22
+- [ ] Done
 **What strategies work best for text classification with hierarchical category structures?**
 **Answer:**
 
@@ -16543,6 +16758,7 @@ class HierarchicalTextClassifier(nn.Module):
 ---
 
 ## Question 23
+- [ ] Done
 **How do you handle text classification quality assessment with subjective categories?**
 **Answer:**
 
@@ -16612,6 +16828,7 @@ class SubjectiveClassifier:
 ---
 
 ## Question 24
+- [ ] Done
 **What approaches help with text classification for texts in multiple languages?**
 **Answer:**
 
@@ -16669,6 +16886,7 @@ class MultilingualClassifier:
 ---
 
 ## Question 25
+- [ ] Done
 **How do you implement privacy-preserving text classification for sensitive documents?**
 **Answer:**
 
@@ -16728,6 +16946,7 @@ class PrivacyAwareClassifier:
 ---
 
 ## Question 26
+- [ ] Done
 **What techniques work best for text classification with fine-grained category distinctions?**
 **Answer:**
 
@@ -16784,6 +17003,7 @@ class FineGrainedClassifier(nn.Module):
 ---
 
 ## Question 27
+- [ ] Done
 **How do you handle text classification adaptation to emerging topics or categories?**
 **Answer:**
 
@@ -16844,6 +17064,7 @@ result = clf.classify_zero_shot(
 ---
 
 ## Question 28
+- [ ] Done
 **What strategies help with text classification for texts requiring temporal context?**
 **Answer:**
 
@@ -16908,6 +17129,7 @@ class TemporalAdaptiveClassifier:
 ---
 
 ## Question 29
+- [ ] Done
 **How do you implement robust error handling for text classification in production?**
 **Answer:**
 
@@ -16977,6 +17199,7 @@ class RobustClassifier:
 ---
 
 ## Question 30
+- [ ] Done
 **What approaches work best for combining text classification with other NLP tasks?**
 **Answer:**
 
@@ -17038,6 +17261,7 @@ class MultiTaskNLPModel(nn.Module):
 ---
 
 ## Question 31
+- [ ] Done
 **How do you handle text classification for texts with varying lengths and structures?**
 **Answer:**
 
@@ -17112,6 +17336,7 @@ class VariableLengthClassifier:
 ---
 
 ## Question 32
+- [ ] Done
 **What techniques help with text classification consistency in federated learning scenarios?**
 **Answer:**
 
@@ -17186,6 +17411,7 @@ class FederatedTextClassification:
 ---
 
 ## Question 33
+- [ ] Done
 **How do you implement efficient batch processing for large-scale text classification?**
 **Answer:**
 
@@ -17255,6 +17481,7 @@ class EfficientBatchClassifier:
 ---
 
 ## Question 34
+- [ ] Done
 **What strategies work best for text classification with specific regulatory requirements?**
 **Answer:**
 
@@ -17331,6 +17558,7 @@ class RegulatoryCompliantClassifier:
 ---
 
 ## Question 35
+- [ ] Done
 **How do you handle text classification for texts requiring domain expertise?**
 **Answer:**
 
@@ -17393,6 +17621,7 @@ class DomainExpertClassifier:
 ---
 
 ## Question 36
+- [ ] Done
 **What approaches help with text classification adaptation to user-specific categories?**
 **Answer:**
 
@@ -17457,6 +17686,7 @@ class PersonalizedClassifier(nn.Module):
 ---
 
 ## Question 37
+- [ ] Done
 **How do you implement monitoring and quality control for text classification systems?**
 **Answer:**
 
@@ -17534,6 +17764,7 @@ class ClassificationMonitor:
 ---
 
 ## Question 38
+- [ ] Done
 **What techniques work best for text classification in texts with special formatting?**
 **Answer:**
 
@@ -17614,6 +17845,7 @@ class FormatAwarePreprocessor:
 ---
 
 ## Question 39
+- [ ] Done
 **How do you handle text classification optimization when balancing precision and recall?**
 **Answer:**
 
@@ -17692,6 +17924,7 @@ class PrecisionRecallOptimizer:
 ---
 
 ## Question 40
+- [ ] Done
 **What strategies help with text classification for emerging text types and platforms?**
 **Answer:**
 
@@ -17766,6 +17999,7 @@ class PlatformAdaptiveClassifier:
 ---
 
 ## Question 41
+- [ ] Done
 **How do you implement transfer learning for multilingual text classification?**
 **Answer:**
 
@@ -17835,6 +18069,7 @@ predictions = transfer.predict_any_language(german_texts)
 ---
 
 ## Question 42
+- [ ] Done
 **What approaches work best for text classification with minimal false positive requirements?**
 **Answer:**
 
@@ -17900,6 +18135,7 @@ class HighPrecisionClassifier:
 ---
 
 ## Question 43
+- [ ] Done
 **How do you handle text classification integration with information retrieval systems?**
 **Answer:**
 
@@ -17961,6 +18197,7 @@ class ClassificationEnhancedIR:
 ---
 
 ## Question 44
+- [ ] Done
 **What techniques help with text classification for texts requiring contextual understanding?**
 **Answer:**
 
@@ -18026,6 +18263,7 @@ class ContextualClassifier(nn.Module):
 ---
 
 ## Question 45
+- [ ] Done
 **How do you implement customizable text classification for different user needs?**
 **Answer:**
 
@@ -18099,6 +18337,7 @@ result = clf.classify('user1', 'We need this fix ASAP')
 ---
 
 ## Question 46
+- [ ] Done
 **What strategies work best for text classification in high-throughput processing scenarios?**
 **Answer:**
 
@@ -18169,6 +18408,7 @@ class HighThroughputClassifier:
 ---
 
 ## Question 47
+- [ ] Done
 **How do you handle text classification quality benchmarking across different models?**
 **Answer:**
 
@@ -18250,6 +18490,7 @@ class ModelBenchmark:
 ---
 
 ## Question 48
+- [ ] Done
 **What approaches help with text classification for texts with evolving language patterns?**
 **Answer:**
 
@@ -18326,6 +18567,7 @@ class EvolvingLanguageClassifier:
 ---
 
 ## Question 49
+- [ ] Done
 **How do you implement efficient storage and indexing of text classification results?**
 **Answer:**
 
@@ -18416,6 +18658,7 @@ class ClassificationResultStore:
 ---
 
 ## Question 50
+- [ ] Done
 **What techniques work best for balancing text classification accuracy with interpretability?**
 **Answer:**
 
@@ -18498,6 +18741,7 @@ class InterpretableClassifier:
 # Nlp Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What isNatural Language Processing (NLP)and why is it important?**
 
@@ -18506,6 +18750,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the significance ofPart-of-Speech (POS) taggingin NLP.**
 
@@ -18514,6 +18759,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 3
+- [ ] Done
 
 **Describelemmatizationandstemming. When would you use one over the other?**
 
@@ -18522,6 +18768,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is a ‘named entity’ and how isNamed Entity Recognition (NER)useful in NLP tasks?**
 
@@ -18530,6 +18777,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does adependency parserwork, and what information does it provide?**
 
@@ -18538,6 +18786,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 6
+- [ ] Done
 
 **What aren-grams, and how do they contribute tolanguage modeling?**
 
@@ -18546,6 +18795,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 7
+- [ ] Done
 
 **Describe what a ‘bag of words’ model is and its limitations.**
 
@@ -18554,6 +18804,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain how theNaive Bayes classifieris used in NLP.**
 
@@ -18562,6 +18813,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 9
+- [ ] Done
 
 **What are the advantages of usingRandom Forestsin NLP?**
 
@@ -18570,6 +18822,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain howDecision Treesare utilized for NLP problems.**
 
@@ -18578,6 +18831,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 11
+- [ ] Done
 
 **Briefly explainword embeddingsand their importance in NLP.**
 
@@ -18586,6 +18840,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 12
+- [ ] Done
 
 **Describe the architecture and applications ofRecurrent Neural Networks (RNN)in NLP.**
 
@@ -18594,6 +18849,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 13
+- [ ] Done
 
 **What are the benefits of usingAttention Mechanismsin NLP models?**
 
@@ -18602,6 +18858,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 14
+- [ ] Done
 
 **Explain the concept and capabilities ofTransformer modelslikeBERTandGPT.**
 
@@ -18610,6 +18867,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 15
+- [ ] Done
 
 **Describe theTF-IDFstatistic and its significance in document retrieval.**
 
@@ -18618,6 +18876,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is the idea behindLatent Semantic Analysis (LSA)in NLP?**
 
@@ -18626,6 +18885,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 17
+- [ ] Done
 
 **Describe a typical workflow with theNatural Language Toolkit (NLTK)in Python.**
 
@@ -18634,6 +18894,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 18
+- [ ] Done
 
 **What are the benefits of using libraries likeHugging Face’s Transformers?**
 
@@ -18642,6 +18903,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 19
+- [ ] Done
 
 **Explain howPyTorchandTensorFlowfacilitate NLP model building.**
 
@@ -18650,6 +18912,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 20
+- [ ] Done
 
 **What arecontext-free grammars, and how do they apply toparsingin NLP?**
 
@@ -18658,6 +18921,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 21
+- [ ] Done
 
 **What is the difference betweenrule-based,statistical, andneural approachesin NLP?**
 
@@ -18666,6 +18930,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 22
+- [ ] Done
 
 **Explain howmachine translation modelsare evaluated for accuracy.**
 
@@ -18674,6 +18939,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 23
+- [ ] Done
 
 **Explain the importance of domain-specificcorporaand language resources in NLP.**
 
@@ -18682,6 +18948,7 @@ class InterpretableClassifier:
 ---
 
 ## Question 24
+- [ ] Done
 
 **Describe an approach to automaticallysummarizelong documents.**
 

@@ -1,6 +1,7 @@
 # XGBoost Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What are the core parameters in XGBoost that you often consider tuning?**
 
@@ -86,6 +87,7 @@ xgb.XGBClassifier(
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the importance of the 'max_depth' parameter in XGBoost.**
 
@@ -148,6 +150,7 @@ for depth in [3, 4, 5, 6, 7, 8]:
 ---
 
 ## Question 3
+- [ ] Done
 
 **Discuss how to manage the trade-off between learning rate and n_estimators in XGBoost.**
 
@@ -245,6 +248,7 @@ final_model = xgb.XGBClassifier(
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is early stopping in XGBoost and how can it be implemented?**
 
@@ -383,6 +387,7 @@ class EarlyStoppingCallback:
 ---
 
 ## Question 5
+- [ ] Done
 
 **How does the objective function affect the performance of the XGBoost model?**
 
@@ -450,6 +455,7 @@ model = xgb.XGBRegressor(objective=weighted_mse)
 ---
 
 ## Question 6
+- [ ] Done
 
 **Discuss how XGBoost can handle highly imbalanced datasets.**
 
@@ -562,6 +568,7 @@ print(f"Average Precision: {average_precision_score(y_test, proba):.4f}")
 ---
 
 ## Question 7
+- [ ] Done
 
 **How do you interpret XGBoost models and understand feature importance?**
 
@@ -651,6 +658,7 @@ shap.summary_plot(shap_interaction, X_test)
 ---
 
 ## Question 8
+- [ ] Done
 
 **What methods can be employed to improve the computational efficiency of XGBoost training?**
 
@@ -755,6 +763,7 @@ model = xgb.XGBClassifier(
 ---
 
 ## Question 9
+- [ ] Done
 
 **How can you use XGBoost for a multi-class classification problem?**
 
@@ -859,6 +868,7 @@ model = xgb.XGBClassifier(
 ---
 
 ## Question 10
+- [ ] Done
 
 **How does the DART booster in XGBoost work and what's its use case?**
 
@@ -918,6 +928,7 @@ model = xgb.XGBClassifier(
 ---
 
 ## Question 11
+- [ ] Done
 
 **Discuss how XGBoost processes sparse data and the benefits of this approach.**
 
@@ -1011,6 +1022,7 @@ print(f"Speedup: {dense_time/sparse_time:.1f}x")
 ---
 
 ## Question 12
+- [ ] Done
 
 **How can you combine XGBoost with other machine learning models in an ensemble?**
 
@@ -1116,6 +1128,7 @@ xgb_model.fit(X_combined, y_train)
 ---
 
 ## Question 13
+- [ ] Done
 
 **How can XGBoost be integrated within a distributed computing environment for large-scale problems?**
 
@@ -1232,6 +1245,7 @@ result = train(
 ---
 
 ## Question 14
+- [ ] Done
 
 **Discuss the potential advantages of using XGBoost over other gradient boosting frameworks like LightGBM or CatBoost.**
 
@@ -1347,6 +1361,7 @@ for name, model in models.items():
 ---
 
 ## Question 15
+- [ ] Done
 
 **How do recent advancements in hardware (such as GPU acceleration) impact the use of XGBoost?**
 
@@ -1448,6 +1463,7 @@ print(f"Speedup: {cpu_time/gpu_time:.1f}x")
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is the column subsampling feature in XGBoost and how does it help?**
 
@@ -1514,6 +1530,7 @@ model = xgb.XGBClassifier(
 ---
 
 ## Question 17
+- [ ] Done
 
 **Explain the concept of 'subsample' in XGBoost and its benefits.**
 
@@ -1591,6 +1608,7 @@ model = xgb.XGBClassifier(
 ---
 
 ## Question 18
+- [ ] Done
 
 **How does XGBoost handle categorical features?**
 
@@ -1665,6 +1683,7 @@ model.fit(X, y)
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is the weighted quantile sketch in XGBoost?**
 
@@ -1729,6 +1748,7 @@ model = xgb.XGBClassifier(
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain how XGBoost can be used for ranking problems.**
 
@@ -1774,6 +1794,7 @@ model = xgb.train(params, dtrain, num_boost_round=100)
 ---
 
 ## Question 21
+- [ ] Done
 
 **How does XGBoost perform regularization, and how does it differ from other boosting algorithms?**
 
@@ -1814,6 +1835,7 @@ $$\Omega(f) = \gamma T + \frac{1}{2}\lambda \sum_{j=1}^{T} w_j^2 + \alpha \sum_{
 ---
 
 ## Question 22
+- [ ] Done
 
 **Describe a scenario where using an XGBoost model would be preferable to deep learning models.**
 
@@ -1857,6 +1879,7 @@ XGBoost is ideal because:
 ---
 
 ## Question 23
+- [ ] Done
 
 **Explore the concept of using XGBoost in a federated learning setup. What challenges might arise?**
 

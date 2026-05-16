@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: Define the terms: agent, environment, state, action, and reward in the context of reinforcement learning
+- [ ] Done
 
 ### Agent
 The learner and decision-maker that interacts with the environment. It observes states, takes actions, and receives rewards.
@@ -59,6 +60,7 @@ Repeat
 ---
 
 ## Question 2: How do Temporal Difference (TD) methods like SARSA differ from Monte Carlo methods?
+- [ ] Done
 
 ### Key Differences
 
@@ -108,6 +110,7 @@ Bootstraps from current estimate of next state-action value.
 ---
 
 ## Question 3: What role does target networks play in stabilizing training in deep reinforcement learning?
+- [ ] Done
 
 ### The Problem Without Target Networks
 In DQN, the Q-network is used both for:
@@ -168,6 +171,7 @@ Typical τ = 0.001
 ---
 
 ## Question 4: How do you ensure generalization in reinforcement learning to unseen environments?
+- [ ] Done
 
 ### Generalization Challenges
 - Agent overfits to training environment
@@ -233,6 +237,7 @@ generalization_gap = train_performance - test_performance
 ---
 
 ## Question 5: How is the eligibility traces concept utilized in reinforcement learning?
+- [ ] Done
 
 ### Definition
 Eligibility traces combine ideas from TD and Monte Carlo methods, providing a unified view that allows credit assignment over multiple time steps.
@@ -306,6 +311,7 @@ def td_lambda_update(states, rewards, V, alpha, gamma, lambd):
 ---
 
 ## Question 6: What considerations should be taken into account when applying reinforcement learning in real-world robotics?
+- [ ] Done
 
 ### Key Considerations
 
@@ -384,6 +390,7 @@ sensor_noise = uniform(0, 0.05)
 ---
 
 ## Question 7: How can reinforcement learning be used to develop an autonomous trading agent?
+- [ ] Done
 
 ### Problem Formulation
 
@@ -475,6 +482,7 @@ def apply_risk_constraints(action, state):
 ---
 
 ## Question 8: Address the potential ethical concerns around the deployment of reinforcement learning systems
+- [ ] Done
 
 ### Key Ethical Concerns
 
@@ -547,6 +555,7 @@ reward = task_reward - fairness_penalty(action, demographics)
 ---
 
 ## Question 9: How can the alignment problem be tackled in reinforcement learning to ensure that agents' objectives align with human values?
+- [ ] Done
 
 ### The Alignment Problem
 Agent optimizes specified reward, but specified reward doesn't capture true human intent.
@@ -616,6 +625,7 @@ while training:
 ---
 
 ## Question 10: What role does reinforcement learning play in the field of Natural Language Processing (NLP)?
+- [ ] Done
 
 ### Applications in NLP
 
@@ -692,6 +702,7 @@ for batch in data:
 ---
 
 ## Question 11: How is reinforcement learning being used to improve energy efficiency in data centers?
+- [ ] Done
 
 ### The Problem
 Data centers consume ~1-2% of global electricity. Cooling systems are major energy consumers.
@@ -767,6 +778,7 @@ def safe_control(state):
 ---
 
 ## Question 12: Talk about the challenge of deploying reinforcement learning models in a production environment
+- [ ] Done
 
 ### Key Challenges
 
@@ -863,6 +875,7 @@ else:
 ---
 
 ## Question 13: Address how adversarial robustness is being tackled in current reinforcement learning research
+- [ ] Done
 
 ### The Problem
 RL policies are vulnerable to adversarial perturbations in:

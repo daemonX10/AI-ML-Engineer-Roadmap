@@ -1,6 +1,7 @@
 # MATLAB Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Explain how to implement linear regression in MATLAB.**
 
@@ -54,6 +55,7 @@ title('Residual Distribution');
 ---
 
 ## Question 2
+- [ ] Done
 
 **Implement K-means clustering from scratch in MATLAB**
 
@@ -129,6 +131,7 @@ title('Elbow Method');
 ---
 
 ## Question 3
+- [ ] Done
 
 **Implement a neural network in MATLAB.**
 
@@ -190,6 +193,7 @@ net2 = train(net2, X_train', dummyvar(y_train)');
 ---
 
 ## Question 4
+- [ ] Done
 
 **Implement PCA for dimensionality reduction.**
 
@@ -260,6 +264,7 @@ title('PCA Biplot');
 ---
 
 ## Question 5
+- [ ] Done
 
 **Implement cross-validation for model evaluation.**
 
@@ -322,6 +327,7 @@ cv_stratified = cvpartition(y, 'KFold', 5);
 ---
 
 ## Question 6
+- [ ] Done
 
 **Implement gradient descent optimization.**
 
@@ -390,6 +396,7 @@ title('Training Loss');
 ---
 
 ## Question 7
+- [ ] Done
 
 **Implement a decision tree classifier.**
 
@@ -456,6 +463,7 @@ title('Feature Importance');
 ---
 
 ## Question 8
+- [ ] Done
 
 **Implement image classification with CNN.**
 
@@ -523,6 +531,7 @@ title('Confusion Matrix');
 ```
 
 ## Question 9
+- [ ] Done
 
 **Write a MATLAB function that performs matrix multiplication without using the built-in ‘*’ operator**
 
@@ -592,6 +601,7 @@ end
 ---
 
 ## Question 10
+- [ ] Done
 
 **Implement a function to normalize a vector between 0 and 1**
 
@@ -663,6 +673,7 @@ v_zscore  = normalize(v, 'zscore');   % z-score
 ---
 
 ## Question 11
+- [ ] Done
 
 **Write a script to import a text file and count the frequency of each unique word**
 
@@ -751,6 +762,7 @@ disp(tbl);
 ---
 
 ## Question 12
+- [ ] Done
 
 **Create a MATLAB function that solves a system of linear equations**
 
@@ -840,6 +852,7 @@ end
 ---
 
 ## Question 13
+- [ ] Done
 
 **Code a MATLAB function that computes the Fibonacci sequence using recursion**
 
@@ -936,6 +949,7 @@ end
 ---
 
 ## Question 14
+- [ ] Done
 
 **Develop a MATLAB script to plot a histogram of random numbers following a normal distribution**
 
@@ -1011,6 +1025,7 @@ hold off;
 ---
 
 ## Question 15
+- [ ] Done
 
 **Write a MATLAB program that detects edges in an image using the Sobel operator**
 

@@ -1,6 +1,7 @@
 # XGBoost Interview Questions - Scenario-Based Questions
 
 ## Question 1
+- [ ] Done
 
 **Suppose you have a dataset with a mixture of categorical and continuous features. How would you preprocess the data before training an XGBoost model?**
 
@@ -134,6 +135,7 @@ model.fit(X, y)
 ---
 
 ## Question 2
+- [ ] Done
 
 **In a scenario where model interpretability is crucial, how would you justify the use of XGBoost?**
 
@@ -238,6 +240,7 @@ explain_prediction(model, X_test.iloc[[0]], feature_names)
 ---
 
 ## Question 3
+- [ ] Done
 
 **You're tasked with predicting customer churn. How would you go about applying XGBoost to solve this problem?**
 
@@ -381,6 +384,7 @@ print(f"At this threshold - Precision: {precision[optimal_idx]:.3f}, Recall: {re
 ---
 
 ## Question 4
+- [ ] Done
 
 **Imagine you're developing a recommendation system. Explain how you might utilize XGBoost in this context.**
 

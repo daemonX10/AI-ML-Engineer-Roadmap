@@ -1,6 +1,7 @@
 # PyTorch Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How do you save and load models in PyTorch?**
 
@@ -60,6 +61,7 @@ start_epoch = checkpoint['epoch']
 ---
 
 ## Question 2
+- [ ] Done
 
 **What is DataLoader and how do you use it?**
 
@@ -123,6 +125,7 @@ for epoch in range(10):
 ---
 
 ## Question 3
+- [ ] Done
 
 **How do you handle overfitting in PyTorch?**
 
@@ -191,6 +194,7 @@ train_transform = transforms.Compose([
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is transfer learning and how to implement it in PyTorch?**
 
@@ -250,6 +254,7 @@ def unfreeze_layer(model, layer_name):
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain the concept of gradient clipping in PyTorch.**
 
@@ -303,6 +308,7 @@ def get_grad_norm(model):
 ---
 
 ## Question 6
+- [ ] Done
 
 **How do you implement custom layers in PyTorch?**
 
@@ -362,6 +368,7 @@ model = nn.Sequential(
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is torch.no_grad() and when do you use it?**
 
@@ -426,6 +433,7 @@ def validate(model, val_loader):
 ---
 
 ## Question 8
+- [ ] Done
 
 **How do you debug PyTorch models?**
 
@@ -500,6 +508,7 @@ for name, param in model.named_parameters():
 ---
 
 ## Question 9
+- [ ] Done
 
 **What are hooks in PyTorch?**
 
@@ -576,6 +585,7 @@ resnet.layer3.register_forward_hook(get_features('layer3'))
 ---
 
 ## Question 10
+- [ ] Done
 
 **How do you handle variable-length sequences in PyTorch?**
 

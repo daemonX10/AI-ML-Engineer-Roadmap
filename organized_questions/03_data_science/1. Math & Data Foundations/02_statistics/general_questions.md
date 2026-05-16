@@ -1,6 +1,7 @@
 # Statistics Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **What is the difference between population and sample?**
 
@@ -39,6 +40,7 @@ Always clarify whether you're working with a population or sample — it affects
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain correlation vs causation with an example.**
 
@@ -90,6 +92,7 @@ When presented with a correlation, always ask: "Could there be a confounding var
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is sampling bias and how do you avoid it?**
 
@@ -130,6 +133,7 @@ When presented with a correlation, always ask: "Could there be a confounding var
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is the difference between Type I and Type II errors?**
 
@@ -176,6 +180,7 @@ Always consider which error is MORE costly for the specific application.
 ---
 
 ## Question 5
+- [ ] Done
 
 **Explain the concept of confidence intervals.**
 
@@ -220,6 +225,7 @@ $$CI = \bar{x} \pm z_{\alpha/2} \times \frac{s}{\sqrt{n}}$$
 ---
 
 ## Question 6
+- [ ] Done
 
 **What is the law of large numbers?**
 
@@ -266,6 +272,7 @@ $$\lim_{n \to \infty} \bar{X}_n = \mu$$
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is multicollinearity and why is it a problem?**
 
@@ -317,6 +324,7 @@ vif = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain the difference between parametric and non-parametric tests.**
 
@@ -366,6 +374,7 @@ Check normality first (Shapiro-Wilk test, Q-Q plot), then choose appropriate tes
 ---
 
 ## Question 9
+- [ ] Done
 
 **What is statistical power and how do you increase it?**
 
@@ -418,6 +427,7 @@ Always do power analysis BEFORE collecting data to ensure adequate sample size.
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is heteroscedasticity and how do you detect it?**
 
@@ -467,6 +477,7 @@ print(f"p-value: {bp_test[1]}")
 ---
 
 ## Question 11
+- [ ] Done
 
 **Explain the difference between one-tailed and two-tailed tests.**
 
@@ -511,6 +522,7 @@ One-tailed tests should be decided BEFORE seeing data based on prior knowledge, 
 ---
 
 ## Question 12
+- [ ] Done
 
 **What is Simpson's Paradox?**
 

@@ -615,6 +615,31 @@ plt.show()
 
 ---
 
+71. Compute unbiased sample variance and standard deviation using Bessel's correction.
+
+**Answer:**
+
+```python
+import numpy as np
+
+def sample_variance_std(x):
+    """Return (s2, s) using Bessel's correction (n-1)."""
+    x = np.asarray(x, dtype=float)
+    n = x.size
+    if n < 2:
+        raise ValueError("x must contain at least two values")
+
+    mean = np.mean(x)
+    s2 = np.sum((x - mean) ** 2) / (n - 1)
+    s = np.sqrt(s2)
+    return float(s2), float(s)
+
+# Example
+data = [2, 4, 4, 4, 5, 5, 7, 9]
+var, std = sample_variance_std(data)
+print(var, std)
+```
+
 69. Write an R script to conduct an ANOVA test on a given dataset.
 
 **Answer:**

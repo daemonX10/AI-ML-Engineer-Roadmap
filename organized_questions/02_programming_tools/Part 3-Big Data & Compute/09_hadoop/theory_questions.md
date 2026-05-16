@@ -1,6 +1,7 @@
 # Hadoop Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **What is Hadoop and what are its core components?**
 
@@ -50,6 +51,7 @@ with client.read('/user/data/file.txt') as reader:
 ---
 
 ## Question 2
+- [ ] Done
 
 **Explain the HDFS architecture in detail.**
 
@@ -105,6 +107,7 @@ client.set_replication('/user/important_file.txt', replication=5)
 ---
 
 ## Question 3
+- [ ] Done
 
 **What is MapReduce and how does it work?**
 
@@ -169,6 +172,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 4
+- [ ] Done
 
 **What is YARN and what are its components?**
 
@@ -239,6 +243,7 @@ print(get_cluster_metrics())
 ---
 
 ## Question 5
+- [ ] Done
 
 **What is the difference between HDFS and traditional file systems?**
 
@@ -308,6 +313,7 @@ class FileSystemComparison:
 ---
 
 ## Question 6
+- [ ] Done
 
 **Explain data replication in HDFS.**
 
@@ -373,6 +379,7 @@ def upload_with_replication(local_path, hdfs_path, data_type):
 ---
 
 ## Question 7
+- [ ] Done
 
 **What is NameNode federation and High Availability?**
 
@@ -449,6 +456,7 @@ class HDFSHAClient:
 ---
 
 ## Question 8
+- [ ] Done
 
 **What are the different input formats in Hadoop?**
 
@@ -531,6 +539,7 @@ if __name__ == '__main__':
 ---
 
 ## Question 9
+- [ ] Done
 
 **Explain the Hadoop ecosystem components.**
 
@@ -613,6 +622,7 @@ def submit_oozie_workflow(oozie_url, properties):
 ---
 
 ## Question 10
+- [ ] Done
 
 **What is speculative execution in Hadoop?**
 
@@ -719,6 +729,7 @@ if __name__ == '__main__':
 # --- Missing Questions Restored from Source (Q11-Q30) ---
 
 ## Question 11
+- [ ] Done
 
 **Explain how Apache Flume helps with log and event data collection for Hadoop**
 
@@ -772,6 +783,7 @@ Flume provides **at-least-once delivery** with file channels (durable) or **best
 ---
 
 ## Question 12
+- [ ] Done
 
 **What is Apache Sqoop and how does it interact with Hadoop ?**
 
@@ -830,6 +842,7 @@ Sqoop is being deprecated in favor of **Apache Spark JDBC** connectors and tools
 ---
 
 ## Question 13
+- [ ] Done
 
 **How does Apache Oozie help in workflow scheduling in Hadoop ?**
 
@@ -898,6 +911,7 @@ Oozie is Hadoop-native but verbose (XML-based). Modern alternatives include **Ap
 ---
 
 ## Question 14
+- [ ] Done
 
 **What is Apache ZooKeeper and why is it important for Hadoop ?**
 
@@ -953,6 +967,7 @@ ZooKeeper solves the fundamental problem of **distributed consensus** — how mu
 ---
 
 ## Question 15
+- [ ] Done
 
 **How does Hadoop handle the failure of a datanode ?**
 
@@ -1013,6 +1028,7 @@ The NameNode doesn't immediately declare a DataNode dead after missing one heart
 ---
 
 ## Question 16
+- [ ] Done
 
 **Explain the process of data replication in HDFS**
 
@@ -1077,6 +1093,7 @@ The key design choice is the **pipeline replication** model — the client only 
 ---
 
 ## Question 17
+- [ ] Done
 
 **What is speculative execution in Hadoop , and why is it used ?**
 
@@ -1131,6 +1148,7 @@ Speculative execution trades **extra resources** for **lower latency**. It works
 ---
 
 ## Question 18
+- [ ] Done
 
 **What is the significance of the input split in MapReduce jobs ?**
 
@@ -1193,6 +1211,7 @@ The key insight is that splits are **logical** (defined by InputFormat) while bl
 ---
 
 ## Question 19
+- [ ] Done
 
 **How does partitioning work in Hadoop , and when is it used ?**
 
@@ -1253,6 +1272,7 @@ Data skew is the biggest partitioning problem — one reducer gets most of the d
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain how reducers work in MapReduce and their interaction with shufflers**
 
@@ -1310,6 +1330,7 @@ The shuffle phase is typically the **most expensive** part of MapReduce — it i
 ---
 
 ## Question 21
+- [ ] Done
 
 **What are SequenceFiles in Hadoop ?**
 
@@ -1378,6 +1399,7 @@ SequenceFiles solve the **small files problem** in HDFS — instead of storing m
 ---
 
 ## Question 22
+- [ ] Done
 
 **Describe the ways to optimize a MapReduce job**
 
@@ -1442,6 +1464,7 @@ The three highest-impact optimizations are: 1) **Combiner** (reduces network I/O
 ---
 
 ## Question 23
+- [ ] Done
 
 **What is the significance of combiner in the Hadoop MapReduce framework ?**
 
@@ -1489,6 +1512,7 @@ The combiner can reduce shuffle data by **10-100x** for aggregation operations. 
 ---
 
 ## Question 24
+- [ ] Done
 
 **Explain what you can do to optimize the performance of HDFS**
 
@@ -1538,6 +1562,7 @@ The single biggest HDFS optimization is avoiding the **small files problem** —
 ---
 
 ## Question 25
+- [ ] Done
 
 **What are the best practices for managing memory and CPU resources in a Hadoop cluster ?**
 
@@ -1603,6 +1628,7 @@ A common mistake is setting container memory equal to JVM heap. The container me
 ---
 
 ## Question 26
+- [ ] Done
 
 **What is the concept of erasure coding in HDFS , and how does it differ from replication ?**
 
@@ -1658,6 +1684,7 @@ Erasure coding (Hadoop 3.0+) saves **~50% storage** vs 3x replication while prov
 ---
 
 ## Question 27
+- [ ] Done
 
 **Explain how Hadoop uses data locality to improve performance**
 
@@ -1715,6 +1742,7 @@ Data locality is why Hadoop scales linearly — it avoids the **network bottlene
 ---
 
 ## Question 28
+- [ ] Done
 
 **How does Hadoop support different file formats , and what are some of them?**
 
@@ -1770,6 +1798,7 @@ For analytics: use **Parquet** (Spark) or **ORC** (Hive) — columnar formats ac
 ---
 
 ## Question 29
+- [ ] Done
 
 **What is Hadoop federation , and how can it scale a Hadoop cluster ?**
 
@@ -1851,6 +1880,7 @@ Federation solves the **NameNode memory bottleneck** — a single NameNode store
 ---
 
 ## Question 30
+- [ ] Done
 
 **What are the implications of small files on HDFS performance and how can this be mitigated ?**
 
@@ -1921,6 +1951,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 31
+- [ ] Done
 
 **Explain the concept of a Hadoop Distributed File System (HDFS) and its architecture**
 
@@ -1929,6 +1960,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 32
+- [ ] Done
 
 **How does MapReduce programming model work in Hadoop ?**
 
@@ -1937,6 +1969,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 33
+- [ ] Done
 
 **What is YARN , and how does it improve Hadoop’s resource management ?**
 
@@ -1945,6 +1978,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 34
+- [ ] Done
 
 **Explain the role of the Namenode and Datanode in HDFS**
 
@@ -1953,6 +1987,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 35
+- [ ] Done
 
 **What is a Rack Awareness algorithm in HDFS , and why is it important ?**
 
@@ -1961,6 +1996,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 36
+- [ ] Done
 
 **What are some of the characteristics that differentiate Hadoop from traditional RDBMS ?**
 
@@ -1969,6 +2005,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 37
+- [ ] Done
 
 **How can you secure a Hadoop cluster ? Name some of the security mechanisms available**
 
@@ -1977,6 +2014,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 38
+- [ ] Done
 
 **Describe the role of HBase in Hadoop ecosystem**
 
@@ -1985,6 +2023,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 39
+- [ ] Done
 
 **What is Apache Hive and what types of problems does it solve ?**
 
@@ -1993,6 +2032,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 40
+- [ ] Done
 
 **How does Apache Pig fit into the Hadoop ecosystem ?**
 
@@ -2001,6 +2041,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 41
+- [ ] Done
 
 **Discuss the role of Apache Spark in the Hadoop ecosystem**
 
@@ -2009,6 +2050,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 42
+- [ ] Done
 
 **How are large datasets processed in Hadoop ?**
 
@@ -2017,6 +2059,7 @@ The small files problem is one of the **most common HDFS issues** in production.
 ---
 
 ## Question 43
+- [ ] Done
 
 **Discuss the concept and benefits of a journal node in HDFS HA configuration**
 

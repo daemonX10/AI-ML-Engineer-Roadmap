@@ -3,6 +3,7 @@
 ---
 
 ## Question 1: What is Supervised Learning?
+- [ ] Done
 
 **Definition:**  
 Supervised learning is a machine learning paradigm where the model learns a mapping function from input features (X) to output labels (y) using a labeled dataset. The algorithm iteratively adjusts its parameters to minimize the error between predictions and true labels, enabling it to predict outputs for new, unseen inputs.
@@ -32,6 +33,7 @@ Like learning with a teacher - the model sees examples with correct answers, lea
 ---
 
 ## Question 2: Distinguish between Supervised and Unsupervised Learning
+- [ ] Done
 
 **Definition:**  
 **Supervised learning** learns from labeled data (input-output pairs) to predict outcomes. **Unsupervised learning** discovers hidden patterns in unlabeled data without predefined targets.
@@ -68,6 +70,7 @@ clusters = kmeans.labels_
 ---
 
 ## Question 3: What are the types of problems solved with Supervised Learning?
+- [ ] Done
 
 **Definition:**  
 Supervised learning problems are categorized into **Classification** (predicting discrete categories) and **Regression** (predicting continuous values) based on the nature of the target variable.
@@ -92,6 +95,7 @@ Supervised learning problems are categorized into **Classification** (predicting
 ---
 
 ## Question 4: Describe how Training and Testing datasets are used
+- [ ] Done
 
 **Definition:**  
 The labeled dataset is split into a **training set** (to teach the model), **validation set** (to tune hyperparameters), and **test set** (to evaluate final performance on unseen data). This prevents overfitting and provides honest performance estimates.
@@ -125,6 +129,7 @@ print(f"Train: {len(X_train)}, Val: {len(X_val)}, Test: {len(X_test)}")
 ---
 
 ## Question 5: What is the role of a Loss Function?
+- [ ] Done
 
 **Definition:**  
 A loss function quantifies the error between predicted values and actual labels. It produces a single scalar value that the model minimizes during training through optimization algorithms like gradient descent.
@@ -157,6 +162,7 @@ A loss function quantifies the error between predicted values and actual labels.
 ---
 
 ## Question 6: Explain Overfitting and Underfitting
+- [ ] Done
 
 **Definition:**  
 **Underfitting** occurs when a model is too simple to capture data patterns (high bias). **Overfitting** occurs when a model memorizes training data including noise, failing to generalize (high variance). Both lead to poor performance on unseen data.
@@ -190,6 +196,7 @@ A loss function quantifies the error between predicted values and actual labels.
 ---
 
 ## Question 7: Methods to Prevent Overfitting
+- [ ] Done
 
 **Definition:**  
 Overfitting occurs when a model learns training data too well, including noise, leading to poor generalization. Prevention involves reducing model complexity, adding regularization, or increasing effective data size.
@@ -230,6 +237,7 @@ model.fit(X, y, validation_split=0.2, callbacks=[early_stop])
 ---
 
 ## Question 8: Explain the bias-variance tradeoff and its significance in supervised learning.
+- [ ] Done
 
 ### Definition
 The bias-variance tradeoff describes the fundamental tension between two sources of error that affect a model's ability to generalize to unseen data.
@@ -272,6 +280,7 @@ Where:
 ---
 
 ## Question 9: Explain Validation Sets and Cross-Validation
+- [ ] Done
 
 **Definition:**  
 A **validation set** is a held-out portion of training data used for hyperparameter tuning. **Cross-validation** rotates through multiple validation folds to get a more robust performance estimate, especially with limited data.
@@ -313,6 +322,7 @@ print(f"Mean: {scores.mean():.4f} (+/- {scores.std():.4f})")
 ---
 
 ## Question 10: What is Regularization and how does it work?
+- [ ] Done
 
 **Definition:**  
 Regularization adds a penalty term to the loss function that discourages model complexity (large weights), preventing overfitting by trading a small increase in bias for a large reduction in variance.
@@ -351,6 +361,7 @@ lasso.fit(X_train, y_train)
 ---
 
 ## Question 11: How would you approach a stock price prediction problem using supervised learning?
+- [ ] Done
 
 ### Problem Framing
 
@@ -410,6 +421,7 @@ for train_idx, test_idx in tscv.split(X):
 ---
 
 ## Question 12: Discuss the application of supervised learning in credit scoring.
+- [ ] Done
 
 ### Problem Definition
 
@@ -464,6 +476,7 @@ model = XGBClassifier(scale_pos_weight=ratio_negative/ratio_positive)
 ---
 
 ## Question 13: Supervised Learning for Recommender Systems
+- [ ] Done
 
 **Definition:**  
 Recommendation can be framed as supervised learning by predicting user-item interactions (ratings or click probability). Features are engineered from user attributes, item attributes, and contextual information, then fed to models like Gradient Boosting or Neural Networks.
@@ -504,6 +517,7 @@ top_n_items = candidates.iloc[click_prob.argsort()[-10:][::-1]]
 ---
 
 ## Question 14: Supervised Learning in Healthcare Diagnostics
+- [ ] Done
 
 **Definition:**  
 Supervised learning in healthcare frames diagnosis as classification (disease present/absent, severity levels). Models are trained on labeled medical data (images, EHR) annotated by experts, requiring rigorous validation and interpretability.
@@ -527,6 +541,7 @@ Supervised learning in healthcare frames diagnosis as classification (disease pr
 ---
 
 ## Question 15: Supervised Learning in NLP
+- [ ] Done
 
 **Definition:**  
 Supervised learning powers most NLP tasks by training models to map text inputs to labeled outputs. Modern NLP uses transfer learning: pretrain on unlabeled text, then fine-tune on task-specific labeled data.

@@ -1,6 +1,7 @@
 # Data Mining Interview Questions - Theory Questions
 
 ## Question 1
+- [ ] Done
 
 **Define data mining and explain its importance in the modern data-driven world.**
 
@@ -27,6 +28,7 @@ Think of data mining as "finding gold nuggets (patterns) in mountains of raw ore
 ---
 
 ## Question 2
+- [ ] Done
 
 **What is the difference between data mining and data analysis?**
 
@@ -56,6 +58,7 @@ Data mining is automated pattern discovery from large datasets using algorithms,
 ---
 
 ## Question 3
+- [ ] Done
 
 **How does data mining relate to machine learning?**
 
@@ -88,6 +91,7 @@ Data mining uses machine learning algorithms as core tools to discover patterns,
 ---
 
 ## Question 4
+- [ ] Done
 
 **Explain the concept of Knowledge Discovery in Databases (KDD).**
 
@@ -124,6 +128,7 @@ KDD is like refining crude oil: Selection (extract oil), Preprocessing (remove i
 ---
 
 ## Question 5
+- [ ] Done
 
 **What are the common tasks performed in data mining?**
 
@@ -158,6 +163,7 @@ The main data mining tasks are: Classification (predict categorical labels), Reg
 ---
 
 ## Question 6
+- [ ] Done
 
 **Describe the CRISP-DM process in data mining.**
 
@@ -202,6 +208,7 @@ Think of building a house: understand requirements → survey land → prepare f
 ---
 
 ## Question 7
+- [ ] Done
 
 **What are the types of data that can be mined?**
 
@@ -234,6 +241,7 @@ Data mining can be applied to various data types: Structured (databases, tables)
 ---
 
 ## Question 8
+- [ ] Done
 
 **Explain the concept of data warehousing and its relevance to data mining.**
 
@@ -268,6 +276,7 @@ Data warehouse is like a well-organized library (clean, categorized, searchable)
 ---
 
 ## Question 9
+- [ ] Done
 
 **What are the common data preprocessing techniques?**
 
@@ -303,6 +312,7 @@ Data preprocessing transforms raw data into a clean, suitable format for mining.
 ---
 
 ## Question 10
+- [ ] Done
 
 **Explain the concept of data cleaning and why it is necessary.**
 
@@ -344,6 +354,7 @@ Data cleaning is the process of detecting and correcting (or removing) corrupt, 
 ---
 
 ## Question 11
+- [ ] Done
 
 **How does data transformation differ from data normalization?**
 
@@ -380,6 +391,7 @@ Data transformation is a broad term for any operation that changes data format o
 ---
 
 ## Question 12
+- [ ] Done
 
 **What are the techniques for data reduction in the context of data mining?**
 
@@ -422,6 +434,7 @@ Data reduction techniques decrease data volume while preserving analytical integ
 ---
 
 ## Question 13
+- [ ] Done
 
 **What are the methods for outlier detection during data preprocessing?**
 
@@ -460,6 +473,7 @@ Always ask: "Is this outlier noise or valuable information?" In fraud detection,
 ---
 
 ## Question 14
+- [ ] Done
 
 **What are the different classifications of data mining algorithms?**
 
@@ -498,6 +512,7 @@ Data mining algorithms are classified by: Learning Type (supervised, unsupervise
 ---
 
 ## Question 15
+- [ ] Done
 
 **Explain decision tree algorithms and their use in data mining.**
 
@@ -544,6 +559,7 @@ Decision trees are supervised learning algorithms that recursively split data ba
 ---
 
 ## Question 16
+- [ ] Done
 
 **What is the role of the Apriori algorithm in data mining?**
 
@@ -588,6 +604,7 @@ $$Lift(A \rightarrow B) = \frac{Confidence(A \rightarrow B)}{Support(B)}$$
 ---
 
 ## Question 17
+- [ ] Done
 
 **How does k-means clustering work in the context of data mining?**
 
@@ -636,6 +653,7 @@ Where $\mu_i$ is centroid of cluster $C_i$
 ---
 
 ## Question 18
+- [ ] Done
 
 **Describe the concept of Association Rule Mining.**
 
@@ -681,6 +699,7 @@ Association Rule Mining discovers interesting relationships (rules) between vari
 ---
 
 ## Question 19
+- [ ] Done
 
 **What is the Naive Bayes classifier and how is it used in data mining?**
 
@@ -727,6 +746,7 @@ $$\hat{y} = \arg\max_C P(C) \prod_{i=1}^{n} P(x_i|C)$$
 ---
 
 ## Question 20
+- [ ] Done
 
 **Explain the Support Vector Machine (SVM) algorithm in the context of data mining.**
 
@@ -775,6 +795,7 @@ subject to: $y_i(w \cdot x_i + b) \geq 1$
 ---
 
 ## Question 21
+- [ ] Done
 
 **Explain cross-validation as it applies to data mining.**
 
@@ -819,6 +840,7 @@ Never use cross-validation for time-series data without temporal ordering—futu
 ---
 
 ## Question 22
+- [ ] Done
 
 **What are the challenges of big data mining?**
 
@@ -870,6 +892,7 @@ Big data requires rethinking traditional algorithms for distributed, parallel, a
 ---
 
 ## Question 23
+- [ ] Done
 
 **Describe the importance of feature selection and feature engineering in data mining.**
 
@@ -910,6 +933,7 @@ Feature selection chooses the most relevant features from existing ones, reducin
 ---
 
 ## Question 24
+- [ ] Done
 
 **What is text mining and how does it differ from traditional data mining?**
 
@@ -950,6 +974,7 @@ Text mining extracts meaningful patterns and insights from unstructured text dat
 ---
 
 ## Question 25
+- [ ] Done
 
 **Explain the concept and applications of web mining.**
 
@@ -994,6 +1019,7 @@ Web mining is foundational for SEO, digital marketing, and user experience optim
 ---
 
 ## Question 26
+- [ ] Done
 
 **How can time-series data be mined, and what are the unique challenges?**
 
@@ -1038,6 +1064,7 @@ Stock prediction, demand forecasting, sensor monitoring, weather prediction
 ---
 
 ## Question 27
+- [ ] Done
 
 **What are the emerging trends in data mining with respect to machine learning?**
 
@@ -1081,6 +1108,7 @@ Key trends include: Deep Learning integration (CNNs, transformers for unstructur
 ---
 
 ## Question 28
+- [ ] Done
 
 **Explain the concept of ensemble learning in data mining.**
 
@@ -1126,6 +1154,7 @@ Ensemble learning combines multiple models to produce better predictive performa
 ---
 
 ## Question 29
+- [ ] Done
 
 **Discuss the use of data mining in customer relationship management (CRM).**
 
@@ -1172,6 +1201,7 @@ CRM data mining shifts from reactive (responding to complaints) to proactive (pr
 ---
 
 ## Question 30
+- [ ] Done
 
 **Discuss spatial data mining and its applications.**
 
@@ -1213,6 +1243,7 @@ Spatial data mining discovers patterns from geographic/location data involving c
 ---
 
 ## Question 31
+- [ ] Done
 
 **What is reinforcement learning and can it be considered a part of data mining?**
 
@@ -1257,6 +1288,7 @@ RL is a distinct learning paradigm but increasingly integrated into data mining 
 ---
 
 ## Question 32
+- [ ] Done
 
 **Explain the concept of graph mining and its potential use cases.**
 
@@ -1300,6 +1332,7 @@ As data becomes more interconnected, graph mining enables analysis of relationsh
 ---
 
 ## Question 33
+- [ ] Done
 
 **What is the role of artificial intelligence in the evolution of data mining techniques?**
 
@@ -1347,6 +1380,7 @@ AI enables mining of previously intractable data types (images, video, speech) a
 ---
 
 ## Question 34
+- [ ] Done
 
 **What are the considerations for deploying a data mining model into production?**
 
@@ -1396,6 +1430,7 @@ Production deployment requires: model serialization, infrastructure setup (APIs,
 ---
 
 ## Question 35
+- [ ] Done
 
 **Explain the role of domain expertise in interpreting data mining results.**
 

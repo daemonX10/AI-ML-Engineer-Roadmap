@@ -1,6 +1,7 @@
 # Genetic Algorithms Interview Questions - General Questions
 
 ## Question 1
+- [ ] Done
 
 **How can genetic algorithms be applied to combinatorial optimization problems?**
 
@@ -48,6 +49,7 @@ Ensures valid permutations in offspring.
 ---
 
 ## Question 2
+- [ ] Done
 
 **How do 'penalty functions' work in genetic algorithms?**
 
@@ -97,6 +99,7 @@ Start with moderate penalty, use adaptive schemes, or combine with repair operat
 ---
 
 ## Question 3
+- [ ] Done
 
 **Define ‘hypermutation’ and its role in GAs.**
 
@@ -150,6 +153,7 @@ mutation_rate = base_rate * (1 + (1 - normalized_fitness))
 ---
 
 ## Question 4
+- [ ] Done
 
 **How do 'generational genetic algorithms' operate?**
 
@@ -202,6 +206,7 @@ next_gen = elite[:k] + offspring[:pop_size - k]
 ---
 
 ## Question 5
+- [ ] Done
 
 **How do 'diploid' and 'haploid' structures function differently in genetic algorithms?**
 
@@ -254,6 +259,7 @@ Recessive alleles are "hidden" but preserved.
 ---
 
 ## Question 6
+- [ ] Done
 
 **How could you use GAs in feature selection for a predictive model?**
 
@@ -304,6 +310,7 @@ def fitness(chromosome):
 ---
 
 ## Question 7
+- [ ] Done
 
 **What strategies can be employed to maintain diversity in a GA population?**
 
@@ -350,6 +357,7 @@ if diversity < threshold:
 ---
 
 ## Question 8
+- [ ] Done
 
 **How can GAs be used in job scheduling and resource allocation problems?**
 
@@ -403,6 +411,7 @@ def fitness(schedule):
 ---
 
 ## Question 9
+- [ ] Done
 
 **How do you determine suitable crossover and mutation rates for a genetic algorithm?**
 
@@ -452,6 +461,7 @@ Start with 0.8 crossover, 0.05 mutation. Monitor convergence. Increase mutation 
 ---
 
 ## Question 10
+- [ ] Done
 
 **How should one go about choosing a fitness function for a particular GA application?**
 
@@ -503,6 +513,7 @@ Start with 0.8 crossover, 0.05 mutation. Monitor convergence. Increase mutation 
 ---
 
 ## Question 11
+- [ ] Done
 
 **Present a strategy to use GAs for evolving decision rules in a rule-based system.**
 
@@ -557,6 +568,7 @@ IF (Income > 100000) THEN Approve
 ---
 
 ## Question 12
+- [ ] Done
 
 **How can ‘reinforcement learning’ be integrated with genetic algorithms?**
 
@@ -615,6 +627,7 @@ def fitness(network_weights):
 ---
 
 ## Question 13
+- [ ] Done
 
 **How might quantum computing impact the future of genetic algorithms?**
 
@@ -663,6 +676,7 @@ True quantum advantage for GAs is still theoretical. Quantum-inspired classical 
 ---
 
 ## Question 14
+- [ ] Done
 
 **How can GAs assist in feature learning for deep learning models?**
 
@@ -720,6 +734,7 @@ fitness = train_and_evaluate(chromosome)
 ---
 
 ## Question 15
+- [ ] Done
 
 **How can GAs help in tuning the hyperparameters of a deep learning model?**
 
@@ -775,6 +790,7 @@ with Pool(num_gpus) as pool:
 ---
 
 ## Question 16
+- [ ] Done
 
 **How do you envision GAs influencing the development of autonomous systems?**
 
@@ -827,6 +843,7 @@ GAs are valuable for autonomous systems where optimal behavior is unknown and mu
 ---
 
 ## Question 17
+- [ ] Done
 
 **What potential does GA have in the area of personalized medicine and treatment optimization?**
 

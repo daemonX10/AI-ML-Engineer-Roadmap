@@ -1,6 +1,7 @@
 # Optimization Interview Questions - Coding Questions
 
 ## Question 1
+- [ ] Done
 
 **Implement basic Gradient Descent to minimize a simple quadratic function.**
 
@@ -42,6 +43,7 @@ print(f"f(x_min) = {f(x_min):.6f}")
 ---
 
 ## Question 2
+- [ ] Done
 
 **Write a Python function to perform SGD on a sample dataset.**
 
@@ -90,6 +92,7 @@ print(f"Learned weights: {weights}")  # Should be close to [2, 3, -1]
 ---
 
 ## Question 3
+- [ ] Done
 
 **Code a simulation in Python demonstrating the effects of different learning rates on convergence.**
 
@@ -140,6 +143,7 @@ plt.show()
 ---
 
 ## Question 4
+- [ ] Done
 
 **Implement the Momentum technique in a Gradient Descent optimizer.**
 
@@ -188,6 +192,7 @@ print(f"With momentum: converged in ~{len([h for h in hist_with_mom if abs(h) > 
 ---
 
 ## Question 5
+- [ ] Done
 
 **Create a regularization function in Python that penalizes large weights in a linear regression model.**
 
@@ -234,6 +239,7 @@ for w, name in [(small_weights, "Small"), (large_weights, "Large")]:
 ---
 
 ## Question 6
+- [ ] Done
 
 **Develop a Python script that uses the Adam optimizer from a library like TensorFlow or PyTorch.**
 
@@ -282,6 +288,7 @@ torch.optim.Adam(params, lr=0.001, betas=(0.9, 0.999), eps=1e-8)
 ---
 
 ## Question 7
+- [ ] Done
 
 **Write a function that showcases the difference between L1 and L2 regularization on a small dataset.**
 
